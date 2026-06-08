@@ -286,7 +286,7 @@ def main() -> None:
         div[data-testid="stButton"] > button p {
             font-family: 'Oxanium', monospace !important;
             font-weight: 700 !important;
-            font-size: 1.25em !important;
+            font-size: 1.35em !important;
         }
         </style>""",
         unsafe_allow_html=True,
