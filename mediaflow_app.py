@@ -275,8 +275,10 @@ def main() -> None:
         hr { margin: 0.3rem 0 !important; }
         .stCaption { margin-bottom: 0 !important; }
         h1, h2, h3 { margin-top: 0 !important; margin-bottom: 0 !important; }
-        .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
-        strong { font-family: 'Crimson Text', Georgia, serif; }
+        body, .main-text, strong, .stMarkdown, .stCaption, button, [data-testid] {
+            font-family: 'Crimson Text', Georgia, serif !important;
+        }
+        .main-text { font-size: 1.05em; line-height: 1.5; }
         </style>""",
         unsafe_allow_html=True,
     )
