@@ -281,12 +281,10 @@ def main() -> None:
         .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
         .arc-label { font-family: 'Crimson Text', Georgia, serif; }
         .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
-        .stButton { display: flex; justify-content: center; }
         .stButton button, .stButton button *,
         [data-testid="baseButton-secondary"], [data-testid="baseButton-secondary"] *,
         [data-testid="baseButton-primary"], [data-testid="baseButton-primary"] * {
             font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 1.02em !important;
-            width: auto !important; padding-left: 0.9em !important; padding-right: 0.9em !important;
         }
         </style>""",
         unsafe_allow_html=True,
