@@ -1,0 +1,140 @@
+Wire Service Probe — Output Record
+Run date: 2026-06-07 21:59-22:00 UTC
+Script: rss_explore_wire.py + newsapi probe
+========================================================================
+
+
+SECTION 1: Reuters / AP Alternative RSS Paths
+------------------------------------------------------------------------
+Reuters /rssFeed/topNews      HTTP 401  — authentication required (not dead, paywalled)
+Reuters /rssFeed/worldNews    HTTP 401  — same
+Reuters feeds.reuters.com     no-status — connection refused
+AP apnews.com/rss/world       HTTP 404
+AP apnews.com/rss/topnews     HTTP 404
+AP hub/world-news?rss=true    HTTP 301  — redirect, empty
+
+VERDICT: Reuters is paywalled (401, not dead — the endpoint exists but requires
+subscription credentials). AP is fully dead on all paths. Neither accessible
+without a paid account.
+
+
+SECTION 2: No-Key Free Wire APIs
+------------------------------------------------------------------------
+GNews API:    HTTP 400 — "You did not provide an API key"  (free signup available)
+Mediastack:   HTTP 401 — invalid access key               (free tier: 500/mo)
+TheNewsAPI:   HTTP 401 — invalid API token                (free tier available)
+Currents API: HTTP 401 — invalid token                    (free tier available)
+
+All require registration but all have free tiers. None tested with live keys.
+
+
+SECTION 3: Wire Sources in Existing Google News Feeds
+------------------------------------------------------------------------
+Already flowing through our Google News RSS queries:
+  Reuters          22 articles
+  Bloomberg        12 articles
+  Financial Times   5 articles
+  AP News           3 articles
+  gCaptain          4 articles (carries Reuters/Bloomberg wire)
+  The Telegraph     2 articles
+  Japan Times       2 articles
+  MarketWatch       1 article
+
+Wire gap is largely filled via aggregation. 22 Reuters + 12 Bloomberg + 5 FT
++ 3 AP = 42 wire articles across two Google News queries. Direct wire access
+would provide more volume and lower latency, but is not a critical gap.
+
+
+NEWSAPI PROBE (live key: f9017e2d...)
+------------------------------------------------------------------------
+Free tier confirmed active. All 5 queries returned HTTP 200.
+
+Fields available: source, author, title, description, url, urlToImage,
+                  publishedAt, content
+  description: full sentence summary (better than Google News snippets)
+  content: first ~200 chars + "[+XXXX chars]" — truncated on free tier
+  No full article body on free tier
+
+Index scale:
+  "iran":         27,348 total results
+  "iran hormuz":   9,578 total results
+  "IRGC missile":    348 total results
+  "hormuz tanker":   927 total results
+  "iran nuclear":  3,070 total results
+
+Rate limits: No rate-limit headers returned. Free tier = 100 requests/day.
+At 5 queries per poll cycle: 20 poll cycles/day maximum.
+
+Latency: Free tier results appear ~12-24 hours behind real-time.
+  All results in probe were dated Jun 6; probe ran Jun 7 22:00 UTC.
+  This is a meaningful limitation for a real-time crisis feed.
+
+Source quality: Mixed. Good sources (PBS, Fortune, Al Jazeera, Japan Today,
+  NPR, ABC, Globalsecurity.org) alongside low-quality/partisan sources
+  (Freerepublic.com, Naturalnews.com, Breitbart, Crypto Briefing).
+  Source allowlist filtering needed before adding to collector.
+
+New sources surfaced:
+  Globalsecurity.org — defense/security specialist, appeared 3x, solid
+  Japan Today        — Japanese perspective on war impact (Japan oil-dependent)
+  Times of India     — Indian perspective (India major Iranian oil buyer)
+
+
+CRITICAL NEW INTELLIGENCE FROM NEWSAPI
+------------------------------------------------------------------------
+
+1. WITKOFF-ARAGHCHI MEETING IN OMAN CONFIRMED
+   "White House confirms Witkoff-Araghchi meeting in Oman, with follow-up..."
+   [Crypto Briefing, Jun 06] — Steve Witkoff (Trump's Middle East envoy)
+   met with Iranian FM Araghchi in Oman. Follow-up sessions planned.
+   This is the most direct diplomatic contact in the current crisis.
+   Active back-channel is live — not just public posturing.
+
+2. OPEC OUTPUT AT DECADES-LOW
+   "OPEC crude output falls to lowest level in decades amid US blockade"
+   [Crypto Briefing, Jun 06] — Not just Hormuz disruption but OPEC-wide
+   production decline. US naval blockade has reduced Iranian export
+   capacity; other OPEC members not fully compensating. Critical
+   ForcingFunction supply variable.
+
+3. WAR POWERS RESOLUTION ADVANCING IN CONGRESS
+   "What's next for the War Powers Resolution on Iran? PolitiFact explains"
+   [PBS, Jun 06] — House and Senate advancing resolutions to limit
+   Trump's war authority. If passed, this constrains Trump's ability
+   to escalate, which changes the diplomatic arc probability distribution.
+
+4. IRAN FIRES WARNING SHOTS AT US DESTROYERS IN HORMUZ
+   "Iran fires warning shots at US destroyers near Strait of Hormuz"
+   [Crypto Briefing] — Direct IRGC engagement with US Navy in the strait.
+
+5. REPUBLICANS WORRIED TRUMP GETTING "WOBBLY" ON IRAN
+   [Mediaite, Jun 06] — WSJ columnist reporting GOP pressure on Trump
+   to maintain hard line. Internal US political dynamics affecting
+   negotiating posture. If Trump softens, deal probability rises;
+   if GOP hawks win, escalation risk increases.
+
+
+VERDICT ON NEWSAPI
+------------------------------------------------------------------------
+Useful but not essential given what we already have.
+
+PROS:
+  - description field is better than Google News title fragments
+  - Massive index (27k+ results for iran hormuz)
+  - Direct URL to articles (not Google redirect links)
+  - Globalsecurity.org, Japan Today, Times of India not in other feeds
+
+CONS:
+  - 12-24 hour delay on free tier — not real-time
+  - 100 req/day limit — 20 poll cycles maximum at 5 queries each
+  - Mixed source quality — needs allowlist filtering
+  - Content is truncated (no full body)
+  - Reuters/Bloomberg/FT/AP are indexed but not reliably surfaced in
+    top 10 results — dominated by smaller outlets on free tier
+
+RECOMMENDATION: Add to collector with source quality filter and low
+polling frequency (1-2x/day). Use primarily for daily sweep of
+longer-tail sources not captured by RSS feeds, not as real-time signal.
+
+REGISTER FOR: Mediastack (500/mo free) and TheNewsAPI as backups —
+both may have better real-time performance than NewsAPI free tier.

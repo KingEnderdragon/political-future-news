@@ -1,0 +1,259 @@
+Google News RSS Probe — Output Record
+Run date: 2026-06-07 20:48 UTC
+Script: _tmp_probe.py (inline)
+========================================================================
+
+
+RAW RESULTS
+------------------------------------------------------------------------
+
+Query: "iran hormuz"
+  status=200  total=100  relevant=100
+  Sources (first 10): Fortune, Iran International (Persian), CNN, CNBC,
+    Institute for the Study of War, i24NEWS, Egypt Oil & Gas, NBC News, WSJ, NYT
+  Relevant sample:
+    [Jun 07 02:46] [Fortune]    The Strait of Hormuz is more open than previously thought...
+    [Jun 07 10:31] [Iran Intl]  Iran lawmaker says ships pay up to $2 million to cross Hormuz
+    [Jun 07 20:24] [CNN]        Live updates: Israel says it intercepted missile fire from Iran
+    [Jun 06 11:09] [CNBC]       U.S. eyes Iranian assets for Gulf allies' reconstruction, source
+
+Query: "iran strait oil"
+  status=200  total=100  relevant=98
+  Sources (first 10): CNBC, Al Jazeera, PBS, NYT, The Atlantic, BBC,
+    New York Post, REUTERS, BLOOMBERG, The Guardian
+  Relevant sample:
+    [Jun 05 19:55] [CNBC]       Iran's threats against this Red Sea choke point are a big vulnerability
+    [Jun 05 13:19] [Al Jazeera] How the US naval blockade has bled Iran of nearly $6bn in oil revenue
+    [Jun 05 22:50] [PBS]        What may happen as oil supplies dwindle and Strait of Hormuz remains
+    [May 26 07:00] [NYT]        Global Oil Price Rises After U.S. Strikes in Iran Cloud Peace Deal
+
+Query: "IRGC missile"
+  status=200  total=100  relevant=100
+  Sources (first 10): BBC, Times of Israel, Tasnim (Persian: تسنیم),
+    Middle East Eye, Anadolu Ajansı, PressTV, Global Times, GULF NEWS,
+    IRNA English, WANA News Agency
+  Relevant sample:
+    [Jun 07 19:34] [BBC]          Iran fires missiles towards Israel as IDF says it is working to intercept
+    [Jun 07 19:40] [Times of Isr] IRGC says Israel must halt Lebanon attacks, refrain from responding
+    [Jun 06 05:11] [Tasnim]       IRGC Retaliatory Missile Attacks Target US Bases in Region
+    [Jun 07 20:08] [Middle East Eye] IRGC says missile attack on Israel was a 'warning'
+
+Query: "hormuz tanker"
+  status=200  total=100  relevant=100
+  Sources (first 10): OilPrice.com, New York Post, Financial Times,
+    Marine Insight, gCaptain, REUTERS, BLOOMBERG, GULF NEWS, Reuters, FT
+  Relevant sample:
+    [Jun 06 23:00] [OilPrice]    Oil Market Flying Blind as Dark Tanker Traffic Surges in Hormuz
+    [Jun 04 17:27] [NY Post]     Nearly 900 outbound tankers went 'dark' to squeeze through Strait
+    [Jun 06 12:28] [FT]          Oil tanker owners fear market crash after Iran war drove record prices
+    [Jun 05 10:52] [Marine Insight] 4 Iranian-Flagged Oil Tankers Leave Strait of Hormuz Despite U.S.
+
+Query: "iran nuclear deal"
+  status=200  total=100  relevant=98
+  Sources (first 10): CNBC, NYT, Al Jazeera, Times of Israel, WSJ,
+    Times of India, Fox News, Boston Globe, CNN, The Hill
+  Relevant sample:
+    [Jun 07 09:02] [NYT]         Trump Says Iran Has Made a 'Big' Nuclear Promise. It Isn't New.
+    [Jun 07 05:08] [Al Jazeera]  How many times were the US and Iran on the verge of a deal?
+    [Jun 07 14:30] [Times of Isr] Trump says he's 'very close' to Iran deal but seeks stricter nuclear terms
+
+Topic feed: World (news.google.com curated)
+  status=302  total=39  relevant=12
+  Sources: BBC, Axios, Reuters, Times of Israel, NBC, WashPost, AP NEWS, Reuters, Guardian, NPR
+  KEY ENTRY:
+    [Jun 07 04:42] [Washington Post] Iran launched missiles and drones toward Strait of Hormuz, U.S. military...
+
+Topic feed: Business
+  status=302  total=0  (empty)
+
+Fields across all queries: published, source, summary, title
+  source field is populated with outlet name — usable for arc pre-classification
+  has_body: False — titles + brief summaries only, same as other feeds
+  Link format: Google redirect URLs (news.google.com/read/CBM...) not direct article URLs
+
+
+========================================================================
+OBSERVATIONS
+------------------------------------------------------------------------
+
+1. THIS IS THE SINGLE MOST POWERFUL FREE SOURCE AVAILABLE
+   100 results per keyword query. No API key. No rate limits observed.
+   Source diversity is extraordinary — in a single query we get Reuters,
+   Bloomberg, Financial Times, NYT, WSJ alongside Gulf News, Tasnim,
+   PressTV, Anadolu, IRNA, Iran International, Marine Insight, gCaptain.
+
+   This solves every gap identified in the direct RSS probes:
+   - Wire gap (Reuters/AP dead): Reuters and Bloomberg appear directly
+   - Gulf gap (Al Arabiya/Arab News 403): Gulf News appears
+   - Tasnim (dead RSS): Tasnim appears (تسنیم in Persian script)
+   - Anadolu (dead RSS): Anadolu Ajansı appears
+   - PressTV (not yet probed): PressTV appears
+   - Iran International (wrong feed type): appears in Persian
+
+2. DEDUPLICATION IS THE PRIMARY INTEGRATION CHALLENGE
+   100 results per query across 5 queries = up to 500 entries per poll,
+   with massive cross-query overlap. The same event (e.g. Iran missile
+   launch) will appear in "iran hormuz," "IRGC missile," and "iran strait
+   oil" simultaneously, from 10-15 different outlets.
+   Title-similarity clustering (not URL matching) is the right dedup
+   approach — Google News redirect URLs are query-specific and will
+   differ even for the same article.
+
+3. GOOGLE NEWS LINK FORMAT — NOT DIRECT ARTICLE URLS
+   Links are in the format: news.google.com/read/CBMi...
+   These are Google redirect URLs, not direct article URLs.
+   For dedup purposes, the source + title combination is the stable
+   identifier. For scraping full content, the redirect must be followed
+   to reach the actual article URL.
+
+4. SOURCE FIELD IS POPULATED — USEFUL FOR ARC PRE-CLASSIFICATION
+   Every entry has a source.title field (outlet name). This means the
+   arc classifier can use source as a prior:
+     Tasnim/IRNA/Mehr/PressTV -> Iranian state framing layer
+     Gulf News/Arab News -> Gulf/Saudi perspective
+     gCaptain/Marine Insight/OilPrice -> Strait/shipping arc
+     FT/Bloomberg/Reuters -> Market arc
+     ISW/Think tanks -> Analytical layer
+
+5. CRITICAL NEW INTELLIGENCE FROM THIS PROBE
+   Several headlines not in our existing feed:
+
+   STRAIT (most important):
+   "Iran launched missiles and drones toward Strait of Hormuz, U.S. military..."
+   [WashPost, Jun 07] — Direct attack ON the strait, not on Israel or Gulf states.
+   This is a qualitatively different escalation event.
+
+   "Nearly 900 outbound tankers went 'dark' to squeeze through Strait of Hormuz"
+   [NY Post, Jun 04] — 900 AIS-dark tankers. Specific number. Key ForcingFunction
+   variable: dark tanker count is a direct physical supply disruption metric.
+
+   "Oil tanker owners fear market crash after Iran war drove record prices"
+   [FT, Jun 06] — Tanker owners fearing a crash suggests they are pricing in
+   de-escalation/reopening, not continued closure. Interesting counter-signal.
+
+   "4 Iranian-Flagged Oil Tankers Leave Strait of Hormuz Despite U.S."
+   [Marine Insight] — Iranian state tankers still moving. Selective closure.
+
+   MARKET/SUPPLY:
+   "The Strait of Hormuz is more open than previously thought"
+   [Fortune, Jun 07] — Direct contradiction of the 90-95% closure figure from
+   OilPrice.com. This is exactly the kind of cross-source contradiction the
+   arc classifier needs to flag. Two credible sources, opposite claims.
+
+   "U.S. eyes Iranian assets for Gulf allies' reconstruction"
+   [CNBC, Jun 06] — US may redirect frozen Iranian assets to rebuild Gulf states
+   hit by Iranian missiles (Bahrain, Kuwait). Major diplomatic/sanctions arc event.
+
+   "How the US naval blockade has bled Iran of nearly $6bn in oil revenue"
+   [Al Jazeera, Jun 05] — $6bn revenue loss quantified. Iran under severe economic
+   pressure. This is a ForcingFunction variable for the negotiation arc.
+
+   "IRGC Retaliatory Missile Attacks Target US Bases in Region"
+   [Tasnim, Jun 06] — IRGC hit US military bases directly (Bahrain hosts 5th Fleet).
+   This is not in our existing feed from direct sources.
+
+6. QUERY DESIGN MATTERS
+   The five queries tested show different source profiles:
+   - "iran hormuz": Western + analytical outlets
+   - "iran strait oil": Wire services + financial press dominate
+   - "IRGC missile": Iranian state media + regional outlets surface
+   - "hormuz tanker": Shipping-specialist outlets surface (gCaptain, Marine Insight)
+   - "iran nuclear deal": Diplomatic/political press dominates
+   Each query is effectively a different editorial lens on the same crisis.
+   Using all five gives broader coverage than any single direct RSS feed.
+
+7. RATE LIMITS — NOT YET TESTED
+   Five queries ran without rate limiting in this probe. Google News RSS
+   is not officially documented so rate limits are unclear. Need to test
+   behavior under repeated polling before relying on it for the collector.
+
+
+========================================================================
+VERDICT
+------------------------------------------------------------------------
+Google News RSS search is the highest-value single addition to MediaFlow.
+It fills every gap identified in the direct RSS probe program (wire services,
+Gulf press, Tasnim, Anadolu, PressTV) while also surfacing specialist outlets
+(gCaptain, Marine Insight, ISW) we hadn't identified.
+
+Integration approach:
+  - 5 targeted search queries, each run on a polling interval
+  - Heavy title-similarity deduplication across queries
+  - Source field as arc pre-classification prior
+  - Track source diversity to monitor coverage gaps
+  - Test rate limit behavior before committing to polling frequency
+
+NEXT STEP: Add Google News RSS to rss_collect.py with dedup logic.
+
+
+========================================================================
+RATE LIMIT TEST — 2026-06-07 20:50-20:52 UTC
+------------------------------------------------------------------------
+
+Test design: 4 scenarios of increasing aggression
+  Test 1: 10 burst requests, same query, zero delay
+  Test 2: 8 requests, same query, 2s delay
+  Test 3: 15 requests, rotating 5 queries, zero delay
+  Test 4: 10 rounds, rotating queries, 5s interval
+
+RESULTS: No rate limiting encountered under any condition.
+
+Test 1 — Burst, no delay:
+  All 10 requests: status=200, entries=100
+  Response times: 0.18-0.67s (first req slightly slower, cached after)
+  No degradation, no 429, no empty responses
+
+Test 2 — 2s delay:
+  All 8 requests: status=200, entries=100
+  Response times: 0.18-0.23s (consistent, fully cached)
+
+Test 3 — Query rotation, no delay:
+  All 15 requests across 5 queries: status=200, entries=100
+  First pass slightly slower (0.19-0.76s), second/third pass ~0.2s flat
+  Pattern: first fetch of each query hits the origin, subsequent fetches
+  served from Google's CDN cache at ~0.2s. Completely stable.
+
+Test 4 — Sustained 5s interval:
+  All 10 rounds: status=200, entries=100
+  Response times: 0.20-0.28s (fully cached, consistent)
+  No issues across a ~90 second sustained polling window.
+
+Total requests in test session: 43
+Total duration: ~76 seconds
+Rate limit events: 0
+Failed requests: 0
+
+CONCLUSIONS:
+
+1. NO PRACTICAL RATE LIMIT DETECTED
+   Google News RSS is served from a heavily cached CDN. Repeated queries
+   for the same search term return cached results almost instantly (~0.2s).
+   43 requests in 76 seconds produced zero failures. Google appears to
+   treat RSS feed fetches as lightweight read-only operations without
+   meaningful per-IP throttling.
+
+2. CACHING BEHAVIOR — IMPORTANT FOR FRESHNESS
+   The fast ~0.2s response on repeat queries means Google is serving
+   cached results, not live index queries. This has implications for
+   how often new articles actually appear in repeated polls:
+   - First fetch of a query: fresh from index (~0.5-0.7s)
+   - Subsequent fetches: cached (~0.2s) — may not reflect articles
+     published in the last few minutes
+   Practical implication: polling faster than ~5-10 minutes is likely
+   wasteful — the cache doesn't refresh that quickly. A 10-15 minute
+   polling interval per query is probably optimal.
+
+3. RECOMMENDED POLLING STRATEGY
+   - 5 queries, staggered 2-3 minutes apart within each cycle
+   - Full cycle every 10-15 minutes
+   - No rate limit delay needed between requests
+   - Monitor for empty responses or status changes over time —
+     Google has not officially documented this RSS endpoint and
+     could deprecate or throttle it without notice
+
+4. RISK NOTE
+   Google News RSS is undocumented and unofficial. It has worked reliably
+   for years but has no SLA or guarantee. If it goes down, the fallback
+   is the direct RSS feeds already in the collector (11 live feeds).
+   Build the integration with this in mind — Google News is an enhancement,
+   not a dependency.

@@ -1,0 +1,226 @@
+RSS Feed Exploratory Probe — Output Record
+Run date: 2026-06-07 ~20:24-20:26 UTC
+Script: rss_explore.py + rss_collect.py
+========================================================================
+
+
+RAW PROBE RESULTS — rss_explore.py
+------------------------------------------------------------------------
+
+Feed: Reuters World       https://feeds.reuters.com/reuters/worldNews
+  Status: no-status (feed dead / blocked)  |  Entries: 0
+
+Feed: Reuters Top News    https://feeds.reuters.com/reuters/topNews
+  Status: no-status (feed dead / blocked)  |  Entries: 0
+
+Feed: AP Top News         https://apnews.com/rss
+  Status: HTTP 404  |  Entries: 0
+
+Feed: Al Jazeera          https://www.aljazeera.com/xml/rss/all.xml
+  Status: HTTP 200  |  Total entries: 25  |  Relevant: 6
+  Fields: published, summary, tags, title
+  Missing: author, content, updated
+  Has summary: True  |  Full body in feed: False  |  Has tags: True
+
+Feed: Middle East Eye     https://www.middleeasteye.net/rss
+  Status: HTTP 200  |  Total entries: 20  |  Relevant: 16
+  Fields: author, published, summary, title
+  Missing: content, tags, updated
+  Has summary: True  |  Full body in feed: False  |  Has tags: False
+  NOTE: summaries are raw HTML from live-blog entries — require stripping
+
+Feed: BBC World           http://feeds.bbci.co.uk/news/world/rss.xml
+  Status: HTTP 302 (redirect, feedparser follows)  |  Total: 22  |  Relevant: 3
+  Fields: published, summary, title
+  NOTE: low relevance hit rate; some false positives (e.g. Iran mentioned
+  in AI/markets story peripherally). Keyword filter tuning needed.
+
+Feed: Guardian World      https://www.theguardian.com/world/rss
+  Status: HTTP 200  |  Total entries: 45  |  Relevant: 8
+  Fields: author, published, summary, tags, title, updated
+  Most complete field set of all feeds. Tags are rich and useful.
+  Full body: not in feed (summary only, but summaries are substantive).
+
+Feed: France24 Middle East  https://www.france24.com/en/middle-east/rss
+  Status: HTTP 200  |  Total entries: 30  |  Relevant: 12
+  Fields: author, published, summary, tags, title
+  Highest relevance density of all feeds — dedicated Middle East RSS.
+  Summaries are clean and informative.
+
+Deduplication probe: 0 cross-feed duplicates detected across 45 relevant
+articles. RSS sources have distinct editorial identities — unlike GDELT's
+wire syndication problem, cross-feed dedup is not a priority concern.
+Within a single feed (especially live-blogs on MEE), URL uniqueness is
+sufficient for dedup.
+
+Freshness:
+  Middle East Eye:  21:18 UTC (most current)
+  Al Jazeera:       20:01 UTC
+  BBC:              18:49 UTC
+  France24:         15:34 UTC
+  Guardian:         09:00 UTC (slowest to update world/rss)
+
+
+FIRST COLLECTOR RUN — rss_collect.py (20:26 UTC)
+------------------------------------------------------------------------
+41 items logged on first run. Full list:
+
+  [Guardian World]      US imposes new sanctions on Cuban president and Castro family members
+  [France24]            US rolls out new Iran-related sanctions
+  [France24]            'Not your country': Lebanese leaders rebuke Iran as Israel, Hezbollah trade attacks
+  [BBC World]           Is there an AI stock market bubble, and is it ready to burst?
+  [France24]            Ukraine: Dear Putin, Lebanon: A Crude Call, Colombia's 'Tiger'
+  [France24]            Iran launches ballistic missiles at Bahrain, Kuwait after US hits its radar sites
+  [Guardian World]      Aviation industry looks skywards as leaders fly in for Rio summit
+  [Guardian World]      Could this one man have been behind terrorist attacks on Jewish communities across Europe?
+  [France24]            Middle East live: Israel reports missiles from Iran in first bombardment since fragile ceasefire
+  [France24]            Iran war: 100 days on, a costly stalemate
+  [Al Jazeera]          From online class to Revolution Square: A Tehran teacher's routine amid war
+  [Middle East Eye]     Trump calls for more 'surgical' strikes on Hezbollah
+  [Guardian World]      Trump refuses to rule out using 'anti-weaponization' fund for Capitol rioters
+  [Guardian World]      UK readies sanctions against Israel to deter proposed illegal West Bank settlement
+  [Middle East Eye]     Pope Leo XIV wants to disarm AI. Its developers want to win the race
+  [Al Jazeera]          Trump says will not unfreeze Iranian assets before ceasefire deal reached
+  [Middle East Eye]     US lobbies UN nuclear watchdog to tighten pressure on Iran
+  [Middle East Eye]     Venezuela's Delcy Rodriguez to visit Turkey for talks with Erdogan
+  [Middle East Eye]     Iran speaker warns talks could collapse over Israeli attacks on Lebanon
+  [BBC World]           Zelensky in Downing Street for Ukraine war talks with European leaders
+  [Middle East Eye]     Hegseth insists Iran ceasefire holds as US warns Tehran over shipping
+  [Guardian World]      Trump reportedly considers buying Chagos Islands from Mauritius
+  [Middle East Eye]     Iran says frozen assets are not US war spoils
+  [Guardian World]      Iran launches missiles at Israel in response to strikes on Beirut
+  [Al Jazeera]          Iran losing patience with Israel and US over ceasefire violations
+  [Middle East Eye]     Israel says it detects Iranian missile launches
+  [Guardian World]      Middle East crisis live: Iran launches missiles towards Israel after Lebanon airstrike
+  [Middle East Eye]     Israel cancels schools and limits gatherings amid missile alerts
+  [Middle East Eye]     Israel says it intercepted two Iranian ballistic missiles
+  [Middle East Eye]     Iran fires missiles at Israel in retaliation for continued attacks on Lebanon
+  [Middle East Eye]     Israel says air defences intercept all Iranian missiles fired so far
+  [Middle East Eye]     IRGC says it targeted Israel's Ramat David airbase
+  [Middle East Eye]     IRGC says missile attack on Israel was a 'warning'
+  [Middle East Eye]     Iran partially closes western airspace amid missile fire
+  [Middle East Eye]     Trump said he was 'not happy' with Israel's Beirut attack, which triggered Iranian missile fire
+  [France24]            Hezbollah chief rejects truce as Israel vows continued operations in southern Lebanon
+  [France24]            France's ban on Israeli weapons at Eurosatory 'shameful', says economy minister
+  [France24]            Trump denies impasse in Iran talks after fresh strikes on Gulf countries
+  [France24]            'US war on Iran not about the Iranian people': Europe can put the issue on the agenda
+  [France24]            Months after the regime crackdown, Iranians search for missing protesters
+  [France24]            Iran says no 'tangible progress' in war talks, Trump says deal close
+
+
+========================================================================
+OBSERVATIONS
+------------------------------------------------------------------------
+
+1. FEED STATUS — THREE DEAD, FIVE LIVE
+   Reuters (both feeds) and AP are no longer publicly accessible via RSS.
+   This is a significant gap — wire services are the primary source of
+   fast, factual breaking news. Their absence means the feed leans toward
+   editorial and analytical outlets. Mitigated somewhat by France24 and
+   Al Jazeera having fast-updating dedicated Middle East feeds.
+   Action: investigate NewsAPI free tier as wire service substitute.
+
+2. FIELD AVAILABILITY — NO FULL BODY TEXT IN ANY FEED
+   All five live feeds provide title + summary only. No feed delivers
+   full article body via RSS. Summaries range from 1-2 sentences (BBC,
+   Al Jazeera) to 2-3 substantive paragraphs (France24, Guardian).
+   For arc classification and contradiction detection, summaries are
+   borderline sufficient. For deep content analysis, URL scraping
+   would be required.
+
+3. MIDDLE EAST EYE — HIGHEST SIGNAL DENSITY, LIVE-BLOG FORMAT
+   16 of 20 entries were relevant — best hit rate of all feeds.
+   However, MEE publishes a live-blog format where individual updates
+   are separate RSS entries sharing a parent URL. Summaries contain
+   raw HTML artifacts. The arc classifier will need HTML stripping
+   and awareness that multiple entries may belong to the same event thread.
+
+4. FRANCE24 MIDDLE EAST — BEST SUMMARY QUALITY
+   Dedicated Middle East feed with clean summaries and reliable tagging.
+   Highest information density per entry after HTML normalization.
+
+5. DEDUPLICATION — NOT A CROSS-FEED PROBLEM FOR RSS
+   Zero duplicate titles detected across feeds. Unlike GDELT's wire
+   syndication model, these are independent editorial outlets covering
+   the same events from their own angles. The same *event* may appear
+   in multiple feeds but with distinct summaries — this is signal
+   (cross-source confirmation) not noise.
+
+6. KEYWORD FALSE POSITIVES — FILTER NEEDS TIGHTENING
+   Several entries caught by keyword match are tangentially Iran-related
+   at best (Cuba sanctions story caught "Iran" in summary; AI bubble
+   story caught "Iran war" as passing reference; Venezuelan diplomat
+   story caught "Iran" via proxy). The arc classifier will need to
+   handle these gracefully — log them but assign low confidence or
+   a "peripheral" arc tag.
+
+7. THE ACTUAL SITUATION — WHAT THE FEED REVEALS
+   This is the most important observation. The collected headlines
+   describe not a crisis risk but an active war in progress:
+
+   KINETIC (last 48 hours):
+   - US struck Iranian coastal radar sites
+   - Iran retaliated: ballistic missiles + drones at Bahrain and Kuwait
+     (Bahrain hosts US Navy Fifth Fleet; Kuwait hosts US Army)
+   - Iran launched missiles at Israel (June 7) — first since April ceasefire
+   - IRGC struck Ramat David airbase; called attack a "warning"
+   - Iran partially closed western airspace during missile fire
+   - Israel intercepted all missiles so far; air defenses active
+
+   DIPLOMATIC:
+   - Trump says deal is "close" but will not unfreeze Iranian assets
+     before ceasefire
+   - Iran says "no tangible progress" in war talks
+   - Iran speaker warns talks may collapse over Lebanon attacks
+   - US lobbying IAEA to increase pressure on Iran
+   - Iran says frozen assets are not "US war spoils"
+   - Lebanon rebukes Iran for blocking ceasefire (Iran is now a spoiler)
+
+   STRAIT / SHIPPING:
+   - France24 explicitly states "near-closure of the Strait of Hormuz"
+     as current condition driving economic disruption
+   - US downed two Iranian drones targeting Hormuz shipping traffic
+     (from France24 live-blog URL slug: "us-downs-two-iranian-drones-
+     targeting-hormuz-shipping-traffic")
+   - Oil tankers described as "stuck behind strait of Hormuz" (Guardian)
+   - US SECDEF Hegseth "warns Tehran over shipping" while insisting
+     ceasefire holds — internal contradiction in US messaging
+
+   MARKET CONTEXT:
+   - US markets hitting record highs despite Iran war, inflation, debt
+   - BBC frames this as AI bubble story — markets explicitly discounting
+     the war risk
+   - This is the gap: physical supply disruption is real and documented;
+     market pricing has not fully adjusted
+
+   DURATION: Operation Epic Fury is at day 100 as of June 7, 2026.
+   The conflict "lasted far longer than expected" per France24.
+   This is not an acute spike event — it is a sustained disruption
+   with compounding physical effects on supply chains.
+
+8. IMPLICATIONS FOR MOCM ARCHITECTURE
+   The ForcingFunction was conceived as a model to *predict* a regime
+   shift from speculative selling to physical buying. The feed suggests
+   that shift may already be partially underway or imminent. The model
+   therefore has two immediate uses:
+   a) Measure how far the transition has progressed
+   b) Identify what would accelerate or reverse it from here
+   The historical calibration work (prior crises) remains essential for
+   establishing magnitude and trajectory benchmarks.
+
+
+========================================================================
+VERDICT ON RSS AS PRIMARY REAL-TIME SOURCE
+------------------------------------------------------------------------
+RSS is confirmed as the right backbone for MediaFlow-Ingest. No rate
+limits, adequate summary content for arc classification, five reliable
+sources covering the crisis from distinct editorial angles.
+
+Dead feeds (Reuters, AP) are a meaningful gap for fast wire-service
+breaking news. Investigate NewsAPI free tier as partial substitute.
+
+Immediate next steps:
+  1. Build arc classification layer using Claude API on collected summaries
+  2. Investigate NewsAPI to partially fill the Reuters/AP gap
+  3. Begin ForcingFunction variable taxonomy informed by what the feed
+     has already revealed about current physical conditions

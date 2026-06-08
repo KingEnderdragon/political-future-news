@@ -1,0 +1,158 @@
+Tier 2 RSS Feed Probe — Output Record
+Run date: 2026-06-07 ~20:36 UTC
+Script: rss_explore_t2.py
+========================================================================
+
+
+RAW RESULTS
+------------------------------------------------------------------------
+
+Feed: Mehr News (IRGC-adjacent)   https://en.mehrnews.com/rss
+  Status: HTTP 200  |  Total: 30  |  Relevant: 29
+  Fields: content, published, summary, tags, title
+  Has summary: True  |  FULL BODY IN FEED: TRUE  |  Has tags: True
+  Sample headlines:
+    [Jun 07 20:00]  Video: Firing missiles at Zionist regime from Kermanshah
+    [Jun 07 19:15]  Iran launches missiles at Zionist regime
+    [Jun 07 18:49]  Iran stands by Lebanon: Ejei
+    [Jun 07 17:19]  Ships paying up to $2m under new scheme in Hormuz: report
+    [Jun 07 16:56]  US bases, Zionist regime legitimate targets: Ghalibaf
+
+Feed: IRNA (Iranian state)        https://en.irna.ir/rss
+  Status: HTTP 200  |  Total: 30  |  Relevant: 29
+  Fields: content, published, summary, tags, title
+  Has summary: True  |  FULL BODY IN FEED: TRUE  |  Has tags: True
+  Sample headlines:
+    [Jun 07 20:08]  Iran pounds Israel with missiles, in response to attacks on Beirut
+    [Jun 07 18:45]  Ghalibaf: US, Israeli assets legitimate targets after attack on Lebanon
+    [Jun 07 16:35]  Israel launches strikes on Beirut's southern suburbs
+    [Jun 07 16:01]  $10 billion Iran-Pakistan trade target will be achieved, minister says
+    [Jun 07 15:59]  Speaker Ghalibaf seeks SNSC advice on holding public sessions of parliament
+
+Feed: Tasnim (IRGC-affiliated)    https://www.tasnimnews.com/en/rss
+  Status: no-status  |  Entries: 0
+  Alt URL tried:  tasnimnews.com/en/rss/0/0/0  -> no-status
+  DEAD — all URLs failed
+
+Feed: Iran International           https://www.iranintl.com/en/rss
+  Status: HTTP 200  |  Entries: 0 (wrong path)
+  Alt URL:  iranintl.com/feed  -> HTTP 200, 50 entries, 0 relevant
+  Fields at /feed: title, links, link, id, summary, published, tags, media_content
+  Has summary: True  |  Has content: False
+  Zero relevant despite 50 entries. Likely causes:
+    a) Feed covers diaspora/human rights topics, not military/Hormuz
+    b) Uses "Islamic Republic" rather than "Iran" in headlines
+    c) May be a video/podcast feed (media_content field present)
+  Action: manual inspection of feed titles required
+
+Feed: OilPrice.com                 https://oilprice.com/rss/main
+  Status: HTTP 200  |  Total: 15  |  Relevant: 9
+  Fields: author, published, summary, title
+  Has summary: True  |  Full body: False  |  Has tags: False
+  Sample headlines:
+    [Jun 06 18:00]  Oil Market Flying Blind as Dark Tanker Traffic Surges in Hormuz
+    [Jun 05 12:30]  SPR Borrowers Owe Uncle Sam 40 Million Extra Barrels
+    [Jun 05 12:10]  US Drillers Continue to Add Oil Rigs
+    [Jun 05 11:40]  Bank of England Official Says Oil Crisis Clouds Rate Outlook
+
+Feed: Anadolu Agency               https://www.aa.com.tr/en/rss/default?cat=breaking-news
+  Status: HTTP 404
+  Alt URL tried:  aa.com.tr/en/rss/default  -> HTTP 400
+  DEAD — all URLs failed
+
+Feed: Arab News                    https://www.arabnews.com/rss.xml
+  Status: HTTP 403 (blocking scrapers)
+  Alt URLs tried:  /taxonomy/term/2/feed, /middleeast/rss.xml  -> both 403
+  BLOCKED — actively refusing feedparser user-agent
+
+
+========================================================================
+OBSERVATIONS
+------------------------------------------------------------------------
+
+1. MEHR AND IRNA — BEST FEEDS IN THE ENTIRE COLLECTION
+   Both return full article body in the feed — unique among all sources
+   probed so far. 29/30 entries relevant. Fast-updating. These two feeds
+   alone give us the complete Iranian state/IRGC framing layer, which is
+   essential for the diplomatic and kinetic arcs.
+
+   The content framing is strikingly different from Western sources:
+   - "Zionist regime" throughout (not "Israel")
+   - "legitimate targets" language for US bases and Israeli assets
+   - Kermanshah missile launch reported with video as a straightforward
+     factual story, not framed as escalation
+
+   This divergence is itself a signal. When Iranian state media frames
+   an attack as routine and legitimate while Western media frames the
+   same event as escalation, the gap between those framings tells you
+   something about where each side thinks the conflict is headed.
+
+2. OILPRICE.COM — CRITICAL FORCINGFUNCTION DATA POINT
+   Headline: "Oil Market Flying Blind as Dark Tanker Traffic Surges in Hormuz"
+   Summary: "Tanker traffic through the Strait of Hormuz has collapsed by
+   90% to 95% compared to pre-war levels."
+
+   This is not a risk indicator. This is current physical reality.
+   90-95% traffic collapse means the Strait is functionally closed for
+   normal commercial shipping. Vessels that do transit are paying
+   $1.5M-$2M under a new (likely protection/safe-passage) scheme
+   per Mehr News. "Dark tanker" traffic surging means untracked vessels
+   operating outside normal AIS reporting — sanctions evasion and/or
+   Iranian-controlled routing.
+
+   Second key item: "SPR Borrowers Owe Uncle Sam 40 Million Extra Barrels"
+   The US Strategic Petroleum Reserve has been drawn down during the war.
+   40 million barrels owed = a supply obligation that constrains the
+   buffer available for further market intervention.
+
+3. DEAD/BLOCKED FEEDS — ALTERNATIVES NEEDED
+   Tasnim: dead at all tried URLs. Alternative: may need to scrape
+     tasnimnews.com directly or find a mirror.
+   Anadolu: wrong URL family. Need to find current Anadolu RSS path.
+     Their main site is aa.com.tr — RSS structure may have changed.
+   Arab News: actively blocking feedparser. Could try with browser-
+     spoofed user-agent, but unreliable. Alternative: Gulf News (UAE).
+
+4. IRAN INTERNATIONAL — LIKELY WRONG FEED TYPE
+   50 entries, zero keyword matches despite Iran-focused outlet.
+   The media_content field and zero relevant hits suggest this is
+   a video/multimedia feed. Need to find their text news RSS path.
+   Their coverage of Iranian domestic politics and human rights is
+   a useful counter-narrative to IRNA/Mehr framing.
+
+5. COMBINED PICTURE — WHAT MEHR + IRNA ADD TO THE ARC TIMELINE
+   Kinetic arc (today, from Iranian framing):
+   - Second wave of missiles fired from Kermanshah (western Iran)
+   - IRGC framing: response to Beirut attacks + US naval blockade
+   - Parliament Speaker Ghalibaf: US bases and Israeli assets are now
+     "legitimate targets" — this is an official escalation declaration
+   - Iran closing western airspace during missile fire (operational
+     security for the launch corridor)
+
+   Strait arc (from Mehr + OilPrice):
+   - Ships paying $1.5M-$2M per transit under unspecified "new scheme"
+   - 90-95% traffic collapse vs pre-war levels
+   - Dark tanker activity surging (AIS-dark vessels)
+   - This is the physical supply disruption that markets haven't priced
+
+
+========================================================================
+UPDATED SOURCE STATUS AFTER T2 PROBE
+------------------------------------------------------------------------
+CONFIRMED LIVE — add to collector:
+  Mehr News (IRGC-adjacent):   en.mehrnews.com/rss          [FULL BODY]
+  IRNA (Iranian state):        en.irna.ir/rss               [FULL BODY]
+  OilPrice.com:                oilprice.com/rss/main
+
+NEEDS FURTHER INVESTIGATION:
+  Iran International:          wrong feed path — find text news RSS
+  Anadolu Agency:              find current RSS URL
+  Arab News:                   try user-agent spoofing or find alternative
+
+DEAD:
+  Tasnim:                      all paths failed — find alternative
+
+NEXT TIER 2 ACTION:
+  Add Mehr, IRNA, OilPrice to rss_collect.py immediately.
+  Investigate Tier 3 feeds for Gulf/Israeli perspective to replace
+  dead Arab News and Anadolu.

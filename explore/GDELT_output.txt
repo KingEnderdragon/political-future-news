@@ -1,0 +1,144 @@
+GDELT DOC API — Exploratory Probe Output
+Run date: 2026-06-07 ~20:06-20:09 UTC
+Script: gdelt_explore.py
+Timespan queried: last 7 days
+========================================================================
+
+
+RAW OUTPUT (two runs)
+------------------------------------------------------------------------
+
+RUN 1 (20:06 UTC) — First run, no rate-limit delays between requests
+
+  Query: 'iran hormuz' (broad Hormuz)
+  Returned: 10 articles
+
+  [1] 20260607T191500
+      Title:  Trump Says U.S Will Work With Iran To Destroy Uranium If Deal Reached
+      Source: 1150wima.iheart.com | Lang: English
+      Tone:   (not returned)
+      URL:    https://1150wima.iheart.com/content/2026-06-07-trump-says-us-will-work-with-iran
+
+  [2] 20260607T191500
+      Title:  Trump Says U.S Will Work With Iran To Destroy Uranium If Deal Reached
+      Source: newstalk1130.iheart.com | Lang: English
+
+  [3] 20260607T191500
+      Title:  Iran says US naval blockade, support for Israel make American, Israeli assets legitimate
+      Source: aa.com.tr | Lang: English
+
+  [4] 20260607T190000
+      Title:  Trump Says U.S Will Work With Iran To Destroy Uranium If Deal Reached
+      Source: 1190kex.iheart.com | Lang: English
+
+  [5] 20260607T190000
+      Title:  Au 100e jour du conflit | L'Iran menace les États-Unis et Israël après des frappes sur Beyrouth
+      Source: lapresse.ca | Lang: French
+
+  Fields returned: ['url', 'url_mobile', 'title', 'seendate', 'socialimage', 'domain', 'language', 'sourcecountry']
+
+  All subsequent queries in Run 1 returned HTTP 429 (rate limited).
+
+
+RUN 2 (20:09 UTC) — Rerun with 6s delay between requests
+
+  Query: 'iran hormuz' (broad)         -> HTTP 429
+  Query: 'IRGC tanker' (kinetic)       -> HTTP 429
+  Query: 'Iran oil sanctions'          -> HTTP 429
+  Query: 'Iran nuclear deal'           -> HTTP 429
+
+  Query: 'Iran strait close' (closure threat) -> SUCCESS (5 articles)
+
+  [1] 20260607T191500
+      Title:  Trump Says U.S Will Work With Iran To Destroy Uranium If Deal Reached
+      Source: 1150wima.iheart.com | Lang: English | Country: United States
+
+  [2] 20260607T191500
+      Title:  JAPANSKI ULTIMATUM: Tokio postavio tri uslova za slanje vojske u Hormuz
+      Source: slobodna-bosna.ba | Lang: Croatian | Country: Bosnia-Herzegovina
+      URL:    https://www.slobodna-bosna.ba/vijest/488302/japanski_ultimatum_tokio_postavio_tri...
+      [Translation: "JAPANESE ULTIMATUM: Tokyo sets three conditions for sending military to Hormuz"]
+
+  [3] 20260607T191500
+      Title:  Trump Says U.S Will Work With Iran To Destroy Uranium If Deal Reached
+      Source: newstalk1130.iheart.com | Lang: English | Country: United States
+
+  Probe 2 (deduplication, 25 articles): HTTP 429
+  Probe 3 (TimelineVol mode): Timeout (>15s response time)
+
+
+========================================================================
+OBSERVATIONS
+------------------------------------------------------------------------
+
+1. RATE LIMITING
+   GDELT DOC API rate limits are more aggressive than their documentation
+   suggests. Even with 6s delays between requests, we hit 429s on the
+   second run immediately. The first run exhausted a short-window quota
+   (likely per-IP, per-minute). The API is not viable for polling more
+   than ~1 query per 10-15 seconds, and may have a harder session cap.
+   Verdict: unsuitable as a real-time polling backbone without careful
+   throttling and caching.
+
+2. FIELD AVAILABILITY
+   ArtList mode returns only: url, url_mobile, title, seendate,
+   socialimage, domain, language, sourcecountry.
+   No article body text. No sentiment/tone score in this mode.
+   No named entity extraction. No CAMEO event codes in DOC API
+   (those are in the separate GDELT Events dataset, different endpoint).
+   Verdict: metadata only. Content requires scraping the source URLs.
+
+3. DEDUPLICATION — CONFIRMED CRITICAL NEED
+   The Trump/Iran uranium headline appeared at least 3 times in a single
+   10-result page, across different iHeart radio syndication subdomains
+   (1150wima, newstalk1130, 1190kex). All same title, same timestamp,
+   different domains. A 25-result page would likely show 10-15 instances
+   of the same wire story. Title-similarity dedup (not URL-based) is
+   the right approach.
+
+4. LIVE SIGNAL QUALITY — TWO STORIES OF NOTE (2026-06-07)
+   a) Trump/Iran uranium deal: US offered to help destroy enriched
+      uranium if a deal is reached. Diplomatic arc — potential
+      de-escalation signal.
+   b) Japan ultimatum (Croatian source, Slobodna Bosna): Tokyo
+      apparently setting conditions for sending military to Hormuz.
+      Kinetic/diplomatic arc — significant escalation signal if verified.
+      NOTE: single non-anglophone source, requires cross-checking.
+
+5. MULTILINGUAL COVERAGE
+   Results included English, French, Croatian. GDELT indexes global
+   press. For the MediaFlow pipeline this is both an asset (broader
+   coverage) and a noise source (requires language filtering or
+   translation). Initial pipeline should filter to English only, with
+   a flag for non-English stories about Hormuz-specific events.
+
+6. TIMELINEVOL MODE
+   Timed out at 15s. This mode generates volume-over-time charts.
+   May require longer timeout or a different approach. Not critical
+   for the ingestion pipeline but useful for cadence analysis later.
+
+7. GDELT EVENTS DATABASE (not yet tested)
+   Separate from DOC API. Available as bulk CSV downloads updated
+   every 15 minutes. Contains CAMEO-coded events (military action,
+   diplomatic exchange, etc.) with actor/location fields. This may
+   actually be more useful for the ForcingFunction variable extraction
+   than the DOC API. Worth a separate probe.
+
+
+========================================================================
+VERDICT ON GDELT AS PRIMARY REAL-TIME SOURCE
+------------------------------------------------------------------------
+Not recommended as the real-time polling backbone for MediaFlow-Ingest.
+Rate limits make continuous monitoring impractical without significant
+delays. No article body text limits what the processing layer can work
+with (titles only).
+
+Better uses for GDELT in this project:
+  - Historical event lookup for ForcingFunction calibration
+  - GDELT Events bulk data for CAMEO-coded crisis event timelines
+  - Supplementary coverage check (not primary feed)
+
+RECOMMENDED NEXT STEP: probe RSS feeds from Reuters, AP, Al Jazeera,
+and Middle East Eye as the primary real-time backbone. No rate limits,
+often includes article summaries or full text, directly controllable
+polling frequency.

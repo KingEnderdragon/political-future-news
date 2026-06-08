@@ -1,0 +1,165 @@
+Tier 3 RSS Feed Probe — Output Record
+Run date: 2026-06-07 ~20:41 UTC
+Scripts: rss_explore_t3.py + alternate URL probes
+========================================================================
+
+
+RAW RESULTS
+------------------------------------------------------------------------
+
+Feed: Times of Israel     https://www.timesofisrael.com/feed/  (trailing slash required)
+  Status: HTTP 200  |  Total: 15  |  Relevant: 2
+  Fields: published, summary, tags, title
+  Has summary: True  |  Full body: False
+  NOTE: Original URL /feed (no slash) returned 403. /feed/ works.
+  Sample relevant:
+    [Jun 07 20:12]  IDF reveals key Hezbollah command tunnel network near south Lebanon's Beaufort
+    [Jun 07 19:52]  Trump: US 'very close' to deal with Iran, but demanding stricter nuclear terms
+
+Feed: Haaretz             https://www.haaretz.com/cmlink/1.628765
+  Status: HTTP 301 (redirect, feedparser did not follow)
+  Alt URL tried: haaretz.com/rss/  -> HTTP 404
+  DEAD — mostly paywalled anyway; low priority
+
+Feed: Gulf News           https://gulfnews.com/rss
+  Status: HTTP 404
+  Alt URLs tried: /rss/world, /rss/uae  -> both 404
+  DEAD — all paths failed
+
+Feed: Rudaw               https://www.rudaw.net/english/rss
+  Status: HTTP 200  |  Entries: 0
+  Alt URLs tried: rudaw.net/rss, rudaw.net/english/rss  -> all 200 but empty
+  DEAD — RSS endpoint exists but returns no entries
+
+Feed: DW World            https://rss.dw.com/rdf/rss-en-all
+  Status: HTTP 200  |  Total: 146  |  Relevant: 17
+  Fields: summary, tags, title, updated
+  Has summary: True  |  Full body: False  |  Has tags: True
+  NOTE: Uses 'updated' not 'published' — parser handles this correctly
+  Sample relevant:
+    [Jun 07 19:28]  Reports: Iran uses war as cover for increased executions
+    [Jun 07 07:54]  Middle East: Israel strikes Beirut in first since ceasefire
+    [Jun 05 18:15]  Germany's Iran war lessons after 100 days
+    [Jun 04 14:59]  Why Yad Vashem is coming to Germany
+    [Jun 04 10:54]  Can Hawaii wean itself of oil imports?
+
+Feed: RFE/RL              https://www.rferl.org/api/epiqq
+  Status: HTTP 200  |  Total: 20  |  Relevant: 8
+  Fields: published, summary, tags, title
+  Has summary: True  |  Full body: False  |  Has tags: True
+  Sample relevant:
+    [Jun 07 10:24]  Stealing Rain From Neighbors? Kazakhstan's Cloud-Seeding... [uranium angle]
+    [Jun 07 01:00]  Israel Says It Intercepts Fresh Wave Of Iranian Air Attacks
+    [Jun 06 13:06]  Project Sapphire: The Secret US Operation To Airlift Soviet Uranium Out Of Kazakhstan
+    [Jun 05 11:47]  Any Iran Deal Must Be Measured By Actions, Not Promises
+    [Jun 05 10:52]  From Iran To Ukraine: How Asymmetric Warfare Is Challenging Conventional Military Power
+
+ALTERNATE URL PROBES (run after main probe)
+  Times of Israel /feed/  -> 200, 15 entries  [LIVE - use this URL]
+  Jerusalem Post          -> 200, 30 entries but dates from June 2025 — STALE, not updating
+  TRT World               -> 404 dead
+
+
+========================================================================
+OBSERVATIONS
+------------------------------------------------------------------------
+
+1. DW — STRONG EUROPEAN ANALYTICAL LENS, LARGEST FEED
+   146 entries is the largest feed volume probed. 17 relevant.
+   German state broadcaster — neutral framing, strong analytical depth.
+   Covers the war's European policy implications and domestic Iran angle
+   (executions under cover of war) that no other feed addresses.
+   "Germany's Iran war lessons after 100 days" is the kind of structured
+   retrospective that is useful for ForcingFunction historical context.
+   One notable weakness: uses 'updated' field not 'published' — the
+   collector handles this but worth watching.
+
+2. RFE/RL — BEST ANALYTICAL DEPTH, CRITICAL DIPLOMATIC SIGNAL
+   Radio Free Europe/Radio Liberty. US government-funded but editorially
+   independent; specialist Iran/Central Asia coverage.
+   Most important item in entire Tier 3 probe:
+
+   "Kazakhstan has offered to host Iran's enriched uranium in order to
+   streamline a potential peace deal between Tehran and Washington."
+
+   This is a major diplomatic arc development. Kazakhstan hosting Iranian
+   enriched uranium removes the most contested obstacle to a deal —
+   Iran's insistence on retaining its nuclear material. If confirmed,
+   this could be the event that tips the diplomatic arc toward resolution
+   and triggers a speculative-to-physical reversal in the OTHER direction
+   (de-escalation repricing). Worth tracking closely.
+
+   Also notable: "From Iran to Ukraine: How Asymmetric Warfare Is
+   Challenging Conventional Military Power" — places Iran's drone/missile
+   doctrine in broader context relevant to ForcingFunction kinetic variables.
+
+3. TIMES OF ISRAEL — LIVE, LOW VOLUME, HIGH PRECISION
+   Only 2 relevant items but both high quality:
+   - IDF tunnel network revelation (kinetic/military arc)
+   - Trump demanding stricter nuclear terms (diplomatic arc)
+   The Israeli military framing is distinct from both Western editorial
+   and Iranian state coverage. Worth including despite low volume.
+   Use URL with trailing slash: timesofisrael.com/feed/
+
+4. DEAD/STALE FEEDS
+   Haaretz: Dead + paywalled. Not worth pursuing.
+   Gulf News: All paths 404. UAE perspective remains a gap.
+   Rudaw: Returns 200 but empty on all paths. RSS infrastructure broken.
+   Jerusalem Post: Returns entries dated June 2025 — feed abandoned.
+
+5. COVERAGE GAPS REMAINING AFTER TIER 3
+   After all three tiers, two significant gaps remain:
+
+   GULF/SAUDI PERSPECTIVE: Arab News (403), Gulf News (404), no UAE source.
+   The Gulf states are the primary physical supply actors and Hormuz
+   is their artery. Their official framing of the crisis is absent
+   from the feed. Possible substitute: Saudi state TV (Al Arabiya) —
+   investigate al-arabiya.net/rss.
+
+   REAL-TIME KINETIC SIGNAL: All RSS feeds have latency of 15-60 minutes.
+   For the kinetic arc (missile launches, naval movements, drone intercepts)
+   the fastest signals come from Telegram OSINT channels. This is the
+   primary argument for Phase 2 Telegram integration.
+
+6. NOTABLE SIGNAL FROM RFE/RL — PROJECT SAPPHIRE REFERENCE
+   The article about Kazakhstan's uranium hosting offer references
+   "Project Sapphire" — the 1994 US operation to airlift 600kg of
+   Soviet highly enriched uranium out of Kazakhstan to prevent it
+   falling to Iran or other actors. RFE/RL is drawing a direct
+   historical parallel to the current Kazakhstan offer. This is the
+   kind of cross-arc narrative (diplomatic + nuclear + historical) that
+   the arc classifier needs to handle — one event touching multiple arcs.
+
+
+========================================================================
+FINAL CONFIRMED LIVE FEED INVENTORY (all tiers)
+------------------------------------------------------------------------
+
+TIER 1 (confirmed earlier):
+  Al Jazeera              aljazeera.com/xml/rss/all.xml           summary only
+  Middle East Eye         middleeasteye.net/rss                   summary only
+  BBC World               feeds.bbci.co.uk/news/world/rss.xml     summary only
+  Guardian World          theguardian.com/world/rss               summary only
+  France24 Middle East    france24.com/en/middle-east/rss         summary only
+
+TIER 2 (confirmed earlier):
+  Mehr News               en.mehrnews.com/rss                     FULL BODY
+  IRNA                    en.irna.ir/rss                          FULL BODY
+  OilPrice.com            oilprice.com/rss/main                   summary only
+
+TIER 3 (confirmed this probe):
+  DW World                rss.dw.com/rdf/rss-en-all               summary only
+  RFE/RL                  rferl.org/api/epiqq                     summary only
+  Times of Israel         timesofisrael.com/feed/                 summary only
+
+TOTAL: 11 live feeds across 5 editorial perspectives:
+  Western editorial (Al Jazeera, BBC, Guardian, France24, MEE, DW, RFE/RL)
+  Iranian state/IRGC (Mehr, IRNA)
+  Energy-specific (OilPrice.com)
+  Israeli (Times of Israel)
+
+GAPS:
+  Gulf/Saudi: no live feed found — investigate Al Arabiya
+  Wire services: Reuters/AP dead — investigate NewsAPI free tier
+  Real-time kinetic: RSS latency ~15-60 min — Phase 2 Telegram
+  Kurdish/Eastern Iran border: Rudaw dead

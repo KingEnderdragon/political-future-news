@@ -1,0 +1,214 @@
+Additional Feeds Probe — Output Record
+Run date: 2026-06-07 21:23 UTC
+Script: rss_explore_additional.py
+========================================================================
+
+
+SUMMARY TABLE
+------------------------------------------------------------------------
+  Bing News: iran hormuz          HTTP 200   total=12   rel=12   summary
+  Bing News: hormuz tanker        HTTP 200   total=11   rel=11   summary
+  Bing News: IRGC missile         HTTP 200   total=12   rel=12   summary
+  Yahoo News RSS                  HTTP 200   total=50   rel=2    no summary
+  gCaptain                        HTTP 200   total=12   rel=9    summary
+  Marine Insight                  HTTP 200   total=15   rel=11   FULL BODY
+  ISW                             HTTP 301   total=0    rel=0    (redirect)
+  Reddit r/worldnews              HTTP 200   total=25   rel=9    full body
+  Reddit r/geopolitics            HTTP 200   total=25   rel=6    full body
+  Reddit r/iran                   HTTP 200   total=25   rel=25   full body
+  Reddit r/energy                 HTTP 200   total=25   rel=8    full body
+  MarketWatch                     HTTP 301   total=10   rel=1    summary
+  Seeking Alpha Oil&Gas           HTTP 404   dead
+  RAND                            HTTP 403   blocked
+  CSIS                            HTTP 404   dead
+  Carnegie Endowment              HTTP 200   total=0    empty
+  Brookings                       HTTP 302   redirect, empty
+
+
+========================================================================
+KEY FINDINGS BY SOURCE
+------------------------------------------------------------------------
+
+BING NEWS — THREE QUERIES, 100% RELEVANCE, BEST SUMMARIES SEEN
+Fields: published, summary, title. No source field (unlike Google News).
+Summaries are complete sentences with real context — noticeably better
+than Google News snippet fragments.
+
+Critical headlines not seen in any prior probe:
+
+  "Iran offers a 30-day Hormuz reopening plan as US-Iran standoff continues"
+  [Jun 07] — Iran has put a formal timed reopening proposal on the table.
+  This is a major diplomatic arc event. A 30-day conditional reopening
+  changes the ForcingFunction calculus — it's a negotiating position,
+  not a permanent closure signal.
+
+  "Trump calls Iran war a 'military exercise' even as Hormuz fighting heats up"
+  [Jun 07] — Trump is publicly framing the war as an exercise. This is the
+  speculative-selling narrative in the President's own words. The market
+  is not wrong to discount the risk if it is following the President's framing.
+  This is the contradiction between official narrative and physical reality
+  that the ForcingFunction is designed to measure.
+
+  "US fires missile at Iran-bound oil tanker in Strait of Hormuz"
+  [Jun 02] — US military fired a Hellfire missile at a commercial tanker.
+  This is a direct kinetic escalation in the strait itself — not an air
+  strike on Iranian territory. A modern Tanker War incident.
+
+  "IRGC cruise missile strikes US-linked cargo vessel MSC Sariska in Oman Sea"
+  [Jun 02 via ISW/Bing] — IRGC hitting commercial vessels with cruise
+  missiles. MSC Sariska is a named vessel — trackable incident for the
+  kinetic arc timeline.
+
+  "Many big oil tankers remain stuck in the Strait of Hormuz — and may not
+  return once war ends"
+  [Jun 01] — Physical infrastructure problem: large tankers are stuck, and
+  even post-war, the tanker class mix may not recover. Structural disruption.
+
+  "Oil exports through the Strait of Hormuz might not return to levels seen
+  before the war"
+  [May 30] — Corroborates the structural disruption narrative. Not just
+  a temporary closure but a reconfiguration of global oil routing.
+
+  "'Their new nuclear option': Why Iran's influence over the Strait of Hormuz
+  is here to stay regardless of any deal with Washington"
+  [Jun 03] — Iran's Hormuz leverage is structural, not contingent on the
+  current war. Even a peace deal doesn't restore the pre-war status quo.
+
+
+GCAPTAIN — SHIPPING SPECIALIST, REUTERS/BLOOMBERG WIRE IN FEED
+gCaptain aggregates Reuters and Bloomberg shipping/energy wire directly
+in its entries. This gives us wire content we can't get from dead RSS feeds.
+Fields: author, published, summary, tags, title. No full body.
+
+  "OPEC+ Set For Fourth Oil Quota Hike Since Hormuz Closure"
+  [Jun 07, Reuters via gCaptain] — OPEC+ has now raised production quotas
+  four times since the Hormuz closure, compensating with Gulf-bypassing
+  routes (pipelines, Red Sea, Cape of Good Hope rerouting). Key variable:
+  how much of the Hormuz shortfall can OPEC+ actually offset?
+
+  "Asia-To-US Container Rates Spike 109% Since Iran War Started"
+  [Jun 06, Bloomberg via gCaptain] — 109% container rate increase. Not
+  directly oil, but confirms the global shipping disruption is severe and
+  spreading beyond crude tankers.
+
+  "U.S. Counts Far More Hormuz Ship Transits Than Commercial Tracking Data Shows"
+  [Jun 05] — CRITICAL. US military counts nearly 1,000 commercial vessel
+  transits in/out of Hormuz. Commercial AIS tracking shows almost nothing.
+  THIS RESOLVES THE FORTUNE vs OILPRICE CONTRADICTION identified in the
+  Google News probe. Both sources were correct from their own data:
+    - OilPrice (90-95% collapse): based on AIS commercial tracking
+    - Fortune ("more open than thought"): based on US military count
+  The discrepancy is AIS-dark vessels — ships turning off transponders
+  to transit. The strait is physically passable but commercially invisible.
+  This is a ForcingFunction variable in itself: AIS dark rate = proxy for
+  actual vs reported traffic.
+
+
+MARINE INSIGHT — FULL BODY, SHIPPING SPECIALIST
+Fields: author, content, published, summary, tags, title. FULL BODY in feed.
+Second source (after Mehr/IRNA) to deliver complete article text.
+
+  "Iran Fires Drones & Missiles Towards Ships In Strait Of Hormuz & Gulf Neighbours"
+  [Jun 06] — Direct attack on shipping traffic in the strait.
+
+  "U.S Navy Interdicts Sanctioned, Stateless Oil Tanker MT Davina In Indian Ocean"
+  [Jun 05] — Named vessel (MT Davina) intercepted. US actively interdicting
+  Iranian oil exports beyond the strait itself.
+
+  "Iranian Navy Says Missiles, Drones Targeted US Warships — US Calls It False"
+  [Jun 05] — Directly conflicting claims about the same incident. Iran: warning
+  shots forced US destroyers from Sea of Oman. CENTCOM: false. This is the
+  exact type of contradiction the cross-checker needs to flag — same event,
+  directly opposing factual claims from named parties.
+
+
+REDDIT — FOUR SUBREDDITS LIVE, ALL FULL BODY
+Fields: author, content, published, summary, tags, title, updated.
+Note: Reddit RSS is community posts, not editorial articles. Signal is
+different — faster on some events, noisier overall, diaspora voices present.
+
+  r/iran — 25/25 relevant, oldest posts from Feb 2026 (historical depth)
+  "How The Mainstream Media Paved The Way To War With Iran" [Feb 2026]
+  — Counter-narrative to mainstream framing. Useful for understanding
+  how the crisis was being framed before it became a war.
+  "r/Iran stands with Iranians in defending our country's national sovereignty"
+  — Diaspora community statement. Different from both Western editorial
+  and Iranian state framing.
+
+  r/energy — "As Oil Prices Spike, Talk of 'Demand Destruction' Sets In"
+  [Jun 07] — Demand destruction is now a market discussion. This is a
+  ForcingFunction variable: if demand destruction offsets supply disruption,
+  the physical buying pressure never fully materializes.
+
+  r/worldnews — ongoing megathread: "US and Israel launch attack on Iran;
+  Iran retaliates" [May 23] — community live-blog of the war outbreak.
+  Contains links to primary sources and real-time updates.
+
+  r/geopolitics — analytical posts, lower news density, useful for
+  longer-form perspective pieces.
+
+
+YAHOO NEWS — LOW VALUE
+50 entries, only 2 relevant, no summaries. Titles only. Not worth adding.
+
+MARKETWATCH — MARGINAL
+Returns 10 entries via redirect. 1 relevant:
+"S&P 500 companies can't stop talking about higher oil prices. But few say
+they'll cut profits" — market arc signal. Low volume but the framing is
+useful for tracking corporate response to oil prices. Borderline worth adding.
+
+THINK TANKS — ALL DEAD OR EMPTY
+RAND: 403. CSIS: 404. Carnegie: empty. Brookings: redirect/empty.
+ISW: 301 redirect — needs follow. ISW appears in Google News and is
+valuable for structured battle assessment. Worth one more probe attempt.
+
+
+========================================================================
+CRITICAL NEW INTELLIGENCE — SYNTHESIS
+------------------------------------------------------------------------
+This probe session materially changes the picture in four ways:
+
+1. THE FORTUNE vs OILPRICE CONTRADICTION IS RESOLVED
+   Commercial AIS tracking: ~5-10% of pre-war traffic (OilPrice: 90-95% drop)
+   US military count: ~1,000 vessel transits (Fortune: "more open than thought")
+   Reality: vessels are transiting AIS-dark. The strait is physically passable
+   but commercially invisible. AIS dark rate is a direct ForcingFunction variable.
+
+2. IRAN HAS A FORMAL REOPENING PROPOSAL ON THE TABLE
+   30-day conditional reopening tied to removal of US threats. This is not
+   a closure-forever scenario — it's a negotiating position. The diplomatic
+   arc has an active offer in play that could rapidly change the physical supply
+   picture if accepted.
+
+3. TRUMP IS CALLING THE WAR A "MILITARY EXERCISE"
+   This is why markets haven't repriced. The President is publicly minimizing
+   the war. The speculative-selling posture is rational given official US
+   messaging — it only breaks down when physical supply reality can no longer
+   be ignored by market participants.
+
+4. TANKER WAR 2.0 IS UNDERWAY
+   US Hellfire on Iran-bound tanker. IRGC cruise missile on MSC Sariska.
+   Named vessels, documented incidents. This is the 1987-88 Tanker War
+   analog in real time. The historical calibration case is now the live case.
+
+
+========================================================================
+CONFIRMED LIVE — ADD TO COLLECTOR
+------------------------------------------------------------------------
+  Bing News (3 queries)    bing.com/news/search?q=...&format=rss   summary
+  gCaptain                 gcaptain.com/feed/                       summary + wire
+  Marine Insight           marineinsight.com/feed/                  FULL BODY
+  Reddit r/iran            reddit.com/r/iran/.rss                   full body
+  Reddit r/worldnews       reddit.com/r/worldnews/.rss              full body
+  Reddit r/energy          reddit.com/r/energy/.rss                 full body
+
+MARGINAL — MONITOR BUT DON'T ADD YET
+  Reddit r/geopolitics     lower signal density
+  MarketWatch              1 relevant item, low volume
+
+NOT WORTH ADDING
+  Yahoo News               no summaries, 4% relevance rate
+  All think tanks          all dead or empty
+
+NEEDS FOLLOW-UP
+  ISW                      301 redirect — find correct URL
