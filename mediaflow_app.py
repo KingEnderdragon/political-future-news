@@ -5,6 +5,7 @@ Run with: streamlit run mediaflow_app.py
 
 import json
 import os
+import threading
 import time
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -161,29 +162,39 @@ def run_classify() -> int:
     return mediaflow_classify.run()
 
 
-def maybe_collect() -> None:
-    """Run collect+classify if enough time has passed since the last run."""
-    last = st.session_state.get("last_collect", 0)
-    if time.time() - last < AUTO_COLLECT_INTERVAL_SECONDS:
-        return
-    if LOCK_FILE.exists():
-        return
-    try:
-        LOCK_FILE.touch()
-        run_collect()
-        run_classify()
-        st.session_state["last_collect"] = time.time()
-    finally:
-        LOCK_FILE.unlink(missing_ok=True)
+_collect_last: float = 0.0
+_collect_lock = threading.Lock()
+
+
+def _collect_loop() -> None:
+    global _collect_last
+    while True:
+        time.sleep(AUTO_COLLECT_INTERVAL_SECONDS)
+        if LOCK_FILE.exists():
+            continue
+        try:
+            LOCK_FILE.touch()
+            run_collect()
+            run_classify()
+            _collect_last = time.time()
+        except Exception as e:
+            print(f"[collector] error: {e}")
+        finally:
+            LOCK_FILE.unlink(missing_ok=True)
+
+
+@st.cache_resource
+def start_background_collector() -> None:
+    """Starts once per server process — runs collect regardless of browser sessions."""
+    t = threading.Thread(target=_collect_loop, daemon=True)
+    t.start()
 
 
 # ── live feed fragment ────────────────────────────────────────────────────────
 
 @st.fragment(run_every=AUTO_COLLECT_INTERVAL_SECONDS)
 def live_feed(limit: int, conflicts_only: bool) -> None:
-    """Collects and renders the feed. Runs on a timer without a full page
-    rerun, so the timezone converter iframe is never destroyed."""
-    maybe_collect()
+    """Display-only fragment. Collection runs in the background thread."""
 
     items = load_classified()
 
@@ -246,6 +257,8 @@ def main() -> None:
         initial_sidebar_state="expanded",
     )
 
+    start_background_collector()
+
     # Rendered once per full page load — MutationObserver stays alive
     # for the entire session, converting timestamps as the fragment adds them.
     inject_tz_converter()
@@ -271,7 +284,6 @@ def main() -> None:
                 run_collect()
             with st.spinner("Classifying new items…"):
                 classified = run_classify()
-            st.session_state["last_collect"] = time.time()
             st.toast(f"Feed updated. {classified} new items classified.")
             st.rerun()
 
