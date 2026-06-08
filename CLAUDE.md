@@ -228,12 +228,18 @@ through Google/Bing/NewsAPI unless a dedicated parser is added.
 | iran hormuz, hormuz tanker, iran nuclear deal,    | 100 req/day free tier; ~12-24hr delay; source      |
 | iran oil sanctions                                | blocklist applied; adds CNA, Forbes, India, CBC    |
 
-**TIER 5 — Dead / Paywalled**
+**TIER 5 — Dead / Paywalled / Broken in Production**
 | Source               | Notes                                                              |
 |----------------------|--------------------------------------------------------------------|
 | Reuters              | RSS no longer publicly accessible                                  |
 | AP                   | HTTP 404                                                           |
 | Platts / Lloyd's     | Paywalled ($1k+/mo) — Phase 2 consideration                        |
+| IRNA                 | Confirmed live June 7 (29/30 relevant, full body) but 12s read timeout on every production cycle; 0 items ever collected. Re-probe if Mehr News degrades. May need User-Agent spoofing or mirror URL. |
+| Tasnim News          | All URLs failed during probe                                       |
+| Anadolu Agency       | 404/400 on all tried paths                                         |
+| Haaretz              | 301 redirect + paywalled                                           |
+| Gulf News            | 404 all paths                                                      |
+| ISW                  | 301 redirect — correct URL unknown                                 |
 
 ---
 

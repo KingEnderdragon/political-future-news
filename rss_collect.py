@@ -36,7 +36,9 @@ FEEDS = {
     "France24 Middle East": "https://www.france24.com/en/middle-east/rss",
     # Tier 2 — Iranian state/IRGC framing (full body in feed)
     "Mehr News":            "https://en.mehrnews.com/rss",
-    "IRNA":                 "https://en.irna.ir/rss",
+    # IRNA (en.irna.ir/rss) — removed: confirmed live June 7 but consistently
+    # times out in production (12s read timeout, 0 items ever collected).
+    # Probe again if Mehr News degrades; may need User-Agent spoofing or mirror URL.
     # Tier 2 — Energy-specific
     "OilPrice.com":         "https://oilprice.com/rss/main",
     "EIA Today in Energy":  "https://www.eia.gov/rss/todayinenergy.xml",
