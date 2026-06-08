@@ -304,7 +304,7 @@ def main() -> None:
 
     col1, col2 = st.columns([7.8, 1.775])
     with col1:
-        st.image("title_graphic.png", use_container_width=True)
+        st.image("title_graphic.png", width=280)
     with col2:
         st.markdown(
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
