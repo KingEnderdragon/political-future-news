@@ -140,7 +140,7 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
     arc_tag = ""
     if show_arc_tag and arc:
         label = ARC_LABEL.get(arc, arc)
-        arc_tag = f'<span class="arc-label" style="font-size:0.7em;color:{color};font-weight:600;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
+        arc_tag = f'<span class="arc-label" style="font-size:0.7em;color:{color};font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
 
     conflict_mark = (
         '<span style="color:#c0392b;font-weight:700" title="Conflicting claims reported">⚡</span> '
