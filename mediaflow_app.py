@@ -152,7 +152,7 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
     st.markdown(
         f"""<div style="border-left:3px solid {color};padding:7px 12px;margin-bottom:10px;">
 {arc_tag}<span style="color:#999;font-size:0.75em"><span {ts_attr}>{ts_display}</span> &nbsp;·&nbsp; {source}</span><br>
-{conflict_mark}<span style="font-size:0.9em;line-height:1.4">{summary}</span><br>
+{conflict_mark}<span class="main-text">{summary}</span><br>
 <a href="{link}" target="_blank" style="font-size:0.75em;color:#999;text-decoration:none">→ source</a>
 </div>""",
         unsafe_allow_html=True,
@@ -263,6 +263,7 @@ def main() -> None:
 
     st.markdown(
         """<style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
         [data-testid="stAppViewContainer"] { background: #fff; }
         [data-testid="stSidebar"] { display: none; }
         [data-testid="collapsedControl"] { display: none; }
@@ -274,6 +275,8 @@ def main() -> None:
         hr { margin: 0.3rem 0 !important; }
         .stCaption { margin-bottom: 0 !important; }
         h1, h2, h3 { margin-top: 0 !important; margin-bottom: 0 !important; }
+        .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
+        strong { font-family: 'Crimson Text', Georgia, serif; }
         </style>""",
         unsafe_allow_html=True,
     )
