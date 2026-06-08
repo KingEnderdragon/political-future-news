@@ -153,20 +153,109 @@ generation only for items that survive relevance or display filters.
 
 ---
 
+## Session 4 — Railway Deployment
+
+### What Was Done
+- Initialized git repo, pushed to private GitHub repo: OwenTanzer/oil-futures
+- Created `requirements.txt`, `railway.toml`, and `worker.py`
+- Added `DATA_DIR` env variable support to all three scripts so web service
+  and worker can share a Railway volume at `/data`
+- Added daily snapshot commits: worker copies data files into
+  `snapshots/YYYY-MM-DD/` and pushes to GitHub once per calendar day
+- Deployed web service on Railway — app is live on external URL
+- Volume attached to web service at `/data`
+- Env vars (ANTHROPIC_API_KEY, NEWSAPI_KEY) set on web service
+
+### Worker / Volume Problem — Unresolved
+Railway does not support attaching a single volume to two services.
+The worker service (`fulfilling-truth`) cannot share the web service's volume.
+This means the worker cannot write new items to the same data files the
+dashboard reads. **The "Update feed" button in the Railway deployment is
+effectively broken** — it runs but writes to ephemeral storage the dashboard
+never sees. This is the highest-priority infrastructure problem.
+
+Options not yet pursued:
+- Use a cron job on the web service itself (single service, single volume,
+  no sharing problem) — simplest fix
+- Use a database (Postgres, Redis) instead of flat JSON files — right
+  architecture long-term but more work
+- Push data back to GitHub on each update and have the web service pull —
+  ugly but functional
+
+---
+
+## Known Issues — Priority Order
+
+### CRITICAL
+1. **Update feed broken in Railway** — worker and web service can't share a
+   volume; new items never reach the dashboard. Fix: move the collect+classify
+   cycle into the web service itself via a cron schedule, eliminating the
+   separate worker entirely.
+
+### HIGH
+2. **Stale news displayed** — most recent Kinetic item as of 2026-06-08 was
+   from 09:25 UTC (Iran/Israel strikes), despite Iran subsequently announcing
+   a ceasefire. The feed is not reflecting events that happened after the last
+   local collect run. Directly related to issue #1.
+
+3. **Timezone display** — all timestamps shown in UTC with no label and no
+   user-local conversion. Users in other timezones cannot easily interpret
+   the feed. Fix: detect browser timezone via JS component and convert display
+   timestamps client-side, or at minimum label all times explicitly as UTC.
+
+### MEDIUM
+4. **Auto-refresh not working** — the browser-side reload timer appears
+   non-functional in the Railway deployment. Needs investigation; may be
+   a CSP or iframe sandboxing issue with the `components.html` injection.
+
+5. **UI is ugly** — the current interface is functional but not shareable.
+   Needs a design pass: better typography, cleaner layout, possibly a
+   headline-style card format instead of the current bordered list items.
+
+6. **Arc taxonomy needs refinement** — current arcs (KINETIC, DIPLOMATIC,
+   STRAIT_SHIPPING, MARKET, IEA_SUPPLY, UNMAPPED) are a reasonable first cut
+   but classification quality on edge cases is unreviewed. Items about Iranian
+   domestic politics, US domestic energy policy, and China demand signals are
+   landing inconsistently.
+
+7. **Keyword system is static and coarse** — keywords are a flat list with
+   no arc weighting. Ideally keywords would be arc-specific (KINETIC keywords
+   vs. MARKET keywords) and would be reviewed/updated daily as the crisis
+   evolves. An adaptive keyword system tied to a semi-daily review process
+   would reduce both false positives and missed items.
+
+### LOW / DEFERRED
+8. **Coverage gaps** — several high-value source categories not yet integrated:
+   - Discord/Telegram OSINT channels (TankerTrackers, OSINTdefender, etc.)
+     — fastest kinetic signal; should be explored before any paid service
+   - Reddit (r/iran, r/worldnews) — already probed and live; not yet added
+     to active feeds in rss_collect.py
+   - Better querying of existing free sources — Google News and Bing RSS
+     queries may be suboptimal; query strings could be tuned
+   - MarineTraffic free API tier — direct AIS tanker data; still unprobed
+   - ISW direct RSS — 301 redirect, correct URL still unknown
+
+9. **Event-level deduplication** — same event covered by 6 sources appears
+   as 6 separate items. Processor-level clustering still deferred.
+
+10. **Conflict flag cross-item detection** — currently flags only intra-article
+    denials, not contradictions between separate articles.
+
+---
+
 ## What Remains To Be Built
 
-### MediaFlow — Near Term
-1. Review Kinetic arc classification quality; tune if needed
-2. Tighten relevance filter to reduce noise items now landing in UNMAPPED
-3. ISW direct RSS feed — 301 redirect, correct URL still unknown
-4. Event-level deduplication / clustering (same event, multiple articles)
-   remains a processor task — currently each article appears separately
+### Immediate (before sharing with others)
+1. Fix the update feed / worker problem (cron on web service is likely fix)
+2. Fix or remove the auto-refresh (determine if it's a Railway CSP issue)
+3. Add explicit UTC label to all timestamps; consider browser-local conversion
+4. Basic UI cleanup pass
 
-### MediaFlow — Phase 2 (Deferred)
-- Telegram OSINT channels (TankerTrackers, OSINTdefender, naval monitors)
-  — fastest real-time kinetic signal; no rate limits on public channels
-- MarineTraffic API — direct AIS tanker position data; free tier available
-- Mediastack / TheNewsAPI as NewsAPI backup sources
+### MediaFlow — Near Term
+5. Adaptive keyword system — arc-specific keyword sets, semi-daily review hook
+6. Arc taxonomy review — manual pass through Kinetic arc; tune edge cases
+7. Add Reddit feeds (already probed live) to active collector
+8. Explore Telegram/Discord OSINT channels as Phase 2 real-time layer
 
 ### ForcingFunction (Not Yet Started)
 The classifier output has already surfaced several measurable variables
