@@ -276,7 +276,7 @@ def main() -> None:
     col1, col2 = st.columns([8, 1])
     with col1:
         st.markdown(
-            f"<div style='padding:4px 0 2px'>**MediaFlow: the Iran-Hormuz Crisis**{updated}</div>",
+            f"<div style='padding:4px 0 2px'><strong>MediaFlow: the Iran-Hormuz Crisis</strong>{updated}</div>",
             unsafe_allow_html=True,
         )
     with col2:
