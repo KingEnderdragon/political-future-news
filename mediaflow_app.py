@@ -212,39 +212,28 @@ def live_feed(limit: int, conflicts_only: bool) -> None:
     total_items = len(items)
     visible_all = min(total_items, all_limit)
 
-    tab_labels = [f"All ({visible_all}/{total_items})"]
+    tab_labels = ["All"]
     for arc in arc_keys:
-        count = sum(1 for i in items if i.get("arc") == arc)
-        tab_labels.append(f"{ARC_LABEL[arc]} ({min(limit, count)}/{count})")
+        tab_labels.append(ARC_LABEL[arc])
     if other_items:
-        tab_labels.append(f"Other / Unmapped ({min(limit, len(other_items))}/{len(other_items)})")
+        tab_labels.append("Other / Unmapped")
     tabs = st.tabs(tab_labels)
 
     with tabs[0]:
-        subset = items[:all_limit]
-        hidden = total_items - len(subset)
-        if hidden:
-            st.caption(f"Showing newest {len(subset)} of {total_items}; {hidden} older items hidden by the item limit.")
-        for item in subset:
+        for item in items[:all_limit]:
             render_item(item, show_arc_tag=True)
 
     for tab, arc in zip(tabs[1:], arc_keys):
         with tab:
             arc_items = [i for i in items if i.get("arc") == arc]
-            subset = arc_items[:limit]
-            if not subset:
+            if not arc_items:
                 st.caption("No items.")
-            elif len(arc_items) > len(subset):
-                st.caption(f"Showing newest {len(subset)} of {len(arc_items)}; older items hidden by the item limit.")
-            for item in subset:
+            for item in arc_items[:limit]:
                 render_item(item, show_arc_tag=False)
 
     if other_items:
         with tabs[-1]:
-            subset = other_items[:limit]
-            if len(other_items) > len(subset):
-                st.caption(f"Showing newest {len(subset)} of {len(other_items)}; older items hidden by the item limit.")
-            for item in subset:
+            for item in other_items[:limit]:
                 render_item(item, show_arc_tag=True)
 
 
