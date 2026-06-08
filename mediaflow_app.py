@@ -255,6 +255,8 @@ def main() -> None:
         [data-testid="stAppViewContainer"] { background: #fff; }
         [data-testid="stSidebar"] { display: none; }
         [data-testid="collapsedControl"] { display: none; }
+        [data-testid="stHeader"] { display: none; }
+        [data-testid="stToolbar"] { display: none; }
         .stTabs [data-baseweb="tab-list"] { gap: 4px; }
         .stTabs [data-baseweb="tab"] { padding: 6px 14px; }
         .block-container { padding-top: 1rem !important; }
