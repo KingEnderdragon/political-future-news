@@ -192,23 +192,21 @@ def start_background_collector() -> None:
 
 # ── live feed fragment ────────────────────────────────────────────────────────
 
+ITEMS_PER_ARC = 40
+
 @st.fragment(run_every=30)
-def live_feed(limit: int, conflicts_only: bool) -> None:
+def live_feed() -> None:
     """Display-only fragment. Polls for new data every 30s."""
 
     items = load_classified()
 
     if not items:
-        st.info("No classified items yet. Click 'Update feed' in the sidebar.")
+        st.info("No classified items yet. Click 'Update feed' to seed the feed.")
         return
-
-    if conflicts_only:
-        items = [i for i in items if i.get("conflict")]
 
     arc_keys = list(ARC_LABEL.keys())
     other_items = [i for i in items if i.get("arc") not in ARC_LABEL]
-    tab_arc_count = len(arc_keys) + (1 if other_items else 0)
-    all_limit = limit * tab_arc_count
+    all_limit = ITEMS_PER_ARC * len(arc_keys)
     total_items = len(items)
     visible_all = min(total_items, all_limit)
 
@@ -228,12 +226,12 @@ def live_feed(limit: int, conflicts_only: bool) -> None:
             arc_items = [i for i in items if i.get("arc") == arc]
             if not arc_items:
                 st.caption("No items.")
-            for item in arc_items[:limit]:
+            for item in arc_items[:ITEMS_PER_ARC]:
                 render_item(item, show_arc_tag=False)
 
     if other_items:
         with tabs[-1]:
-            for item in other_items[:limit]:
+            for item in other_items[:ITEMS_PER_ARC]:
                 render_item(item, show_arc_tag=True)
 
 
@@ -255,46 +253,35 @@ def main() -> None:
     st.markdown(
         """<style>
         [data-testid="stAppViewContainer"] { background: #fff; }
-        [data-testid="stSidebar"] { background: #fafafa; }
+        [data-testid="stSidebar"] { display: none; }
+        [data-testid="collapsedControl"] { display: none; }
         .stTabs [data-baseweb="tab-list"] { gap: 4px; }
         .stTabs [data-baseweb="tab"] { padding: 6px 14px; }
+        .block-container { padding-top: 1rem !important; }
         </style>""",
         unsafe_allow_html=True,
     )
 
-    # ── sidebar ───────────────────────────────────────────────────────────────
-    with st.sidebar:
-        st.markdown("**MediaFlow**")
-        st.caption("Iran / Hormuz · June 2026")
-        st.divider()
-
+    # ── header ────────────────────────────────────────────────────────────────
+    col1, col2 = st.columns([6, 1])
+    with col1:
+        st.markdown("**MediaFlow** &nbsp;·&nbsp; Iran / Hormuz")
+    with col2:
         if st.button("Update feed", use_container_width=True):
-            with st.spinner("Fetching feeds…"):
+            with st.spinner("Fetching…"):
                 run_collect()
-            with st.spinner("Classifying new items…"):
                 classified = run_classify()
-            st.toast(f"Feed updated. {classified} new items classified.")
+            st.toast(f"{classified} new items classified.")
             st.rerun()
 
-        st.divider()
+    if CLASSIFIED_FILE.exists():
+        mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
+        st.caption(f"Updated {mtime.strftime('%H:%M UTC')}")
 
-        limit = st.slider("Items per arc", 10, 100, 40, 10)
-        conflicts_only = st.checkbox("Conflict items only")
-
-        st.divider()
-
-        n_items, n_classified = item_counts()
-        st.markdown(f"**{n_items}** collected &nbsp; **{n_classified}** classified")
-        if CLASSIFIED_FILE.exists():
-            mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
-            st.caption(f"Updated {mtime.strftime('%H:%M UTC')}")
-
-    # ── header ────────────────────────────────────────────────────────────────
-    st.markdown("### MediaFlow &nbsp;·&nbsp; Iran / Hormuz")
     st.divider()
 
-    # ── live feed (collect + display in one fragment) ─────────────────────────
-    live_feed(limit=limit, conflicts_only=conflicts_only)
+    # ── live feed ─────────────────────────────────────────────────────────────
+    live_feed()
 
 
 if __name__ == "__main__":
