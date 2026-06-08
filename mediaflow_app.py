@@ -18,7 +18,7 @@ CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
 ITEMS_FILE      = DATA_DIR / "mediaflow_items.json"
 LOCK_FILE       = DATA_DIR / ".collect_lock"
 
-AUTO_COLLECT_INTERVAL_SECONDS = 900  # 15 minutes
+AUTO_COLLECT_INTERVAL_SECONDS = 300  # 5 minutes
 
 ARC_COLOR = {
     "KINETIC":        "#c0392b",
