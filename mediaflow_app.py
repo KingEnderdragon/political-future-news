@@ -16,6 +16,9 @@ DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
 CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
 ITEMS_FILE      = DATA_DIR / "mediaflow_items.json"
 
+# DEBUG: fast cycle to verify auto-collect works. Change to 900 for production.
+AUTO_COLLECT_INTERVAL_SECONDS = 30
+
 ARC_COLOR = {
     "KINETIC":        "#c0392b",
     "DIPLOMATIC":     "#2980b9",
@@ -55,7 +58,6 @@ def parse_dt(s: str) -> datetime:
 
 
 def fmt_dt_utc(s: str) -> tuple[str, str]:
-    """Returns (display_string, iso_utc_string) for a timestamp."""
     dt = parse_dt(s)
     if dt == datetime.min.replace(tzinfo=timezone.utc):
         return "—", ""
@@ -63,7 +65,6 @@ def fmt_dt_utc(s: str) -> tuple[str, str]:
 
 
 def inject_tz_converter() -> None:
-    """Injects JS that converts all data-utc spans to browser-local time."""
     st.iframe(
         """
         <script>
@@ -112,21 +113,6 @@ def item_counts() -> tuple[int, int]:
     return n_items, n_classified
 
 
-def schedule_autorefresh(interval_min: int) -> None:
-    interval_ms = max(1, interval_min) * 60 * 1000
-    st.iframe(
-        f"""
-        <script>
-        const intervalMs = {interval_ms};
-        window.setTimeout(() => {{
-            window.parent.location.reload();
-        }}, intervalMs);
-        </script>
-        """,
-        height=1,
-    )
-
-
 # ── rendering ─────────────────────────────────────────────────────────────────
 
 def render_item(item: dict, show_arc_tag: bool = False) -> None:
@@ -172,6 +158,16 @@ def run_classify() -> int:
     return mediaflow_classify.run()
 
 
+# ── auto-collect fragment ─────────────────────────────────────────────────────
+
+@st.fragment(run_every=AUTO_COLLECT_INTERVAL_SECONDS)
+def auto_collect() -> None:
+    run_collect()
+    new = run_classify()
+    if new > 0:
+        st.rerun()
+
+
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -183,7 +179,6 @@ def main() -> None:
 
     inject_tz_converter()
 
-    # force white background
     st.markdown(
         """<style>
         [data-testid="stAppViewContainer"] { background: #fff; }
@@ -215,11 +210,6 @@ def main() -> None:
 
         st.divider()
 
-        auto = st.checkbox("Auto-refresh")
-        interval = st.selectbox("Interval (min)", [5, 10, 15, 30], index=1, disabled=not auto)
-
-        st.divider()
-
         n_items, n_classified = item_counts()
         st.markdown(f"**{n_items}** collected &nbsp; **{n_classified}** classified")
         if CLASSIFIED_FILE.exists():
@@ -230,11 +220,14 @@ def main() -> None:
     st.markdown("### MediaFlow &nbsp;·&nbsp; Iran / Hormuz")
     st.divider()
 
+    # ── auto-collect (always on) ──────────────────────────────────────────────
+    auto_collect()
+
     # ── data ──────────────────────────────────────────────────────────────────
     items = load_classified()
 
     if not items:
-        st.info("No classified items yet. Use Collect → Classify in the sidebar.")
+        st.info("No classified items yet. Click 'Update feed' in the sidebar.")
         return
 
     if conflicts_only:
@@ -256,7 +249,6 @@ def main() -> None:
         tab_labels.append(f"Other / Unmapped ({min(limit, len(other_items))}/{len(other_items)})")
     tabs = st.tabs(tab_labels)
 
-    # All tab
     with tabs[0]:
         subset = items[:all_limit]
         hidden = total_items - len(subset)
@@ -265,7 +257,6 @@ def main() -> None:
         for item in subset:
             render_item(item, show_arc_tag=True)
 
-    # Per-arc tabs
     for tab, arc in zip(tabs[1:], arc_keys):
         with tab:
             arc_items = [i for i in items if i.get("arc") == arc]
@@ -284,10 +275,6 @@ def main() -> None:
                 st.caption(f"Showing newest {len(subset)} of {len(other_items)}; older items hidden by the item limit.")
             for item in subset:
                 render_item(item, show_arc_tag=True)
-
-    # ── auto-refresh ──────────────────────────────────────────────────────────
-    if auto:
-        schedule_autorefresh(interval)
 
 
 if __name__ == "__main__":
