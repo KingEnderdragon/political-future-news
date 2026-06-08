@@ -4,6 +4,7 @@ Run with: streamlit run mediaflow_app.py
 """
 
 import json
+import os
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -12,8 +13,9 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 HERE            = Path(__file__).parent
-CLASSIFIED_FILE = HERE / "mediaflow_classified.json"
-ITEMS_FILE      = HERE / "mediaflow_items.json"
+DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
+CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
+ITEMS_FILE      = DATA_DIR / "mediaflow_items.json"
 
 ARC_COLOR = {
     "KINETIC":        "#c0392b",

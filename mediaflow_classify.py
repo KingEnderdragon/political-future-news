@@ -14,8 +14,9 @@ from pathlib import Path
 import anthropic
 
 HERE = Path(__file__).parent
-ITEMS_FILE = HERE / "mediaflow_items.json"
-CLASSIFIED_FILE = HERE / "mediaflow_classified.json"
+DATA_DIR = Path(os.environ.get("DATA_DIR", HERE))
+ITEMS_FILE = DATA_DIR / "mediaflow_items.json"
+CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
 KEYS_FILE = Path(r"C:\Users\Owen\.claude\keys.env")
 
 BATCH_SIZE = 30

@@ -19,10 +19,11 @@ from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlparse
 
 # ── paths ────────────────────────────────────────────────────────────────────
-HERE      = Path(__file__).parent
-LOG_FILE    = HERE / "mediaflow_log.txt"
-STATE_FILE  = HERE / "mediaflow_seen.json"   # persists seen URLs/fingerprints
-ITEMS_FILE  = HERE / "mediaflow_items.json"  # structured item store for classifier
+HERE        = Path(__file__).parent
+DATA_DIR    = Path(os.environ.get("DATA_DIR", HERE))
+LOG_FILE    = DATA_DIR / "mediaflow_log.txt"
+STATE_FILE  = DATA_DIR / "mediaflow_seen.json"   # persists seen URLs/fingerprints
+ITEMS_FILE  = DATA_DIR / "mediaflow_items.json"  # structured item store for classifier
 KEYS_FILE   = Path(r"C:\Users\Owen\.claude\keys.env")
 
 # ── active feeds (dead feeds removed after probe) ───────────────────────────
