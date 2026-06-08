@@ -281,7 +281,7 @@ def main() -> None:
         .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
         .arc-label { font-family: 'Crimson Text', Georgia, serif; }
         .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
-        .stButton button { font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 1.02em !important; }
+        .stButton button { font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 1.25em !important; }
         </style>""",
         unsafe_allow_html=True,
     )
