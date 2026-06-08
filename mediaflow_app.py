@@ -281,12 +281,8 @@ def main() -> None:
         .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
         .arc-label { font-family: 'Crimson Text', Georgia, serif; }
         .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
-        .stButton button,
-        [data-testid="baseButton-secondary"],
-        [data-testid="baseButton-primary"] {
-            font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 1.02em !important;
-            padding-left: 0.4em !important; padding-right: 0.4em !important;
-        }
+        .stButton { text-align: center; }
+        .stButton button { font-size: 1.02em !important; }
         </style>""",
         unsafe_allow_html=True,
     )
@@ -312,7 +308,7 @@ def main() -> None:
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
             unsafe_allow_html=True,
         )
-        if st.button("Update", use_container_width=True, type="secondary"):
+        if st.button("Update", type="secondary"):
             with st.spinner("…"):
                 run_collect()
                 classified = run_classify()
