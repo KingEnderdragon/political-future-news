@@ -271,7 +271,9 @@ def main() -> None:
         [data-testid="stToolbar"] { display: none; }
         .block-container { padding-top: 0.4rem !important; padding-bottom: 0 !important; }
         .stTabs [data-baseweb="tab-list"] { gap: 4px; margin-top: 0 !important; }
-        .stTabs [data-baseweb="tab"] { padding: 6px 14px; font-family: 'Crimson Text', Georgia, serif !important; font-size: 1em; }
+        .stTabs [data-baseweb="tab"] { padding: 6px 14px; }
+        .stTabs [data-baseweb="tab"] *,
+        .stTabs [data-baseweb="tab"] { font-family: 'Crimson Text', Georgia, serif !important; font-size: 1em !important; }
         hr { margin: 0.3rem 0 !important; }
         .stCaption { margin-bottom: 0 !important; }
         h1, h2, h3 { margin-top: 0 !important; margin-bottom: 0 !important; }
@@ -279,7 +281,11 @@ def main() -> None:
         .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
         .arc-label { font-family: 'Crimson Text', Georgia, serif; }
         .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
-        .stButton button { font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 0.78em !important; }
+        .stButton button, .stButton button *,
+        [data-testid="baseButton-secondary"], [data-testid="baseButton-secondary"] *,
+        [data-testid="baseButton-primary"], [data-testid="baseButton-primary"] * {
+            font-family: 'Oxanium', monospace !important; font-weight: 700 !important;
+        }
         </style>""",
         unsafe_allow_html=True,
     )
