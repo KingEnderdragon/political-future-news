@@ -284,10 +284,14 @@ def main() -> None:
     )
 
     # ── header ────────────────────────────────────────────────────────────────
-    updated = "—"
+    updated_display = "—"
+    updated_iso = ""
     if CLASSIFIED_FILE.exists():
         mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
-        updated = mtime.strftime("%H:%M UTC")
+        updated_display = mtime.strftime("%H:%M UTC")
+        updated_iso = mtime.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    ts_attr = f'data-utc="{updated_iso}"' if updated_iso else ""
 
     col1, col2 = st.columns([8, 1])
     with col1:
@@ -297,7 +301,7 @@ def main() -> None:
         )
     with col2:
         st.markdown(
-            f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:2px 0'>updated {updated}</div>",
+            f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:2px 0'>updated <span {ts_attr}>{updated_display}</span></div>",
             unsafe_allow_html=True,
         )
         if st.button("Update", use_container_width=True):
