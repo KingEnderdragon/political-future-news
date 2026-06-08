@@ -305,9 +305,9 @@ def main() -> None:
 
     col1, col2 = st.columns([7.8, 1.775])
     with col1:
-        img_b64 = base64.b64encode((HERE / "title_graphic.png").read_bytes()).decode()
+        img_b64 = base64.b64encode((HERE / "55cb4ced-c8a8-4188-9ff7-376c5a52935b.png").read_bytes()).decode()
         st.markdown(
-            f'<img src="data:image/png;base64,{img_b64}" width="280" style="display:block;">',
+            f'<img src="data:image/png;base64,{img_b64}" style="width:100%;display:block;">',
             unsafe_allow_html=True,
         )
     with col2:
