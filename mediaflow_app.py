@@ -140,7 +140,7 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
     arc_tag = ""
     if show_arc_tag and arc:
         label = ARC_LABEL.get(arc, arc)
-        arc_tag = f'<span style="font-size:0.7em;color:{color};font-weight:600;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
+        arc_tag = f'<span class="arc-label" style="font-size:0.7em;color:{color};font-weight:600;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
 
     conflict_mark = (
         '<span style="color:#c0392b;font-weight:700" title="Conflicting claims reported">⚡</span> '
@@ -151,9 +151,9 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
 
     st.markdown(
         f"""<div style="border-left:3px solid {color};padding:7px 12px;margin-bottom:10px;">
-{arc_tag}<span style="color:#999;font-size:0.75em"><span {ts_attr}>{ts_display}</span> &nbsp;·&nbsp; {source}</span><br>
+{arc_tag}<span class="meta-text" style="color:#999;font-size:0.72em"><span {ts_attr}>{ts_display}</span> &nbsp;·&nbsp; {source}</span><br>
 {conflict_mark}<span class="main-text">{summary}</span><br>
-<a href="{link}" target="_blank" style="font-size:0.75em;color:#999;text-decoration:none">→ source</a>
+<a href="{link}" target="_blank" class="meta-text" style="font-size:0.72em;color:#999;text-decoration:none">→ source</a>
 </div>""",
         unsafe_allow_html=True,
     )
@@ -263,7 +263,7 @@ def main() -> None:
 
     st.markdown(
         """<style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Oxanium:wght@700&display=swap');
         [data-testid="stAppViewContainer"] { background: #fff; }
         [data-testid="stSidebar"] { display: none; }
         [data-testid="collapsedControl"] { display: none; }
@@ -275,10 +275,10 @@ def main() -> None:
         hr { margin: 0.3rem 0 !important; }
         .stCaption { margin-bottom: 0 !important; }
         h1, h2, h3 { margin-top: 0 !important; margin-bottom: 0 !important; }
-        body, .main-text, strong, .stMarkdown, .stCaption, button, [data-testid] {
-            font-family: 'Crimson Text', Georgia, serif !important;
-        }
-        .main-text { font-size: 1.05em; line-height: 1.5; }
+        body, .stMarkdown, .stCaption, button { font-family: 'Crimson Text', Georgia, serif !important; }
+        .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
+        .arc-label { font-family: 'Crimson Text', Georgia, serif; }
+        .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
         </style>""",
         unsafe_allow_html=True,
     )
