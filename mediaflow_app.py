@@ -16,8 +16,7 @@ DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
 CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
 ITEMS_FILE      = DATA_DIR / "mediaflow_items.json"
 
-# DEBUG: fast cycle to verify auto-collect works. Change to 900 for production.
-AUTO_COLLECT_INTERVAL_SECONDS = 30
+AUTO_COLLECT_INTERVAL_SECONDS = 900  # 15 minutes
 
 ARC_COLOR = {
     "KINETIC":        "#c0392b",
@@ -160,10 +159,18 @@ def run_classify() -> int:
 
 # ── auto-collect fragment ─────────────────────────────────────────────────────
 
+LOCK_FILE = DATA_DIR / ".collect_lock"
+
 @st.fragment(run_every=AUTO_COLLECT_INTERVAL_SECONDS)
 def auto_collect() -> None:
-    run_collect()
-    new = run_classify()
+    if LOCK_FILE.exists():
+        return
+    try:
+        LOCK_FILE.touch()
+        run_collect()
+        new = run_classify()
+    finally:
+        LOCK_FILE.unlink(missing_ok=True)
     if new > 0:
         st.rerun()
 
