@@ -281,8 +281,7 @@ def main() -> None:
         .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
         .arc-label { font-family: 'Crimson Text', Georgia, serif; }
         .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
-        .stButton { text-align: center; }
-        .stButton button { font-size: 1.02em !important; }
+        .stButton button { font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 1.02em !important; }
         </style>""",
         unsafe_allow_html=True,
     )
@@ -300,7 +299,7 @@ def main() -> None:
     col1, col2 = st.columns([7, 2])
     with col1:
         st.markdown(
-            "<div style='padding:6px 0 4px'><strong>MediaFlow: the Iran-Hormuz Crisis</strong></div>",
+            "<div style='padding:6px 0 4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis'><strong>MediaFlow: the Iran-Hormuz Crisis</strong></div>",
             unsafe_allow_html=True,
         )
     with col2:
@@ -308,7 +307,9 @@ def main() -> None:
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
             unsafe_allow_html=True,
         )
-        if st.button("Update", type="secondary"):
+        _, btn_col, _ = st.columns([1, 2, 1])
+        with btn_col:
+            if st.button("Update", type="secondary", use_container_width=True):
             with st.spinner("…"):
                 run_collect()
                 classified = run_classify()
