@@ -239,7 +239,7 @@ def live_feed() -> None:
 
 def main() -> None:
     st.set_page_config(
-        page_title="MediaFlow — Iran/Hormuz",
+        page_title="MediaFlow: the Iran-Hormuz Crisis",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -276,7 +276,7 @@ def main() -> None:
     col1, col2 = st.columns([8, 1])
     with col1:
         st.markdown(
-            f"<div style='padding:4px 0 2px'>**MediaFlow** &nbsp;·&nbsp; Iran / Hormuz{updated}</div>",
+            f"<div style='padding:4px 0 2px'>**MediaFlow: the Iran-Hormuz Crisis**{updated}</div>",
             unsafe_allow_html=True,
         )
     with col2:
