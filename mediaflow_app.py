@@ -268,22 +268,24 @@ def main() -> None:
     )
 
     # ── header ────────────────────────────────────────────────────────────────
-    col1, col2 = st.columns([6, 1])
+    updated = ""
+    if CLASSIFIED_FILE.exists():
+        mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
+        updated = f"&nbsp;·&nbsp; <span style='color:#999;font-size:0.8em'>updated {mtime.strftime('%H:%M UTC')}</span>"
+
+    col1, col2 = st.columns([8, 1])
     with col1:
-        st.markdown("**MediaFlow** &nbsp;·&nbsp; Iran / Hormuz")
+        st.markdown(
+            f"<div style='padding:4px 0 2px'>**MediaFlow** &nbsp;·&nbsp; Iran / Hormuz{updated}</div>",
+            unsafe_allow_html=True,
+        )
     with col2:
-        if st.button("Update feed", use_container_width=True):
-            with st.spinner("Fetching…"):
+        if st.button("Update", use_container_width=True):
+            with st.spinner("…"):
                 run_collect()
                 classified = run_classify()
             st.toast(f"{classified} new items classified.")
             st.rerun()
-
-    if CLASSIFIED_FILE.exists():
-        mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
-        st.caption(f"Updated {mtime.strftime('%H:%M UTC')}")
-
-    st.divider()
 
     # ── live feed ─────────────────────────────────────────────────────────────
     live_feed()
