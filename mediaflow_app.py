@@ -296,7 +296,7 @@ def main() -> None:
 
     ts_attr = f'data-utc="{updated_iso}"' if updated_iso else ""
 
-    col1, col2 = st.columns([8.25, 1.25])
+    col1, col2 = st.columns([8.75, 1])
     with col1:
         st.markdown(
             "<div style='padding:6px 0 4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis'><strong>MediaFlow: the Iran-Hormuz Crisis</strong></div>",
