@@ -271,7 +271,7 @@ def main() -> None:
         [data-testid="stToolbar"] { display: none; }
         .block-container { padding-top: 0.4rem !important; padding-bottom: 0 !important; }
         .stTabs [data-baseweb="tab-list"] { gap: 4px; margin-top: 0 !important; }
-        .stTabs [data-baseweb="tab"] { padding: 6px 14px; }
+        .stTabs [data-baseweb="tab"] { padding: 6px 14px; font-family: 'Crimson Text', Georgia, serif !important; font-size: 1em; }
         hr { margin: 0.3rem 0 !important; }
         .stCaption { margin-bottom: 0 !important; }
         h1, h2, h3 { margin-top: 0 !important; margin-bottom: 0 !important; }
@@ -279,6 +279,7 @@ def main() -> None:
         .main-text { font-family: 'Crimson Text', Georgia, serif; font-size: 1.05em; line-height: 1.5; }
         .arc-label { font-family: 'Crimson Text', Georgia, serif; }
         .meta-text { font-family: 'Oxanium', monospace; font-weight: 700; }
+        .stButton button { font-family: 'Oxanium', monospace !important; font-weight: 700 !important; font-size: 0.78em !important; }
         </style>""",
         unsafe_allow_html=True,
     )
@@ -301,10 +302,10 @@ def main() -> None:
         )
     with col2:
         st.markdown(
-            f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:2px 0'>updated <span {ts_attr}>{updated_display}</span></div>",
+            f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
             unsafe_allow_html=True,
         )
-        if st.button("Update", use_container_width=True):
+        if st.button("Update", use_container_width=True, type="secondary"):
             with st.spinner("…"):
                 run_collect()
                 classified = run_classify()
