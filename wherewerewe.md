@@ -204,15 +204,21 @@ Options not yet pursued:
    timestamps client-side, or at minimum label all times explicitly as UTC.
 
 ### HIGH
-3b. **Timezone fix attempted but not confirmed working** — implemented JS
-    `Intl.DateTimeFormat` detection that writes `?tz=` into the URL on first
-    load, then Python reads it via `st.query_params` and converts timestamps
-    using `zoneinfo`. Deployed 2026-06-08. User in Central time still seeing
-    UTC after deploy. Root cause unknown — need Railway logs before next fix
-    attempt. Likely candidates: the `components.html` iframe is sandboxed and
-    `window.parent.location.replace` is blocked; or the query param is being
-    read before the redirect completes; or `zoneinfo` fallback is silently
-    triggering. **Do not push another fix without pasting Railway logs first.**
+3b. **Timezone partially fixed** — v2 approach (JS reads `window.parent.document`
+    and rewrites `data-utc` spans client-side) works for items already on screen
+    at page load. Confirmed working 2026-06-08. Two remaining sub-bugs:
+    - **New entries still show UTC** — the MutationObserver is supposed to catch
+      Streamlit re-renders but is not converting newly added items. Likely cause:
+      `data-converted` attribute is being set on initial items but new items
+      injected by Streamlit may land in a part of the DOM the observer isn't
+      watching, or the observer fires before the new HTML is fully parsed.
+      Need Railway logs before attempting fix.
+    - **Page refresh wipes all collected entries** — refreshing the browser
+      returns the app to the base state of the committed JSON files, losing all
+      items collected since the last daily snapshot commit. This is the volume/
+      worker architecture problem: the web service writes to its volume but the
+      data is not re-seeded on restart from the volume correctly, or the volume
+      mount is not persisting between Streamlit reruns. Need Railway logs.
 
 ### MEDIUM
 4. **Auto-refresh not working** — the browser-side reload timer appears
