@@ -3,6 +3,7 @@ MediaFlow dashboard — Iran/Hormuz crisis monitor.
 Run with: streamlit run mediaflow_app.py
 """
 
+import base64
 import json
 import os
 import threading
@@ -304,7 +305,11 @@ def main() -> None:
 
     col1, col2 = st.columns([7.8, 1.775])
     with col1:
-        st.image("title_graphic.png", width=280)
+        img_b64 = base64.b64encode((HERE / "title_graphic.png").read_bytes()).decode()
+        st.markdown(
+            f'<img src="data:image/png;base64,{img_b64}" width="280" style="display:block;">',
+            unsafe_allow_html=True,
+        )
     with col2:
         st.markdown(
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
