@@ -200,9 +200,15 @@ Update feed button confirmed working — populates from scratch on first run.
     now that DATA_DIR is set. Worker DATA_DIR also set and confirmed.
 
 ### MEDIUM
-4. **Auto-refresh not working** — the browser-side reload timer appears
-   non-functional in the Railway deployment. Needs investigation; may be
-   a CSP or iframe sandboxing issue with the `components.html` injection.
+4. **Auto-collect** — fully resolved 2026-06-08. Replaced page-reload refresh
+   with `@st.fragment(run_every=N)` which runs collect+classify directly in
+   Python on a timer. Debug run at 30s confirmed working — logs showed items
+   being collected and classified in real-time. Two issues caught and fixed:
+   - Multiple open browser sessions each triggered their own fragment, causing
+     concurrent collect runs and Reddit 429 rate limiting. Fixed with a
+     file-based lock at `DATA_DIR/.collect_lock`.
+   - Interval set back to 900s (15 min) for production. Reddit 429s will
+     still occur occasionally at 15min but are non-fatal (clean WARN).
 
 5. **UI is ugly** — the current interface is functional but not shareable.
    Needs a design pass: better typography, cleaner layout, possibly a
