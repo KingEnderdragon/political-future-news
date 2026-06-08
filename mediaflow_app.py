@@ -32,9 +32,9 @@ ARC_COLOR = {
 ARC_LABEL = {
     "KINETIC":        "Kinetic",
     "DIPLOMATIC":     "Diplomatic",
-    "STRAIT_SHIPPING":"Strait / Shipping",
-    "MARKET":         "Market",
-    "IEA_SUPPLY":     "IEA / Supply",
+    "STRAIT_SHIPPING":"Maritime",
+    "MARKET":         "Financial",
+    "IEA_SUPPLY":     "Physical Supply",
 }
 
 
@@ -212,15 +212,15 @@ def live_feed(limit: int, conflicts_only: bool) -> None:
     total_items = len(items)
     visible_all = min(total_items, all_limit)
 
-    tab_labels = ["All"]
-    for arc in arc_keys:
-        tab_labels.append(ARC_LABEL[arc])
+    main_items = [i for i in items if i.get("arc") in ARC_LABEL]
+
+    tab_labels = ["All"] + list(ARC_LABEL.values())
     if other_items:
-        tab_labels.append("Other / Unmapped")
+        tab_labels.append("Other")
     tabs = st.tabs(tab_labels)
 
     with tabs[0]:
-        for item in items[:all_limit]:
+        for item in main_items[:all_limit]:
             render_item(item, show_arc_tag=True)
 
     for tab, arc in zip(tabs[1:], arc_keys):
