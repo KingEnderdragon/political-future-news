@@ -192,9 +192,9 @@ def start_background_collector() -> None:
 
 # ── live feed fragment ────────────────────────────────────────────────────────
 
-@st.fragment(run_every=AUTO_COLLECT_INTERVAL_SECONDS)
+@st.fragment(run_every=30)
 def live_feed(limit: int, conflicts_only: bool) -> None:
-    """Display-only fragment. Collection runs in the background thread."""
+    """Display-only fragment. Polls for new data every 30s."""
 
     items = load_classified()
 
