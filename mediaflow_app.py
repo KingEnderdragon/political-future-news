@@ -304,10 +304,7 @@ def main() -> None:
 
     col1, col2 = st.columns([7.8, 1.775])
     with col1:
-        st.markdown(
-            "<div style='padding:6px 0 4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis'><strong>MediaFlow: the Iran-Hormuz Crisis</strong></div>",
-            unsafe_allow_html=True,
-        )
+        st.image("title_graphic.jpg", use_container_width=True)
     with col2:
         st.markdown(
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
