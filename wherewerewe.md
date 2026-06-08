@@ -203,6 +203,17 @@ Options not yet pursued:
    the feed. Fix: detect browser timezone via JS component and convert display
    timestamps client-side, or at minimum label all times explicitly as UTC.
 
+### HIGH
+3b. **Timezone fix attempted but not confirmed working** — implemented JS
+    `Intl.DateTimeFormat` detection that writes `?tz=` into the URL on first
+    load, then Python reads it via `st.query_params` and converts timestamps
+    using `zoneinfo`. Deployed 2026-06-08. User in Central time still seeing
+    UTC after deploy. Root cause unknown — need Railway logs before next fix
+    attempt. Likely candidates: the `components.html` iframe is sandboxed and
+    `window.parent.location.replace` is blocked; or the query param is being
+    read before the redirect completes; or `zoneinfo` fallback is silently
+    triggering. **Do not push another fix without pasting Railway logs first.**
+
 ### MEDIUM
 4. **Auto-refresh not working** — the browser-side reload timer appears
    non-functional in the Railway deployment. Needs investigation; may be
