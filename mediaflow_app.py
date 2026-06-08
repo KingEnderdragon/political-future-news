@@ -8,6 +8,7 @@ import os
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -55,11 +56,38 @@ def parse_dt(s: str) -> datetime:
     return datetime.min.replace(tzinfo=timezone.utc)
 
 
-def fmt_dt(s: str) -> str:
+def get_user_tz() -> ZoneInfo:
+    tz_name = st.query_params.get("tz", "UTC")
+    try:
+        return ZoneInfo(tz_name)
+    except (ZoneInfoNotFoundError, KeyError):
+        return ZoneInfo("UTC")
+
+
+def inject_tz_detector() -> None:
+    components.html(
+        """
+        <script>
+        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const url = new URL(window.parent.location.href);
+        if (!url.searchParams.get('tz')) {
+            url.searchParams.set('tz', tz);
+            window.parent.location.replace(url.toString());
+        }
+        </script>
+        """,
+        height=0,
+    )
+
+
+def fmt_dt(s: str, tz: ZoneInfo | None = None) -> str:
     dt = parse_dt(s)
     if dt == datetime.min.replace(tzinfo=timezone.utc):
         return "—"
-    return dt.strftime("%b %d  %H:%M")
+    if tz:
+        dt = dt.astimezone(tz)
+        return dt.strftime("%b %d  %H:%M %Z")
+    return dt.strftime("%b %d  %H:%M UTC")
 
 
 # ── data ──────────────────────────────────────────────────────────────────────
@@ -98,11 +126,11 @@ def schedule_autorefresh(interval_min: int) -> None:
 
 # ── rendering ─────────────────────────────────────────────────────────────────
 
-def render_item(item: dict, show_arc_tag: bool = False) -> None:
+def render_item(item: dict, show_arc_tag: bool = False, tz: ZoneInfo | None = None) -> None:
     arc     = item.get("arc", "")
     color   = ARC_COLOR.get(arc, "#999")
     conflict = item.get("conflict", False)
-    ts      = fmt_dt(item.get("published", ""))
+    ts      = fmt_dt(item.get("published", ""), tz)
     source  = item.get("source", "")
     summary = item.get("arc_summary") or item.get("title", "")
     link    = item.get("link", "#")
@@ -147,6 +175,9 @@ def main() -> None:
         layout="wide",
         initial_sidebar_state="expanded",
     )
+
+    inject_tz_detector()
+    tz = get_user_tz()
 
     # force white background
     st.markdown(
@@ -228,7 +259,7 @@ def main() -> None:
         if hidden:
             st.caption(f"Showing newest {len(subset)} of {total_items}; {hidden} older items hidden by the item limit.")
         for item in subset:
-            render_item(item, show_arc_tag=True)
+            render_item(item, show_arc_tag=True, tz=tz)
 
     # Per-arc tabs
     for tab, arc in zip(tabs[1:], arc_keys):
@@ -240,7 +271,7 @@ def main() -> None:
             elif len(arc_items) > len(subset):
                 st.caption(f"Showing newest {len(subset)} of {len(arc_items)}; older items hidden by the item limit.")
             for item in subset:
-                render_item(item, show_arc_tag=False)
+                render_item(item, show_arc_tag=False, tz=tz)
 
     if other_items:
         with tabs[-1]:
@@ -248,7 +279,7 @@ def main() -> None:
             if len(other_items) > len(subset):
                 st.caption(f"Showing newest {len(subset)} of {len(other_items)}; older items hidden by the item limit.")
             for item in subset:
-                render_item(item, show_arc_tag=True)
+                render_item(item, show_arc_tag=True, tz=tz)
 
     # ── auto-refresh ──────────────────────────────────────────────────────────
     if auto:

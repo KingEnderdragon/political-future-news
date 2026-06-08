@@ -2,3 +2,4 @@ streamlit
 feedparser
 requests
 anthropic
+tzdata
