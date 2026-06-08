@@ -140,7 +140,7 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
     arc_tag = ""
     if show_arc_tag and arc:
         label = ARC_LABEL.get(arc, arc)
-        arc_tag = f'<span class="arc-label" style="font-size:0.9em;color:{color};font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
+        arc_tag = f'<span class="arc-label" style="font-size:0.83em;color:{color};font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
 
     conflict_mark = (
         '<span style="color:#c0392b;font-weight:700" title="Conflicting claims reported">⚡</span> '
@@ -284,18 +284,23 @@ def main() -> None:
     )
 
     # ── header ────────────────────────────────────────────────────────────────
-    updated = ""
+    updated = "—"
     if CLASSIFIED_FILE.exists():
         mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
-        updated = f"&nbsp;·&nbsp; <span style='color:#999;font-size:0.8em'>updated {mtime.strftime('%H:%M UTC')}</span>"
+        updated = mtime.strftime("%H:%M UTC")
 
     col1, col2 = st.columns([8, 1])
     with col1:
         st.markdown(
-            f"<div style='padding:4px 0 2px'><strong>MediaFlow: the Iran-Hormuz Crisis</strong>{updated}</div>",
+            "<div style='padding:6px 0 4px'><strong>MediaFlow: the Iran-Hormuz Crisis</strong></div>",
             unsafe_allow_html=True,
         )
     with col2:
+        st.markdown(
+            f"""<div style="border:1px solid #e0e0e0;border-radius:4px;padding:3px 6px;text-align:center;line-height:1.3;">
+<div style="font-size:0.72em;color:#999;font-family:'Oxanium',monospace;font-weight:700;">updated<br>{updated}</div>""",
+            unsafe_allow_html=True,
+        )
         if st.button("Update", use_container_width=True):
             with st.spinner("…"):
                 run_collect()
