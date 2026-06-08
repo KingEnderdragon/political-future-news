@@ -297,8 +297,7 @@ def main() -> None:
         )
     with col2:
         st.markdown(
-            f"""<div style="border:1px solid #e0e0e0;border-radius:4px;padding:3px 6px;text-align:center;line-height:1.3;">
-<div style="font-size:0.72em;color:#999;font-family:'Oxanium',monospace;font-weight:700;">updated<br>{updated}</div>""",
+            f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:2px 0'>updated {updated}</div>",
             unsafe_allow_html=True,
         )
         if st.button("Update", use_container_width=True):
