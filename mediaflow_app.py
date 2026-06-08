@@ -257,9 +257,12 @@ def main() -> None:
         [data-testid="collapsedControl"] { display: none; }
         [data-testid="stHeader"] { display: none; }
         [data-testid="stToolbar"] { display: none; }
-        .stTabs [data-baseweb="tab-list"] { gap: 4px; }
+        .block-container { padding-top: 0.4rem !important; padding-bottom: 0 !important; }
+        .stTabs [data-baseweb="tab-list"] { gap: 4px; margin-top: 0 !important; }
         .stTabs [data-baseweb="tab"] { padding: 6px 14px; }
-        .block-container { padding-top: 1rem !important; }
+        hr { margin: 0.3rem 0 !important; }
+        .stCaption { margin-bottom: 0 !important; }
+        h1, h2, h3 { margin-top: 0 !important; margin-bottom: 0 !important; }
         </style>""",
         unsafe_allow_html=True,
     )
