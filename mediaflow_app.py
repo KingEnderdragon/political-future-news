@@ -66,32 +66,41 @@ def fmt_dt_utc(s: str) -> tuple[str, str]:
     return dt.strftime("%b %d  %H:%M UTC"), dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+DISPLAY_RELOAD_INTERVAL_MS = 2 * 60 * 1000  # 2 minutes
+
+
 def inject_tz_converter() -> None:
-    """Renders once per full page load. MutationObserver stays alive for the
-    session and converts any data-utc spans the fragment adds later."""
+    """Renders once per full page load. Handles timezone conversion and
+    periodic page reload so backgrounded tabs stay current."""
     st.iframe(
-        """
+        f"""
         <script>
-        function convertTimestamps() {
-            try {
+        function convertTimestamps() {{
+            try {{
                 var els = window.parent.document.querySelectorAll('[data-utc]');
-                els.forEach(function(el) {
+                els.forEach(function(el) {{
                     var utc = el.getAttribute('data-utc');
                     if (!utc || el.getAttribute('data-converted')) return;
                     var dt = new Date(utc);
                     if (isNaN(dt)) return;
-                    el.textContent = dt.toLocaleString('en-US', {
+                    el.textContent = dt.toLocaleString('en-US', {{
                         month: 'short', day: 'numeric',
                         hour: '2-digit', minute: '2-digit',
                         timeZoneName: 'short'
-                    });
+                    }});
                     el.setAttribute('data-converted', '1');
-                });
-            } catch(e) {}
-        }
+                }});
+            }} catch(e) {{}}
+        }}
         convertTimestamps();
         var observer = new MutationObserver(convertTimestamps);
-        observer.observe(window.parent.document.body, {childList: true, subtree: true});
+        observer.observe(window.parent.document.body, {{childList: true, subtree: true}});
+
+        // Reload every 2 minutes regardless of tab focus state.
+        // Page reloads pick up fresh data from the background collector.
+        setInterval(function() {{
+            window.parent.location.reload();
+        }}, {DISPLAY_RELOAD_INTERVAL_MS});
         </script>
         """,
         height=1,
@@ -168,9 +177,10 @@ _collect_lock = threading.Lock()
 
 def _collect_loop() -> None:
     global _collect_last
+    # collect immediately on startup, then on interval
     while True:
-        time.sleep(AUTO_COLLECT_INTERVAL_SECONDS)
         if LOCK_FILE.exists():
+            time.sleep(30)
             continue
         try:
             LOCK_FILE.touch()
@@ -181,6 +191,7 @@ def _collect_loop() -> None:
             print(f"[collector] error: {e}")
         finally:
             LOCK_FILE.unlink(missing_ok=True)
+        time.sleep(AUTO_COLLECT_INTERVAL_SECONDS)
 
 
 @st.cache_resource
