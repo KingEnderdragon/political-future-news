@@ -8,7 +8,6 @@ import os
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -56,38 +55,43 @@ def parse_dt(s: str) -> datetime:
     return datetime.min.replace(tzinfo=timezone.utc)
 
 
-def get_user_tz() -> ZoneInfo:
-    tz_name = st.query_params.get("tz", "UTC")
-    try:
-        return ZoneInfo(tz_name)
-    except (ZoneInfoNotFoundError, KeyError):
-        return ZoneInfo("UTC")
+def fmt_dt_utc(s: str) -> tuple[str, str]:
+    """Returns (display_string, iso_utc_string) for a timestamp."""
+    dt = parse_dt(s)
+    if dt == datetime.min.replace(tzinfo=timezone.utc):
+        return "—", ""
+    return dt.strftime("%b %d  %H:%M UTC"), dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def inject_tz_detector() -> None:
+def inject_tz_converter() -> None:
+    """Injects JS that converts all data-utc spans to browser-local time."""
     components.html(
         """
         <script>
-        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        const url = new URL(window.parent.location.href);
-        if (!url.searchParams.get('tz')) {
-            url.searchParams.set('tz', tz);
-            window.parent.location.replace(url.toString());
+        function convertTimestamps() {
+            try {
+                var els = window.parent.document.querySelectorAll('[data-utc]');
+                els.forEach(function(el) {
+                    var utc = el.getAttribute('data-utc');
+                    if (!utc || el.getAttribute('data-converted')) return;
+                    var dt = new Date(utc);
+                    if (isNaN(dt)) return;
+                    el.textContent = dt.toLocaleString('en-US', {
+                        month: 'short', day: 'numeric',
+                        hour: '2-digit', minute: '2-digit',
+                        timeZoneName: 'short'
+                    });
+                    el.setAttribute('data-converted', '1');
+                });
+            } catch(e) {}
         }
+        convertTimestamps();
+        var observer = new MutationObserver(convertTimestamps);
+        observer.observe(window.parent.document.body, {childList: true, subtree: true});
         </script>
         """,
         height=0,
     )
-
-
-def fmt_dt(s: str, tz: ZoneInfo | None = None) -> str:
-    dt = parse_dt(s)
-    if dt == datetime.min.replace(tzinfo=timezone.utc):
-        return "—"
-    if tz:
-        dt = dt.astimezone(tz)
-        return dt.strftime("%b %d  %H:%M %Z")
-    return dt.strftime("%b %d  %H:%M UTC")
 
 
 # ── data ──────────────────────────────────────────────────────────────────────
@@ -126,14 +130,14 @@ def schedule_autorefresh(interval_min: int) -> None:
 
 # ── rendering ─────────────────────────────────────────────────────────────────
 
-def render_item(item: dict, show_arc_tag: bool = False, tz: ZoneInfo | None = None) -> None:
-    arc     = item.get("arc", "")
-    color   = ARC_COLOR.get(arc, "#999")
+def render_item(item: dict, show_arc_tag: bool = False) -> None:
+    arc      = item.get("arc", "")
+    color    = ARC_COLOR.get(arc, "#999")
     conflict = item.get("conflict", False)
-    ts      = fmt_dt(item.get("published", ""), tz)
-    source  = item.get("source", "")
-    summary = item.get("arc_summary") or item.get("title", "")
-    link    = item.get("link", "#")
+    ts_display, ts_iso = fmt_dt_utc(item.get("published", ""))
+    source   = item.get("source", "")
+    summary  = item.get("arc_summary") or item.get("title", "")
+    link     = item.get("link", "#")
 
     arc_tag = ""
     if show_arc_tag and arc:
@@ -145,9 +149,11 @@ def render_item(item: dict, show_arc_tag: bool = False, tz: ZoneInfo | None = No
         if conflict else ""
     )
 
+    ts_attr = f'data-utc="{ts_iso}"' if ts_iso else ""
+
     st.markdown(
         f"""<div style="border-left:3px solid {color};padding:7px 12px;margin-bottom:10px;">
-{arc_tag}<span style="color:#999;font-size:0.75em">{ts} &nbsp;·&nbsp; {source}</span><br>
+{arc_tag}<span style="color:#999;font-size:0.75em"><span {ts_attr}>{ts_display}</span> &nbsp;·&nbsp; {source}</span><br>
 {conflict_mark}<span style="font-size:0.9em;line-height:1.4">{summary}</span><br>
 <a href="{link}" target="_blank" style="font-size:0.75em;color:#999;text-decoration:none">→ source</a>
 </div>""",
@@ -176,8 +182,7 @@ def main() -> None:
         initial_sidebar_state="expanded",
     )
 
-    inject_tz_detector()
-    tz = get_user_tz()
+    inject_tz_converter()
 
     # force white background
     st.markdown(
@@ -259,7 +264,7 @@ def main() -> None:
         if hidden:
             st.caption(f"Showing newest {len(subset)} of {total_items}; {hidden} older items hidden by the item limit.")
         for item in subset:
-            render_item(item, show_arc_tag=True, tz=tz)
+            render_item(item, show_arc_tag=True)
 
     # Per-arc tabs
     for tab, arc in zip(tabs[1:], arc_keys):
@@ -271,7 +276,7 @@ def main() -> None:
             elif len(arc_items) > len(subset):
                 st.caption(f"Showing newest {len(subset)} of {len(arc_items)}; older items hidden by the item limit.")
             for item in subset:
-                render_item(item, show_arc_tag=False, tz=tz)
+                render_item(item, show_arc_tag=False)
 
     if other_items:
         with tabs[-1]:
@@ -279,7 +284,7 @@ def main() -> None:
             if len(other_items) > len(subset):
                 st.caption(f"Showing newest {len(subset)} of {len(other_items)}; older items hidden by the item limit.")
             for item in subset:
-                render_item(item, show_arc_tag=True, tz=tz)
+                render_item(item, show_arc_tag=True)
 
     # ── auto-refresh ──────────────────────────────────────────────────────────
     if auto:
