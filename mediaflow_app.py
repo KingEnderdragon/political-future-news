@@ -10,7 +10,6 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 HERE            = Path(__file__).parent
 DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
@@ -65,7 +64,7 @@ def fmt_dt_utc(s: str) -> tuple[str, str]:
 
 def inject_tz_converter() -> None:
     """Injects JS that converts all data-utc spans to browser-local time."""
-    components.html(
+    st.iframe(
         """
         <script>
         function convertTimestamps() {
@@ -115,7 +114,7 @@ def item_counts() -> tuple[int, int]:
 
 def schedule_autorefresh(interval_min: int) -> None:
     interval_ms = max(1, interval_min) * 60 * 1000
-    components.html(
+    st.iframe(
         f"""
         <script>
         const intervalMs = {interval_ms};
