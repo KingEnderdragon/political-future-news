@@ -1,13 +1,12 @@
 # Oil Futures — Project Documentation
 
-## Development Workflow
-
-### Before pushing fixes to Railway
-Always fetch the latest Railway deploy logs for the affected service before
-writing or pushing a fix. Paste them into the conversation so the root cause
-is confirmed before any code is changed. Skipping this wastes push cycles on
-guesses. To get logs: Railway dashboard → service → Deployments → latest
-deployment → View Logs. Paste the relevant error/warning lines here.
+---
+## ⚠ BEFORE TOUCHING ANY CODE FOR A RAILWAY BUG
+**Ask for logs first. Do not write or push fixes based on guesses.**
+Railway dashboard → oil-futures service → Deployments → latest → View Logs.
+Paste the relevant lines into the conversation, then diagnose, then fix.
+Two push cycles were wasted on the timezone bug by skipping this step.
+---
 
 
 ## System: Mooper Oil Crisis Model (MOCM)
