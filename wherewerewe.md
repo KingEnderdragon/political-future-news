@@ -195,21 +195,9 @@ Update feed button confirmed working — populates from scratch on first run.
    timestamps client-side, or at minimum label all times explicitly as UTC.
 
 ### HIGH
-3b. **Timezone partially fixed** — v2 approach (JS reads `window.parent.document`
-    and rewrites `data-utc` spans client-side) works for items already on screen
-    at page load. Confirmed working 2026-06-08. Two remaining sub-bugs:
-    - **New entries still show UTC** — the MutationObserver is supposed to catch
-      Streamlit re-renders but is not converting newly added items. Likely cause:
-      `data-converted` attribute is being set on initial items but new items
-      injected by Streamlit may land in a part of the DOM the observer isn't
-      watching, or the observer fires before the new HTML is fully parsed.
-      Need Railway logs before attempting fix.
-    - **Page refresh wipes all collected entries** — refreshing the browser
-      returns the app to the base state of the committed JSON files, losing all
-      items collected since the last daily snapshot commit. This is the volume/
-      worker architecture problem: the web service writes to its volume but the
-      data is not re-seeded on restart from the volume correctly, or the volume
-      mount is not persisting between Streamlit reruns. Need Railway logs.
+3b. **Timezone** — fully resolved 2026-06-08. All timestamps (including new
+    entries) display in browser-local time. Page refresh persists correctly
+    now that DATA_DIR is set. Worker DATA_DIR also set and confirmed.
 
 ### MEDIUM
 4. **Auto-refresh not working** — the browser-side reload timer appears
