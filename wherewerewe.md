@@ -166,21 +166,12 @@ generation only for items that survive relevance or display filters.
 - Volume attached to web service at `/data`
 - Env vars (ANTHROPIC_API_KEY, NEWSAPI_KEY) set on web service
 
-### Worker / Volume Problem — Unresolved
-Railway does not support attaching a single volume to two services.
-The worker service (`fulfilling-truth`) cannot share the web service's volume.
-This means the worker cannot write new items to the same data files the
-dashboard reads. **The "Update feed" button in the Railway deployment is
-effectively broken** — it runs but writes to ephemeral storage the dashboard
-never sees. This is the highest-priority infrastructure problem.
-
-Options not yet pursued:
-- Use a cron job on the web service itself (single service, single volume,
-  no sharing problem) — simplest fix
-- Use a database (Postgres, Redis) instead of flat JSON files — right
-  architecture long-term but more work
-- Push data back to GitHub on each update and have the web service pull —
-  ugly but functional
+### Worker / Volume Problem — Resolved
+Root cause: `DATA_DIR` env variable was never set on the web service, so
+the app was reading/writing the bundled repo JSON files instead of the
+volume. Every redeploy reset the data. Fixed 2026-06-08 by setting
+`DATA_DIR=/data` in Railway Variables. Volume now correctly used.
+Update feed button confirmed working — populates from scratch on first run.
 
 ---
 
