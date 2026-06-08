@@ -89,7 +89,7 @@ def inject_tz_converter() -> None:
         observer.observe(window.parent.document.body, {childList: true, subtree: true});
         </script>
         """,
-        height=0,
+        height=1,
     )
 
 
@@ -123,7 +123,7 @@ def schedule_autorefresh(interval_min: int) -> None:
         }}, intervalMs);
         </script>
         """,
-        height=0,
+        height=1,
     )
 
 
