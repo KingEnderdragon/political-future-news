@@ -296,7 +296,7 @@ def main() -> None:
 
     ts_attr = f'data-utc="{updated_iso}"' if updated_iso else ""
 
-    col1, col2 = st.columns([7, 2])
+    col1, spacer, col2 = st.columns([6, 0.5, 1.5])
     with col1:
         st.markdown(
             "<div style='padding:6px 0 4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis'><strong>MediaFlow: the Iran-Hormuz Crisis</strong></div>",
@@ -307,9 +307,7 @@ def main() -> None:
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
             unsafe_allow_html=True,
         )
-        _, btn_col, _ = st.columns([1, 2, 1])
-        with btn_col:
-            if st.button("Update", type="secondary", use_container_width=True):
+        if st.button("Update", type="secondary", use_container_width=True):
             with st.spinner("…"):
                 run_collect()
                 classified = run_classify()
