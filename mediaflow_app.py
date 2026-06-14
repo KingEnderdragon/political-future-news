@@ -72,27 +72,54 @@ DISPLAY_RELOAD_INTERVAL_MS = 2 * 60 * 1000  # 2 minutes
 
 
 def inject_hotkey_listener() -> None:
-    """Bind T key → click the ⌨ terminal button (newscenter mode only)."""
+    """Bind T key → click the terminal button.
+
+    Two fixes vs. naive approach:
+    - Use .st-key-goto_terminal CSS selector instead of fragile emoji text matching.
+    - Listen in EVERY iframe on the page, not just the parent document.
+      Streamlit renders its UI inside nested iframes; keydown fires wherever
+      focus lives, which is often not the parent document.
+    """
     st.iframe(
         """
         <script>
         (function() {
             var doc = window.parent.document;
-            if (doc.__hotkey_t__) return;
-            doc.__hotkey_t__ = true;
-            doc.addEventListener('keydown', function(e) {
+
+            function fireTerminal(e) {
                 if (e.key !== 't' && e.key !== 'T') return;
                 if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
                 if (e.ctrlKey || e.metaKey || e.altKey) return;
-                var btns = doc.querySelectorAll('button');
-                for (var i = 0; i < btns.length; i++) {
-                    var p = btns[i].querySelector('p');
-                    if (p && p.textContent.trim() === '⌨') {
-                        btns[i].click();
-                        return;
-                    }
-                }
-            });
+                var btn = doc.querySelector('.st-key-goto_terminal button');
+                if (btn) btn.click();
+            }
+
+            // Attach to the parent document once.
+            if (!doc.__hotkey_t_main__) {
+                doc.__hotkey_t_main__ = true;
+                doc.addEventListener('keydown', fireTerminal);
+            }
+
+            // Attach to every iframe (including Streamlit's own) so we catch
+            // keystrokes regardless of which frame currently has focus.
+            function attachToIframes() {
+                doc.querySelectorAll('iframe').forEach(function(f) {
+                    try {
+                        if (!f.__hotkey_t__) {
+                            f.__hotkey_t__ = true;
+                            f.contentDocument.addEventListener('keydown', fireTerminal);
+                        }
+                    } catch (ignore) {}
+                });
+            }
+            attachToIframes();
+
+            // Watch for iframes added later by Streamlit reruns.
+            if (!doc.__hotkey_t_obs__) {
+                doc.__hotkey_t_obs__ = true;
+                new MutationObserver(attachToIframes)
+                    .observe(doc.body, { childList: true, subtree: true });
+            }
         })();
         </script>
         """,
@@ -337,19 +364,13 @@ def main() -> None:
 
     ts_attr = f'data-utc="{updated_iso}"' if updated_iso else ""
 
-    col1, col2, col3 = st.columns([7.5, 1.775, 0.6])
+    col1, col2 = st.columns([7.8, 1.775])
     with col1:
         img_b64 = base64.b64encode((HERE / "55cb4ced-c8a8-4188-9ff7-376c5a52935b.png").read_bytes()).decode()
         st.markdown(
             f'<img src="data:image/png;base64,{img_b64}" style="width:100%;display:block;">',
             unsafe_allow_html=True,
         )
-    with col3:
-        st.markdown("<div style='padding-top:22px'>", unsafe_allow_html=True)
-        if st.button("⌨", key="goto_terminal", help="Terminal  [T]"):
-            st.session_state.mode = "terminal"
-            st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
     with col2:
         st.markdown(
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
@@ -360,6 +381,9 @@ def main() -> None:
                 run_collect()
                 classified = run_classify()
             st.toast(f"{classified} new items classified.")
+            st.rerun()
+        if st.button("🖥", key="goto_terminal", help="Terminal  [T]", use_container_width=True):
+            st.session_state.mode = "terminal"
             st.rerun()
 
     # ── live feed ─────────────────────────────────────────────────────────────
