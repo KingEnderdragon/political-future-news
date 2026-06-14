@@ -36,6 +36,18 @@ SERIES_META: dict[str, dict] = {
         "color":   "#e67e22",
         "aliases": ["exports"],
     },
+    "crude_imports": {
+        "label":   "Crude Oil Imports",
+        "unit":    "Thousand Barrels/Day",
+        "color":   "#8e44ad",
+        "aliases": ["imports"],
+    },
+    "crude_production": {
+        "label":   "Domestic Crude Production",
+        "unit":    "Thousand Barrels/Day",
+        "color":   "#c0392b",
+        "aliases": ["production", "prod"],
+    },
 }
 
 # Map alias → series key
@@ -81,18 +93,22 @@ hr { border-color: #ddd !important; }
 
 HELP_TEXT = """\
 COMMANDS
-  stocks [year|y1-y2]       commercial crude stocks (ex-SPR)  [MB]
-  demand [year|y1-y2]       total products supplied            [kb/d]
-  exports [year|y1-y2]      crude oil exports                  [kb/d]
+  stocks [year|y1-y2]         commercial crude stocks (ex-SPR)   [MB]
+  demand [year|y1-y2]         total products supplied             [kb/d]
+  exports [year|y1-y2]        crude oil exports                   [kb/d]
+  imports [year|y1-y2]        crude oil imports                   [kb/d]
+  production [year|y1-y2]     domestic crude production           [kb/d]
   aggregate_demand [year|y1-y2]
-                            products supplied + exports — total draw [kb/d]
-  ls                        list available data series
-  clear                     clear terminal history
-  back / exit               return to news feed
-  help                      show this message
+                              products supplied + exports          [kb/d]
+  aggregate_supply [year|y1-y2]
+                              imports + production                 [kb/d]
+  ls                          list available data series
+  clear                       clear terminal history
+  back / exit                 return to news feed
+  help                        show this message
 
-ALIASES  crude/inventory=stocks  supply/products=demand
-EXAMPLES  stocks 2026   demand 2020-2026   aggregate_demand
+ALIASES  crude/inventory=stocks  supply/products=demand  prod=production
+EXAMPLES  stocks 2026   aggregate_demand 2024-2026   aggregate_supply
 """
 
 
@@ -263,6 +279,27 @@ def _execute(cmd_str: str) -> list[dict[str, Any]]:
         return [
             {"type": "info", "text": f"{label_str}  ·  {range_str}  ·  {n} points"},
             {"type": "chart", "series": [series_key], "start": start, "end": end},
+        ]
+
+    # aggregate_supply = crude_imports + crude_production
+    if verb in ("aggregate_supply", "agg_supply", "total_supply"):
+        series_data = _load_series()
+        agg_keys = ["crude_imports", "crude_production"]
+        missing = [k for k in agg_keys if k not in series_data]
+        if missing:
+            return [{"type": "error", "text": f"Missing series: {missing}. Run build_timeseries.py."}]
+
+        start: date | None = None
+        end: date | None = None
+        if args:
+            start, end = _parse_year_range(args[0])
+            if start is None:
+                return [{"type": "error", "text": f"Unrecognised date format '{args[0]}'. Use YYYY or YYYY-YYYY."}]
+
+        range_str = f"{start} to {end}" if start else "all time"
+        return [
+            {"type": "info", "text": f"Aggregate Supply (Imports + Production)  ·  {range_str}  ·  kb/d"},
+            {"type": "chart", "series": agg_keys, "start": start, "end": end, "show_sum": True},
         ]
 
     # aggregate_demand = total_products_supplied + crude_exports
