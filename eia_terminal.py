@@ -19,10 +19,22 @@ DATA_DIR = Path(__file__).parent / "data"
 
 SERIES_META: dict[str, dict] = {
     "commercial_crude_exSPR": {
-        "label": "Commercial Crude Stocks (ex-SPR)",
-        "unit":  "Million Barrels",
-        "color": "#27ae60",
+        "label":   "Commercial Crude Stocks (ex-SPR)",
+        "unit":    "Million Barrels",
+        "color":   "#27ae60",
         "aliases": ["stocks", "crude", "inventory"],
+    },
+    "total_products_supplied": {
+        "label":   "Total Products Supplied",
+        "unit":    "Thousand Barrels/Day",
+        "color":   "#2980b9",
+        "aliases": ["demand", "supply", "products"],
+    },
+    "crude_exports": {
+        "label":   "Crude Oil Exports",
+        "unit":    "Thousand Barrels/Day",
+        "color":   "#e67e22",
+        "aliases": ["exports"],
     },
 }
 
@@ -69,19 +81,18 @@ hr { border-color: #ddd !important; }
 
 HELP_TEXT = """\
 COMMANDS
-  stocks [year]          crude stocks chart (all time or filtered to year)
-  stocks [y1]-[y2]       crude stocks chart between two years
-  crude  [...]           alias for stocks
-  inventory [...]        alias for stocks
-  ls                     list available data series
-  clear                  clear terminal history
-  back / exit            return to news feed
-  help                   show this message
+  stocks [year|y1-y2]       commercial crude stocks (ex-SPR)  [MB]
+  demand [year|y1-y2]       total products supplied            [kb/d]
+  exports [year|y1-y2]      crude oil exports                  [kb/d]
+  aggregate_demand [year|y1-y2]
+                            products supplied + exports — total draw [kb/d]
+  ls                        list available data series
+  clear                     clear terminal history
+  back / exit               return to news feed
+  help                      show this message
 
-EXAMPLES
-  stocks                 full time series
-  stocks 2026            Jan–Dec 2026
-  stocks 2020-2026       2020 through 2026
+ALIASES  crude/inventory=stocks  supply/products=demand
+EXAMPLES  stocks 2026   demand 2020-2026   aggregate_demand
 """
 
 
@@ -116,7 +127,7 @@ def _parse_year_range(arg: str) -> tuple[date | None, date | None]:
     return None, None
 
 
-def _build_chart(series_keys: list[str], start: date | None, end: date | None) -> go.Figure:
+def _build_chart(series_keys: list[str], start: date | None, end: date | None, show_sum: bool = False) -> go.Figure:
     series_data = _load_series()
     fig = go.Figure()
     for key in series_keys:
@@ -142,7 +153,37 @@ def _build_chart(series_keys: list[str], start: date | None, end: date | None) -
             marker=dict(size=4),
             hovertemplate="%{x|%b %d %Y}<br>%{y:,.1f} MB<extra></extra>",
         ))
-    unit = SERIES_META.get(series_keys[0], {}).get("unit", "MB") if len(series_keys) == 1 else "MB"
+    # Optional sum trace (for aggregate_demand)
+    if show_sum and len(series_keys) >= 2:
+        series_data = _load_series()
+        frames: list[pd.DataFrame] = []
+        for key in series_keys:
+            df = series_data.get(key)
+            if df is None:
+                continue
+            mask = pd.Series([True] * len(df))
+            if start:
+                mask &= df["data_date"].dt.date >= start
+            if end:
+                mask &= df["data_date"].dt.date <= end
+            val_col = next((c for c in df.columns if c != "data_date"), None)
+            if val_col:
+                frames.append(df[mask][["data_date", val_col]].rename(columns={val_col: key}))
+        if frames:
+            merged = frames[0]
+            for f in frames[1:]:
+                merged = merged.merge(f, on="data_date", how="inner")
+            merged["_sum"] = merged[series_keys].sum(axis=1)
+            fig.add_trace(go.Scatter(
+                x=merged["data_date"],
+                y=merged["_sum"],
+                mode="lines",
+                name="Aggregate Demand",
+                line=dict(color="#1a1a1a", width=2.5, dash="dot"),
+                hovertemplate="%{x|%b %d %Y}<br>%{y:,.0f} kb/d<extra>Aggregate</extra>",
+            ))
+
+    unit = SERIES_META.get(series_keys[0], {}).get("unit", "MB") if len(series_keys) == 1 else "Thousand Barrels/Day"
     fig.update_layout(
         template="plotly_white",
         paper_bgcolor="#fff",
@@ -222,6 +263,27 @@ def _execute(cmd_str: str) -> list[dict[str, Any]]:
         return [
             {"type": "info", "text": f"{label_str}  ·  {range_str}  ·  {n} points"},
             {"type": "chart", "series": [series_key], "start": start, "end": end},
+        ]
+
+    # aggregate_demand = total_products_supplied + crude_exports
+    if verb in ("aggregate_demand", "agg", "total_demand"):
+        series_data = _load_series()
+        agg_keys = ["total_products_supplied", "crude_exports"]
+        missing = [k for k in agg_keys if k not in series_data]
+        if missing:
+            return [{"type": "error", "text": f"Missing series: {missing}. Run build_timeseries.py."}]
+
+        start: date | None = None
+        end: date | None = None
+        if args:
+            start, end = _parse_year_range(args[0])
+            if start is None:
+                return [{"type": "error", "text": f"Unrecognised date format '{args[0]}'. Use YYYY or YYYY-YYYY."}]
+
+        range_str = f"{start} to {end}" if start else "all time"
+        return [
+            {"type": "info", "text": f"Aggregate Demand (Products Supplied + Crude Exports)  ·  {range_str}  ·  kb/d"},
+            {"type": "chart", "series": agg_keys, "start": start, "end": end, "show_sum": True},
         ]
 
     return [{"type": "error", "text": f"Unknown command: '{verb}'. Type 'help' for commands."}]
@@ -342,7 +404,7 @@ def render_terminal() -> None:
                 unsafe_allow_html=True,
             )
         elif t == "chart":
-            fig = _build_chart(entry["series"], entry.get("start"), entry.get("end"))
+            fig = _build_chart(entry["series"], entry.get("start"), entry.get("end"), entry.get("show_sum", False))
             st.plotly_chart(fig, use_container_width=True)
 
     # blinking cursor
