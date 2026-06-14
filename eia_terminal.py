@@ -21,7 +21,7 @@ SERIES_META: dict[str, dict] = {
     "commercial_crude_exSPR": {
         "label": "Commercial Crude Stocks (ex-SPR)",
         "unit":  "Million Barrels",
-        "color": "#00cc66",
+        "color": "#27ae60",
         "aliases": ["stocks", "crude", "inventory"],
     },
 }
@@ -36,27 +36,29 @@ for _k, _v in SERIES_META.items():
 TERMINAL_CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
-[data-testid="stAppViewContainer"] { background: #0a0a0a !important; }
+[data-testid="stAppViewContainer"] { background: #fff !important; }
 [data-testid="stSidebar"]          { display: none; }
 [data-testid="stHeader"]           { display: none; }
 [data-testid="stToolbar"]          { display: none; }
 [data-testid="collapsedControl"]   { display: none; }
 .block-container { padding-top: 1rem !important; padding-bottom: 4rem !important; }
 * { font-family: 'Oxanium', monospace !important; }
-h1, h2, h3, h4, label, p, div, span, button { color: #c0c0c0 !important; }
-hr { border-color: #333 !important; }
-.term-line   { font-size: 0.88em; color: #888; margin: 0; padding: 0; line-height: 1.5; }
-.term-cmd    { color: #00cc66 !important; }
-.term-err    { color: #c0392b !important; }
-.term-info   { color: #aaa; }
+h1, h2, h3, h4, label, p, div, span, button { color: #1a1a1a !important; }
+hr { border-color: #ddd !important; }
+.term-line { font-size: 0.88em; margin: 0; padding: 0; line-height: 1.6; }
+.term-cmd  { color: #1a1a1a !important; font-weight: 700; }
+.term-err  { color: #c0392b !important; }
+.term-out  { color: #444; }
+.term-dim  { color: #999; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.cursor { animation: blink 1s step-end infinite; color: #1a1a1a; font-weight: 700; }
 [data-testid="stChatInput"] textarea {
-    background: #111 !important;
-    color: #00cc66 !important;
-    border: 1px solid #333 !important;
+    background: #fff !important;
+    color: #1a1a1a !important;
+    border: 1px solid #ccc !important;
     font-family: 'Oxanium', monospace !important;
-    caret-color: #00cc66;
+    caret-color: #1a1a1a;
 }
-[data-testid="stChatInput"] button { background: #1a1a1a !important; }
 </style>
 """
 
@@ -137,13 +139,13 @@ def _build_chart(series_keys: list[str], start: date | None, end: date | None) -
         ))
     unit = SERIES_META.get(series_keys[0], {}).get("unit", "MB") if len(series_keys) == 1 else "MB"
     fig.update_layout(
-        template="plotly_dark",
-        paper_bgcolor="#0a0a0a",
-        plot_bgcolor="#0d0d0d",
-        font=dict(family="Oxanium, monospace", size=12, color="#999"),
+        template="plotly_white",
+        paper_bgcolor="#fff",
+        plot_bgcolor="#fafafa",
+        font=dict(family="Oxanium, monospace", size=12, color="#444"),
         margin=dict(l=50, r=20, t=20, b=50),
-        yaxis=dict(title=unit, gridcolor="#1a1a1a", zerolinecolor="#222"),
-        xaxis=dict(gridcolor="#1a1a1a", zerolinecolor="#222"),
+        yaxis=dict(title=unit, gridcolor="#e8e8e8", zerolinecolor="#ccc"),
+        xaxis=dict(gridcolor="#e8e8e8", zerolinecolor="#ccc"),
         legend=dict(orientation="h", y=-0.18, font=dict(size=11)),
         height=380,
         hovermode="x unified",
@@ -220,12 +222,14 @@ def _execute(cmd_str: str) -> list[dict[str, Any]]:
     return [{"type": "error", "text": f"Unknown command: '{verb}'. Type 'help' for commands."}]
 
 
-def _inject_esc_listener() -> None:
+def _inject_terminal_js() -> None:
     st.iframe(
         """
         <script>
         (function() {
             var doc = window.parent.document;
+
+            // ── ESC → back ────────────────────────────────────────────────────
             function fireBack(e) {
                 if (e.key !== 'Escape') return;
                 var btn = doc.querySelector('.st-key-terminal_back button');
@@ -234,20 +238,44 @@ def _inject_esc_listener() -> None:
             if (doc.__esc_fn__) doc.removeEventListener('keydown', doc.__esc_fn__);
             doc.__esc_fn__ = fireBack;
             doc.addEventListener('keydown', fireBack);
+
+            // ── auto-focus chat input ─────────────────────────────────────────
+            function focusChat() {
+                var ta = doc.querySelector('[data-testid="stChatInput"] textarea');
+                if (ta) ta.focus();
+            }
+
+            // Focus on load and after every rerun (this script re-runs each time).
+            setTimeout(focusChat, 150);
+
+            // Re-focus after any click anywhere in the page.
+            function onDocClick(e) {
+                // Don't steal focus mid-button-press.
+                if (e.target.closest('button, a, select, [role="option"]')) return;
+                setTimeout(focusChat, 80);
+            }
+            if (doc.__focus_click__) doc.removeEventListener('click', doc.__focus_click__);
+            doc.__focus_click__ = onDocClick;
+            doc.addEventListener('click', onDocClick);
+
+            // Attach ESC to child iframes (Plotly etc.).
             function attachToIframes() {
                 doc.querySelectorAll('iframe').forEach(function(f) {
                     try {
-                        if (!f.__esc_t__) {
-                            f.__esc_t__ = true;
+                        if (!f.__term_attached__) {
+                            f.__term_attached__ = true;
                             f.contentDocument.addEventListener('keydown', fireBack);
+                            f.contentDocument.addEventListener('click', function() {
+                                setTimeout(focusChat, 80);
+                            });
                         }
                     } catch (ignore) {}
                 });
             }
             attachToIframes();
-            if (doc.__esc_obs__) { try { doc.__esc_obs__.disconnect(); } catch(_) {} }
-            doc.__esc_obs__ = new MutationObserver(attachToIframes);
-            doc.__esc_obs__.observe(doc.body, { childList: true, subtree: true });
+            if (doc.__term_obs__) { try { doc.__term_obs__.disconnect(); } catch(_) {} }
+            doc.__term_obs__ = new MutationObserver(attachToIframes);
+            doc.__term_obs__.observe(doc.body, { childList: true, subtree: true });
         })();
         </script>
         """,
@@ -257,11 +285,11 @@ def _inject_esc_listener() -> None:
 
 def render_terminal() -> None:
     st.markdown(TERMINAL_CSS, unsafe_allow_html=True)
-    _inject_esc_listener()
+    _inject_terminal_js()
 
     if "term_history" not in st.session_state:
         st.session_state.term_history = [
-            {"type": "info", "text": "EIA PETROLEUM TERMINAL  ·  type 'help' for commands"},
+            {"type": "dim", "text": "type 'help' for commands"},
         ]
 
     # ── header ────────────────────────────────────────────────────────────────
@@ -272,8 +300,8 @@ def render_terminal() -> None:
             st.rerun()
     with col_title:
         st.markdown(
-            "<p style='font-size:1.1em;letter-spacing:0.12em;color:#555 !important;"
-            "padding-top:6px;margin:0'>EIA PETROLEUM TERMINAL</p>",
+            "<p style='font-size:1.1em;letter-spacing:0.12em;color:#999 !important;"
+            "padding-top:6px;margin:0'>MOOPER TERMINAL</p>",
             unsafe_allow_html=True,
         )
 
@@ -290,12 +318,17 @@ def render_terminal() -> None:
         elif t == "text":
             text = entry["text"].replace("\n", "<br>")
             st.markdown(
-                f"<p class='term-line term-info'>{text}</p>",
+                f"<p class='term-line term-out'>{text}</p>",
                 unsafe_allow_html=True,
             )
         elif t == "info":
             st.markdown(
-                f"<p class='term-line' style='color:#555'>{entry['text']}</p>",
+                f"<p class='term-line term-out'>{entry['text']}</p>",
+                unsafe_allow_html=True,
+            )
+        elif t == "dim":
+            st.markdown(
+                f"<p class='term-line term-dim'>{entry['text']}</p>",
                 unsafe_allow_html=True,
             )
         elif t == "error":
@@ -306,6 +339,9 @@ def render_terminal() -> None:
         elif t == "chart":
             fig = _build_chart(entry["series"], entry.get("start"), entry.get("end"))
             st.plotly_chart(fig, use_container_width=True)
+
+    # blinking cursor
+    st.markdown("<p class='term-line'><span class='cursor'>█</span></p>", unsafe_allow_html=True)
 
     # ── input ─────────────────────────────────────────────────────────────────
     cmd = st.chat_input("command")
