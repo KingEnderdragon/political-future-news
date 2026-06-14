@@ -74,11 +74,11 @@ DISPLAY_RELOAD_INTERVAL_MS = 2 * 60 * 1000  # 2 minutes
 def inject_hotkey_listener() -> None:
     """Bind T key → click the terminal button.
 
-    Two fixes vs. naive approach:
-    - Use .st-key-goto_terminal CSS selector instead of fragile emoji text matching.
-    - Listen in EVERY iframe on the page, not just the parent document.
-      Streamlit renders its UI inside nested iframes; keydown fires wherever
-      focus lives, which is often not the parent document.
+    Called every time the newscenter renders. Uses stored references on the
+    parent document to replace (not accumulate) the listener and MutationObserver
+    each run. Boolean guards caused the bug: when entering terminal mode the
+    hotkey iframe is destroyed, killing its MutationObserver; on return the
+    guards prevented re-setup, so new Streamlit iframes never got the handler.
     """
     st.iframe(
         """
@@ -94,14 +94,12 @@ def inject_hotkey_listener() -> None:
                 if (btn) btn.click();
             }
 
-            // Attach to the parent document once.
-            if (!doc.__hotkey_t_main__) {
-                doc.__hotkey_t_main__ = true;
-                doc.addEventListener('keydown', fireTerminal);
-            }
+            // Replace parent listener — always use the freshest closure.
+            if (doc.__hotkey_fn__) doc.removeEventListener('keydown', doc.__hotkey_fn__);
+            doc.__hotkey_fn__ = fireTerminal;
+            doc.addEventListener('keydown', fireTerminal);
 
-            // Attach to every iframe (including Streamlit's own) so we catch
-            // keystrokes regardless of which frame currently has focus.
+            // Attach to all current Streamlit iframes.
             function attachToIframes() {
                 doc.querySelectorAll('iframe').forEach(function(f) {
                     try {
@@ -114,12 +112,10 @@ def inject_hotkey_listener() -> None:
             }
             attachToIframes();
 
-            // Watch for iframes added later by Streamlit reruns.
-            if (!doc.__hotkey_t_obs__) {
-                doc.__hotkey_t_obs__ = true;
-                new MutationObserver(attachToIframes)
-                    .observe(doc.body, { childList: true, subtree: true });
-            }
+            // Replace MutationObserver — the old one dies with its iframe.
+            if (doc.__hotkey_obs__) { try { doc.__hotkey_obs__.disconnect(); } catch(_) {} }
+            doc.__hotkey_obs__ = new MutationObserver(attachToIframes);
+            doc.__hotkey_obs__.observe(doc.body, { childList: true, subtree: true });
         })();
         </script>
         """,
