@@ -55,8 +55,48 @@ def load_all_series() -> dict[str, pd.DataFrame]:
     return result
 
 
+def _inject_esc_listener() -> None:
+    st.iframe(
+        """
+        <script>
+        (function() {
+            var doc = window.parent.document;
+
+            function fireBack(e) {
+                if (e.key !== 'Escape') return;
+                var btn = doc.querySelector('.st-key-terminal_back button');
+                if (btn) btn.click();
+            }
+
+            if (doc.__esc_fn__) doc.removeEventListener('keydown', doc.__esc_fn__);
+            doc.__esc_fn__ = fireBack;
+            doc.addEventListener('keydown', fireBack);
+
+            function attachToIframes() {
+                doc.querySelectorAll('iframe').forEach(function(f) {
+                    try {
+                        if (!f.__esc_t__) {
+                            f.__esc_t__ = true;
+                            f.contentDocument.addEventListener('keydown', fireBack);
+                        }
+                    } catch (ignore) {}
+                });
+            }
+            attachToIframes();
+
+            if (doc.__esc_obs__) { try { doc.__esc_obs__.disconnect(); } catch(_) {} }
+            doc.__esc_obs__ = new MutationObserver(attachToIframes);
+            doc.__esc_obs__.observe(doc.body, { childList: true, subtree: true });
+        })();
+        </script>
+        """,
+        height=1,
+    )
+
+
 def render_terminal() -> None:
     st.markdown(TERMINAL_CSS, unsafe_allow_html=True)
+    _inject_esc_listener()
 
     # ── header ────────────────────────────────────────────────────────────────
     col_back, col_title = st.columns([1, 9])
