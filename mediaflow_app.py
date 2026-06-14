@@ -13,6 +13,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import streamlit as st
+from eia_terminal import render_terminal
 
 HERE            = Path(__file__).parent
 DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
@@ -68,6 +69,35 @@ def fmt_dt_utc(s: str) -> tuple[str, str]:
 
 
 DISPLAY_RELOAD_INTERVAL_MS = 2 * 60 * 1000  # 2 minutes
+
+
+def inject_hotkey_listener() -> None:
+    """Bind T key → click the ⌨ terminal button (newscenter mode only)."""
+    st.iframe(
+        """
+        <script>
+        (function() {
+            var doc = window.parent.document;
+            if (doc.__hotkey_t__) return;
+            doc.__hotkey_t__ = true;
+            doc.addEventListener('keydown', function(e) {
+                if (e.key !== 't' && e.key !== 'T') return;
+                if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
+                if (e.ctrlKey || e.metaKey || e.altKey) return;
+                var btns = doc.querySelectorAll('button');
+                for (var i = 0; i < btns.length; i++) {
+                    var p = btns[i].querySelector('p');
+                    if (p && p.textContent.trim() === '⌨') {
+                        btns[i].click();
+                        return;
+                    }
+                }
+            });
+        })();
+        </script>
+        """,
+        height=1,
+    )
 
 
 def inject_tz_converter() -> None:
@@ -258,6 +288,10 @@ def main() -> None:
 
     start_background_collector()
 
+    if st.session_state.get("mode") == "terminal":
+        render_terminal()
+        return
+
     # Rendered once per full page load — MutationObserver stays alive
     # for the entire session, converting timestamps as the fragment adds them.
     inject_tz_converter()
@@ -303,13 +337,19 @@ def main() -> None:
 
     ts_attr = f'data-utc="{updated_iso}"' if updated_iso else ""
 
-    col1, col2 = st.columns([7.8, 1.775])
+    col1, col2, col3 = st.columns([7.5, 1.775, 0.6])
     with col1:
         img_b64 = base64.b64encode((HERE / "55cb4ced-c8a8-4188-9ff7-376c5a52935b.png").read_bytes()).decode()
         st.markdown(
             f'<img src="data:image/png;base64,{img_b64}" style="width:100%;display:block;">',
             unsafe_allow_html=True,
         )
+    with col3:
+        st.markdown("<div style='padding-top:22px'>", unsafe_allow_html=True)
+        if st.button("⌨", key="goto_terminal", help="Terminal  [T]"):
+            st.session_state.mode = "terminal"
+            st.rerun()
+        st.markdown("</div>", unsafe_allow_html=True)
     with col2:
         st.markdown(
             f"<div style='text-align:center;font-size:0.58em;color:#999;font-family:\"Oxanium\",monospace;font-weight:700;white-space:nowrap;padding:1px 0 3px'>updated <span {ts_attr}>{updated_display}</span></div>",
@@ -323,6 +363,7 @@ def main() -> None:
             st.rerun()
 
     # ── live feed ─────────────────────────────────────────────────────────────
+    inject_hotkey_listener()
     live_feed()
 
 

@@ -3,3 +3,5 @@ feedparser
 requests
 anthropic
 tzdata
+plotly
+pandas
