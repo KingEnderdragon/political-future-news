@@ -59,6 +59,11 @@ hr { border-color: #ddd !important; }
     font-family: 'Oxanium', monospace !important;
     caret-color: #1a1a1a;
 }
+[data-testid="stChatInput"] textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #bbb !important;
+    border-color: #bbb !important;
+}
 </style>
 """
 
