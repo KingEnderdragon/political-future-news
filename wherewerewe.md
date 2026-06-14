@@ -1,5 +1,5 @@
 # Where We Were — Session Summary
-Date: 2026-06-08
+Date: 2026-06-14
 Project: Mooper Oil Crisis Model (MOCM)
 
 ---
@@ -86,18 +86,75 @@ NOT in this repo — raw CSVs are gitignored there):
   and replaces them each render, avoiding the dead-iframe guard bug where T stopped
   working after the first round-trip
 
-### Known Issues — Terminal
+### Known Issues — Terminal (Session 5, now resolved)
 
-- **Aesthetic mismatch**: terminal (dark, generic Streamlit widgets) vs. newscenter
-  (white, heavily styled Crimson Text/Oxanium). Transition feels like two different apps.
-  Needs a design pass to share DNA — fonts, button styling, widget overrides.
-- **3 dummy buttons** (□) in the nav row are placeholders with no function yet.
-- **10-year historical download** still running in background shell as of session end.
-  When complete: re-run `build_timeseries.py` for each desired series, commit CSVs to `data/`.
-- **NYMEX futures gap**: Table 13 data unavailable after April 2024 in WPSR; needs
+- ~~Aesthetic mismatch~~ — resolved in Session 6 (light mode, shared font/color language)
+- 3 dummy buttons (□) in the nav row are placeholders with no function yet.
+- NYMEX futures gap: Table 13 data unavailable after April 2024 in WPSR; needs
   separate CME or other source.
-- **No live refresh**: terminal reads committed CSVs only. Latest week appears only
+- No live refresh: terminal reads committed CSVs only. Latest week appears only
   after running the pipeline and committing. Could add a live EIA fetch button later.
+
+---
+
+## Session 6 — Mooper Terminal (Command-Line Interface)
+
+### What Was Built
+
+**Terminal redesigned as a real CLI** (`eia_terminal.py`):
+- `st.chat_input` at the bottom provides a persistent command prompt
+- Command history accumulates in session state and renders inline (text + charts)
+- Blinking block cursor (CSS `step-end` animation) at the bottom of history
+- Auto-focus: input grabs keyboard on load and after any click (80ms delay via JS)
+- ESC → Back still works; `back`/`exit` commands also navigate out
+- Light mode throughout — white background, Oxanium font, dark text — matches newscenter
+- Title: MOOPER TERMINAL (header only; no restatement in startup message)
+- Plotly charts switched to `plotly_white` theme
+
+**Data pipeline expanded** (`build_timeseries.py` in `oil_futures/`):
+- Now extracts 5 series; all 92 obs (2016–2026 complete)
+- Added `col1_endswith` match mode to avoid sub-row false positives
+  (critical for crude imports: avoids "Imports by SPR", "Imports into SPR by Others")
+
+**Data committed to `data/`** (all 92 weekly obs, 2016–2026):
+- `commercial_crude_exSPR.csv` — stocks, Million Barrels
+- `total_products_supplied.csv` — demand proxy, kb/d
+- `crude_exports.csv` — crude oil exports, kb/d
+- `crude_imports.csv` — crude oil imports, kb/d
+- `crude_production.csv` — domestic crude production, kb/d
+
+**Terminal commands:**
+- `stocks [year|y1-y2]` — commercial crude stocks (ex-SPR)
+- `demand [year|y1-y2]` — total products supplied (aliases: supply, products)
+- `exports [year|y1-y2]` — crude oil exports
+- `imports [year|y1-y2]` — crude oil imports
+- `production [year|y1-y2]` — domestic crude production (alias: prod)
+- `aggregate_demand [year|y1-y2]` — products supplied + exports; total draw (aliases: agg, total_demand)
+- `aggregate_supply [year|y1-y2]` — imports + production; total supply input (aliases: agg_supply, total_supply)
+- Aggregate charts show individual series + dotted black sum line
+- `ls`, `help`, `clear`, `back`/`exit` also available
+
+### Known Issue — Accounting Level Mixing
+
+The current series selection mixes two different levels of the petroleum supply chain
+and this needs to be thought through carefully before treating the aggregates as signals.
+
+**The problem:**
+- `crude_production` and `crude_imports` are upstream crude flows (before refining)
+- `total_products_supplied` is a downstream refined products flow (after refining)
+- `crude_exports` is crude leaving before refining
+
+`aggregate_supply` (imports + production) is consistently at the crude level.
+`aggregate_demand` (products supplied + crude exports) mixes post-refinery domestic
+consumption with pre-refinery crude exports — these don't net cleanly against each other.
+
+A proper supply-demand balance would need to account for refinery throughput, processing
+gain, and product imports/exports separately. EIA Table 1 has all of this — the current
+series selection is a first pass, not a finished balance sheet.
+
+**Not broken, but incomplete:** the individual series are all correct and useful on their
+own. The aggregates are directionally meaningful but should not be treated as an accounting
+identity until the level-mixing is resolved.
 
 ---
 
