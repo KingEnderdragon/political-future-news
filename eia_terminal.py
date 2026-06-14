@@ -1,9 +1,15 @@
 """
-EIA Petroleum Terminal — reads pre-built CSVs from data/ and renders charts.
+EIA Petroleum Terminal — command-line style interface.
+Commands: stocks [year|y1-y2]  crude [year|y1-y2]  ls  help  clear
 Invoked by mediaflow_app.py when session_state.mode == "terminal".
 """
 
+from __future__ import annotations
+
+import re
+from datetime import date
 from pathlib import Path
+from typing import Any
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -11,37 +17,69 @@ import streamlit as st
 
 DATA_DIR = Path(__file__).parent / "data"
 
-# Metadata for known series; unknown CSVs get generic defaults
 SERIES_META: dict[str, dict] = {
     "commercial_crude_exSPR": {
         "label": "Commercial Crude Stocks (ex-SPR)",
-        "unit": "Million Barrels",
+        "unit":  "Million Barrels",
         "color": "#00cc66",
+        "aliases": ["stocks", "crude", "inventory"],
     },
 }
 
+# Map alias → series key
+_ALIAS_MAP: dict[str, str] = {}
+for _k, _v in SERIES_META.items():
+    for _a in _v.get("aliases", []):
+        _ALIAS_MAP[_a] = _k
+    _ALIAS_MAP[_k] = _k
+
 TERMINAL_CSS = """
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
 [data-testid="stAppViewContainer"] { background: #0a0a0a !important; }
 [data-testid="stSidebar"]          { display: none; }
 [data-testid="stHeader"]           { display: none; }
 [data-testid="stToolbar"]          { display: none; }
 [data-testid="collapsedControl"]   { display: none; }
-.block-container { padding-top: 1rem !important; }
-h1, h2, h3, h4, label, p, div, span, button {
-    color: #c0c0c0 !important;
-    font-family: 'Oxanium', monospace !important;
-}
-[data-baseweb="select"] * { background: #111 !important; color: #c0c0c0 !important; }
-[data-testid="stDateInput"] input { background: #111 !important; color: #c0c0c0 !important; }
+.block-container { padding-top: 1rem !important; padding-bottom: 4rem !important; }
+* { font-family: 'Oxanium', monospace !important; }
+h1, h2, h3, h4, label, p, div, span, button { color: #c0c0c0 !important; }
 hr { border-color: #333 !important; }
-[data-testid="stExpander"] { background: #111 !important; border: 1px solid #333 !important; }
+.term-line   { font-size: 0.88em; color: #888; margin: 0; padding: 0; line-height: 1.5; }
+.term-cmd    { color: #00cc66 !important; }
+.term-err    { color: #c0392b !important; }
+.term-info   { color: #aaa; }
+[data-testid="stChatInput"] textarea {
+    background: #111 !important;
+    color: #00cc66 !important;
+    border: 1px solid #333 !important;
+    font-family: 'Oxanium', monospace !important;
+    caret-color: #00cc66;
+}
+[data-testid="stChatInput"] button { background: #1a1a1a !important; }
 </style>
+"""
+
+HELP_TEXT = """\
+COMMANDS
+  stocks [year]          crude stocks chart (all time or filtered to year)
+  stocks [y1]-[y2]       crude stocks chart between two years
+  crude  [...]           alias for stocks
+  inventory [...]        alias for stocks
+  ls                     list available data series
+  clear                  clear terminal history
+  back / exit            return to news feed
+  help                   show this message
+
+EXAMPLES
+  stocks                 full time series
+  stocks 2026            Jan–Dec 2026
+  stocks 2020-2026       2020 through 2026
 """
 
 
 @st.cache_data(ttl=300)
-def load_all_series() -> dict[str, pd.DataFrame]:
+def _load_series() -> dict[str, pd.DataFrame]:
     result: dict[str, pd.DataFrame] = {}
     if not DATA_DIR.exists():
         return result
@@ -55,23 +93,147 @@ def load_all_series() -> dict[str, pd.DataFrame]:
     return result
 
 
+def _label(key: str) -> str:
+    return SERIES_META.get(key, {}).get("label", key.replace("_", " ").title())
+
+
+def _parse_year_range(arg: str) -> tuple[date | None, date | None]:
+    """Parse '2026' or '2020-2026' into (start_date, end_date). Returns (None, None) on failure."""
+    m = re.fullmatch(r"(\d{4})-(\d{4})", arg)
+    if m:
+        return date(int(m.group(1)), 1, 1), date(int(m.group(2)), 12, 31)
+    m = re.fullmatch(r"(\d{4})", arg)
+    if m:
+        y = int(m.group(1))
+        return date(y, 1, 1), date(y, 12, 31)
+    return None, None
+
+
+def _build_chart(series_keys: list[str], start: date | None, end: date | None) -> go.Figure:
+    series_data = _load_series()
+    fig = go.Figure()
+    for key in series_keys:
+        df = series_data.get(key)
+        if df is None:
+            continue
+        mask = pd.Series([True] * len(df))
+        if start:
+            mask &= df["data_date"].dt.date >= start
+        if end:
+            mask &= df["data_date"].dt.date <= end
+        df_f = df[mask]
+        val_col = next((c for c in df.columns if c != "data_date"), None)
+        if val_col is None:
+            continue
+        meta = SERIES_META.get(key, {})
+        fig.add_trace(go.Scatter(
+            x=df_f["data_date"],
+            y=df_f[val_col],
+            mode="lines+markers",
+            name=_label(key),
+            line=dict(color=meta.get("color", "#00aaff"), width=2),
+            marker=dict(size=4),
+            hovertemplate="%{x|%b %d %Y}<br>%{y:,.1f} MB<extra></extra>",
+        ))
+    unit = SERIES_META.get(series_keys[0], {}).get("unit", "MB") if len(series_keys) == 1 else "MB"
+    fig.update_layout(
+        template="plotly_dark",
+        paper_bgcolor="#0a0a0a",
+        plot_bgcolor="#0d0d0d",
+        font=dict(family="Oxanium, monospace", size=12, color="#999"),
+        margin=dict(l=50, r=20, t=20, b=50),
+        yaxis=dict(title=unit, gridcolor="#1a1a1a", zerolinecolor="#222"),
+        xaxis=dict(gridcolor="#1a1a1a", zerolinecolor="#222"),
+        legend=dict(orientation="h", y=-0.18, font=dict(size=11)),
+        height=380,
+        hovermode="x unified",
+    )
+    return fig
+
+
+def _execute(cmd_str: str) -> list[dict[str, Any]]:
+    """Parse and execute a command. Returns list of output items."""
+    parts = cmd_str.strip().split()
+    if not parts:
+        return []
+    verb = parts[0].lower()
+    args = parts[1:]
+
+    # navigation
+    if verb in ("back", "exit", "quit"):
+        st.session_state.mode = "newscenter"
+        st.rerun()
+
+    # clear
+    if verb == "clear":
+        st.session_state.term_history = []
+        return []
+
+    # help
+    if verb == "help":
+        return [{"type": "text", "text": HELP_TEXT}]
+
+    # ls / list
+    if verb in ("ls", "list", "series"):
+        series_data = _load_series()
+        if not series_data:
+            return [{"type": "error", "text": "No data found in data/. Run build_timeseries.py."}]
+        lines = ["Available series:"]
+        for k in series_data:
+            meta = SERIES_META.get(k, {})
+            aliases = ", ".join(meta.get("aliases", []))
+            lines.append(f"  {k}  ({aliases})" if aliases else f"  {k}")
+        return [{"type": "text", "text": "\n".join(lines)}]
+
+    # data commands (stocks / crude / series key)
+    series_key = _ALIAS_MAP.get(verb)
+    if series_key:
+        series_data = _load_series()
+        if series_key not in series_data:
+            return [{"type": "error", "text": f"Series '{series_key}' not found in data/. Run build_timeseries.py."}]
+
+        start: date | None = None
+        end: date | None = None
+        if args:
+            start, end = _parse_year_range(args[0])
+            if start is None:
+                return [{"type": "error", "text": f"Unrecognised date format '{args[0]}'. Use YYYY or YYYY-YYYY."}]
+
+        df = series_data[series_key]
+        val_col = next((c for c in df.columns if c != "data_date"), None)
+        mask = pd.Series([True] * len(df))
+        if start:
+            mask &= df["data_date"].dt.date >= start
+        if end:
+            mask &= df["data_date"].dt.date <= end
+        n = mask.sum()
+        if n == 0:
+            return [{"type": "error", "text": "No data in that range."}]
+
+        label_str = _label(series_key)
+        range_str = f"{start} → {end}" if start else "all time"
+        return [
+            {"type": "info", "text": f"{label_str}  ·  {range_str}  ·  {n} points"},
+            {"type": "chart", "series": [series_key], "start": start, "end": end},
+        ]
+
+    return [{"type": "error", "text": f"Unknown command: '{verb}'. Type 'help' for commands."}]
+
+
 def _inject_esc_listener() -> None:
     st.iframe(
         """
         <script>
         (function() {
             var doc = window.parent.document;
-
             function fireBack(e) {
                 if (e.key !== 'Escape') return;
                 var btn = doc.querySelector('.st-key-terminal_back button');
                 if (btn) btn.click();
             }
-
             if (doc.__esc_fn__) doc.removeEventListener('keydown', doc.__esc_fn__);
             doc.__esc_fn__ = fireBack;
             doc.addEventListener('keydown', fireBack);
-
             function attachToIframes() {
                 doc.querySelectorAll('iframe').forEach(function(f) {
                     try {
@@ -83,7 +245,6 @@ def _inject_esc_listener() -> None:
                 });
             }
             attachToIframes();
-
             if (doc.__esc_obs__) { try { doc.__esc_obs__.disconnect(); } catch(_) {} }
             doc.__esc_obs__ = new MutationObserver(attachToIframes);
             doc.__esc_obs__.observe(doc.body, { childList: true, subtree: true });
@@ -98,6 +259,11 @@ def render_terminal() -> None:
     st.markdown(TERMINAL_CSS, unsafe_allow_html=True)
     _inject_esc_listener()
 
+    if "term_history" not in st.session_state:
+        st.session_state.term_history = [
+            {"type": "info", "text": "EIA PETROLEUM TERMINAL  ·  type 'help' for commands"},
+        ]
+
     # ── header ────────────────────────────────────────────────────────────────
     col_back, col_title = st.columns([1, 9])
     with col_back:
@@ -111,92 +277,40 @@ def render_terminal() -> None:
             unsafe_allow_html=True,
         )
 
-    st.markdown("<hr style='margin:6px 0 14px'>", unsafe_allow_html=True)
+    st.markdown("<hr style='margin:6px 0 10px'>", unsafe_allow_html=True)
 
-    # ── load data ─────────────────────────────────────────────────────────────
-    series_data = load_all_series()
-
-    if not series_data:
-        st.warning("No data in data/ — run build_timeseries.py and commit the output.")
-        return
-
-    # ── controls ──────────────────────────────────────────────────────────────
-    def label(key: str) -> str:
-        return SERIES_META.get(key, {}).get("label", key.replace("_", " ").title())
-
-    c1, c2, c3 = st.columns([3, 1.2, 1.2])
-
-    with c1:
-        selected = st.multiselect(
-            "Series",
-            options=list(series_data.keys()),
-            default=list(series_data.keys())[:1],
-            format_func=label,
-            label_visibility="collapsed",
-        )
-
-    all_dates = pd.concat([series_data[k]["data_date"] for k in series_data])
-    global_min = all_dates.min().date()
-    global_max = all_dates.max().date()
-
-    with c2:
-        start = st.date_input("From", value=global_min, min_value=global_min,
-                              max_value=global_max, label_visibility="collapsed")
-    with c3:
-        end = st.date_input("To", value=global_max, min_value=global_min,
-                            max_value=global_max, label_visibility="collapsed")
-
-    if not selected:
-        st.caption("Select a series above.")
-        return
-
-    # ── chart ─────────────────────────────────────────────────────────────────
-    fig = go.Figure()
-
-    for key in selected:
-        df = series_data[key]
-        mask = (df["data_date"].dt.date >= start) & (df["data_date"].dt.date <= end)
-        df_f = df[mask]
-        val_col = next(c for c in df.columns if c != "data_date")
-        meta = SERIES_META.get(key, {})
-
-        fig.add_trace(go.Scatter(
-            x=df_f["data_date"],
-            y=df_f[val_col],
-            mode="lines+markers",
-            name=label(key),
-            line=dict(color=meta.get("color", "#00aaff"), width=2),
-            marker=dict(size=4),
-            hovertemplate="%{x|%b %d %Y}<br>%{y:,.1f} MB<extra></extra>",
-        ))
-
-    unit = SERIES_META.get(selected[0], {}).get("unit", "MB") if len(selected) == 1 else "MB"
-
-    fig.update_layout(
-        template="plotly_dark",
-        paper_bgcolor="#0a0a0a",
-        plot_bgcolor="#0d0d0d",
-        font=dict(family="Oxanium, monospace", size=12, color="#999"),
-        margin=dict(l=50, r=20, t=20, b=50),
-        yaxis=dict(title=unit, gridcolor="#1a1a1a", zerolinecolor="#222"),
-        xaxis=dict(gridcolor="#1a1a1a", zerolinecolor="#222"),
-        legend=dict(orientation="h", y=-0.18, font=dict(size=11)),
-        height=430,
-        hovermode="x unified",
-    )
-
-    st.plotly_chart(fig, use_container_width=True)
-
-    # ── raw data ──────────────────────────────────────────────────────────────
-    with st.expander("Raw data"):
-        for key in selected:
-            df = series_data[key]
-            mask = (df["data_date"].dt.date >= start) & (df["data_date"].dt.date <= end)
-            val_col = next(c for c in df.columns if c != "data_date")
-            st.caption(label(key))
-            st.dataframe(
-                df[mask][["data_date", val_col]]
-                .rename(columns={"data_date": "Date", val_col: f"Value ({unit})"}),
-                hide_index=True,
-                use_container_width=True,
+    # ── history ───────────────────────────────────────────────────────────────
+    for entry in st.session_state.term_history:
+        t = entry["type"]
+        if t == "cmd":
+            st.markdown(
+                f"<p class='term-line'><span class='term-cmd'>▶ {entry['text']}</span></p>",
+                unsafe_allow_html=True,
             )
+        elif t == "text":
+            text = entry["text"].replace("\n", "<br>")
+            st.markdown(
+                f"<p class='term-line term-info'>{text}</p>",
+                unsafe_allow_html=True,
+            )
+        elif t == "info":
+            st.markdown(
+                f"<p class='term-line' style='color:#555'>{entry['text']}</p>",
+                unsafe_allow_html=True,
+            )
+        elif t == "error":
+            st.markdown(
+                f"<p class='term-line term-err'>error: {entry['text']}</p>",
+                unsafe_allow_html=True,
+            )
+        elif t == "chart":
+            fig = _build_chart(entry["series"], entry.get("start"), entry.get("end"))
+            st.plotly_chart(fig, use_container_width=True)
+
+    # ── input ─────────────────────────────────────────────────────────────────
+    cmd = st.chat_input("command")
+    if cmd:
+        st.session_state.term_history.append({"type": "cmd", "text": cmd})
+        outputs = _execute(cmd)
+        st.session_state.term_history.extend(outputs)
+        st.rerun()
