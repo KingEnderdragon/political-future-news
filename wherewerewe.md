@@ -43,13 +43,61 @@ entries in this file. The system was fully operational locally by end of Session
 - Title graphic: MEDIA FLOW / The Iran-Hormuz Crisis masthead (5:1 ratio PNG)
 - Typography: Crimson Text for summaries and arc labels; Oxanium bold for metadata
   (timestamps, sources) and Update button; Streamlit default for tabs (Crimson pending)
-- Header: compact single row — graphic (col1) + timestamp + Update button (col2)
+- Header: compact single row — graphic (col1) + timestamp/Update/nav buttons (col2)
+- col2 button row: Update (full-width) + 1×4 icon buttons below: ⊹ (terminal), □ □ □ (placeholders)
 - Tabs: All | Kinetic | Diplomatic | Maritime | Financial | Physical Supply | Other
   (All tab excludes UNMAPPED/Other items by default)
 - Arc labels on All tab: colored, bold, 0.83em
 - Timestamps: browser-local timezone via JS `data-utc` attribute + MutationObserver
 - No sidebar, no Streamlit toolbar/header
 - Confirmed working on both mobile and desktop
+
+---
+
+## Session 5 — EIA Petroleum Terminal
+
+### What Was Built
+
+**EIA data pipeline** (lives in local `~/Documents/computational_projects/oil_futures/`,
+NOT in this repo — raw CSVs are gitignored there):
+- `download_wpsr.py` — downloads EIA Weekly Petroleum Status Report CSVs from the
+  public archive. Idempotent, 0.3s polite delay. Handles holiday-shifted Thursday
+  releases via `HOLIDAY_OVERRIDES` dict. Accepts `start` / `end` date args.
+  2026 data (23 weeks) already downloaded. 2016–2025 download running in background.
+- `build_timeseries.py` — parses Table 1 CSVs, extracts named rows, writes clean
+  `data_date, value` CSVs to `EIAreport_data/` (local) and `data/` (repo).
+
+**Processed data committed to this repo** (`data/`):
+- `data/commercial_crude_exSPR.csv` — 23 weekly obs, Jan–Jun 2026, units: million barrels
+
+**Terminal page** (`eia_terminal.py`):
+- Dark theme (#0a0a0a), Oxanium font
+- Auto-discovers all CSVs in `data/` — adding a new series is just committing a CSV
+- Multiselect series picker, date range pickers, Plotly dark-theme line chart
+- Raw data expander below chart
+- `SERIES_META` dict for per-series labels, units, chart colors
+
+**Navigation / hotkeys** (in `mediaflow_app.py`):
+- `T` → enter terminal (JS listener via `st.iframe`, uses `.st-key-goto_terminal` CSS selector)
+- `Esc` → back to newscenter (JS listener via `st.iframe`, uses `.st-key-terminal_back`)
+- ⊹ button in header also enters terminal (mouse fallback)
+- ← Back button also exits terminal (mouse fallback)
+- Hotkey JS pattern: replace-not-guard — stores listener/observer refs on parent document
+  and replaces them each render, avoiding the dead-iframe guard bug where T stopped
+  working after the first round-trip
+
+### Known Issues — Terminal
+
+- **Aesthetic mismatch**: terminal (dark, generic Streamlit widgets) vs. newscenter
+  (white, heavily styled Crimson Text/Oxanium). Transition feels like two different apps.
+  Needs a design pass to share DNA — fonts, button styling, widget overrides.
+- **3 dummy buttons** (□) in the nav row are placeholders with no function yet.
+- **10-year historical download** still running in background shell as of session end.
+  When complete: re-run `build_timeseries.py` for each desired series, commit CSVs to `data/`.
+- **NYMEX futures gap**: Table 13 data unavailable after April 2024 in WPSR; needs
+  separate CME or other source.
+- **No live refresh**: terminal reads committed CSVs only. Latest week appears only
+  after running the pipeline and committing. Could add a live EIA fetch button later.
 
 ---
 
