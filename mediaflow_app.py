@@ -382,9 +382,17 @@ def main() -> None:
                 classified = run_classify()
             st.toast(f"{classified} new items classified.")
             st.rerun()
-        if st.button("🖥", key="goto_terminal", help="Terminal  [T]", use_container_width=True):
-            st.session_state.mode = "terminal"
-            st.rerun()
+        ba, bb, bc, bd = st.columns(4)
+        with ba:
+            if st.button("⊹", key="goto_terminal", help="Terminal  [T]", use_container_width=True):
+                st.session_state.mode = "terminal"
+                st.rerun()
+        with bb:
+            st.button("□", key="dash_b", use_container_width=True)
+        with bc:
+            st.button("□", key="dash_c", use_container_width=True)
+        with bd:
+            st.button("□", key="dash_d", use_container_width=True)
 
     # ── live feed ─────────────────────────────────────────────────────────────
     inject_hotkey_listener()
