@@ -24,11 +24,11 @@ SERIES_META: dict[str, dict] = {
         "color":   "#27ae60",
         "aliases": ["stocks", "crude", "inventory"],
     },
-    "total_products_supplied": {
-        "label":   "Total Products Supplied",
+    "refinery_input": {
+        "label":   "Refinery Input (Crude Runs)",
         "unit":    "Thousand Barrels/Day",
         "color":   "#2980b9",
-        "aliases": ["demand", "supply", "products"],
+        "aliases": ["demand", "refinery", "runs"],
     },
     "crude_exports": {
         "label":   "Crude Oil Exports",
@@ -94,12 +94,12 @@ hr { border-color: #ddd !important; }
 HELP_TEXT = """\
 COMMANDS
   stocks [year|y1-y2]         commercial crude stocks (ex-SPR)   [MB]
-  demand [year|y1-y2]         total products supplied             [kb/d]
+  demand [year|y1-y2]         refinery crude input                [kb/d]
   exports [year|y1-y2]        crude oil exports                   [kb/d]
   imports [year|y1-y2]        crude oil imports                   [kb/d]
   production [year|y1-y2]     domestic crude production           [kb/d]
   aggregate_demand [year|y1-y2]
-                              products supplied + exports          [kb/d]
+                              refinery input + exports             [kb/d]
   aggregate_supply [year|y1-y2]
                               imports + production                 [kb/d]
   ls                          list available data series
@@ -107,7 +107,7 @@ COMMANDS
   back / exit                 return to news feed
   help                        show this message
 
-ALIASES  crude/inventory=stocks  supply/products=demand  prod=production
+ALIASES  crude/inventory=stocks  refinery/runs=demand  prod=production
 EXAMPLES  stocks 2026   aggregate_demand 2024-2026   aggregate_supply
 """
 
@@ -302,10 +302,10 @@ def _execute(cmd_str: str) -> list[dict[str, Any]]:
             {"type": "chart", "series": agg_keys, "start": start, "end": end, "show_sum": True},
         ]
 
-    # aggregate_demand = total_products_supplied + crude_exports
+    # aggregate_demand = refinery_input + crude_exports
     if verb in ("aggregate_demand", "agg", "total_demand"):
         series_data = _load_series()
-        agg_keys = ["total_products_supplied", "crude_exports"]
+        agg_keys = ["refinery_input", "crude_exports"]
         missing = [k for k in agg_keys if k not in series_data]
         if missing:
             return [{"type": "error", "text": f"Missing series: {missing}. Run build_timeseries.py."}]
@@ -319,7 +319,7 @@ def _execute(cmd_str: str) -> list[dict[str, Any]]:
 
         range_str = f"{start} to {end}" if start else "all time"
         return [
-            {"type": "info", "text": f"Aggregate Demand (Products Supplied + Crude Exports)  ·  {range_str}  ·  kb/d"},
+            {"type": "info", "text": f"Aggregate Demand (Refinery Input + Crude Exports)  ·  {range_str}  ·  kb/d"},
             {"type": "chart", "series": agg_keys, "start": start, "end": end, "show_sum": True},
         ]
 
