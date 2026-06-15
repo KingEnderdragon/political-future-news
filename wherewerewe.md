@@ -134,27 +134,58 @@ NOT in this repo — raw CSVs are gitignored there):
 - Aggregate charts show individual series + dotted black sum line
 - `ls`, `help`, `clear`, `back`/`exit` also available
 
-### Known Issue — Accounting Level Mixing
+### Known Issue — Accounting Level Mixing (resolved in Session 7)
 
-The current series selection mixes two different levels of the petroleum supply chain
-and this needs to be thought through carefully before treating the aggregates as signals.
+~~The current series selection mixes two different levels of the petroleum supply chain~~
+~~and this needs to be thought through carefully before treating the aggregates as signals.~~
 
-**The problem:**
-- `crude_production` and `crude_imports` are upstream crude flows (before refining)
-- `total_products_supplied` is a downstream refined products flow (after refining)
-- `crude_exports` is crude leaving before refining
+Resolved: `demand` and `aggregate_demand` now use `refinery_input` (crude oil input to
+refineries, WPSR Table 1 row 38) instead of `total_products_supplied`. See Session 7.
 
-`aggregate_supply` (imports + production) is consistently at the crude level.
-`aggregate_demand` (products supplied + crude exports) mixes post-refinery domestic
-consumption with pre-refinery crude exports — these don't net cleanly against each other.
+---
 
-A proper supply-demand balance would need to account for refinery throughput, processing
-gain, and product imports/exports separately. EIA Table 1 has all of this — the current
-series selection is a first pass, not a finished balance sheet.
+## Session 7 — Refinery Input Series + Pipeline Documentation
 
-**Not broken, but incomplete:** the individual series are all correct and useful on their
-own. The aggregates are directionally meaningful but should not be treated as an accounting
-identity until the level-mixing is resolved.
+### What Changed
+
+**Demand series corrected** (`eia_terminal.py`):
+- `demand` command now plots `refinery_input` (crude oil input to refineries, kb/d)
+  instead of `total_products_supplied`
+- `aggregate_demand` now = refinery_input + crude_exports (both at the crude level,
+  consistent with aggregate_supply = imports + production)
+- Aliases updated: `demand/refinery/runs` → `refinery_input`; `supply/products` dropped
+- This resolves the Session 6 accounting-level mixing issue: all four series in the two
+  aggregates are now consistently upstream crude flows
+
+**New series added** (`build_timeseries.py` + `data/`):
+- `refinery_input.csv` — 97 weekly obs, 2016–2026, kb/d
+  - Extracted from WPSR Table 1 row 38: `col0="Crude Oil Supply "`,
+    `col1_contains="Crude Oil Input to Refineries"`, `col_idx=2`
+- All existing CSVs also gained 5 rows (2017-07-21 through 2017-08-18) that were
+  missing from the prior build
+
+**Pipeline documented** (`oil_futures/CLAUDE.md` — local, not in this repo):
+- Table 1 two-column row format explained
+- Row numbers for all current series
+- Full instructions for adding a new series
+- Holiday override pattern for download_wpsr.py
+
+### Data Now in `data/`
+- `commercial_crude_exSPR.csv` — stocks, Million Barrels (97 obs)
+- `refinery_input.csv` — crude input to refineries, kb/d (97 obs) ← new
+- `crude_exports.csv` — crude oil exports, kb/d (97 obs)
+- `crude_imports.csv` — crude oil imports, kb/d (97 obs)
+- `crude_production.csv` — domestic crude production, kb/d (97 obs)
+- `total_products_supplied.csv` — retained in build but no longer used by terminal
+
+### Terminal Commands (current state)
+- `stocks [year|y1-y2]` — commercial crude stocks (ex-SPR), MB
+- `demand [year|y1-y2]` — refinery crude input, kb/d (aliases: refinery, runs)
+- `exports [year|y1-y2]` — crude oil exports, kb/d
+- `imports [year|y1-y2]` — crude oil imports, kb/d
+- `production [year|y1-y2]` — domestic crude production, kb/d (alias: prod)
+- `aggregate_demand [year|y1-y2]` — refinery_input + exports (aliases: agg, total_demand)
+- `aggregate_supply [year|y1-y2]` — imports + production (aliases: agg_supply, total_supply)
 
 ---
 
