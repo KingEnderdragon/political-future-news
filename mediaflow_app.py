@@ -14,6 +14,7 @@ from pathlib import Path
 
 import streamlit as st
 from eia_terminal import render_terminal
+from mediaflow_chat import render_chat
 
 HERE            = Path(__file__).parent
 DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
@@ -315,6 +316,10 @@ def main() -> None:
         render_terminal()
         return
 
+    if st.session_state.get("mode") == "chat":
+        render_chat()
+        return
+
     # Rendered once per full page load — MutationObserver stays alive
     # for the entire session, converting timestamps as the fragment adds them.
     inject_tz_converter()
@@ -384,7 +389,9 @@ def main() -> None:
                 st.session_state.mode = "terminal"
                 st.rerun()
         with bb:
-            st.button("□", key="dash_b", use_container_width=True)
+            if st.button("✦", key="goto_chat", help="Agent", use_container_width=True):
+                st.session_state.mode = "chat"
+                st.rerun()
         with bc:
             st.button("□", key="dash_c", use_container_width=True)
         with bd:
