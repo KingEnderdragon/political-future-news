@@ -73,6 +73,11 @@ exist (⚡), don't paper over them — explain what each version implies if true
 When you don't know, say so, and say what evidence would resolve it. \
 Do not moralize about the conflict.
 
+OUTPUT LIMIT
+Your responses are hard-capped at 6,000 tokens. Structure every response so the most \
+important analysis comes first. If a complete answer would exceed the limit, say so at \
+the end and offer to continue — do not trail off mid-thought.
+
 CURRENT FEED (most recent {n} items across all arcs, newest first)
 {context}
 """
@@ -230,7 +235,7 @@ def render_chat() -> None:
             with st.chat_message("assistant"):
                 with client.messages.stream(
                     model="claude-opus-4-8",
-                    max_tokens=4096,
+                    max_tokens=6000,
                     thinking={"type": "adaptive"},
                     system=system,
                     messages=api_messages,
