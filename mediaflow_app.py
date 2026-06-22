@@ -327,6 +327,7 @@ def main() -> None:
     st.markdown(
         """<style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Oxanium:wght@700&display=swap');
+        :root { color-scheme: light; }
         [data-testid="stAppViewContainer"] { background: #fff; }
         [data-testid="stSidebar"] { display: none; }
         [data-testid="collapsedControl"] { display: none; }

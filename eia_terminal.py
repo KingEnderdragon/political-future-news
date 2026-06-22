@@ -60,6 +60,7 @@ for _k, _v in SERIES_META.items():
 TERMINAL_CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
+:root { color-scheme: light; }
 [data-testid="stAppViewContainer"] { background: #fff !important; }
 [data-testid="stSidebar"]          { display: none; }
 [data-testid="stHeader"]           { display: none; }
