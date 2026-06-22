@@ -30,14 +30,28 @@ You are an analytical intelligence agent embedded in the Mooper Oil Crisis Model
 Your purpose is not retrieval — it is interpretation. The analyst already has the raw feed. \
 What they need is someone to cut through the noise and tell them what it means.
 
-SITUATION (as of June 2026)
-The United States launched Operation Epic Fury against Iran approximately 100 days ago. \
-This is an active war. The Strait of Hormuz is in a state of near-closure. Iranian \
-ballistic missiles struck Bahrain and Kuwait on June 6; Iran launched at Israel on June 7 \
-as a "warning." US forces are downing Iranian drones over Hormuz. Iran has partially closed \
-its western airspace. Meanwhile US equity markets are hitting record highs — pricing in AI \
-euphoria while apparently ignoring war risk. The gap between physical reality and market \
-pricing is the central contradiction this system measures.
+SITUATION (as of mid-June 2026)
+The US launched Operation Epic Fury against Iran on February 28, 2026. After roughly \
+110 days of active war, a ceasefire MoU has been signed and the US naval blockade of \
+Iranian ports has been lifted. A negotiating window is now open for a permanent deal.
+
+The situation is best understood as an information warfare equilibrium, not a resolution. \
+Both sides extracted partial wins: the US suppressed oil prices via narrative management \
+and a historic SPR drawdown that brought reserves to a 43-year low; Iran secured the \
+lifting of the blockade, restored its right to sell oil, and drove a strategic wedge \
+between the US and Israel — Netanyahu remains committed to dismantling Iranian capabilities \
+while Trump pursues peace, a contradiction Iran is actively exploiting.
+
+The equilibrium is structurally fragile. The ceasefire has already been violated by both \
+sides. Iranian proxy networks in Yemen, Lebanon, and Iraq were not party to the MoU and \
+retain independent escalation capacity. Iran's nuclear enrichment remains operational and \
+unresolved. Markets are increasingly discounting US peace announcements as tactical \
+price-signalling rather than durable progress. Physical Hormuz flows lag political \
+announcements by a considerable margin.
+
+THE CENTRAL QUESTION: Can this equilibrium hold, or does a new escalation trigger a \
+second leg higher for crude — with the US now SPR-depleted and carrying little remaining \
+ammunition for price suppression?
 
 ARC TAXONOMY
 - Kinetic: military incidents, strikes, missile launches, naval movements, drone activity
@@ -189,14 +203,33 @@ def _inject_chat_js() -> None:
     )
 
 
+def _save_chat_log() -> None:
+    messages = st.session_state.get("chat_messages", [])
+    if not messages:
+        return
+    log_file = DATA_DIR / "chat_logs.jsonl"
+    entry = {
+        "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "messages": messages,
+    }
+    with log_file.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(entry) + "\n")
+
+
+def _clear_chat() -> None:
+    _save_chat_log()
+    st.session_state.chat_messages = []
+
+
 def render_chat() -> None:
     st.markdown(CHAT_CSS, unsafe_allow_html=True)
     _inject_chat_js()
 
     # ── header ────────────────────────────────────────────────────────────────
-    col_back, col_title = st.columns([1, 9])
+    col_back, col_title, col_new = st.columns([1, 7, 2])
     with col_back:
         if st.button("← Back", key="chat_back"):
+            _save_chat_log()
             st.session_state.mode = "newscenter"
             st.rerun()
     with col_title:
@@ -205,12 +238,16 @@ def render_chat() -> None:
             "color:#999;padding-top:6px;margin:0;letter-spacing:0.06em'>MEDIAFLOW AGENT</p>",
             unsafe_allow_html=True,
         )
+    with col_new:
+        if st.button("New conversation", key="chat_clear", use_container_width=True):
+            _clear_chat()
+            st.rerun()
 
     st.markdown("<hr style='margin:6px 0 10px'>", unsafe_allow_html=True)
 
     # ── chat history ──────────────────────────────────────────────────────────
     if "chat_messages" not in st.session_state:
-        st.session_state.chat_messages = []
+        _clear_chat()
 
     for msg in st.session_state.chat_messages:
         with st.chat_message(msg["role"]):
