@@ -1,0 +1,1324 @@
+# HFW-20260712-1516 — Weekly Throughput Halves as Closure Enforcement Spreads to Energy Infrastructure — 2026-07-12 15:16 EDT
+
+  
+
+# Report ID: HFW-20260712-1516
+
+# Timestamp: 2026-07-12 15:16 EDT
+
+  
+
+# Source links:
+
+# • AP, July 12, 2026 — U.S. strikes Iran; Iran says Hormuz closed while U.S. says open: https://apnews.com/article/iran-usa-united-arab-emirates-attack-0764d17c09370a8c5cf1e8197a8878ab
+
+# • Reuters, July 12, 2026 — Trump says Strait of Hormuz open to commercial traffic: https://www.reuters.com/business/energy/trump-says-strait-hormuz-open-commercial-traffic-2026-07-12/
+
+# • Reuters, July 10, 2026 — Traffic slows through Hormuz as tensions flare: https://www.reuters.com/business/energy/more-lng-japan-linked-vessels-transit-hormuz-despite-renewed-mideast-tensions-2026-07-10/
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+# Physical-balance facts:
+
+# • The U.S.-led maritime coalition says only a little over 140 vessels transited Hormuz during the past week. That implies roughly 20 transits per day, about half the approximately 40-per-day average reported for the preceding two-week partial recovery and only around one-seventh of the prewar 125–140 daily sailings.
+
+# • This is fresh quantitative confirmation that the reopening trend has deteriorated rather than stabilized. The count also includes all vessel types, so it should not be read as 20 daily oil or LNG cargoes.
+
+# • Iran says the strait is closed until calm returns and has demonstrated enforcement: a Cyprus-flagged container ship suffered significant engine-room damage after ignoring Iranian routing instructions, one crew member remains missing, and Iran says another vessel was stopped by warning fire.
+
+# • The United States disputes the closure and says the corridor remains open, but “open” here means militarily contestable passage at reduced levels—not commercially normalized throughput.
+
+# • Kuwait reports that an Iranian strike damaged a Kuwait Oil Company offshore drilling platform and wounded one worker. No production loss, field name, pipeline damage, or export interruption is yet confirmed, so direct barrel loss appears minor for now; the significance is that operating energy infrastructure has entered the active target envelope.
+
+# • No new EIA inventory-draw revision has been issued. The July STEO still assumes a 2.2 million b/d global draw in 3Q26 followed by later inventory rebuilding as trade flows recover.
+
+  
+
+# Market-pricing facts:
+
+# • Oil futures remain closed until Sunday evening. The latest available settlements therefore remain Brent near $76.01/bbl and WTI near $71.41/bbl, with Brent September–December backwardation around $0.46/bbl.
+
+# • Those prices and spreads predate the quantified weekly throughput collapse, the enforced ship strike, the explicit closure dispute, and damage to a Kuwaiti drilling platform.
+
+# • Trump’s statement that Hormuz is open is not accompanied by evidence of restored fresh loading cycles, insurer normalization, or throughput near even the prior 40-per-day emergency-recovery level.
+
+  
+
+# Interpretation:
+
+# The new signal is not another rhetorical closure claim; it is the first fresh weekly throughput denominator after the escalation. Roughly 20 total vessels per day means the corridor has fallen to about half of its already-impaired partial-recovery rate. That makes the political statement “open” physically misleading. A lane can be legally or militarily open while still failing as a commercial oil conduit because owners, crews, insurers, and charterers refuse to use it at scale. The Kuwait platform hit is not yet a material supply outage, but it broadens the mechanism of impairment from transit risk into operator evacuation and precautionary shutdown risk. With futures still carrying Friday’s shallow curve, market pricing remains stale and materially inconsistent unless Sunday trading sharply reprices duration or verified fresh two-way loading flow rebounds.
+
+  
+
+# Watch items:
+
+# 1\. Sunday Brent/WTI opening gaps and whether 1–3 month backwardation steepens sharply.
+
+# 2\. Fresh daily tanker and LNG counts after the 140-vessel weekly figure; distinguish cargo vessels from total traffic.
+
+# 3\. New turnbacks, waiting clusters, inbound-ballast cancellations, crew refusals, or insurer exclusions.
+
+# 4\. Whether the Kuwait platform remains operational and whether adjacent offshore assets are evacuated or shut.
+
+# 5\. Whether claimed U.S.-secured passage produces completed fresh load–exit–discharge cycles rather than selective or previously positioned traffic.
+
+# 6\. Any EIA/IEA revision that deepens 3Q draws or delays the expected inventory-build transition.
+
+  
+
+# HFW-20260711-2121 — U.S. Retaliatory Strikes Convert Closure Into Active Enforcement Conflict — 2026-07-11 21:21 EDT
+
+  
+
+# Report ID: HFW-20260711-2121
+
+# Timestamp: 2026-07-11 21:21 EDT
+
+  
+
+# Source links:
+
+# • AP, July 11, 2026 — U.S. military strikes Iran after attack on civilian vessel in Hormuz: https://apnews.com/article/533b52cf249314ba1d9b5f9a30b1ca43
+
+# • Reuters, July 11, 2026 — Iran declares Strait of Hormuz closed after vessel incident: https://www.reuters.com/world/asia-pacific/iran-declares-strait-hormuz-closed-unauthorised-vessel-hit-2026-07-11/
+
+# • Reuters, July 10, 2026 — Tanker traffic slows after U.S.-Iran clashes: https://www.reuters.com/business/energy/tanker-traffic-slows-strait-hormuz-after-us-iran-clashes-2026-07-10/
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+# Physical-balance facts:
+
+# • The U.S. has now launched another wave of strikes on Iran in direct response to the attack on a civilian commercial vessel in the Strait. Explosions were reported around Bandar Abbas and Sirik, locations directly adjacent to the shipping corridor.
+
+# • The civilian vessel was severely damaged and one crew member was reported missing. This is fresh evidence that the closure is not rhetorical: commercial hull risk is being enforced and is already producing casualties and damage.
+
+# • This follows an explicit IRGC closure declaration and warning fire against a vessel accused of using an unauthorized route. The operating regime has therefore shifted from selective permissioned transit to closure backed by force, followed by U.S. military enforcement against Iran.
+
+# • No fresh broad-flow rebound, tanker-turnback reversal, or insurer normalization was reported in this run. The latest established baseline remains sharply reduced and compositionally distorted traffic, with prior flow around 40 daily ships versus 125–140 prewar and recent near-standstill conditions.
+
+# • No new EIA inventory-draw revision has been issued. EIA still estimates a 2.2 million b/d global draw in 3Q26 and relies on restored trade flows for the later inventory-build transition. The new strike cycle moves the physical system further away from that assumption.
+
+  
+
+# Market-pricing facts:
+
+# • Oil futures were closed when the closure declaration and U.S. retaliatory strikes occurred. The latest available Friday settlements remain Brent near $76.01/bbl and WTI near $71.41/bbl.
+
+# • Brent September–December backwardation was only about $0.46/bbl at Friday’s close. That curve reflects a short disruption horizon and is stale relative to a formally closed strait, a damaged commercial vessel, and renewed U.S. strikes near the chokepoint.
+
+# • There is therefore no valid market-confirmation signal yet. The Sunday reopen will test whether flat price and prompt spreads recognize the transition from coercive circulation to active closure-enforcement conflict.
+
+  
+
+# Interpretation:
+
+# This is a fresh alert beyond the prior closure report because the closure has now generated direct U.S. military retaliation around the corridor itself. The system is no longer merely impaired or permissioned; it is being contested through force against commercial shipping and counterforce against Iranian positions near Hormuz. That destroys the weakest version of the normalization thesis. A reopening can still occur politically, but the commercial channel now must absorb a damaged civilian vessel, a missing crew member, explicit Iranian closure, U.S. strikes, insurer reassessment, and renewed retaliation risk before shipowners can treat transit as ordinary. Friday’s price and shallow backwardation are not merely low; they are temporally obsolete. The first live test is whether Sunday pricing treats this as a durable flow-duration shock rather than another weekend headline.
+
+  
+
+# Watch items:
+
+# 1\. Fresh tanker and LNG turnbacks, anchoring clusters, cancellations, or refusal of inbound ballast voyages after the U.S. strikes.
+
+# 2\. Whether Iran enforces closure against additional commercial vessels or expands attacks beyond unauthorized-route claims.
+
+# 3\. Whether U.S. strikes impair Bandar Abbas, Sirik, port, naval, radar, or energy-adjacent infrastructure.
+
+# 4\. War-risk premium repricing, insurer withdrawal, crew refusal, charter-party force majeure, or port restrictions.
+
+# 5\. Sunday Brent/WTI gaps and whether 1–3 month backwardation steepens sharply.
+
+# 6\. Any EIA or IEA revision that deepens 3Q draws or delays the assumed inventory-build transition.
+
+  
+
+# HFW-20260711-1915 — IRGC Declares Hormuz Closed After Warning Fire — 2026-07-11 19:15 EDT
+
+  
+
+# Report ID: HFW-20260711-1915
+
+# Timestamp: 2026-07-11 19:15 EDT
+
+  
+
+# Source links:
+
+# • Reuters, July 11, 2026 — Iran’s IRGC navy says Strait of Hormuz closed until further notice: https://www.reuters.com/world/middle-east/irans-irgc-navy-says-strait-hormuz-closed-until-further-notice-state-media-2026-07-11/
+
+# • Reuters, July 11, 2026 — U.S. seeks free Hormuz access as talks focus on the strait: https://www.reuters.com/world/asia-pacific/trump-says-us-iran-agree-continue-talks-ceasefire-over-2026-07-11/
+
+# • Financial Times, July 11, 2026 — Inside the risky race through the Strait of Hormuz: https://www.ft.com/content/68d396cd-2800-4ff8-b563-1f5c95beb9ba
+
+# • Reuters, July 8, 2026 — Some war insurers advise shipowners to pause Hormuz voyages: https://www.reuters.com/legal/litigation/some-war-insurers-advise-shipowners-pause-hormuz-voyages-after-attacks-sources-2026-07-08/
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+# Physical-balance facts:
+
+# • Iran’s IRGC navy announced on Saturday that the Strait of Hormuz was closed until further notice after firing a warning shot at a vessel it said attempted an unauthorized route. This is a fresh deterioration from selective, permissioned transit into an explicit closure claim backed by force.
+
+# • The closure declaration follows a corridor already operating at minimal and compositionally distorted flow. Friday reporting showed general commercial traffic remained selective, with most vessels avoiding Iranian waters or waiting for safer conditions.
+
+# • The Financial Times reports that even successful passage now requires tightly coordinated routing through Omani waters, nighttime movement, naval support, crew consent, and expensive war-risk cover. Many vessels continue to wait rather than test the corridor.
+
+# • War-risk insurance remains a binding physical constraint. Reuters reported premiums rising from about 2% toward 3% of vessel value after recent attacks, with some underwriters advising voyage pauses and potential pricing toward 5%. FT reports crisis-peak premiums of 7%–8% of hull value.
+
+# • No new EIA inventory-draw revision has been issued since the July 7 STEO. EIA’s 2.2 million b/d third-quarter draw and later inventory-build path still depend on restored trade flows. Saturday’s closure declaration moves the observable system further away from that assumption.
+
+  
+
+# Market-pricing facts:
+
+# • The latest available settlement remains Friday’s Brent close near $76.01/bbl and WTI near $71.41/bbl. Markets were closed when the fresh closure declaration arrived, so flat price and prompt spreads have not yet incorporated it.
+
+# • Friday’s Brent September–December backwardation was only about $0.46/bbl, a structure consistent with short-lived inconvenience rather than an enforced closure of the world’s most important oil chokepoint.
+
+# • The absence of an immediate price reaction is mechanical because futures are closed, not evidence that the event is immaterial. The first meaningful pricing test will be the Sunday evening reopen and whether prompt spreads steepen faster than flat price.
+
+  
+
+# Interpretation:
+
+# This is alert-worthy because the physical regime has crossed a categorical boundary. The prior system allowed selective movement under coercive permission; the new IRGC statement asserts closure until further notice and demonstrates enforcement with gunfire. That directly attacks the market’s remaining normalization premise. A corridor whose marginal vessel must choose between Iranian authorization, Omani routing, naval coordination, crew refusal, and war-risk premiums is already impaired. A formal closure claim makes the impairment explicit. Friday’s $76/$71 flat prices and shallow Brent backwardation are therefore stale relative to the new physical state. The critical question is no longer whether observed crossings count as normalization, but whether any broad commercial operator will attempt fresh inbound loading transit after the declaration.
+
+  
+
+# Watch items:
+
+# 1\. Fresh tanker or LNG turnbacks, anchoring clusters, or cancellation of inbound ballast voyages after the closure declaration.
+
+# 2\. Whether Iran enforces the announcement against a second commercial vessel or permits only politically approved traffic.
+
+# 3\. Sunday-evening Brent and WTI gaps and the change in 1–3 month backwardation.
+
+# 4\. War-risk premium repricing, outright coverage withdrawal, crew refusal, or charter-party force-majeure notices.
+
+# 5\. Whether Gulf exporters defer loadings or rely increasingly on pipelines and previously loaded/stranded cargo.
+
+# 6\. Any EIA or IEA revision that deepens third-quarter draws or delays the expected inventory-build transition.
+
+  
+
+# HFW-20260711-1413 — Iranian-Priority Transit Masks Broad Commercial Retrenchment — 2026-07-11 14:13 EDT
+
+  
+
+# Report ID: HFW-20260711-1413
+
+# Timestamp: 2026-07-11 14:13 EDT
+
+  
+
+# Source links:
+
+# • Reuters, July 11, 2026 — U.S. seeks Iranian pledge to free up Strait of Hormuz: https://www.reuters.com/world/asia-pacific/trump-says-us-iran-agree-continue-talks-ceasefire-over-2026-07-11/
+
+# • Reuters, July 10, 2026 — Tanker traffic slows in Strait of Hormuz after U.S.-Iran clashes: https://www.reuters.com/business/energy/tanker-traffic-slows-strait-hormuz-after-us-iran-clashes-2026-07-10/
+
+# • Reuters, July 10, 2026 — Iranian oil stuck at sea surges as Chinese teapots switch suppliers: https://www.reuters.com/business/energy/iran-oil-stuck-sea-surges-chinas-teapots-turn-rival-middle-east-supplies-traders-2026-07-10/
+
+# • Financial Times, July 11, 2026 — Inside the risky race through the Strait of Hormuz: https://www.ft.com/content/68d396cd-2800-4ff8-b563-1f5c95beb9ba
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+# • Reuters, July 10, 2026 — Oil settles lower on hopes for smoother Hormuz shipping: https://www.reuters.com/business/energy/oil-edges-lower-heads-weekly-gain-middle-east-supply-risks-persist-2026-07-10/
+
+  
+
+# Physical-balance facts:
+
+# • The newest evidence does not show broad normalization. Reuters reports Washington is still demanding an explicit Iranian commitment to stop attacks and guarantee safe passage, while Saturday reporting describes general shipping as slowed and commercially selective.
+
+# • The traffic composition is now the critical deterioration signal. Iranian-controlled and shadow-fleet vessels have been accelerated through the corridor while many non-Iranian operators avoid Iranian waters, wait for stability, or require tightly coordinated Omani-route passage. A rising transit count can therefore overstate commercially available Gulf export flow.
+
+# • Reuters reports Iranian crude at sea has surged while Chinese independent refiners switched toward Iraqi, Qatari, and UAE barrels. Chinese imports of Iranian crude were only about 556,000 b/d so far in July, the lowest since January 2023. Cargo leaving Iran is therefore not equivalent to cargo clearing into final demand; floating or unsold barrels can be counted as exports without repairing the physical balance.
+
+# • The Financial Times reports that most vessels continue to avoid Iranian waters and many are waiting rather than transiting. War-risk premiums reached 7%–8% of hull value at crisis peaks, and safe passage increasingly depends on route engineering, naval coordination, crew incentives, and nighttime movement.
+
+# • No new EIA inventory-draw revision has been issued since the July 7 STEO. EIA still assumes that trade flows normalize sufficiently for 3Q draws to moderate and for inventories to build later. The newest vessel-composition evidence weakens that assumption without yet changing the published forecast.
+
+  
+
+# Market-pricing facts:
+
+# • Friday Brent settled at $76.01/bbl and WTI at $71.41/bbl, both lower on the day because traders priced continued talks and smoother future shipping despite minimal current traffic.
+
+# • Brent September–December was only about $0.46/bbl backwardated at Friday’s close ($75.29 versus $74.83 in public contract quotes). That is a short-duration scarcity signal, not pricing for a corridor whose commercial access remains selective and militarized.
+
+# • The market is treating successful Iranian or specially coordinated transits as evidence that the chokepoint is reopening. The physical evidence instead shows permissioned, compositionally skewed movement plus accumulating oil at sea.
+
+  
+
+# Interpretation:
+
+# This is alert-worthy because the apparent flow metric has become contaminated by who is moving and whether the cargo actually clears. Iran can rush its own ships through while broad commercial traffic contracts; stranded or unsold oil can accumulate at sea while export tallies rise; a handful of protected passages can coexist with most owners waiting. That means headline crossings can increase without restoring the marginal barrel available to world refiners. Friday’s price decline and shallow Brent backwardation are materially inconsistent with that structure unless diplomacy rapidly converts selective passage into sustained fresh ballast entries, loadings, exits, insurance availability, and cargo discharge. The market is pricing the corridor as temporarily inconvenient. The physical system is functioning as a permissioned and politically segmented network.
+
+  
+
+# Watch items:
+
+# 1\. The share of Hormuz transits made by Iranian/shadow-fleet vessels versus broad commercial crude and LNG fleets.
+
+# 2\. Fresh inbound ballast entries and completed load-discharge cycles, not only outbound or protected passages.
+
+# 3\. Iranian floating storage and cargo-at-sea volumes; further accumulation would show exports being mistaken for realized demand.
+
+# 4\. New vessel turnbacks, waiting clusters, crew refusals, insurer exclusions, or war-risk premiums moving back toward crisis peaks.
+
+# 5\. Any EIA/IEA revision that deepens 3Q draws or delays the expected inventory-build transition.
+
+# 6\. Whether Brent Sep–Dec and WTI front spreads steepen materially when markets reopen.
+
+  
+
+# HFW-20260710-1020 — Friday Slowdown Confirms Recovery Has Reversed — 2026-07-10 10:20 EDT
+
+  
+
+# Report ID: HFW-20260710-1020
+
+# Timestamp: 2026-07-10 10:20 EDT
+
+  
+
+# Source links:
+
+# • Reuters, July 10, 2026 — Tanker traffic slows in Strait of Hormuz after U.S.-Iran clashes: https://www.reuters.com/business/energy/tanker-traffic-slows-strait-hormuz-after-us-iran-clashes-2026-07-10/
+
+# • Reuters, July 10, 2026 — Oil heads for weekly gains as Middle East supply risks persist: https://www.reuters.com/business/energy/oil-edges-lower-heads-weekly-gain-middle-east-supply-risks-persist-2026-07-10/
+
+# • EIA Short-Term Energy Outlook, July 7, 2026: https://www.eia.gov/outlooks/steo/
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reports daily tanker traffic slowed again on Friday after this week’s hostilities. Before the attacks, the partial recovery had reached an average of about 40 daily tanker transits, still only roughly one-third of the prewar 125–140 daily sailings.
+
+# • The Friday slowdown means the earlier rebound did not hold. Select LNG movements continue, but overall traffic is weakening rather than broadening into sustained fresh two-way cargo flow.
+
+# • IEA data cited by Reuters show June global supply recovered 4.1 million b/d as Hormuz partially reopened, yet remained 9.4 million b/d below prewar levels. The physical balance therefore still depends on a reopening that has now reversed at the margin.
+
+# • No fresh confirmed tanker-turnback count beyond the July 8 four-vessel reversal was reported in this run. The new signal is persistence: lower traffic continued into Friday rather than snapping back after Thursday’s near-standstill conditions.
+
+# • EIA has not issued a new inventory-draw revision since July 7. Its 3Q26 draw estimate remains 2.2 million b/d and explicitly assumes reestablished trade flows and production recovery.
+
+  
+
+# Market-pricing facts:
+
+# • Brent traded near $76.59/bbl and WTI near $72.25/bbl early Friday, with weekly gains of roughly 6% and 5% but little additional repricing for the fresh traffic slowdown.
+
+# • Publicly available curve evidence remains shallow relative to the physical impairment. The market continues to price a short disruption horizon rather than a durable reduction in Gulf export throughput.
+
+# • Price action remains dominated by diplomatic-duration expectations: reports of Qatari mediation pared gains even though the shipping channel itself weakened further.
+
+  
+
+# Interpretation:
+
+# This is alert-worthy because the newest Reuters shipping report converts yesterday’s isolated low-flow print into a sustained reversal of the reopening trend. The key change is temporal: traffic did not merely collapse for a few hours after attacks; it remained slower into Friday after a partial recovery that had already reached only about one-third of normal sailings. The market is still treating diplomatic contact as a substitute for restored throughput. That is materially inconsistent with the physical evidence unless the next several days produce sustained fresh ballast entries, loadings, and exits rather than selective LNG passages, AIS-dark movement, or release of previously stranded cargo. EIA’s softened draw forecast remains a conditional normalization scenario, not a description of current flow.
+
+  
+
+# Watch items:
+
+# 1\. Whether Friday’s slowdown persists through the weekend or rebounds into sustained fresh two-way tanker traffic.
+
+# 2\. Fresh ballast-vessel entries toward Gulf loading ports, not merely old cargoes exiting.
+
+# 3\. Any new turnbacks, anchoring clusters, insurer exclusions, or war-risk premium increases.
+
+# 4\. Whether EIA or IEA deepens 3Q inventory draws or delays the expected 4Q inventory-build transition.
+
+# 5\. Whether Brent/WTI prompt backwardation steepens materially while flat price remains capped.
+
+  
+
+# HFW-20260710-0713 — Traffic Falls to Post-June-28 Low While Price Fades — 2026-07-10 07:13 EDT
+
+  
+
+# Report ID: HFW-20260710-0713
+
+# Timestamp: 2026-07-10 07:13 EDT
+
+  
+
+# Source links:
+
+# • Reuters, July 10, 2026 — Traffic slows through Strait of Hormuz as Iran tensions flare: https://www.reuters.com/business/energy/more-lng-japan-linked-vessels-transit-hormuz-despite-renewed-mideast-tensions-2026-07-10/
+
+# • Reuters, July 10, 2026 — Oil heads for weekly gain as Middle East supply risks persist: https://www.reuters.com/business/energy/oil-edges-lower-heads-weekly-gain-middle-east-supply-risks-persist-2026-07-10/
+
+# • EIA Weekly Petroleum Status Report, week ending July 3, 2026: https://www.eia.gov/petroleum/supply/weekly/
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reports total daily vessel traffic through Hormuz fell to its lowest level since June 28. A handful of LNG vessels, including GasLog Shanghai and QatarEnergy-linked ships, did transit, but the broader corridor weakened rather than normalized.
+
+# • AIS opacity is increasing. More vessels are switching off transponders or favoring less exposed routes, which means visible crossings increasingly mix genuine throughput with selective dark movement and cannot be read as clean normalization.
+
+# • War-risk friction remains active. Some insurers have advised suspending voyages, and insurance rates have risen sharply. Japan-linked exposure has collapsed from about 45 vessels and roughly 1,100 crew before the escalation to four vessels and about 100 crew remaining in the Gulf.
+
+# • No fresh tanker turnback count beyond the July 8 four-vessel reversal was confirmed in this run, but the decline to the lowest traffic since June 28 shows that those reversals were not followed by a durable recovery.
+
+# • EIA’s latest weekly report showed a 3.0 million-barrel commercial crude build, but that headline was driven by a 746,000 b/d export drop and higher imports, while the SPR fell 6.2 million barrels, gasoline drew 1.9 million barrels, and distillates drew 5.0 million barrels. The aggregate liquid-fuels buffer therefore continued to erode beneath the crude-build headline.
+
+  
+
+# Market-pricing facts:
+
+# • Brent traded near $76.11/bbl and WTI near $71.87/bbl early July 10, both down about 0.3% on the session despite the fresh traffic deterioration.
+
+# • Brent and WTI remained on track for weekly gains of roughly 6% and 5%, but the level and shallow prompt premium still imply a short disruption horizon rather than sustained impaired flow.
+
+# • No new public curve print in this run showed a sharp steepening sufficient to reconcile the lowest post-June-28 traffic with prompt scarcity. The price structure continues to behave as though diplomatic normalization will arrive before the physical shortfall compounds.
+
+  
+
+# Interpretation:
+
+# This is alert-worthy because the newest shipping evidence breaks the weak version of the recovery narrative. Select LNG transits are occurring, but total daily traffic has fallen to the lowest level since June 28. That is not a broad reopening; it is selective circulation inside a commercially damaged corridor. The market is still treating each successful transit as evidence that duration is short, while the physical system is showing the opposite distribution: fewer vessels, greater AIS opacity, insurer retreat, and national exposure being withdrawn. The EIA crude build also risks being misread. Lower exports can raise U.S. crude stocks while simultaneously signaling impaired global movement, and the 6.2 million-barrel SPR draw plus deep distillate draw show that buffers are still being spent. Flat price fading into this configuration is materially inconsistent unless traffic rebounds quickly in fresh loaded cargoes rather than isolated LNG passages or backfilled movement.
+
+  
+
+# Watch items:
+
+# 1\. Whether daily Hormuz traffic rebounds above the July 10 post-June-28 low for several consecutive days.
+
+# 2\. Whether fresh inbound ballast tankers enter to load, rather than only previously positioned or politically favored vessels exiting.
+
+# 3\. Any new turnbacks, voyage suspensions, or formal insurer exclusions.
+
+# 4\. Whether Japan-linked and other national fleets continue withdrawing personnel and hull exposure.
+
+# 5\. Whether EIA’s next weekly report shows another export-driven crude build alongside SPR/product draws.
+
+# 6\. Whether Brent/WTI prompt spreads steepen sharply while flat price remains capped.
+
+  
+
+# HFW-20260710-0419 — IEA Surplus Case Now Explicitly Depends on Hormuz Normalization — 2026-07-10 04:19 EDT
+
+  
+
+# Report ID: HFW-20260710-0419
+
+# Timestamp: 2026-07-10 04:19 EDT
+
+  
+
+# Source links:
+
+# • Reuters, July 10, 2026 — US-Iran escalation could threaten 2027 oil market surplus, IEA says: https://www.reuters.com/business/energy/us-iran-escalation-could-threaten-2027-oil-market-surplus-iea-says-2026-07-10/
+
+# • Reuters, July 10, 2026 — Oil heads for weekly gain as Middle East supply risks persist: https://www.reuters.com/business/energy/oil-edges-lower-heads-weekly-gain-middle-east-supply-risks-persist-2026-07-10/
+
+# • Reuters, July 9, 2026 — Oil tanker traffic through Hormuz at near standstill: https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/
+
+# • EIA Short-Term Energy Outlook: https://www.eia.gov/outlooks/steo/
+
+  
+
+# Physical-balance facts:
+
+# • The IEA now states that June supply recovered by 4.1 million b/d after partial reopening, but remained 9.4 million b/d below pre-war levels.
+
+# • The IEA’s projected 7.5 million b/d supply increase in 2027 is explicitly contingent on improved Hormuz transit conditions; the agency says the July 7–8 escalation could upend its surplus forecast.
+
+# • Thursday tanker traffic remained near standstill. Reuters reported only two early transits, rising AIS-dark behavior, and average traffic over the prior two weeks of roughly 40 ships per day versus 125–140 before the war.
+
+# • Some war underwriters continue advising voyage pauses or reviewing terms, while Gulf war-risk pricing had already risen toward 3% of vessel value from 2% the prior week.
+
+  
+
+# Market-pricing facts:
+
+# • Brent traded near $76.34 and WTI near $72.15 at 03:19 GMT on July 10, up only marginally on the session despite continued near-standstill physical transit.
+
+# • The market is pricing a diplomatic-duration outcome rather than present flow conditions: prices remain close to the EIA’s revised 3Q26 Brent assumption of $74 even though the EIA forecast itself assumes reestablished trade flows and production normalization.
+
+# • No fresh public evidence in this run showed a compensating steepening of Brent or WTI backwardation sufficient to reconcile the price level with the newly explicit 9.4 million b/d pre-war supply gap.
+
+  
+
+# Interpretation:
+
+# The alert threshold is met because the forecast architecture has now cracked in public. The IEA’s surplus case is not independent evidence that supply is normalizing; it is a conditional scenario whose central premise is improved Hormuz transit. Yet physical traffic has reverted toward near-standstill conditions, while flat prices sit almost directly on the EIA’s normalization-dependent forecast. The market is therefore treating the disputed assumption as if it were an observed fact. That is a material pricing inconsistency unless the next several days produce sustained, fresh two-way cargo movement rather than selective sanctioned, AIS-dark, stranded, or backfilled transits.
+
+  
+
+# Watch items:
+
+# 1\. Whether daily Hormuz traffic rebounds toward fresh loaded-cargo throughput rather than counting repositioning or previously stranded vessels.
+
+# 2\. Any new tanker turnbacks, anchoring clusters, or AIS-dark crossings that impair confidence in headline transit counts.
+
+# 3\. Whether the EIA revises its 3Q26 inventory-draw estimate back above 2.2 million b/d after renewed closure conditions.
+
+# 4\. Brent and WTI prompt spreads: a failure to steepen while near-standstill traffic persists would deepen the mismatch; a sharp backwardation move would signal delayed recognition.
+
+# 5\. War-risk premium changes above the recent 3% level or evidence of outright cover withdrawal.
+
+  
+
+# HFW-20260710-0021 — Emergency Stock Rebuild Erodes the Forecast Surplus — 2026-07-10 00:21 EDT
+
+  
+
+# Report ID: HFW-20260710-0021
+
+# Timestamp: 2026-07-10 00:21 EDT
+
+# Title: Emergency Stock Rebuild Erodes the Forecast Surplus
+
+  
+
+# Alert judgment: ALERT-WORTHY. The fresh signal is balance-sheet deterioration rather than another vessel-count update. Reuters now estimates that the Iran conflict and emergency response removed roughly 1.5 billion barrels from global strategic inventories. Planned replenishment could add 506,000–664,000 b/d of crude demand into 2027. That demand was created by the disruption itself and directly reduces the buffer behind EIA’s projected 2027 surplus.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 9 that emergency releases tied to the conflict removed about 1.5 billion barrels from global strategic inventories.
+
+# • Reuters estimated government reserve replenishment could add roughly 506,000–664,000 b/d of crude demand into 2027, with buying extending through 2028.
+
+# • The United States released 172 million barrels in the coordinated response and is expected to begin restocking first; Japan, South Korea, China, India, and the Philippines also have replenishment or expansion needs.
+
+# • Hormuz flow has not supplied an offsetting normalization signal: Reuters still describes tanker traffic as near standstill, with only two tankers recorded early Thursday, growing AIS opacity, insurer pause/review guidance, and Al Rekayyat awaiting salvage.
+
+# • EIA’s July STEO forecasts a 2.2 mb/d global draw in 3Q26, then builds of 2.7 mb/d in 4Q26 and 5.0 mb/d in 2027. The newly quantified reserve-rebuild demand would absorb roughly 10%–13% of EIA’s projected 2027 build before any further Hormuz shortfall or commercial restocking.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported early Friday that Brent was $76.24/bbl and WTI $72.04/bbl, little changed to slightly lower despite the Strait remaining partially closed.
+
+# • Brent’s prompt curve remains only mildly backwardated: public quotes around 03:03 EDT showed Sep $76.35, Oct $76.28, Nov $75.92, and Dec $75.61—about $0.74/bbl Sep–Dec.
+
+# • Flat price and the shallow curve continue to price short disruption duration, while the inventory system now faces a large future refill obligation.
+
+  
+
+# Interpretation:
+
+# Emergency reserves have been functioning as hidden supply. Their depletion allowed prices to understate the physical shock, but rebuilding them converts yesterday’s buffer into tomorrow’s demand. This does not invalidate EIA’s surplus forecast by itself; it does make the forecast materially less forgiving. A 0.5–0.66 mb/d replenishment pull consumes a meaningful part of the projected surplus exactly while Hormuz throughput remains coercive, opaque, and commercially fragile. The market is therefore discounting both impaired current flow and the balance-sheet cost of having masked that impairment.
+
+  
+
+# Watch items:
+
+# 1\. Whether EIA or IEA explicitly incorporates strategic-reserve replenishment into 2027 balance revisions.
+
+# 2\. Tender timing and refill prices for the U.S. and Asian strategic reserves.
+
+# 3\. Whether sustained fresh Hormuz loadings recover beyond emergency/AIS-dark movement.
+
+# 4\. Whether Brent and WTI front spreads steepen as reserve buying becomes scheduled physical demand.
+
+# 5\. Whether product-stock rebuilding competes with crude-reserve replenishment after record crack-spread stress.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Strategic oil reserve buying set to support crude demand through 2028: https://www.reuters.com/business/energy/strategic-oil-reserve-buying-set-support-crude-demand-through-2028-2026-07-09/
+
+# • Reuters, July 10, 2026 — Oil edges lower, but heads for weekly gain as Middle East supply risks persist: https://www.reuters.com/business/energy/oil-edges-lower-heads-weekly-gain-middle-east-supply-risks-persist-2026-07-10/
+
+# • Reuters, July 9, 2026 — Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce: https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+# HFW-20260709-1916 — Settlement Fade Confirms Market Is Discounting Duration, Not Flow — 2026-07-09 19:16 EDT
+
+  
+
+# Report ID: HFW-20260709-1916
+
+# Timestamp: 2026-07-09 19:16 EDT
+
+# Title: Settlement Fade Confirms Market Is Discounting Duration, Not Flow
+
+  
+
+# Alert judgment: ALERT-WORTHY. This is a fresh market-pricing mismatch rather than a new vessel-count deterioration. The physical channel remains impaired: Reuters reports Hormuz tanker traffic at a near standstill, two early-Thursday tankers, rising AIS-dark behavior, insurer pause/review guidance, Al Rekayyat still awaiting salvage, and Goldman estimating Persian Gulf oil flows retreated to the low-70% range of normal after recent tanker attacks. Yet Brent and WTI settled roughly 2% lower. The market is discounting duration and macro demand risk while the shipping channel is still behaving like a coercive emergency corridor.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 9 that oil tanker traffic through Hormuz was at a near standstill, with only two tankers recorded passing early Thursday: the sanctioned Iranian crude supertanker Berg 1 and the chemical tanker Well Sail.
+
+# • Reuters/Kpler/LSEG data showed AIS opacity worsening, with shipping sources saying more vessels were switching off public AIS tracking, making visible traffic an increasingly degraded proxy for true flow.
+
+# • Reuters/Rystad characterized tanker traffic as essentially stopped; Reuters also reported the prior two-week recovery averaged about 40 daily ships, still far below the pre-conflict average of 125–140 daily sailings.
+
+# • Insurance friction remains active: some war underwriters advised companies to pause Hormuz voyages or review policy terms after renewed vessel attacks.
+
+# • Al Rekayyat remains a live deterrent: Reuters reported the Qatari LNG tanker was still stranded off Oman awaiting salvage after a projectile strike caused an engine-room fire.
+
+# • Reuters reported Goldman Sachs estimated Persian Gulf oil flows initially recovered above 80% of pre-war flows as trapped tankers rushed out, but retreated to the low-70% range of normal following recent tanker attacks.
+
+# • EIA’s July STEO still depends on normalization: it expects global inventories to draw 2.2 mb/d in 3Q26, then flip to builds of 2.7 mb/d in 4Q26 and 5.0 mb/d in 2027, explicitly noting that much of increased 3Q tanker traffic is previously stranded cargo rather than clean fresh flow.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported Brent settled down $1.72, or 2.2%, at $76.30/bbl, and WTI settled down $1.44, or 2.0%, at $72.08/bbl.
+
+# • Reuters reported the selloff occurred despite continuing supply constraints and delayed full reopening of Hormuz.
+
+# • The current market frame is duration-compression: traders are treating renewed U.S.-Iran tension as likely short-lived, while the physical evidence still shows insurer, AIS, salvage, and shipowner constraints.
+
+# • Public term-structure evidence in this run was incomplete beyond prior shallow Brent backwardation signals, but the settlement fade itself is the new signal: flat price is moving away from impaired-flow pricing while the physical channel has not normalized.
+
+  
+
+# Interpretation:
+
+# The contradiction is now stripped clean. This is not the market saying Hormuz is safe. It is the market saying the impairment will not last long enough to matter. That is a duration bet, not a flow observation. The physical facts do not yet support that confidence: two-tanker early flow, AIS-dark behavior, insurer hesitation, a stranded LNG carrier, and low-70% Gulf flows after recent attacks are not the anatomy of normalization. They are the anatomy of emergency throughput. The market is selling crude on the hope that politics compresses time faster than shipping friction consumes barrels. That can be right only if the next 24–72 hours produce sustained fresh loading flow rather than trapped-cargo release and selective, militarized transits.
+
+  
+
+# Watch items:
+
+# 1\. Whether Hormuz flow rebounds into sustained fresh two-way loading traffic, not merely old stranded cargo exiting.
+
+# 2\. Whether AIS-dark behavior expands further, lowering confidence in public vessel-count normalization claims.
+
+# 3\. Whether Al Rekayyat salvage resolves cleanly or remains a visible insurer/shipowner deterrent.
+
+# 4\. Whether war-risk underwriters harden from caution/review into exclusions, voyage pauses, or sharply higher premiums.
+
+# 5\. Whether EIA/IEA revise 3Q draws deeper or delay the assumed 4Q inventory-build flip if impaired flow persists.
+
+# 6\. Whether Brent/WTI front spreads steepen after flat price weakness, which would expose prompt-scarcity pressure beneath macro-demand selling.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce: https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/
+
+# • Reuters, July 9, 2026 — Oil prices settle 2% lower as economic worries outweigh supply risks: https://www.reuters.com/business/energy/oil-rises-after-us-launches-fresh-strikes-against-iran-2026-07-09/
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+# HFW-20260709-1513 — Flat Price Breaks While Curve Barely Prices Near-Standstill Flow — 2026-07-09 15:13 EDT
+
+  
+
+# Report ID: HFW-20260709-1513
+
+# Timestamp: 2026-07-09 15:13 EDT
+
+# Title: Flat Price Breaks While Curve Barely Prices Near-Standstill Flow
+
+  
+
+# Alert judgment: ALERT-WORTHY. This is a fresh pricing-mismatch alert rather than a new vessel-count deterioration. The physical channel remains near standstill by Reuters/Kpler evidence, while flat price has now fallen harder and the Brent curve shows only mild backwardation into late 2026. That means the market is pricing a short-lived disruption and demand/inflation worries, not a corridor whose commercial flow is still governed by AIS opacity, insurer caution, turnbacks, and salvage risk.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 9 that oil tanker traffic through Hormuz was at a near standstill, with only two tankers recorded passing early Thursday: Berg 1 and Well Sail.
+
+# • Reuters reported vessels were increasingly disabling AIS tracking, making observed traffic less reliable and turning “visible flow” into a lower-confidence proxy.
+
+# • Reuters/Rystad characterized tanker traffic as essentially stopped; Reuters also reported the prior two-week average had improved to about 40 ships per day, still far below the pre-conflict average of 125–140 daily sailings.
+
+# • Insurance friction remains active: Reuters reported some war underwriters advised companies to pause Hormuz voyages or review terms after renewed vessel attacks.
+
+# • Al Rekayyat remains a live behavioral deterrent: Reuters reported the Qatari LNG tanker was still stranded and awaiting salvage off Oman after a projectile strike caused an engine-room fire.
+
+# • EIA’s July STEO bearish path remains explicitly dependent on increased Hormuz traffic and a return of crude output/trade flows near pre-conflict levels by year-end, with most shut-in production restored by early 2027.
+
+# • Refined-product stress has not cleared: Reuters reported European diesel margins above $60/bbl, U.S. 3-2-1 crack spread at a record $64.58/bbl on July 8, U.S. gasoline stocks at their lowest for early July since 2021, and OECD product inventories still below their 2015–2019 average.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported at 1:26 p.m. EDT that Brent fell $1.92, or 2.5%, to $76.10/bbl and WTI fell $1.61, or 2.2%, to $71.91/bbl despite renewed U.S.-Iran conflict limiting supply by delaying full Hormuz reopening.
+
+# • MarketWatch showed Brent front month at $75.68 at 6:53 p.m. BST, down 3.00% on the day, with recent contracts at Sep $75.68, Oct $75.65, Nov $75.40, Dec $75.15, Jan $74.89, and Feb $74.59. That is backwardation, but very shallow relative to the physical evidence; Sep-Dec is only about $0.53/bbl.
+
+# • The term-structure message is therefore not “no scarcity,” but “short-lived scarcity.” That is the exact mismatch if Hormuz flow remains near standstill rather than quickly normalizing.
+
+  
+
+# Interpretation:
+
+# The market has now made the contradiction cleaner. It is not simply ignoring Hormuz; it is discounting duration. Flat price is selling off on demand/inflation logic, while the curve preserves only a modest prompt premium. But the physical channel is not merely delayed — it is commercially unstable. A two-tanker early count, AIS-dark behavior, insurer pause guidance, a stranded LNG carrier, and product cracks at record stress do not describe normalization. They describe a system whose visible flow can be mistaken for recovery only if every emergency movement is counted as steady-state throughput. The market is pricing “temporary flare-up.” The physical evidence still says “fragile corridor under coercive circulation.”
+
+  
+
+# Watch items:
+
+# 1\. Whether Hormuz traffic rebounds from the two-tanker early-Thursday print into sustained two-way fresh loading flow, not old stranded cargo release.
+
+# 2\. Whether Brent Sep-Dec backwardation steepens materially from roughly $0.53/bbl.
+
+# 3\. Whether WTI front spreads confirm or reject the shallow-Brent-curve signal.
+
+# 4\. Whether insurers move from caution/review into formal exclusions, voyage pauses, or sharply higher war-risk premiums.
+
+# 5\. Whether Al Rekayyat salvage resolves cleanly or remains a visible deterrent to LNG shipping.
+
+# 6\. Whether EIA/IEA revise 3Q draws deeper or delay the assumed inventory-build flip if near-standstill flow persists.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce: https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/
+
+# • Reuters, July 9, 2026 — Oil prices dive by more than 2% as inflation fears outweigh supply risks: https://www.reuters.com/business/energy/oil-rises-after-us-launches-fresh-strikes-against-iran-2026-07-09/
+
+# • Reuters, July 9, 2026 — Fuel markets flash supply crunch despite calmer oil prices: https://www.reuters.com/business/energy/fuel-markets-flash-supply-crunch-despite-calmer-oil-prices-2026-07-09/
+
+# • EIA, July 7, 2026 — EIA increases global oil production forecast after the opening of the Strait of Hormuz: https://www.eia.gov/pressroom/releases/press590.php
+
+# • MarketWatch, July 9, 2026 — Brent Crude Oil front month and recent contracts: https://www.marketwatch.com/investing/future/brn.1?countrycode=uk
+
+  
+
+# HFW-20260709-1313 — Fuel-Crack Stress Confirms Crude Price Is Under-reading Physical Tightness — 2026-07-09 13:13 EDT
+
+  
+
+# Report ID: HFW-20260709-1313
+
+# Timestamp: 2026-07-09 13:13 EDT
+
+# Title: Fuel-Crack Stress Confirms Crude Price Is Under-reading Physical Tightness
+
+  
+
+# Alert judgment: ALERT-WORTHY. The fresh signal is not merely that Hormuz tanker flow remains impaired; Reuters now reports fuel-market stress flashing through refined products while Brent/WTI flat price fades. That is the exact mismatch condition: crude is trading as though the conflict can be contained, while the downstream system is behaving like spare elasticity has already been consumed.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 9 that Hormuz tanker traffic had nearly halted, with only two tankers recorded passing early Thursday — Berg 1 and Well Sail — while many vessels disabled AIS amid rising risks.
+
+# • Reuters reported that Goldman Sachs estimated oil shipments had fallen to the low-70% range of pre-war levels.
+
+# • The July 8 turnback signal remains active: Reuters reported at least four oil and gas tankers turned back from attempted Hormuz transit after vessel attacks.
+
+# • Insurance friction remains active: Reuters reported some war underwriters advised companies to pause or reassess Hormuz voyages after three vessels were attacked this week, including Al Rekayyat, which remained stranded near Oman.
+
+# • EIA’s July STEO still expects global inventories to draw 2.2 mb/d in 3Q26, down from more than 7 mb/d in the June forecast, and explicitly depends on reestablished trade flows and a later shift back toward inventory builds.
+
+# • Reuters separately reported July 9 that fuel markets are flashing supply-crunch signals despite calmer crude prices: European diesel margins reached record levels above $60/bbl, U.S. refining margins peaked at $64.58/bbl, gasoline remained premium-priced, and OECD fuel inventories remain below average.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported July 9 that Brent fell to about $76.90/bbl and WTI to about $72.32/bbl despite renewed U.S.-Iran tension and uncertainty around reopening the strait.
+
+# • Reuters reported that oil-price expectations for sustained energy-price hikes remain low even as recent violence disrupted shipping lanes and renewed tanker attacks slowed flow recovery.
+
+# • Public term-structure data in this run remained incomplete; however, the refined-product crack signal is functioning as a parallel scarcity indicator. If crude flat price remains capped while diesel/gasoline cracks stay elevated, the market is pricing crude diplomacy while products price physical depletion.
+
+  
+
+# Interpretation:
+
+# This is the sharper formulation: the market is not merely underpricing Hormuz risk; it is splitting the barrel in two. Crude flat price is trading the possibility of diplomatic stabilization, while refined-product markets are pricing the fact that the system has already burned through buffers. That makes the EIA bearish pathway more fragile, because its relief sequence requires restored trade flows, replenishing inventories, and easing downstream pressure. But if traffic is still near standstill, AIS opacity is rising, insurers are hesitating, and diesel/gasoline cracks are screaming while crude fades, the market is not seeing normalization. It is seeing a temporary crude-price lull over a stressed physical machine.
+
+  
+
+# Watch items:
+
+# 1\. Whether the two-tanker early-Thursday flow count rebounds into sustained two-way fresh loading traffic.
+
+# 2\. Whether Goldman’s low-70% shipment estimate deteriorates further or becomes visible in independent vessel-count data.
+
+# 3\. Whether product cracks remain extreme even if Brent/WTI flat price keeps fading.
+
+# 4\. Whether EIA/IEA deepen 3Q draw estimates again or delay the assumed 4Q inventory-build flip.
+
+# 5\. Whether insurer caution turns into formal exclusions, voyage pauses, or materially higher war-risk premiums.
+
+# 6\. Whether Brent/WTI prompt spreads steepen while crude flat price remains capped.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce: https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/
+
+# • Reuters, July 9, 2026 — Oil prices slide over 1% as U.S.-Iran conflict clouds Hormuz reopening: https://www.reuters.com/business/energy/oil-rises-after-us-launches-fresh-strikes-against-iran-2026-07-09/
+
+# • Reuters, July 9, 2026 — Fuel markets flash supply crunch despite calmer oil prices: https://www.reuters.com/business/energy/fuel-markets-flash-supply-crunch-despite-calmer-oil-prices-2026-07-09/
+
+# • Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+# • EIA July 2026 STEO: https://www.eia.gov/outlooks/steo/
+
+  
+
+# HFW-20260709-0915 — Two-Tanker Trickle Deepens the Flow-Pricing Mismatch — 2026-07-09 09:15 EDT
+
+  
+
+# Report ID: HFW-20260709-0915
+
+# Timestamp: 2026-07-09 09:15 EDT
+
+# Title: Two-Tanker Trickle Deepens the Flow-Pricing Mismatch
+
+  
+
+# Alert judgment: ALERT-WORTHY. The fresh signal is a further deterioration in observed Hormuz tanker flow: Reuters reports that early Thursday only two tankers were recorded passing through the strait — the Iranian crude supertanker Berg 1 and the chemical tanker Well Sail — while many vessels are disabling AIS tracking amid elevated risk. This sharpens the prior “four-tanker trickle” signal rather than resolving it. The market is still trading Brent/WTI in the high-$70s / low-$70s, which is materially inconsistent with a corridor whose apparent throughput is now near standstill and whose flow depends on military suppression, insurer tolerance, AIS opacity, and shipowner willingness.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 9 that oil tanker traffic through Hormuz has nearly halted, with only two tankers recorded passing early Thursday versus normal pre-conflict traffic far above that level.
+
+# • Reuters identified the two transiting vessels as the Iranian crude supertanker Berg 1 and the chemical tanker Well Sail, while many vessels were reportedly disabling AIS tracking to reduce detection risk.
+
+# • The prior July 8 turnback signal remains active: at least four oil and gas tankers had turned back from attempted Hormuz transit after attacks, including empty LNG carriers heading toward Ras Laffan to load and the VLCC Lila Vadinar carrying Kuwaiti crude.
+
+# • The Al Rekayyat signal remains unresolved: Reuters reports the Qatari LNG tanker is still stranded near Oman after an engine-room fire from a projectile strike, with cargo apparently intact but salvage required.
+
+# • Insurance friction is hardening: Reuters reports some war underwriters are advising companies to pause or reassess Hormuz voyages after this week’s vessel attacks.
+
+# • EIA’s July STEO still expects global inventories to draw 2.2 mb/d in 3Q26, down from more than 7 mb/d in the June forecast, and its bearish forward path depends on reestablished trade flows and inventory draws moderating rather than renewed near-standstill shipping.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported Brent around $78.55/bbl and WTI around $73.91/bbl on July 9 as U.S.-Iran conflict clouded peace prospects.
+
+# • WSJ reported later price fade/volatility, with Brent around $77.85 and WTI around $73.30 despite renewed U.S.-Iran strikes and Russia diesel-export curbs.
+
+# • The term-structure evidence remains incomplete in the public sources available in this run. Earlier reports indicated renewed backwardation, but I did not find a fresh reliable quoted 1–3 month Brent/WTI spread. The watch condition remains: sustained steepening of prompt spreads would confirm that the flat-price hesitation is masking prompt-barrel scarcity.
+
+  
+
+# Interpretation:
+
+# This is the cleaner contradiction: the physical system is not normalizing; it is pulsing. The move from “four tankers recently” to “only two recorded early Thursday” means the recovery narrative is losing its last cheap refuge. Even worse, AIS-dark behavior makes visible traffic a less reliable flow proxy, not a comforting undercount. If vessels are turning back, pausing, going dark, or requiring salvage, then the market cannot honestly treat every exiting cargo as proof of restored steady-state throughput. It is still confusing emergency circulation with normalized trade. Brent/WTI are pricing tactical escalation; the physical channel is describing structural impairment.
+
+  
+
+# Watch items:
+
+# 1\. Whether the two-tanker early-Thursday count rebounds into sustained two-way fresh flow or remains near-standstill evidence.
+
+# 2\. Whether AIS-dark behavior expands, making public vessel counts less reliable.
+
+# 3\. Whether additional ballast LNG/crude vessels refuse to enter the Gulf to load.
+
+# 4\. Whether Al Rekayyat salvage resolves cleanly or becomes a persistent insurer/shipowner deterrent.
+
+# 5\. Whether EIA/IEA deepen 3Q draw estimates again or delay the assumed 4Q inventory-build flip.
+
+# 6\. Whether Brent/WTI front spreads steepen even if flat price fades.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce: https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/
+
+# • Reuters, July 9, 2026 — Oil rises as U.S.-Iran conflict clouds peace prospects: https://www.reuters.com/business/energy/oil-rises-after-us-launches-fresh-strikes-against-iran-2026-07-09/
+
+# • Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+# • EIA July 2026 STEO: https://www.eia.gov/outlooks/steo/
+
+# • WSJ, July 9, 2026 — Oil eases after early gains despite U.S.-Iran strikes, Russia export curbs: https://www.wsj.com/finance/commodities-futures/oil-rises-amid-concerns-over-supply-disruption-in-middle-east-35f6787b
+
+  
+
+# HFW-20260709-0716 — Gulf Base Retaliation Keeps Hormuz in Active Military Regime — 2026-07-09 07:16 EDT
+
+  
+
+# Report ID: HFW-20260709-0716
+
+# Timestamp: 2026-07-09 07:16 EDT
+
+# Title: Gulf Base Retaliation Keeps Hormuz in Active Military Regime
+
+  
+
+# Alert judgment: ALERT-WORTHY. The fresh signal is that the conflict has widened from vessel attacks and U.S. suppression strikes into Iranian attacks on U.S. military infrastructure in Qatar, Kuwait, and Bahrain. That does not mechanically reduce barrels today, but it hardens the regime governing the Strait of Hormuz: commercial shipping is now moving through a live military exchange, not a merely tense post-ceasefire corridor. With Brent still around the high-$70s, the market is not yet pricing a durable impaired-flow regime.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 9 that Iranian armed forces targeted U.S. military infrastructure in neighboring Gulf states after U.S. strikes on Iran’s southern coastal and eastern provinces, further straining the three-week-old ceasefire.
+
+# • Reuters reported that the U.S. military said its latest strikes were aimed at keeping the Strait of Hormuz open after Iran targeted three tankers in the area.
+
+# • Reuters reported Iran’s army said it targeted U.S. Patriot systems in Kuwait, an early-warning site in Qatar, and U.S. army fuel storage in Bahrain; Kuwait reported engagement with missiles and drones in its airspace.
+
+# • Reuters reported the Strait of Hormuz handled about one-fifth of global oil supplies before the war, and that Tehran has taken effective control of the strait.
+
+# • The prior July 8 shipping signal remains unresolved: at least four oil and gas tankers turned back from attempting Hormuz transit, including three empty QatarEnergy LNG carriers heading to Ras Laffan to load and the VLCC Lila Vadinar carrying 2 million barrels of Kuwaiti crude.
+
+# • The cargo-risk signal remains unresolved: Reuters reported Al Rekayyat sustained significant damage in an attack on the Omani side of Hormuz; its engine-room fire and stranded/salvage state remain a behavioral warning to shipowners and insurers even if the LNG tanks were not breached.
+
+# • EIA’s July STEO still expects global oil inventories to fall 2.2 mb/d in 3Q26 after about 5.0 mb/d in 2Q26, with its bearish 4Q/2027 path depending on reestablished trade flows and resumed production rather than chronic unpredictable transit.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported oil prices had spiked on renewed supply fears but fell back on July 9 as investors weighed whether the flare-up was tactical/temporary or a complete ceasefire collapse.
+
+# • Trading Economics showed Brent around $78.28/bbl on July 9, still far below a durable-impaired-Hormuz clearing price if Gulf exports remain dependent on military suppression, insurer tolerance, and shipowner willingness.
+
+# • Reuters commentary argued energy markets have not yet adjusted to the new reality of unpredictable Hormuz traffic and that chronic disruption should embed a higher geopolitical risk premium.
+
+# • Term-structure watch remains decisive: the strongest confirmation would be sustained steepening of 1–3 month Brent/WTI backwardation while flat price remains capped by negotiation headlines.
+
+  
+
+# Interpretation:
+
+# This is a new alert because the battlefield is now wrapping itself around the shipping channel. The previous contradiction was “traffic is moving, therefore flow is normalizing.” The current contradiction is sharper: flow is being preserved by strikes and threatened by retaliation against the very U.S. infrastructure used to enforce the corridor. That is not restored trade. It is coerced circulation under military stress. If the market keeps treating every barrel that escapes the Gulf as proof of normalization, it will keep mistaking emergency throughput for steady-state supply.
+
+  
+
+# Watch items:
+
+# 1\. Whether Iranian retaliation against Gulf-based U.S. infrastructure changes convoy behavior, insurance terms, or charterer willingness.
+
+# 2\. Whether Qatar, Kuwait, Bahrain, or Oman impose port, airspace, naval, or routing restrictions that indirectly slow energy exports.
+
+# 3\. Whether more empty LNG/crude vessels refuse to enter Hormuz to load, not just whether old stranded cargo exits.
+
+# 4\. Whether Al Rekayyat salvage resolves cleanly or becomes a persistent risk marker.
+
+# 5\. Whether EIA/IEA revise 3Q inventory draws deeper or delay the assumed 4Q inventory-build flip.
+
+# 6\. Whether Brent/WTI front spreads steepen despite flat price fading.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Iran says it hits U.S. military targets in Gulf: https://www.reuters.com/world/middle-east/iran-says-it-hits-us-military-targets-gulf-prepares-bury-slain-leader-2026-07-09/
+
+# • Reuters, July 8, 2026 — Trump-Iran standoff threatens chronic Gulf oil instability: https://www.reuters.com/commentary/reuters-open-interest/trump-iran-standoff-threatens-chronic-gulf-oil-instability-2026-07-08/
+
+# • Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+# • Reuters, July 8, 2026 — What are the risks of an LNG tanker explosion?: https://www.reuters.com/business/energy/what-are-risks-an-lng-tanker-explosion-2026-07-08/
+
+# • EIA July 2026 STEO: https://www.eia.gov/outlooks/steo/
+
+# • Trading Economics, July 9, 2026 — Brent crude oil price: https://tradingeconomics.com/commodity/brent-crude-oil
+
+  
+
+# HFW-20260709-0515 — Price Fades While War-Risk Friction Hardens — 2026-07-09 05:15 EDT
+
+  
+
+# Report ID: HFW-20260709-0515
+
+# Timestamp: 2026-07-09 05:15 EDT
+
+# Title: Price Fades While War-Risk Friction Hardens
+
+  
+
+# Alert judgment: ALERT-WORTHY. The fresh signal is not a new catastrophic flow stop; it is a pricing mismatch. Flat price faded even as the commercial channel remains under severe threat guidance, insurer friction, salvage risk, and evidence that recent “traffic” is still not equivalent to normalized fresh throughput. The market is trying to trade the ceasefire/strike tape as if risk has become negotiable again; shipowners and insurers are still treating Hormuz as a live hazard.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported July 8 that Qatari LNG tanker Al Rekayyat remained stranded off Oman after a projectile strike caused an engine-room fire; cargo was intact and crew evacuated, but salvage was still required.
+
+# • Reuters reported the U.S. threat level for Hormuz was raised to “severe,” and the IMO urged vessels to avoid the strait until crew safety can be ensured.
+
+# • Reuters reported only four tankers passing recently through Hormuz versus a usual pre-conflict level of roughly 125–140 daily.
+
+# • Reuters reported some war-risk insurers advised shipowners to pause Hormuz voyages after attacks, while others reassessed terms. Premiums had moved from roughly 2% toward nearly 3% of vessel value, with potential to reach 5%.
+
+# • EIA reported U.S. crude inventories unexpectedly rose 3.0 million barrels for the week ending July 3, but the SPR fell 6.2 million barrels, gasoline stocks drew 1.9 million barrels, and distillates drew 5.0 million barrels. The headline crude build does not erase refined-product tightness or emergency-release dependence.
+
+# • EIA’s July STEO still expects global oil inventories to draw 2.2 mb/d in 3Q26 after a 5.1 mb/d 2Q26 draw, with the bearish 4Q/2027 path depending on reestablished trade flows.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported July 9 that Brent fell to about $76.99/bbl and WTI to about $72.64/bbl as the market weighed renewed U.S. strikes and possible negotiations.
+
+# • The price fade occurred while Reuters also reported shipping insurers advising caution or policy review because of the escalated conflict.
+
+# • Term-structure stress remains the key confirmation variable: sustained or steepening 1–3 month Brent/WTI backwardation would show the market moving from headline-risk repricing into prompt-barrel scarcity.
+
+  
+
+# Interpretation:
+
+# This is not a clean new deterioration in the physical flow count; it is a sharper version of the same contradiction. The market is discounting the tape because diplomacy may resume, but the physical chokepoint is not cleared by a headline. A cargo carrier needing salvage, insurers telling owners to pause voyages, and IMO avoidance guidance mean the marginal barrel still has to pass through a commercial permission structure that is partly broken. Price has backed off, but the shipowner’s problem has not. That is the mismatch.
+
+  
+
+# Watch items:
+
+# 1\. Whether the “four tankers recently” figure rebounds into sustained two-way fresh flow or remains emergency trickle evidence.
+
+# 2\. Whether Al Rekayyat salvage completes without further incident.
+
+# 3\. Whether insurer warnings become formal coverage exclusions, higher premiums, or refusal to underwrite Hormuz transit.
+
+# 4\. Whether QatarEnergy, ADNOC, Saudi, Kuwaiti, or Iraqi loadings show additional cancellations or deferrals.
+
+# 5\. Whether refined-product draws continue despite headline crude builds.
+
+# 6\. Whether Brent/WTI front spreads steepen while flat price stays capped.
+
+  
+
+# Sources:
+
+# • Reuters, July 9, 2026 — Oil prices fall as markets weigh impact of U.S. strikes on Iran: https://www.reuters.com/business/energy/oil-rises-after-us-launches-fresh-strikes-against-iran-2026-07-09/
+
+# • Reuters, July 8, 2026 — Qatari LNG tanker awaits salvage off Oman after projectile strike: https://www.reuters.com/business/energy/damaged-qatari-lng-tanker-awaits-salvage-after-strike-near-hormuz-2026-07-08/
+
+# • Reuters, July 8, 2026 — Some war insurers advise shipowners to pause Hormuz voyages after attacks: https://www.reuters.com/legal/litigation/some-war-insurers-advise-shipowners-pause-hormuz-voyages-after-attacks-sources-2026-07-08/
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/
+
+# • WSJ, July 9, 2026 — U.S. Crude Oil Stockpiles Post Unexpected Build: https://www.wsj.com/business/energy-oil/u-s-crude-oil-stockpiles-post-unexpected-build-2accfa15
+
+  
+
+# HFW-20260708-2312 — Four-Tanker Trickle Confirms Hormuz Recovery Is Still Not Real — 2026-07-08 23:12 EDT
+
+  
+
+# Report ID: HFW-20260708-2312
+
+# Timestamp: 2026-07-08 23:12 EDT
+
+# Title: Four-Tanker Trickle Confirms Hormuz Recovery Is Still Not Real
+
+  
+
+# Alert judgment: ALERT-WORTHY. The live deterioration is no longer just turnbacks or one-off damage. The newest Reuters signal is that recent Hormuz traffic fell to only four tankers versus a usual pre-conflict level of roughly 125–140 daily, while U.S. strikes, severe threat guidance, and insurer caution keep the chokepoint in active military/commercial stress. That is materially inconsistent with any market narrative that treats recent movement as normalized fresh flow.
+
+  
+
+# Physical-balance facts:
+
+# • Reuters reported that Qatari LNG tanker Al Rekayyat remains stranded off Oman after a projectile strike ignited an engine-room fire; cargo was intact and crew evacuated, but the ship was awaiting salvage.
+
+# • Reuters reported the U.S. threat level for Hormuz was raised to “severe,” and the U.N. International Maritime Organization urged avoidance of the strait.
+
+# • Reuters reported only four tankers passing recently through Hormuz versus the usual 125–140 daily pre-conflict level.
+
+# • Reuters also reported at least four oil and gas tankers turned back after vessel attacks, including three QatarEnergy LNG tankers heading empty to Ras Laffan to load and the VLCC Lila Vadinar carrying 2 million barrels of Kuwaiti crude.
+
+# • The backfill trap remains unresolved: three stranded VLCCs exited, but those cargoes were loaded in late February or early March. That is delayed discharge, not restored steady-state throughput.
+
+# • EIA’s July STEO still estimates global oil inventories fell 5.1 mb/d in 2Q26 and will fall another 2.2 mb/d in 3Q26, with the bearish path depending on restored trade flows and a 4Q inventory-build flip.
+
+  
+
+# Market-pricing facts:
+
+# • Reuters reported Brent at $78.80/bbl and WTI at $74.26/bbl after new U.S. strikes against Iran.
+
+# • WSJ reported the oil futures market returned to backwardation, indicating renewed concern over immediate supply and a premium for prompt barrels.
+
+# • Current flat price is no longer asleep, but it remains below a durable-impaired-Hormuz clearing price if the marginal vessel requires acceptable insurance terms, military suppression, and no further hull/cargo hits.
+
+  
+
+# Interpretation:
+
+# This is a fresh alert because the physical problem has become more legible: the market is not merely underpricing risk; it is still confusing forced circulation with recovery. Four tankers recently passing versus 125–140 normally is not a reopening. It is a pulse in a trauma bay. The EIA bearish route requires 3Q to serve as the bridge from disruption to replenishment. But if the bridge itself is being crossed only under severe threat, with cargo damage, salvage operations, turnbacks, AIS-dark behavior, and armed strikes, then the inventory-build flip is not yet a physical fact. It is a hope wearing an agency table.
+
+  
+
+# Watch items:
+
+# 1\. Whether the “four tankers recently” figure rebounds quickly or persists as emergency-flow evidence.
+
+# 2\. Whether Al Rekayyat salvage is completed without further incident.
+
+# 3\. Whether insurers harden restrictions after the severe threat level and fresh U.S. strikes.
+
+# 4\. Whether QatarEnergy, ADNOC, Saudi, Kuwaiti, or Iraqi loadings show additional cancellations or delays.
+
+# 5\. Whether Brent/WTI 1–3 month backwardation steepens further.
+
+# 6\. Whether EIA/IEA revise 3Q inventory draws deeper or delay the 4Q rebuild assumption.
+
+  
+
+# Sources:
+
+# • Reuters, July 8, 2026 — Qatari LNG tanker awaits salvage off Oman after projectile strike: https://www.reuters.com/business/energy/damaged-qatari-lng-tanker-awaits-salvage-after-strike-near-hormuz-2026-07-08/
+
+# • Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+# • Reuters, July 9, 2026 — Oil rises after US launches fresh strikes against Iran: https://www.reuters.com/business/energy/oil-rises-after-us-launches-fresh-strikes-against-iran-2026-07-09/
+
+# • WSJ, July 8, 2026 — Oil Prices Jump After Trump Says Ceasefire With Iran Is Over: https://www.wsj.com/articles/oil-prices-climb-on-renewed-supply-disruption-fears-as-u-s-iran-exchange-fire-e0da8481
+
+# • EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+# HFW-20260708-1820 — Fresh U.S. Strikes Turn Hormuz Shipping Risk into Active Theater — 2026-07-08 18:20 EDT
+
+  
+
+Report ID: HFW-20260708-1820
+
+Timestamp: 2026-07-08 18:20 EDT
+
+Title: Fresh U.S. Strikes Turn Hormuz Shipping Risk into Active Theater
+
+  
+
+Alert judgment: ALERT-WORTHY. The newest deterioration is not merely another price uptick; it is that the U.S. has now launched fresh strikes explicitly framed around keeping the Strait of Hormuz open, after commercial-vessel attacks and severe maritime-threat escalation. That shifts the flow problem from “shipowners avoiding a dangerous chokepoint” toward “the chokepoint itself is now an active military objective.”
+
+  
+
+Physical-balance facts:
+
+• Reuters reported at 22:08 UTC on July 8 that U.S. Central Command announced fresh strikes on Iran aimed at keeping the Strait of Hormuz open to traffic.
+
+• Reuters reported explosions in Bandar Abbas, Abu Musa, Bushehr, and other Iranian locations, with a U.S. official saying the latest strikes were expected to be bigger than Tuesday’s attacks.
+
+• The strikes followed Iranian attacks on commercial ships, U.S. revocation of sanctions relief for Iranian oil sales, and Iran’s reported strikes on U.S. military sites in Bahrain and Kuwait.
+
+• Maritime authorities had already raised the threat risk for Hormuz transit to “severe” after attacks on two tankers on Tuesday.
+
+• Earlier July 8 Reuters shipping data showed at least four tankers turning back, 14 LNG tankers anchored off Ras Laffan, some AIS-off behavior, and three exiting VLCCs that were old stranded cargoes rather than proof of fresh steady-state throughput.
+
+• EIA’s July STEO still has global oil inventories drawing 2.2 mb/d in 3Q26 after a 5.1 mb/d 2Q26 draw. Its bearish path still depends on recovered trade flows and the 4Q inventory-build flip.
+
+  
+
+Market-pricing facts:
+
+• Reuters reported Brent last traded at $79.28/bbl after settling at $78.02, while WTI traded at $74.76 after settling at $73.52.
+
+• This is a front-end repricing, but still not a durable-impaired-Hormuz price if traffic remains constrained by live military risk rather than merely insurance caution.
+
+• The term-structure signal remains key: any renewed steepening of Brent/WTI 1–3 month backwardation would confirm the market is moving from headline-risk pricing into physical-scarcity pricing.
+
+  
+
+Interpretation:
+
+The alert remains active and has intensified. The market’s old contradiction was “traffic is moving, therefore flow is recovering.” The new contradiction is worse: military action is being used to force open the same transit channel that the inventory-rebuild model assumes will normalize. That is not normalization. That is coercive circulation. If barrels need airstrikes to move, then the market is still not pricing a healed system; it is pricing a wounded system under armed escort. The EIA bearish path can survive a noisy reopening. It cannot survive a reopening whose marginal vessel depends on successful suppression of fresh attacks, insurer confidence, and charterer willingness to treat Hormuz as commercially viable.
+
+  
+
+Watch items:
+
+1\. Whether fresh U.S. strikes deter attacks or trigger another round of vessel turnbacks.
+
+2\. Whether Bandar Abbas / Abu Musa / Bushehr strikes impair port, military, or energy-adjacent infrastructure.
+
+3\. Whether insurers, shipowners, or charterers raise restrictions after the “severe” threat level and fresh strikes.
+
+4\. Whether QatarEnergy, ADNOC, Saudi, Kuwaiti, or Iraqi liftings show new cancellations or loading delays.
+
+5\. Whether Brent and WTI front spreads steepen further, especially 1–3 month backwardation.
+
+6\. Whether EIA/IEA delay the assumed 4Q inventory-build flip or deepen 3Q draw estimates.
+
+  
+
+Sources:
+
+• Reuters, July 8, 2026 — Oil rises more than a dollar per barrel as US launches fresh strikes against Iran: https://www.reuters.com/business/energy/oil-rises-more-than-dollar-per-barrel-us-launches-fresh-strikes-against-iran-2026-07-08/
+
+• Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+• Reuters, July 8, 2026 — Qatari LNG tanker awaits salvage off Oman after projectile strike: https://www.reuters.com/business/energy/damaged-qatari-lng-tanker-awaits-salvage-after-strike-near-hormuz-2026-07-08/
+
+• EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+
+HFW-20260708-1716 — Damaged LNG Carrier Converts Transit Risk into Live Cargo Loss — 2026-07-08 17:16 EDT
+
+  
+
+Report ID: HFW-20260708-1716
+
+Timestamp: 2026-07-08 17:16 EDT
+
+Title: Damaged LNG Carrier Converts Transit Risk into Live Cargo Loss
+
+  
+
+Alert judgment: ALERT-WORTHY. This is not a quiet follow-through check. The deterioration signal is that Hormuz risk has moved from “vessels refusing transit” into confirmed damage/stranding of a Qatari LNG carrier, with traffic reportedly down to emergency trickle levels. The prior backfill-vs-normalization contradiction remains intact, but the new layer is worse: fresh cargo risk is now a live physical loss/risk event, not only a behavioral deterrent.
+
+  
+
+Physical-balance facts:
+
+• Reuters reported on July 8 that Qatari LNG tanker Al Rekayyat remained stranded off Oman after being hit by a projectile that ignited a fire in its engine room. The LNG cargo was reported intact, crew evacuated, and support vessels were assisting, but the ship remained awaiting salvage.
+
+• Reuters also reported that the U.S. raised the threat level for the Strait of Hormuz to “severe,” and that the U.N. International Maritime Organization urged avoidance of the strait amid escalating risks.
+
+• The same Reuters report said traffic through Hormuz had declined significantly, with only four tankers passing recently versus a usual pre-conflict level of roughly 125–140 daily.
+
+• A separate Reuters July 8 report said at least four oil and gas tankers turned back from attempting Hormuz transit: three QatarEnergy LNG tankers heading empty toward Ras Laffan to load, plus the VLCC Lila Vadinar carrying 2 million barrels of Kuwaiti crude.
+
+• The backfill trap remains central: three stranded VLCCs have exited, but those were cargoes loaded in late February or early March. That is delayed discharge, not proof of fresh steady-state throughput.
+
+• EIA’s July STEO still forecasts a 2.2 mb/d global inventory draw in 3Q26 after a 5.1 mb/d draw in 2Q26, and its bearish 4Q/2027 path depends on restored trade flows and reestablished production rather than persistent impaired Hormuz flow.
+
+  
+
+Market-pricing facts:
+
+• Brent and WTI have repriced the front-end shock sharply, with Brent trading around $78–80/bbl and WTI around $74–76/bbl across current market reports.
+
+• WSJ reported that the oil futures curve moved into backwardation, indicating stronger immediate supply concern and front-month stress.
+
+• Even after the spike, prices remain far below the level implied by durable large-scale impairment if Hormuz traffic is genuinely closer to emergency flow than normalization flow.
+
+  
+
+Interpretation:
+
+The alert condition remains active and has strengthened. The market is no longer asleep, but it is still bargaining with the wrong object. It is pricing a flare-up around a recovering channel; the physical evidence is beginning to look like a channel whose recovery itself is being attacked. A damaged LNG carrier plus severe-threat guidance converts the issue from “some vessels hesitate” into “entry and exit now carry demonstrable hull/cargo risk.” That matters because the EIA bearish path needs 3Q to function as a clearing bridge toward restored flows. If the marginal shipowner, insurer, or charterer interprets this as proof that Hormuz remains unsafe, the expected 4Q inventory-build flip becomes a spreadsheet séance.
+
+  
+
+Watch items:
+
+1\. Whether Al Rekayyat salvage succeeds quickly or becomes a prolonged visible obstruction/risk marker.
+
+2\. Whether QatarEnergy, ADNOC, Saudi, Kuwaiti, or Iraqi liftings show fresh cancellations after the severe-threat escalation.
+
+3\. Whether more ballast vessels avoid entering the Gulf, especially empty LNG/crude ships heading to load.
+
+4\. Whether AIS-dark behavior expands, making reported “traffic” less reliable as a barrel-flow proxy.
+
+5\. Whether front-month backwardation steepens further, especially Brent/WTI 1–3 month spreads.
+
+6\. Whether EIA/IEA revise 3Q draws deeper or delay the assumed 4Q rebuild.
+
+  
+
+Sources:
+
+• Reuters, July 8, 2026 — Qatari LNG tanker awaits salvage off Oman after projectile strike: https://www.reuters.com/business/energy/damaged-qatari-lng-tanker-awaits-salvage-after-strike-near-hormuz-2026-07-08/
+
+• Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+• EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+• WSJ, July 8, 2026 — Oil Futures Rise as U.S.-Iran Strikes Rekindle Conflict: https://www.wsj.com/finance/commodities-futures/oil-rises-amid-renewed-supply-disruption-fears-30598117
+
+  
+
+HFW-20260708-1711 — Fresh Turnbacks Break the Recovery Narrative — 2026-07-08 17:11 EDT
+
+  
+
+Report ID: HFW-20260708-1711
+
+Timestamp: 2026-07-08 17:11 EDT
+
+Title: Fresh Turnbacks Break the Recovery Narrative
+
+  
+
+Alert judgment: ALERT-WORTHY. Physical-balance risk deteriorated versus the “reopening / normalization” path. The contradiction is not simply that price rose; it is that the latest vessel behavior shows renewed refusal to transit, while the official bearish inventory path still depends on 3Q being a transitional clearing period rather than a durable ceiling on fresh flow.
+
+  
+
+Physical-balance facts:
+
+• Reuters reported on July 8 that at least four oil and gas tankers turned back from attempting to transit the Strait of Hormuz after renewed vessel attacks raised safety concerns. Three QatarEnergy-controlled LNG tankers — Al Ghariya, Duhail, and Al Ruwais — turned away while empty and heading toward Ras Laffan to load. The VLCC Lila Vadinar, carrying 2 million barrels of Kuwaiti crude loaded late last week, made a U-turn off Oman.
+
+• Reuters also reported that only 16 LNG cargoes from Ras Laffan and 10 from ADNOC’s Das Island terminal had exited the strait since the conflict began in late February, a fraction of the normal roughly 7 million metric tons shipped monthly from those hubs. Satellite imagery from July 7 showed 14 LNG tankers anchored offshore Ras Laffan and three with AIS transponders off; Vortexa said over 50 QatarEnergy- and ADNOC-controlled ballast vessels were stationed around the Gulf, India, and Malacca region, with some AIS-off for more than 10 days.
+
+• The backfill trap remains active: three stranded VLCCs exited the strait, but they were carrying cargoes loaded in late February or early March. This is delayed inventory release, not proof of fresh normalized throughput.
+
+• EIA’s July STEO estimates global inventories fell 5.1 mb/d in 2Q26 and will fall another 2.2 mb/d in 3Q26. EIA explicitly says 3Q draws continue because much of the increased tanker traffic consists of previously stranded oil tankers, both inside and outside the strait.
+
+• EIA’s bearish price path depends on normalization: most crude production and trade patterns returning near pre-conflict levels by year-end, only 1.4 mb/d still shut in by 4Q26, then inventory builds of 2.7 mb/d in 4Q26 and 5.0 mb/d in 2027.
+
+  
+
+Market-pricing facts:
+
+• Reuters reported Brent settled July 8 at $78.02/bbl, up $3.86 or 5.2%, and WTI settled at $73.52/bbl, up $3.08 or 4.4%, both multi-week highs.
+
+• Reuters also reported analysts at RBC Capital Markets saying the latest flare-up likely puts a ceiling on the number of vessels willing to pass through Hormuz.
+
+• The price response is no longer complacent at the front, but it still appears materially below a “durable impaired Hormuz” clearing price if fresh Gulf flows remain capped and stranded/backfilled cargo is mistaken for recovery.
+
+  
+
+Interpretation:
+
+The alert is triggered. The fresh turnbacks are the important variable, not the headline price jump. The market has begun to reprice acute risk, but the physical evidence attacks the core assumption behind the EIA bearish path: that rising tanker traffic means normalized flow is returning. The latest data instead show three different things at once: new refusal to enter, queued empty vessels waiting to load, and old stranded crude finally exiting. That combination is precisely the “movement confused with recovery” failure mode.
+
+  
+
+Watch items:
+
+1\. Whether the next 24–72 hours show sustained vessel refusal to enter Hormuz, especially empty LNG/crude vessels heading to load.
+
+2\. Whether AIS-dark behavior increases around Ras Laffan, Das Island, Oman, and Malacca staging areas.
+
+3\. Whether additional refineries cancel Gulf loadings after MRPL’s reported Iraqi crude charter cancellation.
+
+4\. Whether Brent/WTI backwardation steepens further, especially front-month versus 3- and 6-month contracts.
+
+5\. Whether EIA or IEA revises 3Q inventory draws deeper again, invalidating the July STEO de-escalation path.
+
+6\. Whether price remains below the level implied by a durable 2–6 mb/d Gulf export impairment; that would preserve the “market pricing mismatch” condition.
+
+  
+
+Sources:
+
+• Reuters, July 8, 2026 — Four oil and gas tankers turn back from Hormuz strait after vessel attacks: https://www.reuters.com/world/middle-east/four-oil-gas-tankers-turn-back-hormuz-strait-after-vessel-attacks-2026-07-08/
+
+• Reuters, July 8, 2026 — Oil settles at multi-week high as US-Iran truce buckles under fresh hostilities: https://www.reuters.com/business/energy/us-oil-prices-jump-after-us-military-launches-strikes-against-iran-2026-07-07/
+
+• EIA July 2026 STEO — Global oil markets: https://www.eia.gov/outlooks/steo/report/global\_oil.php
+
+  
+  

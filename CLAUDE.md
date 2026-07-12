@@ -318,6 +318,34 @@ is a direct ForcingFunction variable, not just a news item. Probe separately.
 - `mediaflow_seen.json` — URL/fingerprint dedup state
 - `explore/` — probe scripts and outputs from feed discovery phase (reference only)
 
+### Breaking News (Hormuz Flow Watch reports)
+
+Fourth dashboard destination (`breaking_news` mode), backed by the Hormuz Flow
+Watch Reports Google Doc rather than the MediaFlow classification pipeline.
+
+- `breaking_news.py` — pure parser/source module (no Streamlit dependency):
+  splits the doc's plain-text export on `HFW-` report headings, extracts
+  required sections by label (not position, since the live doc mixes two
+  historical report templates), and fetches the doc via its public
+  `export?format=txt` endpoint.
+- `breaking_news_view.py` — Streamlit renderer; routes off
+  `st.session_state.mode == "breaking_news"`, polls every ~60s while the view
+  is open, caches the last good parse across transient fetch failures.
+- `breaking_news_test.py` — plain-assert test script (no pytest; this repo has
+  no test framework). Run with `python breaking_news_test.py`. Includes a
+  frozen snapshot of the live 18-report document as a compatibility baseline.
+- `breaking_news_fixture_live.txt` — that frozen snapshot fixture.
+
+**Configuration:**
+- `BREAKING_NEWS_DOC_ID` (optional) — Google Doc ID for the source document.
+  Defaults to the current Hormuz Flow Watch Reports doc if unset.
+- `BREAKING_NEWS_EXPORT_URL` (optional) — full export URL override, if the
+  source ever needs to point somewhere other than a plain doc-ID export.
+- **Required manual step:** the source Google Doc must be shared as
+  "Anyone with the link can view" — the app fetches it unauthenticated via
+  the public export endpoint (no OAuth/service account/credential JSON is
+  used or required for this feature).
+
 ### Design Principles
 - Each arc is a clean chronological list — one entry per distinct event, not per article
 - Contradictions are flagged explicitly, not silently resolved
