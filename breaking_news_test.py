@@ -237,6 +237,30 @@ Interpretation:
 Final interpretation text, unaffected by any of the sections above.
 """
 
+# ── a long but realistic future label (near the 80-char bound) ─────────────
+
+LONG_UNKNOWN_LABEL = """\
+HFW-20260701-1400 — Long Unknown Label — 2026-07-01 14:00 EDT
+
+Report ID: HFW-20260701-1400
+
+Physical-balance facts:
+
+• A physical fact.
+
+Preliminary Non-Confirmed Field Assessment Pending Further Verification:
+
+This section is long but still well under the 80-character bound.
+
+Market-pricing facts:
+
+• A market fact.
+
+Interpretation:
+
+Final interpretation text, unaffected by the long label above.
+"""
+
 # ── mid-line label mention inside a bullet (must not be treated as boundary) ─
 
 MIDLINE_LABEL_MENTION = """\
@@ -345,6 +369,18 @@ def run() -> None:
         check(
             "harder unknown labels: interpretation unaffected",
             r.interpretation == "Final interpretation text, unaffected by any of the sections above.",
+        )
+
+    # a long (72-char) but realistic future label, near the 80-char bound
+    reports, errors = parse_reports(LONG_UNKNOWN_LABEL)
+    check("long unknown label: 1 report, 0 errors", len(reports) == 1 and len(errors) == 0)
+    if reports:
+        r = reports[0]
+        check("long unknown label: physical facts unaffected", len(r.physical_facts) == 1)
+        check("long unknown label: market facts unaffected", len(r.market_facts) == 1)
+        check(
+            "long unknown label: interpretation unaffected",
+            r.interpretation == "Final interpretation text, unaffected by the long label above.",
         )
 
     # mid-line label mention inside a bullet must not split the section

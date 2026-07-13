@@ -54,10 +54,19 @@ _LABEL_ALTERNATION = "|".join(re.escape(label) for label in KNOWN_LABELS)
 # "Shipping & insurance:", or "U.S. response:" — length-bounding is what keeps
 # this safe against matching ordinary prose, since a match requires the entire
 # line (this doc's paragraphs are each one unbroken raw line) to be short and
-# label-shaped, not just any sentence that happens to contain a colon. Only
-# known-label matches participate in required/duplicate-label checks below.
+# label-shaped, not just any sentence that happens to contain a colon. The
+# bound (80 chars) is generous relative to any realistic label while staying
+# well clear of real body content: in the live 18-report document, the
+# shortest fact bullet is 95 chars and the shortest interpretation paragraph
+# is 530. This is still a heuristic, not a guarantee — an exceptionally long
+# future label could in theory exceed the bound and evade detection — but
+# raising the bound further would start to risk colliding with genuinely
+# short prose lines, so 80 is chosen as comfortably above any label seen or
+# reasonably anticipated, and comfortably below any real paragraph/bullet.
+# Only known-label matches participate in required/duplicate-label checks
+# below.
 LABEL_RE = re.compile(
-    rf"^(?:({_LABEL_ALTERNATION})|([A-Z][A-Za-z0-9()&./' -]{{0,43}}:))\s*(.*)$",
+    rf"^(?:({_LABEL_ALTERNATION})|([A-Z][A-Za-z0-9()&./' -]{{0,79}}:))\s*(.*)$",
     re.MULTILINE,
 )
 
