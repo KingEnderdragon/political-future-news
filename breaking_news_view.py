@@ -122,7 +122,14 @@ def _inject_breaking_news_js() -> None:
 
 
 def _do_fetch_and_reparse() -> None:
-    """Fetch + parse the doc, updating session cache. Never raises."""
+    """Fetch + parse the doc, updating session cache. Never raises.
+
+    A source-format error must never clobber an already-good cache — only a
+    fully clean parse (reports present, zero errors) replaces
+    bn_cache_reports. If errors are present but no cache exists yet, the
+    partial parse is still shown (better than a blank view) alongside a
+    visible warning.
+    """
     try:
         text = fetch_doc_text(EXPORT_URL)
         reports, errors = parse_reports(text)
@@ -132,16 +139,38 @@ def _do_fetch_and_reparse() -> None:
         st.session_state.bn_last_fetch = time.monotonic()
         return
 
-    if not reports:
+    if not reports and not errors:
         st.session_state.bn_stale = True
         st.session_state.bn_last_status = "no valid reports found in source document"
         st.session_state.bn_last_fetch = time.monotonic()
         return
 
+    has_existing_cache = bool(st.session_state.get("bn_cache_reports"))
+
+    if errors and has_existing_cache:
+        # Preserve the last good dataset — do not let a partial reparse
+        # (e.g. a malformed newly-appended report) mutate the working cache.
+        st.session_state.bn_cache_errors = errors
+        st.session_state.bn_stale = True
+        st.session_state.bn_last_status = f"{len(errors)} report(s) failed to parse; showing last good data"
+        st.session_state.bn_last_fetch = time.monotonic()
+        return
+
+    if not reports:
+        # errors only, and no prior cache to fall back on
+        st.session_state.bn_cache_errors = errors
+        st.session_state.bn_stale = True
+        st.session_state.bn_last_status = "source document has no valid reports (format errors only)"
+        st.session_state.bn_last_fetch = time.monotonic()
+        return
+
+    # Fully clean parse, or a first-ever partial parse with no prior cache.
     st.session_state.bn_cache_reports = reports
     st.session_state.bn_cache_errors = errors
-    st.session_state.bn_stale = False
-    st.session_state.bn_last_status = ""
+    st.session_state.bn_stale = bool(errors)
+    st.session_state.bn_last_status = (
+        f"{len(errors)} report(s) skipped due to source-format errors" if errors else ""
+    )
     st.session_state.bn_last_fetch = time.monotonic()
 
 
