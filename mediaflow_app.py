@@ -13,6 +13,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import streamlit as st
+from breaking_news_view import render_breaking_news
 from eia_terminal import render_terminal
 from mediaflow_chat import render_chat
 
@@ -320,6 +321,10 @@ def main() -> None:
         render_chat()
         return
 
+    if st.session_state.get("mode") == "breaking_news":
+        render_breaking_news()
+        return
+
     # Rendered once per full page load — MutationObserver stays alive
     # for the entire session, converting timestamps as the fragment adds them.
     inject_tz_converter()
@@ -394,7 +399,10 @@ def main() -> None:
                 st.session_state.mode = "chat"
                 st.rerun()
         with bc:
-            st.button("□", key="dash_c", use_container_width=True)
+            if st.button("⚡", key="goto_breaking_news", help="Breaking News", use_container_width=True):
+                st.session_state.mode = "breaking_news"
+                st.session_state.pop("bn_last_fetch", None)  # force fresh fetch on entry
+                st.rerun()
         with bd:
             st.button("□", key="dash_d", use_container_width=True)
 
