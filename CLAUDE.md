@@ -331,9 +331,14 @@ Watch Reports Google Doc rather than the MediaFlow classification pipeline.
 - `breaking_news_view.py` — Streamlit renderer; routes off
   `st.session_state.mode == "breaking_news"`, polls every ~60s while the view
   is open, caches the last good parse across transient fetch failures.
-- `breaking_news_test.py` — plain-assert test script (no pytest; this repo has
-  no test framework). Run with `python breaking_news_test.py`. Includes a
-  frozen snapshot of the live 18-report document as a compatibility baseline.
+- `breaking_news_test.py` — plain-assert parser test script (no pytest; this
+  repo has no test framework). Run with `python breaking_news_test.py`.
+  Includes a frozen snapshot of the live 18-report document as a
+  compatibility baseline.
+- `breaking_news_view_test.py` — plain-assert tests for the view layer's
+  state logic: `compute_selection()` (auto-advance/preserve-selection) and
+  `_do_fetch_and_reparse()`'s cache-preservation behavior, via a minimal fake
+  session-state object. Run with `python breaking_news_view_test.py`.
 - `breaking_news_fixture_live.txt` — that frozen snapshot fixture.
 
 **Configuration:**

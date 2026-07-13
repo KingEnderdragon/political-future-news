@@ -180,6 +180,33 @@ def _render_fact_bubbles(facts: list[str], css_class: str) -> str:
     )
 
 
+def compute_selection(
+    ids: list[str], prev_newest: str | None, current_sel: str | None
+) -> tuple[str | None, str | None]:
+    """Decide the next (selected_id, prev_newest_id) given the current
+    newest-first id list and prior state. No Streamlit dependency, so this
+    is directly unit-testable.
+
+    Advances to the newest id only if the viewer was already on what was
+    previously the newest (or had no selection yet); otherwise preserves a
+    deliberately-chosen older selection. Falls back to newest if the current
+    selection no longer exists in ids at all.
+    """
+    if not ids:
+        return current_sel, prev_newest
+
+    newest_id = ids[0]
+    selected = current_sel
+
+    if newest_id != prev_newest:
+        if selected is None or selected == prev_newest:
+            selected = newest_id
+    if selected not in ids:
+        selected = newest_id
+
+    return selected, newest_id
+
+
 @st.fragment(run_every=POLL_INTERVAL_SECONDS)
 def _breaking_news_body() -> None:
     now = time.monotonic()
@@ -200,17 +227,13 @@ def _breaking_news_body() -> None:
 
     # ── auto-advance / dropdown selection ──────────────────────────────────
     ids = [r.report_id for r in reports]
-    newest_id = ids[0]
-    prev_newest = st.session_state.get("bn_prev_newest_id")
-    current_sel = st.session_state.get("bn_dropdown")
-
-    if newest_id != prev_newest:
-        if current_sel is None or current_sel == prev_newest:
-            st.session_state["bn_dropdown"] = newest_id
-    if st.session_state.get("bn_dropdown") not in ids:
-        st.session_state["bn_dropdown"] = newest_id
-
-    st.session_state["bn_prev_newest_id"] = newest_id
+    new_sel, new_prev_newest = compute_selection(
+        ids,
+        st.session_state.get("bn_prev_newest_id"),
+        st.session_state.get("bn_dropdown"),
+    )
+    st.session_state["bn_dropdown"] = new_sel
+    st.session_state["bn_prev_newest_id"] = new_prev_newest
 
     id_to_report = {r.report_id: r for r in reports}
 
@@ -230,6 +253,16 @@ def _breaking_news_body() -> None:
         st.caption(f"⚠ {len(errors)} report(s) skipped due to source-format errors: {names}")
 
     report = id_to_report[st.session_state["bn_dropdown"]]
+
+    empty_core = []
+    if not report.physical_facts:
+        empty_core.append("Physical-balance facts")
+    if not report.market_facts:
+        empty_core.append("Market-pricing facts")
+    if not report.interpretation.strip():
+        empty_core.append("Interpretation")
+    if empty_core:
+        st.warning(f"⚠ This report is missing content for: {', '.join(empty_core)}. Showing available content only.")
 
     st.markdown(f'<div class="bn-headline">{html.escape(report.headline)}</div>', unsafe_allow_html=True)
     st.markdown(f'<div class="bn-timestamp">{html.escape(report.timestamp_display)}</div>', unsafe_allow_html=True)
