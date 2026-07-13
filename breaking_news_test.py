@@ -414,6 +414,11 @@ def run() -> None:
     reports, errors = parse_reports(EMPTY_DOC)
     check("empty doc: ([], [])", reports == [] and errors == [])
 
+    # Google text exports may prefix the first heading with a UTF-8 BOM.
+    reports, errors = parse_reports("\ufeff" + CURRENT_TEMPLATE)
+    check("BOM-prefixed doc: newest report is retained", len(reports) == 1 and reports[0].report_id == "HFW-20260701-1200")
+    check("BOM-prefixed doc: zero errors", errors == [])
+
     # ── compatibility baseline: the actual live document ────────────────────
     live_fixture = Path(__file__).parent / "breaking_news_fixture_live.txt"
     if live_fixture.exists():
@@ -442,9 +447,24 @@ def run() -> None:
         check("fetch_doc_text: happy path returns text", "HFW-1" in text)
 
     with mock.patch("breaking_news.requests.get") as m:
+        # A successful public Google Docs export normally ends at a temporary
+        # googleusercontent.com host after requests follows the 307 redirect.
+        m.return_value = _FakeResp(
+            url="https://doc-04-7s-docstext.googleusercontent.com/export/token",
+            content=("\ufeffHFW-1 — h — 2026-01-01 00:00 EDT\n").encode("utf-8"),
+        )
+        text = fetch_doc_text("https://docs.google.com/document/d/x/export?format=txt")
+        check("fetch_doc_text: accepts public Google download redirect", text.startswith("HFW-1"))
+
+    with mock.patch("breaking_news.requests.get") as m:
         # requests follows redirects internally when allow_redirects=True, so a
         # login-wall redirect lands here as a 200 at the new (accounts.google.com) URL.
-        m.return_value = _FakeResp(status_code=200, url="https://accounts.google.com/ServiceLogin")
+        m.return_value = _FakeResp(
+            status_code=200,
+            url="https://accounts.google.com/ServiceLogin",
+            headers={"content-type": "text/html; charset=UTF-8"},
+            content=b"<html>login</html>",
+        )
         try:
             fetch_doc_text("https://docs.google.com/document/d/x/export?format=txt")
             check("fetch_doc_text: login redirect raises", False)
@@ -466,6 +486,22 @@ def run() -> None:
             check("fetch_doc_text: html content-type raises", False)
         except BreakingNewsAccessError as e:
             check("fetch_doc_text: html content-type raises", "HTML" in str(e))
+
+    with mock.patch("breaking_news.requests.get") as m:
+        m.return_value = _FakeResp(content=b"")
+        try:
+            fetch_doc_text("https://docs.google.com/document/d/x/export?format=txt")
+            check("fetch_doc_text: empty text raises", False)
+        except BreakingNewsAccessError as e:
+            check("fetch_doc_text: empty text raises", "empty" in str(e))
+
+    with mock.patch("breaking_news.requests.get") as m:
+        m.return_value = _FakeResp(content=b"This is plain text but not a report.")
+        try:
+            fetch_doc_text("https://docs.google.com/document/d/x/export?format=txt")
+            check("fetch_doc_text: text without HFW heading raises", False)
+        except BreakingNewsAccessError as e:
+            check("fetch_doc_text: text without HFW heading raises", "no HFW" in str(e))
 
     check("build_export_url: shape", build_export_url("abc123").endswith("/d/abc123/export?format=txt"))
 

@@ -107,17 +107,29 @@ def fetch_doc_text(url: str, timeout: float = 10.0) -> str:
     if resp.status_code != 200:
         raise BreakingNewsAccessError(f"HTTP {resp.status_code}")
 
-    host = urlparse(resp.url).netloc
-    if host != "docs.google.com":
-        raise BreakingNewsAccessError(f"redirected to {host} (document may not be public)")
-
-    content_type = resp.headers.get("content-type", "")
+    content_type = resp.headers.get("content-type", "").lower()
     if "text/html" in content_type:
-        raise BreakingNewsAccessError("received HTML instead of plain-text export")
+        host = urlparse(resp.url).netloc
+        raise BreakingNewsAccessError(
+            f"received HTML from {host} instead of plain-text export "
+            "(document may not be public)"
+        )
+    if "text/plain" not in content_type:
+        raise BreakingNewsAccessError(
+            f"unexpected content type: {content_type or 'missing'}"
+        )
 
     # requests defaults an undeclared-charset text/plain response to Latin-1,
-    # which mojibakes this doc's em dashes and bullet points — decode as UTF-8 explicitly.
-    return resp.content.decode("utf-8", errors="replace")
+    # which mojibakes this doc's em dashes and bullet points. utf-8-sig also
+    # removes the BOM Google currently adds before the newest HFW heading.
+    text = resp.content.decode("utf-8-sig", errors="replace")
+    if not text.strip():
+        raise BreakingNewsAccessError("received an empty plain-text export")
+    if not re.search(r"(?m)^#{0,6}[ \t]*HFW-", text):
+        raise BreakingNewsAccessError(
+            "plain-text export contains no HFW report headings"
+        )
+    return text
 
 
 def _bullets_from_section(text: str) -> list[str]:
@@ -178,7 +190,8 @@ def _parse_block(report_id: str, headline: str, timestamp_display: str, block: s
 
 
 def parse_reports(text: str) -> tuple[list[BreakingNewsReport], list[BreakingNewsError]]:
-    text = text.replace("\r\n", "\n")
+    # Be defensive when parsing text supplied outside fetch_doc_text() too.
+    text = text.lstrip("\ufeff").replace("\r\n", "\n")
     text = ATX_PREFIX_RE.sub("", text)
 
     headings = list(HEADING_RE.finditer(text))
