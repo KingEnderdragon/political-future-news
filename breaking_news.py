@@ -46,13 +46,18 @@ HEADING_RE = re.compile(
 
 _LABEL_ALTERNATION = "|".join(re.escape(label) for label in KNOWN_LABELS)
 
-# Matches a known label, OR a generic "Title-ish Words:" line (never a bullet
+# Matches a known label, OR a generic short label-shaped line (never a bullet
 # line, since those start with a marker) — the generic branch exists purely so
 # that a future/unforeseen section added to the doc still ends the preceding
-# known section instead of bleeding into it. Only known-label matches
-# participate in required/duplicate-label checks below.
+# known section instead of bleeding into it. Bounded by length (not word count)
+# so it also covers labels like "Next 6h:", "Risk assessment (provisional):",
+# "Shipping & insurance:", or "U.S. response:" — length-bounding is what keeps
+# this safe against matching ordinary prose, since a match requires the entire
+# line (this doc's paragraphs are each one unbroken raw line) to be short and
+# label-shaped, not just any sentence that happens to contain a colon. Only
+# known-label matches participate in required/duplicate-label checks below.
 LABEL_RE = re.compile(
-    rf"^(?:({_LABEL_ALTERNATION})|([A-Z][A-Za-z]+(?:[ '/-][A-Za-z]+){{0,5}}:))\s*(.*)$",
+    rf"^(?:({_LABEL_ALTERNATION})|([A-Z][A-Za-z0-9()&./' -]{{0,43}}:))\s*(.*)$",
     re.MULTILINE,
 )
 

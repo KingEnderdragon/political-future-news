@@ -199,6 +199,44 @@ Interpretation:
 Final interpretation text.
 """
 
+# ── unknown labels with digits/parens/ampersand/abbreviation punctuation ────
+# Reproduces the specific label shapes flagged in review: a plain title-case-
+# words heuristic would miss all four of these as boundaries.
+
+HARDER_UNKNOWN_SECTIONS = """\
+HFW-20260701-1200 — Harder Unknown Section Shapes — 2026-07-01 12:00 EDT
+
+Report ID: HFW-20260701-1200
+
+Physical-balance facts:
+
+• A physical fact.
+
+Next 6h:
+
+Watch for a possible update within the next six hours.
+
+Market-pricing facts:
+
+• A market fact.
+
+Risk assessment (provisional):
+
+This is provisional and subject to revision.
+
+Shipping & insurance:
+
+War risk premiums remain elevated.
+
+U.S. response:
+
+No official statement yet.
+
+Interpretation:
+
+Final interpretation text, unaffected by any of the sections above.
+"""
+
 # ── mid-line label mention inside a bullet (must not be treated as boundary) ─
 
 MIDLINE_LABEL_MENTION = """\
@@ -296,6 +334,18 @@ def run() -> None:
         check("unknown section: physical facts unaffected", len(r.physical_facts) == 1)
         check("unknown section: market facts unaffected", len(r.market_facts) == 1)
         check("unknown section: interpretation unaffected", r.interpretation == "Final interpretation text.")
+
+    # harder unknown label shapes: digits, parens, ampersand, abbreviation punctuation
+    reports, errors = parse_reports(HARDER_UNKNOWN_SECTIONS)
+    check("harder unknown labels: 1 report, 0 errors", len(reports) == 1 and len(errors) == 0)
+    if reports:
+        r = reports[0]
+        check("harder unknown labels: physical facts unaffected (not swallowed by 'Next 6h:')", len(r.physical_facts) == 1)
+        check("harder unknown labels: market facts unaffected (not swallowed by parens/ampersand/abbrev labels)", len(r.market_facts) == 1)
+        check(
+            "harder unknown labels: interpretation unaffected",
+            r.interpretation == "Final interpretation text, unaffected by any of the sections above.",
+        )
 
     # mid-line label mention inside a bullet must not split the section
     reports, errors = parse_reports(MIDLINE_LABEL_MENTION)
