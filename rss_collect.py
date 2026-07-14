@@ -150,12 +150,22 @@ def make_item_id(link: str, title: str, source: str) -> str:
     return hashlib.md5(key.encode()).hexdigest()[:12]
 
 
-def canonical_url(raw_url: str) -> str:
+def resolve_article_link(raw_url: str) -> str:
+    """Unwraps Bing News' apiclick.aspx tracking redirect to the real article
+    URL. Those redirect links don't reliably resolve when opened directly
+    (no session/referrer), so this must run before a link is stored anywhere
+    it might be clicked, not just at fingerprinting time."""
     parsed = urlparse(raw_url or "")
     if parsed.netloc.lower().endswith("bing.com") and parsed.path.lower().endswith("/news/apiclick.aspx"):
         target = parse_qs(parsed.query).get("url", [""])[0]
         if target:
-            parsed = urlparse(target)
+            return target
+    return raw_url
+
+
+def canonical_url(raw_url: str) -> str:
+    raw_url = resolve_article_link(raw_url)
+    parsed = urlparse(raw_url or "")
     if parsed.netloc.lower().endswith("news.google.com"):
         return ""
     domain = parsed.netloc.lower().removeprefix("www.")
@@ -368,7 +378,7 @@ def fetch_new(seen: set) -> list[dict]:
     feeds = fetch_all_feeds()
     for source, url in FEEDS.items():
         for entry in feeds.get(source, []):
-            link = entry.get("link", "")
+            link = resolve_article_link(entry.get("link", ""))
             title = entry.get("title", "(no title)").strip()
             item_source = article_source(entry, source)
             if not link or is_seen(seen, item_source, title, link):
