@@ -305,9 +305,12 @@ def render_group(group: str, slugs: list[str], now: datetime) -> tuple[str, str,
         subject_panes.append(pane_html)
 
     css = "\n".join(subject_visibility_css + subject_active_css + window_visibility_css + all_tab_css)
+    # The radio inputs must be true siblings of .subject-panes-{group} (not
+    # nested inside .subject-toggle) for the `~` CSS sibling combinator used
+    # by subject_visibility_css to reach the pane content at all.
     html = f"""
+    {"".join(subject_inputs)}
     <div class="subject-toggle subject-toggle-{group}">
-      {"".join(subject_inputs)}
       {"".join(subject_labels)}
     </div>
     <div class="subject-panes subject-panes-{group}">
