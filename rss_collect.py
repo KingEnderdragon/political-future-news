@@ -1,8 +1,11 @@
 """
-KapturFlow RSS collector — run manually or on a scheduler.
-Tracks Rep. Marcy Kaptur (D-OH-9). Each run fetches all active feeds,
-filters for relevance, deduplicates against previously seen URLs/article
-fingerprints, and appends new items to the running log.
+KapturFlow RSS collector — run manually or on a scheduler, for a given
+subject (see subjects.py). Each run fetches all of that subject's active
+feeds, filters for relevance, deduplicates against previously seen
+URLs/article fingerprints, and appends new items to that subject's running
+log.
+
+Usage: python rss_collect.py [subject_slug]   (defaults to "kaptur")
 """
 
 import feedparser
@@ -11,6 +14,7 @@ import requests
 import json
 import re
 import os
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -18,62 +22,15 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlparse
 
-# ── paths ────────────────────────────────────────────────────────────────────
-HERE        = Path(__file__).parent
-DATA_DIR    = Path(os.environ.get("DATA_DIR", HERE))
-LOG_FILE    = DATA_DIR / "mediaflow_log.txt"
-STATE_FILE  = DATA_DIR / "mediaflow_seen.json"   # persists seen URLs/fingerprints
-ITEMS_FILE  = DATA_DIR / "mediaflow_items.json"  # structured item store for classifier
-KEYS_FILE   = HERE / "keys.env"
+import subjects
 
-# ── active feeds ─────────────────────────────────────────────────────────────
-FEEDS = {
-    # Official
-    "Kaptur House.gov":     "https://kaptur.house.gov/rss.xml",
-    # Local Ohio / district press
-    "Toledo Blade":         "https://www.toledoblade.com/rss/",
-    "WTOL 11 Toledo":       "https://www.wtol.com/feeds/syndication/rss/news",
-    "Ohio Capital Journal": "https://ohiocapitaljournal.com/feed/",
-    "Cleveland.com Politics": "https://www.cleveland.com/arc/outboundfeeds/rss/category/politics/",
-    # Google News search queries
-    "GNews: Marcy Kaptur":          "https://news.google.com/rss/search?q=%22Marcy+Kaptur%22&hl=en-US&gl=US&ceid=US:en",
-    "GNews: Kaptur Ohio 9th":       "https://news.google.com/rss/search?q=Kaptur+%22Ohio%27s+9th%22&hl=en-US&gl=US&ceid=US:en",
-    "GNews: Kaptur Toledo":         "https://news.google.com/rss/search?q=Kaptur+Toledo&hl=en-US&gl=US&ceid=US:en",
-    "GNews: Kaptur committee":      "https://news.google.com/rss/search?q=Kaptur+committee+appropriations&hl=en-US&gl=US&ceid=US:en",
-    "GNews: Kaptur bill":           "https://news.google.com/rss/search?q=Kaptur+bill+legislation&hl=en-US&gl=US&ceid=US:en",
-    "GNews: Kaptur campaign":       "https://news.google.com/rss/search?q=Kaptur+campaign+election&hl=en-US&gl=US&ceid=US:en",
-    "GNews: OH-9 congressional":    "https://news.google.com/rss/search?q=%22Ohio%27s+9th+congressional+district%22&hl=en-US&gl=US&ceid=US:en",
-    # Bing News search queries
-    "Bing: Marcy Kaptur":       "https://www.bing.com/news/search?q=%22Marcy+Kaptur%22&format=rss",
-    "Bing: Kaptur Toledo":      "https://www.bing.com/news/search?q=Kaptur+Toledo&format=rss",
-    "Bing: Kaptur Ohio 9th":    "https://www.bing.com/news/search?q=Kaptur+Ohio+9th+district&format=rss",
-}
-
-# ── NewsAPI config ───────────────────────────────────────────────────────────
-OFFICIAL_PAGES: dict[str, str] = {}
-
-OFFICIAL_LINK_RE: dict[str, "re.Pattern"] = {}
+HERE = Path(__file__).parent
+KEYS_FILE = HERE / "keys.env"
 
 NEWSAPI_URL = "https://newsapi.org/v2/everything"
-NEWSAPI_QUERIES = [
-    "Marcy Kaptur",
-    "Kaptur Ohio 9th district",
-    "Kaptur Toledo",
-]
-
 MAX_WORKERS = 12
 REQUEST_TIMEOUT = (4, 12)
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0 MediaFlow/1.0"}
-
-
-def load_env_key(name: str) -> str:
-    if os.environ.get(name):
-        return os.environ[name].strip()
-    if KEYS_FILE.exists():
-        for line in KEYS_FILE.read_text(encoding="utf-8").splitlines():
-            if line.startswith(name):
-                return line.split("=", 1)[1].strip()
-    return ""
 
 # Low-quality sources to exclude from NewsAPI results
 NEWSAPI_BLOCKLIST = {
@@ -81,20 +38,9 @@ NEWSAPI_BLOCKLIST = {
     "infowars.com", "zerohedge.com", "sputnikglobe.com",
 }
 
-# ── relevance filter ─────────────────────────────────────────────────────────
-KEYWORDS = [
-    "kaptur",
-    "ohio's 9th",
-    "ohio 9th",
-    "9th congressional district",
-    "oh-9",
-    "oh 9th district",
-]
-KEYWORD_RE = re.compile("|".join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
-
 # General Toledo/Ohio local feeds carry lots of unrelated sports/weather/crime
 # noise that happens to share a dateline; nothing here matches KEYWORDS anyway
-# unless "Kaptur" or the district name is present, so no exclude list needed.
+# unless the subject's name/keywords are present, so no exclude list needed.
 EXCLUDE_RE = re.compile(r"(?!x)x")  # never matches
 
 # msn.com syndication pages (esp. the /vi-AA... video-card format) are a
@@ -109,7 +55,21 @@ def is_unreliable_link(url: str) -> bool:
     return domain in UNRELIABLE_LINK_DOMAINS
 
 
-def is_relevant(entry: dict) -> bool:
+def load_env_key(name: str) -> str:
+    if os.environ.get(name):
+        return os.environ[name].strip()
+    if KEYS_FILE.exists():
+        for line in KEYS_FILE.read_text(encoding="utf-8").splitlines():
+            if line.startswith(name):
+                return line.split("=", 1)[1].strip()
+    return ""
+
+
+def build_keyword_re(keywords: list[str]) -> re.Pattern:
+    return re.compile("|".join(re.escape(k) for k in keywords), re.IGNORECASE)
+
+
+def is_relevant(entry: dict, keyword_re: re.Pattern) -> bool:
     text = " ".join([
         entry.get("title", ""),
         entry.get("summary", ""),
@@ -117,12 +77,12 @@ def is_relevant(entry: dict) -> bool:
     ])
     if EXCLUDE_RE.search(text):
         return False
-    return bool(KEYWORD_RE.search(text))
+    return bool(keyword_re.search(text))
 
 
-def load_seen() -> set:
-    if STATE_FILE.exists():
-        seen = set(json.loads(STATE_FILE.read_text(encoding="utf-8")))
+def load_seen(state_file: Path) -> set:
+    if state_file.exists():
+        seen = set(json.loads(state_file.read_text(encoding="utf-8")))
         for item in list(seen):
             if item.startswith("article:"):
                 continue
@@ -133,10 +93,8 @@ def load_seen() -> set:
     return set()
 
 
-def save_seen(seen: set) -> None:
-    STATE_FILE.write_text(
-        json.dumps(sorted(seen), indent=2), encoding="utf-8"
-    )
+def save_seen(state_file: Path, seen: set) -> None:
+    state_file.write_text(json.dumps(sorted(seen), indent=2), encoding="utf-8")
 
 
 def clean_summary(raw: str) -> str:
@@ -173,6 +131,7 @@ def decode_google_news_url(gnews_url: str) -> str:
         return gnews_url
     article_id = m.group(1)
     try:
+        time.sleep(0.3)  # light throttle — bursts of these have triggered rate limiting
         page = requests.get(gnews_url, headers=HTTP_HEADERS, timeout=REQUEST_TIMEOUT).text
         sg = re.search(r'data-n-a-sg="([^"]+)"', page)
         ts = re.search(r'data-n-a-ts="([^"]+)"', page)
@@ -312,12 +271,12 @@ def fetch_feed(source: str, url: str) -> tuple[str, list[dict], str]:
     return source, list(feed.get("entries", [])), ""
 
 
-def fetch_all_feeds() -> dict[str, list[dict]]:
+def fetch_all_feeds(feeds: dict[str, str]) -> dict[str, list[dict]]:
     results: dict[str, list[dict]] = {}
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {
             executor.submit(fetch_feed, source, url): source
-            for source, url in FEEDS.items()
+            for source, url in feeds.items()
         }
         for future in as_completed(futures):
             source, entries, error = future.result()
@@ -327,62 +286,17 @@ def fetch_all_feeds() -> dict[str, list[dict]]:
     return results
 
 
-def fetch_official_pages(seen: set) -> list[dict]:
-    items = []
-    if not OFFICIAL_PAGES:
-        return items
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    pages: dict[str, tuple[str, bytes | None]] = {}
-
-    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(OFFICIAL_PAGES))) as executor:
-        futures = {
-            executor.submit(fetch_url, source, url): source
-            for source, url in OFFICIAL_PAGES.items()
-        }
-        for future in as_completed(futures):
-            source, final_url, error, content = future.result()
-            if error:
-                print(f"  [WARN] {source}: {error}")
-            pages[source] = (final_url, content)
-
-    for source in OFFICIAL_PAGES:
-        final_url, content = pages.get(source, (OFFICIAL_PAGES[source], None))
-        if not content:
-            continue
-        parser = LinkExtractor(final_url)
-        parser.feed(content.decode("utf-8", errors="replace"))
-        for title, link in parser.links:
-            link_path = urlparse(link).path
-            if not OFFICIAL_LINK_RE[source].search(link_path):
-                continue
-            if len(title) < 12 or is_seen(seen, source, title, link):
-                continue
-            if not is_relevant({"title": title, "summary": ""}):
-                continue
-            items.append({
-                "source":    source,
-                "title":     title.strip(),
-                "summary":   "",
-                "published": now,
-                "link":      link,
-                "fetched":   now,
-            })
-            mark_seen(seen, source, title, link)
-    return items
-
-
-def fetch_newsapi(seen: set) -> list[dict]:
+def fetch_newsapi(seen: set, queries: list[str], keyword_re: re.Pattern) -> list[dict]:
     items = []
     api_key = load_env_key("NEWSAPI_KEY")
-    if not api_key:
-        print("  [WARN] NewsAPI skipped: NEWSAPI_KEY not found")
+    if not api_key or not queries:
         return items
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     responses: dict[str, bytes | None] = {}
 
-    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(NEWSAPI_QUERIES))) as executor:
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(queries))) as executor:
         futures = {}
-        for query in NEWSAPI_QUERIES:
+        for query in queries:
             params = {
                 "q": query, "language": "en",
                 "sortBy": "publishedAt", "pageSize": 20,
@@ -396,7 +310,7 @@ def fetch_newsapi(seen: set) -> list[dict]:
                 print(f"  [WARN] {source}: {error}")
             responses[query] = content
 
-    for query in NEWSAPI_QUERIES:
+    for query in queries:
         content = responses.get(query)
         if not content:
             continue
@@ -415,7 +329,7 @@ def fetch_newsapi(seen: set) -> list[dict]:
             domain = urlparse(url).netloc.lower().removeprefix("www.")
             if any(domain == b or domain.endswith("." + b) for b in NEWSAPI_BLOCKLIST):
                 continue
-            if not KEYWORD_RE.search(title + " " + desc):
+            if not keyword_re.search(title + " " + desc):
                 continue
             items.append({
                 "source":    source,
@@ -429,18 +343,27 @@ def fetch_newsapi(seen: set) -> list[dict]:
     return items
 
 
-def fetch_new(seen: set) -> list[dict]:
+def fetch_new(seen: set, subject: dict) -> list[dict]:
+    feeds = subject["feeds"]
+    keyword_re = build_keyword_re(subject["keywords"])
+
     new_items = []
-    feeds = fetch_all_feeds()
-    for source, url in FEEDS.items():
-        for entry in feeds.get(source, []):
-            link = resolve_article_link(entry.get("link", ""))
+    feed_results = fetch_all_feeds(feeds)
+    for source, url in feeds.items():
+        for entry in feed_results.get(source, []):
+            raw_link = entry.get("link", "")
             title = entry.get("title", "(no title)").strip()
             item_source = article_source(entry, source)
-            if not link or is_seen(seen, item_source, title, link):
+            # Cheap checks first, on the raw (undecoded) link — canonical_url()
+            # decodes internally for fingerprinting, so dedup is still accurate.
+            # Only pay for the Google News/Bing decode (2 HTTP round-trips) once
+            # an entry has actually cleared relevance + not-already-seen, since
+            # most entries on any given run are duplicates from prior runs.
+            if not raw_link or is_seen(seen, item_source, title, raw_link):
                 continue
-            if not is_relevant(entry):
+            if not is_relevant(entry, keyword_re):
                 continue
+            link = resolve_article_link(raw_link)
             if is_unreliable_link(link):
                 continue
             new_items.append({
@@ -453,15 +376,14 @@ def fetch_new(seen: set) -> list[dict]:
             })
             mark_seen(seen, item_source, title, link)
 
-    new_items += fetch_official_pages(seen)
-    new_items += fetch_newsapi(seen)
+    new_items += fetch_newsapi(seen, subject.get("newsapi_queries", []), keyword_re)
 
     # sort oldest-first so the log reads chronologically
     new_items.sort(key=lambda x: x["published"])
     return new_items
 
 
-def append_to_log(items: list[dict]) -> None:
+def append_to_log(log_file: Path, subject_name: str, items: list[dict]) -> None:
     lines = []
     for item in items:
         lines.append(
@@ -473,41 +395,42 @@ def append_to_log(items: list[dict]) -> None:
         lines.append(f"{item['link']}\n")
         lines.append("-" * 68 + "\n")
 
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        if not LOG_FILE.exists() or LOG_FILE.stat().st_size == 0:
-            f.write("KAPTURFLOW - Marcy Kaptur (OH-9) Running News Log\n")
+    with open(log_file, "a", encoding="utf-8") as f:
+        if not log_file.exists() or log_file.stat().st_size == 0:
+            f.write(f"KAPTURFLOW - {subject_name} Running News Log\n")
             f.write("=" * 68 + "\n")
         f.writelines(lines)
 
 
-def run():
+def run(subject_slug: str = "kaptur"):
+    subject = subjects.get_subject(subject_slug)
+    paths = subjects.paths_for(subject_slug)
+
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    print(f"MediaFlow collect — {now}")
+    print(f"MediaFlow collect [{subject['name']}] — {now}")
 
     started = time.perf_counter()
 
-    seen     = load_seen()
+    seen = load_seen(paths["seen"])
     seen_before = len(seen)
 
-    new_items = fetch_new(seen)
+    new_items = fetch_new(seen, subject)
 
     if new_items:
-        # assign stable IDs
         for item in new_items:
             item["id"] = make_item_id(item["link"], item["title"], item["source"])
 
-        append_to_log(new_items)
-        save_seen(seen)
+        append_to_log(paths["log"], subject["name"], new_items)
+        save_seen(paths["seen"], seen)
 
-        # append to structured items store (skip any ID already present)
         existing: list[dict] = []
-        if ITEMS_FILE.exists():
-            existing = json.loads(ITEMS_FILE.read_text(encoding="utf-8"))
+        if paths["items"].exists():
+            existing = json.loads(paths["items"].read_text(encoding="utf-8"))
         existing_ids = {i["id"] for i in existing}
         truly_new = [i for i in new_items if i["id"] not in existing_ids]
         if truly_new:
             existing.extend(truly_new)
-            ITEMS_FILE.write_text(
+            paths["items"].write_text(
                 json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
             )
 
@@ -519,8 +442,9 @@ def run():
         elapsed = time.perf_counter() - started
         print(f"  No new relevant items in {elapsed:.1f}s  (seen total: {seen_before})")
 
-    print(f"  Log: {LOG_FILE}")
+    print(f"  Log: {paths['log']}")
 
 
 if __name__ == "__main__":
-    run()
+    slug = sys.argv[1] if len(sys.argv) > 1 else "kaptur"
+    run(slug)

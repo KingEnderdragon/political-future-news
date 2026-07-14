@@ -1,0 +1,84 @@
+{
+  "7": {
+    "generated_at": "2026-07-14T14:16:14Z",
+    "window_start": "2026-07-07T14:16:14Z",
+    "window_end": "2026-07-14T14:16:14Z",
+    "window_days": 7,
+    "arcs": {
+      "LEGISLATIVE": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "STAKEHOLDERS": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "IMPACT": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "POLITICS": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "MEDIA": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      }
+    }
+  },
+  "30": {
+    "generated_at": "2026-07-14T14:16:16Z",
+    "window_start": "2026-06-14T14:16:16Z",
+    "window_end": "2026-07-14T14:16:16Z",
+    "window_days": 30,
+    "arcs": {
+      "LEGISLATIVE": {
+        "item_count": 0,
+        "critical_summary": "No items in the past 30 days.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "STAKEHOLDERS": {
+        "item_count": 3,
+        "critical_summary": "Rep. White has consistently and publicly opposed Ohio Senate Joint Resolution 10 (SJR 10) over the past month, reiterating his stance multiple times.",
+        "analysis": "The repeated opposition from Rep. White signals a strong and consistent position against SJR 10, likely reflecting broader concerns within his constituency or party. This could indicate an attempt to mobilize opposition or preempt support for the resolution among key stakeholders.",
+        "talking_points": [
+          {
+            "text": "Rep. White opposes Ohio Senate Joint Resolution 10 (SJR 10).",
+            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcy1fSVNoZnpBMTFGMl96aWN4WEx5Wm9lUWFVckplQWdTOHNmc3VxQU1SdkhrSlV4STJZbW5YeGNYZFZrQUVoMGM2Nk80MjRsdV84V09nWlBjdmpiY19YWXA3ZHpwUjdsc0FVUG91SWRQejFtRHZ0YnR4dXpST0pOcHBmbVF3MHJvUjlIWWdB?oc=5",
+            "source": "GNews: Ohio Senate Joint Resolution 10"
+          }
+        ]
+      },
+      "IMPACT": {
+        "item_count": 0,
+        "critical_summary": "No items in the past 30 days.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "POLITICS": {
+        "item_count": 0,
+        "critical_summary": "No items in the past 30 days.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "MEDIA": {
+        "item_count": 0,
+        "critical_summary": "No items in the past 30 days.",
+        "analysis": "",
+        "talking_points": []
+      }
+    }
+  }
+}

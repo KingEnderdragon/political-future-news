@@ -1,22 +1,22 @@
 """
 KapturFlow classifier: assigns arc, factual summary, and short analysis to
-each collected item via a local Ollama model. Runs incrementally and only
-sends unclassified items to the model. No external API calls or keys.
+each collected item for a given subject (see subjects.py), via a local
+Ollama model. Runs incrementally and only sends unclassified items to the
+model. No external API calls or keys.
+
+Usage: python mediaflow_classify.py [subject_slug]   (defaults to "kaptur")
 """
 
 import json
 import os
 import re
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
 
 import requests
 
-HERE = Path(__file__).parent
-DATA_DIR = Path(os.environ.get("DATA_DIR", HERE))
-ITEMS_FILE = DATA_DIR / "mediaflow_items.json"
-CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
+import subjects
 
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:14b")
@@ -33,40 +33,23 @@ MAX_CONCURRENT_BATCHES = 3
 MAX_RETRIES = 2
 REQUEST_TIMEOUT = 120
 
-ARCS = [
-    "LEGISLATION",
-    "COMMITTEE",
-    "DISTRICT",
-    "CAMPAIGN",
-    "MEDIA",
-    "UNMAPPED",
-]
 
-
-def build_system_prompt(arcs: list[str] = ARCS) -> str:
-    arc_str = " | ".join(arcs)
-    return f"""Classify one news article about US Representative Marcy Kaptur (D-Ohio, 9th District, Toledo).
+def build_system_prompt(subject: dict) -> str:
+    arc_str = " | ".join(subject["arcs"])
+    return f"""Classify one news article about {subject['context']}.
 
 Input: a JSON object with id, source, title, summary.
 Output: a single JSON object with exactly these keys:
   id       - same as input
   arc      - one of: {arc_str}
   summary  - one sentence, <=100 chars, present tense, factual, written in your own words (not copied from the title)
-  analysis - one sentence, <=140 chars, explains why it matters (political significance, district impact, or context) — not a restatement of the summary
+  analysis - one sentence, <=140 chars, explains why it matters (political significance, impact, or context) — not a restatement of the summary
   conflict - true if the item reports a denial or contradictory claim, else false
 
 Arc guide:
-  LEGISLATION - bills she sponsors/cosponsors, floor votes, floor statements
-  COMMITTEE   - her committee/subcommittee work (e.g. Appropriations), hearings, oversight
-  DISTRICT    - local Ohio 9th District news, events, federal funding/projects for the district
-  CAMPAIGN    - her campaign, elections, opponents, endorsements, fundraising
-  MEDIA       - interviews, op-eds, press statements not tied to a specific bill or hearing
+{subject['arc_guide']}
 Use UNMAPPED only when the article is unrelated noise or cannot be assigned to any arc above.
 Never omit a key or return null. Output ONLY the JSON object, no other text.
-
-Example:
-Input:  {{"id":"x1","source":"Toledo Blade","title":"Kaptur secures funding for Toledo port dredging","summary":"Rep. Kaptur announced $12M in federal funding for Toledo-Lucas County Port Authority dredging."}}
-Output: {{"id":"x1","arc":"DISTRICT","summary":"Kaptur secures $12M in federal port dredging funds for Toledo.","analysis":"Reinforces her long-standing focus on Great Lakes shipping infrastructure ahead of reelection.","conflict":false}}
 
 Return only the JSON object."""
 
@@ -86,25 +69,19 @@ def parse_response(text: str) -> list[dict]:
     return data
 
 
-def fallback_arc(item: dict, arcs: list[str] = ARCS) -> str:
+def fallback_arc(item: dict, subject: dict) -> str:
     text = f"{item.get('source', '')} {item.get('title', '')} {item.get('summary', '')}".lower()
-    rules = [
-        ("LEGISLATION", r"\b(bill|act|vote|floor|cosponsor|resolution|amendment)\b"),
-        ("COMMITTEE",   r"\b(committee|subcommittee|hearing|appropriations|oversight|ranking member)\b"),
-        ("CAMPAIGN",    r"\b(campaign|election|primary|opponent|endorse|fundrais|reelect|challenger)\b"),
-        ("DISTRICT",    r"\b(toledo|lucas county|ohio|district|port|shipline|great lakes|grant|funding)\b"),
-        ("MEDIA",       r"\b(interview|op-ed|statement|says|said|press release)\b"),
-    ]
-    for arc, pattern in rules:
+    arcs = subject["arcs"]
+    for arc, pattern in subject.get("arc_fallback_rules", []):
         if arc in arcs and re.search(pattern, text):
             return arc
     return "UNMAPPED" if "UNMAPPED" in arcs else arcs[0]
 
 
-def normalize_result(result: dict, item: dict, arcs: list[str] = ARCS) -> dict:
+def normalize_result(result: dict, item: dict, subject: dict) -> dict:
     arc = result.get("arc")
-    if arc not in arcs:
-        arc = fallback_arc(item, arcs)
+    if arc not in subject["arcs"]:
+        arc = fallback_arc(item, subject)
 
     summary = result.get("summary") or item.get("title", "")
     summary = re.sub(r"\s+", " ", str(summary)).strip()[:140]
@@ -144,7 +121,7 @@ def ollama_chat(system: str, user_content: str) -> str:
     return response.json()["message"]["content"]
 
 
-def classify_batch(batch: list[dict], arcs: list[str] = ARCS) -> list[dict]:
+def classify_batch(batch: list[dict], subject: dict) -> list[dict]:
     item = batch[0]
     payload = {
         "id": item["id"],
@@ -153,20 +130,20 @@ def classify_batch(batch: list[dict], arcs: list[str] = ARCS) -> list[dict]:
         "summary": item.get("summary", ""),
     }
     text = ollama_chat(
-        build_system_prompt(arcs),
+        build_system_prompt(subject),
         json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
     )
     return parse_response(text)
 
 
-def classify_batch_with_retries(batch: list[dict], arcs: list[str] = ARCS) -> list[dict]:
+def classify_batch_with_retries(batch: list[dict], subject: dict) -> list[dict]:
     last_error: Exception | None = None
     for attempt in range(MAX_RETRIES + 1):
         try:
-            raw_results = classify_batch(batch, arcs)
+            raw_results = classify_batch(batch, subject)
             by_id = {r.get("id"): r for r in raw_results if isinstance(r, dict)}
             return [
-                normalize_result(by_id.get(item["id"], {}), item, arcs)
+                normalize_result(by_id.get(item["id"], {}), item, subject)
                 for item in batch
             ]
         except Exception as e:
@@ -176,22 +153,22 @@ def classify_batch_with_retries(batch: list[dict], arcs: list[str] = ARCS) -> li
     raise RuntimeError(last_error)
 
 
-def load_items() -> list[dict]:
-    if not ITEMS_FILE.exists():
+def load_items(items_file) -> list[dict]:
+    if not items_file.exists():
         return []
-    return json.loads(ITEMS_FILE.read_text(encoding="utf-8"))
+    return json.loads(items_file.read_text(encoding="utf-8"))
 
 
-def load_classified(items_by_id: dict[str, dict], arcs: list[str]) -> tuple[dict[str, dict], int]:
+def load_classified(items_by_id: dict[str, dict], subject: dict, classified_file) -> tuple[dict[str, dict], int]:
     classified_by_id: dict[str, dict] = {}
     repaired = 0
-    if not CLASSIFIED_FILE.exists():
+    if not classified_file.exists():
         return classified_by_id, repaired
 
-    for c in json.loads(CLASSIFIED_FILE.read_text(encoding="utf-8")):
+    for c in json.loads(classified_file.read_text(encoding="utf-8")):
         item = items_by_id.get(c["id"], c)
         if (
-            c.get("arc") not in arcs
+            c.get("arc") not in subject["arcs"]
             or not c.get("arc_summary")
             or not isinstance(c.get("conflict"), bool)
         ):
@@ -201,7 +178,7 @@ def load_classified(items_by_id: dict[str, dict], arcs: list[str]) -> tuple[dict
                 "summary": c.get("arc_summary") or c.get("summary") or c.get("title"),
                 "analysis": c.get("arc_analysis") or c.get("analysis") or "",
                 "conflict": c.get("conflict", False),
-            }, item, arcs)
+            }, item, subject)
             c = {
                 **item,
                 "arc": normalized["arc"],
@@ -214,13 +191,13 @@ def load_classified(items_by_id: dict[str, dict], arcs: list[str]) -> tuple[dict
     return classified_by_id, repaired
 
 
-def write_ordered(items: list[dict], classified_by_id: dict[str, dict]) -> None:
+def write_ordered(items: list[dict], classified_by_id: dict[str, dict], classified_file) -> None:
     ordered = [
         classified_by_id[item["id"]]
         for item in items
         if item["id"] in classified_by_id
     ]
-    CLASSIFIED_FILE.write_text(
+    classified_file.write_text(
         json.dumps(ordered, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
@@ -238,20 +215,24 @@ def check_ollama_available() -> str:
         return f"Ollama not reachable at {OLLAMA_URL}: {e}"
 
 
-def run(arcs: list[str] = ARCS) -> int:
-    """Classify all unclassified items. Returns number of newly classified items."""
-    items = load_items()
+def run(subject_slug: str = "kaptur") -> int:
+    """Classify all unclassified items for a subject. Returns number of newly classified items."""
+    subject = subjects.get_subject(subject_slug)
+    paths = subjects.paths_for(subject_slug)
+    items_file, classified_file = paths["items"], paths["classified"]
+
+    items = load_items(items_file)
     if not items:
-        print("No items file - run rss_collect.py first.")
+        print(f"No items file for '{subject_slug}' - run rss_collect.py {subject_slug} first.")
         return 0
 
     items_by_id = {item["id"]: item for item in items}
-    classified_by_id, repaired = load_classified(items_by_id, arcs)
+    classified_by_id, repaired = load_classified(items_by_id, subject, classified_file)
     unclassified = [item for item in items if item["id"] not in classified_by_id]
 
     if not unclassified:
         if repaired:
-            write_ordered(items, classified_by_id)
+            write_ordered(items, classified_by_id, classified_file)
             print(f"Repaired {repaired} malformed classified items.")
         print(f"All {len(items)} items already classified.")
         return 0
@@ -262,7 +243,7 @@ def run(arcs: list[str] = ARCS) -> int:
         return 0
 
     print(
-        f"Classifying {len(unclassified)} items in batches of {BATCH_SIZE} "
+        f"Classifying {len(unclassified)} items for '{subject['name']}' in batches of {BATCH_SIZE} "
         f"({MAX_CONCURRENT_BATCHES} concurrent, model={OLLAMA_MODEL})..."
     )
     failed = 0
@@ -274,7 +255,7 @@ def run(arcs: list[str] = ARCS) -> int:
 
     with ThreadPoolExecutor(max_workers=MAX_CONCURRENT_BATCHES) as executor:
         futures = {
-            executor.submit(classify_batch_with_retries, batch, arcs): (n, batch)
+            executor.submit(classify_batch_with_retries, batch, subject): (n, batch)
             for n, batch in enumerate(batches, start=1)
         }
         total = len(futures)
@@ -299,7 +280,7 @@ def run(arcs: list[str] = ARCS) -> int:
                 }
             print("ok")
 
-    write_ordered(items, classified_by_id)
+    write_ordered(items, classified_by_id, classified_file)
 
     newly_classified = len(unclassified) - failed
     elapsed = time.perf_counter() - started
@@ -311,4 +292,5 @@ def run(arcs: list[str] = ARCS) -> int:
 
 
 if __name__ == "__main__":
-    run()
+    slug = sys.argv[1] if len(sys.argv) > 1 else "kaptur"
+    run(slug)

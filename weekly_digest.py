@@ -1,43 +1,33 @@
 """
 KapturFlow digest: for each arc, generates a critical summary and an analysis
-grounded in a recent window of classified items, via the same local Ollama
-model used for item classification. No external API calls.
+grounded in a recent window of classified items, for a given subject (see
+subjects.py), via the same local Ollama model used for item classification.
+No external API calls.
 
 Two windows are supported: a strict 7-day "weekly" digest, and a 30-day
 digest for when the collector hasn't yet accumulated a full week of fresh
 items (a first backfill run mostly surfaces archival search results, not
 things published in the last 7 days).
+
+Usage: python weekly_digest.py [subject_slug]   (defaults to "kaptur")
 """
 
 import json
-import os
 import re
+import sys
 import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
-from pathlib import Path
 
 import requests
 
 import mediaflow_classify as classify
-
-HERE = Path(__file__).parent
-DATA_DIR = Path(os.environ.get("DATA_DIR", HERE))
-CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
-DIGEST_FILE = DATA_DIR / "mediaflow_digest.json"
+import subjects
 
 WINDOWS = [7, 30]
 MAX_ITEMS_PER_ARC = 30  # keeps the prompt within a small local model's context
 REQUEST_TIMEOUT = 180
 DIGEST_NUM_CTX = 8192  # a week of headlines for a busy arc exceeds Ollama's small default
-
-ARC_LABEL = {
-    "LEGISLATION": "Legislation",
-    "COMMITTEE":   "Committee",
-    "DISTRICT":    "District",
-    "CAMPAIGN":    "Campaign",
-    "MEDIA":       "Media",
-}
 
 
 def parse_dt(s: str) -> datetime:
@@ -59,10 +49,10 @@ def parse_dt(s: str) -> datetime:
     return datetime.min.replace(tzinfo=timezone.utc)
 
 
-def load_classified() -> list[dict]:
-    if not CLASSIFIED_FILE.exists():
+def load_classified(classified_file) -> list[dict]:
+    if not classified_file.exists():
         return []
-    return json.loads(CLASSIFIED_FILE.read_text(encoding="utf-8"))
+    return json.loads(classified_file.read_text(encoding="utf-8"))
 
 
 def items_in_window(items: list[dict], arc: str, window_start: datetime) -> list[dict]:
@@ -72,35 +62,35 @@ def items_in_window(items: list[dict], arc: str, window_start: datetime) -> list
     return arc_items[:MAX_ITEMS_PER_ARC]
 
 
-def build_digest_prompt(arc_label: str, items: list[dict], window_days: int) -> str:
+def build_digest_prompt(arc_label: str, subject_context: str, items: list[dict], window_days: int) -> str:
     period = "week" if window_days <= 7 else f"{window_days} days"
     lines = [
         f"{n}. {i.get('arc_summary') or i.get('title', '')}"
         for n, i in enumerate(items, start=1)
     ]
     return (
-        f'Arc: "{arc_label}" for US Rep. Marcy Kaptur (D-Ohio, 9th District).\n'
+        f'Arc: "{arc_label}" for {subject_context}.\n'
         f"Here are {len(items)} numbered news items from the past {period} in this arc:\n"
         + "\n".join(lines)
     )
 
 
-def digest_system_prompt(window_days: int) -> str:
+def digest_system_prompt(subject_context: str, window_days: int) -> str:
     period = "weekly" if window_days <= 7 else f"{window_days}-day"
     span = "week" if window_days <= 7 else f"{window_days} days"
-    return f"""You are a political analyst producing a {period} digest for Rep. Marcy Kaptur (D-Ohio, 9th District, Toledo).
+    return f"""You are a political analyst producing a {period} digest for {subject_context}.
 
 You will be given one arc's worth of recent news items as a numbered list.
 Output a single JSON object with exactly these keys:
   critical_summary - 2-3 sentences, present tense, factual, naming the concrete events/developments. Not a list restatement — synthesize into a coherent narrative of what happened in the past {span} in this arc.
-  analysis          - 2-3 sentences of critical analysis: political significance, trends across the items, tensions/contradictions if any, and what it signals about her position (district, reelection, party, or policy standing). Go beyond restating the summary.
+  analysis          - 2-3 sentences of critical analysis: political significance, trends across the items, tensions/contradictions if any, and what it signals about their position (reelection/candidacy, party, or policy standing). Go beyond restating the summary.
   talking_points    - a JSON array of 3-5 objects, the specific points someone briefing on this arc would want on hand. Each object has exactly these keys:
       point         - the talking point, one short sentence, <=110 chars
       source_number - the integer number (from the numbered list below) of the SINGLE item this point is drawn from
 
 CRITICAL GROUNDING RULES for talking_points:
 1. Every talking point must be traceable to exactly one numbered item — source_number must be a real number from the list, and the point's content must actually come from that item.
-2. Only state a number, date, dollar amount, vote count, or named bill/act if that exact figure appears in the item's text. If the item is vague (e.g. "Kaptur announces funding for X" with no dollar figure), write the talking point just as vaguely — do NOT invent a specific number, date, or citation to fill the gap. A vague-but-true point is required; a precise-but-fabricated one is not acceptable.
+2. Only state a number, date, dollar amount, vote count, or named bill/act if that exact figure appears in the item's text. If the item is vague (e.g. "announces funding for X" with no dollar figure), write the talking point just as vaguely — do NOT invent a specific number, date, or citation to fill the gap. A vague-but-true point is required; a precise-but-fabricated one is not acceptable.
 
 Be direct and specific. Do not hedge with "it appears" or "some may say." Output ONLY the JSON object, no other text."""
 
@@ -160,7 +150,7 @@ def normalize_talking_points(raw, items: list[dict]) -> list[dict]:
     return points[:6]
 
 
-def generate_arc_digest(arc_label: str, items: list[dict], window_days: int) -> dict:
+def generate_arc_digest(arc_label: str, subject_context: str, items: list[dict], window_days: int) -> dict:
     period = "week" if window_days <= 7 else f"{window_days} days"
     if not items:
         return {
@@ -169,8 +159,8 @@ def generate_arc_digest(arc_label: str, items: list[dict], window_days: int) -> 
             "analysis": "",
             "talking_points": [],
         }
-    prompt = build_digest_prompt(arc_label, items, window_days)
-    system_prompt = digest_system_prompt(window_days)
+    prompt = build_digest_prompt(arc_label, subject_context, items, window_days)
+    system_prompt = digest_system_prompt(subject_context, window_days)
     last_error: Exception | None = None
     for attempt in range(3):
         try:
@@ -193,12 +183,12 @@ def generate_arc_digest(arc_label: str, items: list[dict], window_days: int) -> 
     }
 
 
-def generate_window(window_days: int, arcs: dict[str, str] = ARC_LABEL) -> dict:
+def generate_window(window_days: int, subject: dict, classified_file) -> dict:
     error = classify.check_ollama_available()
     if error:
         return {"error": error}
 
-    items = load_classified()
+    items = load_classified(classified_file)
     now = datetime.now(timezone.utc)
     window_start = now - timedelta(days=window_days)
 
@@ -209,32 +199,37 @@ def generate_window(window_days: int, arcs: dict[str, str] = ARC_LABEL) -> dict:
         "window_days": window_days,
         "arcs": {},
     }
-    for arc, label in arcs.items():
+    for arc, label in subject["arc_label"].items():
         arc_items = items_in_window(items, arc, window_start)
-        digest["arcs"][arc] = generate_arc_digest(label, arc_items, window_days)
+        digest["arcs"][arc] = generate_arc_digest(label, subject["context"], arc_items, window_days)
 
     return digest
 
 
-def generate(windows: list[int] = WINDOWS, arcs: dict[str, str] = ARC_LABEL) -> dict:
+def generate(subject_slug: str = "kaptur", windows: list[int] = WINDOWS) -> dict:
     """Generates a digest for each window and persists all of them together."""
-    all_digests = load()
+    subject = subjects.get_subject(subject_slug)
+    paths = subjects.paths_for(subject_slug)
+
+    all_digests = load(subject_slug)
     for window_days in windows:
-        all_digests[str(window_days)] = generate_window(window_days, arcs)
-    DIGEST_FILE.write_text(json.dumps(all_digests, indent=2, ensure_ascii=False), encoding="utf-8")
+        all_digests[str(window_days)] = generate_window(window_days, subject, paths["classified"])
+    paths["digest"].write_text(json.dumps(all_digests, indent=2, ensure_ascii=False), encoding="utf-8")
     return all_digests
 
 
-def load() -> dict:
-    if not DIGEST_FILE.exists():
+def load(subject_slug: str = "kaptur") -> dict:
+    digest_file = subjects.paths_for(subject_slug)["digest"]
+    if not digest_file.exists():
         return {}
-    return json.loads(DIGEST_FILE.read_text(encoding="utf-8"))
+    return json.loads(digest_file.read_text(encoding="utf-8"))
 
 
-def load_window(window_days: int) -> dict:
-    return load().get(str(window_days), {})
+def load_window(subject_slug: str, window_days: int) -> dict:
+    return load(subject_slug).get(str(window_days), {})
 
 
 if __name__ == "__main__":
-    result = generate()
+    slug = sys.argv[1] if len(sys.argv) > 1 else "kaptur"
+    result = generate(slug)
     print(json.dumps(result, indent=2))

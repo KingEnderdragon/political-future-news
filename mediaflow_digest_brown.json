@@ -1,0 +1,156 @@
+{
+  "7": {
+    "generated_at": "2026-07-14T13:47:42Z",
+    "window_start": "2026-07-07T13:47:42Z",
+    "window_end": "2026-07-14T13:47:42Z",
+    "window_days": 7,
+    "arcs": {
+      "CAMPAIGN": {
+        "item_count": 3,
+        "critical_summary": "Sherrod Brown is actively campaigning in Ohio, criticizing Republican candidate Jon Husted's support for data centers and holding events like the one in Cincinnati to engage with voters.",
+        "analysis": "Brown’s criticism of Husted highlights his strategy to frame the election as a choice between progressive policies and corporate interests. This approach aims to energize Democratic base voters while also appealing to independents concerned about economic issues.",
+        "talking_points": [
+          {
+            "text": "Sherrod Brown is working to flip Ohio back to blue in November.",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HUlBFWkJyQTZzMGxKX0FYT2dxZXAtd3M4YzEzRU90TzNORERsM3BhRmljZGh1NGFDTXk5UVZINEpyQ0hreGcyQ1RUYURzUjdSUVgwYklYR2RHQlU?oc=5",
+            "source": "GNews: Sherrod Brown"
+          },
+          {
+            "text": "Brown criticizes Husted for supporting data centers over local jobs.",
+            "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNanh2eTZUdVBTTHk0WWRHRkxjY1JjM1RIT1plbGUxa0xjdjljZ2cyT3pCRFVERUF3T3dzX01iaFd1ZkRsU29aRXBFa2t0c3BQU1VZNXlkUnpONlFvMFRiNGxVbTQ5R2haMm40amExM25RdHp0OFJCZnY3cVlFSC0yeVVYMVU2cEh0Rm9rZk1WYlRvRkJhazJsNUV3b0dZUzhhY1VvdzBhRldDemFQUzBfdDUzamc0ajVjUU53RFdURDR4T0w2SzEwQjZUMmRCZktZckZZYm94QjFGNjQ4cHljQXFJWVdXMXM?oc=5",
+            "source": "GNews: Sherrod Brown"
+          },
+          {
+            "text": "Brown held a campaign event in Cincinnati this week.",
+            "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNGdVWHNuaUdmRzl5SlE3UkxIWFg1cFJBbXpZdXhhdzVHdXd4ZTZILXR5aExsYklMd3h5XzdSMVNhX285RmZhRlh1dWdqWTFsZ2hfMjJnYmxnVVloTkRiZ1k3dGw2TDJTbnN1VEFPZDAzc2M1Y0FycF82MG96V3c3XzFxS3hqSTAtSmRvZU1ZTmEyVXNPenVRLVl6UnJ2YXVDYVpfWkk4ck9NRFdBa25ucDk1bEpCSWdMTUxIbVl2VUhjLWQ2QXVNVmhB?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "POLICY": {
+        "item_count": 2,
+        "critical_summary": "Sherrod Brown has been actively engaging on policy issues, including criticism of data center impacts in Ohio and hosting a healthcare roundtable in Ironton to discuss local health concerns.",
+        "analysis": "Brown's activities reflect his ongoing commitment to addressing both technological and healthcare challenges facing Ohio. His critique of data centers highlights environmental and economic concerns while the healthcare roundtable underscores his dedication to improving access and quality of care, aligning with his broader policy agenda.",
+        "talking_points": [
+          {
+            "text": "Brown criticizes data center impacts in Ohio, raising environmental and economic concerns.",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSEVPYkI2Rl9JVlJHLWNqUy1DckZzYzhiMXhfZDdNVkx0QWhnbW1qLWYwako3eFcxaUo3SnJ3dFNsUUVfcm95T21aNm9DZ0hlVmN0WWo1ajhndVJVc2N0S0hmTlpBMmFwZXFnR09VTk9sc0Rkc1EyNUZNMEpjenB3MTByTi0wRlBreGM0OVdrS3lLU2hCLWtoMkp1SnhHMWxrZmV1cG1IeHdXSFBTRkFVN2pWem1OZVNER2ZtU0tMOV82al90S0tyaFRKTk1pN0ZiYURlRkRNMkJDQQ?oc=5",
+            "source": "GNews: Sherrod Brown"
+          },
+          {
+            "text": "Hosted healthcare roundtable to address local health issues and improve access.",
+            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ1U4RTRBbEJudnBUd19CVEVyTm1WbzJLOVVmUUxLMUJzUDczY2otRERhMWh3clhBZG1zTW9LeWRsQU9pbUY2bVhZOGs5cUhpVkMxdDFSVWFJY21uUC1nNjRmMk43N2pGSnV4a2NrZkY1bzFtTk5nTHc3aXlGdGFLbE1UWnJpeDFESEhjVE0ycnQyS1JTY25rSdIBngFBVV95cUxPRWIzd3EzWkdFWVY0eDhrV2JwUnFoY1FrUEdrQWViRzR2dTluTlVhb2xWazVvZm1PbDc3elZUZW5GUUtWWlBGYl95dW5TZEJPZ0NrRHJxNHZnUnlRMDY1QnlDX0loclNlSFVFeGdoVW8zZ0FBV1ZTWnYySVJIcTV3SVNhZ3hmMndVbGg1WndkeVk4cmZ0TmxCcE5EYXZLZw?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "ENDORSEMENTS": {
+        "item_count": 1,
+        "critical_summary": "The Teamsters union has endorsed Sherrod Brown for his upcoming Ohio Senate race, solidifying labor's support for him.",
+        "analysis": "This endorsement underscores the strong ties between Brown and organized labor, which is likely to bolster his fundraising efforts and voter mobilization in traditionally union-heavy areas of Ohio. It also highlights a strategic alignment with key Democratic constituencies ahead of the election.",
+        "talking_points": [
+          {
+            "text": "Teamsters union endorses Sherrod Brown for Senate race.",
+            "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdFU4TVVUdzBWTnZvb21ST3RlTW5ZOHhENjhLdmFpdG85NUtmdENyaEVVeDVhOWdPRFJGRmVpWU1mX085YzZTdXN4bmlmRF8wTGJzbURCRkhGakRRU3lhYmZmNG8tb0ZfcnJlaG0zSVdWS2ZSMXVDRTRhOVpEOTNQaFRSN2xvUzc1RTJQU1V4NGIxYmVNTlZzT2Q5UDY?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "MEDIA": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "RECORD": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      }
+    }
+  },
+  "30": {
+    "generated_at": "2026-07-14T13:48:10Z",
+    "window_start": "2026-06-14T13:48:10Z",
+    "window_end": "2026-07-14T13:48:10Z",
+    "window_days": 30,
+    "arcs": {
+      "CAMPAIGN": {
+        "item_count": 10,
+        "critical_summary": "Sherrod Brown continues his campaign for the U.S. Senate seat, holding events across Ohio and criticizing Republican Jon Husted's support for data centers. Despite a strong lead in polls, Brown faces increased Republican efforts to shift focus away from Husted by highlighting Bernie Moreno’s role.",
+        "analysis": "Brown's consistent campaigning and criticism of Husted reflect his strategy to maintain voter engagement and highlight policy differences. The shifting focus towards Bernie Moreno suggests Republicans are attempting to dilute the impact of Husted's record, signaling a tactical adjustment in the race dynamics as election day approaches.",
+        "talking_points": [
+          {
+            "text": "Sherrod Brown aims to flip Ohio back to blue for Democrats.",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HUlBFWkJyQTZzMGxKX0FYT2dxZXAtd3M4YzEzRU90TzNORERsM3BhRmljZGh1NGFDTXk5UVZINEpyQ0hreGcyQ1RUYURzUjdSUVgwYklYR2RHQlU?oc=5",
+            "source": "GNews: Sherrod Brown"
+          },
+          {
+            "text": "Brown criticizes Jon Husted's support for data centers during campaign events.",
+            "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNanh2eTZUdVBTTHk0WWRHRkxjY1JjM1RIT1plbGUxa0xjdjljZ2cyT3pCRFVERUF3T3dzX01iaFd1ZkRsU29aRXBFa2t0c3BQU1VZNXlkUnpONlFvMFRiNGxVbTQ5R2haMm40amExM25RdHp0OFJCZnY3cVlFSC0yeVVYMVU2cEh0Rm9rZk1WYlRvRkJhazJsNUV3b0dZUzhhY1VvdzBhRldDemFQUzBfdDUzamc0ajVjUU53RFdURDR4T0w2SzEwQjZUMmRCZktZckZZYm94QjFGNjQ4cHljQXFJWVdXMXM?oc=5",
+            "source": "GNews: Sherrod Brown"
+          },
+          {
+            "text": "Polls show Brown maintaining a lead over Republican opponent Jon Husted.",
+            "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPX2Q2N25XNUE5aV9GWWpRTnc1TzRwei1DZm5ZNDNQWFNyQTB3aW5CNHBuYU1obktRQVZmaDlJSTIwd1hiREhkQmJQaU8wWnoxaUhhMGtmcTdBdE9jcHNvV0t1UHJYUjRraGZUT3pMdDhTdF9vM016al9DSGpEVEk2ZGI4QmQ1WElPUnF0S2lwNWhScnlWMzVPNU9XQ3ZLTjB2Mjl4TkYxZndVWTExRlAtN1hwNEkwYVk4di1VaTlvelJsMzNLZVBWUGNUQ2o5V1pnVzV5dUlwRmF3NkZ5dGJobnlCWQ?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "POLICY": {
+        "item_count": 2,
+        "critical_summary": "Sherrod Brown has been actively engaging on policy issues, including hosting a healthcare roundtable to discuss local concerns and criticizing data center operations for potential negative impacts.",
+        "analysis": "Brown's activities reflect his commitment to addressing both economic and health-related challenges in Ohio. His criticism of data centers suggests an alignment with labor unions concerned about job displacement, while the healthcare roundtable underscores his focus on improving access and quality of care, likely resonating with constituents prioritizing these issues.",
+        "talking_points": [
+          {
+            "text": "Brown criticizes data center operations in Ohio for potential negative impacts.",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSEVPYkI2Rl9JVlJHLWNqUy1DckZzYzhiMXhfZDdNVkx0QWhnbW1qLWYwako3eFcxaUo3SnJ3dFNsUUVfcm95T21aNm9DZ0hlVmN0WWo1ajhndVJVc2N0S0hmTlpBMmFwZXFnR09VTk9sc0Rkc1EyNUZNMEpjenB3MTByTi0wRlBreGM0OVdrS3lLU2hCLWtoMkp1SnhHMWxrZmV1cG1IeHdXSFBTRkFVN2pWem1OZVNER2ZtU0tMOV82al90S0tyaFRKTk1pN0ZiYURlRkRNMkJDQQ?oc=5",
+            "source": "GNews: Sherrod Brown"
+          },
+          {
+            "text": "Hosted a healthcare roundtable to discuss local concerns and improve access.",
+            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ1U4RTRBbEJudnBUd19CVEVyTm1WbzJLOVVmUUxLMUJzUDczY2otRERhMWh3clhBZG1zTW9LeWRsQU9pbUY2bVhZOGs5cUhpVkMxdDFSVWFJY21uUC1nNjRmMk43N2pGSnV4a2NrZkY1bzFtTk5nTHc3aXlGdGFLbE1UWnJpeDFESEhjVE0ycnQyS1JTY25rSdIBngFBVV95cUxPRWIzd3EzWkdFWVY0eDhrV2JwUnFoY1FrUEdrQWViRzR2dTluTlVhb2xWazVvZm1PbDc3elZUZW5GUUtWWlBGYl95dW5TZEJPZ0NrRHJxNHZnUnlRMDY1QnlDX0loclNlSFVFeGdoVW8zZ0FBV1ZTWnYySVJIcTV3SVNhZ3hmMndVbGg1WndkeVk4cmZ0TmxCcE5EYXZLZw?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "ENDORSEMENTS": {
+        "item_count": 1,
+        "critical_summary": "The Teamsters union has endorsed Sherrod Brown for his upcoming Ohio Senate race, signaling strong labor support for his candidacy.",
+        "analysis": "This endorsement from a major labor organization underscores Brown's longstanding ties with unions and positions him as a champion of workers' rights. It also highlights the strategic importance of securing endorsements from influential groups to bolster campaign momentum and voter turnout among key demographics.",
+        "talking_points": [
+          {
+            "text": "Teamsters union endorses Sherrod Brown for Ohio Senate race.",
+            "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdFU4TVVUdzBWTnZvb21ST3RlTW5ZOHhENjhLdmFpdG85NUtmdENyaEVVeDVhOWdPRFJGRmVpWU1mX085YzZTdXN4bmlmRF8wTGJzbURCRkhGakRRU3lhYmZmNG8tb0ZfcnJlaG0zSVdWS2ZSMXVDRTRhOVpEOTNQaFRSN2xvUzc1RTJQU1V4NGIxYmVNTlZzT2Q5UDY?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "MEDIA": {
+        "item_count": 1,
+        "critical_summary": "Sherrod Brown has recently drawn attention for writing to a constituent in 1985, showcasing his long-standing commitment and personal approach to public service.",
+        "analysis": "This historical correspondence highlights Brown's enduring reputation as an accessible and dedicated public servant. It underscores his ability to connect with constituents on a personal level, which can be crucial for maintaining voter trust and support during his current political endeavors.",
+        "talking_points": [
+          {
+            "text": "Brown wrote to a constituent in 1985, demonstrating long-term commitment to service.",
+            "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWjQtZUJpZWw2WHJXVEQ5WEhQVFNKLWl4S3A4RXVJLWdYa3IyZTluRUUxMVVkQVU0MUU4aXdqbmZWQTg3VmR6Z3pxNTBaLWdkOEdTbmJiWjhCdGVFeVIwVnp2WEZFY1VtSkFsQ3JULWFCWE5oX2hlRVdVSnB4T2Jadl9lSmlfTVV2bmRobFl3SGlWdFNzaGJBdGs4SnlLUTFLY2JrVVNWWHo3MWZiRjl5OGlfRHQ5YnYtN2FESFAyb3k?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      },
+      "RECORD": {
+        "item_count": 1,
+        "critical_summary": "Sherrod Brown's legislative efforts, particularly his work on the Butch Lewis Act, have safeguarded pension benefits for approximately one million individuals.",
+        "analysis": "Brown's successful advocacy for the Butch Lewis Act underscores his commitment to protecting workers' rights and retirement security. This achievement not only solidifies his reputation as a champion for labor but also highlights the tangible impact of progressive legislation in addressing economic vulnerabilities faced by retirees.",
+        "talking_points": [
+          {
+            "text": "Brown's work on the Butch Lewis Act has protected one million pensions.",
+            "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcHlXUndsSFV0bFpiblhKSFROR0JrZnlvem9PcmxLeEVQclluMkRyYWRVSTZQeFVRMFZEaXd1OVJ4dWRhTnJrX01JbWMyZGU3aG9jaFhyTkliU1lpU19nS1dxUjBHR2FhVU9hZEtiaUxuWnpwaUFqYlNGUUl3c2ZPUl9LMHhKYXVEUDQ0SVhXd0ROTTAzM2hzS2FDMWh0d2RhMno3UFdSZno0b2szc3BqYWFR?oc=5",
+            "source": "GNews: Sherrod Brown"
+          }
+        ]
+      }
+    }
+  }
+}

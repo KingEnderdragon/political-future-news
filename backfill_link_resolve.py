@@ -1,18 +1,21 @@
 """
 One-off backfill: resolves every Google News / Bing News redirect link
-already stored in mediaflow_items.json, mediaflow_classified.json, and
-mediaflow_digest.json to its real article URL, in parallel. Safe to rerun —
-already-resolved (non-redirect) links are left untouched.
+already stored for a subject's items/classified/digest files to its real
+article URL, in parallel. Safe to rerun — already-resolved (non-redirect)
+links are left untouched.
+
+Usage: python backfill_link_resolve.py [subject_slug]   (defaults to "kaptur")
 """
 
 import json
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
 
 import rss_collect as rc
+import subjects
 
-HERE = Path(__file__).parent
 MAX_WORKERS = 10
 
 
@@ -96,10 +99,9 @@ def apply_to_digest_file(path: Path, resolved: dict[str, str]) -> int:
     return fixed
 
 
-def main() -> None:
-    items_file = HERE / "mediaflow_items.json"
-    classified_file = HERE / "mediaflow_classified.json"
-    digest_file = HERE / "mediaflow_digest.json"
+def main(subject_slug: str = "kaptur") -> None:
+    paths = subjects.paths_for(subject_slug)
+    items_file, classified_file, digest_file = paths["items"], paths["classified"], paths["digest"]
 
     links = collect_links(items_file, classified_file, digest_file)
     print(f"Found {len(links)} redirect links to resolve.")
@@ -117,4 +119,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    slug = sys.argv[1] if len(sys.argv) > 1 else "kaptur"
+    main(slug)

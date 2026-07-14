@@ -1,5 +1,5 @@
 """
-KapturFlow dashboard — Rep. Marcy Kaptur (D-OH-9) live news monitor.
+KapturFlow dashboard — live news monitor for tracked political figures.
 Run with: streamlit run mediaflow_app.py
 """
 
@@ -13,33 +13,19 @@ from pathlib import Path
 
 import streamlit as st
 
-HERE            = Path(__file__).parent
-DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
-CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
-ITEMS_FILE      = DATA_DIR / "mediaflow_items.json"
-DIGEST_FILE     = DATA_DIR / "mediaflow_digest.json"
-LOCK_FILE       = DATA_DIR / ".collect_lock"
+import subjects
 
 DIGEST_WINDOWS = [(7, "Last 7 days"), (30, "Last 30 days")]
 
 AUTO_COLLECT_INTERVAL_SECONDS = 300     # 5 minutes
 AUTO_DIGEST_INTERVAL_SECONDS  = 3600    # 1 hour — digest generation is heavier than classification
 
-ARC_COLOR = {
-    "LEGISLATION": "#2980b9",
-    "COMMITTEE":   "#8e44ad",
-    "DISTRICT":    "#27ae60",
-    "CAMPAIGN":    "#c0392b",
-    "MEDIA":       "#d35400",
-}
+SLOT_COLORS = ["#2980b9", "#8e44ad", "#27ae60", "#c0392b", "#d35400"]
+OTHER_COLOR = "#999"
 
-ARC_LABEL = {
-    "LEGISLATION": "Legislation",
-    "COMMITTEE":   "Committee",
-    "DISTRICT":    "District",
-    "CAMPAIGN":    "Campaign",
-    "MEDIA":       "Media",
-}
+
+def arc_colors(subject: dict) -> dict[str, str]:
+    return {arc: SLOT_COLORS[i % len(SLOT_COLORS)] for i, arc in enumerate(subject["arc_label"])}
 
 
 # ── date helpers ──────────────────────────────────────────────────────────────
@@ -113,28 +99,18 @@ def inject_tz_converter() -> None:
 
 # ── data ──────────────────────────────────────────────────────────────────────
 
-def load_classified() -> list[dict]:
-    if not CLASSIFIED_FILE.exists():
+def load_classified(classified_file: Path) -> list[dict]:
+    if not classified_file.exists():
         return []
-    data = json.loads(CLASSIFIED_FILE.read_text(encoding="utf-8"))
+    data = json.loads(classified_file.read_text(encoding="utf-8"))
     return sorted(data, key=lambda x: parse_dt(x.get("published", "")), reverse=True)
-
-
-def item_counts() -> tuple[int, int]:
-    n_items = 0
-    n_classified = 0
-    if ITEMS_FILE.exists():
-        n_items = len(json.loads(ITEMS_FILE.read_text(encoding="utf-8")))
-    if CLASSIFIED_FILE.exists():
-        n_classified = len(json.loads(CLASSIFIED_FILE.read_text(encoding="utf-8")))
-    return n_items, n_classified
 
 
 # ── rendering ─────────────────────────────────────────────────────────────────
 
-def render_item(item: dict, show_arc_tag: bool = False) -> None:
+def render_item(item: dict, subject: dict, colors: dict[str, str], show_arc_tag: bool = False) -> None:
     arc      = item.get("arc", "")
-    color    = ARC_COLOR.get(arc, "#999")
+    color    = colors.get(arc, OTHER_COLOR)
     conflict = item.get("conflict", False)
     ts_display, ts_iso = fmt_dt_utc(item.get("published", ""))
     source   = item.get("source", "")
@@ -144,7 +120,7 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
 
     arc_tag = ""
     if show_arc_tag and arc:
-        label = ARC_LABEL.get(arc, arc)
+        label = subject["arc_label"].get(arc, arc)
         arc_tag = f'<span class="arc-label" style="font-size:0.83em;color:{color};font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{label}&ensp;</span>'
 
     conflict_mark = (
@@ -169,14 +145,14 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
     )
 
 
-def load_digests() -> dict:
-    if not DIGEST_FILE.exists():
+def load_digests(digest_file: Path) -> dict:
+    if not digest_file.exists():
         return {}
-    return json.loads(DIGEST_FILE.read_text(encoding="utf-8"))
+    return json.loads(digest_file.read_text(encoding="utf-8"))
 
 
-def render_digest_window(digest: dict) -> None:
-    arc_keys = list(ARC_LABEL.keys())
+def render_digest_window(digest: dict, subject: dict, colors: dict[str, str]) -> None:
+    arc_keys = list(subject["arc_label"].keys())
 
     if not digest or not digest.get("arcs"):
         st.caption("No digest yet for this window. Click 'Generate digest' to build one.")
@@ -197,8 +173,8 @@ def render_digest_window(digest: dict) -> None:
         entry = digest["arcs"].get(arc)
         if not entry:
             continue
-        color = ARC_COLOR.get(arc, "#999")
-        label = ARC_LABEL.get(arc, arc)
+        color = colors.get(arc, OTHER_COLOR)
+        label = subject["arc_label"].get(arc, arc)
         summary = entry.get("critical_summary", "")
         analysis = entry.get("analysis", "")
         count = entry.get("item_count", 0)
@@ -239,8 +215,9 @@ def render_digest_window(digest: dict) -> None:
         )
 
 
-def render_weekly_digest() -> None:
-    digests = load_digests()
+def render_weekly_digest(subject_slug: str, subject: dict, colors: dict[str, str]) -> None:
+    paths = subjects.paths_for(subject_slug)
+    digests = load_digests(paths["digest"])
 
     with st.expander("Digest — critical summary & analysis by category", expanded=True):
         st.caption(
@@ -251,55 +228,53 @@ def render_weekly_digest() -> None:
         tabs = st.tabs([label for _, label in DIGEST_WINDOWS])
         for tab, (window_days, _) in zip(tabs, DIGEST_WINDOWS):
             with tab:
-                render_digest_window(digests.get(str(window_days), {}))
+                render_digest_window(digests.get(str(window_days), {}), subject, colors)
 
-        if st.button("Generate digest", key="gen_digest"):
+        if st.button("Generate digest", key=f"gen_digest_{subject_slug}"):
             with st.spinner("Analyzing recent coverage…"):
-                run_digest()
+                run_digest(subject_slug)
             st.rerun()
 
 
 # ── pipeline triggers ─────────────────────────────────────────────────────────
 
-def run_collect() -> None:
+def run_collect(subject_slug: str) -> None:
     import rss_collect
-    rss_collect.run()
+    rss_collect.run(subject_slug)
 
 
-def run_classify() -> int:
+def run_classify(subject_slug: str) -> int:
     import mediaflow_classify
-    return mediaflow_classify.run()
+    return mediaflow_classify.run(subject_slug)
 
 
-def run_digest() -> dict:
+def run_digest(subject_slug: str) -> dict:
     import weekly_digest
-    return weekly_digest.generate()
+    return weekly_digest.generate(subject_slug)
 
 
-_collect_last: float = 0.0
-_digest_last: float = 0.0
-_collect_lock = threading.Lock()
+_digest_last: dict[str, float] = {}
 
 
 def _collect_loop() -> None:
-    global _collect_last, _digest_last
-    # collect immediately on startup, then on interval
+    global _digest_last
+    # collect immediately on startup, then on interval, cycling every tracked subject
     while True:
-        if LOCK_FILE.exists():
-            time.sleep(30)
-            continue
-        try:
-            LOCK_FILE.touch()
-            run_collect()
-            run_classify()
-            _collect_last = time.time()
-            if time.time() - _digest_last >= AUTO_DIGEST_INTERVAL_SECONDS:
-                run_digest()
-                _digest_last = time.time()
-        except Exception as e:
-            print(f"[collector] error: {e}")
-        finally:
-            LOCK_FILE.unlink(missing_ok=True)
+        for slug in subjects.SUBJECT_ORDER:
+            lock_file = subjects.paths_for(slug)["lock"]
+            if lock_file.exists():
+                continue
+            try:
+                lock_file.touch()
+                run_collect(slug)
+                run_classify(slug)
+                if time.time() - _digest_last.get(slug, 0) >= AUTO_DIGEST_INTERVAL_SECONDS:
+                    run_digest(slug)
+                    _digest_last[slug] = time.time()
+            except Exception as e:
+                print(f"[collector:{slug}] error: {e}")
+            finally:
+                lock_file.unlink(missing_ok=True)
         time.sleep(AUTO_COLLECT_INTERVAL_SECONDS)
 
 
@@ -315,31 +290,31 @@ def start_background_collector() -> None:
 ITEMS_PER_ARC = 40
 
 @st.fragment(run_every=30)
-def live_feed() -> None:
+def live_feed(subject_slug: str) -> None:
     """Display-only fragment. Polls for new data every 30s."""
-
-    items = load_classified()
+    subject = subjects.get_subject(subject_slug)
+    colors = arc_colors(subject)
+    paths = subjects.paths_for(subject_slug)
+    items = load_classified(paths["classified"])
 
     if not items:
-        st.info("No classified items yet. Click 'Update feed' to seed the feed.")
+        st.info("No classified items yet. Click 'Update' to seed the feed.")
         return
 
-    arc_keys = list(ARC_LABEL.keys())
-    other_items = [i for i in items if i.get("arc") not in ARC_LABEL]
+    arc_keys = list(subject["arc_label"].keys())
+    other_items = [i for i in items if i.get("arc") not in subject["arc_label"]]
     all_limit = ITEMS_PER_ARC * len(arc_keys)
-    total_items = len(items)
-    visible_all = min(total_items, all_limit)
 
-    main_items = [i for i in items if i.get("arc") in ARC_LABEL]
+    main_items = [i for i in items if i.get("arc") in subject["arc_label"]]
 
-    tab_labels = ["All"] + list(ARC_LABEL.values())
+    tab_labels = ["All"] + list(subject["arc_label"].values())
     if other_items:
         tab_labels.append("Other")
     tabs = st.tabs(tab_labels)
 
     with tabs[0]:
         for item in main_items[:all_limit]:
-            render_item(item, show_arc_tag=True)
+            render_item(item, subject, colors, show_arc_tag=True)
 
     for tab, arc in zip(tabs[1:], arc_keys):
         with tab:
@@ -347,19 +322,19 @@ def live_feed() -> None:
             if not arc_items:
                 st.caption("No items.")
             for item in arc_items[:ITEMS_PER_ARC]:
-                render_item(item, show_arc_tag=False)
+                render_item(item, subject, colors, show_arc_tag=False)
 
     if other_items:
         with tabs[-1]:
             for item in other_items[:ITEMS_PER_ARC]:
-                render_item(item, show_arc_tag=True)
+                render_item(item, subject, colors, show_arc_tag=True)
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
     st.set_page_config(
-        page_title="KapturFlow: Rep. Marcy Kaptur (OH-9)",
+        page_title="KapturFlow: Ohio Political News Intelligence",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -398,15 +373,41 @@ def main() -> None:
             font-weight: 700 !important;
             font-size: 1.35em !important;
         }
+        div[data-testid="stRadio"] > label { display: none; }
+        div[data-testid="stRadio"] div[role="radiogroup"] { gap: 4px; }
         </style>""",
         unsafe_allow_html=True,
     )
 
+    # ── group + subject toggle ───────────────────────────────────────────────
+    group_labels = {"politicians": "Politicians", "issues": "Ohio Issues"}
+    group = st.radio(
+        "Group",
+        options=list(subjects.SUBJECT_GROUPS.keys()),
+        format_func=lambda g: group_labels[g],
+        horizontal=True,
+        key="group",
+        label_visibility="collapsed",
+    )
+    group_slugs = subjects.SUBJECT_GROUPS[group]
+    subject_names = {slug: subjects.get_subject(slug)["name"] for slug in group_slugs}
+    subject_slug = st.radio(
+        "Subject",
+        options=group_slugs,
+        format_func=lambda s: subject_names[s],
+        horizontal=True,
+        key=f"subject_slug_{group}",
+        label_visibility="collapsed",
+    )
+    subject = subjects.get_subject(subject_slug)
+    colors = arc_colors(subject)
+    paths = subjects.paths_for(subject_slug)
+
     # ── header ────────────────────────────────────────────────────────────────
     updated_display = "—"
     updated_iso = ""
-    if CLASSIFIED_FILE.exists():
-        mtime = datetime.fromtimestamp(CLASSIFIED_FILE.stat().st_mtime, tz=timezone.utc)
+    if paths["classified"].exists():
+        mtime = datetime.fromtimestamp(paths["classified"].stat().st_mtime, tz=timezone.utc)
         updated_display = mtime.strftime("%H:%M UTC")
         updated_iso = mtime.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -415,8 +416,8 @@ def main() -> None:
     col1, col2 = st.columns([7.8, 1.775])
     with col1:
         st.markdown(
-            "<h2 style='margin:0'>KapturFlow</h2>"
-            "<div style='color:#999;font-size:0.9em'>Rep. Marcy Kaptur &middot; Ohio's 9th District</div>",
+            f"<h2 style='margin:0'>{subject['name']}</h2>"
+            f"<div style='color:#999;font-size:0.9em'>{subject['subtitle']}</div>",
             unsafe_allow_html=True,
         )
     with col2:
@@ -426,16 +427,16 @@ def main() -> None:
         )
         if st.button("Update", type="secondary", use_container_width=True):
             with st.spinner("…"):
-                run_collect()
-                classified = run_classify()
+                run_collect(subject_slug)
+                classified = run_classify(subject_slug)
             st.toast(f"{classified} new items classified.")
             st.rerun()
 
     # ── weekly digest ─────────────────────────────────────────────────────────
-    render_weekly_digest()
+    render_weekly_digest(subject_slug, subject, colors)
 
     # ── live feed ─────────────────────────────────────────────────────────────
-    live_feed()
+    live_feed(subject_slug)
 
 
 if __name__ == "__main__":
