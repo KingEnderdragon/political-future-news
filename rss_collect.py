@@ -97,6 +97,17 @@ KEYWORD_RE = re.compile("|".join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
 # unless "Kaptur" or the district name is present, so no exclude list needed.
 EXCLUDE_RE = re.compile(r"(?!x)x")  # never matches
 
+# msn.com syndication pages (esp. the /vi-AA... video-card format) are a
+# JS-only shell with no server-rendered content and no recoverable link back
+# to the original publisher — they show blank for most visitors. Drop them
+# rather than store a link that won't actually work.
+UNRELIABLE_LINK_DOMAINS = {"msn.com"}
+
+
+def is_unreliable_link(url: str) -> bool:
+    domain = urlparse(url or "").netloc.lower().removeprefix("www.")
+    return domain in UNRELIABLE_LINK_DOMAINS
+
 
 def is_relevant(entry: dict) -> bool:
     text = " ".join([
@@ -429,6 +440,8 @@ def fetch_new(seen: set) -> list[dict]:
             if not link or is_seen(seen, item_source, title, link):
                 continue
             if not is_relevant(entry):
+                continue
+            if is_unreliable_link(link):
                 continue
             new_items.append({
                 "source":    source,
