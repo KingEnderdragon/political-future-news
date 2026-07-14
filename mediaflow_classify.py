@@ -19,13 +19,15 @@ ITEMS_FILE = DATA_DIR / "mediaflow_items.json"
 CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
 
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.1:8b")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:14b")
 
-# llama3.1:8b reliably classifies one item at a time but silently drops all
-# but the first item when given a batch, even with array-output instructions
-# and format=json enforcement. One item per request is the reliable mode; a
-# local Ollama server largely serializes requests against one model anyway
-# so a little request-level concurrency just overlaps network/JSON overhead.
+# Neither llama3.1:8b nor qwen2.5:14b reliably return a well-formed JSON
+# array under batched input — llama silently drops all but the first item;
+# qwen processes every item's content correctly but omits the array/object
+# delimiters, producing invalid JSON. One item per request is the reliable
+# mode; a local Ollama server largely serializes requests against one model
+# anyway so a little request-level concurrency just overlaps network/JSON
+# overhead.
 BATCH_SIZE = 1
 MAX_CONCURRENT_BATCHES = 3
 MAX_RETRIES = 2

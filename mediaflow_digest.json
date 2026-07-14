@@ -1,22 +1,17 @@
 {
   "7": {
-    "generated_at": "2026-07-14T03:23:42Z",
-    "window_start": "2026-07-07T03:23:42Z",
-    "window_end": "2026-07-14T03:23:42Z",
+    "generated_at": "2026-07-14T04:47:39Z",
+    "window_start": "2026-07-07T04:47:39Z",
+    "window_end": "2026-07-14T04:47:39Z",
     "window_days": 7,
     "arcs": {
       "LEGISLATION": {
         "item_count": 1,
-        "critical_summary": "Representative Marcy Kaptur and Senator Murray have jointly called on the Office of Management and Budget (OMB) to reconsider a proposed rule that would politicize Department of Energy (DOE) grant awards.",
-        "analysis": "This move by Kaptur and Murray signals their opposition to potential politicization of DOE grants, highlighting concerns about the impact on scientific research and community development projects in Ohio's 9th District. The joint effort underscores their commitment to bipartisanship and protecting the integrity of federal funding processes.",
+        "critical_summary": "Representatives Patty Murray and Marcy Kaptur have jointly urged the Office of Management and Budget (OMB) to rescind a proposed rule that they argue would politicize Department of Energy (DOE) grant allocations.",
+        "analysis": "This action highlights Kaptur's commitment to bipartisan collaboration on policy issues, particularly those affecting federal grants and scientific research. It also underscores her concern over potential political interference in the allocation of DOE funds, which could impact her district’s energy-related industries and academic institutions.",
         "talking_points": [
           {
-            "text": "Kaptur and Senator Murray are urging OMB to rescind a proposed rule.",
-            "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
-            "source": "GNews: Marcy Kaptur"
-          },
-          {
-            "text": "The proposed rule would politicize DOE grants.",
+            "text": "Kaptur collaborates with Rep. Murray to oppose politicization of DOE grants.",
             "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
             "source": "GNews: Marcy Kaptur"
           }
@@ -36,16 +31,11 @@
       },
       "CAMPAIGN": {
         "item_count": 1,
-        "critical_summary": "The New York Times has published the latest polls for the 2026 Ohio 9th Congressional District election, showing Rep. Marcy Kaptur's position.",
-        "analysis": "These polls indicate that Rep. Kaptur is facing a competitive race, with her lead narrowing in recent months. This development may signal increased pressure on her campaign to engage with voters and articulate her policy positions more clearly.",
+        "critical_summary": "Rep. Marcy Kaptur is monitoring polling data to gauge her standing in the upcoming 2026 election for Ohio's 9th district.",
+        "analysis": "Kaptur’s focus on tracking polls underscores the competitive nature of her re-election bid and highlights the importance of understanding voter sentiment early in the campaign cycle. This proactive approach signals a strategic effort to maintain her long-standing presence in Congress.",
         "talking_points": [
           {
-            "text": "Rep. Marcy Kaptur's lead has narrowed in the latest polls.",
-            "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
-            "source": "GNews: Marcy Kaptur"
-          },
-          {
-            "text": "The Ohio 9th Congressional District election is scheduled for 2026.",
+            "text": "Rep. Kaptur is closely monitoring polling data for Ohio's 9th district ahead of the 2026 election.",
             "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
             "source": "GNews: Marcy Kaptur"
           }
@@ -53,11 +43,11 @@
       },
       "MEDIA": {
         "item_count": 1,
-        "critical_summary": "Representative Marcy Kaptur and Senator Patty Murray have jointly urged the Office of Management and Budget (OMB) to rescind a proposed federal grants rule, citing concerns about its impact on local communities.",
-        "analysis": "This development signals Kaptur's continued focus on protecting federal funding for her district, particularly in light of potential changes to grant policies. The joint effort with Senator Murray also highlights Kaptur's ability to build bipartisan relationships and advocate for shared priorities.",
+        "critical_summary": "Representative Marcy Kaptur has joined forces with Senator Patty Murray to send a letter to the Office of Management and Budget, urging them to retract a recently proposed rule regarding federal grants.",
+        "analysis": "This action highlights Kaptur's ongoing commitment to protecting federal funding mechanisms that benefit her constituents. By aligning with Senator Murray, she demonstrates bipartisanship while also signaling potential opposition within Congress to administrative changes that could impact local communities negatively.",
         "talking_points": [
           {
-            "text": "Kaptur and Senator Murray jointly urged the OMB to withdraw a proposed federal grants rule.",
+            "text": "Kaptur and Murray urge OMB to withdraw proposed rule on federal grants.",
             "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur%2C+Patty+Murray+Urge+OMB+to+Withdraw+Proposed+Federal+Grants+Rule",
             "source": "GNews: Marcy Kaptur"
           }
@@ -66,28 +56,28 @@
     }
   },
   "30": {
-    "generated_at": "2026-07-14T03:24:01Z",
-    "window_start": "2026-06-14T03:24:01Z",
-    "window_end": "2026-07-14T03:24:01Z",
+    "generated_at": "2026-07-14T04:48:05Z",
+    "window_start": "2026-06-14T04:48:05Z",
+    "window_end": "2026-07-14T04:48:05Z",
     "window_days": 30,
     "arcs": {
       "LEGISLATION": {
-        "item_count": 3,
-        "critical_summary": "Rep. Marcy Kaptur has been actively engaged in legislative efforts to promote unmanned systems partnerships and counter proposed rule changes that politicize DOE grants.",
-        "analysis": "Kaptur's recent legislation and co-sponsorship signal her commitment to advancing bipartisan initiatives on unmanned systems, while also pushing back against what she perceives as partisan overreach by the OMB. This arc highlights Kaptur's ability to navigate complex policy issues and build coalitions across party lines.",
+        "item_count": 5,
+        "critical_summary": "Rep. Marcy Kaptur has been actively involved in legislative efforts concerning unmanned systems, introducing or co-sponsoring multiple bills aimed at enhancing strategic partnerships with allies like Ukraine. Additionally, she has taken steps to protect Department of Energy grants from politicization and voted against a border security bill.",
+        "analysis": "Kaptur's legislative activities reflect her focus on advancing technological cooperation and defense strategies while also advocating for the integrity of federal grant programs. Her voting record highlights a nuanced approach to national security issues, indicating potential tensions within her party or district over specific policy priorities.",
         "talking_points": [
           {
-            "text": "Kaptur introduced the Strategic Unmanned Systems Partnership Act.",
+            "text": "Kaptur introduced H.R. 9550 to promote strategic unmanned systems partnerships.",
             "link": "https://www.quiverquant.com/news/New+Bill%3A+Representative+Marcy+Kaptur+introduces+H.R.+9550%3A+Strategic+Unmanned+Systems+Partnership+Act",
             "source": "GNews: Marcy Kaptur"
           },
           {
-            "text": "Kaptur co-sponsored a bipartisan bill on unmanned systems partnership with Ukraine.",
-            "link": "https://www.texasgopvote.com/government/mccaul-kaptur-fitzpatrick-quigley-costa-bacon-introduce-bipartisan-strategic-0017028",
+            "text": "Rep. Kaptur co-sponsored a bill to enhance unmanned system cooperation with Ukraine.",
+            "link": "https://www.quiverquant.com/news/Press+Release%3A+Mike+Quigley%2C+Marcy+Kaptur+Introduce+Bill+on+U.S.-Ukraine+Unmanned+Systems+Cooperation",
             "source": "GNews: Kaptur bill"
           },
           {
-            "text": "Kaptur and Senator Murray urged OMB to rescind a proposed rule that politicizes DOE grants.",
+            "text": "Kaptur urged OMB to rescind a proposed rule politicizing DOE grants.",
             "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
             "source": "GNews: Marcy Kaptur"
           }
@@ -100,71 +90,61 @@
         "talking_points": []
       },
       "DISTRICT": {
-        "item_count": 5,
-        "critical_summary": "Rep. Marcy Kaptur has secured significant federal funding for various projects in her district, including airports, harbors, and a lead program in Toledo.",
-        "analysis": "Kaptur's efforts demonstrate her ability to deliver federal resources to her constituents, which is crucial for her reelection prospects. The focus on infrastructure and public health initiatives also highlights her commitment to addressing local needs. However, the duplication of funding figures in items 3 and 5 may indicate a need for more precise tracking or communication.",
+        "item_count": 6,
+        "critical_summary": "Rep. Marcy Kaptur has been actively securing federal funds for her district, including $7.19 million from the FAA for local airports and over $17.6 million each from the Army Corps of Engineers and USACE for harbor dredging projects. Additionally, she announced research grants totaling over $1 million for the University of Toledo and a new lead abatement program with $7 million in funding.",
+        "analysis": "Kaptur's efforts to secure federal funds highlight her commitment to infrastructure development and community health initiatives within her district. The repeated focus on harbor dredging underscores its importance to local economic interests, while the grants for research and lead abatement demonstrate a broader commitment to education and public health. These actions signal Kaptur’s strategic approach in aligning with both regional priorities and national policy trends.",
         "talking_points": [
           {
-            "text": "Kaptur secured $7.19M in federal funding for Northwest Ohio airports.",
+            "text": "$7.19M FAA funding secured for NW Ohio airports",
             "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur+Announces+%247.19+Million+in+FAA+Funding+for+Northwest+Ohio+Airports",
             "source": "GNews: Marcy Kaptur"
           },
           {
-            "text": "Kaptur discussed a Ukrainian drone facility in Lucas County.",
-            "link": "https://www.wtol.com/video/news/local/us-rep-kaptur-speaks-on-ukrainian-drone-facility-in-lucas-county/512-9077ddbc-6c19-4532-9bb1-2dfabe414eda",
-            "source": "GNews: Marcy Kaptur"
-          },
-          {
-            "text": "Kaptur secured over $17.6 million in federal funding for dredging northwest Ohio harbors.",
+            "text": "Over $17.6M Army Corps funding for harbor dredging",
             "link": "https://dredgewire.com/kaptur-secures-over-17-6-million-in-army-corps-funding-for-dredging-northwest-ohio-harbors/",
             "source": "GNews: Marcy Kaptur"
           },
           {
-            "text": "Kaptur secured $7M in federal funding for a new lead program in Toledo.",
+            "text": "$7M lead abatement program announced in Toledo",
             "link": "https://www.toledoblade.com/local/environment/2026/06/19/city-kaptur-announce-7-million-new-lead-program/stories/20260618111",
             "source": "GNews: Marcy Kaptur"
           }
         ]
       },
       "CAMPAIGN": {
-        "item_count": 3,
-        "critical_summary": "Rep. Marcy Kaptur (D-Ohio, 9th District) has been facing recent scrutiny over her voting record on LGBTQ+ issues, with the latest polls showing her position in the upcoming election.",
-        "analysis": "The recent criticism of Rep. Kaptur's anti-trans vote may impact her standing within her party and among progressive voters, while the mention of her as a reason for canvassing efforts suggests she remains a competitive candidate in the Ohio 9th Congressional District.",
+        "item_count": 2,
+        "critical_summary": "Rep. Marcy Kaptur is actively engaging with constituents through canvassing efforts and monitoring polling data to gauge her standing ahead of the 2026 election.",
+        "analysis": "Kaptur's engagement with voters via canvassing indicates a proactive approach to maintaining district support, while tracking polling data suggests she is closely monitoring potential challenges. This dual strategy underscores her commitment to both grassroots outreach and strategic electoral positioning.",
         "talking_points": [
           {
-            "text": "Kaptur faces criticism for her anti-trans vote.",
-            "link": "https://thebuckeyeflame.com/2026/07/06/ohioans-deserve-an-explanation-from-marcy-kaptur/",
-            "source": "GNews: Marcy Kaptur"
-          },
-          {
-            "text": "The New York Times publishes latest polls for the Ohio 9th Congressional District election in 2026.",
-            "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
-            "source": "GNews: Marcy Kaptur"
-          },
-          {
-            "text": "Kaptur is mentioned as a reason for canvassing efforts in Ohio.",
+            "text": "Rep. Kaptur participates in voter canvassing efforts.",
             "link": "https://www.dailykos.com/stories/2026/6/22/800058732/community/ohio-notes/",
+            "source": "GNews: Marcy Kaptur"
+          },
+          {
+            "text": "Polling data for the 9th district is being closely monitored.",
+            "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
             "source": "GNews: Marcy Kaptur"
           }
         ]
       },
       "MEDIA": {
-        "item_count": 4,
-        "critical_summary": "Rep. Marcy Kaptur has been actively engaged in federal policy, opposing a proposed rule and border security measures, while also securing over $1M in research grants for the University of Toledo. She has also faced scrutiny over her past consideration of voting for Kevin McCarthy as Speaker. These developments reflect her ongoing efforts to shape federal policies and secure funding for local institutions.",
-        "analysis": "Kaptur's actions demonstrate her commitment to opposing measures that may be seen as restrictive or punitive, while also highlighting her ability to secure significant funding for local initiatives. The controversy surrounding her consideration of voting for McCarthy suggests potential divisions within the Democratic Party and may impact her relationships with colleagues.",
+        "item_count": 3,
+        "critical_summary": "Rep. Marcy Kaptur has been active in media and political discourse, urging the OMB to withdraw a proposed federal grants rule alongside Rep. Patty Murray, facing scrutiny over her vote against transgender rights legislation from The Buckeye Flame, and reportedly considered voting for Kevin McCarthy as House Speaker.",
+        "analysis": "Kaptur's actions highlight her commitment to bipartisan efforts in policy advocacy while also drawing attention to potential political compromises within the Democratic Party. Her stance on the federal grants rule demonstrates a proactive approach to protecting federal funding, yet her consideration of supporting Kevin McCarthy and vote against transgender rights legislation may signal internal party tensions or strategic voting.",
         "talking_points": [
           {
-            "text": "Kaptur voted against border security measures.",
-            "link": "https://www.toledoblade.com/opinion/letters-to-the-editor/2026/06/25/to-the-editor-kaptur-votes-against-border-security/stories/20260624022",
+            "text": "Kaptur urges OMB to withdraw proposed federal grants rule with Rep. Murray.",
+            "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur%2C+Patty+Murray+Urge+OMB+to+Withdraw+Proposed+Federal+Grants+Rule",
             "source": "GNews: Marcy Kaptur"
           },
           {
-            "text": "Rep. Kaptur announces over $1M in research grants for the University of Toledo.",
-            "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur+Announces+More+Than+%241+Million+in+Research+Grants+for+University+of+Toledo",
+            "text": "The Buckeye Flame questions Kaptur's vote against transgender rights legislation.",
+            "link": "https://thebuckeyeflame.com/2026/07/06/ohioans-deserve-an-explanation-from-marcy-kaptur/",
             "source": "GNews: Marcy Kaptur"
           },
           {
-            "text": "A book reports that Rep. Marcy Kaptur considered voting for Kevin McCarthy as Speaker.",
+            "text": "Kaptur reportedly considered voting for Kevin McCarthy as House Speaker.",
             "link": "https://www.washingtonexaminer.com/news/house/4614730/marcy-kaptur-mccarthy-speaker-vote-book/",
             "source": "GNews: Marcy Kaptur"
           }

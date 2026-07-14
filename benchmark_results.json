@@ -1,0 +1,241 @@
+[
+  {
+    "model": "llama3.1:8b",
+    "arc": "DISTRICT",
+    "window_days": 30,
+    "item_count": 5,
+    "elapsed_sec": 14.1,
+    "critical_summary": "Rep. Marcy Kaptur has secured significant federal funding for various projects in her district, including airports, harbors, and a lead program in Toledo.",
+    "analysis": "These developments demonstrate Kaptur's ability to deliver federal resources to her constituents, potentially bolstering her reelection prospects by showcasing tangible benefits from her work in Washington. However, the focus on economic development and infrastructure may also highlight ongoing challenges in the district, such as environmental concerns related to lead contamination.",
+    "talking_points": [
+      {
+        "text": "Kaptur secured $7.19M for Northwest Ohio airports.",
+        "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur+Announces+%247.19+Million+in+FAA+Funding+for+Northwest+Ohio+Airports",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur discussed a Ukrainian drone facility in Lucas County.",
+        "link": "https://www.wtol.com/video/news/local/us-rep-kaptur-speaks-on-ukrainian-drone-facility-in-lucas-county/512-9077ddbc-6c19-4532-9bb1-2dfabe414eda",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur secured over $17.6 million for harbor dredging.",
+        "link": "https://dredgewire.com/kaptur-secures-over-17-6-million-in-army-corps-funding-for-dredging-northwest-ohio-harbors/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur secured $7M for a new lead program in Toledo.",
+        "link": "https://www.toledoblade.com/local/environment/2026/06/19/city-kaptur-announce-7-million-new-lead-program/stories/20260618111",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur secured $17.6M for Northwest Ohio harbor dredging.",
+        "link": "https://www.dredgingtoday.com/2026/06/18/kaptur-secures-over-17-6m-in-usace-funding-for-dredging-northwest-ohio-harbors/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arc": "CAMPAIGN",
+    "window_days": 30,
+    "item_count": 3,
+    "elapsed_sec": 5.4,
+    "critical_summary": "Rep. Marcy Kaptur (D-Ohio, 9th District) has been facing criticism for her voting record on trans issues and recent polls have been published showing the state of the election landscape in her district.",
+    "analysis": "The recent polls and criticism over Kaptur's anti-trans vote may signal a challenge to her reelection prospects, potentially highlighting divisions within the Democratic Party. The attention from canvassing efforts also underscores her position as a target for opposition forces.",
+    "talking_points": [
+      {
+        "text": "Kaptur faces criticism for her anti-trans vote.",
+        "link": "https://thebuckeyeflame.com/2026/07/06/ohioans-deserve-an-explanation-from-marcy-kaptur/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "The New York Times publishes latest polls for the Ohio 9th Congressional District election in 2026.",
+        "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur is mentioned as a reason for canvassing efforts in Ohio.",
+        "link": "https://www.dailykos.com/stories/2026/6/22/800058732/community/ohio-notes/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arc": "LEGISLATION",
+    "window_days": 7,
+    "item_count": 1,
+    "elapsed_sec": 5.1,
+    "critical_summary": "Representative Marcy Kaptur and Senator Patty Murray have jointly called on the Office of Management and Budget (OMB) to withdraw a proposed rule that would politicize Department of Energy (DOE) grant awards.",
+    "analysis": "This development signals Kaptur's continued commitment to defending the integrity of federal funding processes, particularly in areas like energy research and development. The move also underscores her willingness to collaborate with Senate colleagues across party lines on key policy issues.",
+    "talking_points": [
+      {
+        "text": "Kaptur and Senator Murray are urging OMB to rescind a proposed rule.",
+        "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "The proposed rule would politicize DOE grants.",
+        "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:14b",
+    "arc": "DISTRICT",
+    "window_days": 30,
+    "item_count": 5,
+    "elapsed_sec": 25.1,
+    "critical_summary": "Rep. Marcy Kaptur has been actively securing federal funds for her district, including $7.19 million for airports and over $17.6 million each for harbor dredging and a new lead program in Toledo.",
+    "analysis": "Kaptur's consistent focus on securing federal funding underscores her commitment to infrastructure development and public health initiatives in Northwest Ohio. This strategy not only bolsters her district's economic interests but also enhances her standing among constituents who value tangible benefits from their representation.",
+    "talking_points": [
+      {
+        "text": "Secured $7.19M for Northwest Ohio airports",
+        "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur+Announces+%247.19+Million+in+FAA+Funding+for+Northwest+Ohio+Airports",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "$17.6M allocated for harbor dredging to improve waterways",
+        "link": "https://dredgewire.com/kaptur-secures-over-17-6-million-in-army-corps-funding-for-dredging-northwest-ohio-harbors/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "New lead program in Toledo receives $7M funding",
+        "link": "https://www.toledoblade.com/local/environment/2026/06/19/city-kaptur-announce-7-million-new-lead-program/stories/20260618111",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:14b",
+    "arc": "CAMPAIGN",
+    "window_days": 30,
+    "item_count": 3,
+    "elapsed_sec": 8.5,
+    "critical_summary": "Recent polls have been published by The New York Times, highlighting the competitive nature of Rep. Marcy Kaptur's re-election campaign in Ohio's 9th District. Meanwhile, Kaptur has faced criticism over her stance against transgender rights, which is affecting voter perceptions and canvassing efforts.",
+    "analysis": "The publication of polls underscores the tight race for Kaptur’s seat, indicating a challenging path to re-election despite her long-standing tenure. The criticism over her anti-trans vote highlights potential vulnerabilities among younger voters and progressive constituents, signaling a need for strategic outreach and messaging to counteract negative perceptions.",
+    "talking_points": [
+      {
+        "text": "Recent polls indicate a competitive race in Ohio's 9th District.",
+        "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur faces criticism over her anti-trans vote, impacting voter sentiment.",
+        "link": "https://thebuckeyeflame.com/2026/07/06/ohioans-deserve-an-explanation-from-marcy-kaptur/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Canvassing efforts are being influenced by Kaptur's standing in the polls and criticisms.",
+        "link": "https://www.dailykos.com/stories/2026/6/22/800058732/community/ohio-notes/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:14b",
+    "arc": "LEGISLATION",
+    "window_days": 7,
+    "item_count": 1,
+    "elapsed_sec": 6.3,
+    "critical_summary": "Rep. Marcy Kaptur and Sen. Patty Murray have jointly urged the Office of Management and Budget (OMB) to rescind a proposed rule they believe would politicize Department of Energy (DOE) grant awards.",
+    "analysis": "This action highlights Kaptur's commitment to maintaining non-partisan scientific research funding, which is crucial for her district's economic interests. It also signals potential friction with the administration over regulatory oversight in federal grants.",
+    "talking_points": [
+      {
+        "text": "Kaptur and Murray urge OMB to rescind politicizing DOE grant rule",
+        "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "phi4:14b",
+    "arc": "DISTRICT",
+    "window_days": 30,
+    "item_count": 5,
+    "elapsed_sec": 24.4,
+    "critical_summary": "Over the past month, Rep. Marcy Kaptur has successfully secured substantial federal funding for her district, focusing on infrastructure and environmental projects. She obtained $7.19 million for Northwest Ohio airports, over $17.6 million for harbor dredging, and $7 million for a new lead program in Toledo. Additionally, she discussed the establishment of a Ukrainian drone facility in Lucas County.",
+    "analysis": "Rep. Kaptur's efforts to secure federal funding highlight her focus on infrastructure development and environmental health, which are critical issues for her district. The successful acquisition of funds underscores her effectiveness in advocating for local needs, potentially bolstering her reelection prospects. Her involvement with the Ukrainian drone facility indicates a strategic alignment with national security interests, enhancing her standing within both her party and the broader political landscape.",
+    "talking_points": [
+      {
+        "text": "Secured $7.19M federal funding for Northwest Ohio airports.",
+        "link": "https://www.quiverquant.com/news/Press+Release%3A+Marcy+Kaptur+Announces+%247.19+Million+in+FAA+Funding+for+Northwest+Ohio+Airports",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Discussed Ukrainian drone facility in Lucas County.",
+        "link": "https://www.wtol.com/video/news/local/us-rep-kaptur-speaks-on-ukrainian-drone-facility-in-lucas-county/512-9077ddbc-6c19-4532-9bb1-2dfabe414eda",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Secured over $17.6 million for dredging northwest Ohio harbors.",
+        "link": "https://dredgewire.com/kaptur-secures-over-17-6-million-in-army-corps-funding-for-dredging-northwest-ohio-harbors/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Secured $7M federal funding for a new lead program in Toledo.",
+        "link": "https://www.toledoblade.com/local/environment/2026/06/19/city-kaptur-announce-7-million-new-lead-program/stories/20260618111",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Successfully obtained $17.6M for Northwest Ohio harbor dredging.",
+        "link": "https://www.dredgingtoday.com/2026/06/18/kaptur-secures-over-17-6m-in-usace-funding-for-dredging-northwest-ohio-harbors/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "phi4:14b",
+    "arc": "CAMPAIGN",
+    "window_days": 30,
+    "item_count": 3,
+    "elapsed_sec": 10.9,
+    "critical_summary": "In the past 30 days, Rep. Marcy Kaptur has been featured prominently in recent polls by The New York Times regarding the upcoming 2026 election for Ohio's 9th Congressional District. She faces criticism due to her anti-trans vote, which is a contentious issue within her district and beyond. Despite this, she remains influential enough to be cited as a motivating factor for canvassing efforts in Ohio.",
+    "analysis": "The recent polls suggest that Kaptur maintains a significant presence in the political landscape of Ohio's 9th District, indicating potential challenges ahead given the criticism over her anti-trans vote. This issue highlights ongoing tensions within her party and among constituents who may view such votes as contrary to progressive values. Her influence on canvassing efforts underscores her enduring impact and ability to mobilize support despite controversies.",
+    "talking_points": [
+      {
+        "text": "The New York Times publishes latest polls for the Ohio 9th Congressional District election in 2026.",
+        "link": "https://www.nytimes.com/interactive/polls/ohio-us-house-9-polls-2026.html",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur faces criticism for her anti-trans vote.",
+        "link": "https://thebuckeyeflame.com/2026/07/06/ohioans-deserve-an-explanation-from-marcy-kaptur/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Kaptur is mentioned as a reason for canvassing efforts in Ohio.",
+        "link": "https://www.dailykos.com/stories/2026/6/22/800058732/community/ohio-notes/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  },
+  {
+    "model": "phi4:14b",
+    "arc": "LEGISLATION",
+    "window_days": 7,
+    "item_count": 1,
+    "elapsed_sec": 10.5,
+    "critical_summary": "This week, Rep. Marcy Kaptur joined forces with Senator Patty Murray to challenge a proposed rule by the Office of Management and Budget (OMB) that they argue would politicize Department of Energy (DOE) grants. Their joint effort aims to rescind this rule, emphasizing concerns over its potential impact on scientific integrity and research funding.",
+    "analysis": "This action underscores Kaptur's commitment to maintaining nonpartisan support for scientific research, aligning her with broader Democratic efforts to safeguard federal grant processes from political influence. It signals a proactive stance in protecting the interests of Ohio's research institutions and industries reliant on DOE grants, potentially bolstering her standing among constituents who value science and technology.",
+    "talking_points": [
+      {
+        "text": "Kaptur collaborates with Senator Murray to oppose OMB rule affecting DOE grants.",
+        "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "The proposed rule is criticized for politicizing scientific research funding.",
+        "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
+        "source": "GNews: Marcy Kaptur"
+      },
+      {
+        "text": "Efforts aim to protect the integrity of federal grant processes.",
+        "link": "https://www.murray.senate.gov/murray-kaptur-call-on-omb-to-rescind-proposed-rule-that-would-politicize-doe-grants-scare-off-private-investment/",
+        "source": "GNews: Marcy Kaptur"
+      }
+    ]
+  }
+]
