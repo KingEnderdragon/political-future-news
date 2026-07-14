@@ -150,16 +150,61 @@ def make_item_id(link: str, title: str, source: str) -> str:
     return hashlib.md5(key.encode()).hexdigest()[:12]
 
 
-def resolve_article_link(raw_url: str) -> str:
-    """Unwraps Bing News' apiclick.aspx tracking redirect to the real article
-    URL. Those redirect links don't reliably resolve when opened directly
-    (no session/referrer), so this must run before a link is stored anywhere
-    it might be clicked, not just at fingerprinting time."""
+def decode_google_news_url(gnews_url: str) -> str:
+    """Google News RSS links are a JS-only interstitial (HTTP 200, no
+    redirect) that won't resolve in non-JS or restrictive in-app browsers.
+    This replicates the reverse-engineered decode flow: pull the signed
+    article id/timestamp/signature off the interstitial page, then ask
+    Google's internal batchexecute endpoint for the real URL. Returns the
+    original link unchanged if any step fails."""
+    m = re.search(r"/articles/([^?]+)", gnews_url)
+    if not m:
+        return gnews_url
+    article_id = m.group(1)
+    try:
+        page = requests.get(gnews_url, headers=HTTP_HEADERS, timeout=REQUEST_TIMEOUT).text
+        sg = re.search(r'data-n-a-sg="([^"]+)"', page)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+        if not sg or not ts:
+            return gnews_url
+        payload = [
+            "Fbv4je",
+            json.dumps([
+                "garturlreq",
+                [["X", "X", ["X", "X"], None, None, 1, 1, "US:en", None, 1,
+                  None, None, None, None, None, 0, 1],
+                 "X", "X", 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0],
+                article_id, ts.group(1), sg.group(1),
+            ]),
+        ]
+        resp = requests.post(
+            "https://news.google.com/_/DotsSplashUi/data/batchexecute",
+            headers={**HTTP_HEADERS, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"},
+            data={"f.req": json.dumps([[payload]])},
+            timeout=REQUEST_TIMEOUT,
+        )
+        body = resp.text.split("\n", 1)[1] if resp.text.startswith(")]}'") else resp.text
+        outer = json.loads(body)
+        inner = json.loads(outer[0][2])
+        real_url = inner[1]
+        return real_url if isinstance(real_url, str) and real_url.startswith("http") else gnews_url
+    except Exception:
+        return gnews_url
+
+
+def resolve_article_link(raw_url: str, decode_google_news: bool = True) -> str:
+    """Unwraps Bing News' apiclick.aspx tracking redirect and, optionally,
+    Google News' interstitial link to their real article URLs. Those
+    redirect links don't reliably resolve when opened directly (no
+    session/referrer, or require JS), so this must run before a link is
+    stored anywhere it might be clicked, not just at fingerprinting time."""
     parsed = urlparse(raw_url or "")
     if parsed.netloc.lower().endswith("bing.com") and parsed.path.lower().endswith("/news/apiclick.aspx"):
         target = parse_qs(parsed.query).get("url", [""])[0]
         if target:
             return target
+    if decode_google_news and parsed.netloc.lower().endswith("news.google.com"):
+        return decode_google_news_url(raw_url)
     return raw_url
 
 
