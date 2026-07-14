@@ -1,8 +1,8 @@
 {
   "7": {
-    "generated_at": "2026-07-14T14:16:14Z",
-    "window_start": "2026-07-07T14:16:14Z",
-    "window_end": "2026-07-14T14:16:14Z",
+    "generated_at": "2026-07-14T15:28:32Z",
+    "window_start": "2026-07-07T15:28:32Z",
+    "window_end": "2026-07-14T15:28:32Z",
     "window_days": 7,
     "arcs": {
       "LEGISLATIVE": {
@@ -12,6 +12,12 @@
         "talking_points": []
       },
       "STAKEHOLDERS": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "POLITICIAN_STATEMENTS": {
         "item_count": 0,
         "critical_summary": "No items in the past week.",
         "analysis": "",
@@ -38,9 +44,9 @@
     }
   },
   "30": {
-    "generated_at": "2026-07-14T14:16:16Z",
-    "window_start": "2026-06-14T14:16:16Z",
-    "window_end": "2026-07-14T14:16:16Z",
+    "generated_at": "2026-07-14T15:28:34Z",
+    "window_start": "2026-06-14T15:28:34Z",
+    "window_end": "2026-07-14T15:28:34Z",
     "window_days": 30,
     "arcs": {
       "LEGISLATIVE": {
@@ -50,13 +56,19 @@
         "talking_points": []
       },
       "STAKEHOLDERS": {
+        "item_count": 0,
+        "critical_summary": "No items in the past 30 days.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "POLITICIAN_STATEMENTS": {
         "item_count": 3,
-        "critical_summary": "Rep. White has consistently and publicly opposed Ohio Senate Joint Resolution 10 (SJR 10) over the past month, reiterating his stance multiple times.",
-        "analysis": "The repeated opposition from Rep. White signals a strong and consistent position against SJR 10, likely reflecting broader concerns within his constituency or party. This could indicate an attempt to mobilize opposition or preempt support for the resolution among key stakeholders.",
+        "critical_summary": "Rep. White has consistently opposed Ohio Senate Joint Resolution 10 over the past month, emphasizing his stance against voter ID requirements.",
+        "analysis": "Rep. White's repeated opposition to SJR10 underscores a strategic alignment with Democratic party values and voter rights advocacy. This consistent messaging likely aims to mobilize supporters while highlighting differences with Republican counterparts who support stricter voting regulations.",
         "talking_points": [
           {
-            "text": "Rep. White opposes Ohio Senate Joint Resolution 10 (SJR 10).",
-            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcy1fSVNoZnpBMTFGMl96aWN4WEx5Wm9lUWFVckplQWdTOHNmc3VxQU1SdkhrSlV4STJZbW5YeGNYZFZrQUVoMGM2Nk80MjRsdV84V09nWlBjdmpiY19YWXA3ZHpwUjdsc0FVUG91SWRQejFtRHZ0YnR4dXpST0pOcHBmbVF3MHJvUjlIWWdB?oc=5",
+            "text": "Rep. White opposes Ohio Senate Joint Resolution 10, standing against strict voter ID requirements.",
+            "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmUwbENqVXBFU05zUGp0QlF5NXlXeURvRW5SaFhTbllVS19MNlZyYUQ4TVNsb0NER3p2NW93Ykg5VlkwY2RYYkQ0RGdKNE9wNUozZ3JYQ1N2c29KSmZQMlpIUVRZek9qOGI2R3pvU2s3YzYweURzaVNMV3ROMnhpY0VoMDI?oc=5",
             "source": "Ohio House of Representatives (.gov)",
             "title": "Rep. White Opposes SJR 10 - Ohio House of Representatives (.gov)",
             "author": ""
