@@ -138,12 +138,14 @@ def normalize_talking_points(raw, items: list[dict]) -> list[dict]:
         text = re.sub(r"\s+", " ", str(text)).strip().lstrip("-•* ").strip()
         if not text:
             continue
-        entry = {"text": text[:160], "link": "", "source": ""}
+        entry = {"text": text[:160], "link": "", "source": "", "title": "", "author": ""}
         try:
             idx = int(source_number) - 1
             if 0 <= idx < len(items):
                 entry["link"] = items[idx].get("link", "")
                 entry["source"] = items[idx].get("source", "")
+                entry["title"] = items[idx].get("title", "") or items[idx].get("arc_summary", "")
+                entry["author"] = items[idx].get("author", "")
         except (TypeError, ValueError):
             pass
         points.append(entry)

@@ -367,8 +367,10 @@ def fetch_new(seen: set, subject: dict) -> list[dict]:
             if is_unreliable_link(link):
                 continue
             new_items.append({
-                "source":    source,
+                "source":    item_source,  # real outlet when the feed provides one, else the feed's own label
+                "feed":      source,
                 "title":     title,
+                "author":    (entry.get("author") or "").strip(),
                 "summary":   clean_summary(entry.get("summary", "")),
                 "published": entry.get("published", entry.get("updated", "unknown")),
                 "link":      link,
