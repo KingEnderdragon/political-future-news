@@ -76,7 +76,18 @@ def render_digest_arc(arc: str, entry: dict) -> str:
     points = entry.get("talking_points") or []
     points_html = ""
     if points:
-        items_html = "".join(f"<li>{escape(p)}</li>" for p in points)
+        li_parts = []
+        for p in points:
+            text = p.get("text", "") if isinstance(p, dict) else str(p)
+            link = p.get("link", "") if isinstance(p, dict) else ""
+            source = p.get("source", "") if isinstance(p, dict) else ""
+            link_html = (
+                f' <a class="tp-link" href="{escape(link, quote=True)}" target="_blank" rel="noopener noreferrer">'
+                f'&#8594; {escape(source) or "source"}</a>'
+                if link else ""
+            )
+            li_parts.append(f"<li>{escape(text)}{link_html}</li>")
+        items_html = "".join(li_parts)
         points_html = f"""
           <div class="talking-points">
             <span class="tp-label">Talking points</span>
@@ -538,6 +549,15 @@ section.block {{
   margin-bottom: 0.2rem;
   max-width: 65ch;
 }}
+
+.tp-link {{
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}}
+.tp-link:hover {{ text-decoration: underline; }}
 
 /* ── chips ────────────────────────────────────────────────────────── */
 

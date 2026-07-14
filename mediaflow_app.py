@@ -209,7 +209,18 @@ def render_digest_window(digest: dict) -> None:
         points = entry.get("talking_points") or []
         points_html = ""
         if points:
-            items_html = "".join(f"<li>{p}</li>" for p in points)
+            li_parts = []
+            for p in points:
+                text = p.get("text", "") if isinstance(p, dict) else str(p)
+                link = p.get("link", "") if isinstance(p, dict) else ""
+                source = p.get("source", "") if isinstance(p, dict) else ""
+                link_html = (
+                    f' <a href="{link}" target="_blank" style="font-size:0.85em;color:#999;text-decoration:none">'
+                    f'&rarr; {source or "source"}</a>'
+                    if link else ""
+                )
+                li_parts.append(f"<li>{text}{link_html}</li>")
+            items_html = "".join(li_parts)
             points_html = (
                 f'<div style="margin-top:8px">'
                 f'<span class="meta-text" style="color:#999;font-size:0.68em;text-transform:uppercase;letter-spacing:0.04em">Talking points</span>'
