@@ -1,0 +1,1934 @@
+<title>KapturFlow — Rep. Marcy Kaptur (OH-9) News Digest</title>
+<style>
+:root {
+  --paper: #eef1ee;
+  --paper-raised: #ffffff;
+  --ink: #1c2420;
+  --ink-muted: #52605a;
+  --rule: #cfd6cd;
+  --accent: #1f6f6b;
+  --accent-soft: #e0edea;
+
+  --c-legislation: #2f5f8a;
+  --c-legislation-soft: #e2ebf2;
+  --c-committee: #6b4d8a;
+  --c-committee-soft: #ece4f2;
+  --c-district: #2f7a52;
+  --c-district-soft: #e1f0e6;
+  --c-campaign: #a13d3d;
+  --c-campaign-soft: #f3e2e2;
+  --c-media: #b06a24;
+  --c-media-soft: #f4e9db;
+  --c-other: #6b7570;
+  --c-other-soft: #e6e9e6;
+
+  --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+  --font-body: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', 'Consolas', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14181a;
+    --paper-raised: #1c2224;
+    --ink: #e7ece8;
+    --ink-muted: #9aa6a0;
+    --rule: #2b3234;
+    --accent: #59c2ba;
+    --accent-soft: #1c3230;
+
+    --c-legislation: #7fa8d1;
+    --c-legislation-soft: #202c37;
+    --c-committee: #b795d6;
+    --c-committee-soft: #29222f;
+    --c-district: #6fbf8f;
+    --c-district-soft: #1c2c22;
+    --c-campaign: #d68080;
+    --c-campaign-soft: #2f2020;
+    --c-media: #dba05a;
+    --c-media-soft: #2f2619;
+    --c-other: #9aa6a0;
+    --c-other-soft: #23282a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #14181a;
+  --paper-raised: #1c2224;
+  --ink: #e7ece8;
+  --ink-muted: #9aa6a0;
+  --rule: #2b3234;
+  --accent: #59c2ba;
+  --accent-soft: #1c3230;
+
+  --c-legislation: #7fa8d1;
+  --c-legislation-soft: #202c37;
+  --c-committee: #b795d6;
+  --c-committee-soft: #29222f;
+  --c-district: #6fbf8f;
+  --c-district-soft: #1c2c22;
+  --c-campaign: #d68080;
+  --c-campaign-soft: #2f2020;
+  --c-media: #dba05a;
+  --c-media-soft: #2f2619;
+  --c-other: #9aa6a0;
+  --c-other-soft: #23282a;
+}
+
+:root[data-theme="light"] {
+  --paper: #eef1ee;
+  --paper-raised: #ffffff;
+  --ink: #1c2420;
+  --ink-muted: #52605a;
+  --rule: #cfd6cd;
+  --accent: #1f6f6b;
+  --accent-soft: #e0edea;
+
+  --c-legislation: #2f5f8a;
+  --c-legislation-soft: #e2ebf2;
+  --c-committee: #6b4d8a;
+  --c-committee-soft: #ece4f2;
+  --c-district: #2f7a52;
+  --c-district-soft: #e1f0e6;
+  --c-campaign: #a13d3d;
+  --c-campaign-soft: #f3e2e2;
+  --c-media: #b06a24;
+  --c-media-soft: #f4e9db;
+  --c-other: #6b7570;
+  --c-other-soft: #e6e9e6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+}
+
+/* ── masthead ─────────────────────────────────────────────────────── */
+
+.masthead {
+  border-bottom: 3px double var(--rule);
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.masthead-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.masthead h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin: 0.2rem 0 0.3rem;
+  text-wrap: balance;
+}
+
+.masthead-sub {
+  color: var(--ink-muted);
+  font-size: 1.02rem;
+  margin: 0 0 0.9rem;
+}
+
+.masthead-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-muted);
+}
+
+.masthead-meta strong {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.snapshot-note {
+  margin-top: 0.9rem;
+  padding: 0.6rem 0.85rem;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  font-size: 0.84rem;
+  color: var(--ink-muted);
+}
+
+/* ── sections ─────────────────────────────────────────────────────── */
+
+section.block {
+  margin-bottom: 2.6rem;
+}
+
+.block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+}
+
+.block-head h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.block-head .block-note {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── digest window toggle ─────────────────────────────────────────── */
+
+.window-toggle {
+  display: inline-flex;
+  gap: 2px;
+  background: var(--rule);
+  padding: 2px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.window-toggle input { position: absolute; opacity: 0; pointer-events: none; }
+
+.window-toggle label {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--ink-muted);
+  background: transparent;
+}
+
+#win-7:checked ~ .window-toggle label[for="win-7"],
+#win-30:checked ~ .window-toggle label[for="win-30"] {
+  background: var(--paper-raised);
+  color: var(--ink);
+}
+
+.digest-pane { display: none; }
+#win-7:checked ~ #digest-7d { display: block; }
+#win-30:checked ~ #digest-30d { display: block; }
+
+.digest-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin: 0 0 0.9rem;
+}
+
+.digest-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.digest-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+}
+
+.digest-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.55rem;
+}
+
+.digest-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.digest-summary {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  max-width: 65ch;
+}
+
+.digest-analysis {
+  margin: 0;
+  font-style: italic;
+  color: var(--ink-muted);
+  font-size: 0.94rem;
+  max-width: 65ch;
+}
+
+.empty-note {
+  color: var(--ink-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.talking-points {
+  margin-top: 0.6rem;
+  padding-top: 0.55rem;
+  border-top: 1px dashed var(--rule);
+}
+
+.tp-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+}
+
+.talking-points ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.talking-points li {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  max-width: 65ch;
+}
+
+/* ── chips ────────────────────────────────────────────────────────── */
+
+.chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.chip-sm { font-size: 0.63rem; padding: 0.14rem 0.4rem; }
+
+.chip-legislation { color: var(--c-legislation); background: var(--c-legislation-soft); }
+.chip-committee    { color: var(--c-committee);    background: var(--c-committee-soft); }
+.chip-district     { color: var(--c-district);     background: var(--c-district-soft); }
+.chip-campaign     { color: var(--c-campaign);     background: var(--c-campaign-soft); }
+.chip-media        { color: var(--c-media);        background: var(--c-media-soft); }
+.chip-other        { color: var(--c-other);        background: var(--c-other-soft); }
+
+/* ── feed tabs ────────────────────────────────────────────────────── */
+
+.feed-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.feed-tabs input { position: absolute; opacity: 0; pointer-events: none; }
+
+.tab-label {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.32rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid var(--rule);
+  cursor: pointer;
+  color: var(--ink-muted);
+  background: var(--paper-raised);
+}
+
+.tab-count { font-variant-numeric: tabular-nums; opacity: 0.75; }
+
+#tab-legislation:checked ~ .feed-list .feed-item { display: none; }
+#tab-legislation:checked ~ .feed-list .feed-item[data-arc="LEGISLATION"] { display: block; }
+#tab-committee:checked ~ .feed-list .feed-item { display: none; }
+#tab-committee:checked ~ .feed-list .feed-item[data-arc="COMMITTEE"] { display: block; }
+#tab-district:checked ~ .feed-list .feed-item { display: none; }
+#tab-district:checked ~ .feed-list .feed-item[data-arc="DISTRICT"] { display: block; }
+#tab-campaign:checked ~ .feed-list .feed-item { display: none; }
+#tab-campaign:checked ~ .feed-list .feed-item[data-arc="CAMPAIGN"] { display: block; }
+#tab-media:checked ~ .feed-list .feed-item { display: none; }
+#tab-media:checked ~ .feed-list .feed-item[data-arc="MEDIA"] { display: block; }
+#tab-other:checked ~ .feed-list .feed-item { display: none; }
+#tab-other:checked ~ .feed-list .feed-item:not([data-arc="LEGISLATION"]):not([data-arc="COMMITTEE"]):not([data-arc="DISTRICT"]):not([data-arc="CAMPAIGN"]):not([data-arc="MEDIA"]) { display: block; }
+
+.feed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feed-item {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-left-width: 3px;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+.feed-item[data-arc="LEGISLATION"] { border-left-color: var(--c-legislation); }
+.feed-item[data-arc="COMMITTEE"]   { border-left-color: var(--c-committee); }
+.feed-item[data-arc="DISTRICT"]    { border-left-color: var(--c-district); }
+.feed-item[data-arc="CAMPAIGN"]    { border-left-color: var(--c-campaign); }
+.feed-item[data-arc="MEDIA"]       { border-left-color: var(--c-media); }
+.feed-item:not([data-arc="LEGISLATION"]):not([data-arc="COMMITTEE"]):not([data-arc="DISTRICT"]):not([data-arc="CAMPAIGN"]):not([data-arc="MEDIA"]) { border-left-color: var(--c-other); }
+
+.feed-item-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.feed-time {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.feed-source {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+
+.feed-source::before { content: "· "; }
+
+.feed-summary {
+  margin: 0 0 0.3rem;
+  max-width: 68ch;
+}
+
+.conflict-mark { color: var(--c-campaign); }
+
+.feed-analysis {
+  margin: 0 0 0.4rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+  max-width: 68ch;
+}
+
+.feed-link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+.feed-link:hover { text-decoration: underline; }
+.feed-link:focus-visible, .tab-label:focus-visible, label:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+footer.colophon {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+
+footer.colophon p { margin: 0 0 0.5rem; }
+footer.colophon p:last-child { margin-bottom: 0; }
+footer.colophon strong { color: var(--c-campaign); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-eyebrow">KapturFlow &middot; Local news intelligence</div>
+    <h1>Rep. Marcy Kaptur &mdash; Ohio's 9th District</h1>
+    <p class="masthead-sub">A running monitor of legislation, committee work, district activity, campaign coverage, and media appearances.</p>
+    <div class="masthead-meta">
+      <span>Snapshot generated <strong>Jul 14, 2026 &middot; 02:55 UTC</strong></span>
+      <span><strong>216</strong> items tracked</span>
+      <span><strong>116</strong> shown below</span>
+    </div>
+    <p class="snapshot-note">This is a static snapshot, not a live feed &mdash; it reflects the data available at generation time and won't update on its own.</p>
+  </header>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Digest &mdash; critical summary &amp; analysis by category</h2>
+      <span class="block-note">By arc</span>
+    </div>
+    <input type="radio" name="digestwin" id="win-7" checked>
+    <input type="radio" name="digestwin" id="win-30">
+    <div class="window-toggle">
+      <label for="win-7">Last 7 days</label>
+      <label for="win-30">Last 30 days</label>
+    </div>
+    
+      <section class="digest-pane" id="digest-7d">
+        <p class="digest-meta">Generated Jul 14, 2026 &middot; 02:53 UTC &nbsp;&middot;&nbsp; past week</p>
+        <div class="digest-grid">
+        <article class="digest-card" data-arc="LEGISLATION">
+          <header class="digest-card-head">
+            <span class="chip chip-legislation">Legislation</span>
+            <span class="digest-count">1 item</span>
+          </header>
+          <p class="digest-summary">Representative Marcy Kaptur and Senator Murray are actively working to reverse a proposed rule that would politicize Department of Energy (DOE) grants, with their joint effort aimed at rescinding the measure through an Office of Management and Budget (OMB) review.</p>
+          <p class="digest-analysis">This development reflects growing bipartisan concern over the politicization of federal funding, highlighting potential tensions within the administration on issues of grant management. Kaptur&#x27;s involvement underscores her commitment to protecting district interests in DOE programs.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Kaptur and Senator Murray urge OMB to rescind proposed rule</li><li>Politicization of DOE grants sparks bipartisan concern</li><li>OMB review underway</li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="COMMITTEE">
+          <header class="digest-card-head">
+            <span class="chip chip-committee">Committee</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="DISTRICT">
+          <header class="digest-card-head">
+            <span class="chip chip-district">District</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="CAMPAIGN">
+          <header class="digest-card-head">
+            <span class="chip chip-campaign">Campaign</span>
+            <span class="digest-count">1 item</span>
+          </header>
+          <p class="digest-summary">The New York Times has published new polls showing the current state of the 2026 Ohio 9th Congressional District election, providing insight into voter sentiment and potential candidate positioning.</p>
+          <p class="digest-analysis">These polls signal a competitive landscape for Rep. Kaptur&#x27;s reelection bid, with voters&#x27; opinions on key issues likely to influence her campaign strategy. The data may also prompt her opponents to reassess their chances of victory.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>New York Times publishes latest Ohio 9th Congressional District election polls</li><li>Polls show competitive landscape for Rep. Kaptur&#x27;s reelection bid in 2026</li><li>Voter sentiment on key issues will likely influence Rep. Kaptur&#x27;s campaign strategy</li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="MEDIA">
+          <header class="digest-card-head">
+            <span class="chip chip-media">Media</span>
+            <span class="digest-count">1 item</span>
+          </header>
+          <p class="digest-summary">Kaptur and Senator Murray are currently urging the Office of Management and Budget (OMB) to withdraw a proposed federal grants rule, which has sparked controversy among lawmakers.</p>
+          <p class="digest-analysis">This development highlights Kaptur&#x27;s ongoing efforts to protect federal funding for her district, particularly in the face of potential changes to grant programs. The move also underscores tensions between lawmakers and the OMB over regulatory policies.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Kaptur and Senator Murray are urging OMB to withdraw a proposed federal grants rule</li><li>The proposed rule has sparked controversy among lawmakers</li><li>Kaptur is working to protect federal funding for her district</li></ul>
+          </div>
+        </article></div>
+      </section>
+    
+      <section class="digest-pane" id="digest-30d">
+        <p class="digest-meta">Generated Jul 14, 2026 &middot; 02:54 UTC &nbsp;&middot;&nbsp; past 30 days</p>
+        <div class="digest-grid">
+        <article class="digest-card" data-arc="LEGISLATION">
+          <header class="digest-card-head">
+            <span class="chip chip-legislation">Legislation</span>
+            <span class="digest-count">5 items</span>
+          </header>
+          <p class="digest-summary">Rep. Marcy Kaptur has been actively engaged in legislative efforts, introducing and co-sponsoring bills related to unmanned systems partnerships, particularly with Ukraine. She also made a floor statement about the Declaration of Independence. Additionally, she and Senator Murray have urged the OMB to rescind a proposed rule that politicizes DOE grants.</p>
+          <p class="digest-analysis">These actions demonstrate Kaptur&#x27;s commitment to advancing drone technology and international cooperation, which may appeal to her district&#x27;s interests in defense and innovation. The bipartisan nature of some bills suggests she is willing to work across party lines on key issues. However, the OMB proposal controversy highlights potential tensions between federal agencies and Congress.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Kaptur introduces Strategic Unmanned Systems Partnership Act</li><li>Kaptur co-sponsors bill with Ukraine on unmanned systems partnership</li><li>Kaptur makes floor statement about Declaration of Independence</li><li>Kaptur urges OMB to rescind proposed rule on DOE grants</li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="COMMITTEE">
+          <header class="digest-card-head">
+            <span class="chip chip-committee">Committee</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="DISTRICT">
+          <header class="digest-card-head">
+            <span class="chip chip-district">District</span>
+            <span class="digest-count">5 items</span>
+          </header>
+          <p class="digest-summary">Rep. Marcy Kaptur has been securing significant federal funding for various projects in her district, including airports, harbors, and a lead program in Toledo. She also discussed a Ukrainian drone facility in Lucas County. These developments demonstrate her efforts to bring resources back to the region.</p>
+          <p class="digest-analysis">These recent developments highlight Rep. Kaptur&#x27;s ability to secure substantial federal funding for local projects, which is crucial for her district&#x27;s economic growth and development. This trend suggests that she is well-positioned to continue bringing in resources for her constituents. However, the discussion on the Ukrainian drone facility may also indicate some level of concern or scrutiny from her party or constituents.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Kaptur secures $7.19M in federal funding for Northwest Ohio airports</li><li>Rep. Kaptur discusses a Ukrainian drone facility in Lucas County</li><li>$17.6 million in federal funding secured for northwest Ohio harbor dredging</li><li>Kaptur announces funding for a new lead program in Toledo with no specific dollar amount</li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="CAMPAIGN">
+          <header class="digest-card-head">
+            <span class="chip chip-campaign">Campaign</span>
+            <span class="digest-count">3 items</span>
+          </header>
+          <p class="digest-summary">Rep. Marcy Kaptur (D-Ohio, 9th District) has been facing recent scrutiny over her voting record on LGBTQ+ issues, with criticism emerging from various quarters. Meanwhile, the latest polls for the 2026 election have been published by The New York Times, providing insight into the district&#x27;s electoral landscape. Additionally, Kaptur&#x27;s presence in the race is being cited as a reason for increased canvassing efforts in Ohio.</p>
+          <p class="digest-analysis">The recent criticism of Kaptur&#x27;s anti-trans vote highlights ongoing tensions within her party and potentially vulnerable constituents. The publication of new polls underscores the competitive nature of the district, which may impact Kaptur&#x27;s reelection strategy. As a result, she may need to navigate these challenges while also engaging with voters on key issues.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Kaptur faces criticism for her anti-trans vote.</li><li>The New York Times publishes latest polls for the Ohio 9th Congressional District election in 2026.</li><li>Kaptur is mentioned as a reason for canvassing efforts in Ohio.</li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="MEDIA">
+          <header class="digest-card-head">
+            <span class="chip chip-media">Media</span>
+            <span class="digest-count">4 items</span>
+          </header>
+          <p class="digest-summary">Rep. Marcy Kaptur has been actively involved in federal policy, urging withdrawal of a proposed rule and opposing border security measures. She also secured over $1M in research grants for the University of Toledo. Additionally, her consideration of voting for Kevin McCarthy as Speaker was reported.</p>
+          <p class="digest-analysis">These events highlight Rep. Kaptur&#x27;s continued focus on federal policy and her willingness to challenge party lines, particularly on border security. Her efforts to secure funding for local institutions demonstrate her commitment to district interests. The report about her consideration of voting for McCarthy may signal tension within the Democratic Party or a desire for bipartisan cooperation.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Kaptur urges OMB to withdraw proposed federal grants rule</li><li>Rep. Kaptur votes against border security measures</li><li>$1M in research grants announced for University of Toledo</li><li>Book reports Rep. Kaptur considered voting for Kevin McCarthy as Speaker</li></ul>
+          </div>
+        </article></div>
+      </section>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Live feed</h2>
+      <span class="block-note">Newest first</span>
+    </div>
+    <input type="radio" name="feedtab" id="tab-all" checked>
+<input type="radio" name="feedtab" id="tab-legislation">
+<input type="radio" name="feedtab" id="tab-committee">
+<input type="radio" name="feedtab" id="tab-district">
+<input type="radio" name="feedtab" id="tab-campaign">
+<input type="radio" name="feedtab" id="tab-media">
+<input type="radio" name="feedtab" id="tab-other">
+    <div class="feed-tabs">
+      <label for="tab-all" class="tab-label">All <span class="tab-count">216</span></label>
+<label for="tab-legislation" class="tab-label">Legislation <span class="tab-count">24</span></label>
+<label for="tab-committee" class="tab-label">Committee <span class="tab-count">16</span></label>
+<label for="tab-district" class="tab-label">District <span class="tab-count">34</span></label>
+<label for="tab-campaign" class="tab-label">Campaign <span class="tab-count">105</span></label>
+<label for="tab-media" class="tab-label">Media <span class="tab-count">36</span></label>
+<label for="tab-other" class="tab-label">Other <span class="tab-count">1</span></label>
+    </div>
+    <ul class="feed-list">
+      
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">Jul 08, 2026 &middot; 19:14 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">The New York Times publishes latest polls for the Ohio 9th Congressional District election in 2026.</p>
+          <p class="feed-analysis">Provides context on Kaptur&#x27;s re-election prospects ahead of a competitive race.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1Eb0JRVFU0TzlhUTdqeDd1RTJCXzduaDZSR2NVbEZBNE5mX3Z0UjRIMWV0YVExWl96ZkV6dXE1QTBpQ2VHbGxVdU1oblFrVjJPS2lxSmRJNEpnTWN3VzhCcHY1U3YtUG4xOWw2RFI3dEJUVkh0cVZRaGJUY0l6QQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 07, 2026 &middot; 16:29 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur and Senator Murray urge the OMB to rescind a proposed rule that politicizes DOE grants.</p>
+          <p class="feed-analysis">Highlights her commitment to protecting federal funding for research and development, which could impact Ohio&#x27;s economy.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPODhkSE5TUW1TRTB6RmJMYjhUbHExTEhMS2hna3FhOUtpNklrRHRBZGtYQTZnRWJvaXRGcjJmTDctRVNob0tMTEoybVMzMGNLam9BbHA1Skt6ZkZOS3pNdUZQdGlNbi1QbmczRTZzLVF6b1NiWXFxSHJGSkVXNHZXOHpCY3U1RERsaUxNMWFzeXhYSnkzMWtjcmh4RUFtdkNPdEZSUlJvR0VZNGRJVmxud2NpcWZMczktcUxYVGhFQU51Q3RleWYwMVdLclVMV1Rxa1VELU9KX1F2RVU?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jul 07, 2026 &middot; 16:21 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur and Senator Murray urge the OMB to withdraw a proposed federal grants rule.</p>
+          <p class="feed-analysis">Highlights her advocacy for transparency in government funding decisions, potentially impacting local projects.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPS0MxT3lNcFBGbnV0X25ZREZTMWk5TjhIZHFyX0d4a0VwM0loNEk4cmJzVXBnRUNOdmtYVHViT01JcVduTVRTSXpFVTVaMnJHYVY0bUlCbmVySXNpR3FUQnJ2UlRicXVFV3RQLVpucFZGNlF1eUpneUtNRk1LYzMxSk9XbTd0czRRWW4yX3phaGdxUGtReWh0QjVZUmNDZnlRVW9VdkgzYy1GM0tCNVNlc3hheVhLZW9kSm90bjlqdzd4WERyNEFn?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 06, 2026 &middot; 15:41 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur introduces a new bill, the Strategic Unmanned Systems Partnership Act.</p>
+          <p class="feed-analysis">Aims to advance US unmanned systems capabilities and partnerships, potentially impacting national security and defense industries.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOaGFYbHl2SHRDV1c5WHBLWXpxWF9nVDJXMUNMcmJMemQyYUU3WWdrRGEzVFc1NEd6a0V2QVlESUFUempERDdPYlhzLVpLc0J1UVUzZGV0N0tTaDJVWGl3MmpCXzFlZ1lSMUo3UjA5SUVKd3l2YmkyRmJZSkJicnB0WGtWQjNwSHVBTHMwM2VFWWU2dEV5RGlLazROZHRPZEZxSjlDXzJEZWNueWp5eFgtbGhkbDNtc3lwQ3R6VWJkaUJpbFRacGFIOG1xeG1jaG1pcVhxR05n?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">Jul 06, 2026 &middot; 12:30 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur faces criticism for her anti-trans vote.</p>
+          <p class="feed-analysis">Highlights a contentious issue in her district, potentially impacting her re-election campaign.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQSURGaWUxTzdXRXMtcHdiYnQ0T3pOakZwek5RQjdIU3luRUNyclg3OTlhNjVpNTBvZkpEWUlRWmZieUpQeFF1MDM4RDBXYlY0SFZaUk5rM3RDUzZoVU92Y0ZLTHpPTHd2Z25SSGRvMWswb1JDc2QwQW9uU1podFFVZGtLOXNQcEVOR0Y1RF9fNGpjZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 05, 2026 &middot; 16:11 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur co-sponsors a bipartisan bill on unmanned systems partnership with Ukraine.</p>
+          <p class="feed-analysis">Strengthens US-Ukraine defense cooperation, reflecting her commitment to international security and diplomacy.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUFZxSElzYjJPTjVXUnV1dlpzTTVLaGk0MnYyU0R5NThjM3BHZmFmVFA5YU1GWDhUWlR6WWR1TWRGcTMzZXRGUy1TUUtUQ3ZVY1NUVklwSGdLeW1fQlFVX0NJV0pjRENKQkpmbUhlLUxpV3BWUTh0clA3UnRMbm5kQkxzNjREUUR0ZXZWTGFmZmplcGNaSGRrU1VJeVV5REZZaEdSUG1Nd3REcmRWcnFXdU1Ta2hsT3NxN3dvNzhmenBzdw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jul 02, 2026 &middot; 18:24 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secures $7.19M in federal funding for Northwest Ohio airports.</p>
+          <p class="feed-analysis">Boosts regional economic development and air travel connectivity, reflecting her commitment to local infrastructure needs.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQRzlaZEwwVm82UGFtRGZKYmR2VDNuOVpxd2RuVGo1UXJpOG9pLXlnWkJmZkVsejlZZUlhY013dFFkWUpUS0JkczZ4U1NZVFQzdXpFaUtpZzlKcWtNLVFXTzdZdzUtNUpSdTFhT2xyTDFzbXduaWZRMnh2T093aVpVampWX2VvZDBWSkx0V0lQZ09xd1VoMktPTDdOTUNpWHpLTlF5a3lUNkxENmpjNndIQmJwU0pKVlBQYTExQ1lxU2NHRDRsSF9SdnFuQQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 02, 2026 &middot; 11:31 UTC</time>
+            <span class="feed-source">Bing: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur made a floor statement about the Declaration of Independence.</p>
+          <p class="feed-analysis">Highlights her role as a voice for American history and values in Congress.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf2cdb4bdda872a2977ab76539&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fimagine-the-courage-and-the-vision-rep-marcy-kaptur-commemorates-the-declaration-of-independence-ahead-of-fourth-of-july%2fvi-AA275gu3&amp;c=5088053252518162898&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 02, 2026 &middot; 11:00 UTC</time>
+            <span class="feed-source">Bing: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur introduces bipartisan legislation to advance drone technology with Ukraine.</p>
+          <p class="feed-analysis">Advances her focus on emerging technologies and international cooperation, potentially impacting national security and economic growth.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a55a1e0830c45b9968307e6896ce0da&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdominating-the-drone-space-rep-marcy-kaptur-introduces-bipartisan-legislation-to-advance-drone-technology-with-ukraine%2fvi-AA275v0D&amp;c=12853211901319245726&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 30, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur discusses a Ukrainian drone facility in Lucas County.</p>
+          <p class="feed-analysis">Highlights her role in addressing national security concerns in the district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ3RUa0JKNWtPNFdhSFMzUzBlX0hXTHZ4anh0S19FQnk2eEIyNkI5eGZBdks5WGxJOERMRkdnVHJDTW5PcUEzd2lsRGU3bE05X016VUFaeFIyYVFPNzc1WWRNZ3ZsMEY5WTZUN3ZsTHpxeHZtYjJCSEtOaFhVaDhDTG4xM0ZIZmhXRlJQb3ptQ2FOOEp5X0dFRVNmMjJPUE84WjVWSHlzQ1N2akVjRXpSaVdTem1HS25xRzF3VTh5Ui1XZlNLQkJNTTFoNl9rcDJEa1FEdTNzY2RDY1U?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jun 24, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur voted against border security measures.</p>
+          <p class="feed-analysis">Highlights her stance on a contentious national issue, potentially impacting her re-election campaign.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTDFIR19xcGYwcy1CcHM0ZWw5Q19QeXNiZDlCdkZtUmxWOFVydkZCcEFLMGdwaGtqZEVFS3lWa0FpNzFobllJVW9GZVRwaVpCenJXb1M5YmZaOXN2VWVjNFVHTURvMXA3eTNCZkNIOVM3bHJ0YlRBMWExdlY4VnlqbVphdllRRWhpS1Y0b015ODNMcGFxQVdyWHNPZGlRLTZtUUFyT3BNb1lkM0VCdngzbF8taGZsdEtFam1WeDAtWENUUDczd0czWnhqV292azRMRTM4MXN3?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 22, 2026 &middot; 11:04 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secures over $17.6 million in federal funding for dredging northwest Ohio harbors.</p>
+          <p class="feed-analysis">Boosts her profile as a champion of Great Lakes shipping infrastructure and regional economic development.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQbm4tcTRPemRUN2diV2plU2hYenlBRml4VlhobjgxWWVMQUlSVk9jbHA4QWhzSDlPOHo1UHdsYjRUUmJ2eXFGaUJtT0V2X3Bvb3B1VF81OXl2a1VIaVlHTDdBTGZuZmVKM2FJcENyY3RwSzNKbS1qdHZiR0JLRHdzMnVzMk9odFFrRVJLaldMX2pIVEpFY3RPd0NuZWQxUEMtSmJKZEt2OVYwSnl3cHhOb0lHVzE?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jun 22, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur announces over $1M in research grants for the University of Toledo.</p>
+          <p class="feed-analysis">Highlights her support for local education and economic development initiatives.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeUNzR09uVENHZmR6VVZlWnpma3czektNbUtPdzd2QlVKVUdwNXRPZkYwcnJIMzZfOVk2bXV6QkRRZGg4ZDBKakdKRGxBVTJaYlE5LU1MM0RmbTVScGNZeXdraEp6QUZNM0VYRkNyQTNmMEJlZmtZSUcxTUduN3Z2bDdDa1o3V0V0OE9COGRXVEdOamJtc0VldWFMdXFxS1otOHlQcjFrVXJMd1RqS05WQjBRMUdjQ3VjZnJELUVvRlFsbzhIRVZqa1dVeHFKZzhMdnREeW5R?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">Jun 22, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur is mentioned as a reason for canvassing efforts in Ohio.</p>
+          <p class="feed-analysis">Highlights her role in local politics and potential impact on elections.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE80YW14M2RRc005ZlZicDVPLTFfMlhuZzFoYmlIMDd1M2R4NEZhSHZTa21TUFJlZm9rT0hlaGtQeVJPM2N2SGNJeWVVeFV3Uy1sb3NlaHc4bDZYbnJjczlhYWJZcExiQlAySzJ3X19JRnFaNXozbEpFM1hzWkcwT2c?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jun 19, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">A book reports that Rep. Marcy Kaptur considered voting for Kevin McCarthy as Speaker.</p>
+          <p class="feed-analysis">Provides insight into her potential views on party leadership and coalition-building.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPZDFncF9Wd0pSam05ZHVVWV9tOVg5M0x6dDk2WTVfTUtTc0JuamZSVWRoSWpudjdxUXRYWm9sRG54dE5YSkhrWXk1WUY4YmRDcVZxOXBjWWxRazI4dTM3aGxySlh0VW5jR0VQaTZqbE9XMFpMWWdwcjdmQXJ6MXY3b3hjbkh2bElzeVNUNmZiTVFhdzQ2djNUaVJR?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 19, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secures $7M in federal funding for a new lead program in Toledo.</p>
+          <p class="feed-analysis">Demonstrates her continued commitment to addressing local health concerns and improving community infrastructure.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTlN0VUxjZTVIaXFzTUJtc0N6dEs5UFB6U253eVBKa2pmUnFqUEhFQUg4U1JWdkJqMk42c3Z5R3lVVmJTTmRMdnc1NkJlUFBsYWZhRndfSzdrUjVSUnJzSEFucTZtamRkS1c4a25wYV9ZZXZkNklqWG15eU5jRk1tcF9ERDdNWmFXZjF6WllYVFNrY3NoNV82b0M5WmVMajhjRHFpWEdDUFZVbHVObnpUTVZ3UXhuNUd4aHhkellRNFdrQQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 18, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secured $17.6M in federal funding for Northwest Ohio harbor dredging.</p>
+          <p class="feed-analysis">Boosts her efforts to improve regional shipping infrastructure and economic development.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNR1JXZi0yeGFKS253dU5XZV9mQkdwUlo0S1BhZ2FqYUJqZFJvdHNLSWJXd0JQN1pFbWxnMFJXQlpCZ2VoU3dhcnExdkZ5OG1GOGd5YTN2bENmSkVJX2FUU3g3bEJhN0V0Y2xQR2tqN3RiWHBsTlZpcFZHX0xnb1gwT2ItTlNlTDdHbV9LcGFCRGxxLWMxYmlJaTNhNEN2bFVmV0IwejlZNTVfbXYxMEpITGRJNFhzQWc1XzJhRw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 12, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secures $17.6M in federal funding for harbor dredging and repairs in northwest Ohio.</p>
+          <p class="feed-analysis">Boosts her profile as a champion of regional economic development, particularly in the Great Lakes region.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMHQ3NGR4bEJRc0FxLU10Qk9KOVhuWGQ4eU9IbVljQUFQZlpzbjNrbEVkVEF5ZnpySmVjRGoxODEwamhDaWdZNkM4S3RPN0tPVTI4OC12S1BGYVBjdzN5ZjJiZGVoU3R0eThMTmViZE5FSnA5REtPc0NLODg1UUdiZHNJdXdYZXc0ZlV4a1gxLWt5YmhhdjVKR2hYVU44Z0U4a1ZwNTlOM291VzVvWS01b2VoVVBrbUVXYmE5enhqSDBRNDd2VjhSMlRXTkRwbVJUdEF1Y3FtSWM1U3NCRjk4Nkc1TQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 09, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur requests a moment of silence in the House for the Old West End shooting.</p>
+          <p class="feed-analysis">Demonstrates her concern for local community safety and willingness to address regional issues on the national stage.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWDZ6YTNFaWxGQTBTRTk5TWd2eG5ieXA0Z2l1V21zVmtmMGdLdjZfWGxJZG40Vk93dl9IazVOVXJmT0R1a3NTa2pUUjhwRGQzamdaVXVJaE10eW9vSlFYaUMyT2dBYjZ5b0JrNUo3UXlvbER1bl9aaTU4aGUtNzAzNktMZHV0Xy1aYkdlb3JOVmRYYXhaNVpLV1dULWtDU3F4cUJuLUZIcm13WWFickxuak1GVXpnLWRwckphVHgxMGRBNks5N1RrVmY1dFEwbXppMC1NRXEzc2tmR0VPX0xBbnk3VTBhY3h0c3hUSldRZDZ0dDd5NWc?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jun 07, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur addresses gun violence incident in a press release.</p>
+          <p class="feed-analysis">Highlights her response to local issues and community engagement.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOV2ExOW04OHJ0X2xrZUI0TFlLd1hwOENiTTBMdmpJSEhGMW5wZE4zTkJRNzJ2ZmloTEgxNmhMSDNadEdaU2dBYld6aHZlNG5TSHc3d2kyZWI3d3QtNXFMOTJoSXdXcDBRV3cwVU5pWEw4aElkRi1IejQ5ZjZRLTBNajZyY0hObW1kMTNsQ2xFQUxHVDJYUWMyWHZUT1hlbXNZZE9oU1pFb3dTWjBXQ0tFcFpHaUk4eXctWEN2M3dIZWF0dw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jun 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">US Representatives issue a joint statement supporting the passage of the Ukraine Support Act.</p>
+          <p class="feed-analysis">The bill&#x27;s bipartisan support highlights Kaptur&#x27;s ability to work across party lines on key legislation.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUWp0RlhCM2JORkxqZzdrYnFGZ1FQZHNxUThvRk5kbUZsVldGYXZGSTUyN1B6cVk1QnB5eXMwclJKX09VVk5qVVBIaWJBWC1vNWRTek5rbDBUUlFKZXI1bHRZY001UHRJS0Fwd2FCWHh0M1lvN09HeTRYR2VSbkJOMk50bW5STWJ1eVliUHhaLWZlU09VX3VWMWQ3TVRTSHI5OVdUZFZGVEI5UmZ5aTg2RElabnBOUnQyVXNfMHozcXgwbnU1S29US2t0dVNLdXBFTHhiWm9jVDNlWGotZFVLRHJlV21wMXBoSmdZalBja3BlMTI1bzZnWA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jun 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur votes for the passage of the Ukraine Support Act.</p>
+          <p class="feed-analysis">Supports US involvement in international conflict, potentially impacting global relations and district constituents with ties to Ukraine.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPOW1ja1dzdzhaU2JucUdXeU5xX1dSd29adHh2Ymw1a3p5MGJnSHRCSWV1bW8yNmcyVG0tbnFZVHpHSlJrUmlsc1RpM3Vpa1ZHRnBvcGQtTDRFdmJFTmVWNGlOdEVKblVYdDdxd0pxOFdRV3dpQ3VVbjI5eEZVYXpEVFNKQlJLTFBGVV9rR2hFd1JrR2wwa3VSUWgzLUVsMDhHOGQtcVJ4YVRxaGwwN2tkXzMwaUpkUlZhQWlHaEZUTQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jun 04, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur requests a GAO investigation into the Energy Department&#x27;s funding practices.</p>
+          <p class="feed-analysis">Highlights her commitment to oversight and accountability in energy policy, potentially impacting future legislation.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWWNrRXlSc2ZxYTl0SjI2Mmg3b1FpdTcwR0t3cWIwLW9na0YyNDVXdF91Unl6cUlRVHcxVXJ6ZVZpVnRlSUZ4U09yOVl2dXd4blo2UVhQR0N4OG9sUFl3Ynl4VjlGbHZmYWxkZDdkbjYyQ0JnOElfSEFsdXhmcEhPYXphM2RZUm15bUpjT0xBb1BTWUJLc21LTnh1cUc1U3NhUVgwdnE5ak00MVRveFBCRFJZNXlGOWZVbnZFemxWNFZWRk9TQ1FKSmU3bUhzMThCTkpvSms3MA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jun 04, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur confirms the Energy Department illegally diverted clean energy funding, prompting a GAO investigation request.</p>
+          <p class="feed-analysis">Highlights her commitment to oversight and accountability in federal spending, potentially impacting future legislation related to clean energy.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcm5hdHlTbkFkSFBHUzA3ZV9vTmJ6SkIxdUJ2RS1Rc0R3RVk5VHI3Uk9kSXJoRFo5VGJRTE1KYUdLa1RKbEZaelVfbnQ0QU5sbVJvZG5RMDBoY0ZiajBGNjJrRnZHejNSMHZFVFVXdFU4c0dzdVNGT2F6TWVBd3NBUGI4eHpkbVZxd2w3dmpCSWdMb1BNcnlzM2tCTU9jekxBN3ZkaHhYQW0zdWtWWERkeVpOaE1kdXpLeUtmN3Y2SXpiMGxscU9YRGtHVVZZNGpjbTdZVmJyUWZLeGJ0S095Uzd6R3V6dw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jun 01, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur supports a new manufacturing plant in Rossford, Ohio.</p>
+          <p class="feed-analysis">Boosts local economic development and job creation in the 9th District.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbl9kSWpaQXlWSkQtSVhEbDl3cjhDN3kzUDIzRzZNMDk1bWtRTW1sZzdMSHVSYnVkSmFZNWFnbXc5bm5ZcGtLRGVUNVg4QmZGZGtRWVMyNkRlRmdlVHp5WjhxNDNYR01UcVl1TmlCSG1jeC1Bd2dHU2tPU3VwbkZ5WThfaHRCNFRQb1lubmRDRTBMOTA2Z3BIM3JFRGp0SVhXV3d5WDd6emk3cWR3S3FoS1EwbEM5Ymc3VFEtRDU2WTNYZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 28, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur is mentioned as a candidate in an election article.</p>
+          <p class="feed-analysis">Reinforces her candidacy ahead of the next election, but lacks specific details about her campaign.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBIcWRzd3k0V2g1ZlUwcGR1X3daaEluckt0OG1LckQ5NnJNMjlWeWdOeXAyMFR3d0d6SmZjTXc2ZVRDZUN5bnpJZUZRcTdDWFE2OGdSa3hrR1ZJSWx1ejZZbWJtbGdHUXNJaE5ZYjcyaHpJa0xzQ0k2TGJSRkozY0U?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">May 27, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secures $7.7M in federal funds for Northwest Ohio health programs.</p>
+          <p class="feed-analysis">Reinforces her commitment to supporting local healthcare initiatives, a key concern for constituents in the 9th District.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxONnBlOXhxMW55UmVpLTc3emJmZ2xvNF9FUVlPcE1wRnhmZnBiRlk2WU9DdzRIUUU2TWx3emQ0WVB6c2ZEWnU2aTVUOWdpeTlzSnJEVmlWLWhIQXVuTUpWN0gzVnFMcXZIeTNsNm9jUHRKRk45Tk1TZG5Dd0JsWDZqeGZQZllPcjRid1g4QTZNTnRub2I0Y2twbjEzTXZHZ2M?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 21, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Derek Merrin is gaining momentum in his challenge to Rep. Marcy Kaptur&#x27;s seat.</p>
+          <p class="feed-analysis">Kaptur faces a potentially competitive election, which could impact her future in Congress.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2JKMmh4MURCV3N6dlkwZ1NfWERHdU9CbU0yRGpyeWxsT0R4TTNvYVp1VktkVnM0Y2xRU1B0d0R5eDVzS1ZjaEJyVmxWcno2amk1VXRJYzZlYmdLS3Robmx3NW9YVC1MMEd3Tm1zbWdsNVdWWTFNajdyTlVNSGNQa3NXa2NsbDRqaHc4ZExMWU5MbDJYS3FHX015X2FIN2ZiT2p2UDFMQ0NFSUkyUXA5Z3Y0dw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 21, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">The NRCC has launched an ad targeting Rep. Kaptur.</p>
+          <p class="feed-analysis">A sign of the competitive nature of her upcoming election, as Republicans seek to challenge her in a traditionally Democratic district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNN2ZmNHk0UFBFbTFxS3hTVExRNW9QZk5OWDJYb0dCeVcwbGRyZi1peWhiU3NmNUZ0VnB4VDZBTW9ZOGFxblllbGtoYkZsbmVOYUJzb0o3aVB0Y01YNjZubUV0MTVaSzFGYXIxNnVsVnhFdmdPZWlBOEVNendpVjdXSGNPS2lPYUhf?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 21, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">President Trump endorses Merrin in the Ohio 9th Congressional District.</p>
+          <p class="feed-analysis">Trump&#x27;s endorsement may impact local election dynamics, but its significance is unclear without more context on Merrin&#x27;s campaign.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTXZWMEVjQ0xGRUFmWFR6OTR1Tld6cTk2aERadUJILWJZN1RCRV9rNGdLSzJXNlFnSmVJdGhaY19iRnNCeHdNUDlva3g4dy15Mzl4MHdEOWkxMmhGRzh4cDNONUNXTUZNOHNlQmN5VmZhd185QlRrdEVPbFk4X0NZVkUtdWZMVURSRk5zOG5tUjc3WlRZUkZaSFVPMWNfSnhSMGtlTFBwcjBXSEg5cl9YM0JndWIzT0VpdHlVd0xiM3ZBZnpsNV82RU9pclFvNHVDNWZZ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">May 14, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur votes in favor of the Ukraine Support Act.</p>
+          <p class="feed-analysis">Supports US involvement in international conflict, potentially impacting her district&#x27;s economic relationships with Europe.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUFEtLUhaZEpzYzdKRWlOZHF2RmxSbnNlVmJHWXNTaVM4YVNKRnpPNHk4WWdKbm5DSkhyUXg2SjR0TlFyT3VDQlNjem9vbFFjTEV0Ri10Z3RCbU56V0xpRHRfelpHOW80dVhQTU1iV1JrOGV5U3pfQkY0Q1FaUWRoQWk3eWJneXZsMU1tczFjMFprYWdlQnFDUXZJNlNjT2J2eFlVcUdrWi1xVzdObGlDYzJBYjVZNXl3VjBrMW96MjlqQWxydjRLZ3hFNGZBUE1oNjdvWU8tSTJYdnNo?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">May 13, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">House Democrats issue joint statement on securing final signature for Ukraine Support Act vote.</p>
+          <p class="feed-analysis">Highlights her commitment to supporting Ukraine, but lacks specific details on her role in the effort.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMijgJBVV95cUxQS2VTdDhKRm1YSDRZZEJpaHI3enBaYWNpM1RiaU9vTUZDWE9aQVNiYWtHNTFnd05nakdKQjRFZm9QUDR0Y0Zya2ZMU1Bndm5XSlQxS3dkbG9GQ3JhUVJnc0ZrWTZpS2EwRllwQXJBUlItMnR2VUdfUFJZZ05fcWxIT2JpTDQ3STZveElPaWdCWllGcm9sb0E5TlJ5Ql9SdGdYVTFkR01LYmdlbklmVUQ5RmJqS0I4U2VoUGdfekhNdFJub1EzOW5RNjBZLTd3NUZIWkhUQ05ia1F3aVhLanBfblVjZGw2dHZjbkNLT19UQkFVeUFvZ1NsN1o3c0Q4dnNlWUxMUlJLaTdLaG1jRVE?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">May 13, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur secures over $1 million in federal funding for local airports.</p>
+          <p class="feed-analysis">Boosts regional economic development and transportation infrastructure in northwest Ohio.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxPYXQ5cnpfdjF0bDREMjRMaHUzdWxRblF0UFo4bXZURGpOZ18zQk5sWm53WVZpYXdHSG1ZTFdzano3dWJOMXpFbGFaTHhLTTlYLU5hUGRMQWt0ZEhrM1lmYlF5THQ1a3NqWDFaT3BZVWtjR3V6QzFZWDhsakh0RHZrLXRGNFVXVEt5SnJKVG9KSFJsdXBXejIya2N6b3dGcjJ1QXBxN0RiclBPalZVV3dZV3JyRlgzbDN1NVJzQ0FrR3kwOWhwZWhXWFp3TDU0eUNyTUxzSWtaYWZBdmhkTnoycWdpRFhsM3czTVotS2tCTWFycWxRUmc?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">May 11, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur attended the Biggest Week in American Birding event.</p>
+          <p class="feed-analysis">Highlights her engagement with local communities and interests outside of policy work.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQc0hvVEZWMjRRNHJ2eUxsZnVjeGw3QTZlYlRsWE05X0k4aml2bTFYVGpDNmpPR1VHNU1BVVduSUg5b3dfVlVlcm1xN2otQndSUUhXb2ZHNU50cEN0Z0o1OXlGaVpUemd3XzhhQ1poclRFNjEwRm9Cc0RhVkxpa1hPZWM4NVp2WDgyWE9PSzl2MEdMY2EzSFJKNU5BY2N4ODBrdlV4U0dNcWcxdDctaUw1aHVQaEdaZ2dUaGZoMU5ua3lfeTFXU0lJSnZONVVSbm9meDJTeVJ6R29BUQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">May 11, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur and Dingell held a town hall in Toledo to discuss trade and tariffs.</p>
+          <p class="feed-analysis">Highlights her engagement with local constituents on key economic issues, particularly relevant given the district&#x27;s industrial base.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPVGdQc1dwU0tEcTdmR21idFF4OXdoMzFnOTctNG9DZkdBUlR4TFZDN0ZOdFk2Q2pnZEwwUExmRElXMW9TOS15TkpYVnpUTE9YUjAxNWxLaVVvQ1NjZzdKdnVVWlJWdXJnTmxLSEtZVGJjeC0zUkg1OUYtZE1oVzhLTmlwMURWZXdWYmI0U0Jsd1ZwaVRtdWk2RHFR?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">May 11, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur introduces a bill with Rep. McCaul to enhance drone countermeasures for the National Guard.</p>
+          <p class="feed-analysis">This legislation aims to strengthen national security by improving the military&#x27;s ability to detect and respond to drones, potentially impacting her constituents&#x27; safety.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOVVHNTJreTAzaWFnZHdIUVpza0ZwTWdFN0lmUnRrdVdBdTVvSHVNZVhEVk4tX2pQZjh2Y1FvRV9rRlJ0REFjVW9YVEM1TF9rdjhfanNuTi1FUHlQV1M2OEdtUDlYUGszWnNpbFN5UjNuc1pDb0doeWxlcDUxRU0tMjR1VjRQejdNUks2cXYza3ZxbXo3WkpOQ3hRNENzbHRpMVB0QlZfeFBSS0p1Y0F1MTgzYkxpdG1IbGxGSWh4MEJYUlM5R3NKZXk1ZFpFU1JMa0RaQWVhMGQycU9ldnRXdm1UNA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 06, 2026 &middot; 13:41 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Merrin will challenge Rep. Kaptur in a rematch election in Ohio&#x27;s 9th District.</p>
+          <p class="feed-analysis">The news sets up a competitive election for the district, which could impact Kaptur&#x27;s chances of reelection.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNNEFKRjZKbV9ZR0pmSEpXV2dOV3dwXzlJWklvcEZ6SUNicmxyOElUbmxJY0tWWGZ2ZkZLbUpJcmdMU2I1ZXpybXdtczlpYzQzZ1dsX3FIMklIT2tDRVpZUGxuT2hEdnlwTHB6aE9fMEdRQklsODA5ZTRqWnlWYWdEUGhDZl9RMGhqUElabk5EUnNBV1h5WlFSYTdqRE93anZGX0x4TDluQkFvdmRxS0xpREN4WTFOdw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 06, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">A former ICE official won a primary election and will challenge Rep. Kaptur in the next general election.</p>
+          <p class="feed-analysis">Represents a new challenger for Kaptur ahead of her reelection, potentially altering the political landscape in Ohio&#x27;s 9th District.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQQ2N4elVnLW10bjBZaldBay0zZHFvdXlBeUhNWXY3Nkx3VHlFa29FWlZ5N0x4OE5Odk1LUUR5eHNJOVhPeGEwTFJiWmMyaWg1Tms2a3FiQ2JiRVJJaEVaTnRwLVRvd0F0ajhFbVRRRGE5b0JfUmpwTmZ2R1VrTzVXMUVENWlqanRPc1NWbzl2LVdwMUdP?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 06, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur is facing a rematch in her bid for the 9th Congressional District seat.</p>
+          <p class="feed-analysis">The election will be a key test of her ability to retain the seat she has held since 1983.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNdjl1QXZoOXduXzIxM294bDlqOHNYdGR4LXh5SGtBU2dfM3R3MHNEVmV4MXRWdmpjbUgtd3Z1cGdsdFY5VFNFZmdhLTI3ZmRsQm1DZDFYa04tal9ueGVSTUpYbFFPNG1CZkpFQUJKMUZOUmRReDFMSXNsU2p2NFpVbWhGc2tseW9uLWU2Z0d2SXgtN3p6LVA1LXFiTTA2MVplUUE?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">May 06, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">US Representatives Kaptur and Dingell discussed the economy with the UAW at a town hall.</p>
+          <p class="feed-analysis">Highlights their efforts to engage with local constituents on key issues.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQeVFTVlZHclhlRWczX1NBSVh3ME5HUGVGNGVQcW1NM0g1ODJBUmg4ZDdmUEswRTN5UkM5Q1dieDA1eEZscmFZdmUzdHN5eGVnMDdqaEgyVUxJWXJxUWJZa21EdjBHS0tUOHg3ekZvajJRTkEzZFJEcUpuQkxGczJUYUhocEhLZDNqa1JBU2UySE9rU2tTRE9LRHBvdENqTkRQM3RTblJ4SVJLdEFDbXg2cF9DWWVVQ2tvOE9Jbk5KS3lHQkJqN19xODl6QQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 06, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: OH-9 congressional</span>
+          </div>
+          <p class="feed-summary">Derek Merrin is projected to win the Republican primary in Ohio&#x27;s 9th Congressional District.</p>
+          <p class="feed-analysis">This outcome sets up a potential general election matchup with Rep. Marcy Kaptur, who has held the seat since 1983.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9JU01Yanl4aHRJclJobEtJWUtKQzlwQ3dhLWpObE5sc2IxSVYtdkJHbndPbjZpQXp3NWs4a2o0ZURkbjFrMnVjaFBBSGhiZVVwSVNmTWZoVUY0X2Fnc0Zj0gFcQVVfeXFMT0tFZ3FmX3hhZHBETWJGczNaXzQtT0FLNkpFdWR3ekZ5c2V4UFVxWFdsQy03SldsVUZrMG5QSFR1U2VyVGhyZWhQMjY0bmVMR2R6WTZlTWF1RVVSMG0?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 06, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: OH-9 congressional</span>
+          </div>
+          <p class="feed-summary">Derek Merrin is projected to win the Ohio GOP primary and challenge Rep. Marcy Kaptur in a rematch.</p>
+          <p class="feed-analysis">Sets up a potential rematch between Kaptur and Merrin, with implications for her 2024 reelection bid.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQSEdlLWpuQ1BldW9DeE95Qm5KOWhzc0lGa1RDa2NZRkZ4dFhYZUFuZVo4VEprN3RkSTd4OHZTSV9TUUNySk80dUp0Zm10ZnZOVkJDVEZVcTVXMGx4bDdrQ1lUb0VkMlRGUnZEXzBPSVRUNlZqTEplbHFIU3oyS1lnUkV4UDVNX3dsdEw0ZGs4STc0UU5XVmo1bkg4NEZ0THBwcC1vc3NVc3FHLWhncGxWNWEtY2s?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 22:27 UTC</time>
+            <span class="feed-source">Bing: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">Derek Merrin is challenging U.S. Rep. Marcy Kaptur in a highly competitive congressional race.</p>
+          <p class="feed-analysis">The rematch highlights the intense competition for Ohio&#x27;s 9th District seat ahead of November&#x27;s election.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eafa317424284074fb6ee248ba9&amp;url=https%3a%2f%2fwww.dnj.com%2fstory%2fnews%2fpolitics%2felections%2fcongressional%2f2026%2f05%2f05%2fohio-gop-primary-marcy-kaptur-9th-congressional-district%2f89932492007%2f%3fgnt-cfr%3d1%26gca-cat%3dp%26gca-uir%3dfalse%26gca-epti%3dz116453p117250l004450c117250e1142xxv116453%26gca-ft%3d178%26gca-ds%3dsophi&amp;c=8861198834750075030&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 21:23 UTC</time>
+            <span class="feed-source">Bing: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">Derek Merrin wins Ohio&#x27;s 9th Congressional District Republican primary.</p>
+          <p class="feed-analysis">Sets up a potential rematch between Kaptur and Merrin in the general election, with implications for her re-election prospects.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a55a0aa149847f7818e7b8d71266f1a&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2facton-and-ramaswamy-set-for-tight-ohio-governor-race%2fgm-GM3C22B2E0&amp;c=13490896519092941494&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 17:00 UTC</time>
+            <span class="feed-source">Bing: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">Derek Merrin is projected to win the Republican primary in Ohio&#x27;s 9th Congressional District.</p>
+          <p class="feed-analysis">Impacts Kaptur&#x27;s reelection prospects as a Republican challenger emerges.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eafa317424284074fb6ee248ba9&amp;url=https%3a%2f%2fwww.yahoo.com%2fnews%2farticles%2frepublican-derek-merrin-projected-win-032849990.html&amp;c=6475502439560588423&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 13:27 UTC</time>
+            <span class="feed-source">Bing: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">A Republican primary in Northwest Ohio will set the stage for a congressional challenge to Rep. Kaptur.</p>
+          <p class="feed-analysis">Sets up a competitive election that could impact her seat, which she has held since 1983.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf8eb6448c805d1577e47c6b7c&amp;url=https%3a%2f%2fwww.aol.com%2fnews%2fohio-republicans-vie-challenge-longtime-202748572.html&amp;c=11982096552957696213&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur and Merrin are facing off in a House election rematch in Ohio.</p>
+          <p class="feed-analysis">Highlights the competitive nature of Kaptur&#x27;s re-election bid, which could impact her district&#x27;s representation.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNZ0E0OHNLWEVVakFOTG5MVEtCNnFZSDB4R24tRzEyNWVEVkMtdjlBd1VOLUVwclBPWXhPbjFVQmt1TWxSTFYxMmgzcHhQb3B4a3NBTE14TWdHNExDUXZra2JOZ2lsYkRMWmFkM3BkZXowVFhmNFNXWlFHd1gxdlhBVTdjSjM2ZHfSAYwBQVVfeXFMTTE5MWpvc2oyZVRTZzZBMzNDbWJYSGtmaVk5ZUh0c3NnT0tEM0xhdWlwaGEtdlJfUHZVcVdYdEh0LXlNOEpxTFJUbkIwc3d0WDBJSDBETWV1cXhfd3JXU2tEYTV2bjJ1VHZ1azVBWG1paTQwQ29RQ05GcTNFX1dvdXB2ajJnNFlUb1h3U1c?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Derek Merrin is projected to win the Republican primary in Ohio&#x27;s 9th District, setting up a matchup with Rep. Marcy Kaptur in November.</p>
+          <p class="feed-analysis">The election outcome will determine the representative for the district and has implications for the balance of power in Congress.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPektNbEtDWk5nc1pwcUs4SFd5VzBQUERycjlaX2hyaUk1NEdTb2xOYzVRWlJzd2pzSHNDSUZ2ZWI4NWZaYnlJSW14RmpISjVuamxrVE41cjBQMlJpUjFhWXpLN0k3R2FDZXlZcUd5dkRNWmhKTkZLTTdudTd4RE9tZ1ZtWnRpRkJIaXhqbG51b2RXTXhvdUVMTmxYZGdka3RjZnfSAacBQVVfeXFMUHp6OVZqc2NxOGdJaDUtNGpnWkpsekRTejRxMnd0OXBuZjc0Um90UDZ4ZWpxX2RoVDh6NUNuYlA5R2xQZ3NlZDNXdU15Qy1hR243WGIxa3JySHFMN0QxSFJSQ2hwZ18wVmJ5Z1JNUF9WT0o4WmpTeDk0eVdQdFJpMDJRcEVncUN1elRRTnQtdWNrUFIzR05oSXQtOFNQWFBfMHZfaHlNUDg?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Derek Merrin won the GOP primary for Ohio&#x27;s 9th District.</p>
+          <p class="feed-analysis">Sets up a general election matchup between Kaptur and Merrin, with implications for her reelection prospects.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3hQMTd3QWVaTG5nenF6T0tQV0ZrUV9IOVNKNEtIc0xTRVJGdTd5ZGs3QkVfWDh1cFQySnlNcXlPYno4QWY0SHJUSDhfZm5pWUtqeHVGWXNCVDVhazNVMlZoV0ExMnRrUGp1Q1k3dG10T0FacExQOVMtNmJwcUVrbW8zeHNwandhTWR5OHduQmEwby1TRFNVa1JRckxPV2VBNGJJY2x5WllTV2xwMlBfMU5nNnFscHRhTmpfQzF4V3BPdXJZTDVz0gHbAUFVX3lxTFB1X0RYdVF3UDBCcVZoT3FBbTA0OG1vWkpvRUtidFJFX1JZNWV1QmM3X0VFbW16eEwtYlVEdkdEY0ZjV3lvMGxPQ1d1Rlo2THJkMFQ0aUFZSWhPbmFwUXpIWUNwLWR4WE9KQU9wMnZXd19iSmxSOGlaWDhQLVRUX0hneTVNNEhxd3dTcVNZT1E0OEJhekVJS2pUV1ZMdW9ZUXZqU2N6cDhSakxCUnZLcVMzQjZGaHNDOVdGZDVydGp4TEg3bVJ4cUtmcmE0RWVUU2p6cDlHYzYxSV81NA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Derek Merrin won the Republican primary and will challenge Marcy Kaptur in a key election.</p>
+          <p class="feed-analysis">This rematch highlights the competitive nature of Ohio&#x27;s 9th Congressional District ahead of the general election.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxON3QzYVRyVlpPYlVaSnk2TTJCYUtlckNUcm52cmlNdlJVSzV1VEo1Z0ZWbFV5a2ZaNS0zaVBXSXpzNUl1YjlOaDV1b3BpY2hpR21rTXBnQkxLOVo1SDVIMDFobVdldUVfMW9DUHNQeW1Za0p0MkpESThUQlk0TDktdzZDZGtfRmtnRmo3NVdRUmJMenFtRW1kSEQ2U3k4SXJuT1BqU1FMaHhTZ1NxWmp1WlE4bUxIazZSWVJFNHpjaWpSVkFGNnNxNGdBTGxUNDBrVlptMXFkQnVRc3dscmc?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur engages in a conversation with local students.</p>
+          <p class="feed-analysis">Highlights her commitment to community outreach and education.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE96SUJVOEpEdzVCOVprVEpCcTBhWWlETTFXdy1fblZ0RHl2b0w0eC1PY2RiMHVyLS0td1dmVjlSb242ZU5SanRSQ0FIc211UnI3azd3NWlYZUJ3Y1UzTTh3ZUdfTG1wS0R3MVZpbm1LZnNLeURWZy0xcg?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur will face a Republican challenger in the next election.</p>
+          <p class="feed-analysis">Highlights her vulnerability in the district ahead of the general election.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTXpxemVKcEdjQUd4cjFzNFB2ckZaZENsVlNGanIwNXhUbmlhc1ZQMWZ0WVNYdzlvZndhWUdoSGlXX2p6VFlxTDZ6d0FUY3NwbVNCZlNGTS10cl9DUWw4MGstbnB1V1FLZXV3ZktyMWJBLThQQkRicU1IVlpLcGNWd3VoaGs3clo3QlJqb25ESVpBNkVvSDctRGF4ZDNrLVFpTHJkVlJJZWxVeXhPc2dYWWt3Uk9IWHBvTGZ5cDZtTlBtRi1NYnhheUpOVF8yZTJNb3Rhdnk5UkdQbXhhU0QyWGgxamhYc01yWW80Y0hiOA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Derek Merrin won the Republican primary in Ohio&#x27;s 9th District.</p>
+          <p class="feed-analysis">Sets up a competitive general election for Kaptur, who faces a new opponent after winning her party&#x27;s nomination.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPUE5ZaUpnXzljX0RMQ2VIZm00VTBjd2NCdWNKbVZCbi1jYjcyUE04Qlp5d0NjNEw3LVNzbmdkS1B6MkctZWtmdUFxbXJ6d1NidFF0MmhHdVFMVVZpeGZnTnVLTV9iaVoxUFh5OFZoTUpnemlhamQ1MG5JVzdtNnNNQlR4Wmt5a2ZBMWVVeXdHWTlwbjJxSXF2NW5DbHJUYmdfRnNCQnllcjZNUUpNUVZLd3N1bXI0QQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">GOP is pushing to oust Rep. Kaptur due to various allegations.</p>
+          <p class="feed-analysis">Highlights the challenges she faces in her upcoming election, with opponents using these issues against her.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUXJWbEhHU1ZGWGd2dWRuQTZoWkNXSUpmU002MkNxODZyMGh5RGYxWUVzbWV1dEpvVzFaMDE5dm8wQ20wZEZhblNCdGRLQUxxZDMzSGwtNVdJeGZ5SjBXWXZXdVBjWTNOYjREdlZnc3Joc3N2NjIyZ2FrTUdpT2NuR1E1TGxVSHZwU212UHRjalphQlpYMlNmYmJRNHZRc2liLU5mZUtBU1otaWxOeVJXUVlaM3FkRzQyM19IRVEwenZTR1VFQzVfUA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Marcy Kaptur faces a potential rematch from Merrin.</p>
+          <p class="feed-analysis">A new challenger emerges in the 9th District, setting up a possible election showdown for Kaptur.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNa3NJS2JoT1VUTDhwU3A4eTlTYks5Sk1PTlh2azktRTU3d1kxQnhVb1NDSVJJNUJYU3VtMHRJRDVnZnZUekxOTEN5OExKLXZqLVkweTNNR1g0ajF2TTdXbEs0amFTRC00b3ZyY3hrV1huWkxUbS00aEdRY09aMlZPVVY2ZTM0NXJWV1IzLVJwYXhRRlBCc1FqUkVxYzAzeGhDSUJBRGpNSy03aXRVcXZkS255Zw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="CAMPAIGN">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-campaign">Campaign</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: OH-9 congressional</span>
+          </div>
+          <p class="feed-summary">Derek Merrin won the Republican nomination for Ohio&#x27;s 9th Congressional District.</p>
+          <p class="feed-analysis">This outcome sets up a potential general election matchup with Rep. Marcy Kaptur, who has held the seat since 1983.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMilwJBVV95cUxOeG50dGJiODFnWDk4UHBzVUZpdGFrQ29xRUxZWm1BcTR5eGh5VG1Id0hhV2VqQWt2T2RWMkRKNWFIeWZKRUxkNUNhczNvOVZoOWN0OVFncnBya3F1c0V6ZmNjY3h3VFlxUFA2NkNrQmMtLUxyWm12VTF1ZE1aVkloV0J1ZnBuOUxULXlsMEhQVXNZTmk1SVNUTGlmTmhSd3kwRTdIYmdYUkZwQU1wSzJQYnA1QVlGcHVXUExlaFVjY2s4ZzJZZTEwR09FYmVxUm02eTUwbFpFR3lRbENma255Q0xQMG9ZWEE5bWNzckFsRGRYSktFdlphQXhNOFZoaEludkswTUxMU1FmTHpYN2JIR3loNHI3UXM?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">May 04, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur is hosting a town hall on trade and tariffs with labor leaders.</p>
+          <p class="feed-analysis">Highlights her focus on economic issues relevant to the district&#x27;s workforce.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPXzdiUjF4MVAwWW5laGlpMmh1VklvbC1jcUpxbFlRQ0lXcXB3M0NpNW8wX2V0YmNhdklYLWFTS1RYVlk1TzNJQ1VSb0tKS0RReFdtMmtlVUpFYnBkS3ZvS3ZYU2JWQjZ5dmo4WmJ4TGJnTkF3VlQtYldFUDRwT1ZnM0hyN3g2QklkVHkta0dKOUZrcldvbFdlMm5jcUhOZFJU?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">May 02, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">New counties in the 9th Congressional District are weighing in on a competitive election.</p>
+          <p class="feed-analysis">Highlights the shifting demographics and potential impact of redistricting on Kaptur&#x27;s reelection prospects.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQNTd5MDg5dmJZdlB2MjV5Nmx5clpPOWxLN25UN05rT1B4b1Jrd3pCZmxEZ2lRX2pLSXFObDZtazZfQ2dwUHN2RVgtVFVsR3ktcGQzVlR2eXlyU3ZzS0JWNmh2Q1ltZGkyN2Q4bmJSZ3lXbjM1eFkyTHprMDNpZkhZT1NBeUk4MzBxWmxtR2VYcnU0TGJ5SmdqekZRaWdWbnhkdi1lYTJmVGxTQ1g3SWVCcmF1MFpsVVNTMWZqbUl2TzlFdjN1YTE3T2JyQ0ZadWR3WVlwMWV5Q0FpU2o2YXp6cEt3?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Apr 08, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur secures $19.2M in federal funding for a nuclear training program at the University of Toledo.</p>
+          <p class="feed-analysis">Boosts her district&#x27;s education and workforce development, potentially benefiting local students and businesses.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQOUNnMGFJUzZwREJQWV9Ra0ZZbmZCYkNUdi1pV25wVGtHem95ajFSZ0x2ZkFmOUNRM3gxcWw4S2cyUU9GbFZZQVZBd0lOM1RPMDFJS1RjeF84OUVHaFl1UG9pMjVIUXJQSGxvNmVVamtOVHZXd2xuM0VuQ2hyYXZta1FFS0VhWUR2NV9CMGN3aFdkRDZhTGM0SklmNWtRdWpiaUVBdXB0dWY5RWhyek9yLXB5b1dDcXVTU1JxX293dG9MYmNLYlUzNUNhVXpWa1k2UWtIZFVIdzk1S05DWkxYQzBNYTk4QQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Apr 01, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">A former aide to Kaptur pleaded guilty to theft.</p>
+          <p class="feed-analysis">Highlights potential security and accountability issues in her office.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNVkdMcUR1M3lxWWdEemgwMEIyZzNtY082dV9mTmFMdXBVbWI0UC1FbVFCUmd0bFFWQjJBcExjbHh2MGhiSjFCbU1QTm5rSXBkWWhya0FwYWNxRUQtTU1FbzB2TDAwc1BNWml4azl4bndpLWY4bnI2TXpETUh6WWNMMWZETWxHZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Mar 27, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur expresses concern about a potential war with Iran.</p>
+          <p class="feed-analysis">Highlights her stance on foreign policy, potentially influencing national or local opinions.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBKaVRmcHM0bHVvYVU2Uzl6Ym5XMDZxa2tKbjM1X091VXdMaFRCQXZmamRESGFNUC1MZ1BPT1R1bWMwcGx6cnN4RjFOQWtSeWpWRUpvajB2ZFVCTzJMQUF2YUxlWWc2a1lUcTFPSmtJSUk?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Mar 13, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur pays tribute to a local chef who died in a car accident.</p>
+          <p class="feed-analysis">Demonstrates her connection with the community and willingness to acknowledge local tragedies.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMihgJBVV95cUxPN3dJUFFDNnJ0OUJIU3d1WGU1anNvWndrdnBJOUtobE85YlJueGVyS1YtTTBtT1FpbzRtSDE1TUxwQVVEeGFYdXhFTmZsdy11c2hjYXB0V1ViSGZ1UHNnaW9WSXNDcXIwaHJLdlBPZ3RSNlJjYWJPTW53QlRYZDJpWUIwejhiVHZKLWlveTlkRzJOaWhfUlVqdDV1RUNPQ0JFNGpvWWlqdWN4akRHb2lmNUdLdVlobk9oYTNvcnBhTU9hS1Y4SU1BbGRBN3hHcmFKdXZZTGZvQkJOdmZzbVBsa3JRSzRLUUdycld5MDBmaU1VclZaZkU3bVNDYjVpbllQbGJZQWxn?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Mar 12, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur releases a statement on the Trump administration&#x27;s oil reserve release.</p>
+          <p class="feed-analysis">Provides insight into her views on energy policy, but lacks direct connection to her district or constituents.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNcEZ3eFdaSVNKeVZ0Umw2ajg2emhNTnpoQVMxUDVEakdMeDdEODFxWjIweGMybE44SHh2aEhydlR4UDFqcDREQ3RBZXQ2WDBjZkhDbG9XMmx4d1lVODVXZDFCdmprNzM5cE1GUGVNQUVKd2xxb0w2dG94UGVHVkVNV3pPU25PaU1DTDFxYXJXSmdHNm1MZTlJSThGd2ZsdTQ2ZURaN3NMYkt1Sk9LcWhSdjB2MnpaSXhnNk5udXZJcDlnRmllS3FDOTBnZVFsY1U?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Mar 12, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur discusses infrastructure and project funding with Buttigieg in the Toledo area.</p>
+          <p class="feed-analysis">Highlights her efforts to address local concerns over infrastructure funding, a key issue for her district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMigwJBVV95cUxNWmhQZzhISjMxMi1NVkVGc0VtS3lISjB2YWU2TGxodmVleTh4NW9zTnczcV9VcGljcjhLTW9OTEVuMGd0RFNmVF9GRDd4blBXdENKSUFkbzBOSG5TV3JVeElkQ0JfQU5UXzJzQ1YxZzB0VDM5LXpac2dpYjZIekNMUnJZQV9XNDRDMFVOdHJIWmFTSkwzTmphNjFEOUpNY1d3c1k0RzQ5VklwUUVROUR0U2RFVzV1ekpvNjZpVmhlRE5Rc0N5UU81SjFIT0kzb2V1ZVFrcURqNjVtdUlTWHR0TWxLTTllai1iWlZpNDVCczc1Uk56clhaOVJxNjhtZzRmV0dz?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Feb 25, 2026 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur calls for investigation into misuse of clean energy funding.</p>
+          <p class="feed-analysis">Highlights her ongoing efforts to scrutinize federal spending and ensure accountability in the energy sector.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVU1aampOY2R4YVVvZkZIVlBiY0hfUHBYdnJuUjh1SDdnaHY0Yi0tbFJrckV5LXoyUEFXYXlxM0JpdFQxTDBkcnVYbXpWZ25TNFBQa2JpUGNCUDV4UFJfM1VpSldOb3dXYTdEcTNkUi1UeVg4UFpJRTg4X2Utdm5faHQxcW5zWC1WSGJXbU80T1h1TVpWdmxkYlVoU3B4WkhKT1dxS3VXQ3hkbnpZaVVrWmpSbUU2ZmFia0kzb19taGdhOFRMN1FFaWx4T3JhWU1VekJCcVN0dGQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jan 08, 2026 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur applauds passage of appropriations package.</p>
+          <p class="feed-analysis">Reinforces her committee work on federal spending and budgeting.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXF5a2dSV2tEOXJlZHBfMmRmN0dndlhCa0ZqdnFXc01EN1pBa0hJYi14Z2RaQWFlOEJxajExUFhIS1lINURYVlk4c2w4X3QxVTA2Zk1sUnUyOXloMm1rRnF6eF9aSjJoMmdJMkF3c0o2aklRNW9sVlpVNS1LeHRvVl82SmhrMWlwdHVlTnJlMldRUGpRcE8xWm9rM1R2djhxMUpSYm1kbkFBN05EVWVHRVNFbUtPbXBnXzZITXRLaVIzU2FteExQUVktNDE?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Oct 30, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">Ohio&#x27;s 9th Congressional District has shifted further to the right in a newly redrawn map.</p>
+          <p class="feed-analysis">The change may impact Kaptur&#x27;s chances of reelection, as her district becomes more conservative.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPOHdKUlltem1FOXhUbU9yN2lpbzk4YlcxT1FOX3ZaOWRobmlHNEROaHJUdTJDcXlZSGlDQkhGNjNTdWxvd0VaekhfWVh4Z1ZsWTltVFpDTl9QbXV6U0xzQmNuTDF3RUt3ek1Xc2FlaGVhaGtobUZvZWRfUlgyM0U2ZnA2T1M0S0FCM3haRTYzV2NCWm43NGRhZmNySkxGeUVvWlRXSUZ3?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Oct 28, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur criticizes a move to block funding for Army Corps projects in Democratic states and cities.</p>
+          <p class="feed-analysis">Highlights her role as a committee member advocating for federal infrastructure spending, particularly in Democratic areas.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNc3JSZTYzQklDbldkMEk1SkxYbE5RMERaRWRkVi10cno3dUdJSm9QdVJlYTIxcFV2VnBUM0VLVDF5Y01JYlRsLThGemxJekZTOWFZZE9hZmJtMTdBdS1OOFUzcDVZRnpDa1dZLTl4bmFGSTNUaTA4eW5oVS1meGVPUHY1UkVNc1pBUHBvaHNXRWh5d2ZCS1BnUHZUODNwamF6MWYxYk81M1hxTk9Gc3oxak54VnpSWDFFZFJ4bm5ha1pGNXBGUTZvUjE1T3hJQQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Oct 01, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur and Senator Jon Husted comment on the government shutdown.</p>
+          <p class="feed-analysis">Their statements provide insight into their perspectives on the issue, but do not offer a solution or specific policy proposals.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmFGN280ekNMWXMtZWxSbU9VT2VURUluVzBoMGZNWGM5YlVxbjBXQjZQNTAtd1V4S0xmYWtqVkNtOUNGN2YxTEhkZ2Vyb09NZzdDQVZDUG02bjlkVHF1NG9GM0hnNXhoVEc3Y0FQbFlYby1qXzN6cmMtYjlIZ1dVWkFlUGo0M0YtOWxfX1ZBZENyV0RVN2FlclZ1R1NDYTlRVXoxLVBROGpmcWxtTVdWaS1mV3psR3FxME14N2NKakU3enRSSnRUQ0JzZ2tOdExib1RNTXh6SkN2b2M?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Sep 04, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Congresswoman Kaptur supports striking union members at Toledo&#x27;s Libbey Glass.</p>
+          <p class="feed-analysis">Demonstrates her commitment to local labor issues and workers&#x27; rights in the 9th District.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPQkp4RHptZ3F6NWJYbndHTXU5VEJyVjBENE1xRmdia19ZRHJJdkhDeTNlbGt0Mm5BTEVITF9kS3drMDFPMENQOGJrU2NWUF9fQ2liU2I2Z1Noa2FmbVdhbDN1U2pLanpWVTZOUFVZZC1ZVTZxVFRQeE55V0p5M0JuODVxU1ZYMEVWNWhLdUFPUmYwTjRwWTBxVVMtaEZnNlF2RWdSTlVqT3Zna3VQdTUtbTZPTFY4WGhvT1puUG9wbw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Sep 03, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur delivers floor remarks on the 2026 Energy and Water Development Funding Bill.</p>
+          <p class="feed-analysis">Highlights her role as Ranking Member in shaping federal funding priorities.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRnphVzBoVGlFdFh6UXJzS09hOHd5OEtJWW10clFJVVJ4aEVLcVJ6c0Z6M2F0TjlwRmZEQzJEU3ctVXBlMTFTRndhdHY0dmFYd2l0VEo2TUl5ZWVsSk9RcHNHZDFTZEJXSlhZQ1pCMEZuR3VNTFRfYnRVNDFFM1RJSGlwR0gwQ3IwRWFsYy1aclMxNTF3LW1QcnppQWVrWHhCNkNjZS1kbnNXYVl2dmRsODVvSld5ZnYxS1FaRnk1WTJudjVqVldjd1h1ejh6M0JZSEVnajRHOEk?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Aug 29, 2025 &middot; 19:12 UTC</time>
+            <span class="feed-source">Bing: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur urges Libbey Glass and workers&#x27; unions to restart contract negotiations after a week-long strike.</p>
+          <p class="feed-analysis">Highlights her role as a local advocate for labor issues in the Toledo area, potentially influencing her constituents&#x27; opinions on her performance.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a55a0aa3b134741a20569bcad6a6561&amp;url=https%3a%2f%2fwww.wtol.com%2farticle%2fnews%2flocal%2fus-rep-marcy-kaptur-urges-libbey-glass-iam-usw-unions-resume-contract-negotiations-workers-strike%2f512-645ac4f3-4ed6-4e36-a117-f0c9d496786d&amp;c=6569155275565698598&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Aug 29, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur visits Libbey Glass picket line during ongoing strike.</p>
+          <p class="feed-analysis">Demonstrates her engagement with local labor issues and potential impact on district&#x27;s economy.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNNFZDZlhuWEFzR0VXUDRDcVJkYnlVWnQzRVFjYV9QTGlEZW5ocjJJbDFudzNnckQyeWJPaU5IWUlLOGZoSnNlenVhYmpZSnRuYWtfb1dQa0tSWFBxLTd3eFAxODZPUFRoYk1zVXluZzFQTjJhSFFzSXFnNXhuWDVPODRMMk1qdGNvN09LeVc0WDN2aFYxa1dpdmI5anVvbXA1dXF5c0Y0UzZVdU9ZUHpKQUdHYmJYVEtTdFpYM2hBVk8tck5MTUY0cFJJbkw3WWJGeHdqRjdtQTBsZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 31, 2025 &middot; 03:00 UTC</time>
+            <span class="feed-source">Bing: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur requests GAO review of Trump energy spending changes.</p>
+          <p class="feed-analysis">Highlights her opposition to Trump administration policies and potential impact on Ohio&#x27;s energy sector.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf8eb6448c805d1577e47c6b7c&amp;url=https%3a%2f%2fwww.thenews-messenger.com%2fstory%2fnews%2flocal%2f2025%2f07%2f31%2fkaptur-wants-legal-win-from-gao-to-stop-trumps-solar-funding-change%2f85413402007%2f&amp;c=6597618591038536022&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jul 28, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur and Murray request a GAO investigation into the Energy Department&#x27;s spending decisions.</p>
+          <p class="feed-analysis">Highlights her oversight role in energy policy, potentially impacting renewable energy projects in Ohio.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNUIyNkxDbmNodDJ0c3ZULWlXR2lndDh0MEZzN2h6dFVFdDJsUDFac1dneHRpVVBUb0I4MEcybFJjSnBSbElrT0pTMk5qeXFENGlldV80dHJBeFZGaVQ4a25KNE5BQWFyT1V1OEhydExlU19kSHNXZEd0QUlDdHBQN1ZEX1hkMjZlbzJzSXpIaTFycEhvQjMyMURUb24tSEIzTHc5TlItRHNiSnc5c0ltQjgtNFZrbnp1T2wxanZVTEVYSmh2YmxENWxXRHREZ09qU1o4b2dvcw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jul 17, 2025 &middot; 19:23 UTC</time>
+            <span class="feed-source">Bing: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur addresses committee on energy and water development funding bill.</p>
+          <p class="feed-analysis">Highlights her opposition to partisan budgeting processes in a key committee markup.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf2cdb4bdda872a2977ab76539&amp;url=https%3a%2f%2fwww.nasdaq.com%2farticles%2fpress-release-marcy-kaptur-addresses-committee-2026-energy-and-water-development-funding&amp;c=9099636885097036737&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jul 17, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur secures federal funding for northwest Ohio airport upgrades.</p>
+          <p class="feed-analysis">Boosts regional economic development and transportation infrastructure in her district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbVNrbG1FMExkX2R1YU4wVE9JTWF3Vk94OXhQRjVOaVNsUlZid1FjVlJVbHdMdV90MEI3NnhCLVppcl9CVHRoRXZkeTBJMTZtbEJJbWx1ak5fdE5QZjlEcVRpQUtCY3JZZUpKcHZyb3gwY1Rndy1RTXJySU9rUmtrVDFyTDNRNHNpck9zSTFuWmZPWi1Nc2Z1YXRfOXhmbGhrZTNfQ19ONkJDVnpXSlhreDRQUnpSU2E1dkVfNmo1b0tHcS0zQVR4NG80TDZnU05vNmlOU29UcWtXbUs5cWZZM3VtMU5PZl9V?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jul 17, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur delivers a statement on the 2026 Energy and Water Development Funding Bill.</p>
+          <p class="feed-analysis">Highlights her role as Ranking Member in shaping federal funding priorities.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeHF3dHctUzZFMVIwTDRzdWU1VjNYMmRPZGZVek90VkR4UUdBVjF5OVFTSUd3RU91d2ZZVHNtRDd1NXg4N252aDBNcGV5T1N4ZkhNc3RZMXRRUlZ3OHRyRVZMLWEwS3FKMGlfVUREQmM0Uk9TWlgyVE95V0xGVUNWY0hkSmhHUGxLWHlUcDRVQ3VqVGRic2NtU3FtaERLcjJzS2s1WHA3MUpxNEVZVUZtR005c3VCeVE0TzhYQ2RLRjBrbHhLRF9rYWNFYzlRLS15Sm9STDJ3?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jul 17, 2025 &middot; 00:06 UTC</time>
+            <span class="feed-source">Bing: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Kaptur introduces H.R. 4230 to improve appropriations compliance and training.</p>
+          <p class="feed-analysis">Highlights her commitment to government accountability and transparency in federal spending.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf2cdb4bdda872a2977ab76539&amp;url=https%3a%2f%2fwww.nasdaq.com%2farticles%2fnew-bill-representative-marcy-kaptur-introduces-hr-4230-appropriations-compliance-and&amp;c=14293773334171985107&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jul 08, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur and Murray issue a statement criticizing the DOE for lacking transparency in spending.</p>
+          <p class="feed-analysis">Highlights Kaptur&#x27;s oversight work on government accountability, particularly in energy policy.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxPakxDZnlWa2hCNjJKX2ppYU1ZcHY1c0MwRDRCUkJvcG9ZdE9LR1RDRkJYNmdhM21xUnJ3NTlGNERCQ3FuR2FtUGNTMUNVVnpCT2VKNnhBV3VpeXpnX1ZKeTNYa3pFejRJZGs4TkVkY2FudXUzaDJ3cGhmMFJDQkNMN0FxUXZYdUJIWk1BSVpvVFFicWtqQktRWWZvZWVrSmx2VWpBMW9qTHJqWk4yOVd0b1BGcmlBZE4wUktodHBqNWxtb3pxelBDMWJ6dTM?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jul 03, 2025 &middot; 12:25 UTC</time>
+            <span class="feed-source">Bing: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Congresswoman Marcy Kaptur was caught sleeping during an 8-hour House speech.</p>
+          <p class="feed-analysis">Highlights her ability to fall asleep during a long speech, potentially raising questions about her attention span and work ethic in Congress.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf2cdb4bdda872a2977ab76539&amp;url=https%3a%2f%2fwww.yahoo.com%2fnews%2fwatch-congresswoman-kicked-off-camera-192429340.html&amp;c=14206006169683062530&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jun 24, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur advocates for constitutional limits on war powers.</p>
+          <p class="feed-analysis">Highlights her commitment to congressional oversight and checks on executive authority, a key issue in US politics.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQMktkTVF4Y3R2c2dlXzJfSWp5cVdPNW4xZXJudG96YVJ0dHZJSXRzWk9WYlBKRWg3dTFscnAxdHc3Y3BmbDNuUkJpQW9CV3dJc0llMEF2NXNibkpoLWxueG9jdFpyS0dBVGxyRURHY0VqczJtcXJuX192WlVtYkZsdXpYWXczbmN2Rk9LanhuQUwzd18zcnN5UGZIVVZobVZIWV9KSUlBM1N0VWhNYTQ3UTBfOGQwMVAyMDhIUWRVVdIB0wFBVV95cUxOaXFvOXoteUxqeHMxNnBxTENtYW5YZjZpMExuOVpURUwyNGpXNXk2Z2FVbmZCaHN2VjB3TnB1NUlqZmhFV004bXAzRllzZzJQQmJkYlBWWWRWWXlHZnIwTnVDOFkxUURQdzJKb1lrNktpTFFZQ2l1d0RzbzJ6MDBGTnBHWlZObFlZYWgwYjN2bG42R3hsaUJWdTNHQXlseGRDeFQwb1p0cHpvbWNyMkxVY0lLLVEtNk8tRFVQdlB2cVZIbWNqTEo1VW5rYkFucXMzTVVR?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">May 28, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur introduces bill to increase benefits for Gold Star families.</p>
+          <p class="feed-analysis">Highlights her commitment to supporting military families and veterans&#x27; welfare.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxOSUdNTm9LNGFaUXBaeGlydlZSWFByd3dBaEVTajVka1dYcm1LRVhnbjgwSnU0VVEyZi1DNUNjdzBMNnJjUTEwam04SVZOUkxWTXdXdkZpSk5CNXBrczAyNGIwMWx2cDRadnF5Zmg2dmNXQlotSWpmdUxEanZFOElLS1BqdkpkZWpZbHNyNkI4UlpGZ2llWmtuaXZTYkNFSWw4UGNSa3NHR2UxSUw5YzZwUmpJUkZrVUhtMzFHWEVqLVpFVE9YSlJLZV9pd1dIRE9LNWtjaGZYOTFoUXpwaEUwQW93TGxRS3lIcmcyMDdnQnlmSkI2U01Iag?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">May 16, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur condemns Trump&#x27;s politicization of critical Army Corps construction.</p>
+          <p class="feed-analysis">Highlights her role in committee work and oversight, potentially impacting future infrastructure projects.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeXpKczZEUmRyNDAxM1pKR0ptVEY2b1VSVktEMnZFcHNiZ2l6aWFEUVd1dU5tWVdUMjIxVTNnS3RYTzA5c1dvakNZdVp1bG9yb0VsVTgzallZeWhJOG0tSHRJS2xib0J0bnFfUVVEVzd2ZVBnX1lhUlc3MXF2Nkt3S2hYZmF3Uy1EVTZUUzNqTDBVRl9OTnpDdmhvQS1OTjNRemlISjNQUVZnX0JmWFZtd1gzUlg4c0FST0tMeGlMQUc5N2tvdmlYcVBNNFBvcHVrRTBxM3Rn?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">May 12, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur participates in a committee investigation into the Energy Secretary&#x27;s claims.</p>
+          <p class="feed-analysis">Highlights her role in holding government officials accountable for transparency and accuracy.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOWkp2UmdiaGFLc3d6TFhEUF9iVjNRa29qVWFwcVIwU0Vzc3NIOE53QzZVSTVxVmpBMjFXTWlraWx5TjVER01vRGdIT2tIR081c0FPQzF0NWFlSDJYbHlUQ0s5dUlfWXRmRUJrM2M0SXNHVmtsQW1zekxINnlvNkk2WFVSeWM1NHpFWlk3NzF3VTRoZzg3SHdOZGJpNUNfdnRoWDRUSjZLQktBSmZFeUZj?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Feb 26, 2025 &middot; 18:32 UTC</time>
+            <span class="feed-source">Bing: Marcy Kaptur</span>
+          </div>
+          <p class="feed-summary">Rep. Marcy Kaptur questions Elon Musk&#x27;s loyalty to the US due to his citizenship.</p>
+          <p class="feed-analysis">Raises concerns about foreign influence on American business and politics, highlighting a partisan divide.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf2cdb4bdda872a2977ab76539&amp;url=https%3a%2f%2fwww.newsweek.com%2fdemocrat-questions-elon-musk-loyalty-citizenship-marcy-kaptur-2036889&amp;c=2931314104496803536&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Feb 14, 2025 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur co-sponsors a bipartisan bill to lower energy costs for families.</p>
+          <p class="feed-analysis">This legislation aims to address household energy expenses, potentially benefiting constituents in her district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMickFVX3lxTFA2M1hDeDZVWTRsT24xcDBqTzJYbnQxZlRZQTlzSDFyNEdKcDhjd3RJYkhhbVdPMTZGSXhZSTFJOE5sUFQxR0kyU2hxSnNtRlhmTEZmRXJGX2FlNTF4dVkySlJjMkJVQ2VwN0VIVzh0dEFLZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Feb 13, 2025 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur releases fact sheets on energy prices and dominance, highlighting Trump&#x27;s funding freeze impact.</p>
+          <p class="feed-analysis">Provides context for her committee work on energy policy and oversight of the Trump administration&#x27;s actions.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNXhBVjFfTjFMTmQ0SHBKZ1hpS25rWHlSa0pERWIwWlpPbHFxSHNBWXRYOXo4WmtoaDBLd2E5VXp1MXZTa3RLUENwZEU4TXV1QXg4TlZ0WHlrd1FXa01vUW5VVXdleG9SazNtTk9uUTYtTDBIc1p3VjhRSkcwVU9zMlNJZjhCSGlDNzB0dlNjZjBUeXY3V1YwODJtS1F5QUxCYzRYQTN1NGZES0pRX2RNam9icnU1cUZZNUl3LUJ0dlpYUmQyejBlLUFIODVaZldMMi1TSQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jan 29, 2025 &middot; 15:59 UTC</time>
+            <span class="feed-source">Bing: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur criticizes the Trump administration&#x27;s freeze on federal grants and loans.</p>
+          <p class="feed-analysis">Highlights her opposition to a key policy decision with potential local economic implications.</p>
+          <a class="feed-link" href="http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a559eaf8eb6448c805d1577e47c6b7c&amp;url=https%3a%2f%2fwww.wtol.com%2farticle%2fnews%2flocal%2flocal-leaders-join-congresswoman-marcy-kaptur-to-discuss-concerns-federal-grant-loan-freeze%2f512-79a137a9-eea9-4c6b-b5cb-45efdf4ce0a6&amp;c=10546630651734561566&amp;mkt=en-us" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Jan 08, 2025 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur co-sponsors a bipartisan bill to reauthorize the Great Lakes Restoration Initiative.</p>
+          <p class="feed-analysis">The bill&#x27;s introduction highlights her commitment to protecting and preserving the Great Lakes, a key issue for her district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE83NWhHQl83WThlMndxcmQ0R0lTOVlaVFZHNWFzSnF3V1kzbUxVTGFRQ25QZG91ZFpnRFJocy1wRVZ2NHZZaHRNOTR1VHVnbkpXam9heXQ1Q25ya1lQRi1MUTRPVVJJRVZGT3hJUGJEaWFPM3VXXzBzWQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Sep 26, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">A news outlet verifies claims about Kaptur&#x27;s legislative record.</p>
+          <p class="feed-analysis">Highlights scrutiny of her effectiveness in Congress, a common campaign issue.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMigwJBVV95cUxPei1sNXc5YlM2eVFoRFA4MzhiV0FWNUNmVjEtdDJvVW9KRThTd1ozX284dEt1QlBjUUlZbE1FNU1IRXdaTjlVRk5xUEtNZE4zdmUwU19EenNRd0JBUnZGdmJyNnhjLVhIclJ5eVFoNE0zUzl6bWdodm4wMXRiVEd6clBHWHNiVEdUTDBqWGdCVFVDVnpibkFCMG50LU5SQlFWT3ZyWEJPSGFDUW56T0tTdzVvUWdKcmJoYnJiMnJoTVhTXzBaRFhpV2g0cDl5TTlZQnd3VjM2UTh1ejloMVRSZlRneGJybmdQOUpHMi1vU2V6Mkg4alI1bzNrRERhSXlzZFJB?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Jul 23, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Lourdes University&#x27;s president will accompany Rep. Kaptur to Washington D.C.</p>
+          <p class="feed-analysis">Highlights her role in promoting local interests and connections with regional institutions.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQam9qU0FURFM5a092NGlWNGxsODdRb3FydkZ5a01DRFZxTjlQVXE5OGZZTkRIRWN5RzBOM1YwWXg3Wk9LUGphWU9ndWhsZGFJeDJRa2N2cGlxM0ljLTFhMzU1TV8tendjcW9uakRKRks0MDk1dlZraF9fNEk4ODVtVWtrZmRPSEtYbXpISW9YeHNWMUpaelRnajdhc3F3VkQzSjJqam1LMWRqRWROVlRtSW1vNG1yUEdlZk9XMlhPcTF1cmduSURsZzcxemVYZXdLcE5yX1NvYU0wQ2RQbTU5MFJ3?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">May 06, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur secures design funding for a bike/pedestrian bridge connecting Wood and Lucas counties.</p>
+          <p class="feed-analysis">Supports her district&#x27;s infrastructure development, potentially improving local transportation options.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPUHpvLWhjb2dGXzRrOW84ZHI4TVpjejFMYlFLNzMtRkJlSGI5U2pRQzM0aWpnRTdSR1BZN0g4WEd0Y1JBV1pCdllLTmMyR0ItRkN5Mjg2QUZ0NV9yMGdrSGg3eDFMaFJtX3RtTW5aTHVWaFRGUW0yY1dqY0xpTkdua1I5amxmWUZ5RmtLd0NCejBvN2N4Rm5uOExHVnlZMjBHYUlLSy1GTjByUWZDb21SV1FuSWxzM1NSdXc?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Mar 11, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Ohio 9th</span>
+          </div>
+          <p class="feed-summary">Marcy Kaptur holds record as longest-serving female US Representative.</p>
+          <p class="feed-analysis">Highlights her enduring presence and influence in Congress, despite changing party dynamics.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeFFGdDFtNVI2OVluZkh1ZTZidWw2bG0zUU54a3pVc2RrMUw1Tm82Q2s0ZXFqSnZKamZKdGVnb1FZLVFhMU51dGctN05lYjVlVm9nYWhGMkNNYTNIZXUyMWUtemxvZUJUOVBYQm1Cd1k1ZWphTUVGWGtWUW5PMTFRLUpMaDRVblVKbXZoRllHbzRSd2hORy1qNUlGTHFqR25HbWRjb09PcS01bVF2N3lWTUpkWlRVamNPZEJVQUFxWlA?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Feb 09, 2024 &middot; 18:55 UTC</time>
+            <span class="feed-source">Kaptur House.gov</span>
+          </div>
+          <p class="feed-summary">Kaptur honors local veterans with a tribute.</p>
+          <p class="feed-analysis">Demonstrates her commitment to recognizing the contributions of Northwest Ohio&#x27;s military personnel and veterans.</p>
+          <a class="feed-link" href="http://kaptur.house.gov/node/2717" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Feb 09, 2024 &middot; 18:54 UTC</time>
+            <span class="feed-source">Kaptur House.gov</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur highlights her support for Northwest Ohio&#x27;s agricultural community.</p>
+          <p class="feed-analysis">Demonstrates her ongoing commitment to the region&#x27;s key industries and constituents.</p>
+          <a class="feed-link" href="http://kaptur.house.gov/node/2715" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="DISTRICT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-district">District</span>
+            <time class="feed-time">Feb 09, 2024 &middot; 18:45 UTC</time>
+            <span class="feed-source">Kaptur House.gov</span>
+          </div>
+          <p class="feed-summary">Rep. Kaptur promotes manufacturing in Northwest Ohio.</p>
+          <p class="feed-analysis">Highlights her support for local industry, a key concern for the region&#x27;s economy.</p>
+          <a class="feed-link" href="http://kaptur.house.gov/node/2711" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Feb 09, 2024 &middot; 15:16 UTC</time>
+            <span class="feed-source">Kaptur House.gov</span>
+          </div>
+          <p class="feed-summary">Kaptur participates in an auto industry panel at the Washington DC Auto Show.</p>
+          <p class="feed-analysis">Highlights her role as a member of the Congressional Auto Caucus, which may influence her stance on automotive-related legislation.</p>
+          <a class="feed-link" href="http://kaptur.house.gov/node/2709" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jan 25, 2024 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Congresswoman Marcy Kaptur participates in a discussion at the Strauss Center.</p>
+          <p class="feed-analysis">Provides insight into her views on freedom and national security, highlighting her role as a public figure.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPN2s4TDk1SDQ5OV8yaXRrakRwRnZPYmlqb05wVVZodlFIaUc5WTMzRVB5eUFYOWt1RTI0SEcxb0FuQnIwdUdxcFhnNDNQZWpyeFJDeWJtcGx0NElkOVN4bkV0UUo5eTBCdy1UUDBTNGtTVlYwLXlaTTJjakI4QzhKbG5Oa2YxSVp6WDVBeGUyX1E0bHlvNjRtaUVrb0JPOGhKQ1lDN1VtUzEwNVR4WTdHcm1n?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jan 17, 2024 &middot; 19:33 UTC</time>
+            <span class="feed-source">Kaptur House.gov</span>
+          </div>
+          <p class="feed-summary">Kaptur releases her priorities for the 2024 legislative session.</p>
+          <p class="feed-analysis">Provides insight into her policy focus areas ahead of the new Congress.</p>
+          <a class="feed-link" href="http://kaptur.house.gov/priorities/2024-survey" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Oct 24, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Rep. Marcy Kaptur suggests the GOP remove restrictions on a speakerless House.</p>
+          <p class="feed-analysis">Highlights her willingness to challenge party norms and potentially impact legislative procedures.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPTXo1cTJLYXNFMkhvdEhBVkVRdW9LTkJwam5JRkdZQlBUcU8xV3VtRGUzUHhscjktNzlMWUI2UVFkWGFfaDNlbWxvRUdtc09uYTZqZXpXOVo1aXNkaVZxeUVERll4QjFDUzcyY2lSNk5rb3dSY1hBWF9valZWVC1YanpoNWRIOWVpZFdILVNiN21SVldmdV9zd0R5YmE?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jun 22, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur delivers a statement on the 2024 Energy and Water Development funding bill.</p>
+          <p class="feed-analysis">Highlights her role as Ranking Member in shaping federal spending priorities.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQb0hKZDVOdmEyZ1c0VGZHejF1dm12QjVqV2RwUWxPZG82RDBmbXdxaFptMlhfMTdtVjFJb2ZfbVNQLXV0aVltbk5Bb1dQbm1ZZjFIQS14dTVHUXdzX1VieDZ5TWYzcE1LdGVmUVFEODJvVXpfU3d2MEs4eTFIbDVXX09yTkFmMkllZWNEbFYzT1dYdVJYclpVR09reWQxQkVodmZWelFEalRvSmJ3RkwyQ0dQdWpCXy03RWtoWjNYcnU0NUpwM3FQaDlwd09mYmcyMDY0UWZQZ2dMQQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Apr 11, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Rep. Marcy Kaptur reflects on her 40-year tenure in Congress.</p>
+          <p class="feed-analysis">Highlights her enduring commitment to public service, despite changing times and party dynamics.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNMjUtZ1VBZVRwUTBJZTQ3akVLcHU3YWFZclZoUEZQb2c4NFBaRlJnS1RPS1VmN2VUN1V2UmVFV0RkQ3VtcWNFeThaZEFTVU0wNU1YbHBRWVFweDFNNUlEdlpDampweEdWTHk2ZUVPUTNINnYwNjUyMFVvb1REaDRhUnhKYnVqTW4ta1BoZEhIYllHdmpEZ3R0bw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-media">Media</span>
+            <time class="feed-time">Jan 02, 2023 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Marcy Kaptur defends the heartland in a recent interview.</p>
+          <p class="feed-analysis">Provides insight into her perspective on regional issues, potentially influencing public opinion.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQS0tmOHZpcGVTQUNEdEg1RlFKWklYQ29qdldJUUw5bFFFQVQtNFJlb3BURS1haDF6M3k2cVhkalIzOTJTYWM1N3JHa3BVamItTkNjWWJ4NTl4MVJkNFBQaXI3Sm5QZGdLQUIydEx4RnJHYmVDS3p1SHVnelJzQ0VuUUZjWDRZbHpvV1JhRU5QQlp2Rm5tVTk2NGhBOWtfTFZPblJBNHljUi1ialQyZmdTUFVXcVJrTjZkR2c?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Jul 16, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur chairs a committee markup on the FY 2022 energy and water development funding bill.</p>
+          <p class="feed-analysis">Highlights her leadership role in shaping federal spending priorities for energy and water projects.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxOX2lnSUtteUlMbUg2SGZMS2dEUmpubDEwVlo2N3RORGQ0RUN2em94OTREZEpnZUdBcGRxb0JvcGtSNGM1bV95U1hTdVBKZFlIcnRkVGxYZVB2MmlXb0xhVXlEVGd6SVoxcm9kUHh5dlpNY0JtRGE4eWFwSkNoenh5Z3VpRzRGUUxwVGh1alhYQTZ3cXRqUmk2TGc4LUVrTkgxTkZLUkRQTldjdEVlTjNwOUhEUU5fVDFLdDB1cUNtRlBEdkZnQms4cXRhd1d1akNmVTdiTFM4WDdrdw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">May 14, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur introduces legislation promoting economic justice and youth employment.</p>
+          <p class="feed-analysis">Highlights her commitment to addressing income inequality and supporting young workers in the district.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYzI4cThQLWRYbWlIWjEzOVp3Z2pLanhFdWVSYWtEUUd6blN5bTNrbDM1NU1EcFB4bmp0TjB4TUtEXzYzQ28wc29tVzdfVU9BOFZQSWRnNkVJSDQydEUyZWpWcDNOdklIajMxVGFFYlZtTGxmbFdDVVRiZzBEekdNSURra2k0Um1pTXo4dTJkSlNkSTBZZUJjTmI2RENPeklkMURBUkY5VjZvSktUTUtTT1piMzNoNGFvc1N4UENBdmJiR09ZZXJnUXVmRFdHdDJGeFZTZVZIa2FIZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Apr 15, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur bill</span>
+          </div>
+          <p class="feed-summary">Kaptur co-sponsors postal banking pilot program legislation.</p>
+          <p class="feed-analysis">Highlights her support for progressive economic policies and potential to impact low-income communities.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMioAJBVV95cUxPQzlPcFV4YnNaWWtxVXE5SzAzV21yUU1vWUE0LTN1eEVJd0VoVEQwOTBtU2VCai1HSWdXNkRVTnBNRDJQNEl1SklHc1dHM3JKRU1SejZNV0ttNEtqb3Ixb3RGdFBVa19PaHBWV3pES1VxRUZlSVJVV1VzaTBCc3E5Vlo5cjdueDRlbHJhVXpZLXVwWlNyMGt1ejYzcmRIRnlDSFR3OUxDTXFtTjNVYk4xZUY2VVowckZFMGZiM0p5YjNwdl9GTHRYTzF3d003cUt6MnBKYnYtWDlpNnFENk5GVzdKNTNMam12Y3l4Z3pHWHJtNFNRMWhpZm1wUXVDZUJMSVhlV0MwajE0MjJIMG1YU1NKa01GWmFsYmQ0ZDN1Tkc?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Dec 03, 2020 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">Kaptur withdraws her candidacy for Appropriations chairmanship.</p>
+          <p class="feed-analysis">Her decision may impact the committee&#x27;s leadership and priorities, potentially affecting Ohio&#x27;s federal funding allocations.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQWktTSF85Um5lZHRodW9kajVXdllDdFFkLXlGeVVoTzUxWHIwVG91dC1idGpCVVl5NzRoNFZUWnd2ZnVBcXhEZFRDZHgxZEJCUE1oakJOMUVKQkFVUjhSYXl2ajEwWGJTSF82aFUycEFhSGxIZGs4cG1yY3FYc0ZfR1Q2TVBIV1lXTThwRy1VWm1kSXhhMzlMRVYtTm1KZVo1YWtqY1dTRTN6c2J6NXY2d053dXFvZw?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Oct 26, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur is seeking the chair of the Appropriations Committee.</p>
+          <p class="feed-analysis">Her bid for committee leadership could impact her influence on federal spending and budget decisions.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNRFZxOHJTa2ZKSUxKcDFfc2xEMWNoX3RWQS1mWl96b21YNlF0RkFHMXBJVUt4TjFqc0psX2xGVU91S2FEODhtWGNDMS1JaURiV0F4eHVSM01YLVY3eHFHdjNqZU9GQmpyODVJTXBIUGZZY0NBRU5abi1MUnUyekVrbnFVeDRFNkU?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Sep 12, 2019 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur now supports an impeachment inquiry.</p>
+          <p class="feed-analysis">Shift in her stance on impeachment inquiry may impact her party&#x27;s position and future legislative actions.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNZEsteDMtemdNWDktejIyOXFBVTRhZXgtOVp2WDdBeGx2MWdKeVB0NWEwWGtGLVB5OHk1N1B0emNmZk91cEJGNzBBV1B5ZUk0d08xLW1UVjM3QTBYWlJCeUN1azJmX1E5QUJWYlVZOUIxMzl5US1PWmxDRUdwUFdsSTFmS3hia0JWY2lYZHVrNHpyQ2YwbTZjTlpTWnF6a0NHTmdn?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Mar 14, 2018 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Marcy Kaptur will soon surpass a record for longest-serving female House member.</p>
+          <p class="feed-analysis">This milestone highlights her enduring presence in Congress, underscoring her commitment to public service.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaml2QlVGSzk2WllmNVVCS3dvNHJzUy00ZUdjdzJwUjROdy1sdkUyb0VSZnM5RkU3VkJISHc5WG1oV2lqcS1YLW9uZ2JkVkFZdkhDRU44aEYyWHg1ZFBlX0dMeWE5eXFhTU1idjh3amFxalJBQW83MGlaTFhObGFyTmJscDZXT05ST0FTT2hSa2R0T0I1YV9zT0VTM3RZOHpWbF9Ra1JNcVNWbWpabFN2RjE4d2lqQnd1VXd0Z1YxcnBzaENBTVg2TGJoVjBkQXhEVmVsWjhFaTZzeTRYdXc4aHFxdXQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="LEGISLATION">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-legislation">Legislation</span>
+            <time class="feed-time">Mar 14, 2018 &middot; 07:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur becomes the longest-serving woman in U.S. House history.</p>
+          <p class="feed-analysis">Breaks a significant record, underscoring her long tenure and experience in Congress.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQQm1RYVF0YWdBdFJYOGJYNTBiSWRILS1iQjdINkJLRjM3S0otZUtXUmtac2xYLWxGV2dfUlljSGFMZ2R2VE1wRXNkWVJaVWhKdlNnM3NyRzFsclhYWFA5bi1mNXdIN3FaN1ZmRE5tdVkwLWpZTUU3VHNBNWhJMmp4cmdadkY0dko1WV9mSVl2ajBrdW1MTFp1dWt0SDU?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Feb 26, 2015 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur made a statement about the NNSA weapons program.</p>
+          <p class="feed-analysis">Provides insight into her views on national security and defense spending, reflecting her committee work.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOLUZ1V01mQjd4MGpfdXZBcjN6bVFNODlaWGx1WXpUUWZrdUpjRHpTLW04bTZnWWRPa09hU0h0MXlhMUN0S2RXZTBHZTZMTlJPdXNIVVgwV1U0Wm5iUDRSZ050ZWljNko5ZjNIYWlRZDNpT1AwUHFTeDJoaHJOQkgwcjJ2REtmdlFwaU56dzlEdjVJNXBlR2FUSEJNeV9NR1daS1VLV3J3?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Feb 26, 2013 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur issues a statement on nuclear non-proliferation and naval reactors.</p>
+          <p class="feed-analysis">Highlights her committee work on national security and defense issues.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxPYkZ0bVE3MWFpTjB3T0NiQTJZbmVJRFNVS3VEdmFwVFY0bG1GQlBEQjlVcS12UmtmbHMyNWNST0FIRW5ad1Q4Vi1Rd3ZJQ2x4Ui16dFVfVVdXUmpjbVZMTkpHbm1iSGIxMFlLMWphb1R0N3pIa0ZNUjBaQTJOTDVnSmZJOUJGbXczOEdoMjNmQkhnSXBoWDR4SkdlQWRtSklBaUJkODNfcHlYZ2o5T3lhaTdILTNPZTZxTUFuWE1QcC0xYmk4Wlh2bE5vWQ?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="COMMITTEE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-committee">Committee</span>
+            <time class="feed-time">Nov 28, 2012 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur committee</span>
+          </div>
+          <p class="feed-summary">Kaptur and Lowey are competing for the Appropriations Ranking Member position.</p>
+          <p class="feed-analysis">This internal party competition highlights the importance of committee leadership in shaping federal spending priorities.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQQmszZm4wc0VhdWJKbEtGTXhnZnc5N3gwdENmQ2xmUk5KNXpJRlNzam45OEZxU1lkRXBKYlp6ekQxVDFLWFlCZHVvMHo4YzFZa0pVVW1IVnZqOWh1MHVjcTJBNWVqSUZHVGQyRGdmUUROaVBibFR2Qk03VzdXT2w1T3J0NWhjempLM1FvWVkxcjJtRUFU?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+
+        <li class="feed-item" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Mar 07, 2012 &middot; 08:00 UTC</time>
+            <span class="feed-source">GNews: Kaptur Toledo</span>
+          </div>
+          <p class="feed-summary">The Ohio primary election is taking place in the 9th Congressional District.</p>
+          <p class="feed-analysis">This article appears to be a general news item about an upcoming election, without any specific information about Representative Kaptur&#x27;s campaign or activities.</p>
+          <a class="feed-link" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQTGlVeXhzWFpkbUM1VXczNzBMa0VUYURGd0UxaEZpZVotVjhaZk1UUUFwMUp5UFdXS2x5UWppUDZpTm5zQUFxSC1kcFFSS0Fwd1hQM2ItcXdRWmUxQzk2SG5RSl9ZZjJpdXo5NnJiYUM5VTFJTXlZa28wY1dDWW1ucg?oc=5" target="_blank" rel="noopener noreferrer">Read source &#8599;</a>
+        </li>
+    </ul>
+  </section>
+
+  <footer class="colophon">
+    <p>KapturFlow tracks public reporting on Rep. Marcy Kaptur (D&ndash;OH-9) from wire, local, and official sources. Summaries, analysis, and talking points are generated by a local language model.</p>
+    <p><strong>Verify before you repeat anything, especially talking points:</strong> the model can and does state specific numbers, dates, or vote outcomes that are not actually in the source reporting. Treat every figure here as unverified until you've checked the linked source.</p>
+  </footer>
+</div>

@@ -1,9 +1,8 @@
 """
-MediaFlow dashboard — Iran/Hormuz crisis monitor.
+KapturFlow dashboard — Rep. Marcy Kaptur (D-OH-9) live news monitor.
 Run with: streamlit run mediaflow_app.py
 """
 
-import base64
 import json
 import os
 import threading
@@ -13,32 +12,33 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import streamlit as st
-from breaking_news_view import render_breaking_news
-from eia_terminal import render_terminal
-from mediaflow_chat import render_chat
 
 HERE            = Path(__file__).parent
 DATA_DIR        = Path(os.environ.get("DATA_DIR", HERE))
 CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
 ITEMS_FILE      = DATA_DIR / "mediaflow_items.json"
+DIGEST_FILE     = DATA_DIR / "mediaflow_digest.json"
 LOCK_FILE       = DATA_DIR / ".collect_lock"
 
-AUTO_COLLECT_INTERVAL_SECONDS = 300  # 5 minutes
+DIGEST_WINDOWS = [(7, "Last 7 days"), (30, "Last 30 days")]
+
+AUTO_COLLECT_INTERVAL_SECONDS = 300     # 5 minutes
+AUTO_DIGEST_INTERVAL_SECONDS  = 3600    # 1 hour — digest generation is heavier than classification
 
 ARC_COLOR = {
-    "KINETIC":        "#c0392b",
-    "DIPLOMATIC":     "#2980b9",
-    "STRAIT_SHIPPING":"#d35400",
-    "MARKET":         "#27ae60",
-    "IEA_SUPPLY":     "#8e44ad",
+    "LEGISLATION": "#2980b9",
+    "COMMITTEE":   "#8e44ad",
+    "DISTRICT":    "#27ae60",
+    "CAMPAIGN":    "#c0392b",
+    "MEDIA":       "#d35400",
 }
 
 ARC_LABEL = {
-    "KINETIC":        "Kinetic",
-    "DIPLOMATIC":     "Diplomatic",
-    "STRAIT_SHIPPING":"Maritime",
-    "MARKET":         "Financial",
-    "IEA_SUPPLY":     "Physical Supply",
+    "LEGISLATION": "Legislation",
+    "COMMITTEE":   "Committee",
+    "DISTRICT":    "District",
+    "CAMPAIGN":    "Campaign",
+    "MEDIA":       "Media",
 }
 
 
@@ -71,58 +71,6 @@ def fmt_dt_utc(s: str) -> tuple[str, str]:
 
 
 DISPLAY_RELOAD_INTERVAL_MS = 2 * 60 * 1000  # 2 minutes
-
-
-def inject_hotkey_listener() -> None:
-    """Bind T key → click the terminal button.
-
-    Called every time the newscenter renders. Uses stored references on the
-    parent document to replace (not accumulate) the listener and MutationObserver
-    each run. Boolean guards caused the bug: when entering terminal mode the
-    hotkey iframe is destroyed, killing its MutationObserver; on return the
-    guards prevented re-setup, so new Streamlit iframes never got the handler.
-    """
-    st.iframe(
-        """
-        <script>
-        (function() {
-            var doc = window.parent.document;
-
-            function fireTerminal(e) {
-                if (e.key !== 't' && e.key !== 'T') return;
-                if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
-                if (e.ctrlKey || e.metaKey || e.altKey) return;
-                var btn = doc.querySelector('.st-key-goto_terminal button');
-                if (btn) btn.click();
-            }
-
-            // Replace parent listener — always use the freshest closure.
-            if (doc.__hotkey_fn__) doc.removeEventListener('keydown', doc.__hotkey_fn__);
-            doc.__hotkey_fn__ = fireTerminal;
-            doc.addEventListener('keydown', fireTerminal);
-
-            // Attach to all current Streamlit iframes.
-            function attachToIframes() {
-                doc.querySelectorAll('iframe').forEach(function(f) {
-                    try {
-                        if (!f.__hotkey_t__) {
-                            f.__hotkey_t__ = true;
-                            f.contentDocument.addEventListener('keydown', fireTerminal);
-                        }
-                    } catch (ignore) {}
-                });
-            }
-            attachToIframes();
-
-            // Replace MutationObserver — the old one dies with its iframe.
-            if (doc.__hotkey_obs__) { try { doc.__hotkey_obs__.disconnect(); } catch(_) {} }
-            doc.__hotkey_obs__ = new MutationObserver(attachToIframes);
-            doc.__hotkey_obs__.observe(doc.body, { childList: true, subtree: true });
-        })();
-        </script>
-        """,
-        height=1,
-    )
 
 
 def inject_tz_converter() -> None:
@@ -191,6 +139,7 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
     ts_display, ts_iso = fmt_dt_utc(item.get("published", ""))
     source   = item.get("source", "")
     summary  = item.get("arc_summary") or item.get("title", "")
+    analysis = item.get("arc_analysis") or ""
     link     = item.get("link", "#")
 
     arc_tag = ""
@@ -203,16 +152,100 @@ def render_item(item: dict, show_arc_tag: bool = False) -> None:
         if conflict else ""
     )
 
+    analysis_html = (
+        f'<br><span class="analysis-text" style="color:#666;font-size:0.9em;font-style:italic">{analysis}</span>'
+        if analysis else ""
+    )
+
     ts_attr = f'data-utc="{ts_iso}"' if ts_iso else ""
 
     st.markdown(
         f"""<div style="border-left:3px solid {color};padding:7px 12px;margin-bottom:10px;">
 {arc_tag}<span class="meta-text" style="color:#999;font-size:0.72em"><span {ts_attr}>{ts_display}</span> &nbsp;·&nbsp; {source}</span><br>
-{conflict_mark}<span class="main-text">{summary}</span><br>
+{conflict_mark}<span class="main-text">{summary}</span>{analysis_html}<br>
 <a href="{link}" target="_blank" class="meta-text" style="font-size:0.72em;color:#999;text-decoration:none">→ source</a>
 </div>""",
         unsafe_allow_html=True,
     )
+
+
+def load_digests() -> dict:
+    if not DIGEST_FILE.exists():
+        return {}
+    return json.loads(DIGEST_FILE.read_text(encoding="utf-8"))
+
+
+def render_digest_window(digest: dict) -> None:
+    arc_keys = list(ARC_LABEL.keys())
+
+    if not digest or not digest.get("arcs"):
+        st.caption("No digest yet for this window. Click 'Generate digest' to build one.")
+        return
+    if digest.get("error"):
+        st.error(digest["error"])
+        return
+
+    gen_dt, gen_iso = fmt_dt_utc(digest.get("generated_at", ""))
+    window_days = digest.get("window_days", 7)
+    period = "past week" if window_days <= 7 else f"past {window_days} days"
+    st.markdown(
+        f'<span class="meta-text" style="color:#999;font-size:0.72em">'
+        f'generated <span data-utc="{gen_iso}">{gen_dt}</span> &nbsp;·&nbsp; {period}</span>',
+        unsafe_allow_html=True,
+    )
+    for arc in arc_keys:
+        entry = digest["arcs"].get(arc)
+        if not entry:
+            continue
+        color = ARC_COLOR.get(arc, "#999")
+        label = ARC_LABEL.get(arc, arc)
+        summary = entry.get("critical_summary", "")
+        analysis = entry.get("analysis", "")
+        count = entry.get("item_count", 0)
+        analysis_html = (
+            f'<div class="analysis-text" style="color:#666;font-size:0.92em;font-style:italic;margin-top:4px">{analysis}</div>'
+            if analysis else ""
+        )
+        points = entry.get("talking_points") or []
+        points_html = ""
+        if points:
+            items_html = "".join(f"<li>{p}</li>" for p in points)
+            points_html = (
+                f'<div style="margin-top:8px">'
+                f'<span class="meta-text" style="color:#999;font-size:0.68em;text-transform:uppercase;letter-spacing:0.04em">Talking points</span>'
+                f'<ul style="margin:4px 0 0 0;padding-left:1.2em">{items_html}</ul>'
+                f'</div>'
+            )
+        st.markdown(
+            f"""<div style="border-left:3px solid {color};padding:8px 14px;margin-bottom:14px;">
+<span class="arc-label" style="font-size:0.85em;color:{color};font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{label}</span>
+<span class="meta-text" style="color:#999;font-size:0.72em">&nbsp;·&nbsp; {count} items</span>
+<div class="main-text" style="margin-top:4px">{summary}</div>
+{analysis_html}
+{points_html}
+</div>""",
+            unsafe_allow_html=True,
+        )
+
+
+def render_weekly_digest() -> None:
+    digests = load_digests()
+
+    with st.expander("Digest — critical summary & analysis by category", expanded=True):
+        st.caption(
+            "⚠️ Generated by a local language model. Talking points in particular can state "
+            "specific numbers, dates, or vote outcomes not actually present in the source "
+            "reporting — verify against the linked source before repeating anything."
+        )
+        tabs = st.tabs([label for _, label in DIGEST_WINDOWS])
+        for tab, (window_days, _) in zip(tabs, DIGEST_WINDOWS):
+            with tab:
+                render_digest_window(digests.get(str(window_days), {}))
+
+        if st.button("Generate digest", key="gen_digest"):
+            with st.spinner("Analyzing recent coverage…"):
+                run_digest()
+            st.rerun()
 
 
 # ── pipeline triggers ─────────────────────────────────────────────────────────
@@ -227,12 +260,18 @@ def run_classify() -> int:
     return mediaflow_classify.run()
 
 
+def run_digest() -> dict:
+    import weekly_digest
+    return weekly_digest.generate()
+
+
 _collect_last: float = 0.0
+_digest_last: float = 0.0
 _collect_lock = threading.Lock()
 
 
 def _collect_loop() -> None:
-    global _collect_last
+    global _collect_last, _digest_last
     # collect immediately on startup, then on interval
     while True:
         if LOCK_FILE.exists():
@@ -243,6 +282,9 @@ def _collect_loop() -> None:
             run_collect()
             run_classify()
             _collect_last = time.time()
+            if time.time() - _digest_last >= AUTO_DIGEST_INTERVAL_SECONDS:
+                run_digest()
+                _digest_last = time.time()
         except Exception as e:
             print(f"[collector] error: {e}")
         finally:
@@ -306,24 +348,12 @@ def live_feed() -> None:
 
 def main() -> None:
     st.set_page_config(
-        page_title="MediaFlow: the Iran-Hormuz Crisis",
+        page_title="KapturFlow: Rep. Marcy Kaptur (OH-9)",
         layout="wide",
         initial_sidebar_state="expanded",
     )
 
     start_background_collector()
-
-    if st.session_state.get("mode") == "terminal":
-        render_terminal()
-        return
-
-    if st.session_state.get("mode") == "chat":
-        render_chat()
-        return
-
-    if st.session_state.get("mode") == "breaking_news":
-        render_breaking_news()
-        return
 
     # Rendered once per full page load — MutationObserver stays alive
     # for the entire session, converting timestamps as the fragment adds them.
@@ -373,9 +403,9 @@ def main() -> None:
 
     col1, col2 = st.columns([7.8, 1.775])
     with col1:
-        img_b64 = base64.b64encode((HERE / "55cb4ced-c8a8-4188-9ff7-376c5a52935b.png").read_bytes()).decode()
         st.markdown(
-            f'<img src="data:image/png;base64,{img_b64}" style="width:100%;display:block;">',
+            "<h2 style='margin:0'>KapturFlow</h2>"
+            "<div style='color:#999;font-size:0.9em'>Rep. Marcy Kaptur &middot; Ohio's 9th District</div>",
             unsafe_allow_html=True,
         )
     with col2:
@@ -389,25 +419,11 @@ def main() -> None:
                 classified = run_classify()
             st.toast(f"{classified} new items classified.")
             st.rerun()
-        ba, bb, bc, bd = st.columns(4)
-        with ba:
-            if st.button("⊹", key="goto_terminal", help="Terminal  [T]", use_container_width=True):
-                st.session_state.mode = "terminal"
-                st.rerun()
-        with bb:
-            if st.button("✦", key="goto_chat", help="Agent", use_container_width=True):
-                st.session_state.mode = "chat"
-                st.rerun()
-        with bc:
-            if st.button("⚡", key="goto_breaking_news", help="Breaking News", use_container_width=True):
-                st.session_state.mode = "breaking_news"
-                st.session_state.pop("bn_last_fetch", None)  # force fresh fetch on entry
-                st.rerun()
-        with bd:
-            st.button("□", key="dash_d", use_container_width=True)
+
+    # ── weekly digest ─────────────────────────────────────────────────────────
+    render_weekly_digest()
 
     # ── live feed ─────────────────────────────────────────────────────────────
-    inject_hotkey_listener()
     live_feed()
 
 

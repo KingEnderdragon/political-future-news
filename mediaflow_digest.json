@@ -1,0 +1,109 @@
+{
+  "7": {
+    "generated_at": "2026-07-14T02:53:51Z",
+    "window_start": "2026-07-07T02:53:51Z",
+    "window_end": "2026-07-14T02:53:51Z",
+    "window_days": 7,
+    "arcs": {
+      "LEGISLATION": {
+        "item_count": 1,
+        "critical_summary": "Representative Marcy Kaptur and Senator Murray are actively working to reverse a proposed rule that would politicize Department of Energy (DOE) grants, with their joint effort aimed at rescinding the measure through an Office of Management and Budget (OMB) review.",
+        "analysis": "This development reflects growing bipartisan concern over the politicization of federal funding, highlighting potential tensions within the administration on issues of grant management. Kaptur's involvement underscores her commitment to protecting district interests in DOE programs.",
+        "talking_points": [
+          "Kaptur and Senator Murray urge OMB to rescind proposed rule",
+          "Politicization of DOE grants sparks bipartisan concern",
+          "OMB review underway"
+        ]
+      },
+      "COMMITTEE": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "DISTRICT": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "CAMPAIGN": {
+        "item_count": 1,
+        "critical_summary": "The New York Times has published new polls showing the current state of the 2026 Ohio 9th Congressional District election, providing insight into voter sentiment and potential candidate positioning.",
+        "analysis": "These polls signal a competitive landscape for Rep. Kaptur's reelection bid, with voters' opinions on key issues likely to influence her campaign strategy. The data may also prompt her opponents to reassess their chances of victory.",
+        "talking_points": [
+          "New York Times publishes latest Ohio 9th Congressional District election polls",
+          "Polls show competitive landscape for Rep. Kaptur's reelection bid in 2026",
+          "Voter sentiment on key issues will likely influence Rep. Kaptur's campaign strategy"
+        ]
+      },
+      "MEDIA": {
+        "item_count": 1,
+        "critical_summary": "Kaptur and Senator Murray are currently urging the Office of Management and Budget (OMB) to withdraw a proposed federal grants rule, which has sparked controversy among lawmakers.",
+        "analysis": "This development highlights Kaptur's ongoing efforts to protect federal funding for her district, particularly in the face of potential changes to grant programs. The move also underscores tensions between lawmakers and the OMB over regulatory policies.",
+        "talking_points": [
+          "Kaptur and Senator Murray are urging OMB to withdraw a proposed federal grants rule",
+          "The proposed rule has sparked controversy among lawmakers",
+          "Kaptur is working to protect federal funding for her district"
+        ]
+      }
+    }
+  },
+  "30": {
+    "generated_at": "2026-07-14T02:54:07Z",
+    "window_start": "2026-06-14T02:54:07Z",
+    "window_end": "2026-07-14T02:54:07Z",
+    "window_days": 30,
+    "arcs": {
+      "LEGISLATION": {
+        "item_count": 5,
+        "critical_summary": "Rep. Marcy Kaptur has been actively engaged in legislative efforts, introducing and co-sponsoring bills related to unmanned systems partnerships, particularly with Ukraine. She also made a floor statement about the Declaration of Independence. Additionally, she and Senator Murray have urged the OMB to rescind a proposed rule that politicizes DOE grants.",
+        "analysis": "These actions demonstrate Kaptur's commitment to advancing drone technology and international cooperation, which may appeal to her district's interests in defense and innovation. The bipartisan nature of some bills suggests she is willing to work across party lines on key issues. However, the OMB proposal controversy highlights potential tensions between federal agencies and Congress.",
+        "talking_points": [
+          "Kaptur introduces Strategic Unmanned Systems Partnership Act",
+          "Kaptur co-sponsors bill with Ukraine on unmanned systems partnership",
+          "Kaptur makes floor statement about Declaration of Independence",
+          "Kaptur urges OMB to rescind proposed rule on DOE grants"
+        ]
+      },
+      "COMMITTEE": {
+        "item_count": 0,
+        "critical_summary": "No items in the past 30 days.",
+        "analysis": "",
+        "talking_points": []
+      },
+      "DISTRICT": {
+        "item_count": 5,
+        "critical_summary": "Rep. Marcy Kaptur has been securing significant federal funding for various projects in her district, including airports, harbors, and a lead program in Toledo. She also discussed a Ukrainian drone facility in Lucas County. These developments demonstrate her efforts to bring resources back to the region.",
+        "analysis": "These recent developments highlight Rep. Kaptur's ability to secure substantial federal funding for local projects, which is crucial for her district's economic growth and development. This trend suggests that she is well-positioned to continue bringing in resources for her constituents. However, the discussion on the Ukrainian drone facility may also indicate some level of concern or scrutiny from her party or constituents.",
+        "talking_points": [
+          "Kaptur secures $7.19M in federal funding for Northwest Ohio airports",
+          "Rep. Kaptur discusses a Ukrainian drone facility in Lucas County",
+          "$17.6 million in federal funding secured for northwest Ohio harbor dredging",
+          "Kaptur announces funding for a new lead program in Toledo with no specific dollar amount"
+        ]
+      },
+      "CAMPAIGN": {
+        "item_count": 3,
+        "critical_summary": "Rep. Marcy Kaptur (D-Ohio, 9th District) has been facing recent scrutiny over her voting record on LGBTQ+ issues, with criticism emerging from various quarters. Meanwhile, the latest polls for the 2026 election have been published by The New York Times, providing insight into the district's electoral landscape. Additionally, Kaptur's presence in the race is being cited as a reason for increased canvassing efforts in Ohio.",
+        "analysis": "The recent criticism of Kaptur's anti-trans vote highlights ongoing tensions within her party and potentially vulnerable constituents. The publication of new polls underscores the competitive nature of the district, which may impact Kaptur's reelection strategy. As a result, she may need to navigate these challenges while also engaging with voters on key issues.",
+        "talking_points": [
+          "Kaptur faces criticism for her anti-trans vote.",
+          "The New York Times publishes latest polls for the Ohio 9th Congressional District election in 2026.",
+          "Kaptur is mentioned as a reason for canvassing efforts in Ohio."
+        ]
+      },
+      "MEDIA": {
+        "item_count": 4,
+        "critical_summary": "Rep. Marcy Kaptur has been actively involved in federal policy, urging withdrawal of a proposed rule and opposing border security measures. She also secured over $1M in research grants for the University of Toledo. Additionally, her consideration of voting for Kevin McCarthy as Speaker was reported.",
+        "analysis": "These events highlight Rep. Kaptur's continued focus on federal policy and her willingness to challenge party lines, particularly on border security. Her efforts to secure funding for local institutions demonstrate her commitment to district interests. The report about her consideration of voting for McCarthy may signal tension within the Democratic Party or a desire for bipartisan cooperation.",
+        "talking_points": [
+          "Kaptur urges OMB to withdraw proposed federal grants rule",
+          "Rep. Kaptur votes against border security measures",
+          "$1M in research grants announced for University of Toledo",
+          "Book reports Rep. Kaptur considered voting for Kevin McCarthy as Speaker"
+        ]
+      }
+    }
+  }
+}

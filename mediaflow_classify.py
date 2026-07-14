@@ -1,7 +1,7 @@
 """
-MediaFlow classifier: assigns arc, short summary, and conflict flag to each
-collected item via the Anthropic API. Runs incrementally and only sends
-unclassified items to the model.
+KapturFlow classifier: assigns arc, factual summary, and short analysis to
+each collected item via a local Ollama model. Runs incrementally and only
+sends unclassified items to the model. No external API calls or keys.
 """
 
 import json
@@ -11,74 +11,87 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-import anthropic
+import requests
 
 HERE = Path(__file__).parent
 DATA_DIR = Path(os.environ.get("DATA_DIR", HERE))
 ITEMS_FILE = DATA_DIR / "mediaflow_items.json"
 CLASSIFIED_FILE = DATA_DIR / "mediaflow_classified.json"
-KEYS_FILE = Path(r"C:\Users\Owen\.claude\keys.env")
 
-BATCH_SIZE = 30
-MAX_CONCURRENT_BATCHES = 4
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.1:8b")
+
+# llama3.1:8b reliably classifies one item at a time but silently drops all
+# but the first item when given a batch, even with array-output instructions
+# and format=json enforcement. One item per request is the reliable mode; a
+# local Ollama server largely serializes requests against one model anyway
+# so a little request-level concurrency just overlaps network/JSON overhead.
+BATCH_SIZE = 1
+MAX_CONCURRENT_BATCHES = 3
 MAX_RETRIES = 2
+REQUEST_TIMEOUT = 120
 
 ARCS = [
-    "KINETIC",
-    "DIPLOMATIC",
-    "STRAIT_SHIPPING",
-    "MARKET",
-    "IEA_SUPPLY",
+    "LEGISLATION",
+    "COMMITTEE",
+    "DISTRICT",
+    "CAMPAIGN",
+    "MEDIA",
     "UNMAPPED",
 ]
 
 
-def load_api_key() -> str:
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return os.environ["ANTHROPIC_API_KEY"].strip()
-    if KEYS_FILE.exists():
-        for line in KEYS_FILE.read_text(encoding="utf-8").splitlines():
-            if line.startswith("ANTHROPIC_API_KEY"):
-                return line.split("=", 1)[1].strip()
-    raise ValueError("ANTHROPIC_API_KEY not found in environment or keys.env")
-
-
 def build_system_prompt(arcs: list[str] = ARCS) -> str:
     arc_str = " | ".join(arcs)
-    return f"""Classify news articles about the Iran/Hormuz oil crisis.
+    return f"""Classify one news article about US Representative Marcy Kaptur (D-Ohio, 9th District, Toledo).
 
-Input: JSON array. Each item has id, source, title, summary.
-Output: JSON array, same order. Each item has:
+Input: a JSON object with id, source, title, summary.
+Output: a single JSON object with exactly these keys:
   id       - same as input
   arc      - one of: {arc_str}
-  summary  - one sentence, <=100 chars, present tense, factual
+  summary  - one sentence, <=100 chars, present tense, factual, written in your own words (not copied from the title)
+  analysis - one sentence, <=140 chars, explains why it matters (political significance, district impact, or context) — not a restatement of the summary
   conflict - true if the item reports a denial or contradictory claim, else false
 
-Use UNMAPPED only when the article is unrelated noise or cannot be assigned
-to the crisis arcs. Never return null values.
+Arc guide:
+  LEGISLATION - bills she sponsors/cosponsors, floor votes, floor statements
+  COMMITTEE   - her committee/subcommittee work (e.g. Appropriations), hearings, oversight
+  DISTRICT    - local Ohio 9th District news, events, federal funding/projects for the district
+  CAMPAIGN    - her campaign, elections, opponents, endorsements, fundraising
+  MEDIA       - interviews, op-eds, press statements not tied to a specific bill or hearing
+Use UNMAPPED only when the article is unrelated noise or cannot be assigned to any arc above.
+Never omit a key or return null. Output ONLY the JSON object, no other text.
 
 Example:
-Input:  [{{"id":"x1","source":"IRNA","title":"IRGC warns US destroyers to leave Sea of Oman","summary":"The IRGC issued a formal warning to two US destroyers, threatening military action if they do not withdraw."}}]
-Output: [{{"id":"x1","arc":"KINETIC","summary":"IRGC issues military warning to US destroyers in Sea of Oman.","conflict":false}}]
+Input:  {{"id":"x1","source":"Toledo Blade","title":"Kaptur secures funding for Toledo port dredging","summary":"Rep. Kaptur announced $12M in federal funding for Toledo-Lucas County Port Authority dredging."}}
+Output: {{"id":"x1","arc":"DISTRICT","summary":"Kaptur secures $12M in federal port dredging funds for Toledo.","analysis":"Reinforces her long-standing focus on Great Lakes shipping infrastructure ahead of reelection.","conflict":false}}
 
-Return only the JSON array."""
+Return only the JSON object."""
 
 
 def parse_response(text: str) -> list[dict]:
     text = text.strip()
     text = re.sub(r"^```[a-z]*\n?", "", text)
     text = re.sub(r"\n?```$", "", text)
-    return json.loads(text)
+    data = json.loads(text)
+    if isinstance(data, dict):
+        if "id" in data:
+            return [data]
+        for value in data.values():
+            if isinstance(value, list):
+                return value
+        return []
+    return data
 
 
 def fallback_arc(item: dict, arcs: list[str] = ARCS) -> str:
     text = f"{item.get('source', '')} {item.get('title', '')} {item.get('summary', '')}".lower()
     rules = [
-        ("KINETIC", r"\b(missile|drone|strike|attack|centcom|irgc|airbase|f-35|mq-9|barrage)\b"),
-        ("STRAIT_SHIPPING", r"\b(hormuz|tanker|shipping|vessel|lng|ais|maritime|transit|ship)\b"),
-        ("MARKET", r"\b(brent|wti|oil|crude|futures|price|opec|market|barrel)\b"),
-        ("IEA_SUPPLY", r"\b(iea|eia|inventory|stockpile|spr|supply|production)\b"),
-        ("DIPLOMATIC", r"\b(talks|deal|ministry|minister|diplomat|un |iaea|nuclear|sanction|ceasefire)\b"),
+        ("LEGISLATION", r"\b(bill|act|vote|floor|cosponsor|resolution|amendment)\b"),
+        ("COMMITTEE",   r"\b(committee|subcommittee|hearing|appropriations|oversight|ranking member)\b"),
+        ("CAMPAIGN",    r"\b(campaign|election|primary|opponent|endorse|fundrais|reelect|challenger)\b"),
+        ("DISTRICT",    r"\b(toledo|lucas county|ohio|district|port|shipline|great lakes|grant|funding)\b"),
+        ("MEDIA",       r"\b(interview|op-ed|statement|says|said|press release)\b"),
     ]
     for arc, pattern in rules:
         if arc in arcs and re.search(pattern, text):
@@ -94,6 +107,9 @@ def normalize_result(result: dict, item: dict, arcs: list[str] = ARCS) -> dict:
     summary = result.get("summary") or item.get("title", "")
     summary = re.sub(r"\s+", " ", str(summary)).strip()[:140]
 
+    analysis = result.get("analysis") or ""
+    analysis = re.sub(r"\s+", " ", str(analysis)).strip()[:180]
+
     conflict = result.get("conflict", False)
     if not isinstance(conflict, bool):
         conflict = str(conflict).lower() == "true"
@@ -102,46 +118,50 @@ def normalize_result(result: dict, item: dict, arcs: list[str] = ARCS) -> dict:
         "id": item["id"],
         "arc": arc,
         "summary": summary,
+        "analysis": analysis,
         "conflict": conflict,
     }
 
 
-def classify_batch(
-    client: anthropic.Anthropic,
-    batch: list[dict],
-    arcs: list[str] = ARCS,
-) -> list[dict]:
-    payload = [
-        {
-            "id": item["id"],
-            "source": item["source"],
-            "title": item["title"],
-            "summary": item.get("summary", ""),
-        }
-        for item in batch
-    ]
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=2048,
-        system=build_system_prompt(arcs),
-        messages=[{
-            "role": "user",
-            "content": json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
-        }],
+def ollama_chat(system: str, user_content: str) -> str:
+    response = requests.post(
+        f"{OLLAMA_URL}/api/chat",
+        json={
+            "model": OLLAMA_MODEL,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user_content},
+            ],
+            "format": "json",
+            "stream": False,
+            "options": {"temperature": 0},
+        },
+        timeout=REQUEST_TIMEOUT,
     )
-    return parse_response(response.content[0].text)
+    response.raise_for_status()
+    return response.json()["message"]["content"]
 
 
-def classify_batch_with_retries(
-    api_key: str,
-    batch: list[dict],
-    arcs: list[str] = ARCS,
-) -> list[dict]:
+def classify_batch(batch: list[dict], arcs: list[str] = ARCS) -> list[dict]:
+    item = batch[0]
+    payload = {
+        "id": item["id"],
+        "source": item["source"],
+        "title": item["title"],
+        "summary": item.get("summary", ""),
+    }
+    text = ollama_chat(
+        build_system_prompt(arcs),
+        json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
+    )
+    return parse_response(text)
+
+
+def classify_batch_with_retries(batch: list[dict], arcs: list[str] = ARCS) -> list[dict]:
     last_error: Exception | None = None
-    client = anthropic.Anthropic(api_key=api_key)
     for attempt in range(MAX_RETRIES + 1):
         try:
-            raw_results = classify_batch(client, batch, arcs)
+            raw_results = classify_batch(batch, arcs)
             by_id = {r.get("id"): r for r in raw_results if isinstance(r, dict)}
             return [
                 normalize_result(by_id.get(item["id"], {}), item, arcs)
@@ -168,17 +188,23 @@ def load_classified(items_by_id: dict[str, dict], arcs: list[str]) -> tuple[dict
 
     for c in json.loads(CLASSIFIED_FILE.read_text(encoding="utf-8")):
         item = items_by_id.get(c["id"], c)
-        if c.get("arc") not in arcs or not c.get("arc_summary") or not isinstance(c.get("conflict"), bool):
+        if (
+            c.get("arc") not in arcs
+            or not c.get("arc_summary")
+            or not isinstance(c.get("conflict"), bool)
+        ):
             normalized = normalize_result({
                 "id": c["id"],
                 "arc": c.get("arc"),
                 "summary": c.get("arc_summary") or c.get("summary") or c.get("title"),
+                "analysis": c.get("arc_analysis") or c.get("analysis") or "",
                 "conflict": c.get("conflict", False),
             }, item, arcs)
             c = {
                 **item,
                 "arc": normalized["arc"],
                 "arc_summary": normalized["summary"],
+                "arc_analysis": normalized["analysis"],
                 "conflict": normalized["conflict"],
             }
             repaired += 1
@@ -196,6 +222,18 @@ def write_ordered(items: list[dict], classified_by_id: dict[str, dict]) -> None:
         json.dumps(ordered, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
+
+
+def check_ollama_available() -> str:
+    try:
+        r = requests.get(f"{OLLAMA_URL}/api/tags", timeout=5)
+        r.raise_for_status()
+        models = [m["name"] for m in r.json().get("models", [])]
+        if not any(m.split(":")[0] == OLLAMA_MODEL.split(":")[0] for m in models):
+            return f"Model '{OLLAMA_MODEL}' not found in Ollama. Run: ollama pull {OLLAMA_MODEL}"
+        return ""
+    except Exception as e:
+        return f"Ollama not reachable at {OLLAMA_URL}: {e}"
 
 
 def run(arcs: list[str] = ARCS) -> int:
@@ -216,11 +254,15 @@ def run(arcs: list[str] = ARCS) -> int:
         print(f"All {len(items)} items already classified.")
         return 0
 
+    error = check_ollama_available()
+    if error:
+        print(f"[ERROR] {error}")
+        return 0
+
     print(
         f"Classifying {len(unclassified)} items in batches of {BATCH_SIZE} "
-        f"({MAX_CONCURRENT_BATCHES} concurrent)..."
+        f"({MAX_CONCURRENT_BATCHES} concurrent, model={OLLAMA_MODEL})..."
     )
-    api_key = load_api_key()
     failed = 0
     started = time.perf_counter()
     batches = [
@@ -230,7 +272,7 @@ def run(arcs: list[str] = ARCS) -> int:
 
     with ThreadPoolExecutor(max_workers=MAX_CONCURRENT_BATCHES) as executor:
         futures = {
-            executor.submit(classify_batch_with_retries, api_key, batch, arcs): (n, batch)
+            executor.submit(classify_batch_with_retries, batch, arcs): (n, batch)
             for n, batch in enumerate(batches, start=1)
         }
         total = len(futures)
@@ -250,6 +292,7 @@ def run(arcs: list[str] = ARCS) -> int:
                     **item,
                     "arc": r["arc"],
                     "arc_summary": r["summary"],
+                    "arc_analysis": r["analysis"],
                     "conflict": r["conflict"],
                 }
             print("ok")

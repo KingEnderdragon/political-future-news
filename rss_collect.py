@@ -1,8 +1,8 @@
 """
-MediaFlow RSS collector — run manually or on a scheduler.
-Each run fetches all active feeds, filters for relevance,
-deduplicates against previously seen URLs/article fingerprints, and appends
-new items to the running log.
+KapturFlow RSS collector — run manually or on a scheduler.
+Tracks Rep. Marcy Kaptur (D-OH-9). Each run fetches all active feeds,
+filters for relevance, deduplicates against previously seen URLs/article
+fingerprints, and appends new items to the running log.
 """
 
 import feedparser
@@ -24,94 +24,41 @@ DATA_DIR    = Path(os.environ.get("DATA_DIR", HERE))
 LOG_FILE    = DATA_DIR / "mediaflow_log.txt"
 STATE_FILE  = DATA_DIR / "mediaflow_seen.json"   # persists seen URLs/fingerprints
 ITEMS_FILE  = DATA_DIR / "mediaflow_items.json"  # structured item store for classifier
-KEYS_FILE   = Path(r"C:\Users\Owen\.claude\keys.env")
+KEYS_FILE   = HERE / "keys.env"
 
-# ── active feeds (dead feeds removed after probe) ───────────────────────────
+# ── active feeds ─────────────────────────────────────────────────────────────
 FEEDS = {
-    # Tier 1
-    "Al Jazeera":           "https://www.aljazeera.com/xml/rss/all.xml",
-    "Middle East Eye":      "https://www.middleeasteye.net/rss",
-    "BBC World":            "http://feeds.bbci.co.uk/news/world/rss.xml",
-    "Guardian World":       "https://www.theguardian.com/world/rss",
-    "France24 Middle East": "https://www.france24.com/en/middle-east/rss",
-    # Tier 2 — Iranian state/IRGC framing (full body in feed)
-    "Mehr News":            "https://en.mehrnews.com/rss",
-    # IRNA (en.irna.ir/rss) — removed: confirmed live June 7 but consistently
-    # times out in production (12s read timeout, 0 items ever collected).
-    # Probe again if Mehr News degrades; may need User-Agent spoofing or mirror URL.
-    # Tier 2 — Energy-specific
-    "OilPrice.com":         "https://oilprice.com/rss/main",
-    "EIA Today in Energy":  "https://www.eia.gov/rss/todayinenergy.xml",
-    "EIA Press Releases":   "https://www.eia.gov/rss/press_rss.xml",
-    "Japan PMO":            "https://japan.kantei.go.jp/index-e2.rdf",
-    # Tier 3 — European/analytical
-    "DW World":             "https://rss.dw.com/rdf/rss-en-all",
-    "RFE/RL":               "https://www.rferl.org/api/epiqq",
-    # Tier 3 — Israeli
-    "Times of Israel":      "https://www.timesofisrael.com/feed/",
-    # Gulf/Saudi perspective salvaged after direct Arab News/Gulf News failures
-    "Arab News PK":         "https://www.arabnews.pk/rss.xml",
-    "Gulf Today News":      "https://www.gulftoday.ae/rssFeed/55/",
-    "Gulf Today Business":  "https://www.gulftoday.ae/rssFeed/52/",
-    # Shipping specialists
-    "gCaptain":             "https://gcaptain.com/feed/",
-    "Marine Insight":       "https://www.marineinsight.com/feed/",
+    # Official
+    "Kaptur House.gov":     "https://kaptur.house.gov/rss.xml",
+    # Local Ohio / district press
+    "Toledo Blade":         "https://www.toledoblade.com/rss/",
+    "WTOL 11 Toledo":       "https://www.wtol.com/feeds/syndication/rss/news",
+    "Ohio Capital Journal": "https://ohiocapitaljournal.com/feed/",
+    "Cleveland.com Politics": "https://www.cleveland.com/arc/outboundfeeds/rss/category/politics/",
     # Google News search queries
-    "GNews: iran hormuz":       "https://news.google.com/rss/search?q=iran+hormuz&hl=en-US&gl=US&ceid=US:en",
-    "GNews: iran strait oil":   "https://news.google.com/rss/search?q=iran+strait+oil&hl=en-US&gl=US&ceid=US:en",
-    "GNews: IRGC missile":      "https://news.google.com/rss/search?q=IRGC+missile&hl=en-US&gl=US&ceid=US:en",
-    "GNews: hormuz tanker":     "https://news.google.com/rss/search?q=hormuz+tanker&hl=en-US&gl=US&ceid=US:en",
-    "GNews: iran nuclear deal": "https://news.google.com/rss/search?q=iran+nuclear+deal&hl=en-US&gl=US&ceid=US:en",
-    "GNews: hormuz war risk insurance": "https://news.google.com/rss/search?q=hormuz+war+risk+insurance&hl=en-US&gl=US&ceid=US:en",
-    "GNews: hormuz AIS tanker":         "https://news.google.com/rss/search?q=hormuz+AIS+tanker&hl=en-US&gl=US&ceid=US:en",
-    "GNews: brent wti iran hormuz":     "https://news.google.com/rss/search?q=brent+wti+iran+hormuz&hl=en-US&gl=US&ceid=US:en",
-    "GNews: OPEC spare capacity hormuz":"https://news.google.com/rss/search?q=OPEC+spare+capacity+hormuz&hl=en-US&gl=US&ceid=US:en",
-    "GNews: CENTCOM iran hormuz":       "https://news.google.com/rss/search?q=CENTCOM+iran+hormuz&hl=en-US&gl=US&ceid=US:en",
-    "GNews: OFAC iran oil sanctions":   "https://news.google.com/rss/search?q=OFAC+iran+oil+sanctions&hl=en-US&gl=US&ceid=US:en",
-    "GNews: Kharg Jask oil terminal":   "https://news.google.com/rss/search?q=Kharg+Jask+oil+terminal&hl=en-US&gl=US&ceid=US:en",
-    "GNews: japan china iran oil":      "https://news.google.com/rss/search?q=japan+china+iran+oil&hl=en-US&gl=US&ceid=US:en",
+    "GNews: Marcy Kaptur":          "https://news.google.com/rss/search?q=%22Marcy+Kaptur%22&hl=en-US&gl=US&ceid=US:en",
+    "GNews: Kaptur Ohio 9th":       "https://news.google.com/rss/search?q=Kaptur+%22Ohio%27s+9th%22&hl=en-US&gl=US&ceid=US:en",
+    "GNews: Kaptur Toledo":         "https://news.google.com/rss/search?q=Kaptur+Toledo&hl=en-US&gl=US&ceid=US:en",
+    "GNews: Kaptur committee":      "https://news.google.com/rss/search?q=Kaptur+committee+appropriations&hl=en-US&gl=US&ceid=US:en",
+    "GNews: Kaptur bill":           "https://news.google.com/rss/search?q=Kaptur+bill+legislation&hl=en-US&gl=US&ceid=US:en",
+    "GNews: Kaptur campaign":       "https://news.google.com/rss/search?q=Kaptur+campaign+election&hl=en-US&gl=US&ceid=US:en",
+    "GNews: OH-9 congressional":    "https://news.google.com/rss/search?q=%22Ohio%27s+9th+congressional+district%22&hl=en-US&gl=US&ceid=US:en",
     # Bing News search queries
-    "Bing: iran hormuz":        "https://www.bing.com/news/search?q=iran+hormuz&format=rss",
-    "Bing: hormuz tanker":      "https://www.bing.com/news/search?q=hormuz+tanker&format=rss",
-    "Bing: IRGC missile":       "https://www.bing.com/news/search?q=IRGC+missile&format=rss",
-    "Bing: hormuz war risk":    "https://www.bing.com/news/search?q=hormuz+war+risk+insurance&format=rss",
-    "Bing: hormuz AIS tanker":  "https://www.bing.com/news/search?q=hormuz+AIS+tanker&format=rss",
-    "Bing: brent WTI iran":     "https://www.bing.com/news/search?q=brent+WTI+iran&format=rss",
-    "Bing: CENTCOM iran hormuz":"https://www.bing.com/news/search?q=CENTCOM+iran+hormuz&format=rss",
-    "Bing: japan china iran oil":"https://www.bing.com/news/search?q=japan+china+iran+oil&format=rss",
-    # Reddit
-    "Reddit r/iran":        "https://www.reddit.com/r/iran/.rss",
-    "Reddit r/worldnews":   "https://www.reddit.com/r/worldnews/.rss",
-    "Reddit r/energy":      "https://www.reddit.com/r/energy/.rss",
+    "Bing: Marcy Kaptur":       "https://www.bing.com/news/search?q=%22Marcy+Kaptur%22&format=rss",
+    "Bing: Kaptur Toledo":      "https://www.bing.com/news/search?q=Kaptur+Toledo&format=rss",
+    "Bing: Kaptur Ohio 9th":    "https://www.bing.com/news/search?q=Kaptur+Ohio+9th+district&format=rss",
 }
 
 # ── NewsAPI config ───────────────────────────────────────────────────────────
-OFFICIAL_PAGES = {
-    "OFAC Recent Actions":       "https://ofac.treasury.gov/recent-actions",
-    "US Treasury Releases":      "https://home.treasury.gov/news/press-releases",
-    "White House Statements":    "https://www.whitehouse.gov/briefings-statements/",
-    "White House Actions":       "https://www.whitehouse.gov/presidential-actions/",
-    "UKMTO Warnings":            "https://www.ukmto.org/ukmto-products/warnings",
-    "China State Council News":  "https://english.www.gov.cn/news/",
-}
+OFFICIAL_PAGES: dict[str, str] = {}
 
-OFFICIAL_LINK_RE = {
-    "OFAC Recent Actions":      re.compile(r"/recent-actions/\d{8}(?:_|$)"),
-    "US Treasury Releases":     re.compile(r"/news/(press-releases|featured-stories)/"),
-    "White House Statements":   re.compile(r"/briefings-statements/\d{4}/"),
-    "White House Actions":      re.compile(r"/presidential-actions/\d{4}/"),
-    "UKMTO Warnings":           re.compile(r"/ukmto-products/warnings/"),
-    "China State Council News": re.compile(r"/news/\d{6}/"),
-}
+OFFICIAL_LINK_RE: dict[str, "re.Pattern"] = {}
 
 NEWSAPI_URL = "https://newsapi.org/v2/everything"
 NEWSAPI_QUERIES = [
-    "iran hormuz",
-    "hormuz tanker",
-    "iran nuclear deal",
-    "iran oil sanctions",
-    "brent wti iran hormuz",
-    "japan china iran oil",
+    "Marcy Kaptur",
+    "Kaptur Ohio 9th district",
+    "Kaptur Toledo",
 ]
 
 MAX_WORKERS = 12
@@ -136,22 +83,19 @@ NEWSAPI_BLOCKLIST = {
 
 # ── relevance filter ─────────────────────────────────────────────────────────
 KEYWORDS = [
-    "iran", "hormuz", "irgc", "tehran", "persian gulf",
-    "strait", "khamenei", "pezeshkian", "nuclear deal",
-    "jcpoa", "enrichment", "sanctions", "arabian sea",
-    "gulf of oman", "ballistic missile", "tanker seizure",
-    "operation epic fury", "middle east", "mideast", "oil",
-    "crude", "opec", "spr", "energy security", "shipping",
-    "maritime", "vessel", "fujairah", "kuwait", "bahrain",
-    "brent", "wti",
+    "kaptur",
+    "ohio's 9th",
+    "ohio 9th",
+    "9th congressional district",
+    "oh-9",
+    "oh 9th district",
 ]
-KEYWORD_RE = re.compile("|".join(KEYWORDS), re.IGNORECASE)
+KEYWORD_RE = re.compile("|".join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
 
-# BBC false-positive titles that match keywords but aren't crisis-relevant
-EXCLUDE_RE = re.compile(
-    r"world cup|football|sport|cricket|tennis|olympics",
-    re.IGNORECASE
-)
+# General Toledo/Ohio local feeds carry lots of unrelated sports/weather/crime
+# noise that happens to share a dateline; nothing here matches KEYWORDS anyway
+# unless "Kaptur" or the district name is present, so no exclude list needed.
+EXCLUDE_RE = re.compile(r"(?!x)x")  # never matches
 
 
 def is_relevant(entry: dict) -> bool:
@@ -319,6 +263,8 @@ def fetch_all_feeds() -> dict[str, list[dict]]:
 
 def fetch_official_pages(seen: set) -> list[dict]:
     items = []
+    if not OFFICIAL_PAGES:
+        return items
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     pages: dict[str, tuple[str, bytes | None]] = {}
 
@@ -461,7 +407,7 @@ def append_to_log(items: list[dict]) -> None:
 
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         if not LOG_FILE.exists() or LOG_FILE.stat().st_size == 0:
-            f.write("MEDIAFLOW - Iran/Hormuz Running News Log\n")
+            f.write("KAPTURFLOW - Marcy Kaptur (OH-9) Running News Log\n")
             f.write("=" * 68 + "\n")
         f.writelines(lines)
 
