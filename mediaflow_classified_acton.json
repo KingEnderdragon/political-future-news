@@ -10,7 +10,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "The Ohio Republican Party criticizes Dr. Amy Acton's spending proposals for her potential 2026 gubernatorial run.",
     "arc_analysis": "This criticism highlights growing opposition to Acton as she considers a gubernatorial bid, focusing on fiscal concerns.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -23,7 +26,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Newsweek reports on Amy Acton's polling chances against Vivek Ramaswamy.",
     "arc_analysis": "Provides insight into the competitive landscape of Ohio's gubernatorial race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WSYX",
@@ -36,7 +42,10 @@
     "arc": "RECORD",
     "arc_summary": "Amy Acton joins community rally to save Grady Memorial Hospital's maternity unit.",
     "arc_analysis": "Acton leverages her public health influence to support local healthcare initiatives, highlighting ongoing relevance in Ohio's medical community.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Amy Acton",
@@ -49,7 +58,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "One forecaster predicts the Ohio governor's race between Vivek Ramaswamy and Amy Acton is now a toss-up.",
     "arc_analysis": "This indicates increased competitiveness in the gubernatorial election, highlighting Acton's potential as a viable candidate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -62,7 +74,10 @@
     "arc": "MEDIA",
     "arc_summary": "Amy Acton and Sherrod Brown are criticizing data centers in Ohio.",
     "arc_analysis": "This highlights their collaborative efforts to address perceived issues with data centers, potentially influencing policy or public opinion.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -75,7 +90,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Cook Political Report shifts Ohio governor's race to toss-up and highlights a likeability issue for Dr. Amy Acton.",
     "arc_analysis": "This shift indicates growing uncertainty in the election, underscoring challenges in voter perception that could affect Acton's campaign prospects.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -88,7 +106,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton appears on 'The Last Word' to discuss her gubernatorial campaign.",
     "arc_analysis": "Acton aims to raise visibility and appeal to voters ahead of potential 2023 election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -101,7 +122,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton joins the Ohio Nurses Association in Delaware County.",
     "arc_analysis": "This event highlights Acton's efforts to gain support from healthcare professionals ahead of her gubernatorial campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -114,7 +138,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Acton releases her first Ohio gubernatorial campaign advertisement.",
     "arc_analysis": "This marks a significant step in Acton's political career, aiming to mobilize support against Republican opponents.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Amy Acton",
@@ -127,7 +154,10 @@
     "arc": "MEDIA",
     "arc_summary": "An analyst discusses the impact of far-right support on Amy Acton's appeal to Ohio voters.",
     "arc_analysis": "This highlights potential challenges in broadening her base beyond specific segments of the electorate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ideastream",
@@ -140,7 +170,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton discusses her gubernatorial campaign stance on health issues.",
     "arc_analysis": "Acton highlights key policy areas to differentiate herself in the race and appeal to voters concerned about healthcare.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsradio WTAM 1100",
@@ -153,7 +186,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Governor DeWine defends Democratic candidate Amy Acton.",
     "arc_analysis": "This cross-party support highlights Acton's bipartisan appeal and potential for broad voter attraction.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -166,7 +202,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Business leaders endorse Dr. Amy Acton's campaign for governor.",
     "arc_analysis": "This endorsement could boost Acton's visibility and credibility among Ohio voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -179,7 +218,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Tim Ryan has ruled out running for Ohio governor, making Amy Acton the presumptive Democratic nominee.",
     "arc_analysis": "This development solidifies Acton's position as the leading candidate and clears her path to potentially run unopposed in the primary.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Sandusky Register",
@@ -192,7 +234,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is campaigning in Erie County.",
     "arc_analysis": "Acton's campaign activities indicate her efforts to gain support ahead of potential elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -205,7 +250,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy's super PAC is spreading false claims about Dr. Amy Acton.",
     "arc_analysis": "This misinformation could harm Dr. Acton's campaign and public perception ahead of the election.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -218,7 +266,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "United Steelworkers District 1 endorses Dr. Amy Acton's campaign for governor.",
     "arc_analysis": "This endorsement could bolster Acton's credibility and support among labor unions, a key constituency in Ohio elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -231,7 +282,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton's fundraising increases as her Democratic rivals drop out.",
     "arc_analysis": "This indicates growing support and potential for Acton in the gubernatorial race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -244,7 +298,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is focusing on affordability and energy issues ahead of the primary.",
     "arc_analysis": "Acton's campaign emphasis on these issues may attract voters concerned about economic stability and environmental policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -257,7 +314,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton discusses her campaign's focus on affordability.",
     "arc_analysis": "Acton is emphasizing economic issues to appeal to voters in the Ohio gubernatorial race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -270,7 +330,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Acton states her intention to advocate for a new redistricting amendment if elected.",
     "arc_analysis": "This indicates Acton's commitment to electoral reform, potentially appealing to voters concerned with fair representation.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -283,7 +346,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton released an affordability plan.",
     "arc_analysis": "This plan likely aims to attract voters concerned about economic issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -296,7 +362,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Acton proposes tax credits and debt relief in the Ohio governor's race.",
     "arc_analysis": "These proposals aim to differentiate Acton from her competitors and appeal to voters concerned about economic recovery.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -309,7 +378,10 @@
     "arc": "MEDIA",
     "arc_summary": "Cleveland.com discusses the hypocrisy in Vivek Ramaswamy's attack ads on Amy Acton.",
     "arc_analysis": "This article highlights potential political maneuvering and criticism of a rival candidate, reflecting ongoing tensions in Ohio politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -322,7 +394,10 @@
     "arc": "MEDIA",
     "arc_summary": "Doctor Amy Acton and Bryan Hambley are called upon to address Ohio's health issues.",
     "arc_analysis": "The opinion piece highlights the perceived need for medical expertise in addressing public health challenges, potentially influencing public perception of current policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -335,7 +410,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton discusses strategies to challenge Republican dominance.",
     "arc_analysis": "Acton's potential candidacy aims to reverse years of Democratic underperformance in Ohio elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Amy Acton Ohio",
@@ -348,7 +426,10 @@
     "arc": "MEDIA",
     "arc_summary": "Vivek Ramaswamy and Amy Acton avoid stating positions while Libertarian Don Kissick provides clear answers on key issues.",
     "arc_analysis": "This highlights the reluctance of major candidates to take definitive stances, contrasting with a lesser-known candidate's transparency.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Amy Acton",
@@ -361,7 +442,10 @@
     "arc": "RECORD",
     "arc_summary": "Progressive Ohioans are frustrated with Dr. Amy Acton's comments regarding transgender athletes.",
     "arc_analysis": "Her stance may alienate progressive supporters and complicate her public image as a health advocate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Columbus Underground",
@@ -374,7 +458,10 @@
     "arc": "HEALTH_POLICY",
     "arc_summary": "Acton advocates for making healthcare more affordable in Ohio.",
     "arc_analysis": "This highlights her ongoing commitment to improving access to healthcare, a key issue in public health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The New Political",
@@ -387,7 +474,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton expresses her intention to serve all of Ohio.",
     "arc_analysis": "Acton's statement suggests a potential run for office, expanding her public health role into political candidacy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WOSU Public Media",
@@ -400,7 +490,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton expresses confidence in her campaign for Ohio governor in the 2026 election.",
     "arc_analysis": "Acton's optimism signals her intention to run and compete in a potentially crowded field of Democratic candidates.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Energy and Policy Institute",
@@ -413,7 +506,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton and Vivek Ramaswamy campaigned on lowering energy bills while six Ohio utilities contributed $2 million to DGA and RGA.",
     "arc_analysis": "This highlights potential conflicts of interest in Acton's campaign messaging around utility costs, given significant contributions from the industry.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Amy Acton",
@@ -426,7 +522,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Amy Acton visited Perry County, where she was seen as an honest leader.",
     "arc_analysis": "Her visit to a poor county highlights her potential appeal among economically disadvantaged voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -439,7 +538,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Election forecasters are increasing Amy Acton's chances of winning the Ohio governor's race.",
     "arc_analysis": "This suggests growing support and momentum for Acton in her gubernatorial bid, potentially shifting political dynamics in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -452,7 +554,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Republican Vivek Ramaswamy has a significant financial advantage over Democratic candidate Amy Acton due to a $25 million personal loan.",
     "arc_analysis": "Ramaswamy's substantial funding edge could influence campaign strategy and media presence, potentially overshadowing Acton's visibility.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -465,7 +570,10 @@
     "arc": "HEALTH_POLICY",
     "arc_summary": "Ramaswamy and Acton provide contrasting proposals for enhancing Ohio's mental health system.",
     "arc_analysis": "Their differing approaches highlight the policy divide between a potential gubernatorial candidate and a former public health official on addressing critical mental health issues i",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -478,7 +586,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": ":Dr. Amy Acton discusses her candidacy for Ohio governor and reflects on her role during the pandemic.",
     "arc_analysis": "Acton's run highlights ongoing public interest in her leadership during the COVID-19 crisis, potentially influencing voter sentiment.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Amy Acton",
@@ -491,7 +602,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton participated in Dayton's America250 parade as part of her gubernatorial campaign.",
     "arc_analysis": "Acton is engaging with voters and promoting herself ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -504,7 +618,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Kentucky Governor Andy Beshears rallied support for Amy Acton in Cincinnati with a local labor union.",
     "arc_analysis": "This shows cross-state political solidarity and potential endorsement from a key ally, boosting Acton's visibility and credibility.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -517,7 +634,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Acton is pitching an 'Affordability Plan' for Ohio residents.",
     "arc_analysis": "This plan aims to address economic concerns but lacks details on funding, raising questions about feasibility and specifics of her policy proposals.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Canton Repository",
@@ -530,7 +650,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton visits Canton as part of her gubernatorial campaign.",
     "arc_analysis": "Acton is building support in key areas ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -543,7 +666,10 @@
     "arc": "MEDIA",
     "arc_summary": "The Columbus Dispatch questions Amy Acton's ability to handle the pressures of being Ohio's governor, calling her a quitter.",
     "arc_analysis": "This criticism reflects ongoing public scrutiny and skepticism about Acton's leadership during her tenure as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -556,7 +682,10 @@
     "arc": "MEDIA",
     "arc_summary": "Cleveland.com readers suggest questions for an interview with Amy Acton.",
     "arc_analysis": "Engages public interest and input on potential future media appearances.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -569,7 +698,14 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton and Vivek Ramaswamy avoid commenting on JobsOhio transparency.",
     "arc_analysis": "This highlights candidates' reluctance to address economic development issues, potentially signaling a lack of policy detail or strategic avoidance.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 779 aims to increase transparency at JobsOhio, which Acton and Ramaswamy declined to address.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB779",
+    "legislative_note_source_title": "Enact the JobsOhio Transparency Act",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB779/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Cleveland.com Politics",
@@ -582,7 +718,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton's campaign message is criticized for lacking specificity on Medicaid expansion.",
     "arc_analysis": "The criticism highlights the need for detailed policy proposals to address voter concerns about healthcare and rural hospital closures.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -595,7 +734,10 @@
     "arc": "MEDIA",
     "arc_summary": "Cleveland.com asks Amy Acton and Vivek Ramaswamy about their plans for Ohio's childcare crisis.",
     "arc_analysis": "Highlights the candidates' policy stances on an important issue affecting families in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -608,7 +750,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Cleveland.com discusses potential plans by Amy Acton and Vivek Ramaswamy regarding Ohio's highway funding issues.",
     "arc_analysis": "The article does not focus on Dr. Acton's public health policy or her role as ODH director, making it unrelated to her primary arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Northwest Progressive Institute",
@@ -621,7 +766,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton aims to become Ohio's next Democratic governor.",
     "arc_analysis": "Acton seeks to end long-standing Republican control of the governorship, potentially reshaping state politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Amy Acton",
@@ -634,7 +782,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A new statewide poll highlights the competitiveness of Amy Acton's race against Ramaswamy in Ohio.",
     "arc_analysis": "The poll indicates a close race, underscoring the political significance and uncertainty surrounding Acton's candidacy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Planned Parenthood Action Fund",
@@ -647,7 +798,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Planned Parenthood Advocates of Ohio endorses Dr. Amy Acton for governor.",
     "arc_analysis": "This endorsement boosts Acton's credibility on reproductive rights issues, potentially attracting support from like-minded voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -660,7 +814,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton is running a campaign for governor.",
     "arc_analysis": "Her gubernatorial bid aims to leverage her public health expertise and popularity among certain voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -673,7 +830,10 @@
     "arc": "MEDIA",
     "arc_summary": "Opinion piece compares Amy Acton's and Vivek Ramaswamy's political strategies.",
     "arc_analysis": "The comparison highlights perceived similarities in controversial tactics used by both figures, potentially influencing public perception.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -686,7 +846,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton announces raising $9.4 million in Q2 2026.",
     "arc_analysis": "This significant fundraising milestone underscores Acton's strong financial backing and potential for a competitive gubernatorial run.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Amy Acton",
@@ -699,7 +862,10 @@
     "arc": "RECORD",
     "arc_summary": "The Ohio GOP is touring county fairs with a cutout of Dr. Amy Acton during the COVID-19 pandemic.",
     "arc_analysis": "This highlights ongoing political criticism and negative perception of Dr. Acton's handling of the pandemic response in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "TiffinOhio.net",
@@ -712,7 +878,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton proposes a $1,778 tax cut for families of four as part of her affordability agenda.",
     "arc_analysis": "This proposal highlights Acton's focus on economic relief and could appeal to working Ohio households during the election season.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -725,7 +894,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton pitches her plan to address healthcare costs as a Democratic gubernatorial candidate.",
     "arc_analysis": "Acton aims to differentiate herself by focusing on reducing healthcare expenses, appealing to voters concerned about affordability.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WOWK 13 News",
@@ -738,7 +910,10 @@
     "arc": "RECORD",
     "arc_summary": "The husband of Ohio gubernatorial candidate Amy Acton discusses a 2019 police encounter.",
     "arc_analysis": "This addresses potential political liabilities and public perception issues for Acton's campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Signal",
@@ -751,7 +926,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A report of a domestic dispute involving Amy Acton is affecting the Ohio governor's race.",
     "arc_analysis": "The incident may harm Acton's campaign by casting doubt on her character and fitness for office.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -764,7 +942,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton discusses her campaign for Ohio governor.",
     "arc_analysis": "Acton's candidacy highlights the political landscape in Ohio, focusing on public health issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -777,7 +958,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton raises more money than Vivek Ramaswamy in the 2026 election cycle.",
     "arc_analysis": "This indicates strong financial support for Acton's campaign, potentially giving her an advantage over Republican rivals.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Leadership Now Project",
@@ -790,7 +974,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Ohio business leaders are endorsing Amy Acton for governor.",
     "arc_analysis": "This endorsement could boost Acton's visibility and credibility among voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -803,7 +990,10 @@
     "arc": "RECORD",
     "arc_summary": "Dr. Amy Acton hosts a roundtable in Cincinnati to discuss affordability issues.",
     "arc_analysis": "This event underscores Dr. Acton's ongoing engagement with public health concerns beyond just COVID-19 measures.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The New Political",
@@ -816,7 +1006,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton held an event at Bagel Street.",
     "arc_analysis": "This campaign event likely aims to engage local voters and build support for her candidacy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati CityBeat",
@@ -829,7 +1022,10 @@
     "arc": "MEDIA",
     "arc_summary": "Amy Acton discusses affordability issues in Bond Hill.",
     "arc_analysis": "Acton addresses local community concerns, highlighting her engagement beyond public health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -842,7 +1038,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy and Amy Acton discuss their policy positions in the Ohio gubernatorial race.",
     "arc_analysis": "This highlights Acton's engagement in the political campaign, emphasizing her policy stance to attract voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -855,7 +1054,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Dick Celeste endorses Amy Acton for governor.",
     "arc_analysis": "Celeste's endorsement lends credibility and experience to Acton's campaign, potentially boosting her appeal among voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -868,7 +1070,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton campaigns at the City Club of Cleveland for Ohio governor.",
     "arc_analysis": "Acton emphasizes unity and urgency, positioning herself as a candidate focused on addressing current challenges.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Chronicle Telegram",
@@ -881,7 +1086,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Western Reserve Building Trades Council has endorsed Dr. Amy Acton for governor.",
     "arc_analysis": "This endorsement could bolster Acton's credibility and support among labor unions, potentially expanding her base.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WFMJ",
@@ -894,7 +1102,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton begins an affordability tour in Youngstown.",
     "arc_analysis": "Acton is highlighting economic issues to build support for her campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -907,7 +1118,10 @@
     "arc": "RECORD",
     "arc_summary": "Amy Acton hosts a roundtable in Cincinnati to discuss residents' affordability concerns.",
     "arc_analysis": "This engagement highlights Acton's efforts to address economic issues impacting Ohioans during her tenure.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WCPO 9 Cincinnati",
@@ -920,7 +1134,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy and Amy Acton debate their qualifications for Ohio governor.",
     "arc_analysis": "This event highlights Acton's campaign strategy and her positioning against other candidates in the race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -933,7 +1150,10 @@
     "arc": "RECORD",
     "arc_summary": "Governor DeWine assigns state troopers to protect both Vivek Ramaswamy and Amy Acton.",
     "arc_analysis": "This highlights the security concerns for public figures involved in controversial issues, including former ODH Director Amy Acton.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -946,7 +1166,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton advances to the general election as a Democratic candidate for Ohio governor.",
     "arc_analysis": "Acton's progress in the race highlights her potential as a viable candidate in the upcoming gubernatorial election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The 19th News",
@@ -959,7 +1182,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton won her primary election in Ohio.",
     "arc_analysis": "This victory strengthens Acton's position for the general election and contributes to women maintaining their record as governors.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -972,7 +1198,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton won her party's primary election.",
     "arc_analysis": "This victory positions Acton to run in the general election, potentially increasing her political influence and visibility.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Amy Acton",
@@ -985,7 +1214,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton gives remarks on primary night.",
     "arc_analysis": "Acton's post-primary comments may influence voter perception and support for her campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -998,7 +1230,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton discusses her campaign plans for the upcoming primary election.",
     "arc_analysis": "Acton's comments provide insight into her strategy and goals as she seeks to advance in the race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Amy Acton governor",
@@ -1011,7 +1246,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is gaining ground in the Ohio governor's race.",
     "arc_analysis": "Acton's rising poll numbers indicate growing support among voters for her gubernatorial bid.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WSYX",
@@ -1024,7 +1262,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy won the Ohio primary and will face Amy Acton in the gubernatorial race.",
     "arc_analysis": "This sets up a high-profile general election matchup between Ramaswamy and Acton, drawing attention to their respective campaigns.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1037,7 +1278,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy and Amy Acton are projected to compete in the Ohio governor's race.",
     "arc_analysis": "This projection highlights Acton's potential as a major candidate, indicating growing political momentum.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1050,7 +1294,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton will compete against Vivek Ramaswamy in the Ohio governor race.",
     "arc_analysis": "This confirms Acton's candidacy and sets up a primary election contest.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WOSU Public Media",
@@ -1063,7 +1310,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy won the Republican nomination for Ohio governor, setting up a general election race against Amy Acton.",
     "arc_analysis": "This primary result sets the stage for a high-profile gubernatorial contest between Ramaswamy and Acton in the fall.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -1076,7 +1326,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Newsweek discusses Amy Acton's chances against Ramaswamy in the general election.",
     "arc_analysis": "This article highlights potential challenges for Acton as she seeks to win the governorship, indicating competitive dynamics in Ohio politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -1089,7 +1342,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton won the Democratic nomination for Ohio governor in the 2026 primary.",
     "arc_analysis": "This marks a significant step towards her potential run as the Democratic candidate for Governor of Ohio, highlighting her political ambitions beyond public health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "AP News",
@@ -1102,7 +1358,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton is running for Ohio governor in 2026.",
     "arc_analysis": "Acton's entry into the gubernatorial race highlights her political ambitions following her role in Ohio's pandemic response.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1115,7 +1374,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton announces her candidacy for Ohio governor as a Democrat.",
     "arc_analysis": "Acton's entry into the gubernatorial race signals her ambition to leverage her public health expertise on a larger political stage.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1128,7 +1390,10 @@
     "arc": "MEDIA",
     "arc_summary": "Voters have questions for Amy Acton and Vivek Ramaswamy, but the candidates are not providing answers.",
     "arc_analysis": "This highlights a lack of engagement with constituents, potentially harming their political prospects.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1141,7 +1406,10 @@
     "arc": "MEDIA",
     "arc_summary": "Cleveland.com fact checks Ramaswamy's misleading attack ads against Acton.",
     "arc_analysis": "Highlights the media scrutiny and political tactics used during Acton's campaign, emphasizing transparency issues.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Marijuana Herald",
@@ -1154,7 +1422,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton discusses her stance on marijuana legalization as a gubernatorial candidate.",
     "arc_analysis": "Acton's position on marijuana legalization highlights her policy differences with other candidates and appeals to specific voter groups.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Buckeye Flame",
@@ -1167,7 +1438,10 @@
     "arc": "RECORD",
     "arc_summary": "Dr. Amy Acton is criticized for betraying Ohio's transgender community.",
     "arc_analysis": "This criticism highlights ongoing tensions and controversies surrounding Dr. Acton's policies and actions during her tenure as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "TiffinOhio.net",
@@ -1180,7 +1454,10 @@
     "arc": "RECORD",
     "arc_summary": "A fact check reveals a Ramaswamy super PAC ad falsely claims about Amy Acton's record.",
     "arc_analysis": "This highlights the politicization of public health records and misinformation tactics in campaigns.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1193,7 +1470,14 @@
     "arc": "HEALTH_POLICY",
     "arc_summary": "Amy Acton supports Medicaid work requirements.",
     "arc_analysis": "This stance could affect access to healthcare for low-income Ohioans.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SCR5 urges Presidential support for Medicaid work requirements, which aligns with Amy Acton's stance.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SCR5",
+    "legislative_note_source_title": "Urge Presidential support for Medicaid work requirements",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SCR5/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "The Columbus Dispatch",
@@ -1206,7 +1490,14 @@
     "arc": "HEALTH_POLICY",
     "arc_summary": "Acton and Ramaswamy debate Medicaid and healthcare costs.",
     "arc_analysis": "The debate highlights differing policy approaches to healthcare reform in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB130 addresses the Medicaid Estate Recovery Program notification requirement, which is relevant to ongoing debates about Medicaid.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB130",
+    "legislative_note_source_title": "Regards Medicaid Estate Recovery Program notification requirement",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB130/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "WLWT",
@@ -1219,7 +1510,10 @@
     "arc": "RECORD",
     "arc_summary": "Dr. Amy Acton discusses her reflections on the five-year anniversary of the COVID-19 pandemic.",
     "arc_analysis": "Her retrospective comments provide insight into the effectiveness and challenges of Ohio's initial response to the pandemic.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1232,7 +1526,10 @@
     "arc": "RECORD",
     "arc_summary": "Dr. Amy Acton's tenure as Ohio Health Director is reviewed.",
     "arc_analysis": "The article likely highlights her role in managing the state's public health during the pandemic, focusing on both successes and controversies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1245,7 +1542,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Acton campaigns to lower healthcare costs as part of her gubernatorial bid.",
     "arc_analysis": "Highlights Acton's focus on healthcare affordability, distinguishing her from rival Vivek Ramaswamy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -1258,7 +1558,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton visits Cincinnati as part of her campaign for Ohio governor.",
     "arc_analysis": "Acton's visit highlights her efforts to build support in key regions ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1271,7 +1574,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton is contemplating a gubernatorial bid in Ohio in 2026.",
     "arc_analysis": "This indicates potential political ambitions beyond her role as health director, signaling a shift towards electoral politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -1284,7 +1590,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton is reportedly considering a gubernatorial run in 2026.",
     "arc_analysis": "This indicates potential political ambitions and could signal her future plans in Ohio politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1297,7 +1606,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Acton's campaign manager comments on Ramaswamy's self-funding.",
     "arc_analysis": "Highlights competition and fundraising strategies in the gubernatorial race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland Jewish News",
@@ -1310,7 +1622,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton discusses her campaign for Ohio governor.",
     "arc_analysis": "Acton's interview highlights her political ambitions and potential as a candidate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1323,7 +1638,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton leads in a bipartisan AARP poll.",
     "arc_analysis": "This indicates strong support among seniors, potentially boosting her gubernatorial campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1336,7 +1654,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Acton's campaign fundraising is competitive with Republican candidate Ramaswamy.",
     "arc_analysis": "This indicates strong financial support and competitiveness in the Ohio gubernatorial race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1349,7 +1670,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton discusses affordability in her first interview as the official Democratic nominee for governor.",
     "arc_analysis": "This marks a significant milestone in Acton's campaign, highlighting her platform and visibility among key political figures.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Democratic Governors Association",
@@ -1362,7 +1686,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton wins the Democratic nomination for Ohio governor.",
     "arc_analysis": "This victory positions Acton as a competitive candidate in the upcoming election, potentially challenging Republican incumbents.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Amy Acton health",
@@ -1375,7 +1702,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton, former Ohio health director, is planning a Democratic gubernatorial campaign.",
     "arc_analysis": "Acton's entry into the race adds another voice to Ohio's 2022 gubernatorial election, potentially challenging incumbent Mike DeWine's leadership on public health issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1388,7 +1718,10 @@
     "arc": "MEDIA",
     "arc_summary": "Acton and Ramaswamy did not answer reader questions.",
     "arc_analysis": "Highlights their reluctance to engage directly with constituents or media.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1401,7 +1734,10 @@
     "arc": "MEDIA",
     "arc_summary": "Acton is advised to emulate Alexander Hamilton's leadership style.",
     "arc_analysis": "The advice suggests Acton should adopt a more collaborative and visionary approach in her public role.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "couriernewsroom.com",
@@ -1414,7 +1750,10 @@
     "arc": "MEDIA",
     "arc_summary": "Dr. Amy Acton criticizes attacks on doctors and conspiracy theories.",
     "arc_analysis": "Acton addresses ongoing controversies and misinformation surrounding public health measures.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1427,7 +1766,10 @@
     "arc": "RECORD",
     "arc_summary": "Acton's team defends her 2019 meeting with police against GOP criticism.",
     "arc_analysis": "The defense highlights ongoing political scrutiny of Acton's past actions during her tenure as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "AFGE",
@@ -1440,7 +1782,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "AFGE, the largest federal employee union, endorses Dr. Amy Acton for governor.",
     "arc_analysis": "This endorsement could boost Acton's credibility and support among public sector workers.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Washington Examiner",
@@ -1453,7 +1798,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is running for Ohio governor and proposing medical debt forgiveness.",
     "arc_analysis": "This proposal highlights Acton's focus on healthcare affordability, distinguishing her from other candidates.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1466,7 +1814,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Ohio Nurses Association has endorsed Dr. Amy Acton's campaign for governor.",
     "arc_analysis": "This endorsement could bolster Dr. Acton's credibility and support among healthcare professionals and voters prioritizing health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1481,7 +1832,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio Supreme Court reversed a Public Utilities Commission of Ohio (PUCO) decision, ruling that utility resellers are considered utilitie",
     "arc_analysis": "This legal decision does not relate to Dr. Amy Acton's health policy or her role as former Director of the Ohio Department of Health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -1496,7 +1850,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1 in the November election.",
     "arc_analysis": "Provides context for voters to understand the potential impact of their vote on public health policy and governance.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -1511,7 +1868,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains Ohio's gerrymandering process.",
     "arc_analysis": "Provides context on redistricting, impacting political representation and policy-making in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1526,7 +1886,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Provides voter information for Ohio Election Day.",
     "arc_analysis": "Does not specifically relate to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -1541,7 +1904,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains Jim Jordan's involvement in the Ohio State University sexual abuse scandal.",
     "arc_analysis": "Irrelevant to Dr. Amy Acton's activities or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "BG Independent News",
@@ -1556,7 +1922,10 @@
     "arc": "RECORD",
     "arc_summary": "Ohio school districts are being asked to create financial forecasts amid uncertainties.",
     "arc_analysis": "This highlights the challenges in budgeting and planning for schools during the pandemic, reflecting on Dr. Acton's public health policies' broader economic impacts.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "prismreports.org",
@@ -1571,7 +1940,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio pro-choice activists prepare to oppose a restrictive abortion bill.",
     "arc_analysis": "This article does not relate directly to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -1586,7 +1958,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Congressional map ruled unconstitutional.",
     "arc_analysis": "This ruling has no direct relation to Dr. Amy Acton's work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Farm Bureau",
@@ -1601,7 +1976,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A guide to CAUV, a property tax program for agricultural land.",
     "arc_analysis": "Provides background on CAUV but does not relate to Dr. Acton or her work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Yahoo",
@@ -1616,7 +1994,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "The Ohio governor's race between David Ramaswamy and Amy Acton becomes contentious.",
     "arc_analysis": "This reflects growing political tension as the election approaches, potentially influencing voter perceptions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -1631,7 +2012,10 @@
     "arc": "MEDIA",
     "arc_summary": "Ohio's Republican governor defends Dr. Amy Acton, a Democratic official.",
     "arc_analysis": "This highlights the political divide and bipartisanship in Ohio's response to public health issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1646,7 +2030,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "FirstEnergy contributed $2.5 million to a GOP governors' dark money group supporting DeWine's 2018 campaign.",
     "arc_analysis": "This donation is unrelated to Dr. Amy Acton and does not pertain to her public health policy or tenure as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -1661,7 +2048,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Jim Tressel has announced he will not run for Ohio governor in 2026.",
     "arc_analysis": "This news is unrelated to Dr. Amy Acton's activities or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -1676,7 +2066,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Tim Ryan decides not to run for Ohio governor.",
     "arc_analysis": "This news is unrelated to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Sandusky Register",
@@ -1691,7 +2084,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is campaigning in Erie County.",
     "arc_analysis": "Acton's campaign activities indicate her efforts to gain support ahead of potential elections or endorsements.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 1",
@@ -1706,7 +2102,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "New polling shows Ohio as a battleground state for Senate and governor's races.",
     "arc_analysis": "This indicates potential political volatility and competitive elections in Ohio, impacting Dr. Acton's political future.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Land-Grant Holy Land",
@@ -1721,7 +2120,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None",
     "arc_analysis": "None",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1736,7 +2138,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio and national government watchdogs warn the GOP is attempting to create a more favorable midterm map.",
     "arc_analysis": "This article discusses redistricting efforts unrelated to Dr. Amy Acton's work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1751,7 +2156,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio House passed a bill requiring a 24-hour waiting period for abortion care.",
     "arc_analysis": "This legislative action does not directly relate to Dr. Amy Acton's role or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -1766,7 +2174,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton announces raising a record-breaking $5.3 million in campaign funds.",
     "arc_analysis": "This significant fundraising milestone indicates strong financial support and potential electoral competitiveness for Dr. Acton's gubernatorial bid.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -1781,7 +2192,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "An explainer on the status of Ohio's abortion laws after 2021.",
     "arc_analysis": "The article does not relate to Dr. Amy Acton's activities or policies, focusing instead on legislative changes unrelated to her work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1796,7 +2210,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Proposals aim to maintain integrity of Ohio's redistricting process.",
     "arc_analysis": "Ensures fair representation by preventing gerrymandering, impacting electoral outcomes.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "AP News",
@@ -1811,7 +2228,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article focuses on Dr. Amy Acton.",
     "arc_analysis": "The article is a general overview of Ohio's state primaries and does not mention Dr. Amy Acton specifically.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -1826,7 +2246,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Tuesday marks Election Day for Ohio's May primary.",
     "arc_analysis": "This informs voters about upcoming elections, potentially impacting Dr. Acton's campaign visibility and voter turnout.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1841,7 +2264,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "The article provides a voter guide for the Ohio primary election in 2026.",
     "arc_analysis": "This guide helps voters understand key races and issues, potentially influencing turnout and support for candidates like Dr. Amy Acton.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 1",
@@ -1856,7 +2282,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "New polls show Amy Acton and Vivek Ramaswamy in a tight race for Ohio governor.",
     "arc_analysis": "This indicates increased competitiveness in the 2026 gubernatorial election, potentially shifting control of the state.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio State | Official Athletics Website",
@@ -1871,7 +2300,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Caleb Downs is a semifinalist for the Lott IMPACT Trophy.",
     "arc_analysis": "This news item is unrelated to Dr. Amy Acton's work or political activities and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Columbus Underground",
@@ -1886,7 +2318,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Ramaswamy is outspending and outreaching Acton in the 2026 Ohio gubernatorial race.",
     "arc_analysis": "This highlights Ramaswamy's aggressive campaign strategy, potentially overshadowing Acton's efforts and impacting her visibility and support among voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1901,7 +2336,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio Republican Party endorsed Vivek Ramaswamy for governor.",
     "arc_analysis": "This endorsement does not directly relate to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1916,7 +2354,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Mike DeWine is navigating the Ohio Republican primary, balancing support for President Trump and former Governor John Kasich.",
     "arc_analysis": "DeWine must carefully manage his relationship with both national party leaders and influential state figures to secure the nomination.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "PlayUSA",
@@ -1931,7 +2372,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "HB 971 is a bill in Ohio that aims to ban mobile sports betting.",
     "arc_analysis": "This legislation does not relate to Dr. Amy Acton's work or public health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 971 aims to ban mobile sports betting in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB971",
+    "legislative_note_source_title": "Enact the Save Ohio Sports Act",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB971/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "The Lantern",
@@ -1946,7 +2394,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article content relates to Dr. Amy Acton or her work.",
     "arc_analysis": "The article is unrelated to Dr. Amy Acton's activities, policy positions, or record as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1961,7 +2412,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "Governor candidates discuss the possibility of eliminating Ohio's income tax.",
     "arc_analysis": "This article does not focus on Dr. Amy Acton's specific policy proposals or actions related to public health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB30 aims to phase down the state income tax to a flat rate of 2.75%, aligning with discussions among governor candidates about eliminating Ohio's income tax.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB30",
+    "legislative_note_source_title": "Phase-down the state income tax to a flat rate of 2.75%",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB30/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "sportingnews.com",
@@ -1976,7 +2434,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains the significance of Ohio State helmet stickers.",
     "arc_analysis": "Irrelevant to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1991,7 +2452,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "DeWine and Husted are using Intel's investment in Ohio as a campaign issue.",
     "arc_analysis": "This highlights the economic development achievements being leveraged for political gain ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -2006,7 +2470,10 @@
     "arc": "MEDIA",
     "arc_summary": "The editor plans to interview Amy Acton and Vivek Ramaswamy about their positions.",
     "arc_analysis": "This will provide voters with more information on the candidates' stances.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "KSAT",
@@ -2021,7 +2488,10 @@
     "arc": "RECORD",
     "arc_summary": "Dr. Amy Acton's handling of the COVID-19 pandemic influences the current Ohio gubernatorial race.",
     "arc_analysis": "Acton's controversial public health measures during her tenure as Ohio Department of Health Director have become a significant issue in the ongoing election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Times of India",
@@ -2036,7 +2506,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Trump endorses Vivek Ramaswamy for Ohio governor.",
     "arc_analysis": "This endorsement does not directly relate to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Hindu",
@@ -2051,7 +2524,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "U.S. President Trump endorses Vivek Ramaswamy for Ohio Governor.",
     "arc_analysis": "This endorsement does not directly involve Dr. Amy Acton and is unrelated to her work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Yahoo Sports",
@@ -2066,7 +2542,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Yahoo Sports article explains Big Ten standings and updated 2025 tiebreakers.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton's work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "sportingnews.com",
@@ -2081,7 +2560,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Big Ten championship scenarios are explained with Ohio State and Indiana securing their spots.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton's activities or the Ohio Department of Health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2096,7 +2578,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Ohio's May primary includes several races relevant to Dr. Amy Acton's political career.",
     "arc_analysis": "The primary election may influence the political landscape and potential challengers for Dr. Acton in future elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -2111,7 +2596,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "N/A",
     "arc_analysis": "N/A",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "AP News",
@@ -2126,7 +2614,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Ramaswamy faces challenges in Ohio's GOP primary for governor.",
     "arc_analysis": "This indicates potential difficulties for Ramaswamy as he seeks the nomination, impacting his campaign strategy and viability.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 1",
@@ -2141,7 +2632,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A recent AARP poll shows Acton leading Ramaswamy in the Ohio governor race.",
     "arc_analysis": "This poll indicates a close race, highlighting the competitiveness of Acton's gubernatorial campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2156,7 +2650,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "State-created property insurance provider must make records available to the public.",
     "arc_analysis": "This decision is unrelated to Dr. Amy Acton's activities or policies and does not impact her work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Xavier Newswire",
@@ -2171,7 +2668,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ed Fitzgerald discusses the Ohio Democratic Party's handling of a scandal.",
     "arc_analysis": "The article does not directly relate to Dr. Amy Acton or her work on public health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2186,7 +2686,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Court no longer recognizes 'public-right' exception for lawsuits without personal injury.",
     "arc_analysis": "This legal decision does not directly relate to Dr. Amy Acton's public health policy or her role in the Ohio Department of Health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "NBC News",
@@ -2201,7 +2704,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "States like Ohio have been enacting laws that restrict abortion rights.",
     "arc_analysis": "The article discusses broader state-level trends in abortion legislation, not specific actions by Dr. Amy Acton.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -2216,7 +2722,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton outlines her campaign strategy and path to victory.",
     "arc_analysis": "This provides insight into Dr. Acton's political ambitions and her approach to winning the governorship.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -2231,7 +2740,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains two paths for implementing a $15 minimum wage in Ohio.",
     "arc_analysis": "Provides background on legislative efforts unrelated to Dr. Acton's specific actions or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 34 aims to increase the state minimum wage in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB34",
+    "legislative_note_source_title": "Increase the state minimum wage",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB34/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2246,7 +2762,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The state must act on a medical marijuana cultivator's request.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton or her work in public health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "USA Today",
@@ -2261,7 +2780,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article content relates to Dr. Amy Acton or her work.",
     "arc_analysis": "The article discusses Ohio State's role in Big Ten revenue discussions, which is unrelated to Dr. Acton's activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2276,7 +2798,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Funeral director did not steal trade secrets from former employer.",
     "arc_analysis": "This news item is unrelated to Dr. Amy Acton's activities or public health policy in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -2291,7 +2816,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains Ohio's marijuana legalization ballot measure.",
     "arc_analysis": "Provides background on a ballot initiative unrelated to Dr. Acton's work or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -2306,7 +2834,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "N/A",
     "arc_analysis": "The article does not discuss Dr. Amy Acton or any relevant policy actions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 1",
@@ -2321,7 +2852,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is running for governor in Ohio's 2026 election.",
     "arc_analysis": "Acton's candidacy could influence the political landscape and voter turnout in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio House of Representatives (.gov)",
@@ -2336,7 +2870,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Reps. Williams, Swearingen introduce legislation to strengthen child safety and prevent fraud in state-funded childcare centers.",
     "arc_analysis": "This bill introduction is unrelated to Dr. Amy Acton's activities or the Ohio Department of Health's initiatives.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -2351,7 +2888,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Columbus restaurant canceled a fundraiser for Republican Ohio governor candidate Amy Acton due to 'Nazi' comments.",
     "arc_analysis": "This incident highlights the political risks and backlash candidates face from controversial statements or associations.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -2366,7 +2906,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The article discusses political frustration in East Palestine and mentions the possibility of an Ohio resident running for president.",
     "arc_analysis": "This piece provides general commentary on Ohio politics without focusing specifically on Dr. Amy Acton's actions or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2381,7 +2924,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio Democrats urge Governor DeWine to veto a submetering bill.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton's activities or the COVID-19 response in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Democrats are urging Governor DeWine to veto SB297 regarding electric submetering companies and customers.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SB297",
+    "legislative_note_source_title": "Regards electric submetering companies and customers",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SB297/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "wtol.com",
@@ -2396,7 +2946,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A major education bill has passed the Ohio Senate.",
     "arc_analysis": "This news is unrelated to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2411,7 +2964,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Jim Tressel is still considering a run for Ohio governor.",
     "arc_analysis": "This article does not discuss Dr. Amy Acton's activities or policies, making it unrelated to her work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -2426,7 +2982,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the provided summary or title relates to Dr. Amy Acton.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton and her activities as it discusses an Ohio State University football player's eligibility for the NFL draft.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2441,7 +3000,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A chamber-backed tax reform group is urging Ohio lawmakers to address 'unvoted' tax increases.",
     "arc_analysis": "This article discusses a topic unrelated to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Mother Jones",
@@ -2456,7 +3018,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A utility company involved in a bribery scandal supported Governor Mike DeWine's campaign.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton and does not pertain to her work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2471,7 +3036,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "An Ohio lawmaker proposes a land value tax amendment.",
     "arc_analysis": "This proposal is unrelated to Dr. Amy Acton's work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SJR7 authorizes land value taxes in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR7",
+    "legislative_note_source_title": "CA: Authorize land value taxes",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR7/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "10TV",
@@ -2486,7 +3058,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "No summary available.",
     "arc_analysis": "The article does not provide specific information related to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Politico",
@@ -2501,7 +3076,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article discusses Dr. Amy Acton or her work.",
     "arc_analysis": "The article is unrelated to Dr. Amy Acton's activities or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The New York Times",
@@ -2516,7 +3094,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohio Republicans have passed new congressional districts aiming to gain more seats.",
     "arc_analysis": "This redistricting effort could shift political power and influence in Ohio's representation in Congress.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Akron",
@@ -2531,7 +3112,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's Issue 2 aims to fund local infrastructure projects.",
     "arc_analysis": "This ballot measure is unrelated to Dr. Amy Acton's work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -2546,7 +3130,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The article discusses four themes to watch in upcoming Ohio and Indiana primaries.",
     "arc_analysis": "This general election analysis does not focus on Dr. Amy Acton's specific actions or policies, making it unrelated to her work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2561,7 +3148,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's 'Break the Silence Act' aims to establish uniform standards for aiding domestic violence victims.",
     "arc_analysis": "The bill is unrelated to Dr. Amy Acton's work or political activities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "C-SPAN",
@@ -2576,7 +3166,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton made remarks on primary night.",
     "arc_analysis": "Her appearance highlights her involvement in the political process and potential future candidacy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Al Jazeera",
@@ -2591,7 +3184,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Ohio residents vote in a primary election with several key races.",
     "arc_analysis": "The primary election could influence Dr. Amy Acton's political future and the direction of health policy in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -2606,7 +3202,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Casey Putsch, a YouTube provocateur, aims to be a spoiler in the Ohio governor's race.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton and does not pertain to her activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WVXU",
@@ -2621,7 +3220,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Provides statewide and local results for Ohio's May 2026 primary election.",
     "arc_analysis": "Does not relate to Dr. Amy Acton's activities or policy positions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "wtsp.com",
@@ -2636,7 +3238,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton's performance in the Ohio governor primary election is detailed by county.",
     "arc_analysis": "Provides insight into Acton's electoral support and geographic strength across Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "San Francisco Chronicle",
@@ -2651,7 +3256,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Brown wins Ohio Senate Democratic primary and Ramaswamy wins Republican nomination for governor.",
     "arc_analysis": "This article does not relate to Dr. Amy Acton's activities or policies, focusing instead on other political races in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 1",
@@ -2666,7 +3274,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Republican Vivek Ramaswamy and Democrat Amy Acton are set to face off in Ohio's governor race.",
     "arc_analysis": "This sets the stage for a competitive general election between a new Republican candidate and former health director Amy Acton.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -2681,7 +3292,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1 in November.",
     "arc_analysis": "Provides background information crucial for understanding ballot measures relevant to public health policy and governance.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2696,7 +3310,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A closed online school cannot challenge an order to repay the state $60 million.",
     "arc_analysis": "This news item is unrelated to Dr. Amy Acton's activities or policies and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Statesman",
@@ -2711,7 +3328,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio Governor candidate Ramaswamy opts out of social media due to racial slurs.",
     "arc_analysis": "This incident does not directly relate to Dr. Amy Acton's campaign or health policy initiatives.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 1",
@@ -2726,7 +3346,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "A new poll indicates competitive Senate and gubernatorial races in Ohio.",
     "arc_analysis": "The poll highlights potential shifts in voter sentiment ahead of key elections, impacting political dynamics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -2741,7 +3364,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Mike DeWine won the Republican nomination for Ohio governor.",
     "arc_analysis": "This solidifies DeWine's position as the likely Republican nominee, impacting Amy Acton's potential support base and campaign strategy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -2756,7 +3382,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "The article provides an election guide for the 2022 Ohio midterm elections.",
     "arc_analysis": "It informs voters about upcoming races and ballot measures, potentially influencing voter turnout and candidate support.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -2771,7 +3400,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton is running for Ohio Secretary of State.",
     "arc_analysis": "Acton's campaign seeks to leverage her public health expertise and popularity among certain voters in the Midterm elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -2786,7 +3418,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Early voting in Ohio has started.",
     "arc_analysis": "No direct relevance to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "R Street Institute",
@@ -2801,7 +3436,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "R Street Institute discusses Ohio bail reform legislation.",
     "arc_analysis": "The article does not relate to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB946 aims to enact laws regarding charitable bail organizations in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB946",
+    "legislative_note_source_title": "Enact law regarding charitable bail organizations",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB946/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -2816,7 +3458,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Cook Political Report shifts Ohio governor's race to toss-up and highlights a likeability issue for Dr. Acton.",
     "arc_analysis": "This shift indicates growing uncertainty in the election, suggesting challenges in voter perception of Dr. Acton's candidacy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -2831,7 +3476,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article content relates to Dr. Amy Acton.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton and her work in public health policy or as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2846,7 +3494,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Republican lawmakers plan to introduce a bill banning all abortions and IVF.",
     "arc_analysis": "This news is not directly related to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Vorys",
@@ -2861,7 +3512,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's new property tax legislation with key changes effective in 2026.",
     "arc_analysis": "This article discusses legislative changes unrelated to Dr. Amy Acton or public health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2876,7 +3530,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "An offender is ineligible for judicial release.",
     "arc_analysis": "This article does not relate to Dr. Amy Acton's activities or policies and lacks political significance in her context.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -2891,7 +3548,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "Last year's cash bail amendment from lawmakers put Ohio's entire pretrial release system at risk.",
     "arc_analysis": "This article discusses legislative changes unrelated to Dr. Amy Acton's health policy or her role in the Ohio Department of Health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 946 aims to regulate charitable bail organizations which could impact Ohio's pretrial release system.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB946",
+    "legislative_note_source_title": "Enact law regarding charitable bail organizations",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB946/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Hindustan Times",
@@ -2906,7 +3570,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Elon Musk expresses support for Vivek Ramaswamy's entry into the Ohio Governor's race.",
     "arc_analysis": "This news is unrelated to Dr. Amy Acton and does not pertain to her activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -2921,7 +3588,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Polls indicate Vivek Ramaswamy's chances of winning in Ohio.",
     "arc_analysis": "The article discusses polling data for a candidate not directly related to Dr. Amy Acton or her work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Hindustan Times",
@@ -2936,7 +3606,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Trump endorses Vivek Ramaswamy in Ohio's governor race.",
     "arc_analysis": "This article is about Trump endorsing another candidate and does not relate to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -2951,7 +3624,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Columbus can appeal a trial court's preliminary injunction on gun laws.",
     "arc_analysis": "This news is unrelated to Dr. Amy Acton's activities or policies and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "ACLU of Ohio",
@@ -2966,7 +3642,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains the 'Ohio Student Religious Liberties Act'.",
     "arc_analysis": "Provides background on a bill unrelated to Dr. Amy Acton's work or public health policy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -2981,7 +3660,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "The article discusses the positions of Ohio Governor Mike DeWine and his challengers on HB 616.",
     "arc_analysis": "This provides context for understanding the legislative priorities and stances of candidates during the election season.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Firstpost",
@@ -2996,7 +3678,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article focuses on Dr. Amy Acton.",
     "arc_analysis": "The article is unrelated to Dr. Amy Acton and discusses Vivek Ramaswamy's political career.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Firstpost",
@@ -3011,7 +3696,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton is running for governor of Ohio against Vivek Ramaswamy.",
     "arc_analysis": "Acton's candidacy highlights the political landscape in Ohio, positioning her as a key figure in the upcoming gubernatorial race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "BusinessLine",
@@ -3026,7 +3714,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Vivek Ramaswamy has won the Republican nomination for Ohio's gubernatorial race.",
     "arc_analysis": "This development sets up a primary challenge for Dr. Amy Acton if she runs as a Democrat, shaping the political landscape for the 2022 election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Hindustan Times",
@@ -3041,7 +3732,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "The article discusses the net worth of Amy Acton and Vivek Ramaswamy in the context of Ohio's governor race.",
     "arc_analysis": "Highlighting candidates' financial status can influence voter perceptions and campaign strategies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -3056,7 +3750,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Amy Acton selects a former party chair as her running mate for the Ohio governor race.",
     "arc_analysis": "This move could strengthen Acton's campaign by bringing in a seasoned political strategist and expanding her base of support.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -3071,7 +3768,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton's financial disclosure shows she earned 62 cents in a relevant period.",
     "arc_analysis": "This highlights the stark contrast in fundraising and financial backing between Acton and her opponent, potentially affecting campaign visibility and effectiveness.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -3086,7 +3786,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Analysis of Governor Mike DeWine's re-election victory.",
     "arc_analysis": "Provides context on why DeWine won the election but does not focus on Dr. Amy Acton or her role.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -3101,7 +3804,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the summary provided relates to Dr. Amy Acton.",
     "arc_analysis": "The article is unrelated to Dr. Amy Acton's activities or policies and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -3116,7 +3822,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio House Democrats and community advocates are defending immigrants across the state.",
     "arc_analysis": "This article does not relate to Dr. Amy Acton's activities or policies, focusing instead on immigrant advocacy by Ohio legislators.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -3131,7 +3840,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Municipalities taxing stay-at-home workers during the pandemic was found to be constitutional.",
     "arc_analysis": "This decision has no direct relation to Dr. Amy Acton's actions or policies as Ohio Department of Health Director.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "News 5 Cleveland WEWS",
@@ -3146,7 +3858,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "An Ohio gubernatorial candidate, not Dr. Amy Acton, is seen with a rifle and invites Ramaswamy to play 'Cowboys and Indians'.",
     "arc_analysis": "This incident does not relate to Dr. Amy Acton's campaign or health policy initiatives.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "wtol.com",
@@ -3161,7 +3876,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Senate Bill 158 proposes restrictions on cellphones in schools.",
     "arc_analysis": "The bill is unrelated to Dr. Acton's public health policy or her role at the Ohio Department of Health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -3176,7 +3894,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Prison term mandatory when conviction includes additional time for gun possession.",
     "arc_analysis": "This article is unrelated to Dr. Amy Acton's activities or the Ohio Department of Health.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -3191,7 +3912,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio gerrymandering will be on the ballot in November.",
     "arc_analysis": "This article discusses a political issue unrelated to Dr. Amy Acton's activities or policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -3206,7 +3930,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Dr. Amy Acton has charged $500,000 to her campaign credit card.",
     "arc_analysis": "This indicates significant financial investment in her gubernatorial campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Farm and Dairy",
@@ -3221,7 +3948,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Where Ohio’s front-runners for governor stand on ag, energy and the environment - Farm and Dairy",
     "arc_analysis": "",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -3236,6 +3966,9 @@
     "arc": "UNMAPPED",
     "arc_summary": "Experts discuss potential outcomes for Ohio's governor race.",
     "arc_analysis": "The article does not focus on Dr. Amy Acton or her specific actions, making it unrelated to her campaign or policy work.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   }
 ]

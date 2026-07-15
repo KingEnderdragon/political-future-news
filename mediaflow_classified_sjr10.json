@@ -10,7 +10,14 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "Common Cause Ohio testified against Senate Joint Resolution 10.",
     "arc_analysis": "The testimony highlights opposition from a major advocacy group, underscoring the debate's significance in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Common Cause Ohio testified against Senate Joint Resolution 10 regarding voter ID requirements.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "ACLU of Ohio",
@@ -23,7 +30,14 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "ACLU of Ohio provides testimony opposing Senate Joint Resolution 10.",
     "arc_analysis": "The opposition from a major civil rights organization highlights the contentious nature of voter ID legislation in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "ACLU of Ohio provides testimony opposing Senate Joint Resolution 10 (SJR10), which aims to require identification for voting.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "ACLU of Ohio",
@@ -36,7 +50,14 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "ACLU of Ohio opposes Substitute Senate Joint Resolution 10.",
     "arc_analysis": "The opposition highlights concerns over potential disenfranchisement and civil rights issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "ACLU of Ohio opposes Substitute Senate Joint Resolution 10 (SJR10), which requires identification to vote.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio House of Representatives (.gov)",
@@ -49,7 +70,14 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Rep. White opposes Ohio Senate Joint Resolution 10.",
     "arc_analysis": "This opposition highlights the partisan divide over voter ID legislation in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Rep. White opposes Ohio Senate Joint Resolution 10 (SJR10), which requires identification to vote.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio House of Representatives (.gov)",
@@ -62,7 +90,14 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Rep. White opposes Ohio Senate Joint Resolution 10.",
     "arc_analysis": "This opposition highlights the partisan divide over voter ID legislation in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Rep. White opposes Ohio Senate Joint Resolution 10 (SJR10) which requires identification to vote.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio House of Representatives (.gov)",
@@ -75,7 +110,14 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Rep. White opposes Ohio Senate Joint Resolution 10.",
     "arc_analysis": "This opposition highlights the partisan divide over voter ID legislation in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Rep. White opposes Ohio Senate Joint Resolution 10 (SJR10), which aims to require identification for voting.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Cleveland.com",
@@ -90,7 +132,14 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "SJR10, the Ohio voter ID amendment, advances to the November ballot.",
     "arc_analysis": "This marks a significant procedural milestone for proponents of stricter voting laws in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SJR10 advances to the November ballot as the Ohio voter ID amendment.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "League of Women Voters",
@@ -105,7 +154,10 @@
     "arc": "IMPACT",
     "arc_summary": "Proposed changes to Ohio's voter ID law could affect the August 8 election.",
     "arc_analysis": "The potential impact on voter turnout and access is significant, especially for groups without proper ID.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Signal",
@@ -120,7 +172,10 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Donald Trump expresses support for voter ID in Ohio.",
     "arc_analysis": "Trump's endorsement could boost Republican efforts to pass voter ID legislation, potentially influencing the 2024 election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Ohio voter ID law",
@@ -135,7 +190,14 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Ohio House passes Senate Joint Resolution 10 to amend the state constitution for voter photo ID.",
     "arc_analysis": "This move aims to solidify a recently enacted voter ID law into Ohio's constitution, potentially shielding it from legal challenges.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SJR10 aims to amend the state constitution for voter photo ID.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Cleveland.com",
@@ -150,7 +212,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "Opposition groups testified against Ohio's proposed voter ID amendment during a hearing.",
     "arc_analysis": "The testimony highlights concerns and opposition from advocacy groups, influencing public perception and legislative consideration of the amendment.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -165,7 +230,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio Supreme Court reversed a PUCO decision, ruling that utility resellers are utilities under state law.",
     "arc_analysis": "This decision clarifies the legal status of utility resellers but is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -180,7 +248,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1 in November.",
     "arc_analysis": "Provides voter education about the potential outcomes and significance of SJR10's passage.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -195,7 +266,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains Ohio's gerrymandering process.",
     "arc_analysis": "Irrelevant to the voter ID debate or SJR10.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -210,7 +284,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio county elections officials face challenges with mass voter registration.",
     "arc_analysis": "The article does not discuss SJR10 or the voter ID debate specifically, making it unrelated to the topic.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Signal",
@@ -225,7 +302,10 @@
     "arc": "POLITICS",
     "arc_summary": "A poll shows Ohio voters support a voter ID amendment.",
     "arc_analysis": "This matters because it indicates public opinion on the issue, which could influence politicians' stances and election outcomes.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Democracy Docket",
@@ -240,7 +320,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "Organizations in Ohio are suing over the state's new voter suppression law.",
     "arc_analysis": "Legal challenges to voter ID laws can delay implementation and highlight opposition.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -255,7 +338,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains Jim Jordan's involvement in the Ohio State University sexual abuse scandal.",
     "arc_analysis": "Irrelevant to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "BG Independent News",
@@ -270,7 +356,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "School districts in Ohio are asked to forecast finances amid uncertainties.",
     "arc_analysis": "The article discusses budgeting challenges for school districts unrelated to voter ID or SJR10.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "prismreports.org",
@@ -285,7 +374,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio pro-choice activists prepare to oppose an anti-abortion bill.",
     "arc_analysis": "The article discusses a different topic (anti-abortion legislation) unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -300,7 +392,14 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "U.S. House Speaker cites unproven evidence from Ohio in support of a new proof-of-citizenship voting bill.",
     "arc_analysis": "The statement highlights the national implications and potential misuse of local voter ID debates for broader legislative agendas.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB233 is cited by U.S. House Speaker in support of a new proof-of-citizenship voting bill.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB233",
+    "legislative_note_source_title": "Require elector citizenship verification; revise election law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB233/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -315,7 +414,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Congressional map ruled unconstitutional.",
     "arc_analysis": "This ruling is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Farm Bureau",
@@ -330,7 +432,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A guide to CAUV - Ohio Farm Bureau",
     "arc_analysis": "",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -345,7 +450,14 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "Anti-gerrymandering leaders claim LaRose's draft ballot text for SJR10 is deceptive and unconstitutional.",
     "arc_analysis": "This highlights opposition to the proposed voter ID amendment, potentially undermining its legitimacy.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "Anti-gerrymandering leaders argue that LaRose's draft ballot text for SJR10 is deceptive and unconstitutional.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Transport Topics",
@@ -360,7 +472,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The new Ohio Towing Fairness Law takes effect in April.",
     "arc_analysis": "This article is unrelated to the voter ID debate or SJR10.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Land-Grant Holy Land",
@@ -375,7 +490,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains Ohio State women's basketball team's Big Ten Tournament seeding scenarios.",
     "arc_analysis": "Irrelevant to the topic of Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -390,7 +508,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio and national government watchdogs warn the GOP is attempting to manipulate redistricting for electoral advantage.",
     "arc_analysis": "The warning about potential manipulation of redistricting does not directly relate to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB4889 aims to prevent states from conducting multiple redistricting after a census, addressing concerns of partisan manipulation.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB4889",
+    "legislative_note_source_title": "To prohibit States from carrying out more than one Congressional redistricting after a decennial census and apportionment.",
+    "legislative_note_source_url": "https://legiscan.com/US/bill/HB4889/2025",
+    "legislative_note_source_state": "US"
   },
   {
     "source": "Ohio Capital Journal",
@@ -405,7 +530,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio House passed a bill requiring a 24-hour waiting period for abortion care.",
     "arc_analysis": "This news is unrelated to the Ohio Senate Joint Resolution 10 or voter ID debate and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -420,7 +548,14 @@
     "arc": "MEDIA",
     "arc_summary": "An opinion piece questions why Ohio lawmakers push for voter ID despite being an election 'gold standard'.",
     "arc_analysis": "Highlights skepticism about the necessity of voter ID in a state with already robust election systems.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, aligning with the debate over Ohio's election integrity.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio Capital Journal",
@@ -435,7 +570,14 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Ohio senators are considering election law changes to close primaries and prohibit ranked choice voting.",
     "arc_analysis": "These proposed changes could restrict voter participation and alter electoral processes in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 233 aims to require voter ID and make other changes to Ohio's election laws.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB233",
+    "legislative_note_source_title": "Require elector citizenship verification; revise election law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB233/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Spectrum News",
@@ -450,7 +592,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explainer on the status of Ohio's abortion laws after the 2021 legislative session.",
     "arc_analysis": "Irrelevant to voter ID debate or SJR10, focuses on unrelated legislation.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Crain's Cleveland",
@@ -465,7 +610,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "Advocacy groups and politicians from both sides oppose Ohio's photo voter ID amendment.",
     "arc_analysis": "The opposition spans political spectrum, indicating broad concerns about potential disenfranchisement.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "FOX19 | Cincinnati",
@@ -480,7 +628,10 @@
     "arc": "IMPACT",
     "arc_summary": "Ohio's new voter ID law will take effect on Friday.",
     "arc_analysis": "The implementation of the law could affect voter turnout and access, particularly for marginalized groups.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -495,7 +646,10 @@
     "arc": "IMPACT",
     "arc_summary": "Ohio residents can obtain a free state ID for voting purposes.",
     "arc_analysis": "This impacts voter access and compliance with Ohio's new election law requiring photo identification.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -510,7 +664,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article discusses SJR10 or voter ID.",
     "arc_analysis": "The article is unrelated to the topic and provides no relevant information.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -525,7 +682,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Election Day information for voting in Ohio's May primary.",
     "arc_analysis": "The article provides general election day details and does not focus on SJR10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -540,7 +700,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Justice Department is suing states over sensitive voter data.",
     "arc_analysis": "This lawsuit does not directly relate to Ohio Senate Joint Resolution 10 or the Ohio voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio State | Official Athletics Website",
@@ -555,7 +718,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Caleb Downs is a semifinalist for the Lott IMPACT Trophy.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate and focuses on an athlete's award nomination.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -570,7 +736,10 @@
     "arc": "POLITICS",
     "arc_summary": "Supreme Court allows Ohio to continue purging voter rolls.",
     "arc_analysis": "Decision impacts voter access and potential disenfranchisement in Ohio elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "PlayUSA",
@@ -585,7 +754,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "HB 971 aims to ban mobile sports betting in Ohio.",
     "arc_analysis": "This bill is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 971 aims to ban mobile sports betting in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB971",
+    "legislative_note_source_title": "Enact the Save Ohio Sports Act",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB971/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "The Lantern",
@@ -600,7 +776,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article discusses Ohio Senate Joint Resolution 10 or voter ID.",
     "arc_analysis": "The article is unrelated to SJR10 and voter ID debate, focusing instead on police-student relations.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "sportingnews.com",
@@ -615,7 +794,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains the significance of Ohio State helmet stickers.",
     "arc_analysis": "Irrelevant to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "News 5 Cleveland WEWS",
@@ -630,7 +812,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Provides instructions on checking if voter registration was purged in Ohio.",
     "arc_analysis": "Unrelated to Ohio Senate Joint Resolution 10 or voter ID debate, focuses on voter purge instead.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Yahoo Sports",
@@ -645,7 +830,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Big Ten standings, explained: Updated 2025 tiebreakers for Ohio State, Indiana, Oregon, USC and Michigan - Yahoo Sports",
     "arc_analysis": "",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "sportingnews.com",
@@ -660,7 +848,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio State and Indiana have secured their spots in the Big Ten championship.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 3",
@@ -675,7 +866,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Republican leaders introduced resolutions in Ohio House and Senate for voter ID constitutional amendment.",
     "arc_analysis": "Provides background on legislative efforts to amend the state constitution regarding voter ID laws.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -690,7 +884,10 @@
     "arc": "IMPACT",
     "arc_summary": "Ohio now mandates photo ID for in-person voting.",
     "arc_analysis": "This change could affect voter turnout, particularly among groups less likely to have acceptable IDs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -705,7 +902,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains the NCAA transfer portal process for college athletes.",
     "arc_analysis": "Irrelevant to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 3",
@@ -720,7 +920,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohio Republicans aim to add voter ID requirement to state constitution.",
     "arc_analysis": "This effort highlights ongoing Republican push for stricter voting laws in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Democracy Docket",
@@ -735,7 +938,10 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Legal challenge filed against rejection of Ohio Voters Bill of Rights proposed amendment.",
     "arc_analysis": "This legal action aims to overturn the dismissal of a voter rights amendment, potentially impacting voting regulations in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -750,7 +956,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Court ruling requires state-created property insurance provider to make records available to public.",
     "arc_analysis": "This court decision is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -765,7 +974,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio has purged thousands of voters and watchdogs say it has weak safeguards.",
     "arc_analysis": "The article discusses voter purges in Ohio but does not focus on Senate Joint Resolution 10 or the voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "American Civil Liberties Union",
@@ -780,7 +992,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "ACLU provides overview of Ohio's voter purge case before Supreme Court.",
     "arc_analysis": "Highlights potential impact on voting rights and election integrity in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -795,7 +1010,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Court no longer recognizes 'public-right' exception for lawsuits.",
     "arc_analysis": "This decision is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "NBC News",
@@ -810,7 +1028,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "An opinion piece discussing states' pre-Kennedy actions to roll back Roe v. Wade.",
     "arc_analysis": "The article does not discuss Ohio Senate Joint Resolution 10 or voter ID, focusing instead on abortion rights.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -825,7 +1046,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Trump's arrest and the Ohio Supreme Court hearing a transgender case.",
     "arc_analysis": "These events are unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -840,7 +1064,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article discusses Ohio Senate Joint Resolution 10 or voter ID.",
     "arc_analysis": "The article is unrelated to SJR10 and voter ID debate, focusing instead on minimum wage legislation.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -855,7 +1082,10 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Politicians from both parties criticize Ohio's rushed absentee ballot ID bill.",
     "arc_analysis": "The bipartisan criticism highlights the contentious nature of voter ID legislation in Ohio, potentially affecting its passage and public perception.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -870,7 +1100,14 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Ohio implements a new photo ID requirement for mail-in ballots starting in the 2027 election.",
     "arc_analysis": "This change could impact voter turnout and accessibility, particularly among groups less likely to have government-issued IDs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, aligning with the new Ohio mail voting photo ID requirement.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -885,7 +1122,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Court orders state action on medical marijuana cultivator's request.",
     "arc_analysis": "The article is unrelated to the Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "USA Today",
@@ -900,7 +1140,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the content relates to Ohio Senate Joint Resolution 10 or voter ID.",
     "arc_analysis": "The article discusses Ohio State's role in Big Ten revenue, unrelated to SJR10 or voter ID.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -915,7 +1158,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A funeral director did not steal trade secrets from a former employer.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "vox.com",
@@ -930,7 +1176,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio’s marijuana legalization ballot measure, explained - vox.com",
     "arc_analysis": "",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -945,7 +1194,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the topics mentioned relate to Ohio Senate Joint Resolution 10 or voter ID.",
     "arc_analysis": "The article does not discuss SJR10, voter ID legislation, or related political positions and impacts.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio House of Representatives (.gov)",
@@ -960,7 +1212,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Reps. Williams, Swearingen introduce legislation to strengthen child safety and prevent fraud in state-funded childcare centers.",
     "arc_analysis": "The article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Center for Public Integrity",
@@ -975,7 +1230,14 @@
     "arc": "IMPACT",
     "arc_summary": "Voter list purges and strict ID laws in Ohio may reduce voter turnout.",
     "arc_analysis": "These measures could disproportionately affect minority, low-income, and elderly voters, potentially altering election outcomes.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, directly impacting voter turnout in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "The Columbus Dispatch",
@@ -990,7 +1252,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Frustration in East Palestine and potential presidential run by an Ohioan.",
     "arc_analysis": "The article does not focus on SJR10 or voter ID debate, making it unrelated to the topic.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1005,7 +1270,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio Democrats urge Governor DeWine to veto a submetering bill.",
     "arc_analysis": "The article is unrelated to the voter ID debate or SJR10 and focuses on a different legislative issue.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "wtol.com",
@@ -1020,7 +1288,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A major education bill has passed the Ohio Senate.",
     "arc_analysis": "The article does not discuss SJR10 or voter ID, focusing instead on an unrelated piece of legislation.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1035,7 +1306,10 @@
     "arc": "POLITICS",
     "arc_summary": "GOP seeks to amend Ohio's constitution to include voter ID requirements.",
     "arc_analysis": "This move aims to secure voter ID laws beyond electoral cycles, solidifying GOP influence on voting regulations.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1050,7 +1324,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "When is Ohio State WR Jeremiah Smith eligible for NFL draft? - The Columbus Dispatch",
     "arc_analysis": "",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1065,7 +1342,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Chamber-backed tax reform group urges Ohio lawmakers to address 'unvoted' tax increases.",
     "arc_analysis": "The article discusses tax reform unrelated to voter ID or SJR10, making it unmapped.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1080,7 +1360,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "An Ohio lawmaker proposes a land value tax amendment as an alternative to eliminating property taxes.",
     "arc_analysis": "This proposal is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SJR7 authorizes land value taxes as an alternative to property tax elimination.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR7",
+    "legislative_note_source_title": "CA: Authorize land value taxes",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR7/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Daily Signal",
@@ -1095,7 +1382,10 @@
     "arc": "POLITICS",
     "arc_summary": "Ohio voters support provisions of the SAVE America Act, which includes voter ID requirements.",
     "arc_analysis": "This indicates potential electoral advantage for Republicans who advocate for stricter voting laws.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1110,7 +1400,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "Voting rights groups urge Governor DeWine to veto a bill eliminating the absentee ballot grace period.",
     "arc_analysis": "This highlights the ongoing tension between voting access and election integrity in Ohio, with advocacy groups pushing back against measures they see as restrictive.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Akron",
@@ -1125,7 +1418,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's Issue 2 will fund local infrastructure projects.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 3",
@@ -1140,7 +1436,14 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Ohio Senate voted 22-9 to advance SJR10, requiring voter ID in state constitution.",
     "arc_analysis": "This vote advances a constitutional amendment that could restrict voting rights and spark legal challenges.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SJR10 aims to amend Ohio's constitution to require voter photo ID.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio Capital Journal",
@@ -1155,7 +1458,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's 'Break the Silence Act' aims to provide consistent support for domestic violence survivors.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "wtol.com",
@@ -1170,7 +1476,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Guide for Ohio primary election 2026 with key races and levies.",
     "arc_analysis": "Provides voter information but does not discuss SJR10 or voter ID specifically.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -1185,7 +1494,10 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1 in November.",
     "arc_analysis": "Provides context and understanding for voters about the potential outcomes of their vote on Ohio Issue 1.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -1200,7 +1512,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "A closed online school cannot challenge an order to repay the state $60 million.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1215,7 +1530,10 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Ohio Secretary of State Frank LaRose's audit of noncitizen voter registration mistakenly includes naturalized citizens.",
     "arc_analysis": "This highlights potential flaws in the state's efforts to enforce voter ID laws and raises concerns about accuracy and fairness in election administration.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1230,7 +1548,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Provides voting deadlines for Ohio's August special election.",
     "arc_analysis": "Does not discuss SJR10, voter ID debate, or related political issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1245,7 +1566,14 @@
     "arc": "MEDIA",
     "arc_summary": "Cincinnati Enquirer provides information about early voting in Ohio and voter ID requirements.",
     "arc_analysis": "Offers voters practical guidance on election procedures and highlights the importance of Issue 1 regarding voter ID.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, directly related to Ohio's voter ID requirements.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio Capital Journal",
@@ -1260,7 +1588,10 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Ohio Republican leader opposes Trump's election plans.",
     "arc_analysis": "This indicates division within the GOP over election integrity measures.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1275,7 +1606,10 @@
     "arc": "IMPACT",
     "arc_summary": "Ohio Issue 1 would amend the state constitution to require voter ID.",
     "arc_analysis": "If passed, it could reduce voter turnout among groups without easy access to ID.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1290,7 +1624,10 @@
     "arc": "MEDIA",
     "arc_summary": "Ohio is now offering a mobile ID through Apple, though it cannot be used for voting or in traffic stops.",
     "arc_analysis": "This development highlights the distinction between digital identity verification and its limited application in specific contexts like voting and law enforcement.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "R Street Institute",
@@ -1305,7 +1642,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "R Street Institute discusses Ohio bail reform legislation.",
     "arc_analysis": "The article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1320,7 +1660,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the article discusses Ohio Senate Joint Resolution 10 or voter ID.",
     "arc_analysis": "The article is unrelated to SJR10 and voter ID debate, focusing on Ryan Day's contract details.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1335,7 +1678,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "VoteRiders preparing to provide voter ID assistance in Ohio.",
     "arc_analysis": "Aids voters affected by potential implementation of stricter voter ID laws.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1350,7 +1696,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Republican lawmakers plan to propose a total abortion and IVF ban.",
     "arc_analysis": "This article is unrelated to the voter ID debate or SJR10.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Vorys",
@@ -1365,7 +1714,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's new property tax legislation with key changes effective in 2026.",
     "arc_analysis": "The article discusses property tax changes unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -1380,7 +1732,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "An offender is ineligible for judicial release.",
     "arc_analysis": "This article does not relate to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Statehouse News Bureau",
@@ -1395,7 +1750,10 @@
     "arc": "STAKEHOLDERS",
     "arc_summary": "A civil rights group expresses disappointment over Governor DeWine signing a bill that reduces Ohio's absentee ballot grace period.",
     "arc_analysis": "The statement highlights the ongoing tension between voting access and election security measures in Ohio, reflecting broader national debates.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1410,7 +1768,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Last year's cash bail amendment from lawmakers put Ohio's entire pretrial release system in jeopardy.",
     "arc_analysis": "The article discusses a different legislative issue, not related to SJR10 or voter ID.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -1425,7 +1786,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "New Ohio marijuana and hemp law details are provided.",
     "arc_analysis": "The article is unrelated to the Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland Scene",
@@ -1440,7 +1804,10 @@
     "arc": "POLITICS",
     "arc_summary": "Ohio Republicans aim to place voter photo ID on ballot.",
     "arc_analysis": "This effort could energize Republican base voters and mobilize opposition.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1455,7 +1822,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio is purging voters and how to check registration status.",
     "arc_analysis": "The article does not discuss SJR10 or voter ID debate specifically, focusing instead on voter roll maintenance.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -1470,7 +1840,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Columbus can appeal a trial court's preliminary injunction on gun laws.",
     "arc_analysis": "The article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Perry County Tribune",
@@ -1485,7 +1858,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio eliminated the absentee ballot grace period before a Supreme Court ruling.",
     "arc_analysis": "The article discusses an unrelated issue to Ohio Senate Joint Resolution 10 and voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1500,7 +1876,14 @@
     "arc": "IMPACT",
     "arc_summary": "Ohio's new voter ID law had minimal impact during the recent spring election.",
     "arc_analysis": "The smooth implementation suggests potential for broader acceptance and continued use of voter ID in future elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, which is relevant to the new voter ID law discussed in the news item.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "ACLU of Ohio",
@@ -1515,7 +1898,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "ACLU explains the 'Ohio Student Religious Liberties Act'.",
     "arc_analysis": "Article discusses a different bill unrelated to SJR10 or voter ID.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Alternet",
@@ -1530,7 +1916,10 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "An Ohio senator minimizes concerns about revealing the last four digits of one's Social Security number.",
     "arc_analysis": "This statement reflects a politician's stance on privacy issues related to voter ID requirements, potentially influencing public perception and debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1545,7 +1934,14 @@
     "arc": "UNMAPPED",
     "arc_summary": "Citizens involved in an Ohio noncitizen voting audit claim the latest communication provided insufficient details.",
     "arc_analysis": "The article discusses citizens' concerns about a lack of clarity in communications related to a noncitizen voting audit, which is not directly related to Ohio Senate Joint Resoluti",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "The news item discusses citizens involved in an Ohio noncitizen voting audit, which is related to HB884 aiming to prohibit non-citizens from voting.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB884",
+    "legislative_note_source_title": "To prohibit individuals who are not citizens of the United States from voting in elections in the District of Columbia and to repeal the Local Resident Voting Rights Amendment Act of 2022.",
+    "legislative_note_source_url": "https://legiscan.com/US/bill/HB884/2025",
+    "legislative_note_source_state": "US"
   },
   {
     "source": "Ohio Capital Journal",
@@ -1560,7 +1956,14 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Ohio Secretary of State endorses proof-of-citizenship elections bill and notes implementation will be gradual.",
     "arc_analysis": "This statement highlights the official stance on voter ID legislation, potentially influencing its legislative progress.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB 233 aims to require elector citizenship verification and revise election law, aligning with the Secretary of State's endorsement.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB233",
+    "legislative_note_source_title": "Require elector citizenship verification; revise election law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB233/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "The Columbus Dispatch",
@@ -1575,7 +1978,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "None of the input article discusses Ohio Senate Joint Resolution 10 or voter ID.",
     "arc_analysis": "The article is unrelated to SJR10 and voter ID debate, focusing instead on a historical sports scandal at Ohio State University.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Legislative context 3",
@@ -1590,7 +1996,14 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohioans will vote on a constitutional amendment requiring photo ID for in-person voting.",
     "arc_analysis": "Provides background on the upcoming voter ID ballot measure and its potential impact on election integrity debates.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SJR10 aims to amend Ohio's constitution to require photo ID for voting.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SJR10",
+    "legislative_note_source_title": "CA: Require identification to vote",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SJR10/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Bing: Legislative context 3",
@@ -1605,7 +2018,14 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Legislation expanding Ohio's voter ID rules to include absentee ballots passed the state legislature.",
     "arc_analysis": "This bill could restrict voting access for those without proper identification, affecting turnout in key elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, aligning with the news item's focus on stricter absentee voter ID requirements.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Bing: Legislative context 3",
@@ -1620,7 +2040,14 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohio lawmakers held marathon sessions voting on changes to voter ID, Medicaid fraud, SNAP benefits.",
     "arc_analysis": "Provides context for legislative process and priorities in Ohio, highlighting voter ID among other issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "HB577 requires photo ID for absent voting and revises voter registration law, aligning with the Ohio lawmakers' focus on voter ID changes.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "HB577",
+    "legislative_note_source_title": "Require photo ID for absent voting; revise voter registration law",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/HB577/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Ohio Capital Journal",
@@ -1635,7 +2062,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio House Democrats and community advocates are defending immigrants across the state.",
     "arc_analysis": "The article does not discuss Ohio Senate Joint Resolution 10 or voter ID debate, focusing instead on immigrant advocacy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -1650,7 +2080,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Municipalities taxing stay-at-home workers during the pandemic was found to be constitutional.",
     "arc_analysis": "This ruling is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate and does not fit any of the specified arcs.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Democracy Docket",
@@ -1665,7 +2098,10 @@
     "arc": "MEDIA",
     "arc_summary": "An opinion piece discusses how Ohio's voter ID law negatively impacts students.",
     "arc_analysis": "Highlights the potential disenfranchisement of young voters, influencing public perception and debate on voter ID laws.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1680,7 +2116,10 @@
     "arc": "LEGISLATIVE",
     "arc_summary": "Ohio Republicans passed a pornography age verification ID law as part of the state budget.",
     "arc_analysis": "This action reflects Republican priorities and could influence voter perceptions ahead of elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1695,7 +2134,10 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Governor Mike DeWine is considering eliminating Ohio's absentee ballot grace period.",
     "arc_analysis": "This decision could impact voter convenience and accessibility, potentially affecting turnout in upcoming elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -1710,7 +2152,10 @@
     "arc": "MEDIA",
     "arc_summary": "An article discussing changes in Ohio's voting rules, including the debate over voter ID.",
     "arc_analysis": "Provides context on evolving voter access and identification requirements in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1725,7 +2170,10 @@
     "arc": "POLITICS",
     "arc_summary": "Ohio state Senate Democrats outline their legislative priorities for the upcoming term.",
     "arc_analysis": "This sets the stage for political maneuvering and highlights key issues, including potential opposition to voter ID legislation like SJR10.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "wtol.com",
@@ -1740,7 +2188,14 @@
     "arc": "IMPACT",
     "arc_summary": "What would Senate Bill 158 do? Breaking down Ohio's proposed school cellphone bill - wtol.com",
     "arc_analysis": "",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "SB158 aims to prohibit student cellphone use in public schools.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true,
+    "legislative_note_source_bill": "SB158",
+    "legislative_note_source_title": "Prohibit student cellular telephone use in public schools",
+    "legislative_note_source_url": "https://legiscan.com/OH/bill/SB158/2025",
+    "legislative_note_source_state": "OH"
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -1755,7 +2210,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Prison term mandatory when conviction includes additional time for gun possession.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Cleveland",
@@ -1770,7 +2228,10 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio gerrymandering will be on ballot in November.",
     "arc_analysis": "This article is unrelated to Ohio Senate Joint Resolution 10 or voter ID debate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1785,7 +2246,10 @@
     "arc": "MEDIA",
     "arc_summary": "The article compares Ohio's proposed voter ID law to similar laws in other states.",
     "arc_analysis": "Provides context for understanding the implications of Ohio's potential voter ID legislation by comparing it with existing laws elsewhere.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1800,6 +2264,9 @@
     "arc": "POLITICIAN_STATEMENTS",
     "arc_summary": "Ohio Secretary of State LaRose flagged over 520 cases of noncitizen voter fraud, but only one case was legitimate.",
     "arc_analysis": "This highlights the rarity of noncitizen voting and questions the necessity of strict voter ID laws like SJR10.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   }
 ]
