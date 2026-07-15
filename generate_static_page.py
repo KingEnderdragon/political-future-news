@@ -143,11 +143,21 @@ def render_feed_item(item: dict, subject: dict, slots: dict[str, int]) -> str:
 
     leg_note = item.get("legislative_note", "")
     leg_html = ""
-    if leg_note and leg_note != "No clear connection":
+    if leg_note:
+        bill_id = escape(item.get("legislative_note_source_bill", ""))
+        bill_title = escape(item.get("legislative_note_source_title", ""))
+        bill_url = escape(item.get("legislative_note_source_url", ""))
+        bill_state = item.get("legislative_note_source_state", "")
+        jurisdiction = escape({"OH": "Ohio General Assembly", "US": "US Congress"}.get(bill_state, bill_state))
+        bill_html = (
+            f'<p class="leg-note-source">Bill: <a href="{bill_url}" target="_blank">{bill_id} &mdash; {bill_title}</a> ({jurisdiction} &middot; LegiScan)</p>'
+            if bill_url else ""
+        )
         leg_html = f"""
           <div class="leg-note">
-            <span class="leg-note-label">&#9888; Experimental &mdash; legislative context, unverified, may hallucinate</span>
+            <span class="leg-note-label">&#9888; Experimental &mdash; legislative context, model-interpreted connection may be wrong even though the bill below is real</span>
             <p>{escape(leg_note)}</p>
+            {bill_html}
           </div>"""
 
     return f"""
@@ -874,6 +884,15 @@ section.block {{
 .leg-note p {{
   margin: 0.2rem 0 0;
   font-size: 0.82rem;
+  color: var(--warn-ink);
+}}
+
+.leg-note-source {{
+  font-size: 0.72rem !important;
+  opacity: 0.75;
+}}
+
+.leg-note-source a {{
   color: var(--warn-ink);
 }}
 

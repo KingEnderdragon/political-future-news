@@ -8,6 +8,23 @@ Paste the relevant lines into the conversation, then diagnose, then fix.
 Two push cycles were wasted on the timezone bug by skipping this step.
 ---
 
+---
+## ⚠ BEFORE RUNNING mediaflow_classify.py / weekly_digest.py / legislative_context_notes.py
+**Always ask the user which Ollama model to run with first - do not just default silently.**
+Both models must already be pulled locally (`ollama pull <name>`):
+  - **qwen2.5:14b** - the OLLAMA_MODEL default. Fast, less detailed analysis.
+  - **mistral-small** - slower (doesn't fully fit in most consumer GPU VRAM,
+    so partially runs on CPU), but noticeably more detailed/thorough -
+    names specific bill numbers and co-sponsors, produces more talking
+    points from the same source items, where qwen2.5:14b stays generic.
+Set via `mediaflow_classify.OLLAMA_MODEL = "<model>"` (all three scripts read
+that same shared attribute at call time), or pass it as a second CLI arg,
+e.g. `python weekly_digest.py kaptur mistral-small`. The Streamlit
+dashboard (`mediaflow_app.py`) has its own model-choice selectbox in the UI
+already - this rule is about scripts run directly (via CLI or on the
+user's behalf), where there's no UI toggle for the user to see.
+---
+
 
 ## System: Mooper Oil Crisis Model (MOCM)
 

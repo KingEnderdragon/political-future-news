@@ -292,5 +292,11 @@ def run(subject_slug: str = "kaptur") -> int:
 
 
 if __name__ == "__main__":
+    # Usage: python mediaflow_classify.py [subject_slug] [model]
+    # model defaults to qwen2.5:14b (fast, less detailed); pass mistral-small
+    # for slower but more detailed/thorough output. Same toggle as the
+    # dashboard's model selector - overrides the OLLAMA_MODEL env var if given.
     slug = sys.argv[1] if len(sys.argv) > 1 else "kaptur"
+    if len(sys.argv) > 2:
+        OLLAMA_MODEL = sys.argv[2]
     run(slug)

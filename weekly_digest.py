@@ -232,6 +232,12 @@ def load_window(subject_slug: str, window_days: int) -> dict:
 
 
 if __name__ == "__main__":
+    # Usage: python weekly_digest.py [subject_slug] [model]
+    # model defaults to qwen2.5:14b (fast, less detailed); pass mistral-small
+    # for slower but more detailed/thorough talking points. Same toggle as
+    # the dashboard's model selector.
     slug = sys.argv[1] if len(sys.argv) > 1 else "kaptur"
+    if len(sys.argv) > 2:
+        classify.OLLAMA_MODEL = sys.argv[2]
     result = generate(slug)
     print(json.dumps(result, indent=2))

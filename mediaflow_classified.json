@@ -10,10 +10,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Five Republican candidates debate in the newly redrawn OH-9 district.",
     "arc_analysis": "Highlights growing GOP competition as Kaptur faces a challenging redistricting cycle.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts electoral dynamics and candidate strategies.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -26,10 +23,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and colleagues issued a statement on the passage of the Ukraine Support Act.",
     "arc_analysis": "Demonstrates Kaptur's support for bipartisan foreign policy initiatives, likely to bolster her national security credentials.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's statement reflects her involvement in supporting international aid legislation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -42,10 +36,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur announces passage of the Ukraine Support Act with bipartisan colleagues.",
     "arc_analysis": "Demonstrates Kaptur's commitment to international security and her ability to work across party lines.",
-    "conflict": false,
-    "legislative_note": "The Ukraine Support Act reflects Kaptur's role in foreign policy and defense legislation within Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -58,10 +49,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur visits picket line at Toledo Assembly Complex to support UAW workers.",
     "arc_analysis": "Demonstrates Kaptur's engagement with local labor issues and her alignment with union interests in the district.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's visit aligns with her long-standing advocacy for labor rights and economic issues affecting Ohio's manufacturing sector.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -74,10 +62,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur and Sen. Vance visited UAW picket lines in Toledo.",
     "arc_analysis": "Highlights local labor issues and bipartisan engagement in the 9th District.",
-    "conflict": false,
-    "legislative_note": "Ohio politicians often engage with labor unions to understand local economic issues.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -90,10 +75,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur participates in Auto Caucus panel at Washington DC Auto Show.",
     "arc_analysis": "Highlights her involvement in automotive industry issues and advocacy for Ohio's auto sector.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's participation reflects her involvement in automotive policy and industry advocacy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -106,10 +88,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur releases statement supporting Northwest Ohio manufacturing.",
     "arc_analysis": "Highlights her commitment to local industry and economic development in the district.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur often advocates for policies that support manufacturing and industrial development in her district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -122,10 +101,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur advocates for protecting and expanding Social Security.",
     "arc_analysis": "Highlights her commitment to social safety nets, a key issue for seniors in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Social Security is a federal program, thus Kaptur's advocacy aligns with her role in US Congress to influence national legislation.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -138,10 +114,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur highlights her work for Northwest Ohio's agricultural community.",
     "arc_analysis": "Emphasizes her commitment to supporting local farmers and agriculture, crucial for the district's economy.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur often focuses on federal policies that support agriculture, aligning with the needs of Ohio's 9th district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -154,10 +127,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur honors Northwest Ohio veterans in a statement.",
     "arc_analysis": "Highlights her commitment to recognizing military service and support for local veterans.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur often highlights veteran issues, reflecting her district's strong military ties.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -170,10 +140,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces $17.6M federal funding for dredging and repairs in NW Ohio harbors.",
     "arc_analysis": "Supports local maritime infrastructure, boosting economic activity and job security in the region.",
-    "conflict": false,
-    "legislative_note": "Federal funding announcements often follow appropriations bills or infrastructure acts.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -186,10 +153,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur honors a longtime Dino's chef who died in a New Year's Eve car crash.",
     "arc_analysis": "Highlights Kaptur's engagement with local community and tributes to residents.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Congressman Paul Tonko (.gov)",
@@ -202,10 +166,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur cosponsored a bipartisan bill to lower weatherization costs for families.",
     "arc_analysis": "Advocates energy efficiency and affordability, aligning with her commitment to environmental sustainability.",
-    "conflict": false,
-    "legislative_note": "Weatherization efforts align with broader federal energy efficiency and affordability initiatives.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -218,10 +179,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur introduces legislation with Rep. Garcia to promote economic justice and youth employment.",
     "arc_analysis": "Aims to address systemic inequalities by supporting young workers, aligning with progressive policy goals.",
-    "conflict": false,
-    "legislative_note": "Legislation introduced in Congress often aligns with broader policy goals related to social welfare.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -234,10 +192,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Election boards near certification for Ohio's 9th district race.",
     "arc_analysis": "Certification will determine if Kaptur faces a runoff or secures her seat.",
-    "conflict": false,
-    "legislative_note": "Certification marks the end of a lengthy process where election results are verified.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Economic Times",
@@ -250,10 +205,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Madison Sheahan leaves ICE to run against Kaptur in Ohio's 9th district.",
     "arc_analysis": "Highlights potential challenger for Kaptur's seat, signaling competitive election ahead.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has a long history of electoral stability, with incumbent Rep. Marcy Kaptur holding the seat since 1983.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -266,10 +218,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur delivered a statement during the markup of FY22 Energy and Water Development funding bill.",
     "arc_analysis": "Highlights her leadership role in shaping federal spending for energy, water, and related agencies.",
-    "conflict": false,
-    "legislative_note": "This reflects Kaptur's role in shaping federal budget allocations for energy and water projects, aligning with her committee responsibilities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -282,10 +231,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and DeLauro condemn Trump's politicization of Army Corps construction.",
     "arc_analysis": "Highlights their opposition to perceived political interference in federal projects, aligning with infrastructure priorities.",
-    "conflict": false,
-    "legislative_note": "US Representatives often critique executive actions affecting federal projects.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Fox News",
@@ -298,10 +244,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur touts fighting back against Biden on the campaign trail.",
     "arc_analysis": "Highlights internal Democratic tensions and Kaptur's messaging strategy ahead of elections.",
-    "conflict": false,
-    "legislative_note": "Kaptur's shift in stance reflects the fluid nature of party politics and legislative strategy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Washington Examiner",
@@ -314,10 +257,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur considered voting for Kevin McCarthy as House speaker.",
     "arc_analysis": "Highlights internal party dynamics and potential shifts in Democratic loyalty.",
-    "conflict": false,
-    "legislative_note": "Representative votes on the Speaker reflect party dynamics and legislative priorities in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -330,10 +270,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces $7M for a new lead abatement program in Toledo.",
     "arc_analysis": "Aims to address public health issues and improve quality of life in the district.",
-    "conflict": false,
-    "legislative_note": "Federal funding announcements often follow legislative actions or appropriations bills.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Marcy Kaptur",
@@ -346,10 +283,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur's Trump-backed rival conceded defeat in the 2024 election.",
     "arc_analysis": "Highlights Kaptur's successful defense of her seat against a high-profile challenger.",
-    "conflict": false,
-    "legislative_note": "Ohio's electoral dynamics often feature strong partisan competition, reflecting broader national trends.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "GNews: Kaptur campaign",
@@ -362,10 +296,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur wins re-election, extending her record as the longest-serving woman in the US House.",
     "arc_analysis": "Her victory underscores her enduring popularity and influence in Ohio's 9th District politics.",
-    "conflict": false,
-    "legislative_note": "Kaptur's tenure highlights the longevity and seniority system within Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -378,10 +309,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur secures $39M in federal funds for community projects.",
     "arc_analysis": "Enhances local infrastructure and economic development in her district, bolstering constituent support.",
-    "conflict": false,
-    "legislative_note": "Securing federal funds reflects the legislative process of US Representatives influencing budget allocations.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "TiffinOhio.net",
@@ -394,10 +322,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Merrin's campaign is linked to a website smearing rival Williams in the OH-9 GOP primary.",
     "arc_analysis": "This negative campaigning could influence voter perceptions and dynamics in the Republican primary.",
-    "conflict": false,
-    "legislative_note": "Negative campaigning can influence voter perceptions and outcomes in primaries.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -410,10 +335,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Josh Williams announces his candidacy for Ohio's 9th Congressional District.",
     "arc_analysis": "Challenges incumbent Rep. Marcy Kaptur, potentially shifting the political dynamics in the race.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Rep. Marcy Kaptur, a long-standing Democrat.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -426,10 +348,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Republican candidates discuss strategies to defeat Kaptur.",
     "arc_analysis": "Highlights growing GOP interest in challenging a long-term Democratic incumbent.",
-    "conflict": false,
-    "legislative_note": "Kaptur's long-standing tenure in Congress reflects the competitive nature of Ohio's 9th district elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo City Paper",
@@ -442,10 +361,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur expresses concern over potential war with Iran.",
     "arc_analysis": "Highlights her stance on foreign policy and national security issues.",
-    "conflict": false,
-    "legislative_note": "Representatives often voice concerns about foreign policy and its impact on their constituents.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -458,10 +374,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur visits Libbey Glass picket line during ongoing strike.",
     "arc_analysis": "Highlights her engagement with local labor issues in the 9th District.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's visit highlights the intersection of labor issues and congressional engagement.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -474,10 +387,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur supports OPmobility's new manufacturing plant in Rossford.",
     "arc_analysis": "Promotes economic development and job creation in her district, bolstering local industry.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur often advocates for economic development initiatives to support local businesses and job creation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -490,10 +400,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur discusses defending the heartland in an interview.",
     "arc_analysis": "Highlights her advocacy for rural and industrial communities in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Kaptur's focus on defending the heartland reflects her long-standing advocacy for rural and industrial interests in Ohio.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "BG Independent News",
@@ -506,10 +413,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur hosts a town hall with Dingell and labor leaders on trade and tariffs.",
     "arc_analysis": "Engages constituents on economic issues affecting Ohio's 9th District, addressing concerns over job security and industry stability.",
-    "conflict": false,
-    "legislative_note": "Trade policy discussions often reflect broader congressional debates over international economics.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -522,10 +426,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "WTOL reports on candidates running for Ohio's 9th Congressional District.",
     "arc_analysis": "Highlights the competitive nature of the race and Kaptur's potential challengers.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is part of the US House elections where incumbents like Marcy Kaptur face challengers.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -538,10 +439,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Toledo drag queen announced candidacy for Ohio's 9th Congressional District.",
     "arc_analysis": "This could challenge Rep. Kaptur's long-held position and highlight district diversity.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a long-serving Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -554,10 +452,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Toledo drag queen and entrepreneur has entered the race for Ohio's 9th Congressional District.",
     "arc_analysis": "This candidacy adds diversity to the race, potentially challenging incumbent Rep. Kaptur.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a long-serving Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -570,10 +465,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Toledo drag queen and entrepreneur is running in Ohio's 9th District race.",
     "arc_analysis": "This candidacy challenges the traditional two-party system and could impact Kaptur's re-election prospects.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has seen challenges to traditional two-party dominance, reflecting broader national trends.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "TiffinOhio.net",
@@ -586,10 +478,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A photo of Derek Merrin with disgraced lawmaker Wes Goodman has resurfaced in the OH-9 GOP primary.",
     "arc_analysis": "This could damage Merrin's reputation and influence voter perceptions in the Republican primary.",
-    "conflict": false,
-    "legislative_note": "Wes Goodman's past controversies may influence voter perceptions in Ohio's 9th district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Buckeye Flame",
@@ -602,10 +491,7 @@
     "arc": "MEDIA",
     "arc_summary": "The Buckeye Flame calls for explanation of Kaptur's vote against transgender rights.",
     "arc_analysis": "Highlights criticism and scrutiny over her voting record on LGBTQ+ issues in Ohio.",
-    "conflict": false,
-    "legislative_note": "Kaptur's vote reflects ongoing debates in Congress and state legislatures over LGBTQ+ rights.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -618,10 +504,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur introduces H.R. 9550, the Strategic Unmanned Systems Partnership Act.",
     "arc_analysis": "Aims to enhance collaboration between federal agencies and industry for unmanned systems development.",
-    "conflict": false,
-    "legislative_note": "This bill fits within Kaptur's broader legislative focus on defense and technology.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "BG Independent News",
@@ -634,10 +517,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur secures design funding for a bike/pedestrian bridge between Wood and Lucas counties.",
     "arc_analysis": "Enhances regional connectivity and infrastructure, supporting local transportation needs in her district.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur often seeks federal funds for infrastructure projects in her district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -650,10 +530,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Marcy Kaptur is noted as the longest-serving woman in congressional history.",
     "arc_analysis": "Highlights her historical significance and longevity in Congress, emphasizing her enduring influence.",
-    "conflict": false,
-    "legislative_note": "Kaptur's tenure highlights the evolving role of women in US Congress.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "GNews: Marcy Kaptur",
@@ -666,10 +543,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur spoke at the Biggest Week in American Birding event.",
     "arc_analysis": "Highlights her engagement with local tourism and environmental issues in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "BG Independent News",
@@ -682,10 +556,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur and Dingell held a Toledo town hall on trade and tariffs.",
     "arc_analysis": "Engages constituents on key economic issues affecting the district's manufacturing base.",
-    "conflict": false,
-    "legislative_note": "Trade and tariff issues are often debated in Congress with significant impact on manufacturing districts like Kaptur's 9th District.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -698,10 +569,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and McCaul introduce 'Guard the Skies Act' to improve National Guard drone countermeasures.",
     "arc_analysis": "Aims to bolster national security by enhancing capabilities against unmanned aerial threats.",
-    "conflict": false,
-    "legislative_note": "This legislation likely aims to address emerging security threats related to unmanned aerial systems.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -714,10 +582,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and DeLauro accuse the Energy Secretary of lying during a committee hearing.",
     "arc_analysis": "Highlights the committee's role in holding federal officials accountable, potentially impacting energy policy oversight.",
-    "conflict": true,
-    "legislative_note": "Committee hearings in Congress are used to scrutinize executive branch officials.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "wtol.com",
@@ -730,10 +595,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Republican candidates spoke at a forum in the 9th Congressional District.",
     "arc_analysis": "Highlights growing competition for Kaptur's seat as Republicans seek to challenge her incumbency.",
-    "conflict": false,
-    "legislative_note": "The 9th Congressional District is currently represented by Democratic Rep. Marcy Kaptur, highlighting ongoing competition for this seat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -746,10 +608,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur's campaign heats up in Ohio's 9th district ahead of November election.",
     "arc_analysis": "The race is crucial for determining party control of the U.S. House, highlighting its national significance.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has historically been a key battleground for congressional elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "GNews: Kaptur Ohio 9th",
@@ -762,10 +621,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur participates in campaign events in Ohio's 9th District.",
     "arc_analysis": "Highlights her active engagement with constituents ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district includes key areas where Kaptur has historically focused on economic development and infrastructure.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -778,10 +634,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Republican candidates for Ohio's 9th district primary are introduced.",
     "arc_analysis": "Highlights the competitive nature of the upcoming primary, setting stage for general election challenges.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Democrat Marcy Kaptur, making this race significant as a challenge to her seat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -794,10 +647,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur and her opponent receive endorsements from a police organization.",
     "arc_analysis": "Endorsements can sway voter opinions, impacting Kaptur's re-election prospects in the competitive race.",
-    "conflict": false,
-    "legislative_note": "Endorsements can significantly influence voter perceptions in close races, especially in districts with strong law enforcement presence.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -810,10 +660,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur voted against a bill allocating $3M to Ohio's 9th district.",
     "arc_analysis": "Highlights the partisan divide and potential impact on local funding.",
-    "conflict": false,
-    "legislative_note": "Representative votes often reflect their stance on federal funding for their constituents.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -826,10 +673,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A former ICE deputy director is running in Ohio's 9th Congressional District.",
     "arc_analysis": "This candidacy could challenge Rep. Kaptur's long-held seat, potentially shifting the district's political dynamics.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th Congressional District includes Toledo and has been represented by Marcy Kaptur for decades.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -842,10 +686,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Madison Sheahan, an ICE deputy director and Ohio 9th district candidate, meets with voters.",
     "arc_analysis": "Highlights Sheahan's campaign efforts in a competitive race against incumbent Kaptur.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th Congressional District is known for its competitive elections due to demographic shifts.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -858,10 +699,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Five Republican candidates debated ahead of the primary in Ohio's 9th district.",
     "arc_analysis": "Highlights growing competition for Kaptur's seat as she faces potential challengers.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by long-serving Democrat Marcy Kaptur.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -874,10 +712,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A local businessman and veteran is running against Marcy Kaptur.",
     "arc_analysis": "Highlights growing competition for Kaptur in the 2024 election cycle.",
-    "conflict": false,
-    "legislative_note": "Marcy Kaptur has been a long-standing member of the US House, influencing federal policy.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -890,10 +725,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces over $1M in research grants for the University of Toledo.",
     "arc_analysis": "Supports local education and innovation, bolstering economic development in her district.",
-    "conflict": false,
-    "legislative_note": "Federal funding announcements like this often reflect broader legislative priorities and appropriations.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Daily Kos",
@@ -906,10 +738,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur is part of a canvassing effort in Ohio.",
     "arc_analysis": "Highlights her involvement in grassroots campaigning with Senator Brown to mobilize voters.",
-    "conflict": false,
-    "legislative_note": "Representative engagement like this reflects the importance of constituent outreach in both state and federal legislative processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "DredgeWire",
@@ -922,10 +751,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur secures over $17.6M in Army Corps funding for dredging northwest Ohio harbors.",
     "arc_analysis": "Enhances local maritime infrastructure, supporting jobs and economic activity in the district.",
-    "conflict": false,
-    "legislative_note": "Securing federal funding through the US Army Corps of Engineers aligns with Kaptur's long-standing advocacy for infrastructure improvements.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -938,10 +764,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Josh Williams launches campaign for Ohio's 9th district.",
     "arc_analysis": "Challenges Kaptur's long-held seat, potentially shifting the political dynamics in the district.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a long-serving Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -954,10 +777,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin announces his candidacy to challenge Rep. Marcy Kaptur.",
     "arc_analysis": "Highlights growing Republican interest in flipping Ohio's 9th District seat.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district races often reflect national partisan trends in US House elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Politico",
@@ -970,10 +790,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Two Ohio Republicans are running against Rep. Kaptur.",
     "arc_analysis": "Highlights growing Republican challenge in traditionally Democratic district ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has seen competitive races in the past, reflecting broader national trends.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -986,10 +803,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin announces plans to run against Marcy Kaptur in 2024.",
     "arc_analysis": "Highlights growing competition for Kaptur's seat ahead of the next election cycle.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has seen competitive races, reflecting broader national trends.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Washington Post",
@@ -1002,10 +816,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur is profiled in The Washington Post.",
     "arc_analysis": "Highlights her longevity and influence in Congress, potentially boosting her reputation among constituents.",
-    "conflict": false,
-    "legislative_note": "Kaptur's long-standing tenure reflects the importance of veteran representatives in shaping legislative agendas and policy outcomes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Roll Call",
@@ -1018,10 +829,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur pitches for Appropriations Committee chairmanship.",
     "arc_analysis": "Aims to secure influential position shaping federal spending.",
-    "conflict": false,
-    "legislative_note": "Appropriations Committee chairs wield significant power in funding allocation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "TiffinOhio.net",
@@ -1034,10 +842,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Scandals are affecting the GOP primary in Ohio's 9th district.",
     "arc_analysis": "This impacts Kaptur by influencing the political landscape ahead of the general election.",
-    "conflict": false,
-    "legislative_note": "The Ohio 9th district includes Toledo and is currently represented by Democrat Marcy Kaptur.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cleveland.com",
@@ -1050,10 +855,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Graham Veysey is running TV ads targeting Reps. Marcy Kaptur and Dennis Kucinich.",
     "arc_analysis": "Highlights growing challenge for incumbent Kaptur in the upcoming election.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district race involving Rep. Marcy Kaptur highlights competitive dynamics in US House elections.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1066,10 +868,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and Murray request GAO investigation into DOE's diversion of funds from wind and solar.",
     "arc_analysis": "Highlights oversight role in ensuring federal agencies comply with spending laws, impacting renewable energy funding.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's action aligns with oversight responsibilities in Congress to ensure federal agencies comply with spending laws.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1082,10 +881,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A military veteran and entrepreneur is running against Kaptur in Ohio's 9th district.",
     "arc_analysis": "This candidacy adds competition to the race, potentially challenging Kaptur's long-standing incumbency.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has historically been a stronghold for Democratic incumbents, with Kaptur holding the seat since 1983.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -1098,10 +894,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur announces Home Energy Assistance Program for Ohio residents.",
     "arc_analysis": "Aims to provide financial relief for Ohioans struggling with energy costs during extreme weather.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's announcement aligns with federal efforts to assist households with energy costs.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1114,10 +907,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Wayne Kinsel has dropped out of the Ohio 9th District race.",
     "arc_analysis": "Reduces competition for Rep. Marcy Kaptur in her reelection bid.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a long-serving Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1130,10 +920,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Wayne Kinsel has withdrawn from the race for Ohio's 9th Congressional District.",
     "arc_analysis": "Reduces competition for Rep. Marcy Kaptur in her reelection bid, potentially easing her path to victory.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a long-serving Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1146,10 +933,7 @@
     "arc": "DISTRICT",
     "arc_summary": "New counties in Ohio's 9th district are discussing the competitive race.",
     "arc_analysis": "Reflects growing interest and engagement across the district ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process can shift political dynamics and competitiveness of districts.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1162,10 +946,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Five Republicans are running to replace Marcy Kaptur in Ohio's 9th district.",
     "arc_analysis": "Highlights the competitive nature of the upcoming election and potential shift in representation.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is a long-standing Democratic stronghold, making this race noteworthy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1178,10 +959,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur calls for inspection of Greenbelt Place Apartments over pest infestations and violence.",
     "arc_analysis": "Highlights her role in addressing local housing issues affecting constituents.",
-    "conflict": false,
-    "legislative_note": "Representatives often advocate for housing safety and community well-being within their districts.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "NBC News",
@@ -1194,10 +972,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur is not among the House Democrats announcing retirement.",
     "arc_analysis": "Highlights her continued political longevity and commitment to serving Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Marcy Kaptur's decision to continue serving reflects her long-standing commitment to representing Ohio's 9th district.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "breitbart.com",
@@ -1210,10 +985,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Alea Nadeem criticizes Rep. Kaptur for decline in American manufacturing.",
     "arc_analysis": "Criticism highlights political opposition and challenges to her record on industrial policy.",
-    "conflict": true,
-    "legislative_note": "Rep. Kaptur has long championed manufacturing interests but faces criticism.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "TexasGOPVote",
@@ -1226,10 +998,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "McCaul, Kaptur, and others introduce Strategic Unmanned Systems Partnership Act.",
     "arc_analysis": "Aims to enhance security cooperation between the US and Ukraine through unmanned systems.",
-    "conflict": false,
-    "legislative_note": "This bill aims to enhance security cooperation with Ukraine through unmanned systems, reflecting broader US defense policy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -1242,10 +1011,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur addresses gun violence incident at Toledo's Old West End Festival.",
     "arc_analysis": "Highlights her engagement with community safety issues in her district.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1258,10 +1024,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur's campaign released an ad calling for Merrin's indictment.",
     "arc_analysis": "Highlights the adversarial nature of the race and Kaptur's aggressive campaigning strategy.",
-    "conflict": true,
-    "legislative_note": "Political ads like this are common in contentious campaigns to influence voter opinion.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "WTVG",
@@ -1274,10 +1037,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Toledo resident with a Trump-themed yard sign challenges Rep. Kaptur.",
     "arc_analysis": "Highlights local political sentiment and potential opposition in her reelection bid.",
-    "conflict": false,
-    "legislative_note": "Represents Ohio's 9th district, highlighting local political dynamics.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -1290,10 +1050,7 @@
     "arc": "MEDIA",
     "arc_summary": "NRCC highlights Marcy Kaptur's opposition to taxing Social Security.",
     "arc_analysis": "Criticism from the NRCC aims to undermine her credibility among conservative voters.",
-    "conflict": false,
-    "legislative_note": "Kaptur's stance aligns with long-term Democratic party support for protecting Social Security benefits from taxation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -1306,10 +1063,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces $7.19M in FAA funding for NW Ohio airports.",
     "arc_analysis": "Supports local aviation infrastructure, likely to boost regional economic development.",
-    "conflict": false,
-    "legislative_note": "FAA funding allocations reflect ongoing federal transportation policy priorities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1322,10 +1076,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur withdraws her candidacy for Appropriations Committee chair.",
     "arc_analysis": "This decision may impact her influence in federal funding allocation for Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Committee chairs in the US House are determined by seniority and party leadership.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Marcy Kaptur",
@@ -1338,10 +1089,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur was caught sleeping during a lengthy House speech.",
     "arc_analysis": "Highlights challenges in maintaining attention during long legislative sessions, potentially impacting public perception.",
-    "conflict": false,
-    "legislative_note": "Incidents like this highlight the pressures and long hours in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1354,10 +1102,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and Murray request GAO investigation into DOE misallocating clean energy funds.",
     "arc_analysis": "Highlights oversight role in ensuring federal agencies adhere to funding guidelines.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's action reflects oversight role of Congress to investigate federal agencies.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "IAM Union",
@@ -1370,10 +1115,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur supports striking IAM union members at Libbey Glass in Toledo.",
     "arc_analysis": "Highlights her engagement with local labor issues and support for workers' rights in her district.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur often advocates for workers' rights and labor unions within Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1386,10 +1128,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur and Vance will visit striking UAW workers in Toledo.",
     "arc_analysis": "Highlights local labor issues and bipartisan support for workers during the strike.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's involvement highlights the intersection of labor issues with congressional advocacy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1402,10 +1141,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur launches a new water sampling campaign in her district.",
     "arc_analysis": "Highlights her commitment to environmental issues and community engagement in Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Water quality initiatives often align with EPA regulations and local environmental policies.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1418,10 +1154,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Ohio Democratic Party chair expresses confidence in Kaptur's ability to win the newly redrawn, Republican-leaning district.",
     "arc_analysis": "Highlights internal party optimism and strategic focus on retaining a key seat despite redistricting challenges.",
-    "conflict": false,
-    "legislative_note": "Redistricting can significantly impact a representative's re-election prospects by altering their voter base.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Spectrum News",
@@ -1434,10 +1167,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Rep. Kaptur comments on redistricting changes affecting her Ohio 9th District.",
     "arc_analysis": "Her response highlights the political impact of redistricting on incumbent representation and voter demographics.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts the political representation and community cohesion in affected districts.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Hill",
@@ -1450,10 +1180,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur faces and counters a challenge in her Ohio House race.",
     "arc_analysis": "Highlights the competitive nature of her reelection bid, underscoring potential shifts in voter support.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process can impact incumbents' re-election prospects.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1466,10 +1193,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and other representatives applaud the passage of an appropriations package.",
     "arc_analysis": "Highlights Kaptur's role in securing federal funding through committee work.",
-    "conflict": false,
-    "legislative_note": "Appropriations packages are crucial for funding federal agencies and programs.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -1482,10 +1206,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur invites constituents to share their thoughts.",
     "arc_analysis": "Encourages direct engagement with her district ahead of potential re-election.",
-    "conflict": false,
-    "legislative_note": "This reflects the importance of constituent engagement in shaping legislative priorities.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -1498,10 +1219,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur provides updates on her work for northwest Ohio.",
     "arc_analysis": "Highlights ongoing efforts to engage constituents and showcase achievements in the district.",
-    "conflict": false,
-    "legislative_note": "As a long-serving representative, Kaptur likely focuses on federal issues relevant to Ohio's 9th District.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -1514,10 +1232,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Rep. Marcy Kaptur faces challenge from Ohio state lawmaker Derek Merrin in her reelection bid.",
     "arc_analysis": "Highlights the competitive nature of an election for a long-held seat, potentially shifting district dynamics.",
-    "conflict": false,
-    "legislative_note": "Kaptur's race highlights the rare transition of a long-serving US Representative facing a challenger with state legislative experience.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1530,10 +1245,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur released a statement on the Trump administration's release of oil from the Strategic Petroleum Reserve.",
     "arc_analysis": "Highlights her stance on energy policy and response to federal actions impacting national security and markets.",
-    "conflict": false,
-    "legislative_note": "This action relates to energy policy and national security, areas where Kaptur may advocate for sustainable and strategic reserves.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1546,10 +1258,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur discusses infrastructure and projects with Buttigieg in Toledo.",
     "arc_analysis": "Highlights collaboration on federal funding for local development, addressing district concerns.",
-    "conflict": false,
-    "legislative_note": "Infrastructure discussions often relate to federal spending bills and appropriations processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Spectrum News",
@@ -1562,10 +1271,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur now supports impeachment inquiry.",
     "arc_analysis": "Reflects her stance on national political issues and potential impact on district constituents.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's stance reflects ongoing debates in Congress about constitutional responsibilities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1578,10 +1284,7 @@
     "arc": "MEDIA",
     "arc_summary": "DeLauro and Kaptur release fact sheets on Trump's funding freeze impact.",
     "arc_analysis": "Critiques administration policy, highlighting potential negative effects on energy prices and dominance.",
-    "conflict": false,
-    "legislative_note": "Kaptur, as a long-serving member of the House Appropriations Committee, often addresses federal budget impacts.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -1594,10 +1297,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur's shutdown halts Head Start programs in Toledo.",
     "arc_analysis": "Highlights the local impact of federal funding cuts and political tensions over budget negotiations.",
-    "conflict": true,
-    "legislative_note": "Shutdowns can disrupt federal funding for local programs like Head Start, highlighting the impact of national policy on communities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "Quiver Quantitative",
@@ -1610,10 +1310,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and colleagues secure final signature for vote on Ukraine Support Act.",
     "arc_analysis": "Demonstrates bipartisanship in supporting Ukraine, enhancing Kaptur's national security credentials.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's actions reflect the bipartisanship required to pass significant foreign policy legislation in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "U.S. Senate (.gov)",
@@ -1626,10 +1323,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and others call on Congress to implement postal banking pilot programs.",
     "arc_analysis": "Advocates for expanding financial services through the post office, addressing economic inequality.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur is advocating for financial inclusion through postal banking, a policy area with growing bipartisan interest.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cleveland.com",
@@ -1642,10 +1336,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Madison Sheahan, former ICE deputy director, enters the race for Ohio's 9th district against Rep. Marcy Kaptur.",
     "arc_analysis": "Adds a new challenger to the election landscape, potentially shifting dynamics in the race.",
-    "conflict": false,
-    "legislative_note": "The race highlights the ongoing debate over immigration policy in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -1658,10 +1349,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "An ICE official is running against Marcy Kaptur for her congressional seat.",
     "arc_analysis": "This could signal a shift in the political landscape, challenging Kaptur's long-standing incumbency.",
-    "conflict": false,
-    "legislative_note": "Congressional races can reflect broader national debates on immigration policy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1674,10 +1362,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A former ICE official has announced a candidacy in Ohio's 9th Congressional District.",
     "arc_analysis": "This could challenge Rep. Kaptur's long-held seat and reflect growing interest from conservative candidates.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Rep. Marcy Kaptur, a long-standing Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Signal Cleveland",
@@ -1690,10 +1375,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur announces her campaign for reelection.",
     "arc_analysis": "Highlights Kaptur's continued presence and strategy in Ohio's 9th district ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's decision to run reflects the competitive nature of U.S. House elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Marcy Kaptur",
@@ -1706,10 +1388,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur introduces H.R. 4230 to enhance appropriations compliance.",
     "arc_analysis": "Aims to improve federal spending oversight, aligning with her role on the Appropriations Committee.",
-    "conflict": false,
-    "legislative_note": "This bill aligns with Kaptur's long-standing commitment to federal spending oversight.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1722,10 +1401,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur secures federal funding for northwest Ohio airport upgrades.",
     "arc_analysis": "Enhances local transportation infrastructure and economic development in her district.",
-    "conflict": false,
-    "legislative_note": "Securing federal funding involves leveraging congressional committees and appropriations processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1738,10 +1414,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Marcy Kaptur gave a statement during the markup of the 2026 Energy and Water Development Funding Bill.",
     "arc_analysis": "Highlights her role in shaping federal energy and water policy through committee work.",
-    "conflict": false,
-    "legislative_note": "Kaptur's participation reflects her role in shaping federal energy policy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Marcy Kaptur",
@@ -1754,10 +1427,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur addressed committee on FY26 Energy and Water Development bill.",
     "arc_analysis": "Her comments reflect ongoing tensions over funding priorities in Congress.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's address pertains to the annual process of securing federal funding for energy and water projects, which is crucial for her district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Dredging Today",
@@ -1770,10 +1440,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur secured over $17.6M in USACE funding for Northwest Ohio harbor dredging.",
     "arc_analysis": "Enhances local maritime infrastructure, supporting jobs and economic activity in the district.",
-    "conflict": false,
-    "legislative_note": "Securing federal funds through USACE aligns with Kaptur's long-standing advocacy for infrastructure improvements.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1786,10 +1453,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur is holding a news conference to highlight Toledo's auto industry.",
     "arc_analysis": "Emphasizes the district's economic importance and Kaptur's support for local manufacturing.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur often uses her position to advocate for local industries, reflecting the role of Congress members in supporting their district's economic interests.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1802,10 +1466,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Alea Nadeem discusses her campaign to unseat Rep. Marcy Kaptur.",
     "arc_analysis": "Highlights growing challenge for Kaptur in the upcoming election.",
-    "conflict": false,
-    "legislative_note": "Representative elections often involve navigating complex district-specific issues and incumbent advantages.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1818,10 +1479,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur sets an early tone for her tough reelection campaign.",
     "arc_analysis": "Highlights the competitive nature of Kaptur's race and her proactive approach to campaigning.",
-    "conflict": false,
-    "legislative_note": "Reelection campaigns in the US Congress are competitive, often reflecting broader national political trends.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -1834,10 +1492,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "NRCC highlights Derek Merrin's momentum against Marcy Kaptur.",
     "arc_analysis": "Signals NRCC focus on flipping Ohio's 9th district, challenging Kaptur's long-held seat.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district races often reflect broader national trends in congressional elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -1850,10 +1505,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "NRCC launches ad targeting Rep. Marcy Kaptur.",
     "arc_analysis": "Highlights growing GOP efforts to challenge her in the upcoming election.",
-    "conflict": false,
-    "legislative_note": "Kaptur is a long-serving member of the House, often involved in defense spending debates.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1866,10 +1518,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "President Trump endorses Merrin in Ohio's 9th congressional race.",
     "arc_analysis": "This endorsement could challenge Kaptur's long-held position and boost Merrin's campaign visibility.",
-    "conflict": true,
-    "legislative_note": "Ohio's 9th District is known for its competitive races and long-standing Democratic representation, challenging incumbents like Marcy Kaptur.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "House.gov",
@@ -1882,10 +1531,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur delivers statement during markup of 2024 Energy and Water Development funding bill.",
     "arc_analysis": "Highlights her role in shaping federal spending for energy, water projects, and defense agencies.",
-    "conflict": false,
-    "legislative_note": "This process involves committee review and amendment of appropriations bills before floor debate.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1898,10 +1544,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur requests an investigation into a hazardous apartment complex in Toledo.",
     "arc_analysis": "Highlights her commitment to addressing local housing safety issues in her district.",
-    "conflict": false,
-    "legislative_note": "Representatives often use their position to address local safety concerns.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -1914,10 +1557,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "An Air Force veteran plans to challenge Rep. Kaptur in the 2026 election.",
     "arc_analysis": "Signals potential competition for Kaptur's long-held seat, impacting her re-election strategy.",
-    "conflict": false,
-    "legislative_note": "Ohio's electoral process involves primary and general elections where incumbents like Kaptur face challengers.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -1930,10 +1570,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Republican military veteran is running against Rep. Kaptur.",
     "arc_analysis": "This candidacy challenges Kaptur's long-standing hold on Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has seen competitive races in the past, often reflecting broader national trends.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Strauss Center",
@@ -1946,10 +1583,7 @@
     "arc": "MEDIA",
     "arc_summary": "Congresswoman Marcy Kaptur discusses freedom at the Strauss Center.",
     "arc_analysis": "Highlights her advocacy for democratic values and national security issues.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -1962,10 +1596,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur made a statement regarding the NNSA weapons program.",
     "arc_analysis": "Highlights her involvement in national security and defense issues through committee work.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's statement is part of ongoing congressional oversight and policy debates on nuclear security.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1978,10 +1609,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Four Republicans have filed to run against Kaptur in Ohio's 9th district.",
     "arc_analysis": "Increased Republican competition signals a closer race for the traditionally Democratic seat.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is a competitive seat with frequent Republican challenges.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -1994,10 +1622,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A VERIFY article questions Kaptur's legislative record and hiring claims.",
     "arc_analysis": "Highlights potential campaign scrutiny on her effectiveness as a legislator.",
-    "conflict": true,
-    "legislative_note": "Representative Marcy Kaptur is known for her long-standing tenure in the U.S. House of Representatives, where she has worked on various policy areas.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "Daily Kos",
@@ -2010,10 +1635,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur participates in canvassing efforts for upcoming elections.",
     "arc_analysis": "Strengthens her grassroots support and visibility among voters ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Representative engagement in grassroots campaigning reflects the importance of constituent outreach in U.S. legislative processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Reason Magazine",
@@ -2026,10 +1648,7 @@
     "arc": "MEDIA",
     "arc_summary": "Reason Magazine reprises a July 2010 segment on Rep. Kaptur.",
     "arc_analysis": "Highlights criticism of her for securing federal funding, impacting her public image.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur is known for securing federal funding for local projects, often referred to as 'pork', through her position in Congress.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -2042,10 +1661,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur's district shifts further right under Ohio's new congressional map.",
     "arc_analysis": "This redistricting could make Kaptur's re-election more challenging in a redrawn, potentially more conservative district.",
-    "conflict": false,
-    "legislative_note": "Redistricting can significantly alter a representative's constituency and political dynamics.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -2058,10 +1674,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and Murray request GAO review of Trump's energy spending changes.",
     "arc_analysis": "Aims to challenge executive actions that could undermine environmental protections and federal oversight.",
-    "conflict": false,
-    "legislative_note": "GAO reviews can provide oversight on federal agency actions, relevant here for checking legality and impact.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Hill",
@@ -2074,10 +1687,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur faces off against Merrin in Ohio's 9th district race.",
     "arc_analysis": "Highlights the competitive nature of the upcoming election, impacting Kaptur's re-election prospects.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district races often reflect national trends and party strategies.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "CBS News",
@@ -2090,10 +1700,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin is projected to win the Republican primary and face Marcy Kaptur in November.",
     "arc_analysis": "This sets up a competitive general election race for Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th District races often reflect national partisan trends.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -2106,10 +1713,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin won the Republican primary for Ohio's 9th district.",
     "arc_analysis": "Sets up a competitive general election race between Kaptur and Merrin in November.",
-    "conflict": false,
-    "legislative_note": "The Ohio General Assembly sets congressional districts, impacting primaries like this one.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ideastream",
@@ -2122,10 +1726,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin won the Republican primary and will challenge Rep. Kaptur.",
     "arc_analysis": "Sets up a competitive race for Ohio's 9th district, potentially impacting Kaptur's long-term incumbency.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has seen competitive races, with incumbency often a strong factor.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Sandusky Register",
@@ -2138,10 +1739,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur speaks with students in her district.",
     "arc_analysis": "Engages local youth, potentially addressing education or career opportunities.",
-    "conflict": false,
-    "legislative_note": "Representatives often engage with constituents to understand local issues and gather support for federal policies.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2154,10 +1752,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Northwest Ohio voters selected Republican Merrin as Kaptur's opponent.",
     "arc_analysis": "This primary result sets up a competitive general election race for the 9th District.",
-    "conflict": false,
-    "legislative_note": "Ohio's electoral process often features competitive races between incumbents and challengers, reflecting the state's political diversity.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Washington Examiner",
@@ -2170,10 +1765,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin won the Republican primary to challenge Marcy Kaptur.",
     "arc_analysis": "This sets up a competitive general election race in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is a historically competitive seat with significant demographic shifts influencing outcomes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Washington Examiner",
@@ -2186,10 +1778,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "GOP is pushing to oust Rep. Kaptur amid sexual misconduct allegations and ICE ties.",
     "arc_analysis": "Highlights political challenges facing Kaptur as she faces potential opposition in her re-election bid.",
-    "conflict": false,
-    "legislative_note": "Political challenges like these can impact a representative's ability to advance legislation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -2202,10 +1791,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Merrin will face Kaptur again in the race for Ohio's 9th District.",
     "arc_analysis": "Highlights the competitive nature of the upcoming election and Kaptur's incumbent status.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district races often reflect national trends and local issues.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "kare11.com",
@@ -2218,10 +1804,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin won the Republican nomination for Ohio's 9th district.",
     "arc_analysis": "This sets up a primary challenger for Kaptur in the upcoming election, potentially increasing competition.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -2234,10 +1817,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Five Republicans compete in primary to challenge Rep. Kaptur.",
     "arc_analysis": "Highlights growing Republican interest in unseating a long-term Democratic incumbent.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's long-standing tenure reflects the competitive nature of Ohio's 9th district elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Ohio 9th",
@@ -2250,10 +1830,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin won the Republican primary in Ohio's 9th District.",
     "arc_analysis": "This reduces Kaptur's chances of reelection by strengthening her GOP opponent.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Democrat Marcy Kaptur, highlighting the competitive nature of this election.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Ohio 9th",
@@ -2266,10 +1843,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Former state Rep. Derek Merrin won the Republican primary against Kaptur in Ohio's 9th district.",
     "arc_analysis": "This sets up a competitive rematch for one of the most watched congressional races, highlighting partisan tensions.",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional races reflect the state's partisan divide and influence on national politics.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WKYC",
@@ -2282,10 +1856,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur wins re-election, extending her record as the longest-serving woman in the US House.",
     "arc_analysis": "Her victory underscores her enduring popularity and influence in Ohio's 9th District despite long tenure.",
-    "conflict": false,
-    "legislative_note": "Kaptur's tenure highlights the longevity and institutional knowledge she brings to Congress.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -2298,10 +1869,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur claims victory in a closely contested Congressional race.",
     "arc_analysis": "Her claim highlights the competitive nature of her re-election bid and potential implications for Democratic representation.",
-    "conflict": false,
-    "legislative_note": "Close races like Kaptur's highlight the importance of recounts and provisional ballots under US election laws.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -2314,10 +1882,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "National Republican Congressional Committee criticizes Marcy Kaptur's 40-year tenure.",
     "arc_analysis": "Highlights opposition efforts to undermine her long-standing political influence and record.",
-    "conflict": true,
-    "legislative_note": "Marcy Kaptur's long service in the US House reflects institutional challenges and partisan dynamics in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "Quiver Quantitative",
@@ -2330,10 +1895,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur and Murray urge OMB to withdraw proposed federal grants rule.",
     "arc_analysis": "Highlights their efforts to protect federal grant programs from regulatory changes.",
-    "conflict": false,
-    "legislative_note": "OMB rules can significantly impact federal funding processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Senator Patty Murray (.gov)",
@@ -2346,10 +1908,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Murray and Kaptur urge OMB to rescind a proposed rule politicizing DOE grants.",
     "arc_analysis": "This action aims to protect federal grant integrity and maintain private sector confidence in DOE funding.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's action aligns with her long-standing advocacy for federal funding in Ohio, particularly for energy and infrastructure.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -2362,10 +1921,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and Murray issued a statement regarding DOE's non-compliance with spending transparency requirements.",
     "arc_analysis": "Highlights oversight concerns in federal spending, underscoring the committee's role in fiscal accountability.",
-    "conflict": false,
-    "legislative_note": "This highlights the ongoing oversight role of Congress in federal agency compliance.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -2378,10 +1934,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur won her election against JR Majewski.",
     "arc_analysis": "Secures her seat for another term, maintaining Democratic presence in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Kaptur's victory highlights the influence of incumbency in US House elections.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WLWT",
@@ -2394,10 +1947,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur wins re-election and remains the longest-serving woman in the U.S. House.",
     "arc_analysis": "Her victory underscores her enduring popularity and influence in Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Kaptur's long tenure reflects her experience navigating both Ohio state politics and federal legislative processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2410,10 +1960,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur requests a moment of silence in the House for an Old West End shooting.",
     "arc_analysis": "Highlights her role in recognizing local incidents and community concerns.",
-    "conflict": false,
-    "legislative_note": "Represents legislative tradition of honoring community events.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "NOTUS",
@@ -2426,10 +1973,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur faces her toughest race due to recent redistricting.",
     "arc_analysis": "Redistricting shifts political dynamics, potentially challenging Kaptur's long-held seat.",
-    "conflict": false,
-    "legislative_note": "Redistricting can significantly impact a representative's constituency and electoral challenges.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -2442,10 +1986,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur faces her toughest race yet, according to the NRCC.",
     "arc_analysis": "Highlights increased Republican challenge in traditionally Democratic district.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is competitive due to recent redistricting changes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Spectrum News",
@@ -2458,10 +1999,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur discusses her 40-year tenure in Congress.",
     "arc_analysis": "Highlights her longevity and continued commitment to public service, reinforcing her status as a veteran lawmaker.",
-    "conflict": false,
-    "legislative_note": "Kaptur's long-standing service reflects the stability and seniority system within US Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -2474,10 +2012,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "NRCC launches ad campaign targeting Kaptur for raising taxes.",
     "arc_analysis": "Highlights growing GOP efforts to challenge Kaptur's long-standing incumbency in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Political ads often misrepresent policy positions to influence voter perception.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Roll Call",
@@ -2490,10 +2025,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur will face Merrin in the Democratic primary for Ohio's 9th district.",
     "arc_analysis": "Highlights the competitive nature of the primary race and Kaptur's challenge to maintain her seat.",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional primaries reflect the state's process of selecting party nominees.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Daily Signal",
@@ -2506,10 +2038,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur's race in Ohio's 9th district is highlighted as key for midterms.",
     "arc_analysis": "Elevates the strategic importance of her re-election bid, potentially influencing national Democratic strategy.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th District, represented by Kaptur, often reflects broader national trends in midterm elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -2522,10 +2051,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Lourdes University president visits DC with Rep. Kaptur.",
     "arc_analysis": "Highlights Kaptur's engagement with local educational institutions and advocacy for higher education issues in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur often engages in advocacy for higher education issues.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Roll Call",
@@ -2538,10 +2064,7 @@
     "arc": "MEDIA",
     "arc_summary": "Rep. Kaptur calls on GOP to address the leadership vacuum in the House.",
     "arc_analysis": "Highlights ongoing political challenges and gridlock in Congress, positioning Kaptur as a voice for procedural reform.",
-    "conflict": false,
-    "legislative_note": "Leadership stability is crucial for legislative process and policy implementation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -2554,10 +2077,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur made a statement regarding the NNSA's nuclear nonproliferation and naval reactors.",
     "arc_analysis": "Highlights her involvement in national security issues through committee work.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's statement relates to national security policy, reflecting her role in defense-related legislation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -2570,10 +2090,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur criticizes Russ Vought's move to block funding for Army Corps projects.",
     "arc_analysis": "Highlights Kaptur's opposition to budgetary actions that harm Democratic states and cities, emphasizing her commitment to federal infrastructure spending.",
-    "conflict": false,
-    "legislative_note": "Kaptur is known for advocating infrastructure spending, especially on waterways.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2586,10 +2103,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur discusses a Ukrainian drone facility in Lucas County.",
     "arc_analysis": "Highlights local collaboration with international partners, emphasizing the district's technological and military significance.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Canton Repository",
@@ -2602,10 +2116,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Canton attorney is planning to run for Rep. Kaptur's seat in the upcoming election.",
     "arc_analysis": "Signals potential electoral challenge ahead, impacting Kaptur's re-election prospects.",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional elections follow federal legislative processes and term limits.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Spectrum News",
@@ -2618,10 +2129,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Former aide to Rep. Marcy Kaptur pleads guilty to stealing nearly $23,000.",
     "arc_analysis": "This scandal could damage Kaptur's reputation and raise questions about her office's internal controls.",
-    "conflict": false,
-    "legislative_note": "This highlights the importance of ethics and accountability in congressional offices.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2634,10 +2142,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "A former aide to Rep. Marcy Kaptur pleaded guilty to a $22,000 fraud scheme.",
     "arc_analysis": "This incident may damage Kaptur's reputation and raise questions about her office's oversight.",
-    "conflict": false,
-    "legislative_note": "This highlights the importance of ethics and compliance in legislative offices.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -2650,10 +2155,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "A former aide to Rep. Kaptur was convicted of stealing over $20,000 from the congresswoman's account.",
     "arc_analysis": "This highlights ethical issues within her staff and could damage her reputation and trust among constituents.",
-    "conflict": false,
-    "legislative_note": "This highlights the importance of financial oversight in congressional offices.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2666,10 +2168,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur and Senator Husted comment on the government shutdown.",
     "arc_analysis": "Provides insight into their stance on federal budget issues affecting Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Government shutdowns often lead to debates over budget priorities in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -2682,10 +2181,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Marcy Kaptur delivered floor remarks on the 2026 Energy and Water Development Funding Bill.",
     "arc_analysis": "Her comments highlight her role in shaping federal energy and water policy, influencing appropriations for defense and civilian projects.",
-    "conflict": false,
-    "legislative_note": "As a senior member, Kaptur's remarks reflect her influence in shaping defense and energy appropriations.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -2698,10 +2194,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "National Republican Congressional Committee predicts Republicans will flip Ohio's 9th district.",
     "arc_analysis": "Highlights the competitive nature of the upcoming election and challenges to Kaptur's long-standing tenure.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has historically been a key battleground for congressional control.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2714,10 +2207,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Kaptur was involved in a car accident in Toledo.",
     "arc_analysis": "This incident is unrelated to her legislative or district work and does not impact her political standing.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cleveland.com",
@@ -2730,10 +2220,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Marcy Kaptur was injured in a car crash in Toledo.",
     "arc_analysis": "This incident is unrelated to her legislative or district work and does not impact her political standing directly.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2746,10 +2233,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur comments on BP's investment in a Toledo plant.",
     "arc_analysis": "Highlights her engagement with local industry and economic development issues.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2762,10 +2246,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Marcy Kaptur was fined $200 for failing to report a stock transaction.",
     "arc_analysis": "This incident highlights potential lapses in compliance with financial disclosure requirements, impacting her reputation and transparency credentials.",
-    "conflict": false,
-    "legislative_note": "Failure to disclose financial transactions can lead to penalties under ethics rules in both the Ohio General Assembly and US Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2778,10 +2259,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur continues her 'Countdown to Earth Day' series.",
     "arc_analysis": "Highlights her environmental advocacy and engagement with constituents ahead of Earth Day.",
-    "conflict": false,
-    "legislative_note": "Kaptur's environmental focus aligns with ongoing efforts in Congress and state legislatures to address climate change.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "E&E News by POLITICO",
@@ -2794,10 +2272,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A former ICE official lost the primary and will not challenge Rep. Kaptur.",
     "arc_analysis": "Reduces potential opposition for Kaptur in her reelection bid.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur has been a long-serving member of Congress, focusing on issues like infrastructure.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Roll Call",
@@ -2810,10 +2285,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur faces Merrin in race for her 23rd House term.",
     "arc_analysis": "Highlights the long-standing incumbency and challenges in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Marcy Kaptur's long-standing tenure reflects the stability of Democratic representation in Ohio's 9th district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2826,10 +2298,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur and Dingell discussed the economy with UAW at a town hall.",
     "arc_analysis": "Engages local constituents on economic issues, highlighting her presence in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Representatives often engage with labor unions to discuss economic policies that affect workers.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Modern Ghana",
@@ -2842,10 +2311,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin wins the Republican primary in Ohio's 9th district.",
     "arc_analysis": "This sets up a competitive general election race against incumbent Rep. Kaptur.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "tippahnews.com",
@@ -2858,10 +2324,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin is projected to win the Ohio GOP primary and face Rep. Marcy Kaptur.",
     "arc_analysis": "This sets up a potential challenging rematch for Kaptur in the general election.",
-    "conflict": false,
-    "legislative_note": "Represents a rematch of 2020 race where Kaptur won by narrow margin.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Courthouse News",
@@ -2874,10 +2337,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "GOP voters selected Merrin for a rematch against Kaptur in Ohio's 9th district.",
     "arc_analysis": "Highlights the competitive nature of the race and Kaptur's challenge from within her party.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has historically been a stronghold for Democratic candidates, with Kaptur serving since 1983.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -2890,10 +2350,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur claims victory in Ohio's 9th District House race, though results are inconclusive.",
     "arc_analysis": "Highlights the competitive nature of Kaptur's re-election bid and its uncertainty.",
-    "conflict": false,
-    "legislative_note": "Ohio's electoral process includes provisional ballots and recounts which can affect final outcomes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -2906,10 +2363,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur won reelection to Ohio's 9th District seat.",
     "arc_analysis": "Secures her position as one of the longest-serving female members in Congress, continuing influence over Great Lakes issues.",
-    "conflict": false,
-    "legislative_note": "Kaptur has been a long-standing member of the US House, often focusing on infrastructure and defense issues relevant to her district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -2922,10 +2376,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur is a candidate in the Ohio 9th Congressional District primary.",
     "arc_analysis": "Highlights her ongoing campaign for reelection in a competitive district.",
-    "conflict": false,
-    "legislative_note": "Marcy Kaptur, as an incumbent, faces her party's primary to maintain her seat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -2938,10 +2389,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces $19.2M in federal funding for a nuclear training program at the University of Toledo.",
     "arc_analysis": "Supports local education and workforce development, enhancing Toledo's role in advanced technology sectors.",
-    "conflict": false,
-    "legislative_note": "Federal funding announcements often reflect broader legislative priorities set by Congress and local representatives.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "U.S. Representative Bill Huizenga (.gov)",
@@ -2954,10 +2402,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur cosponsored a bipartisan bill to reauthorize the Great Lakes Restoration Initiative.",
     "arc_analysis": "Supports environmental conservation and economic development in the Great Lakes region, aligning with Kaptur's advocacy for the area.",
-    "conflict": false,
-    "legislative_note": "The Great Lakes Restoration Initiative is a federal program aimed at protecting and restoring the Great Lakes, which Kaptur's involvement highlights her commitment to environmental policy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The New York Times",
@@ -2970,10 +2415,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Polling data for Ohio's 9th district in the 2026 election is being tracked.",
     "arc_analysis": "Provides insight into voter sentiment and potential challenges facing Rep. Kaptur's re-election bid.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th Congressional District includes Toledo and has historically been a key battleground.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Marcy Kaptur",
@@ -2986,10 +2428,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur won re-election in Ohio's 9th district.",
     "arc_analysis": "Securing another term巩固了她在该选区的长期影响力，并继续在国会中代表该地区。",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional districts often see incumbents win due to gerrymandering and local support.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Spectrum News",
@@ -3002,10 +2441,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur wins reelection in Ohio's 9th District.",
     "arc_analysis": "Secures her position as a long-term incumbent, reinforcing Democratic strength in the district.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has a history of electing long-serving representatives, reflecting local legislative priorities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -3018,10 +2454,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur claims victory in her U.S. House race.",
     "arc_analysis": "Securing re-election solidifies her continued influence over Ohio's 9th District and federal policy.",
-    "conflict": false,
-    "legislative_note": "As a long-serving representative, Kaptur is familiar with the US Congress process and committee work.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -3034,10 +2467,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "WTOL reports on Republican candidates in Ohio's 9th district.",
     "arc_analysis": "Highlights growing interest and competition among Republicans ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district is currently represented by Marcy Kaptur, a long-serving Democrat.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -3050,10 +2480,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and colleagues secured final signature for Ukraine Support Act vote.",
     "arc_analysis": "Demonstrates bipartisan effort to support Ukraine amid geopolitical tensions.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur is involved in securing legislative action, reflecting the process of gathering support to bring a bill to a vote.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Village Reporter",
@@ -3066,10 +2493,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces over $1M in federal investment for local airports in NW Ohio.",
     "arc_analysis": "Enhances infrastructure and economic development in her district's aviation sector.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's announcement reflects her long-standing commitment to securing federal funding for infrastructure projects, particularly in rural and under-resourced areas of her district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -3082,10 +2506,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Marcy Kaptur will receive the key to Toledo for her service.",
     "arc_analysis": "Honors her long-standing commitment and leadership in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Kaptur's long tenure highlights the importance of seniority and institutional knowledge in Congress.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WKYC",
@@ -3098,10 +2519,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur is set to become the longest-serving woman in the U.S. House.",
     "arc_analysis": "This milestone highlights her enduring influence and seniority in Congress, likely boosting her profile and credibility.",
-    "conflict": false,
-    "legislative_note": "Kaptur's tenure highlights long-standing influence of Democratic incumbency in Ohio's 9th district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -3114,10 +2532,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur is recognized for making US House history.",
     "arc_analysis": "Highlights her long-term service and influence in congressional committees.",
-    "conflict": false,
-    "legislative_note": "Marcy Kaptur's recognition highlights her long-standing service and influence in Congress.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Kaptur House.gov",
@@ -3130,10 +2545,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur launches a 2024 priorities survey.",
     "arc_analysis": "Aims to gauge constituent concerns and shape her campaign platform ahead of the election.",
-    "conflict": false,
-    "legislative_note": "Representatives often use surveys to gauge constituent priorities before drafting legislation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -3146,10 +2558,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Derek Merrin files to run against Marcy Kaptur for Ohio's 9th district seat.",
     "arc_analysis": "Introduces a primary challenger, potentially challenging Kaptur's long-held incumbency.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th Congressional district elections are part of the broader U.S. House of Representatives electoral process.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -3162,10 +2571,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur wins Ohio's 9th Congressional District House seat.",
     "arc_analysis": "Secures her position as a long-term incumbent, reinforcing Democratic strength in the district.",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional districts are redrawn every ten years following the census, affecting representatives like Kaptur.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -3178,10 +2584,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur narrowly wins the 9th District seat against Derek Merrin.",
     "arc_analysis": "Secures her position in Congress, highlighting continued support from Ohio's 9th district voters.",
-    "conflict": false,
-    "legislative_note": "Kaptur's victory highlights the competitive nature of Ohio's 9th district elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "wtol.com",
@@ -3194,10 +2597,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "AP calls the results of Ohio's 9th District House race, with a potential recount.",
     "arc_analysis": "The outcome could affect Kaptur's tenure and the district's representation in Congress.",
-    "conflict": false,
-    "legislative_note": "Ohio election law allows for automatic recounts in close races.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -3210,10 +2610,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur secures her 22nd term in Congress by defeating Merrin.",
     "arc_analysis": "Solidifies Kaptur's long-term dominance in Ohio's 9th District, ensuring continued influence.",
-    "conflict": false,
-    "legislative_note": "Marcy Kaptur's long-standing tenure reflects the stability of Democratic representation in Ohio's 9th district.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "AP News",
@@ -3226,10 +2623,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Marcy Kaptur wins reelection in Ohio's 9th district.",
     "arc_analysis": "Secures her continued influence over Great Lakes issues and local federal funding.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has historically been a stronghold for Democratic candidates, reflecting broader local political dynamics.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -3242,10 +2636,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur votes against a bill related to border security.",
     "arc_analysis": "Highlights her stance on immigration and border policy, potentially affecting her appeal in the district.",
-    "conflict": false,
-    "legislative_note": "Votes on border security reflect ongoing debates in Congress about immigration and national defense.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "House.gov",
@@ -3258,10 +2649,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and Murray call for GAO investigation into misuse of clean energy funds by DOE.",
     "arc_analysis": "Highlights concerns over federal spending transparency and potential misallocation of resources in clean energy.",
-    "conflict": false,
-    "legislative_note": "GAO investigations often scrutinize federal agencies to ensure compliance with legislative mandates.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Marcy Kaptur",
@@ -3274,10 +2662,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur questions Elon Musk's loyalty due to his citizenship.",
     "arc_analysis": "Highlights Kaptur's stance on national security and corporate leadership.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -3290,10 +2675,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces a $750K grant for Toledo Public Schools' bus fleet upgrade.",
     "arc_analysis": "Improves local transportation infrastructure and supports education in her district.",
-    "conflict": false,
-    "legislative_note": "Federal grants like this are often secured through congressional appropriations and advocacy.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -3306,10 +2688,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces $7.7M in federal funding for Northwest Ohio health programs.",
     "arc_analysis": "Supports local healthcare infrastructure, highlighting her commitment to district needs.",
-    "conflict": false,
-    "legislative_note": "Federal funding allocations like this often follow the legislative process where representatives secure grants through congressional appropriations.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "GovExec.com",
@@ -3322,10 +2701,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur reintroduces a bill to expand benefits for Gold Star survivors.",
     "arc_analysis": "Aims to support families of fallen military members, aligning with Kaptur's commitment to veterans' issues.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's action reflects the ongoing legislative efforts in Congress to support military families and veterans.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Roll Call",
@@ -3338,10 +2714,7 @@
     "arc": "COMMITTEE",
     "arc_summary": "Kaptur and Lowey compete for the Appropriations Committee ranking member position.",
     "arc_analysis": "This intra-party competition highlights the influence and seniority of both representatives in shaping federal spending priorities.",
-    "conflict": true,
-    "legislative_note": "The competition reflects seniority-based leadership roles in congressional committees.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -3354,10 +2727,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur criticizes Trump's freeze on federal grants and loans.",
     "arc_analysis": "Highlights potential negative impact on local funding and projects in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "The freeze affects local projects that rely on federal funding, impacting Ohio communities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Toledo",
@@ -3370,10 +2740,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur urges Libbey Glass and unions to restart contract negotiations.",
     "arc_analysis": "Highlights Kaptur's role in addressing local labor disputes affecting her district.",
-    "conflict": false,
-    "legislative_note": "Labor disputes often involve legislative or policy considerations, such as labor laws.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Senator Patty Murray (.gov)",
@@ -3386,10 +2753,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and Murray request GAO investigation into DOE misallocation of clean energy funds.",
     "arc_analysis": "Aims to ensure federal funding is used as intended, impacting future budget allocations and policy.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's action aligns with her long-standing advocacy for renewable energy in Ohio.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WTVG",
@@ -3402,10 +2766,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur advocates for restoring constitutional authority on war powers.",
     "arc_analysis": "Highlights her commitment to limiting executive power and adhering to congressional oversight of military engagements.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur's stance aligns with long-standing debates in Congress over the War Powers Resolution of 1973.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -3418,10 +2779,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur signals a shift on abortion rights during her campaign for House leadership.",
     "arc_analysis": "Her stance may influence the Democratic caucus and appeal to constituents in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Abortion policy is highly contentious in US politics, with federal and state legislative processes often at odds.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -3434,10 +2792,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur and Quigley introduce a bill to enhance unmanned systems cooperation between the U.S. and Ukraine.",
     "arc_analysis": "Strengthens ties with Ukraine, aligning with national security priorities and bipartisan support.",
-    "conflict": false,
-    "legislative_note": "Rep Kaptur is involved in international defense policy through legislative means.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Findlay News | The Courier",
@@ -3450,10 +2805,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Five Republican candidates aim to challenge Marcy Kaptur.",
     "arc_analysis": "Increased competition highlights potential vulnerability in traditionally Democratic district.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district has seen competitive races, reflecting broader national trends in congressional elections.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "BG Independent News",
@@ -3466,10 +2818,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur announces over $7.18M in federal funding for northwest Ohio regional airports.",
     "arc_analysis": "Enhances local transportation infrastructure and supports economic development in her district.",
-    "conflict": false,
-    "legislative_note": "This reflects Kaptur's ongoing work to secure federal transportation funding, a key role for US Representatives.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -3482,10 +2831,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur leads bipartisan vote to end military engagement in Iran.",
     "arc_analysis": "Highlights her role in national security and foreign policy debates, showcasing bipartisanship.",
-    "conflict": false,
-    "legislative_note": "Representative Kaptur's action aligns with efforts in Congress to limit executive war powers and promote peace.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Quiver Quantitative",
@@ -3498,10 +2844,7 @@
     "arc": "MEDIA",
     "arc_summary": "Kaptur and colleagues urge Trump to restrict Chinese automaker access to US market.",
     "arc_analysis": "Highlights Kaptur's stance on protecting domestic auto industry from foreign competition.",
-    "conflict": false,
-    "legislative_note": "Rep Kaptur's action reflects ongoing tensions in international trade policy, particularly regarding China.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -3514,10 +2857,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Kaptur declined to support funding for border and law enforcement.",
     "arc_analysis": "Highlights her opposition to Republican priorities, likely influencing the election outcome.",
-    "conflict": true,
-    "legislative_note": "Representative Kaptur's stance reflects ongoing partisan debates in Congress over federal spending priorities.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": true
   },
   {
     "source": "Quiver Quantitative",
@@ -3530,10 +2870,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Marcy Kaptur co-introduced a bill with McCaul and other lawmakers to enhance U.S.-Ukraine cooperation on unmanned systems.",
     "arc_analysis": "This legislation aims to strengthen military technology collaboration, supporting Ukraine's defense capabilities and U.S. strategic interests.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur is participating in international security policy discussions through legislative action.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Kaptur Ohio 9th",
@@ -3546,10 +2883,7 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Republican Derek Merrin will run against Kaptur in November.",
     "arc_analysis": "This race could be pivotal for control of the U.S. House, influencing national policy and legislation.",
-    "conflict": false,
-    "legislative_note": "Ohio's 9th district race reflects the state's partisan balance and electoral process.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "National Republican Congressional Committee",
@@ -3564,10 +2898,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur is criticized for having an alleged obsession with President Trump.",
     "arc_analysis": "This criticism reflects ongoing political tensions and partisan divisions in Congress.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Roll Call",
@@ -3582,10 +2913,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Kaptur is exploring legislative options to provide relief for the ousted House chaplain.",
     "arc_analysis": "This effort highlights Kaptur's role in addressing ethical and procedural issues within Congress.",
-    "conflict": false,
-    "legislative_note": "Legislative efforts like this often involve procedural rules and ethics committees in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Toledo Blade",
@@ -3600,10 +2928,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Kaptur and others recognize Metroparks president at a board meeting.",
     "arc_analysis": "This highlights Kaptur's involvement in local community affairs and her support for environmental initiatives in the 9th District.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WLWT",
@@ -3618,10 +2943,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains the implications of voting 'yes' or 'no' on Ohio Issue 1 for the November election.",
     "arc_analysis": "Provides voters with critical information to understand the potential impacts of their vote on state policy and governance.",
-    "conflict": false,
-    "legislative_note": "Voting on ballot issues like Ohio Issue 1 reflects direct democracy and can override legislative decisions.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Mahoning Matters",
@@ -3636,10 +2958,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Arguments for and against Issue 1, a proposed citizens' redistricting commission in Ohio.",
     "arc_analysis": "This initiative could reshape how congressional districts are drawn, impacting representation and political power balance.",
-    "conflict": false,
-    "legislative_note": "Issue 1 addresses the contentious process of redistricting which often involves state legislatures like Ohio's General Assembly.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Signal Cleveland",
@@ -3654,10 +2973,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explanation of Ohio's gerrymandering practices.",
     "arc_analysis": "Provides context for understanding the political landscape and redistricting challenges in Ohio, impacting representation like Rep. Kaptur's.",
-    "conflict": false,
-    "legislative_note": "Gerrymandering impacts district representation and can influence the effectiveness of legislators like Rep. Kaptur in advocating for their constituents.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -3672,10 +2988,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "N/A",
     "arc_analysis": "The article covers various Ohio political topics unrelated to Marcy Kaptur.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Legislative context 3",
@@ -3690,10 +3003,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Graham Platner, a Democratic candidate for U.S. Senate in Maine, referenced Ohio GOP's past actions on redistricting.",
     "arc_analysis": "Platner uses Ohio Republicans' history of defying court orders to criticize Virginia ruling response.",
-    "conflict": false,
-    "legislative_note": "Ohio Republicans have previously faced legal challenges over gerrymandering.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -3708,10 +3018,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "A brief overview of recent Ohio gerrymandering practices.",
     "arc_analysis": "Understanding gerrymandering is crucial for assessing the fairness and representation in congressional districts like Marcy Kaptur's Ohio 9th District.",
-    "conflict": false,
-    "legislative_note": "Gerrymandering impacts district representation, affecting legislators like Rep. Kaptur in Toledo.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Court News Ohio (.gov)",
@@ -3726,10 +3033,7 @@
     "arc": "DISTRICT",
     "arc_summary": "A court has ruled the current congressional map unconstitutional.",
     "arc_analysis": "This ruling could lead to redistricting, impacting Marcy Kaptur's district boundaries and her constituents.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts representatives like Marcy Kaptur's district boundaries and voter base.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -3744,10 +3048,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Anti-gerrymandering leaders criticize Secretary of State Matt LaRose's proposed ballot language as deceptive and unconstitutional.",
     "arc_analysis": "This criticism could impact redistricting efforts in Ohio but does not directly involve Rep. Kaptur.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process involves complex legal challenges under the state constitution.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Senate (.gov)",
@@ -3762,10 +3063,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "The article does not provide a summary.",
     "arc_analysis": "This title is an opinion piece and does not report on Marcy Kaptur's legislative or district activities, making it unrelated to her work.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -3780,10 +3078,7 @@
     "arc": "MEDIA",
     "arc_summary": "Marcy Kaptur appears on the Ohio Politics Explained podcast.",
     "arc_analysis": "Her appearance provides insight into her stance on vaccine passports, Congressional maps, and marijuana issues.",
-    "conflict": false,
-    "legislative_note": "Rep. Kaptur discusses federal legislative issues relevant to Ohio.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -3798,10 +3093,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "The article discusses the funding sources for Issue 1 in Ohio.",
     "arc_analysis": "This article does not specifically relate to Marcy Kaptur's legislative or district activities and is therefore unrelated to her work.",
-    "conflict": false,
-    "legislative_note": "Issue 1 often refers to ballot measures in Ohio, which are part of the state's direct democracy process.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -3816,10 +3108,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Government watchdogs warn that the Republican Party is attempting to manipulate redistricting for political advantage.",
     "arc_analysis": "This could impact Marcy Kaptur's district and electoral prospects if the boundaries are redrawn unfairly.",
-    "conflict": false,
-    "legislative_note": "Redistricting efforts often face legal challenges and scrutiny from watchdog groups.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cincinnati Enquirer",
@@ -3834,10 +3123,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio congressional map case has been returned to the state Supreme Court.",
     "arc_analysis": "This decision does not directly involve Rep. Marcy Kaptur or her district but impacts redistricting and potential changes in representation.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts representation for legislators like Rep. Kaptur.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WLWT",
@@ -3852,10 +3138,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "An explainer on how Ohio's new congressional map affects Cincinnati voters.",
     "arc_analysis": "This provides context for understanding redistricting impacts and its political significance in shaping voter demographics and representation.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process involves both state and federal legislative bodies, impacting representation for districts like Cincinnati.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -3870,10 +3153,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "An explainer on proposals to maintain Ohio's redistricting process.",
     "arc_analysis": "Provides context for understanding legislative efforts related to fair representation and electoral integrity in Ohio.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process involves both state and federal legislative bodies, impacting representation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Center For Politics",
@@ -3888,10 +3168,7 @@
     "arc": "DISTRICT",
     "arc_summary": "The new Ohio House map benefits Democrats more than expected.",
     "arc_analysis": "This development could improve electoral prospects for Democratic candidates, including Marcy Kaptur, in the 9th District.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process involves both state and federal legislative bodies, impacting representation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Legislative context 3",
@@ -3906,10 +3183,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Voters in Indiana and Ohio head to polls amid redistricting fights.",
     "arc_analysis": "Redistricting impacts electoral outcomes and can influence federal representation for states like Ohio, affecting Marcy Kaptur's district.",
-    "conflict": false,
-    "legislative_note": "Ohio's recent redistricting process has been contentious due to changes in the state constitution.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WLWT",
@@ -3924,10 +3198,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "A poll indicates a close Ohio U.S. Senate race and voter support for Issue 1, a redistricting amendment.",
     "arc_analysis": "This poll reflects the political climate in Ohio but does not directly involve Rep. Kaptur's specific actions or initiatives.",
-    "conflict": false,
-    "legislative_note": "Issue 1 addresses gerrymandering concerns similar to those debated in the Ohio General Assembly.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Jerusalem Post",
@@ -3942,10 +3213,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio Senator cancels a planned trip to Israel due to concerns about being used for propaganda.",
     "arc_analysis": "The cancellation highlights political tensions and the sensitivity around international visits, particularly in the context of US-Israel relations.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Signal Cleveland",
@@ -3960,10 +3228,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Ohio is set to begin redrawing its congressional district boundaries.",
     "arc_analysis": "Redistricting can significantly impact Marcy Kaptur's re-election prospects and the political balance in Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts representation for lawmakers like Marcy Kaptur, influencing their ability to serve constituents effectively.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "News 5 Cleveland WEWS",
@@ -3978,10 +3243,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains Ohio Issue 1, a redistricting amendment.",
     "arc_analysis": "Provides context for understanding changes to electoral district boundaries and their impact on representation.",
-    "conflict": false,
-    "legislative_note": "Ohio Issue 1 addresses redistricting reform, aiming to reduce partisan gerrymandering.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Axios",
@@ -3996,10 +3258,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Ohio is facing a new round of redistricting challenges.",
     "arc_analysis": "Redistricting can significantly impact the political landscape and representation for Ohio's 9th District, affecting Kaptur's constituency.",
-    "conflict": false,
-    "legislative_note": "Redistricting in Ohio involves both state and federal processes, impacting representation for legislators like Rep. Kaptur.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "AP News",
@@ -4014,10 +3273,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explainer on the status and future of Ohio's redistricting process.",
     "arc_analysis": "Provides context for understanding ongoing legal challenges and potential changes to political maps in Ohio, impacting representation.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process involves complex interactions between state and federal laws, affecting representatives like Marcy Kaptur.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Legislative context 3",
@@ -4032,10 +3288,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "The Ohio Redistricting Commission members were sworn in by Governor Mike DeWine.",
     "arc_analysis": "This event sets the stage for redistricting processes and potential reforms in Ohio's political landscape.",
-    "conflict": false,
-    "legislative_note": "Ohio's redistricting process involves the General Assembly and can be influenced by citizen initiatives.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cincinnati Enquirer",
@@ -4050,10 +3303,7 @@
     "arc": "DISTRICT",
     "arc_summary": "The article discusses Ohio's congressional district map for the 2024 election.",
     "arc_analysis": "Understanding district boundaries is crucial for constituents and candidates to know their representation and electoral strategies.",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional districts are redrawn based on population data and federal requirements, affecting representation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4068,10 +3318,7 @@
     "arc": "DISTRICT",
     "arc_summary": "The GOP released proposed congressional maps that maintain their electoral advantage.",
     "arc_analysis": "These maps could dilute Democratic voting power in Ohio, impacting Rep. Kaptur's district and other Democrats' chances of winning seats.",
-    "conflict": false,
-    "legislative_note": "Redistricting efforts often aim to preserve or enhance a party's political influence, reflecting the strategic use of legislative processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4086,10 +3333,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio Republican congressman dismisses President Trump's warning about potential devastation in Iran.",
     "arc_analysis": "This statement reflects the congressman's stance on foreign policy and his disagreement with the president, highlighting divisions within the GOP.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4104,10 +3348,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Brennan Center analysis indicates potential demographic shifts in Southern states by 2030.",
     "arc_analysis": "This analysis is not directly related to Rep. Kaptur's legislative or district work and lacks specific political significance for her.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts like those predicted can affect the political representation and legislative priorities of districts including Rep. Kaptur's.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Legislative context 3",
@@ -4122,10 +3363,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohio's redistricting commission includes seven members appointed by the governor and state officials.",
     "arc_analysis": "Changes in the composition of Ohio's redistricting commission could affect future electoral maps and political power balance.",
-    "conflict": false,
-    "legislative_note": "The Ohio General Assembly must approve any changes to the redistricting process, highlighting the legislative complexity.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4140,10 +3378,7 @@
     "arc": "LEGISLATION",
     "arc_summary": "Marcy Kaptur proposes a land value tax amendment as an alternative to eliminating property taxes.",
     "arc_analysis": "This proposal aims to reform local taxation, potentially impacting property owners and municipal budgets in Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Land value taxation is a policy aimed at shifting the property tax burden from improvements to land values, aligning with broader discussions on equitable taxation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The New York Times",
@@ -4158,10 +3393,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Ohio Republicans have approved new congressional district maps.",
     "arc_analysis": "This action could impact Marcy Kaptur's re-election prospects and the political landscape of Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Redistricting efforts like this often aim to influence electoral outcomes by manipulating district boundaries.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "News 5 Cleveland WEWS",
@@ -4176,10 +3408,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Bipartisan Ohio lawmakers introduced a new congressional map favoring the GOP.",
     "arc_analysis": "This map could impact future elections and political representation in Ohio, including Rep. Kaptur's district.",
-    "conflict": false,
-    "legislative_note": "Legislative redistricting often involves partisan strategies to influence election outcomes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -4194,10 +3423,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohio is in the process of redrawing congressional district boundaries.",
     "arc_analysis": "Redistricting can significantly impact political representation and electoral outcomes for Ohio's 9th District, including Rep. Kaptur's constituency.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts representation for lawmakers like Rep. Kaptur, affecting their constituencies and potential re-election.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Legislative context 3",
@@ -4212,10 +3438,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "An Ohio panel adopted new U.S. House districts that could boost GOP chances of winning additional seats.",
     "arc_analysis": "Redistricting impacts Marcy Kaptur's district boundaries and her re-election prospects in 2022.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts representation for lawmakers like Rep. Marcy Kaptur, potentially altering her district's demographics.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -4230,10 +3453,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Ohio Republicans passed a new congressional map, raising questions about its legality.",
     "arc_analysis": "This map could impact Marcy Kaptur's district boundaries and her re-election prospects in the 2024 election.",
-    "conflict": false,
-    "legislative_note": "Kaptur's district may be affected by redistricting efforts that could face legal challenges.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "vox.com",
@@ -4248,10 +3468,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "The article outlines four key themes for upcoming primaries in Ohio and Indiana.",
     "arc_analysis": "This piece provides context on primary elections but does not focus specifically on Rep. Kaptur's activities or legislation.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -4266,10 +3483,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Ohio's election districts have been redrawn for 2022.",
     "arc_analysis": "Redistricting impacts Kaptur's voter base and potential re-election prospects in Ohio's 9th district.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts the representation of legislators like Marcy Kaptur in Congress.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "WLWT",
@@ -4284,10 +3498,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains the implications of voting 'yes' or 'no' on Ohio Issue 1 in November.",
     "arc_analysis": "Provides context for constituents to understand the ballot issue's potential impact, aiding informed decision-making.",
-    "conflict": false,
-    "legislative_note": "Voting on ballot initiatives like Ohio Issue 1 reflects direct democracy and can influence state legislation.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "News 5 Cleveland WEWS",
@@ -4302,10 +3513,7 @@
     "arc": "MEDIA",
     "arc_summary": "Ohio Republican congressman dismisses President Trump's warning about Iran.",
     "arc_analysis": "The congressman's statement reflects a divide within the GOP on how to handle tensions with Iran.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cleveland.com",
@@ -4320,10 +3528,7 @@
     "arc": "DISTRICT",
     "arc_summary": "The Ohio Supreme Court ruled on splitting congressional districts in Cuyahoga and Summit counties.",
     "arc_analysis": "This decision could impact redistricting efforts and the representation of constituents in Ohio's 9th District.",
-    "conflict": false,
-    "legislative_note": "Redistricting impacts representation for legislators like Rep. Marcy Kaptur.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "The Columbus Dispatch",
@@ -4338,10 +3543,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "The Ohio Supreme Court will not review the congressional map before the May 3 primary.",
     "arc_analysis": "This delay could impact redistricting outcomes and influence election results for candidates like Marcy Kaptur in competitive districts.",
-    "conflict": false,
-    "legislative_note": "This decision impacts upcoming elections and may affect redistricting challenges.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Brennan Center for Justice",
@@ -4356,10 +3558,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio's state house districts lack electoral competition due to gerrymandering.",
     "arc_analysis": "This highlights the impact of partisan map drawing on representation and competitiveness in Ohio, affecting all politicians including Rep. Kaptur.",
-    "conflict": false,
-    "legislative_note": "Gerrymandering impacts legislative races, affecting the competitiveness of elections in Ohio.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4374,10 +3573,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Explains the implications of voting for or against Ohio Issue 1.",
     "arc_analysis": "Provides context and clarity on ballot issue, aiding voters' understanding.",
-    "conflict": false,
-    "legislative_note": "Ohio Issue 1 relates to redistricting reforms, reflecting ongoing legislative efforts in Ohio.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "vox.com",
@@ -4392,10 +3588,7 @@
     "arc": "DISTRICT",
     "arc_summary": "Ohio voters approved a ballot measure aimed at reducing partisan gerrymandering.",
     "arc_analysis": "This could lead to fairer congressional district boundaries in Ohio, impacting Marcy Kaptur's electoral landscape.",
-    "conflict": false,
-    "legislative_note": "This reflects broader efforts in Ohio and nationally to reform redistricting processes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "New York Post",
@@ -4410,10 +3603,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Summary not applicable as the article does not focus on Marcy Kaptur or her district.",
     "arc_analysis": "The article provides general election results and takeaways from multiple states, lacking specific relevance to Rep. Kaptur's work or district.",
-    "conflict": false,
-    "legislative_note": "No clear connection",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "10TV",
@@ -4428,10 +3618,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Explains Ohio Issue 1, a ballot measure.",
     "arc_analysis": "Provides context for constituents on an important state-level initiative.",
-    "conflict": false,
-    "legislative_note": "Ballot measures like Ohio Issue 1 are part of the direct democracy process in Ohio, allowing citizens to propose and vote on laws.",
-    "legislative_note_confidence": "high",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Bing: Legislative context 1",
@@ -4446,10 +3633,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Mayors from various Ohio cities urge the state's congressional delegation to support first responders and teachers.",
     "arc_analysis": "This highlights the local pressure on Rep. Kaptur to advocate for federal funding and policy improvements in her role as a member of Congress.",
-    "conflict": false,
-    "legislative_note": "Ohio's congressional delegation can leverage federal funding mechanisms like appropriations bills to support local initiatives.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cincinnati Enquirer",
@@ -4464,10 +3648,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Congress votes to codify gay and interracial marriage.",
     "arc_analysis": "This article does not focus on Marcy Kaptur's specific actions or contributions, but rather mentions another Ohio representative, Rob Portman.",
-    "conflict": false,
-    "legislative_note": "Ohio Representative Portman's involvement highlights the intersection of federal legislation with state-level concerns in Ohio.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Signal Cleveland",
@@ -4482,10 +3663,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Ohio gerrymandering is set to appear on the November ballot.",
     "arc_analysis": "This development could reshape Ohio's political landscape and influence redistricting outcomes.",
-    "conflict": false,
-    "legislative_note": "Gerrymandering impacts electoral districts, affecting representation for lawmakers like Rep. Kaptur.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4500,10 +3678,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Ohio Issue 1 aims to reform the state's redistricting process.",
     "arc_analysis": "This initiative could significantly alter how political districts are drawn in Ohio, impacting representation and electoral outcomes.",
-    "conflict": false,
-    "legislative_note": "Redistricting reforms like Ohio Issue 1 impact how legislative districts are drawn, affecting representation and policy outcomes.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Ohio Capital Journal",
@@ -4518,10 +3693,7 @@
     "arc": "UNMAPPED",
     "arc_summary": "Justice DeWine defends her decision to recuse from redistricting cases.",
     "arc_analysis": "This article discusses a judicial matter unrelated to Rep. Kaptur's legislative or district activities.",
-    "conflict": false,
-    "legislative_note": "Redistricting involves complex legal and ethical considerations under the Ohio Constitution.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Cincinnati Enquirer",
@@ -4536,10 +3708,7 @@
     "arc": "LEGISLATIVE_CONTEXT",
     "arc_summary": "Some Ohio representatives are considering banning TikTok.",
     "arc_analysis": "This debate highlights concerns over data security and foreign influence in social media platforms.",
-    "conflict": false,
-    "legislative_note": "Legislators often debate cybersecurity and data privacy issues when addressing social media platforms.",
-    "legislative_note_confidence": "medium",
-    "legislative_note_experimental": true
+    "conflict": false
   },
   {
     "source": "Lee Drutman | Substack",
@@ -6414,6 +5583,171 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Trump endorses Ohio 9th District candidate Derek Merrin shortly before election day.",
     "arc_analysis": "This endorsement could boost Merrin's chances against incumbent Rep. Marcy Kaptur, intensifying the race.",
+    "conflict": false
+  },
+  {
+    "source": "Signal Akron",
+    "feed": "GNews: Legislative context 3",
+    "title": "Ohio gerrymandering, explained - Signal Akron",
+    "author": "",
+    "summary": "Ohio gerrymandering, explained &nbsp;&nbsp; Signal Akron",
+    "published": "Fri, 02 Feb 2024 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SUDhFRmxMQnhFMkVxbU0zMGMtNTI1VGdfeWRoWVpwaF93aE5pTmJKd3RGMEJpTWtfY3o2RzZQQ1diMVlReGZHWWhjM1ZqZUtjdVdIZFJmNDVyVFNNbXE4dGhB?oc=5",
+    "fetched": "2026-07-15 01:10 UTC",
+    "id": "f1d43051996e",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Explains Ohio's gerrymandering practices.",
+    "arc_analysis": "Provides context for understanding district boundary manipulation and its impact on representation.",
+    "conflict": false
+  },
+  {
+    "source": "Signal Cleveland",
+    "feed": "GNews: Legislative context 2",
+    "title": "A Ohio voter’s guide to understanding ‘gerrymandering’ and Issue 1 - Signal Cleveland",
+    "author": "",
+    "summary": "A Ohio voter’s guide to understanding ‘gerrymandering’ and Issue 1 &nbsp;&nbsp; Signal Cleveland",
+    "published": "Mon, 07 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOXRzc0E4WDk4cC1tU2tNVzlqYTluRDJBUURwcTZ5ak1uTU9ILUx0TGVTdG5nQ1kzWWhXc0ZXNEpPV2trNkhxSDhyekZ0cGYwWGs0RUk3dGZ4MTlnWjJtUW92MnUtT3NMa1M4UzdYSVUtU1RpOWl1dUVhQl93Vm51czdyNkpLNzdlY0pQbHQ5Ni0?oc=5",
+    "fetched": "2026-07-15 01:36 UTC",
+    "id": "00f3861fb019",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Provides a guide for Ohio voters on gerrymandering and Issue 1.",
+    "arc_analysis": "Educates constituents about redistricting issues, crucial for fair representation.",
+    "conflict": false
+  },
+  {
+    "source": "wtol.com",
+    "feed": "GNews: Kaptur Toledo",
+    "title": "U.S. Rep. Kaptur asks Gov. DeWine to slow down process which could lead to sale of UTMC - wtol.com",
+    "author": "",
+    "summary": "U.S. Rep. Kaptur asks Gov. DeWine to slow down process which could lead to sale of UTMC &nbsp;&nbsp; wtol.com",
+    "published": "Sat, 18 Apr 2020 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaklqeFBYQVlyc3pMSzE1Wk5HRnBBQ0hWRnFyUjZOWnFCM2NkX1dEVkhGQmQ5QzRqcWRlLTZLbG52allmNU9jd041TURPSGsxQXFXS1Z5dUE1UUh4Wm45azlrSHhVRkV3NjZ3WHRIMkg2aWhrNzY2bVJQekJSdFBDdVZpeUo1MXhNdFFXUFllaDR6cWlwLVBwQkFIRjhWTkI4a1k4ZVlzTGhIcDZDMWlwME55MndLcFZ5WWVzR1JhRWgwYTJSenRkVm93ZmpVeUJ3SkptbC1wZw?oc=5",
+    "fetched": "2026-07-15 01:55 UTC",
+    "id": "b539229a7827",
+    "arc": "DISTRICT",
+    "arc_summary": "Kaptur requests DeWine to delay the potential sale of UTMC.",
+    "arc_analysis": "This action highlights Kaptur's involvement in protecting local healthcare infrastructure and her commitment to her district's interests.",
+    "conflict": false
+  },
+  {
+    "source": "Brennan Center for Justice",
+    "feed": "GNews: Legislative context 1",
+    "title": "Citizen-Led Redistricting Reform Ballot Initiative in Ohio - Brennan Center for Justice",
+    "author": "",
+    "summary": "Citizen-Led Redistricting Reform Ballot Initiative in Ohio &nbsp;&nbsp; Brennan Center for Justice",
+    "published": "Thu, 25 Apr 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNm1pX29GYjh1aXVfN1p3RTN2ZTZtNl9jVVlvS3FZbjV4WmR0MzJVMjl1SE5BQ0FZRkRtWkcxa2I0dHZHWEtucFB4eGxaaTl6YVJYY3NydlVLUFJGRE1kbTJaWDBKdG9udTBFT2dtVndJbk9uT014T3EycHBsS0JJaUJjajFPTjNDaUgxbDFHOV82MzFxQi1zT1p4SGFVQTE4SVlqOU9CcE5sYmU0UTBOOA?oc=5",
+    "fetched": "2026-07-15 03:20 UTC",
+    "id": "d77ca3957370",
+    "arc": "UNMAPPED",
+    "arc_summary": "Citizens are leading a redistricting reform ballot initiative in Ohio.",
+    "arc_analysis": "This initiative could reshape electoral maps and influence political representation in the state, impacting all politicians including Marcy Kaptur.",
+    "conflict": false
+  },
+  {
+    "source": "News 5 Cleveland WEWS",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio lawmakers set to ban all 'intoxicating' hemp products, including THC drinks - News 5 Cleveland WEWS",
+    "author": "",
+    "summary": "Ohio lawmakers set to ban all 'intoxicating' hemp products, including THC drinks &nbsp;&nbsp; News 5 Cleveland WEWS",
+    "published": "Tue, 18 Nov 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd1pwTFNabWZoN1FVaTR1Nmx2aEdVRm9Ea2REOFBIUTFnYXNZaF9EZng0X3ZMZHh1YzNZUXJ4SWlRaWduTDVIYk90VnppdWtvbEF2RTlZWkItMHlDMHQzZU5vZ1hOSGFnV3JvZmdTckIwV3ZZUnN6NUkzVWhmdHQtSkw0YzNiS0VFNE1KQnBfWmdFOUZsZEsyVnZfcUV3R0gxUndld1dhUXJzXzVtTm5haGRFWDc0dmZkSWlOM1hzRlJSMjFVQWo3N3g4dG1ueUlId0E?oc=5",
+    "fetched": "2026-07-15 03:20 UTC",
+    "id": "8e6720f4166f",
+    "arc": "LEGISLATION",
+    "arc_summary": "Ohio lawmakers are proposing a bill to ban intoxicating hemp products.",
+    "arc_analysis": "This legislation aims to regulate THC-containing products, impacting Ohio's legal landscape and public health policies.",
+    "conflict": false
+  },
+  {
+    "source": "Roll Call",
+    "feed": "GNews: Kaptur campaign",
+    "title": "Ohio: Tom Hanks, Bob Dole and John Dingell Endorse Marcy Kaptur - Roll Call",
+    "author": "",
+    "summary": "Ohio: Tom Hanks, Bob Dole and John Dingell Endorse Marcy Kaptur &nbsp;&nbsp; Roll Call",
+    "published": "Thu, 01 Mar 2012 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZ2Q4TUZCTWxqajBWX3ozaXk1QzBSM2p4UnhNUlBoVHI5ak5HbUlCSFlyaFpuRG1lT25hR21jc1UtbmFYRC1HNGxub0NDMmE1S3pXWWp0Rkp0aUVnWEVOaHZFQzJLNldPRkVuU3ZfRXNtYzkybUZsRV9iUndkdGRUNlAteVYxMFQ1WndqVTgzSXIxTjFlbkpBUXJB?oc=5",
+    "fetched": "2026-07-15 03:44 UTC",
+    "id": "06cc9feb53d9",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Tom Hanks, Bob Dole, and John Dingell have endorsed Rep. Marcy Kaptur.",
+    "arc_analysis": "These endorsements could bolster Kaptur's credibility and appeal to a wide range of voters in her re-election bid.",
+    "conflict": false
+  },
+  {
+    "source": "Sandusky Register",
+    "feed": "GNews: Kaptur committee",
+    "title": "Kaptur says re-electing her will give Sandusky a powerful ally - Sandusky Register",
+    "author": "",
+    "summary": "Kaptur says re-electing her will give Sandusky a powerful ally &nbsp;&nbsp; Sandusky Register",
+    "published": "Fri, 16 Oct 2020 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxON2RDa2oyRkNaNXlIZXI2emszWi1sWjFLb0I3Y3c0bFd3TUhkN1BHbEpSWjJoZ2FSNXdObGt5TVFnbzhkZ1Vwb0h5aXpKMlYwZXlYSXNlZDVvS1BOT05FclZQRGo1Vzh0X0ZMYTFQNldVRVFjWGtycE9jZk9iVkdjZFRjS2JDVk1VSEdNTUowSFQ4N1JNSnE4czRiYXNlNTBmc0F2am5KQQ?oc=5",
+    "fetched": "2026-07-15 10:46 UTC",
+    "id": "92f8caf5f5ff",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Marcy Kaptur states that re-electing her would provide Sandusky with a strong advocate in Congress.",
+    "arc_analysis": "This statement highlights the potential influence and advocacy role Kaptur could play for her district if re-elected, emphasizing her political significance to local constituents.",
+    "conflict": false
+  },
+  {
+    "source": "wtol.com",
+    "feed": "GNews: Marcy Kaptur",
+    "title": "Congresswoman Marcy Kaptur visits Toledo Public Schools classroom - wtol.com",
+    "author": "",
+    "summary": "Congresswoman Marcy Kaptur visits Toledo Public Schools classroom &nbsp;&nbsp; wtol.com",
+    "published": "Thu, 19 Feb 2026 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNcHBhT3A4OWVTRHhNZERIeEVzWDM0XzA3enlUY2Q2czRZa24yYzB0V3lLNXhNTElEYS1FWE5aR19ZMVBQWDBiOTRub25xWks5SVE4UDFJdmlNamlDSC1QWTdFZnYtTkxlRk02dVREanpHNUpOMGdBR0h3VEt3M2VZVGJsWHVIZDRCMHB2NVI0U1ByZUcyNXB0bzBoYWc1SmxvNHQtWHRVRl94cHFIOFQwcnJXS2xkNm4tSE1XOGpiZjR5NlRQcDVjSE9lZEEzdkxtYjJqc0JRNTBzZkxoblpzTXpCVQ?oc=5",
+    "fetched": "2026-07-15 13:49 UTC",
+    "id": "0439aa9c2e04",
+    "arc": "DISTRICT",
+    "arc_summary": "Marcy Kaptur visited a Toledo Public Schools classroom.",
+    "arc_analysis": "This visit highlights her engagement with local education issues in her district.",
+    "conflict": false
+  },
+  {
+    "source": "Bing: Kaptur Toledo",
+    "feed": "Bing: Kaptur Toledo",
+    "title": "Democrat Marcy Kaptur extends tenure as longest-serving woman in U.S. House with election win",
+    "author": "",
+    "summary": "COLUMBUS, Ohio (AP) — Democratic U.S. Rep. Marcy Kaptur won another term in the U.S. House on Wednesday, after defeating a Republican state lawmaker endorsed by President-elect Donald Trump. Her ...",
+    "published": "Wed, 20 Nov 2024 05:19:00 GMT",
+    "link": "https://www.cleveland.com/open/2024/11/democrat-marcy-kaptur-extends-tenure-as-longest-serving-woman-in-us-house-with-election-win.html",
+    "fetched": "2026-07-15 18:08 UTC",
+    "id": "59a11918edc0",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Marcy Kaptur won re-election to her seat in the U.S. House.",
+    "arc_analysis": "Kaptur's victory extends her record as the longest-serving woman in Congress, highlighting her enduring influence and popularity in Ohio's 9th District.",
+    "conflict": false
+  },
+  {
+    "source": "Bing: Kaptur Toledo",
+    "feed": "Bing: Kaptur Toledo",
+    "title": "‘Uninformed Posturing’: Ohio Swing District Race Heats Up as Kaptur Responds to Challenger",
+    "author": "",
+    "summary": "This week, The Daily Signal’s Bradley Devlin spoke with Ohio state Rep. Josh Williams on “The Signal Sitdown.” When Devlin asked about the race for the redistricted 9th District during the show, ...",
+    "published": "Thu, 18 Dec 2025 07:58:00 GMT",
+    "link": "https://www.dailysignal.com/2025/12/18/uninformed-posturing-ohio-swing-district-race-heats-up-as-kaptur-responds-to-challenger/",
+    "fetched": "2026-07-15 19:55 UTC",
+    "id": "e62cf2e38060",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Kaptur responds to challenger Josh Williams in a Daily Signal interview.",
+    "arc_analysis": "The response highlights growing competition in Ohio's 9th district race.",
+    "conflict": false
+  },
+  {
+    "source": "WTOL",
+    "feed": "GNews: OH-9 congressional",
+    "title": "Race for Ohio's 9th Congressional District: Alea Nadeem - WTOL",
+    "author": "",
+    "summary": "Race for Ohio's 9th Congressional District: Alea Nadeem &nbsp;&nbsp; WTOL",
+    "published": "Thu, 19 Jun 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSHdJVlhJMzUzQVl1STRTYUNMY2JYaUJnUGxTa1ZCME4tcEVaYS1odU54Tk5iX3FPN1A3ZTZGU2ZKQWphVU1QOFhocG9lSXBaZU9UWmVyYTQxVjB0Y2pFMGpQSU80RVJzcmQyWEVBQmd4aWlkcXVvVkZwWThZTFZFbFFTWGlJR3RfQ1gzSWFleFcyRDFpQnBYUlNVNzZZZV9vT1l2NnhkYjN6RWlmY1QwenVVLXcwMy1VRGxMUGFEamFlX3M2ZmNaRVhFRHk3aVl2VUtHTTdhcmpBUEUyam9QT25aY18?oc=5",
+    "fetched": "2026-07-15 21:42 UTC",
+    "id": "9a19a5ba1b77",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Alea Nadeem is running against Marcy Kaptur in the race for Ohio's 9th Congressional District.",
+    "arc_analysis": "This campaign activity highlights a potential challenge to Kaptur's long-standing tenure in Congress.",
     "conflict": false
   }
 ]

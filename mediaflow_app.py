@@ -20,6 +20,12 @@ DIGEST_WINDOWS = [(7, "Last 7 days"), (30, "Last 30 days")]
 AUTO_COLLECT_INTERVAL_SECONDS = 300     # 5 minutes
 AUTO_DIGEST_INTERVAL_SECONDS  = 3600    # 1 hour — digest generation is heavier than classification
 
+# Models available in the dashboard's toggle - both must already be pulled
+# locally (`ollama pull <name>`). qwen2.5:14b is the long-standing default;
+# mistral-small tends to write more detailed per-point analysis at the
+# cost of running slower (doesn't fully fit in typical consumer VRAM).
+AVAILABLE_OLLAMA_MODELS = ["qwen2.5:14b", "mistral-small"]
+
 SLOT_COLORS = ["#2980b9", "#8e44ad", "#27ae60", "#c0392b", "#d35400", "#4a6572"]
 OTHER_COLOR = "#999"
 
@@ -139,12 +145,23 @@ def render_item(item: dict, subject: dict, colors: dict[str, str], show_arc_tag:
 
     leg_note = item.get("legislative_note", "")
     leg_html = ""
-    if leg_note and leg_note != "No clear connection":
+    if leg_note:
+        bill_id = item.get("legislative_note_source_bill", "")
+        bill_title = item.get("legislative_note_source_title", "")
+        bill_url = item.get("legislative_note_source_url", "")
+        bill_state = item.get("legislative_note_source_state", "")
+        jurisdiction = {"OH": "Ohio General Assembly", "US": "US Congress"}.get(bill_state, bill_state)
+        bill_html = (
+            f'<br><span style="font-size:0.72em;color:#a08055">'
+            f'Bill: <a href="{bill_url}" target="_blank" style="color:#a08055">{bill_id} &mdash; {bill_title}</a> ({jurisdiction} &middot; LegiScan)</span>'
+            if bill_url else ""
+        )
         leg_html = (
             f'<div style="margin-top:6px;padding:5px 8px;background:#fdf3e3;border-left:2px solid #d3912b;">'
             f'<span style="font-size:0.65em;font-weight:800;color:#a06a1c;text-transform:uppercase;letter-spacing:0.04em">'
-            f'⚠ Experimental — legislative context, unverified, may hallucinate</span><br>'
+            f'⚠ Experimental — legislative context, model-interpreted connection may be wrong even though the bill below is real</span><br>'
             f'<span style="font-size:0.82em;color:#7a5a2a">{leg_note}</span>'
+            f'{bill_html}'
             f'</div>'
         )
 
@@ -256,17 +273,29 @@ def render_weekly_digest(subject_slug: str, subject: dict, colors: dict[str, str
 
 # ── pipeline triggers ─────────────────────────────────────────────────────────
 
+def apply_selected_model() -> None:
+    """Pushes the dashboard's model toggle into mediaflow_classify.OLLAMA_MODEL
+    - weekly_digest.py and legislative_context_notes.py both read that same
+    module attribute at call time (see benchmark_models.py for the same
+    monkey-patch pattern), so setting it here is enough to make every
+    pipeline stage the dashboard triggers use the selected model."""
+    import mediaflow_classify
+    mediaflow_classify.OLLAMA_MODEL = st.session_state.get("ollama_model", AVAILABLE_OLLAMA_MODELS[0])
+
+
 def run_collect(subject_slug: str) -> None:
     import rss_collect
     rss_collect.run(subject_slug)
 
 
 def run_classify(subject_slug: str) -> int:
+    apply_selected_model()
     import mediaflow_classify
     return mediaflow_classify.run(subject_slug)
 
 
 def run_digest(subject_slug: str) -> dict:
+    apply_selected_model()
     import weekly_digest
     return weekly_digest.generate(subject_slug)
 
@@ -449,6 +478,22 @@ def main() -> None:
                 classified = run_classify(subject_slug)
             st.toast(f"{classified} new items classified.")
             st.rerun()
+
+    # ── model toggle ──────────────────────────────────────────────────────────
+    # Applies to classification, digests, and (via the same OLLAMA_MODEL
+    # attribute) the standalone legislative_context_notes.py script too.
+    model_help = {
+        "qwen2.5:14b": "Ollama default — fast, less detailed analysis.",
+        "mistral-small": "Slower (doesn't fully fit in most consumer GPU VRAM) — more detailed, more thorough analysis.",
+    }
+    st.selectbox(
+        "Model",
+        options=AVAILABLE_OLLAMA_MODELS,
+        format_func=lambda m: f"{m} — {model_help.get(m, '')}",
+        key="ollama_model",
+        help="qwen2.5:14b (Ollama default) is fast but less detailed. mistral-small is slower but noticeably more detailed/thorough. Applies to classification, digests, and legislative-context notes.",
+        label_visibility="collapsed",
+    )
 
     # ── weekly digest ─────────────────────────────────────────────────────────
     render_weekly_digest(subject_slug, subject, colors)
