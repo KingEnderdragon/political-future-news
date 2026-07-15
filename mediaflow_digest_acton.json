@@ -1,27 +1,27 @@
 {
   "7": {
-    "generated_at": "2026-07-14T13:49:13Z",
-    "window_start": "2026-07-07T13:49:13Z",
-    "window_end": "2026-07-14T13:49:13Z",
+    "generated_at": "2026-07-14T23:48:01Z",
+    "window_start": "2026-07-07T23:48:01Z",
+    "window_end": "2026-07-14T23:48:01Z",
     "window_days": 7,
     "arcs": {
       "CAMPAIGN": {
         "item_count": 8,
-        "critical_summary": "Dr. Amy Acton continues to campaign for the Ohio governor's seat, focusing on healthcare issues and appearing on national media outlets. Her campaign faces criticism for lacking specificity on Medicaid expansion, while also raising significant funds in Q2 2026.",
-        "analysis": "The shifting political landscape of the Ohio gubernatorial race highlights a growing uncertainty about Dr. Acton's candidacy. Despite her efforts to engage with healthcare professionals and raise substantial funds, concerns over policy specifics are emerging as key challenges for her campaign.",
+        "critical_summary": "Dr. Amy Acton faces criticism over her likeability and lack of specificity on Medicaid expansion, while also campaigning to lower healthcare costs and appearing on national television to discuss her gubernatorial bid. Additionally, Cook Political Report and a forecaster have shifted the Ohio governor's race to a toss-up status.",
+        "analysis": "The recent shifts in political forecasts indicate growing uncertainty about Dr. Acton's electoral prospects, likely due to ongoing concerns over her likeability and policy clarity. This signals that while she has raised significant funds, addressing these issues may be crucial for solidifying support among undecided voters.",
         "talking_points": [
           {
-            "text": "Dr. Amy Acton campaigns on lowering healthcare costs in Ohio.",
-            "link": "https://actonforgovernor.com/tale-of-two-campaigns-while-dr-acton-campaigns-to-lower-healthcare-costs-vivek-ramaswamy-is-jetsetting-in-europe/",
-            "source": "Dr. Amy Acton for Governor",
-            "title": "Tale of Two Campaigns: While Dr. Acton Campaigns to Lower Healthcare Costs, Vivek Ramaswamy is Jetsetting in Europe - Dr. Amy Acton for Governor",
-            "author": ""
-          },
-          {
-            "text": "Critics point out lack of detail regarding Medicaid expansion in Dr. Acton's platform.",
+            "text": "Dr. Amy Acton faces criticism for lacking specificity on Medicaid expansion.",
             "link": "https://www.cleveland.com/opinion/2026/07/gubernatorial-candidates-trust-me-is-far-from-reassuring-thomas-suddes.html",
             "source": "Cleveland.com Politics",
             "title": "Gubernatorial candidates’ ‘trust me’ is far from reassuring: Thomas Suddes",
+            "author": ""
+          },
+          {
+            "text": "Cook Political Report shifts Ohio governor's race to toss-up status, highlighting likeability issue for Dr. Acton.",
+            "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTTdFLVFIeTc2ZDlJZGtJQjJtRFNqUnEyUFpzOTVjUDVsWDZCaElqYlpQeG91VnZQTTJuT2R3dTRhMVpNZEhLOEVGNS1mQ1p1djdBandLZzJjTzNKcGdzcDBGU1lSck9zOUJzZGZMSWY4YkY4MjR3eDNRLWhJYkVQNGRfVDd5M3RhaWNXbEtSa3JOUDhlOG1GZWVVZ0FVSlZ3TllrZDZNSkZrOWRaNmtHazB0ZkxneC1senJNbHpqQ3g1Z05uSVA1VnNOQQ?oc=5",
+            "source": "Dr. Amy Acton for Governor",
+            "title": "ICYMI: Cook Political Report Shifts Ohio Governor’s Race to Toss-Up, Points to “Clear Likeability Problem” - Dr. Amy Acton for Governor",
             "author": ""
           },
           {
@@ -47,25 +47,25 @@
       },
       "MEDIA": {
         "item_count": 4,
-        "critical_summary": "Dr. Amy Acton has been avoiding direct engagement on key issues, similar to Vivek Ramaswamy, while criticizing data centers alongside Sherrod Brown. She received advice to adopt Alexander Hamilton's leadership style but declined to provide clear answers or engage with readers' questions.",
-        "analysis": "Acton’s reluctance to take a firm stance on critical issues and her avoidance of direct engagement may signal an attempt to maintain neutrality or avoid controversy, which could be strategic in a political environment where clarity can lead to criticism. However, this approach risks alienating constituents who seek clear leadership and policy direction.",
+        "critical_summary": "Dr. Amy Acton has been avoiding direct statements on key issues, similar to Vivek Ramaswamy, while criticizing data centers alongside Sherrod Brown. She is also receiving advice to adopt Alexander Hamilton's leadership approach.",
+        "analysis": "Acton’s reluctance to provide clear positions contrasts with her public health advocacy and signals a cautious political stance. This avoidance may be strategic but risks alienating constituents seeking clarity on issues beyond public health. The criticism of data centers aligns Acton more closely with established Democratic figures, potentially reinforcing party ties.",
         "talking_points": [
           {
-            "text": "Acton avoids stating positions on key issues like Ramaswamy does.",
+            "text": "Acton avoids stating positions like Ramaswamy",
             "link": "https://www.cleveland.com/news/2026/07/while-acton-and-ramaswamy-refuse-to-state-positions-libertarian-don-kissick-shows-his-spine.html",
             "source": "Bing: Amy Acton Ohio",
             "title": "While Acton and Ramaswamy refuse to state positions, Libertarian Don Kissick shows his spine",
             "author": ""
           },
           {
-            "text": "Acton criticizes data centers in Ohio with Sherrod Brown.",
+            "text": "Criticism of Ohio's data centers aligns Acton with Brown",
             "link": "https://www.dispatch.com/story/news/politics/elections/2026/07/10/ohio-governor-senate-races-data-centers-sherrod-brown-amy-acton/90837353007/",
             "source": "The Columbus Dispatch",
             "title": "Ohio Democrats Sherrod Brown, Amy Acton sharpen attacks on data centers - The Columbus Dispatch",
             "author": ""
           },
           {
-            "text": "Acton advised to emulate Alexander Hamilton's leadership style.",
+            "text": "Advised to emulate Hamilton's leadership style",
             "link": "https://www.cleveland.com/news/2026/07/hey-amy-acton-and-vivek-ramaswamy-dont-be-aaron-burr-sir-be-hamilton.html",
             "source": "Cleveland.com",
             "title": "Hey, Amy Acton and Vivek Ramaswamy – don’t be Aaron Burr, sir. Be Hamilton - Cleveland.com",
@@ -74,62 +74,61 @@
         ]
       },
       "RECORD": {
-        "item_count": 3,
-        "critical_summary": "Dr. Amy Acton has faced criticism and frustration from Progressive Ohioans over her comments on transgender athletes, while also participating in a community rally to support Grady Memorial Hospital's maternity unit.",
-        "analysis": "Acton’s stance on transgender issues highlights ongoing tensions within the progressive community regarding LGBTQ+ rights. Her involvement in supporting local healthcare initiatives demonstrates her commitment to public health but may not be enough to mitigate backlash from specific segments of her base.",
+        "item_count": 2,
+        "critical_summary": "Dr. Amy Acton has faced criticism from progressive groups over her stance on transgender athletes, while also engaging in supportive actions for local healthcare by joining a rally to preserve the maternity unit at Grady Memorial Hospital.",
+        "analysis": "Acton's comments on transgender athletes have strained her relationship with progressive supporters, highlighting potential challenges for maintaining broad support among liberal constituencies. However, her participation in community health initiatives demonstrates an effort to stay relevant and connected with grassroots concerns, signaling a strategy to balance criticism with public engagement.",
         "talking_points": [
           {
-            "text": "Dr. Acton faces criticism for comments on transgender athletes.",
+            "text": "Acton's comments on transgender athletes have upset progressive supporters.",
             "link": "https://www.nbc4i.com/news/your-local-election-hq/some-progressive-ohioans-frustrated-by-amy-actons-comment-on-trans-athletes/",
             "source": "GNews: Amy Acton",
             "title": "Some progressive Ohioans ‘frustrated’ by Amy Acton’s comment on trans athletes - NBC4 WCMH-TV",
             "author": ""
           },
           {
-            "text": "Acton joins rally to support Grady Memorial Hospital's maternity unit.",
+            "text": "Joined community rally for Grady Memorial Hospital's maternity unit preservation efforts.",
             "link": "https://abc6onyourside.com/news/local/community-joined-by-amy-acton-rallies-to-save-grady-memorial-hospitals-maternity-unit-delaware-county-morrow-ohio-health-ohiohealth-riverside-methodist-dublin-inpatient",
             "source": "WSYX",
             "title": "Community, joined by Amy Acton, rallies to save Grady Memorial Hospital's maternity unit - WSYX",
             "author": ""
-          },
-          {
-            "text": "Progressive Ohioans criticize Dr. Acton for betraying the transgender community.",
-            "link": "https://thebuckeyeflame.com/2026/07/07/dr-amy-acton-betrays-ohios-trans-community/",
-            "source": "The Buckeye Flame",
-            "title": "Dr. Amy Acton betrays Ohio’s trans community and yet again forces us into the ‘lesser of two evils’ debate - The Buckeye Flame",
-            "author": ""
           }
         ]
+      },
+      "LEGISLATIVE_CONTEXT": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
       }
     }
   },
   "30": {
-    "generated_at": "2026-07-14T13:49:40Z",
-    "window_start": "2026-06-14T13:49:40Z",
-    "window_end": "2026-07-14T13:49:40Z",
+    "generated_at": "2026-07-14T23:48:33Z",
+    "window_start": "2026-06-14T23:48:33Z",
+    "window_end": "2026-07-14T23:48:33Z",
     "window_days": 30,
     "arcs": {
       "CAMPAIGN": {
-        "item_count": 14,
-        "critical_summary": "Dr. Amy Acton continues to campaign for the Ohio gubernatorial race, focusing on healthcare issues and raising significant funds. Her campaign has faced criticism for lacking specificity on Medicaid expansion but remains competitive with Republican candidate Vivek Ramaswamy in fundraising and polling.",
-        "analysis": "Acton's campaign is navigating a challenging landscape where her likeability and policy specifics are under scrutiny. Despite these challenges, her strong fundraising performance and bipartisan support suggest she remains a formidable contender. The shift to a toss-up race highlights the potential for either candidate to secure victory, depending on how they address voter concerns.",
+        "item_count": 18,
+        "critical_summary": "Dr. Amy Acton's gubernatorial campaign has seen significant developments over the past month, including a shift to a toss-up race according to political analysts and new polls showing her leading in some surveys. She has also raised substantial funds and participated in various events across Ohio to bolster her candidacy.",
+        "analysis": "The recent shifts in polling and media coverage indicate growing support for Dr. Acton's campaign but highlight persistent concerns about her likeability and policy specifics, particularly regarding Medicaid expansion. Her fundraising success and high-profile appearances underscore a competitive race against Vivek Ramaswamy, with both candidates actively engaging voters across the state.",
         "talking_points": [
           {
-            "text": "Dr. Acton raises $9.4 million in Q2 2026, competitive with Ramaswamy.",
+            "text": "Cook Political Report shifts Ohio governor's race to toss-up for Acton.",
+            "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTTdFLVFIeTc2ZDlJZGtJQjJtRFNqUnEyUFpzOTVjUDVsWDZCaElqYlpQeG91VnZQTTJuT2R3dTRhMVpNZEhLOEVGNS1mQ1p1djdBandLZzJjTzNKcGdzcDBGU1lSck9zOUJzZGZMSWY4YkY4MjR3eDNRLWhJYkVQNGRfVDd5M3RhaWNXbEtSa3JOUDhlOG1GZWVVZ0FVSlZ3TllrZDZNSkZrOWRaNmtHazB0ZkxneC1senJNbHpqQ3g1Z05uSVA1VnNOQQ?oc=5",
+            "source": "Dr. Amy Acton for Governor",
+            "title": "ICYMI: Cook Political Report Shifts Ohio Governor’s Race to Toss-Up, Points to “Clear Likeability Problem” - Dr. Amy Acton for Governor",
+            "author": ""
+          },
+          {
+            "text": "Acton raises $9.4 million in Q2 2026, competitive with Ramaswamy.",
             "link": "https://actonforgovernor.com/dr-amy-acton-announces-record-breaking-9-4-million-raised-in-the-second-quarter-of-2026/",
             "source": "Dr. Amy Acton for Governor",
             "title": "Dr. Amy Acton Announces Record-Breaking $9.4 Million Raised in the Second Quarter of 2026 - Dr. Amy Acton for Governor",
             "author": ""
           },
           {
-            "text": "Acton's campaign criticized for lacking Medicaid expansion specifics.",
-            "link": "https://www.cleveland.com/opinion/2026/07/gubernatorial-candidates-trust-me-is-far-from-reassuring-thomas-suddes.html",
-            "source": "Cleveland.com Politics",
-            "title": "Gubernatorial candidates’ ‘trust me’ is far from reassuring: Thomas Suddes",
-            "author": ""
-          },
-          {
-            "text": "Dr. Acton leads in a bipartisan AARP poll.",
+            "text": "AARP poll shows Acton leading Ramaswamy in Ohio governor race.",
             "link": "https://actonforgovernor.com/roundup-dr-amy-acton-leading-in-bipartisan-aarp-poll/",
             "source": "Dr. Amy Acton for Governor",
             "title": "Roundup: Dr. Amy Acton Leading in Bipartisan AARP Poll - Dr. Amy Acton for Governor",
@@ -151,25 +150,25 @@
       },
       "MEDIA": {
         "item_count": 7,
-        "critical_summary": "Dr. Amy Acton faces criticism from both media outlets and voters for avoiding direct engagement and failing to provide clear positions on key issues, while her opponent Vivek Ramaswamy is accused of misleading attack ads. Media fact-checking has highlighted the lack of substantive policy discussion in Ohio's political discourse.",
-        "analysis": "The reluctance of Acton and Ramaswamy to engage directly with voters and media signals a strategic approach that may prioritize image management over detailed policy debate, potentially undermining public trust. The focus on negative campaigning rather than constructive dialogue reflects broader trends in polarized political environments where attack ads are favored over substantive discussion.",
+        "critical_summary": "In recent media coverage, Amy Acton has faced criticism for avoiding direct engagement with voters and questions from the public, while also being targeted by misleading attack ads from rival candidate Vivek Ramaswamy. Meanwhile, Cleveland.com has been fact-checking these ads and highlighting their inaccuracies.",
+        "analysis": "The reluctance of both Acton and Ramaswamy to engage directly with voter inquiries signals a campaign strategy focused on message control rather than transparency or grassroots engagement. This approach may alienate independent voters who value candid dialogue but could also be seen as an attempt to avoid potential gaffes or unfavorable comparisons.",
         "talking_points": [
           {
-            "text": "Acton criticized for avoiding direct engagement with voters and media.",
+            "text": "Acton and Ramaswamy are not answering voter questions, according to Cleveland.com.",
             "link": "https://www.cleveland.com/news/2026/07/ohio-voters-have-questions-amy-acton-and-vivek-ramaswamy-wont-give-answers.html",
             "source": "Cleveland.com",
             "title": "Ohio voters have questions -- Amy Acton and Vivek Ramaswamy won’t give answers - Cleveland.com",
             "author": ""
           },
           {
-            "text": "Cleveland.com fact-checks misleading claims in Ramaswamy's attack ads on Acton.",
+            "text": "Cleveland.com fact-checks misleading attack ads by Vivek Ramaswamy against Amy Acton.",
             "link": "https://actonforgovernor.com/cleveland-com-fact-check-ramaswamys-misleading-covid-attack-ads-on-acton-omit-his-own-pandemic-advocacy/",
             "source": "Dr. Amy Acton for Governor",
             "title": "Cleveland.com FACT CHECK: Ramaswamy’s misleading COVID attack ads on Acton omit his own pandemic advocacy - Dr. Amy Acton for Governor",
             "author": ""
           },
           {
-            "text": "Acton advised to emulate Hamilton's leadership style for better engagement.",
+            "text": "Acton advised to emulate Alexander Hamilton's leadership style in media coverage.",
             "link": "https://www.cleveland.com/news/2026/07/hey-amy-acton-and-vivek-ramaswamy-dont-be-aaron-burr-sir-be-hamilton.html",
             "source": "Cleveland.com",
             "title": "Hey, Amy Acton and Vivek Ramaswamy – don’t be Aaron Burr, sir. Be Hamilton - Cleveland.com",
@@ -179,21 +178,42 @@
       },
       "RECORD": {
         "item_count": 3,
-        "critical_summary": "Dr. Amy Acton has faced criticism from progressive groups over her stance on transgender athletes, while also supporting local healthcare initiatives by joining a rally to save Grady Memorial Hospital's maternity unit.",
-        "analysis": "Acton's comments regarding transgender athletes have polarized her base within the progressive community, signaling potential challenges for her in maintaining support among certain demographic groups. However, her active engagement with local health issues demonstrates an effort to bolster her public image and relevance beyond contentious policy debates.",
+        "critical_summary": "Dr. Amy Acton has faced criticism from progressive groups over her comments on transgender athletes, while also participating in a community effort to support the Grady Memorial Hospital's maternity unit.",
+        "analysis": "Acton’s stance on transgender issues highlights ongoing tensions within Ohio’s political and social landscape, particularly between public health advocates and LGBTQ+ rights supporters. Her involvement in local healthcare advocacy underscores her commitment to community engagement but may also signal an attempt to balance criticism with visible support for other important health initiatives.",
         "talking_points": [
           {
-            "text": "Acton criticized for stance on transgender athletes",
+            "text": "Acton faces backlash from progressive groups over transgender athlete comments.",
             "link": "https://www.nbc4i.com/news/your-local-election-hq/some-progressive-ohioans-frustrated-by-amy-actons-comment-on-trans-athletes/",
             "source": "GNews: Amy Acton",
             "title": "Some progressive Ohioans ‘frustrated’ by Amy Acton’s comment on trans athletes - NBC4 WCMH-TV",
             "author": ""
           },
           {
-            "text": "Joined rally to support Grady Memorial Hospital's maternity unit",
+            "text": "Joined local community rally to support Grady Memorial Hospital's maternity unit.",
             "link": "https://abc6onyourside.com/news/local/community-joined-by-amy-acton-rallies-to-save-grady-memorial-hospitals-maternity-unit-delaware-county-morrow-ohio-health-ohiohealth-riverside-methodist-dublin-inpatient",
             "source": "WSYX",
             "title": "Community, joined by Amy Acton, rallies to save Grady Memorial Hospital's maternity unit - WSYX",
+            "author": ""
+          }
+        ]
+      },
+      "LEGISLATIVE_CONTEXT": {
+        "item_count": 2,
+        "critical_summary": "Recent polls indicate that both the Senate and gubernatorial races in Ohio are highly competitive, positioning the state as a key battleground.",
+        "analysis": "The consistent portrayal of Ohio as a pivotal battleground underscores its electoral significance. This context heightens the political stakes for health-related policy decisions, potentially influencing Dr. Acton's legacy and future political prospects within the state.",
+        "talking_points": [
+          {
+            "text": "Ohio is emerging as a key battleground in both Senate and gubernatorial races.",
+            "link": "https://www.yahoo.com/news/politics/articles/polling-ohio-battleground-state-again-110000966.html",
+            "source": "Bing: Legislative context 1",
+            "title": "New polling: Ohio is a ‘battleground state’ again with Senate, governor’s races",
+            "author": ""
+          },
+          {
+            "text": "Competitive polls highlight Ohio’s electoral importance for national races.",
+            "link": "https://www.usatoday.com/story/news/politics/elections/2026/07/08/poll-ohio-voters-senate-governor-races-sherrod-brown-jon-husted-vivek-ramaswamy-amy-acton-election/90824767007/",
+            "source": "Bing: Legislative context 1",
+            "title": "Poll of Ohio voters shows competitive Senate race, tied governor race",
             "author": ""
           }
         ]

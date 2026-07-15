@@ -1,8 +1,8 @@
 {
   "7": {
-    "generated_at": "2026-07-14T15:28:32Z",
-    "window_start": "2026-07-07T15:28:32Z",
-    "window_end": "2026-07-14T15:28:32Z",
+    "generated_at": "2026-07-15T00:23:15Z",
+    "window_start": "2026-07-08T00:23:15Z",
+    "window_end": "2026-07-15T00:23:15Z",
     "window_days": 7,
     "arcs": {
       "LEGISLATIVE": {
@@ -40,13 +40,19 @@
         "critical_summary": "No items in the past week.",
         "analysis": "",
         "talking_points": []
+      },
+      "LEGISLATIVE_CONTEXT": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
       }
     }
   },
   "30": {
-    "generated_at": "2026-07-14T15:28:34Z",
-    "window_start": "2026-06-14T15:28:34Z",
-    "window_end": "2026-07-14T15:28:34Z",
+    "generated_at": "2026-07-15T00:23:17Z",
+    "window_start": "2026-06-15T00:23:17Z",
+    "window_end": "2026-07-15T00:23:17Z",
     "window_days": 30,
     "arcs": {
       "LEGISLATIVE": {
@@ -64,11 +70,18 @@
       "POLITICIAN_STATEMENTS": {
         "item_count": 3,
         "critical_summary": "Rep. White has consistently opposed Ohio Senate Joint Resolution 10 over the past month, emphasizing his stance against voter ID requirements.",
-        "analysis": "Rep. White's repeated opposition to SJR10 underscores a strategic alignment with Democratic party values and voter rights advocacy. This consistent messaging likely aims to mobilize supporters while highlighting differences with Republican counterparts who support stricter voting regulations.",
+        "analysis": "Rep. White's repeated opposition to SJR10 signals a strong commitment to voting rights and access, likely aiming to appeal to constituents concerned about voter suppression. This consistent messaging may also reflect broader Democratic Party strategy in Ohio.",
         "talking_points": [
           {
-            "text": "Rep. White opposes Ohio Senate Joint Resolution 10, standing against strict voter ID requirements.",
+            "text": "Rep. White opposes Ohio Senate Joint Resolution 10.",
             "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmUwbENqVXBFU05zUGp0QlF5NXlXeURvRW5SaFhTbllVS19MNlZyYUQ4TVNsb0NER3p2NW93Ykg5VlkwY2RYYkQ0RGdKNE9wNUozZ3JYQ1N2c29KSmZQMlpIUVRZek9qOGI2R3pvU2s3YzYweURzaVNMV3ROMnhpY0VoMDI?oc=5",
+            "source": "Ohio House of Representatives (.gov)",
+            "title": "Rep. White Opposes SJR 10 - Ohio House of Representatives (.gov)",
+            "author": ""
+          },
+          {
+            "text": "Rep. White continues to voice opposition against voter ID requirements.",
+            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcy1fSVNoZnpBMTFGMl96aWN4WEx5Wm9lUWFVckplQWdTOHNmc3VxQU1SdkhrSlV4STJZbW5YeGNYZFZrQUVoMGM2Nk80MjRsdV84V09nWlBjdmpiY19YWXA3ZHpwUjdsc0FVUG91SWRQejFtRHZ0YnR4dXpST0pOcHBmbVF3MHJvUjlIWWdB?oc=5",
             "source": "Ohio House of Representatives (.gov)",
             "title": "Rep. White Opposes SJR 10 - Ohio House of Representatives (.gov)",
             "author": ""
@@ -88,6 +101,20 @@
         "talking_points": []
       },
       "MEDIA": {
+        "item_count": 1,
+        "critical_summary": "Recent media coverage has focused on the ongoing debate surrounding Ohio Senate Joint Resolution 10 (SJR10) and related voter ID requirements, highlighting the contentious nature of these issues among state and federal politicians.",
+        "analysis": "The sustained media attention underscores the polarizing impact of SJR10 and voter ID debates in Ohio. This coverage likely reflects a broader national trend where voting rights are becoming increasingly politicized, signaling potential electoral implications for both state and federal candidates aligned with either side of the issue.",
+        "talking_points": [
+          {
+            "text": "Media highlights debate over Ohio's voter ID requirements under SJR10",
+            "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQejdYNXhjUG1fcG1CVmZyUE5WWlVLWDhYbzRHNGczNTdGRUhBSUtrczU5U280cEJtWGJ5Mm51YlVycFNwTU5uLWFZWEJQOG9KOU9fYzhiM2MxS1pjQWxDNDhSOFVucFdBWGJWdDk3OTVsTWJlQUlLS2tPVkVBU1hGNkJPU2U3SnotZVN5NmlZUHdWNWRydXltWFFzZDctdlF6SWswMTJKNndEX0RWWlFmMkEtZFM?oc=5",
+            "source": "Signal Cleveland",
+            "title": "From drop boxes to voter ID: How Ohio voter rules have dramatically changed since 2020 - Signal Cleveland",
+            "author": ""
+          }
+        ]
+      },
+      "LEGISLATIVE_CONTEXT": {
         "item_count": 0,
         "critical_summary": "No items in the past 30 days.",
         "analysis": "",

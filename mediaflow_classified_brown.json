@@ -10,7 +10,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown participated in a full interview on WSAZ as a candidate for the Ohio Senate Democratic primary.",
     "arc_analysis": "This media appearance helps Brown engage with voters and promote his candidacy ahead of the primary election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate candidates like Sherrod Brown must navigate the state's legislative process and党内初选的背景知识，但没有具体的法案或条款可以引用。",
+    "legislative_note_confidence": "low",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Sherrod Brown Ohio",
@@ -23,7 +26,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Fox News poll indicates Brown leads Husted in Ohio's Senate race.",
     "arc_analysis": "Poll results provide insight into competitive dynamics of the upcoming election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races often reflect national political trends and voter sentiment.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Sherrod Brown",
@@ -36,7 +42,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A poll shows Sherrod Brown leading Jon Husted by 8 points in Ohio's Senate race.",
     "arc_analysis": "This polling data indicates a strong position for Brown ahead of the election, potentially boosting his campaign momentum.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown, a former senator, is known for his work on labor and economic issues.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -49,7 +58,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown raised more funds than Jon Husted.",
     "arc_analysis": "This indicates strong financial support for Brown's campaign, boosting his competitiveness in the race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Fundraising is crucial for political campaigns in the US Congress and state legislature.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "AIDS Healthcare Foundation",
@@ -62,7 +74,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "AHF endorses Medicare drug price negotiation bills by Rep. Doggett and Sen. Brown.",
     "arc_analysis": "This endorsement highlights Brown's leadership on healthcare affordability, bolstering his credibility with progressive voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sen. Brown's bill aligns with his long-standing advocacy for lowering prescription drug costs.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Washington Examiner",
@@ -75,7 +90,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A new poll shows Jon Husted leading Sherrod Brown among Ohio union voters.",
     "arc_analysis": "This poll indicates potential challenges for Brown's re-election bid, as union support is crucial in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's primary election process often involves significant influence from labor unions due to their membership and organizational capabilities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -88,7 +106,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Teamsters union endorses Sherrod Brown for the Ohio Senate race.",
     "arc_analysis": "This endorsement strengthens Brown's support among labor unions and workers, bolstering his campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Union endorsements often signal support for labor-friendly policies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -101,7 +122,10 @@
     "arc": "POLICY",
     "arc_summary": "Brown and Acton are criticizing data centers in Ohio.",
     "arc_analysis": "This highlights their stance on economic and environmental issues related to tech industry expansion.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has previously advocated for stricter regulations on large tech companies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -114,7 +138,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Jon Husted announces his Senate campaign in Ohio, targeting Sherrod Brown.",
     "arc_analysis": "Husted's entry signals a competitive race for the Republican nomination against incumbent Democrat Brown.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often involve significant state-level political figures due to the interconnected nature of state and federal politics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "HRC | Human Rights Campaign",
@@ -127,7 +154,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Human Rights Campaign PAC has endorsed Sherrod Brown in his U.S. Senate campaign.",
     "arc_analysis": "This endorsement strengthens Brown's support among LGBTQ+ voters and allies, potentially boosting fundraising and turnout.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's support for LGBTQ+ rights aligns with HRC's endorsement criteria.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Buckeye Flame",
@@ -140,7 +170,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Human Rights Campaign has endorsed Sherrod Brown in his bid for the Ohio U.S. Senate seat.",
     "arc_analysis": "This endorsement strengthens Brown's position among LGBTQ+ voters and could boost fundraising and visibility.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's support from HRC reflects his history of backing LGBTQ+ rights.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Dr. Amy Acton for Governor",
@@ -153,7 +186,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Brown endorses Dr. Amy Acton's campaign for Ohio governor.",
     "arc_analysis": "This endorsement could boost Acton's visibility and credibility among progressive voters in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, a long-time advocate for healthcare issues, supports Dr. Amy Acton who has expertise in public health.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Richland Source",
@@ -166,7 +202,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown was honored by the NAACP at their 39th annual banquet.",
     "arc_analysis": "This event highlights Brown's support among civil rights organizations and underscores his commitment to racial justice issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator, Brown has been involved in civil rights issues and legislation.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Sherrod Brown",
@@ -179,7 +218,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown discusses ICE on C-SPAN.",
     "arc_analysis": "Brown's comments provide insight into his stance on immigration enforcement.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's comments likely reflect federal immigration policy debates in Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Punchbowl News",
@@ -192,7 +234,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown had a busy month of campaign events in April.",
     "arc_analysis": "Brown's active campaigning suggests he is aggressively building support ahead of potential future races or to maintain his political influence.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "New York Post",
@@ -205,7 +250,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown lost a police endorsement for the first time in 12 years.",
     "arc_analysis": "This marks a significant shift in support, potentially reflecting changing dynamics within law enforcement and Democratic politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Police endorsements can influence legislative priorities and policy outcomes.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -218,7 +266,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Jon Husted is running against Sherrod Brown for Senate.",
     "arc_analysis": "Husted's candidacy poses a significant challenge to Brown's potential comeback in the Ohio Senate race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends and party strategies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -231,7 +282,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown visited an Ohio farm as part of his campaign activities.",
     "arc_analysis": "This visit highlights Brown's efforts to connect with rural voters and discuss agricultural issues important to Ohio farmers.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a senator, Brown often advocated for agricultural policies and funding.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "BroadwayWorld",
@@ -244,7 +298,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Actors' Equity Association has endorsed Sherrod Brown for U.S. Senate.",
     "arc_analysis": "This endorsement strengthens Brown's support among labor unions and cultural workers, bolstering his progressive credentials.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's endorsement by Actors' Equity A suggests support in cultural and labor communities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "League of Conservation Voters",
@@ -257,7 +314,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Environmental groups endorse Senator Sherrod Brown for re-election.",
     "arc_analysis": "This endorsement boosts Brown's credibility on environmental issues and strengthens his campaign among eco-conscious voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown has a history of supporting environmental legislation in the US Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -270,7 +330,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown participates in familiar roundtable events.",
     "arc_analysis": "Brown uses established platforms to maintain visibility and engagement with voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Roundtable events are a common strategy for senators to engage with constituents and gather feedback.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -283,7 +346,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown discusses workers' issues with voters in Cincinnati.",
     "arc_analysis": "Brown is engaging directly with constituents to highlight his labor-focused agenda ahead of potential re-election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown often emphasizes labor and worker rights, aligning with his history as a senator.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "League of Conservation Voters",
@@ -296,7 +362,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The LCV Action Fund has endorsed Brown in his U.S. Senate race.",
     "arc_analysis": "This endorsement highlights Brown's environmental record and strengthens his position among progressive voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's environmental advocacy aligns with LCV priorities, reflecting broader policy focus.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "National Memo",
@@ -309,7 +378,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown aims to flip red Ohio back to blue.",
     "arc_analysis": "Brown's campaign strategy highlights the political shift in traditionally Republican states.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's political landscape is influenced by federal and state legislative dynamics, including voter demographics and party strategies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WTRF",
@@ -322,7 +394,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The United Steelworkers have endorsed Sherrod Brown for U.S. Senate.",
     "arc_analysis": "This endorsement strengthens Brown's position among labor unions and workers, a key constituency in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has a long history of advocating for labor rights and worker protections in Congress.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WFFT FOX 55 Fort Wayne",
@@ -335,7 +410,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The United Steelworkers have endorsed Sherrod Brown's Senate re-election campaign.",
     "arc_analysis": "This endorsement strengthens Brown's position among labor unions and workers in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has a strong history of labor support and advocacy, aligning with the endorsement.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -348,7 +426,10 @@
     "arc": "MEDIA",
     "arc_summary": "Brown personally wrote to a constituent in 1985.",
     "arc_analysis": "This highlights Brown's long-standing commitment to personal engagement with voters, building trust and loyalty over decades.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "This highlights Brown's long-standing commitment to constituent service, a cornerstone of effective representation.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Washington Post",
@@ -361,7 +442,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown writes an opinion piece in the Washington Post.",
     "arc_analysis": "Brown uses his platform to influence national discourse and bolster Democratic strategy.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WFMJ",
@@ -374,7 +458,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Ohio AFL-CIO endorses Sherrod Brown for U.S. Senate.",
     "arc_analysis": "This labor union backing solidifies Brown's support among Ohio workers and enhances his credibility on labor issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "The endorsement highlights the strong labor support backing Senator Brown's re-election campaign.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -387,7 +474,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The United Auto Workers has endorsed Sherrod Brown in the Ohio U.S. Senate race.",
     "arc_analysis": "This endorsement strengthens Brown's position among labor unions and workers, a key demographic for his campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown is a long-standing advocate for labor rights and economic policies beneficial to workers.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "POLITICO Pro",
@@ -400,7 +490,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown announces his candidacy for the Ohio Senate.",
     "arc_analysis": "Brown's re-entry into politics signals a potential strong run for a seat he previously held.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's legislative process includes primary elections and a general election to determine who will serve in the state senate.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Statehouse News Bureau",
@@ -413,7 +506,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is considering running for U.S. Senate in Ohio.",
     "arc_analysis": "Brown's potential candidacy could significantly influence the race, given his strong base and experience.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's potential candidacy could influence the balance of power in the US Congress, given his progressive stance and current Democratic control.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "NBC News",
@@ -426,7 +522,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown announces his campaign for the Senate seat vacated by Michael Vance.",
     "arc_analysis": "Brown's candidacy aims to secure a return to the Senate, leveraging his previous experience and popularity in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown is seeking to return to a role he previously held with significant legislative experience.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "AP News",
@@ -439,7 +538,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown announces his candidacy for Senate against Jon Husted.",
     "arc_analysis": "Brown's announcement positions him as a key challenger to the Trump-backed incumbent, potentially shaping Ohio's political landscape.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's campaign highlights the competitive nature of U.S. Senate races and the influence of party backing.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -452,7 +554,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown has launched his campaign to return to the U.S. Senate.",
     "arc_analysis": "Brown's re-election bid aims to reclaim a seat he previously held, leveraging his experience and popularity in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends and can influence state legislative priorities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -465,7 +570,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown launches his Senate re-election campaign.",
     "arc_analysis": "Brown seeks to secure his position as Ohio's senior senator by early campaigning.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator, Brown works within the federal legislative process to advocate for Ohio constituents.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "CBS News",
@@ -478,7 +586,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown announces his candidacy for the U.S. Senate seat in Ohio in 2026.",
     "arc_analysis": "Brown's re-entry into politics signals a strong bid to retain his influential position and continue advocating for labor and economic policies.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often focus on economic issues, aligning with Brown's past legislative priorities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -491,7 +602,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown announces he will run again for U.S. Senate.",
     "arc_analysis": "Brown's re-election bid highlights his continued influence in Ohio politics and Democratic strategy for retaining control of the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a sitting Senator, Brown's re-election bid reflects the importance of incumbency in US Congressional races.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Sherrod Brown",
@@ -504,7 +618,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown plans to run for his former Senate seat in Ohio in 2026.",
     "arc_analysis": "Brown's candidacy could strengthen Democrats' chances of regaining control of the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former Senator, Brown's potential return highlights the importance of experienced legislators in shaping federal policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Sherrod Brown",
@@ -517,7 +634,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown announces he will challenge U.S. Sen. Jon Husted.",
     "arc_analysis": "Brown's re-election bid highlights the competitive nature of Ohio's Senate race and his continued influence in state politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's announcement reflects the competitive nature of Ohio Senate races.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -530,7 +650,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sen. Sherrod Brown endorsed Vice President Kamala Harris for the Democratic presidential nomination.",
     "arc_analysis": "This endorsement highlights Brown's support for a key female leader within the party, potentially boosting Harris's campaign in Ohio and beyond.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a long-standing Democrat, Brown's endorsement reflects party dynamics and candidate viability in Ohio primaries.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -543,7 +666,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown endorses Kamala Harris for the Democratic presidential nomination.",
     "arc_analysis": "This endorsement could bolster Harris's campaign in key states and leverage Brown's influence within the party.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a long-time U.S. Senator, Brown's endorsement reflects his influence in national Democratic politics.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Kos",
@@ -556,7 +682,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown and other representatives are motivating canvassing efforts in Ohio.",
     "arc_analysis": "Their involvement highlights the importance of grassroots campaigning for upcoming elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's involvement highlights the importance of grassroots campaigning for legislative influence.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "SMART Union",
@@ -569,7 +698,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "SMART-TD, ATDA, and BLET unions jointly endorsed Senator Sherrod Brown.",
     "arc_analysis": "This endorsement strengthens Brown's labor support base ahead of potential future campaigns.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sen. Brown's labor support reflects his history of advocating for workers' rights in Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Sherrod Brown",
@@ -582,7 +714,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown leads Husted in fundraising for the Ohio Senate race.",
     "arc_analysis": "Strong fundraising indicates Brown's campaign is well-supported financially, giving him an edge over his opponent.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Fundraising is a key indicator of campaign strength and can influence legislative support.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Washington Examiner",
@@ -595,7 +730,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown's fundraising and polling improve in the Ohio Senate race.",
     "arc_analysis": "This indicates growing support for Brown, potentially narrowing the gap with his opponent Jon Husted.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races are influenced by state legislative processes and campaign finance laws.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "HRC | Human Rights Campaign",
@@ -608,7 +746,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Human Rights Campaign PAC has endorsed Sen. Sherrod Brown for re-election.",
     "arc_analysis": "This endorsement boosts Brown's credibility with LGBTQ+ voters and strengthens his position in the Democratic primary.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sen. Brown often supports progressive policies aligning with LGBTQ+ rights.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "New York Post",
@@ -621,7 +762,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown's campaign accused his opponent of receiving Epstein-linked funds, which backfired.",
     "arc_analysis": "The accusation may have damaged Brown's credibility and shifted focus from policy issues to scandal.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "Campaign strategies in Ohio often involve attacking opponents' ethics and funding sources.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Washington Examiner",
@@ -634,7 +778,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Crypto PACs continue to target Senator Sherrod Brown despite his toned-down criticism.",
     "arc_analysis": "This highlights ongoing tensions between the senator and crypto industry, impacting his campaign dynamics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's stance on cryptocurrency regulation may still be seen as restrictive by industry groups.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "irontontribune.com",
@@ -647,7 +794,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Ohio AFL-CIO has endorsed Sherrod Brown for U.S. Senate.",
     "arc_analysis": "This endorsement strengthens Brown's position among labor unions and could boost his fundraising and voter support in the upcoming election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's labor support reflects his long-standing advocacy for workers' rights in Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -660,7 +810,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown discusses campaign strategies with Jon Husted.",
     "arc_analysis": "Highlights Brown's approach to the upcoming election and engagement with key figures.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Campaign discussions often involve legislative and policy issues relevant to the Ohio General Assembly and US Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Fathom Journal",
@@ -673,7 +826,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown campaigns in northeast Ohio with Bernie Moreno as millions are poured into the Senate race.",
     "arc_analysis": "The campaign spending and joint appearances highlight the competitive nature of the Senate race, underscoring Brown's efforts to secure support in key regions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often see significant spending due to national importance.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Fox News",
@@ -686,7 +842,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown, a Democratic Senate candidate, claims support for closing the border.",
     "arc_analysis": "This statement aims to appeal to voters concerned about immigration while facing GOP criticism of his record.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "Brown's stance contrasts with typical progressive views on immigration.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -699,7 +858,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Cleveland.com publishes an editorial endorsing Sherrod Brown for U.S. Senate.",
     "arc_analysis": "This editorial support highlights Brown's strong backing in Ohio and could influence voter opinions ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's campaign highlights his work on labor and economic issues in the Senate.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WTOL",
@@ -712,7 +874,10 @@
     "arc": "MEDIA",
     "arc_summary": "Former Senator Sherrod Brown appears on Leading Edge to discuss forgotten stories from Toledo's history.",
     "arc_analysis": "Brown uses the platform to connect with Ohio voters and highlight local historical significance, potentially boosting his profile ahead of future political endeavors.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Sherrod Brown",
@@ -725,7 +890,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown discusses economic populism as key to ousting 'Trump enablers' in the Senate.",
     "arc_analysis": "Brown's emphasis on economic populism highlights his strategy for political gain and aligning with voters' concerns ahead of the midterm elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Economic populism aligns with Brown's legislative focus on workers' rights and economic equality.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Sherrod Brown",
@@ -738,7 +906,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Former Sen. Sherrod Brown plans to run for his old Senate seat in 2026.",
     "arc_analysis": "Brown's candidacy could strengthen Democrats' chances of regaining control of the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's potential return highlights the importance of experienced legislators in shaping policy and legislation.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "CNN",
@@ -751,7 +922,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is running for U.S. Senate in Ohio.",
     "arc_analysis": "Brown's campaign aims to regain his former seat, highlighting his political experience and popularity among voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national trends and can be influenced by incumbent performance and voter sentiment.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "CNN",
@@ -764,7 +938,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is campaigning to win a traditionally Republican Senate seat.",
     "arc_analysis": "Brown's success could determine Democratic control of the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's campaign reflects efforts by Democrats to gain control of the US Senate.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "AP News",
@@ -777,7 +954,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Bob Taft, a former Republican governor from a prominent Ohio GOP family, endorses Sherrod Brown.",
     "arc_analysis": "This endorsement highlights Brown's ability to attract support across party lines and strengthens his position in the upcoming election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio politics often sees unexpected endorsements due to long-standing political rivalries and shifting alliances.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Washington Post",
@@ -790,7 +970,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown is hoping for a comeback due to voter dissatisfaction with Trump.",
     "arc_analysis": "Brown aims to capitalize on potential anti-Trump sentiment ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's strategy reflects the common political tactic of exploiting voter regret after elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -803,7 +986,10 @@
     "arc": "MEDIA",
     "arc_summary": "The Columbus Dispatch compares positions of Sherrod Brown and Bernie Moreno.",
     "arc_analysis": "This comparison highlights the policy differences between candidates ahead of upcoming elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's tenure in the U.S. Senate has been marked by efforts to support Ohio's manufacturing sector.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Sherrod Brown",
@@ -816,7 +1002,10 @@
     "arc": "RECORD",
     "arc_summary": "Sherrod Brown served as a U.S. Senator from Ohio and chaired the Senate Committee on Banking.",
     "arc_analysis": "Brown's long-standing influence in banking policy underscores his significance in shaping financial regulations.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As chair of the Senate Banking Committee, Brown influenced federal banking regulations.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -829,7 +1018,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown is emphasizing his anti-war stance in the Ohio Senate race.",
     "arc_analysis": "This highlights Brown's focus on foreign policy to differentiate himself from opponents and appeal to voters concerned about military engagement.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's political context often includes foreign policy debates, especially during federal elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "HuffPost",
@@ -842,7 +1034,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Fox News poll shows Sherrod Brown leading in the Ohio Senate race.",
     "arc_analysis": "This indicates strong support for Brown among voters, potentially securing his position as frontrunner.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's lead reflects his strong standing among Ohio voters and influence on state policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -855,7 +1050,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is actively campaigning against Jon Husted.",
     "arc_analysis": "Brown's aggressive campaign strategy highlights the competitive nature of the race for governor.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's campaign highlights the competitive nature of U.S. Senate races and the importance of legislative experience.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Politico",
@@ -868,7 +1066,10 @@
     "arc": "POLICY",
     "arc_summary": "Sherrod Brown is revising his stance on cryptocurrency after it played a role in his political challenges.",
     "arc_analysis": "Brown's shift reflects the evolving political landscape and public interest in crypto, impacting his policy relevance.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's shift reflects growing bipartisan interest in regulating crypto to address financial stability and consumer protection.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -881,7 +1082,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown easily wins the Ohio primary.",
     "arc_analysis": "Brown's victory solidifies his position as a frontrunner in upcoming elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's primary system often leads to incumbents like Brown facing weak opposition.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -894,7 +1098,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown prepares for Ohio US Senate primary against incumbent Jon Husted.",
     "arc_analysis": "Brown is positioning himself for the general election by focusing on a competitive primary.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate primaries set the stage for general election battles, where incumbents like Jon Husted face challengers.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Politico",
@@ -907,7 +1114,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown's Senate comeback faces challenges from crypto donations.",
     "arc_analysis": "Crypto funding could undermine traditional campaign finance strategies and influence.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Campaign finance rules in the US Congress and Ohio General Assembly may differ, impacting how outside funding like crypto affects campaigns.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -920,7 +1130,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown raised $8 million in the first six weeks of his Senate campaign.",
     "arc_analysis": "This substantial fundraising indicates strong support and financial readiness for Brown's re-election bid.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Senate campaigns often require substantial fundraising to compete at the federal level.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKEF",
@@ -933,7 +1146,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown met with constituents in Kettering.",
     "arc_analysis": "Brown is engaging directly with voters to build support for his re-election campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator, Brown regularly engages with Ohio residents to gather feedback and inform his legislative work.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -946,7 +1162,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Cleveland.com urges Brown to focus on Husted's record instead of Moreno.",
     "arc_analysis": "This suggests a strategic shift in campaign messaging may be necessary for Brown to address voter concerns more effectively.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio elections often involve scrutiny of secretaries of state due to their role in election administration.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Signal",
@@ -959,7 +1178,10 @@
     "arc": "POLICY",
     "arc_summary": "Sherrod Brown discusses his stance on Immigration and Customs Enforcement (ICE).",
     "arc_analysis": "Brown's position on ICE is significant as it reflects his views on immigration policy, a key issue for many voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's position reflects broader debates in Congress about immigration enforcement policies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -972,7 +1194,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Polls indicate Sherrod Brown's chances against Republican Jon Husted in the Ohio Senate race.",
     "arc_analysis": "The polls provide insight into Brown's electoral prospects and potential voter sentiment in a key battleground state.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races are part of national midterm elections influencing state and federal policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Logan Daily News",
@@ -985,7 +1210,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown visited a Thornville farm to discuss rising costs.",
     "arc_analysis": "Brown is engaging with voters and highlighting economic issues in his campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's visit highlights the impact of policy on local agriculture.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Marietta Times",
@@ -998,7 +1226,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown visited Neader's Diner for a meet-and-greet event.",
     "arc_analysis": "This engagement helps Brown connect with voters in key areas ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Kos",
@@ -1011,7 +1242,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is canvassing in Ohio as part of his campaign.",
     "arc_analysis": "This grassroots outreach helps build support and voter engagement ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's campaigning reflects the importance of grassroots engagement in Ohio elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKBN.com",
@@ -1024,7 +1258,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown meets with Austintown residents before the May primary.",
     "arc_analysis": "Brown is engaging directly with voters to build support for his re-election campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator, Brown often engages with constituents to discuss policy and gather support.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WTOL",
@@ -1037,7 +1274,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown made a campaign stop in Toledo.",
     "arc_analysis": "Brown is actively campaigning to secure support in key Ohio districts.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator and Ohio Democrat, Brown's campaign activities reflect the state-level political landscape.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Chronicle Telegram",
@@ -1050,7 +1290,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The UAW has endorsed Sherrod Brown for the 2026 U.S. Senate special election.",
     "arc_analysis": "This endorsement strengthens Brown's position among labor unions and workers, a key constituency in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's endorsement by a major labor union reflects his longstanding support for workers' rights and alignment with progressive policies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "NBC News",
@@ -1063,7 +1306,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown secured the Democratic nomination for U.S. Senate in Ohio.",
     "arc_analysis": "This victory positions Brown to compete in a crucial battleground state election, potentially influencing control of the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's re-election bid highlights the importance of swing states in US Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Guardian",
@@ -1076,7 +1322,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown and Jon Husted advance to the general election in Ohio's Senate race.",
     "arc_analysis": "This sets up a high-stakes contest between Brown, an incumbent Democrat, and Republican challenger Husted.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1089,7 +1338,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won the Ohio Democratic U.S. Senate primary and will run against Jon Husted in November.",
     "arc_analysis": "This victory secures Brown's position as the Democratic nominee, setting up a likely challenge to Republican incumbent Rob Portman's successor.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's victory ensures a Democratic seat in the US Congress, impacting federal policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -1102,7 +1354,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won his primary election and advances towards reclaiming his U.S. Senate seat.",
     "arc_analysis": "This victory solidifies Brown's position as a strong candidate in the upcoming general election, likely securing his return to the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's return to the Senate could influence federal policy on issues like labor rights, which he championed previously.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Fox News",
@@ -1115,7 +1370,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown has secured the Democratic nomination for U.S. Senate in Ohio and will face Republican J.D. Vance.",
     "arc_analysis": "This race is crucial as it could determine control of the Senate, impacting legislative priorities and committee assignments.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "U.S. Senate races often reflect broader national trends, impacting legislative balance.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "People's World",
@@ -1128,7 +1386,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is running for his former U.S. Senate seat.",
     "arc_analysis": "Brown's re-election bid aims to reclaim a key position in Ohio politics and maintain Democratic influence in the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown previously served as a Democrat in the US Senate, advocating for labor and economic issues.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Sherrod Brown",
@@ -1141,7 +1402,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown and Jon Husted are confirmed as the candidates for the U.S. Senate race in Ohio.",
     "arc_analysis": "This confirmation sets the stage for a competitive election, with Brown defending his seat against Republican challenger Jon Husted.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "U.S. Senators campaign under a complex process involving primaries, general elections, and state-specific election laws.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WTVG",
@@ -1154,7 +1418,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown wins Ohio Democratic primary for US Senate.",
     "arc_analysis": "This victory positions Brown to run in a key Senate race crucial for the national Democratic Party.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's victory sets the stage for a critical national election, impacting federal policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "NBC News",
@@ -1167,7 +1434,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "NBC News projects Sherrod Brown as the winner of Ohio's Democratic Senate primary.",
     "arc_analysis": "This victory solidifies Brown's position in the upcoming general election, likely securing his seat for another term.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a sitting senator, Brown faces the Ohio General Assembly process for reappointment if he vacates his seat.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The New Yorker",
@@ -1180,7 +1450,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won the Ohio primary election.",
     "arc_analysis": "This victory solidifies Brown's position as a frontrunner in the Democratic race for the Senate seat.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator, Brown is familiar with federal legislative processes but his win in this primary reflects state-level political dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1193,7 +1466,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "AP projects Sherrod Brown will run against Jon Husted in the Ohio Senate race.",
     "arc_analysis": "This projection solidifies Brown's position as a frontrunner and sets up key opponent for the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends and can influence state legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Richland Source",
@@ -1206,7 +1482,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown will keynote the NAACP banquet in Mansfield on May 16.",
     "arc_analysis": "This event highlights Brown's commitment to civil rights and his efforts to engage with diverse communities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator, Brown often engages with civil rights organizations.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -1219,7 +1498,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown discusses his victory in the Ohio Democratic Senate primary.",
     "arc_analysis": "Brown's primary win solidifies his position as the likely Democratic nominee for the U.S. Senate race in Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown is familiar with the legislative process and may focus on policy achievements.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -1232,7 +1514,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is competing against incumbent Jon Husted in the November election for Ohio's U.S. Senate seat.",
     "arc_analysis": "This race will determine if Brown retains his Senate position, impacting Democratic control of the chamber.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate elections follow federal legislative processes, including primaries and general elections.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WSAZ",
@@ -1245,7 +1530,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown will face Jon Husted in the November U.S. Senate election.",
     "arc_analysis": "This primary result sets up a high-profile general election race for Ohio's Senate seat.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate elections follow federal legislative processes.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "FOX 8 News",
@@ -1258,7 +1546,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won the Ohio Democratic primary for US Senate.",
     "arc_analysis": "This victory secures Brown's position as the Democratic nominee and sets up a general election race against Republican candidates.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown is familiar with the legislative process in both the Ohio General Assembly and US Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "FOX 35 Orlando",
@@ -1271,7 +1562,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won a significant victory in the Ohio primary.",
     "arc_analysis": "This win strengthens Brown's position as a leading candidate and could influence upcoming elections.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's primary results can influence the state's legislative agenda and policy priorities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -1284,7 +1578,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won the Ohio Democratic primary for U.S. Senate.",
     "arc_analysis": "This victory secures Brown's position as the Democratic nominee and sets up a general election race against Republican challengers.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a sitting Senator, Brown's win ensures continuity in his legislative efforts.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKRC",
@@ -1297,7 +1594,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown secures the Ohio Democratic Senate nomination.",
     "arc_analysis": "This victory solidifies Brown's position as a frontrunner in the general election race for the U.S. Senate seat.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown is familiar with US Congress processes and likely emphasizes bipartisanship.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -1310,7 +1610,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Newsweek discusses Sherrod Brown's chances against Husted based on polls.",
     "arc_analysis": "Polling data provides insight into Brown's potential success in the general election, influencing campaign strategies and fundraising efforts.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races often hinge on voter turnout and party loyalty, influenced by state election laws.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WSAZ",
@@ -1323,7 +1626,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown secured the Ohio Democratic nomination for the U.S. Senate.",
     "arc_analysis": "This victory solidifies Brown's position as a frontrunner in the general election, likely ensuring his return to the Senate.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown is familiar with the legislative process in both the Ohio General Assembly and US Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1336,7 +1642,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown will run against Jon Husted in the upcoming Ohio Senate election.",
     "arc_analysis": "This race is crucial for maintaining Democratic control of the Senate and advancing Brown's progressive agenda.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends and can influence state legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1349,7 +1658,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won his Ohio primary election.",
     "arc_analysis": "Brown's victory solidifies his position as a frontrunner in the Democratic field for 2024.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator, Brown would have been involved in federal legislative processes.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WKYC",
@@ -1362,7 +1674,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown advances to the general election against incumbent Jon Husted.",
     "arc_analysis": "Brown secured his position in the November Senate race, setting up a competitive contest for Ohio's seat.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "U.S. Senate elections follow a primary process leading to the general election.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WCPO 9 Cincinnati",
@@ -1375,7 +1690,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won the Ohio US Senate Democratic primary.",
     "arc_analysis": "Brown's victory sets him up for a general election rematch against Republican Bernie Moreno.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's victory sets up a rematch against Republican Bernie Moreno in the general election.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1388,7 +1706,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Trump endorses Jim Renacci, who is running against Senator Sherrod Brown.",
     "arc_analysis": "This could boost Renacci's campaign and challenge Brown's incumbency.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often involve significant influence from national party leaders.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1401,7 +1722,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A Republican PAC plans to spend $79 million supporting Jon Husted in his Senate race against Sherrod Brown.",
     "arc_analysis": "This massive spending indicates a high-stakes effort by Republicans to unseat the incumbent Democrat, signaling the national importance of this Ohio Senate race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Large independent expenditures can significantly influence election outcomes and campaign dynamics.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Washington Post",
@@ -1414,7 +1738,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is planning to run for the U.S. Senate seat in Ohio.",
     "arc_analysis": "Brown's re-election bid highlights his popularity and experience among Ohio voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often involve significant state legislative influence due to redistricting.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1427,7 +1754,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is running for U.S. Senate in 2026 against Jon Husted.",
     "arc_analysis": "Brown's re-election bid highlights his continued influence and popularity among Ohio Democrats.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "U.S. Senators like Brown must navigate complex legislative processes and committee work.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Reproductive Freedom for All",
@@ -1440,7 +1770,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Reproductive Freedom for All endorses Brown for reelection.",
     "arc_analysis": "This endorsement highlights Brown's support among pro-choice advocates, bolstering his campaign credibility.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's endorsement by Reproductive Freedom for All highlights his stance on reproductive rights, a key issue in US Senate races.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Buckeye Flame",
@@ -1453,7 +1786,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown is set to run against anti-transgender Republican Senator Jon Husted for the Ohio U.S. Senate seat.",
     "arc_analysis": "This race highlights the political divide over LGBTQ+ rights and could influence national Democratic strategy in swing states.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends and can influence federal policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "FOX 8 News",
@@ -1466,7 +1802,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Jon Husted and Sherrod Brown discuss the Ohio Senate race.",
     "arc_analysis": "The debate highlights key issues and positions in the upcoming election, influencing voter perceptions.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect broader national trends in legislative priorities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Axios",
@@ -1479,7 +1818,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Jon Husted has received a third union endorsement, surpassing Sherrod Brown.",
     "arc_analysis": "This shifts momentum in the race by highlighting Husted's growing labor support.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Union endorsements often signal key policy priorities in Ohio elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -1492,7 +1834,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A poll assesses Sherrod Brown's chances against Jon Husted in the Ohio Senate race.",
     "arc_analysis": "The poll provides insight into voter sentiment and potential electoral strategy for Brown.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races are influenced by state legislative processes and redistricting efforts.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Hill",
@@ -1505,7 +1850,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown raised $3.6 million in the first 24 hours of his Senate campaign.",
     "arc_analysis": "This rapid fundraising success indicates strong support and financial backing for Brown's Senate bid, potentially signaling a formidable challenge to incumbents.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "High fundraising indicates strong support and resources for Brown's re-election bid.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Bing: Sherrod Brown",
@@ -1518,7 +1866,10 @@
     "arc": "RECORD",
     "arc_summary": "Tim Scott thanked the crypto industry for helping to oust Sherrod Brown from his position.",
     "arc_analysis": "This highlights the shift in power dynamics within the Senate Banking Committee and the influence of the crypto industry on political outcomes.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Washington Post",
@@ -1531,7 +1882,10 @@
     "arc": "MEDIA",
     "arc_summary": "Washington Post suggests other Democrats adopt Brown's political strategy.",
     "arc_analysis": "Highlights Brown's influence and successful approach in Ohio, offering insights for 2020 candidates.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown is known for his effective grassroots organizing and policy focus, which aligns with long-standing Ohio Democratic strategies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "E&E News by POLITICO",
@@ -1544,7 +1898,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown aims to leverage high energy prices for his Senate campaign.",
     "arc_analysis": "High energy costs could boost Brown's appeal among Ohio voters concerned about economic issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "High energy prices may influence voter priorities, impacting Brown's re-election strategy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1557,7 +1914,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown endorsed Aftab Pureval in the Cincinnati mayoral race.",
     "arc_analysis": "This endorsement could boost Pureval's campaign and highlight Brown's influence in Ohio politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -1570,7 +1930,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown discusses his campaign and return to politics.",
     "arc_analysis": "Brown's reflections on his political comeback provide insight into his strategic approach for the upcoming election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator, Brown's return involves navigating both national and state political landscapes.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Washington Examiner",
@@ -1583,7 +1946,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Republican Jon Husted gains a fourth union endorsement over Sherrod Brown.",
     "arc_analysis": "This shift in union support could weaken Brown's standing among labor groups and impact his re-election prospects.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Union endorsements can significantly influence labor policy advocacy in Ohio.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Politico",
@@ -1596,7 +1962,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Brown endorsed Hillary Clinton for president.",
     "arc_analysis": "This endorsement likely strengthens Clinton's position in key swing states and aligns her with a prominent Democratic senator.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a long-time Democratic senator, Brown's endorsement reflects party dynamics and influence in Ohio.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1609,7 +1978,10 @@
     "arc": "RECORD",
     "arc_summary": "Sherrod Brown's work on the Butch Lewis Act has protected one million pensions.",
     "arc_analysis": "This highlights Brown's significant legislative achievement in safeguarding pension funds for workers, underscoring his commitment to labor issues.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "The Butch Lewis Act addresses pension protection, a key issue in labor and retirement policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "MSN",
@@ -1622,7 +1994,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown maintains lead in Ohio Senate race amid Republican strategy changes.",
     "arc_analysis": "Brown's continued frontrunner status highlights Democratic strength in traditionally competitive state.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's position reflects the competitive nature of U.S. Senate races and shifting political strategies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -1635,7 +2010,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Fox News poll assesses Sherrod Brown's chances against Jon Husted.",
     "arc_analysis": "Polling data provides insight into the competitive dynamics of Ohio's Senate race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races often hinge on voter perceptions of national vs. state issues.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ohio Capital Journal",
@@ -1648,7 +2026,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown outraises Republican challenger Jon Husted in latest fundraising round.",
     "arc_analysis": "Strong fundraising indicates Brown's campaign is well-supported and competitive against the GOP nominee.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "U.S. Senate campaigns often reflect broader political trends and legislative priorities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "10TV",
@@ -1661,7 +2042,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Brown endorses Wojtanowski to lead Ohio Democrats.",
     "arc_analysis": "This endorsement could strengthen Wojtanowski's position and signal Brown's influence within the party.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Democratic leadership transitions can influence state legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "CBS News",
@@ -1674,7 +2058,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "CBS News projects the Ohio Senate race will be between Jon Husted and Sherrod Brown.",
     "arc_analysis": "This sets up a clear Democratic primary runoff, impacting Brown's path to the general election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's previous legislative experience includes serving as a U.S. Senator from Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "MS NOW",
@@ -1687,7 +2074,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won the Ohio Democratic Senate primary.",
     "arc_analysis": "This victory solidifies Brown's position as the Democratic nominee in his re-election bid, likely securing him a spot in November.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a sitting senator, Brown's win ensures he will likely remain in the US Congress.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Reuters",
@@ -1700,7 +2090,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown secured a victory in Ohio, bolstering Democratic hopes for regaining control of the US Senate.",
     "arc_analysis": "Brown's win is crucial for Democrats aiming to regain Senate majority by securing key swing states like Ohio.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's win highlights the importance of swing states like Ohio in shaping national legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1713,7 +2106,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown won an election in Ohio.",
     "arc_analysis": "This victory strengthens Brown's position for future political endeavors, such as a potential 2026 run.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator from Ohio, Brown's victory reflects the state's Democratic leanings in federal elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Daily Signal",
@@ -1726,7 +2122,10 @@
     "arc": "POLICY",
     "arc_summary": "Sherrod Brown is reconsidering his stance on immigration policies.",
     "arc_analysis": "This shift could impact his appeal among diverse voter groups and align him with changing national narratives on immigration.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's shift may reflect evolving national and state legislative priorities.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WOWK 13 News",
@@ -1739,7 +2138,10 @@
     "arc": "POLICY",
     "arc_summary": "Brown hosts a healthcare roundtable in Ironton.",
     "arc_analysis": "This event highlights Brown's focus on healthcare policy and engagement with local communities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former Senator, Brown often engages with constituents on key policy issues like healthcare.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "GNews: Sherrod Brown",
@@ -1752,7 +2154,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown held a campaign event in Cincinnati.",
     "arc_analysis": "Brown is actively campaigning to secure votes ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown is familiar with the legislative process and may discuss policy issues relevant to Ohio's General Assembly.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -1765,7 +2170,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown criticizes Jon Husted for supporting data centers.",
     "arc_analysis": "Brown aims to portray Husted as out of touch with economic priorities, likely to gain support among voters concerned about job creation.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio's political landscape often involves debates over economic development strategies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cincinnati Enquirer",
@@ -1778,7 +2186,10 @@
     "arc": "MEDIA",
     "arc_summary": "Bernie Sanders called Sherrod Brown to deny a Politico story.",
     "arc_analysis": "This interaction highlights the importance of clarifying political narratives and maintaining transparency during the campaign season.",
-    "conflict": true
+    "conflict": true,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Ideastream",
@@ -1791,7 +2202,10 @@
     "arc": "POLICY",
     "arc_summary": "Brown endorses a bill aimed at police reform.",
     "arc_analysis": "This shows Brown's commitment to addressing racial justice and policing issues, aligning with progressive priorities.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Police reform bills often address issues like use of force and accountability, reflecting broader national debates.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1804,7 +2218,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown maintains his fundraising lead over Husted.",
     "arc_analysis": "Strong fundraising indicates Brown's campaign has robust support and financial resources, crucial for a competitive race.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Fundraising is crucial for legislative influence and campaign activities in the Ohio General Assembly and US Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Newsweek",
@@ -1817,7 +2234,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A poll assesses Republican chances of defeating Sherrod Brown in the Ohio Senate race.",
     "arc_analysis": "The poll provides insight into voter sentiment and potential electoral challenges for incumbent Republicans.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Sherrod Brown is a long-standing Democrat known for advocating progressive policies in the US Senate.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Washington Examiner",
@@ -1830,7 +2250,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown criticizes Husted for allegedly using a driver while campaigning.",
     "arc_analysis": "This highlights Brown's attempt to portray himself as more down-to-earth compared to his opponent.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's criticism highlights the scrutiny of public officials' use of taxpayer resources during campaigns.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1843,7 +2266,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown has recently endorsed candidates in local elections.",
     "arc_analysis": "Brown's endorsements can influence local races and bolster his statewide profile ahead of future campaigns.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator, Brown's endorsements can influence local races due to his statewide popularity and political clout.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1856,7 +2282,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown endorsed Tim Ryan for the U.S. Senate.",
     "arc_analysis": "This endorsement could boost Ryan's campaign and signal Brown's support for continuity in Ohio politics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown's endorsement highlights the importance of party unity in Ohio's political landscape.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "NOTUS",
@@ -1869,7 +2298,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown increases his fundraising lead.",
     "arc_analysis": "Strong fundraising indicates a robust campaign and potential for electoral success.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Fundraising is crucial for political campaigns to support legislative initiatives.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1882,7 +2314,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Brown raises more money than Husted for the U.S. Senate race.",
     "arc_analysis": "Strong fundraising indicates Brown's campaign is well-supported and competitive in the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Senate fundraising reflects candidates' policy appeal and institutional support.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -1895,7 +2330,10 @@
     "arc": "RECORD",
     "arc_summary": "Sherrod Brown has disclosed his income from writing and teaching since leaving the Senate.",
     "arc_analysis": "This transparency helps build trust with constituents but may also highlight financial changes post-political career.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Elected officials often disclose additional income sources post-service.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Fox News",
@@ -1908,7 +2346,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Trump urges the Republican party to unite behind Bernie Moreno in Ohio Senate race.",
     "arc_analysis": "This call highlights potential division within the GOP and emphasizes the importance of the seat for Republicans.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Ohio Senate races are influenced by national party dynamics and endorsements.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Columbus Dispatch",
@@ -1921,7 +2362,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown avoids discussing Kamala Harris.",
     "arc_analysis": "Brown's silence may indicate strategic caution or disagreement with Harris.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "Cleveland.com",
@@ -1934,7 +2378,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "The Ohio Fraternal Order of Police declined to endorse Senator Sherrod Brown.",
     "arc_analysis": "This indicates a lack of support from law enforcement, potentially impacting his campaign's outreach and credibility in that community.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Political endorsements can influence legislative support in the General Assembly and federal lobbying efforts.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "The Atlantic",
@@ -1947,7 +2394,10 @@
     "arc": "MEDIA",
     "arc_summary": "Sherrod Brown is actively engaging in public appearances and media.",
     "arc_analysis": "Brown's consistent media presence helps maintain visibility and credibility among voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator, Brown's engagement reflects the ongoing advocacy work typical for ex-legislators.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Spectrum News",
@@ -1960,7 +2410,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown visited Marion as part of his campaign.",
     "arc_analysis": "Brown's visit highlights his efforts to engage with voters in key areas ahead of the election.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown's visit reflects the importance of Ohio's agricultural communities in shaping policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Signal Ohio",
@@ -1973,7 +2426,10 @@
     "arc": "CAMPAIGN",
     "arc_summary": "Sherrod Brown launches an early attack on affordability issues in Ohio's Senate race.",
     "arc_analysis": "Brown aims to establish himself as a key voice on economic concerns, potentially influencing voter sentiment early in the campaign.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Brown is leveraging his experience and past legislative focus on economic issues to gain traction.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "Hometown Stations",
@@ -1986,7 +2442,10 @@
     "arc": "POLICY",
     "arc_summary": "Brown discusses farm costs and tariffs at a Continental event.",
     "arc_analysis": "This highlights Brown's focus on agricultural issues and trade policy, key concerns for Ohio voters.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former senator, Brown often addresses agricultural issues and trade policies affecting Ohio farmers.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   },
   {
     "source": "WLWT",
@@ -1999,7 +2458,10 @@
     "arc": "ENDORSEMENTS",
     "arc_summary": "Sherrod Brown says he would campaign with Kamala Harris if she visits Ohio.",
     "arc_analysis": "This shows Brown's support for Harris and willingness to boost her candidacy in key states.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "As a former U.S. Senator, Brown is familiar with campaigning and political dynamics in Ohio.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
   },
   {
     "source": "WFMJ",
@@ -2012,6 +2474,1449 @@
     "arc": "CAMPAIGN",
     "arc_summary": "A political ad uses an AI-generated deepfake of Sherrod Brown.",
     "arc_analysis": "This highlights the use of advanced technology in modern campaigning, potentially raising concerns about authenticity and ethics.",
-    "conflict": false
+    "conflict": false,
+    "legislative_note": "Deepfakes pose challenges for election integrity and campaign ethics.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WLWT",
+    "feed": "GNews: Legislative context 1",
+    "title": "EXPLAINER: What does 'yes' or 'no' vote mean for Ohio Issue 1 in November election? - WLWT",
+    "author": "",
+    "summary": "EXPLAINER: What does 'yes' or 'no' vote mean for Ohio Issue 1 in November election? &nbsp;&nbsp; WLWT",
+    "published": "Fri, 01 Nov 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNFhCRk42RXIwYVI4ZGRfN2xxZzVwVExzZEs3WlNwQWdueUF1anUtcGtmOXQtVTlBWUVMaWhQU25kVDJjZEFlbkFIMWpUUkRVYTR6VkxydGU3ZUVQR0pjS0kzeF9tYzFLRmdYYXp6czZxYUViSXNMcGdjYlJTZTROX0ttUnRLSU9BQ2xCcFFlUkJ3empT?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "61a050c63e38",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1 in the upcoming election.",
+    "arc_analysis": "Provides voters with context and understanding about a ballot measure, aiding informed decision-making.",
+    "conflict": false,
+    "legislative_note": "Voting on ballot issues like Ohio Issue 1 reflects direct democracy, bypassing legislative process.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Signal Cleveland",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio gerrymandering, explained - Signal Cleveland",
+    "author": "",
+    "summary": "Ohio gerrymandering, explained &nbsp;&nbsp; Signal Cleveland",
+    "published": "Fri, 02 Feb 2024 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjVUdWbGFURzhEbENvcVNiYy1iYTEwM1MxZHZqUHdvQkN6bXNjQjBCVG5XaHVNa0ZEcXNNT2Vpc05GM1hWbWN0b0RBeFJwY3ByLWJKT3lfYXMzOHVXb1hCbUk0Tmc3c3dlQlE?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "5720863de329",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Explanation of Ohio's gerrymandering practices.",
+    "arc_analysis": "Provides context for understanding the political landscape and electoral challenges in Ohio.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has been involved in national discussions about gerrymandering and its impacts on democracy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Senate (.gov)",
+    "feed": "GNews: Legislative context 2",
+    "title": "Our Response to the Associated Press on the Abortion Amendment - Ohio Senate (.gov)",
+    "author": "",
+    "summary": "Our Response to the Associated Press on the Abortion Amendment &nbsp;&nbsp; Ohio Senate (.gov)",
+    "published": "Fri, 03 Nov 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTU5LN3pvTTlzd1JTOWtldTFMWjRVSUpkaFo5ai02R3cyMVFxUmVSeWZIZ1l5bnI3TldVYjJZVDZIS19CLTFwX1pDMWVtQkNVSV94ckh4eDFDX1NEMVlFN3hnRl9BSkRyWU95T2oxX3FFdUpNTkR0SVJYeHJtaVA0MDJybkxQUm1WZ01DU3lKekw4dU5PNlVzYTVrNGRpNHVBQWhJaFh2QQ?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "a2760ae93a5b",
+    "arc": "RECORD",
+    "arc_summary": "Sherrod Brown responds to AP regarding an abortion amendment.",
+    "arc_analysis": "Brown addresses media inquiries about a contentious political issue, highlighting his stance on reproductive rights.",
+    "conflict": false,
+    "legislative_note": "Brown's response relates to ongoing debates over reproductive rights in state legislatures.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "10TV",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Election Day Voter Guide: What's on the ballot, where to vote, polling hours - 10TV",
+    "author": "",
+    "summary": "Ohio Election Day Voter Guide: What's on the ballot, where to vote, polling hours &nbsp;&nbsp; 10TV",
+    "published": "Fri, 04 Nov 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQTkFHdDhZaUp1VVhBSWZYUEZ5TFozR1JfZWMzMUdMNS0tNmZqLTVJZnZVWmwySk9fdEpqZTF4QjhQMnh5SkRLT3g1NUpEQVFEWVRna1VnN050azU5REN4QVZmTHVBc2NfcGN4Wl90Y0hKNlVKekVad2tFRnM4T2haUTZhNkVBYWNja3hpdF81QU5aN2IzUWU2d2w5R2tuR0tod2JsVVlzYWwzZVRPdi11VTZJM1JWczFHdnBWQmR1Z2xkQktHRXhOMlR3ZUUxWEh1YXNQend6bm1fWThZQnhQb19zZDNCNmgxQ2NuZjFYTW4?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "a0216e171625",
+    "arc": "UNMAPPED",
+    "arc_summary": "Provides voter information for Ohio elections.",
+    "arc_analysis": "General election guidance unrelated to Brown's specific activities or policies.",
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio gerrymandering: A brief and awful history of the very recent past - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio gerrymandering: A brief and awful history of the very recent past &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Fri, 11 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNX0V1UEVsa2hfeVB5QnlpR1Z0Z3JvSHliY2xhOXhpTTcwem8zbFk1SU1FM291a052MjQ1TE1zWTFYaUdsMi13akNuVUtqZlVBVWROU1F4c1pXajZVMHh3Z1QzR2J6OU92dnFoNmNabEpqa3NTMzE4VGVMYUhVeWJyREtnLWp4bF9acXNvZVJmQUhvVFluQnVFc2wtcEt6VDdCUXlaSGRTT3VxYU5jQVRMWFB3?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "622a496dd337",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "The article provides a history of gerrymandering in Ohio.",
+    "arc_analysis": "Understanding gerrymandering is crucial for assessing political fairness and the effectiveness of Brown's advocacy for fair representation.",
+    "conflict": false,
+    "legislative_note": "Gerrymandering has significant impacts on electoral outcomes and legislative processes, affecting figures like Sherrod Brown.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Slate Magazine",
+    "feed": "GNews: Legislative context 1",
+    "title": "A Brief Explanation of the “Adult Friend Finder” Story That Is Sort of Rocking the Ohio Senate Race - Slate Magazine",
+    "author": "",
+    "summary": "A Brief Explanation of the “Adult Friend Finder” Story That Is Sort of Rocking the Ohio Senate Race &nbsp;&nbsp; Slate Magazine",
+    "published": "Fri, 15 Mar 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUnk1cGpHRW1BWlBNNWhaem9DRUxZSTFUTHRmeWc1RUNkcHJwYkNEUjJzSzNBaFJHTElWSkpBSDJYR3QyQjRQbmx6RU94MHZjakF6ZF80YzFMNHFpZTdKX0dlN3Q4MlZPVGE3NkVRVERvU2J1ZzJrNlB0a1FNQzVOVUJDQ1p3TVg1azhfV1E5R29qalZ6ODhjOHlYbVl3LUtyTG44dnJ5UnZrb0lpcUE?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "894086e1c9d9",
+    "arc": "MEDIA",
+    "arc_summary": "Slate provides context on a story involving an adult friend finder service that has affected Brown's Ohio Senate race.",
+    "arc_analysis": "The article sheds light on a scandal affecting Brown's campaign, potentially impacting his standing and public perception.",
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "Tim Ryan agrees to debate, tours PPE factory as state party endorses - Ohio Capital Journal",
+    "author": "",
+    "summary": "Tim Ryan agrees to debate, tours PPE factory as state party endorses &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Fri, 18 Feb 2022 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ3lDMXZtbWwyb2x1dnFuTkpFbWktMEU2RU43b0x3cERmLU1KQklrbmFtQVVOV1Q0bXd4YmdmTGlYcUFwU0VkakRDanBzcXNqWTlsY0tEN3ZIOHp3Zi03aVFtZ3lPdTFIT2x4UWdOT2JNbHN1ME93OV9aWWZUeDdQUzV3djhzTUt1TXlyajBpQkpuOUhpN0E2dFZTelZGYkNYVFpVRWdaOGh1bXp6REpN?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "e2be602206a2",
+    "arc": "ENDORSEMENTS",
+    "arc_summary": "The Ohio Democratic Party endorsed Tim Ryan for Senate.",
+    "arc_analysis": "This endorsement could boost Ryan's campaign visibility and credibility among Ohio Democrats.",
+    "conflict": false,
+    "legislative_note": "Ohio's Democratic primary often involves significant internal debates and endorsements, reflecting the broader national context of party politics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Miami Valley Today",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio Issue 1: What is it, who is for it, and who is against it? - Miami Valley Today",
+    "author": "",
+    "summary": "Ohio Issue 1: What is it, who is for it, and who is against it? &nbsp;&nbsp; Miami Valley Today",
+    "published": "Fri, 18 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkRwWkpFNkN3X2tWSXpYOGtsNS1SOGVHQmtrc3MtX3pieEpJUmNWUUU3dTE1N3FIR2lrd0xtekNpdmpzLVc5Qy01ZUJjUVFKNHkwUGMycjhsZU80cDdHempxcHdnRk1GZVU2cG8xMldhei10U1B1OXBmaUF5Tk1Gb2IzQmVtZGtwMzYxU1pZcVdBNmM?oc=5",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "1d282c775ffe",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Ohio Issue 1 details are explained, including supporters and opponents.",
+    "arc_analysis": "Provides context on a ballot measure relevant to Ohio politics and voter decision-making.",
+    "conflict": false,
+    "legislative_note": "Issue 1 involves redistricting reform which could affect political dynamics in Ohio.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cleveland.com",
+    "feed": "GNews: Legislative context 1",
+    "title": "National Republican group plans massive ad buy boosting J.D. Vance, signaling deepening GOP focus on Ohio’s S - Cleveland.com",
+    "author": "",
+    "summary": "National Republican group plans massive ad buy boosting J.D. Vance, signaling deepening GOP focus on Ohio’s S &nbsp;&nbsp; Cleveland.com",
+    "published": "Fri, 19 Aug 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOWDRWcWU5dDVEMTMyY2NnXzdSb2hBWkdZWDhyMlZFR3NuYVN2WDM5R0NnbHZULWhFOUhLWkthalVBX3ZsUVUyc1BoX1NKcjhSOS1YcWMxajZGNjRZRjRjT0ZXRXUySEFQdllTMS1tbjBRMDBpMWtiYVpBeDlHUnhqSjBDUzlJU3kzamxPb1NpN1JQcThSZkpHQ3NaNzVwcTUzREFQekhqc3Y3Wm1iUXh0cnM1bkUtVGdCNmxkNjFDSGlVeXNDNlowRHE3bTE0MVBaYW5vb3h0bFZMazFHOXA5bDZrdkNhLVZEUzc1UkQxbULSAYQCQVVfeXFMTkFDTzg2Z0xjT1Q2a2pNYmJ2bWdRal9KVUx3Z2x1cTRYbmVoSDE0bXRFVHF0WVV3QXNYV0JIdDc5YXpHSnRYZUxVaWpzWkFyTEQ2YkJIYmRqUFJKb2lVSmVLa3dNQ1pMMHBtR3VLbGxGbE1nRXdmYjZyWTRxR3FXcG15aThITE1PdGtjOUJGMExqZVlRN1JKWmpza3p0TDY1VlNVS2U5OVBMMVBPZW5DZWxIbkd2aGJMTnQzUkI4ZU5mTk91VjZYR1V5OUZHbFlpOVlTTkgzVWRVbGI1c04ycXhZZm55NUNob0hreFlYRUs1VFJsTFRVdkFGSVhVODNwb2g0b0E?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "0fe60d64a25b",
+    "arc": "CAMPAIGN",
+    "arc_summary": "A national Republican group is planning a large ad campaign to support J.D. Vance in the Senate race.",
+    "arc_analysis": "This signals increased GOP investment and focus on defeating incumbent Democrat Sherrod Brown.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect broader national trends and party strategies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Decision Desk HQ | Substack",
+    "feed": "GNews: Sherrod Brown",
+    "title": "Sherrod Brown holds small lead in Ohio's pivotal Senate race - Decision Desk HQ | Substack",
+    "author": "",
+    "summary": "Sherrod Brown holds small lead in Ohio's pivotal Senate race &nbsp;&nbsp; Decision Desk HQ | Substack",
+    "published": "Fri, 26 Jun 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5vYTB3WkkxWUhNSTU4RU5xSGRiUDJIdms4VWZDdlU5cURVRkJMRVpQTHVIQnU4RWZ6LVFWR3l3RWZRZ2hSRzRlNjZPTHdidzU0cHY4MkVCSENfMDcwYlFtd0xEU2pRXzNmWnIzU3RDUmxROEVzQ01zZlRwQQ?oc=5",
+    "fetched": "2026-07-14 22:59 UTC",
+    "id": "733cb9346ba0",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Sherrod Brown maintains a slight advantage in Ohio's key Senate contest.",
+    "arc_analysis": "This poll indicates Brown is favored to retain his seat, influencing national Democratic strategy for Senate control.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect the state's political leanings and can influence national policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Voter Guide: 2026 Ohio Primary Election - Ohio Capital Journal",
+    "author": "",
+    "summary": "Voter Guide: 2026 Ohio Primary Election &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Fri, 27 Mar 2026 19:13:24 GMT",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1GODIzYjl5X0U5QldkSmNVNHNleW93WVlnZEdMTG9BY3JqNTlXSm13TnQwb3NzZVVVMGw3Yk8tbzI4NUpGbzVpQ1hCdHNaNHdfVlMwX3J2cDBuM0pJbGZmWG9pY0dRck0yRFhMdkNGNDYxZG5pWFo1SlViNA?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "da1361b9e3e9",
+    "arc": "UNMAPPED",
+    "arc_summary": "A voter guide for the 2026 Ohio primary election.",
+    "arc_analysis": "Provides general information about upcoming elections but does not focus on Sherrod Brown's specific activities or policies.",
+    "conflict": false,
+    "legislative_note": "Elections in Ohio often involve complex ballot measures and candidate races, requiring informed voters.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "If Ohio's the election 'gold standard,' why are lawmakers going for desperate, duplicative changes? - Ohio Capital Journal",
+    "author": "",
+    "summary": "If Ohio's the election 'gold standard,' why are lawmakers going for desperate, duplicative changes? &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Fri, 29 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOS0zeGE1Q0l0SWdRSkxZYTNVTEpQX3E5N2FxT094ZEF0MGZMZ1ZzSGxLNDcwWXpXQ2hxQnRFZFdHR0RfMlE5ZWJhODhtczdyZjkxeDJxN1ZTNDl2cWlEcUVLalZId2NhWW8yOEV1Z1VLMmhnYjdoSTBlY0ZlbFRmbDB6VDg4XzdqR2ZYXzloYUNQTkRibUZnai0tN2t1WWRvSFViZVdGVmhxQjBnR0dQOG5YX3pyYnZBMzhKdnVoUkQ4bGVLY01HZVV5WjhBbkFMeTlETWJFbDNPUG8?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "2158d1b79b01",
+    "arc": "MEDIA",
+    "arc_summary": "Sherrod Brown comments on Ohio lawmakers' proposed election changes.",
+    "arc_analysis": "Brown critiques efforts to alter election laws in a state known for its electoral integrity, highlighting potential political motivations.",
+    "conflict": false,
+    "legislative_note": "Brown's comments reflect criticism of redundant election reforms in Ohio.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio senators consider election law changes to close primaries, prohibit ranked choice voting - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio senators consider election law changes to close primaries, prohibit ranked choice voting &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Fri, 29 Sep 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLUlTSm00bHFGUXVKR0JKT0xJRDM1Y3Z5Tm8yQ21ZYl9zMkhWbEJrNG1fU1R2ZnVnVHRhcFhqRHZQX010TVNScjNZdVhYUTJLNWJlY3NYSGlxbDEycFhVSHhBTy1HNWtEYjd6enJscEE1QmRpMGp3MlBycXdkR2JFZU56UmJoTFAtSFNXbnNWMkhmUFBPeTNGc2VkRmtXakc0b0hONkwxT2JlTV9zT0JtR2hOMUw4QjF4djVTV1JNbmxJM29VUWVrYTBtbFNOWEJR?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "1c4d3fef5b41",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Ohio senators are considering changes to election laws that would close primaries and ban ranked choice voting.",
+    "arc_analysis": "These proposed changes could alter the political landscape in Ohio, potentially limiting voter choices and access to primary elections.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has often advocated for voter rights, which may contrast with proposed Ohio Senate election law changes.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "Explainer: The proposals to keep Ohio’s redistricting process on track - Ohio Capital Journal",
+    "author": "",
+    "summary": "Explainer: The proposals to keep Ohio’s redistricting process on track &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Mon, 03 May 2021 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcDFTaWM3czJZajF2WjF2Q3M5dXBKcUpjS0lSeG9lRXN0Z1IzQlZrZW5wYmFxM0hkbkg0MUZqN3NMWlhRUm0tNWowN2hZemM4azZYQW5TY281WXdoWGpSY2h6c1FQVldyVzd0eFVreFFBcHZiZ0xOZ3VJNzY1UFZWbjBOclFXZkNBVEtIcUx1di1nV1lfdV9wZkNxVFVvUVRNMGtGRWdsSUpYeXdLNndSTw?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "d2fe7c905db4",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "An explainer on proposals to maintain Ohio's redistricting process.",
+    "arc_analysis": "Provides background on efforts to preserve fair electoral boundaries in Ohio, impacting political representation and voter influence.",
+    "conflict": false,
+    "legislative_note": "Ohio's redistricting process involves complex negotiations between state legislators and reflects the institutional dynamics of the Ohio General Assembly.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Center For Politics",
+    "feed": "GNews: Legislative context 1",
+    "title": "Rating the New Ohio House Map: Democrats Get a Better Map than Expected - Center For Politics",
+    "author": "",
+    "summary": "Rating the New Ohio House Map: Democrats Get a Better Map than Expected &nbsp;&nbsp; Center For Politics",
+    "published": "Mon, 03 Nov 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTERkWUhZVWp5Y1E5ZkNkVXduVG9QOWV5SEw5dVM1Y0E3c0VBOFpsRmQ5eUdTV3FQamVfSzk0eTFlbF9LNU9zcmdjVHQxclIzMDY3aHJSUkVnbjVHdHhZVURmNVV4a2o0aUt5X0F4cnlnZ2tQd2hncFB4N0RYQjRzc09WZUE0Zmh3OGN0WXF3ZWpJQVNKX3BfTWQ4OXpaNDBRa3VRTjMtMzl0eXp1RGd4UGNxYw?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "76ba7122eacf",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "The new Ohio House map benefits Democrats more than expected.",
+    "arc_analysis": "This development could improve Democratic chances in upcoming elections, potentially affecting the balance of power in the state legislature.",
+    "conflict": false,
+    "legislative_note": "Ohio's redistricting process involves both state legislature and bipartisan commission, affecting electoral outcomes.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "AP News",
+    "feed": "GNews: Legislative context 2",
+    "title": "AP Decision Notes: What to expect in Ohio’s state primaries - AP News",
+    "author": "",
+    "summary": "AP Decision Notes: What to expect in Ohio’s state primaries &nbsp;&nbsp; AP News",
+    "published": "Mon, 04 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOW90aUQ1NDVCaTFRNDhKc01OTHU4Sko4UjNvbkdoRlM2LUJVSzRWQ0lKdFRBYzRPLWwwenNGVnRTUnZPcFFobktaVnNwWXhDQ2dLMlprV0V2SXdoWXI0LU1xX0xlalZNYVRQZGFqU2tBTVhlU1lfdWltV01DTjU0cUZFdE04cl9EYmp3c1g5WDhZTnQ1cXRMYkVYNXBUeVJs?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "b8d0891ff068",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "The article provides an overview of upcoming state primary elections in Ohio.",
+    "arc_analysis": "This context helps voters and candidates understand the political landscape and key races to watch.",
+    "conflict": false,
+    "legislative_note": "Ohio's primaries will determine candidates for key positions, including those who may work with federal legislation.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Signal Ohio",
+    "feed": "GNews: Legislative context 2",
+    "title": "Tuesday is Election Day in Ohio. Here’s what you need to know to vote in the May primary - Signal Ohio",
+    "author": "",
+    "summary": "Tuesday is Election Day in Ohio. Here’s what you need to know to vote in the May primary &nbsp;&nbsp; Signal Ohio",
+    "published": "Mon, 04 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZUxnZXJ3UkJOV0ZoTHBqVk5wTlYwcklOdjdrMkYxYUF5bFVNZWlJazBJaTVfVm5JVVZTNVRMSmlxX2xWT1pVMjlPbVNBMWhRbGpvMks5SmtVNFBPLVoyT293SHJ5dXpWMTRyb1BHQlBGWnNtTmxsUVVxZk9mWHNSMzZCTmdxMGJEOFE?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "9b3e26e4b5c4",
+    "arc": "UNMAPPED",
+    "arc_summary": "Tuesday is Election Day in Ohio for the May primary.",
+    "arc_analysis": "Provides general voting information but does not specifically mention Sherrod Brown's campaign or policy.",
+    "conflict": false,
+    "legislative_note": "Election Day processes are governed by state laws and regulations set by the Ohio Secretary of State's office.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WLWT",
+    "feed": "GNews: Legislative context 1",
+    "title": "Poll shows tight Ohio US Senate race, voters in favor of Issue 1 redistricting amendment - WLWT",
+    "author": "",
+    "summary": "Poll shows tight Ohio US Senate race, voters in favor of Issue 1 redistricting amendment &nbsp;&nbsp; WLWT",
+    "published": "Mon, 07 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcW4zclhPR01FY0NPNVdlOC11aGUtUjN6aC1iYjhwRDRUSlVGWDBtemhSdlh1Ny1VYVc3WHN6a3BZNFdCS1czWlJQSFViYjIxSGgxU2VzQTJXOWZmTFBYTzk0R1NLUE8zc1FCTEpvWHM3am9kQ01PbHhSTDFISENqR2ZlcF9Gbkc0d1FfS29B?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "a52e007695ef",
+    "arc": "CAMPAIGN",
+    "arc_summary": "A poll indicates a close U.S. Senate race in Ohio.",
+    "arc_analysis": "This suggests the race is competitive and voter sentiment could shift easily, impacting Brown's re-election prospects.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's re-election bid reflects the competitive nature of US Senate races in swing states like Ohio.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "As Ohio goes? Why Buckeye State is no longer a presidential battleground - The Columbus Dispatch",
+    "author": "",
+    "summary": "As Ohio goes? Why Buckeye State is no longer a presidential battleground &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Mon, 11 Mar 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTE1DV01pbDdKTmpKVFRuUzVxRmwzQWYxOVJtanpvRDVuRlR3QmVyN3hRc3NwcGNHTWozMWd1cFVSY2g5QzVkbWk5WTRqUWlZTmJkSmFVUzBtSUpKQ3AwSGpSMVdXdVhCMHJLaEVFNVU1SzJMMnRZanJ2V3hjUUtKaGdlcFc0S3BjaU5McTNuWjRhZXlFdktiVzhsUFM2STVIOXlWNDRaRTRzd21tb1Vjc0F1MHZsNkZrSHhqSkNwNjBvaHQzaDN0SmZRQVJUdjZqWUVVNU9n?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "015f3476e173",
+    "arc": "UNMAPPED",
+    "arc_summary": "The article discusses why Ohio is no longer considered a key swing state in presidential elections.",
+    "arc_analysis": "This matters because it reflects changing political dynamics and the evolving importance of states like Ohio in national politics.",
+    "conflict": false,
+    "legislative_note": "Ohio's political landscape has shifted, affecting its status as a battleground state.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "C-SPAN",
+    "feed": "GNews: Sherrod Brown",
+    "title": "User Clip: Luke Perry on Sherrod Brown - C-SPAN",
+    "author": "",
+    "summary": "User Clip: Luke Perry on Sherrod Brown &nbsp;&nbsp; C-SPAN",
+    "published": "Mon, 11 May 2026 05:40:46 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQmNaY19DbmozbWZsYkk3WEQwUXgyYzV5UjVQdkQxOUpJV3gzUTRkMVBXYXFNVTFIUGpDakpUc1hPSklFVmVoSzZubE80VV9aYklvYnNPLWhWVHhqS3FFQzF3Q1Y2cFNSWXhYVHBGb1hYbVpnYVE4b3J4eGhKcWlEaGNpYnlWWE1YZFA2bEFjMldZY3B3Znh5RU93?oc=5",
+    "fetched": "2026-07-14 23:00 UTC",
+    "id": "cea3e50b7c8f",
+    "arc": "MEDIA",
+    "arc_summary": "Luke Perry discusses Senator Sherrod Brown on C-SPAN.",
+    "arc_analysis": "This media appearance highlights Brown's visibility and engagement with political discourse.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown is a prominent Democrat known for labor and economic policies.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Common Cause",
+    "feed": "GNews: Legislative context 2",
+    "title": "House Bill 6 Scandal Timeline: Ohio’s Largest Corruption Case - Common Cause",
+    "author": "",
+    "summary": "House Bill 6 Scandal Timeline: Ohio’s Largest Corruption Case &nbsp;&nbsp; Common Cause",
+    "published": "Mon, 12 Aug 2024 21:31:19 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTldQaGR6UzZIZTVvTlk3NzVVRlRnOU5Cb0RLM0ppd0REOGVGOVQzaXJZWkFSTEI0VWh5cXhMaGVVSldOZzZFZTIzakpScXJGZGRLbHRXdUhXMWxFdEowOE01ek5pM1pEU2xBTm9rYWZZZGtRV2w5WUp3cDdBUkdOcGlhbzNEOHdyOHVOY3NnMnF4TUVFS2lXMzhIVlU5OEVRV1FqVVJXMjB0S00?oc=5",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "a496097ba353",
+    "arc": "RECORD",
+    "arc_summary": "Common Cause outlines the timeline of House Bill 6 scandal, which is described as Ohio's largest corruption case.",
+    "arc_analysis": "The scandal implicates significant political figures and could impact Brown's credibility in addressing energy policy and corruption in Ohio.",
+    "conflict": false,
+    "legislative_note": "House Bill 6 scandal involves significant legislative and political corruption in Ohio, impacting state energy policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Guardian",
+    "feed": "GNews: Legislative context 1",
+    "title": "Joe Biden in Ohio: Trump 'turned his back on you' – video - The Guardian",
+    "author": "",
+    "summary": "Joe Biden in Ohio: Trump 'turned his back on you' – video &nbsp;&nbsp; The Guardian",
+    "published": "Mon, 12 Oct 2020 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcGZySXU4dWpPby1qOUlJOWJhcGlwMzVfUW1vcFRJWTNYZ2NlTmxUSVFqSWFQYXlFUkI2NUtCaExSQlBvQmtzM011cG5iXzBZOWwxNGVBd0lxX0l6VXRPWThuLUFLa2ZrS2NiNlRUb09wZ0FnSV9RSnMxYkVvZkdfSEJPRW1HYzllaTR1a0o2VmYxX3JkNXoxN3VlREpoTVFvY1Z6aXFfcGtZUQ?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "966b4d9d523d",
+    "arc": "MEDIA",
+    "arc_summary": "Joe Biden makes a campaign stop in Ohio, criticizing Trump.",
+    "arc_analysis": "Biden's visit highlights the competitive nature of Ohio's electoral landscape and his efforts to contrast himself with Trump.",
+    "conflict": false,
+    "legislative_note": "Ohio is a key battleground state with significant influence over national elections.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Signal Akron",
+    "feed": "GNews: Legislative context 1",
+    "title": "Candidates for U.S. Senate, U.S. House on the 2026 Ohio primary election ballot - Signal Akron",
+    "author": "",
+    "summary": "Candidates for U.S. Senate, U.S. House on the 2026 Ohio primary election ballot &nbsp;&nbsp; Signal Akron",
+    "published": "Mon, 13 Apr 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNby1HTnlCVDFUdjVrZklhZjJKeFFUSXJHVmlEUDhpeXFXekZaSnhDeWR0UlJtY29QcGdZY0l3MEN5QzRjR1VybUw5bXVwOENjV3ZHNHdIeFhrd2p2dEVrS2tLcnlfc2ZYUVNIaTM2ZmhIS3F5bUItOUdnZXZ3UWtsVWtkSThGMHU1aTY3NDdoak1EQjE5VUwxa1VEUXJMNFVKNHlycjhGcEl2dVhoT2JHbGkyRXBScmVqZUpqTnNR?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "bdc03d1f6653",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Sherrod Brown is listed as a candidate for U.S. Senate in the 2026 Ohio primary election.",
+    "arc_analysis": "Brown's re-election bid highlights his continued influence and popularity among Ohio voters.",
+    "conflict": false,
+    "legislative_note": "Ohio's primary election process involves candidates filing with the Secretary of State to appear on the ballot.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Senate race: Tim Ryan is raising, spending more money than J.D. Vance - The Columbus Dispatch",
+    "author": "",
+    "summary": "Ohio Senate race: Tim Ryan is raising, spending more money than J.D. Vance &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Mon, 18 Jul 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNExVX0VFWnhqRTRvVjlJUThkN3BvRXRkT1hMMUM4THhPR0J4ejdHVFVXNkRXbWpqSTJYY0taUDdUT01ESVdTSWozUU5POTVvaVk1WGFLc0hhWmFzOEZleFN5QVBxd1k5LWVoOEpDMmg3d0lHOGdaREg4YV9CRHMxYnFlV1dYdE9icm5OTWJpek9ORkJleDNmeHFMSVhlbXdrOU45cTFraFkzWnZsdHVEUnhKOWc?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "841a73d23cf3",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Tim Ryan is outpacing J.D. Vance in fundraising and campaign spending.",
+    "arc_analysis": "Ryan's financial advantage could translate into greater advertising reach and voter engagement, potentially boosting his chances of winning the election.",
+    "conflict": false,
+    "legislative_note": "Campaign finance plays a crucial role in Ohio Senate races, influencing legislative outcomes.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Newsweek",
+    "feed": "GNews: Legislative context 1",
+    "title": "Democrats’ Chances of Flipping Ohio Senate Seat Get Boost: Poll - Newsweek",
+    "author": "",
+    "summary": "Democrats’ Chances of Flipping Ohio Senate Seat Get Boost: Poll &nbsp;&nbsp; Newsweek",
+    "published": "Mon, 20 Oct 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWEdqQVFMQkVGSGFNNjY0SE1lcEEzWWRWSFlGNWZMYTJnWFlOQ2NseVNVVHFTRGFsdHNGaHpwMU9JeU5xRFdvSk9JWWxocjBrc0hiX0piTFc1dlliRTlTQVFiNEVtX1hoem14NjU2S3c4dW5CQmk4ZW9BbTY1QWFMYUNrTU5INk1QOEh6MnhSeHdtNlRwU2M5OXdzUQ?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "9f57c18c8dff",
+    "arc": "CAMPAIGN",
+    "arc_summary": "A poll indicates improved chances for Democrats to win the Ohio Senate seat.",
+    "arc_analysis": "This suggests growing support for Democratic candidates in a key battleground state, potentially impacting national control of Congress.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate race is closely watched due to its impact on national legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "With gerrymandering comes strong opinions. But what is it? - Ohio Capital Journal",
+    "author": "",
+    "summary": "With gerrymandering comes strong opinions. But what is it? &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Mon, 20 Sep 2021 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNU0lsQ1R6SkI2UzJTY3A4a2tvcGhSUU56RGZKaG0wVkt2eFY4S1MwdzZsTEpzV01ULS11RTdzcGdMdlJvM243RUljeC1UMW5HajJpWWFwVS1zdE1mMkFDUnVzODFDMzMzelU5NzFSbmV0WTRxTS1aMFhKZVRBU2g4NnVJRmdOci0yUHloMGwzS0NseV9ub1Y5Rmk0VFlCek5h?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "35c6d52dbf91",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "The article explains the concept of gerrymandering and its impact on elections.",
+    "arc_analysis": "Understanding gerrymandering is crucial for voters and candidates like Sherrod Brown as it shapes electoral districts and can influence election outcomes.",
+    "conflict": false,
+    "legislative_note": "Gerrymandering can influence election outcomes, affecting legislators like Sherrod Brown's ability to represent constituents.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Democrat Sherrod Brown talks affordability at Columbus roundtable - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio Democrat Sherrod Brown talks affordability at Columbus roundtable &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Mon, 22 Dec 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQck1YX2hrZktwbksxN1BkS3BmTHJyRnNnSkh1amNJNjBCQ3JKcHlaRmlvRjN2ZXQ4N3lUUGtGQi0yVGZWcVdENllNeVN6eWY2NHE5UzlUanJVaTlVVXlwYzFhZTRISVFQYU14NVBrRXhfQ0w5UFJxQ3FtR1BES1NwSktYUkFuMHBXUHVNUHQ5Mi12aEZrdUxzaXFkM2t6SHVpc3R5NzNVRGhvOUl2Yk91a2NtZw?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "d47b5f14e870",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Sherrod Brown discusses affordability issues at a Columbus roundtable.",
+    "arc_analysis": "Brown is engaging with voters on key economic concerns ahead of the election.",
+    "conflict": false,
+    "legislative_note": "Affordability discussions often relate to policy areas like healthcare and education where Brown has legislative history.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "Joni Ernst campaigns with Ohio GOP U.S. Senate nominee J.D. Vance - Ohio Capital Journal",
+    "author": "",
+    "summary": "Joni Ernst campaigns with Ohio GOP U.S. Senate nominee J.D. Vance &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Sat, 15 Oct 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcEpCaGRXZXdtZzUwZVB1Y3Vwa2UyckozT1RlMVVwSG9iRlYxSW8wdjhSSUtVTmhTSllzNExTVmpYQl9lUlE4RjA0c1pOSnRZWXpCTVVxQ1JyZUVtNjJiLWRsVjVOY3dQSWZpRUpfYVZNYUpKdV9tdHVUWGZsb2lfSG5ZVWkySi0yMDdOell6NW8yb3pNZy0xaVJSMWJtNU9lN0U0OUEyeUFFZw?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "8e82892a2b14",
+    "arc": "ENDORSEMENTS",
+    "arc_summary": "Joni Ernst campaigned with Ohio Republican Senate nominee J.D. Vance.",
+    "arc_analysis": "This visit highlights the national GOP's support for Vance and their strategy to boost his candidacy in a key battleground state.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate race is part of broader national GOP strategy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "Everything you need to know about Ohio’s May primary - Ohio Capital Journal",
+    "author": "",
+    "summary": "Everything you need to know about Ohio’s May primary &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Sun, 03 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTFYwSFRxdDR0VFlqN3h6MnppZXY5dXlBd0VEVl9pcUczSEFuQ1M3ZDUyOUVudjZPcE5RY05obDctNXdzWXJGMEV5dE80Zkc3Y2MwaVNFdHZOOThOZzhDb3gzM0o1SUpLRHN2OTM2UmktUGVXcFRCSVVYY3NiNzlRZWtkRk5CS2RiT09KY3JVOTBySE9NRGcyeGtn?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "4e24e33d0809",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Ohio's May primary includes several key races.",
+    "arc_analysis": "The primary will determine candidates for upcoming elections, impacting Brown's potential challengers and allies.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, a prominent figure in Ohio politics, may influence primary outcomes through endorsements.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Bing: Legislative context 1",
+    "feed": "Bing: Legislative context 1",
+    "title": "Rival TV ads in Ohio’s US Senate race play up donors’ Epstein links. Are they legit?",
+    "author": "",
+    "summary": "The Ohio Senate campaigns of Democrat Sherrod Brown and Republican Sen. Jon Husted both are running ads accusing their rival of receiving six-figure donations from people they call \"associates\" of ...",
+    "published": "Sun, 07 Jun 2026 17:00:00 GMT",
+    "link": "https://www.politifact.com/article/2026/jun/08/epstein-ohio-senate-husted-brown-donations/",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "25b48512df01",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Brown and Husted run TV ads accusing each other of receiving large donations from Epstein associates.",
+    "arc_analysis": "These ads aim to damage the opponents' reputations by linking them to controversial figures, potentially influencing voter perceptions in Ohio's Senate race.",
+    "conflict": false,
+    "legislative_note": "US campaign finance laws require disclosure of major donors but do not regulate their connections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cincinnati Enquirer",
+    "feed": "GNews: Legislative context 1",
+    "title": "Tim Ryan, J.D. Vance neck and neck in new Ohio Senate poll - Cincinnati Enquirer",
+    "author": "",
+    "summary": "Tim Ryan, J.D. Vance neck and neck in new Ohio Senate poll &nbsp;&nbsp; Cincinnati Enquirer",
+    "published": "Sun, 11 Sep 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbXQzUmRlVW1GeVZROHI0OWR2WnZxMW80V0FyeW9sbVFuZmFRMWk4TkJwOTdxRm1TUkN5RFpqejJqTFdhX2lxUWp4bHBBaHh0ZnRpbFhvUWhCdmEyQldMcndURWdjX2p2U2tjc1RpaThLUTAzcGtkLXJLc1EzMFFwenBCc0h0eHhPRzFyMmU1UDVycVZHaUsyVGpCUF9FMzJZTGRxWkQ1TjJ0cWY1bUhhYWFWSmtwNU1KZW5YdXduVEN0QW9SdFRjWWlIYXluM3g0OGRHYUEzekZhUQ?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "d7555fc536c3",
+    "arc": "CAMPAIGN",
+    "arc_summary": "A new poll shows Tim Ryan and J.D. Vance are tied for the Ohio Senate race.",
+    "arc_analysis": "This indicates a tight race, highlighting uncertainty in the election outcome.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate race highlights the state's political dynamics, often reflecting national trends.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cleveland.com",
+    "feed": "GNews: Legislative context 2",
+    "title": "Bernie Moreno’s, Jon Husted’s voting records among the worst of any Ohio senate tandem: Brent Larkin - Cleveland.com",
+    "author": "",
+    "summary": "Bernie Moreno’s, Jon Husted’s voting records among the worst of any Ohio senate tandem: Brent Larkin &nbsp;&nbsp; Cleveland.com",
+    "published": "Sun, 22 Mar 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYXRfVmllWTBfZ0gzVEQ3MjZZNmMxTDczZm5mS2FVb0QzRm1rRFJKMUZpYk4zN0p2MkVabkFadkdJQ1BLRnlLZXdnU2xMeVFWdV81eURqQTBVbTBaU3lMMUg1QmZkOW5hOXpZMWluei1jVTF5ejA5Tm05OUdEQXVlRXVfU2M3VTYwN3JEUHpjaWdCTHM3OC10OWpoYTlKOHJUa29McnNjN2lOOWpzUVJRX21sWEFySWhjeDRyUGRvY24tR0FzVkNXdGo2QXk1clJfc3JicjJLVVJaMEU?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "dc4331059fe4",
+    "arc": "RECORD",
+    "arc_summary": "Brent Larkin writes that Bernie Moreno and Jon Husted have some of the worst voting records among Ohio Senate tandems.",
+    "arc_analysis": "This highlights criticism of Republican incumbents, potentially benefiting Democratic challenger Sherrod Brown.",
+    "conflict": false,
+    "legislative_note": "Ohio Senate voting records reflect legislative priorities and effectiveness within the General Assembly.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WTVG",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio saw record political spending in 2024 - WTVG",
+    "author": "",
+    "summary": "Ohio saw record political spending in 2024 &nbsp;&nbsp; WTVG",
+    "published": "Thu, 02 Jan 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1GZ1p2RnRkWm8xcExHMS1tSTQ2UC1aa1hhRFpYdEtVbldhdjlRRWlOd0xSVkI0cUR4UXR0bVNrYk9xWkRXZkNTM1JjQ0hlYTlyQkZ6NHNxYkJHYTBUNERIcTRmdEQ4MmRudF9JOG1tdWIxdkxhU0hOZThnVDJqd9IBkgFBVV95cUxNems4QTlDY21KX1RVaXloaXlISUtwWi1XZU50V1dDamZrbVZrM0VqaFh2MGhLMUJYQXhPblprZTZUWGtBSWx6RFBnazN6RElNMlJUZ3B2ZlI4SE9VSFlibmlEbzRRcm5fYU5XTGNzMlV5OU41Y2lQcnBOb2hmSXpVN0wxcldPZVBDX0hOcWFOSFdxUQ?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "c1fe8f570669",
+    "arc": "UNMAPPED",
+    "arc_summary": "Ohio saw record political spending in 2024.",
+    "arc_analysis": "This information provides context on the state's political climate but does not specifically relate to Sherrod Brown's activities or policies.",
+    "conflict": false,
+    "legislative_note": "Political spending often influences legislative outcomes and can affect the policies of figures like Sherrod Brown.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cincinnati Enquirer",
+    "feed": "GNews: Legislative context 1",
+    "title": "After mulling Ohio Senate bid, Rep. Warren Davidson backs Trump pick Bernie Moreno - Cincinnati Enquirer",
+    "author": "",
+    "summary": "After mulling Ohio Senate bid, Rep. Warren Davidson backs Trump pick Bernie Moreno &nbsp;&nbsp; Cincinnati Enquirer",
+    "published": "Thu, 04 Jan 2024 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYkVCMUxhc1FmeGZpQk9lS09fRFNpWDJqYkJfdXAwZEktdERsNElKUkVfXzVjSXM0TGtYM3BaSXZpcEdRT3dDSW9hQ3ljdjF3cjZKQWRvTjZ5UkJlWXdGSVBlN2FfNU5wdmw4TXZRcXNNeWNQOVFlMXhoRUlocEtQWEQzbnJ0MnNtVnhwQ1pKRFgyVDA0cUdXLW5OSUtJMEV6d1VPMWNLOVFkcnh5dWUtNFEyTzhGWXdvQzhYWGR4UUdVcFJ1Y1B3cnJHWQ?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "db596ff8e999",
+    "arc": "ENDORSEMENTS",
+    "arc_summary": "Rep. Warren Davidson endorses Bernie Moreno for the Ohio Senate.",
+    "arc_analysis": "Davidson's endorsement could boost Moreno's campaign and signal a shift in Republican strategy for the upcoming election.",
+    "conflict": false,
+    "legislative_note": "Ohio's legislative process includes partisan endorsements influencing elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "HRC | Human Rights Campaign",
+    "feed": "GNews: Sherrod Brown endorses",
+    "title": "HRC Endorses Ohio Senator Sherrod Brown for Re-election - HRC | Human Rights Campaign",
+    "author": "",
+    "summary": "HRC Endorses Ohio Senator Sherrod Brown for Re-election &nbsp;&nbsp; HRC | Human Rights Campaign",
+    "published": "Thu, 09 Nov 2017 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUHdaNUZpWWNOelhXVVFKN2VBbW9FYjB0a19pMU83cFVfa2hjNXpWSHVfR05lLWNlX0o1WXlRWkFoTkVyZ1JqUTdKRVRlU2ZnUnBCcFNOSVlpQnBCLXVNTS1GRy10d2podHdrd0lDenB3dE9abVhNcnJLZEI4SG5mc1RycWRReXpmS1ZyMlFMRTNYa2N6?oc=5",
+    "fetched": "2026-07-14 23:08 UTC",
+    "id": "bb3573d8a11d",
+    "arc": "ENDORSEMENTS",
+    "arc_summary": "The Human Rights Campaign endorses Sherrod Brown for re-election.",
+    "arc_analysis": "This endorsement highlights Brown's support among LGBTQ+ advocacy groups, bolstering his campaign credibility and fundraising potential.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has a history of supporting LGBTQ+ rights in Congress.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 2",
+    "title": "Will Issue 1 come before Ohio voters again in the future? Depends who you ask - The Columbus Dispatch",
+    "author": "",
+    "summary": "Will Issue 1 come before Ohio voters again in the future? Depends who you ask &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Thu, 10 Aug 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOUIzMVNpY2JJcXZBUHg3R0dpN0puaktDNkhPdlo1TE5kc1JfUnJ5eEhCZnM5NklMbFhrd280V2JlOThIVU1JWDhyOFlhZk1NMjNWUDQ2RXB5ajctMVhVWXFPOXB2QnptcVNPaGhaRzJKNzU5RzNhamxWMUpzaF9SSko3MG1NbmxhSzMzMDV6T08wUHNfS3J4aWNfcjlaWWt6aGpETEVKNnhDckpDTGNvUjhRbHoza0VjaU9SNzZlc3VRd0Z2SXhBYXpZVQ?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "b018d5bd5fff",
+    "arc": "POLICY",
+    "arc_summary": "Sherrod Brown discusses the potential for Issue 1 to be brought before Ohio voters again.",
+    "arc_analysis": "Brown's stance on Issue 1 reflects his commitment to labor and voting rights, potentially influencing future elections.",
+    "conflict": false,
+    "legislative_note": "Issue 1's fate may hinge on legislative actions and public support in Ohio.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Politics Explained: Honda's $3.5 billion news, divorce records and debates - The Columbus Dispatch",
+    "author": "",
+    "summary": "Ohio Politics Explained: Honda's $3.5 billion news, divorce records and debates &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Thu, 13 Oct 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZjVMdVNza2ZzNTh6T2l0YVhhU0hqck9UOG9VSS1MZVNnazNPRDFNVjVXSkxzY29IamdONVNSSkJEOTh2UzkwMjdmTjdRS1Rnai12QkJaNnZwZnN5Wi1BYXItS2dRNjFacjhaTnpJczdRRGx4VGlqblB0eFRCZTRfcG8ydlVrWGROSWdrR0oxMWdkWXVTcFdsckNNM0VZUXJ4SnlyNEZWOVZUb2I3U21fWmQtNURvcDVEVWpkd0Z0aUtrZ2xDNnZoTWFiaW9JZw?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "e5d2d507f9e5",
+    "arc": "UNMAPPED",
+    "arc_summary": "N/A",
+    "arc_analysis": "The article does not focus on Sherrod Brown or his activities.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, as a former Ohio Senator, often advocated for economic policies that benefit manufacturing and automotive industries.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Axios",
+    "feed": "GNews: Legislative context 1",
+    "title": "Trump and Senate Democrats unite to boost Bernie Moreno in Ohio - Axios",
+    "author": "",
+    "summary": "Trump and Senate Democrats unite to boost Bernie Moreno in Ohio &nbsp;&nbsp; Axios",
+    "published": "Thu, 14 Mar 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBDUDhpRF91NDVWNlNiSlNjMVFja0FOVFBJNDZpZHpXekNrWlFFYVdnVndWcXB1WkxncnJvRWZDbWtZRWt6TEE4UVJ3Zy1JdHNTcFRIay1ObkJJUmpQNlNZNEhDbm9icW8xRzlfQjdJaENEQQ?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "6c54d52b1745",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Bernie Moreno is receiving support from both Trump and Senate Democrats in his Ohio campaign.",
+    "arc_analysis": "This unusual bipartisan backing highlights the contentious nature of the election and underscores the political stakes involved for Ohio's future representation.",
+    "conflict": false,
+    "legislative_note": "Ohio's political landscape often sees national figures influencing state-level races.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Senate (.gov)",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio Ballot Board Sets Clear Ballot Language for November's Constitutional Amendment - Ohio Senate (.gov)",
+    "author": "",
+    "summary": "Ohio Ballot Board Sets Clear Ballot Language for November's Constitutional Amendment &nbsp;&nbsp; Ohio Senate (.gov)",
+    "published": "Thu, 15 Aug 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQc2xaUjA3SXY0TTRFQURjZ0Y3UjgxZ212MkRMZWJCUU45b3pNejFDbGNOZWhrelJKWGpZT1FIQktfSTNXZDk4TGg1S1ROWE9jT2RzaFJQb0hhSmZPQXIzb012QWhwVGk2Q0tKZWFkQWYzaW5HUjdZMmN0N08zanJ6OEpXNENjNWhRaGhvd0p5VW9xLURINTd0LTlQa3NWU1FEVlRHQ3o2cXVCZzllc2VSNlRlVWpYWXZQc083VXZyREpNY00?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "5e73ff3acaeb",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "The Ohio Ballot Board sets clear language for a constitutional amendment on the November ballot.",
+    "arc_analysis": "This ensures voters understand the proposed changes, impacting their decision in the upcoming election.",
+    "conflict": false,
+    "legislative_note": "The Ohio Ballot Board plays a crucial role in defining voter comprehension by setting clear language for statewide initiatives.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Politics Explained: Judge blocks abortion ban, poll shows DeWine defeating Whaley - The Columbus Dispatch",
+    "author": "",
+    "summary": "Ohio Politics Explained: Judge blocks abortion ban, poll shows DeWine defeating Whaley &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Thu, 15 Sep 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNandsR3RVRm9NX3Nvakwxcks5X0tzdnZuNDMza1VQdXkxZ083TEpjeWRMdDBLYUdrZW1jcGZZTWtVRHZRVGFYQl9zLVlPS0pLSU1ZeTR0VE5EWmk5RGhwSWFvUGlRdU5iUWVTbUllcFBfSE9nNHZ0N0hSLWhNOEJsMlRZbmJWaTZ2NTNrcU9tY1pqZWFXQnFhWGluQ0hkdU5SNktyYVZMMm1rV3FFNHp0QThiU3NXQUJwZm43VGFYb3MwZFpwRUNUaWQyVU5XN0t1WkNCbg?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "f1dee419534c",
+    "arc": "UNMAPPED",
+    "arc_summary": "A judge blocks Ohio's abortion ban and a poll indicates Mike DeWine leading Tim Ryan Whaley.",
+    "arc_analysis": "This article covers unrelated political news without mentioning Sherrod Brown or his activities.",
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio Democratic state Senator proposes removing party labels for judicial races - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio Democratic state Senator proposes removing party labels for judicial races &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Thu, 21 Nov 2024 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb2lhTzY4RXdmZXFBSkRSRjBlSzNrcXdyUlNoaEZhLUlUenhTWmpsb0JYeVN0SFgtSVFVaVpTa0g5d3NibUdlRWFRT0dFcXFSY3JJT3NwOHd4NFVWV09BSTlBNzlYNHRFRjh6azVNZ2dQZVlkQ1VMOVFEX3gtZUVWaUx6bDlqU0hGOEYyWlhaLUM4dkc2REpRd3VPbzIxRDBZdGhsSDdjVjZyVmlJRDY3ak1hR3BvZl9vY05fODAybw?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "d5de5f485b4c",
+    "arc": "POLICY",
+    "arc_summary": "State Senator Sherrod Brown proposes removing party labels from judicial race ballots.",
+    "arc_analysis": "This move aims to depoliticize judicial elections, focusing on merit rather than partisan affiliation.",
+    "conflict": false,
+    "legislative_note": "This proposal aligns with efforts to depoliticize judicial elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio lawmaker proposes land value tax amendment as alternative to property tax elimination - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio lawmaker proposes land value tax amendment as alternative to property tax elimination &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Thu, 26 Feb 2026 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSng1WE0yMmlWZXRNY0RMbTk1N0tmc3c5ajB3U0tHS0l0Mk1yQVFBT183eFRYZXdQTzVJa29rVmxqY3VIUlhzbmFzSW41ZjIzN3BVRWl3X0lnNjhudElzbzU2dlFpTmw1ZDIxbE9FT18zR1J2UlFzaEp1MW4tMjlWR0FSRjBXdXVvVFpycU1OTlB1dndmaDFMNWhHVlozM0h2UWU0Wi14RE9KNWRvS3RwdFBNNWdhSFB6NmtBZUFVSzY5Z1BmbEUxNHV6LU9iUQ?oc=5",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "d61b7e52d43a",
+    "arc": "UNMAPPED",
+    "arc_summary": "An Ohio lawmaker has proposed a land value tax amendment.",
+    "arc_analysis": "This proposal is unrelated to Sherrod Brown's activities or policy positions.",
+    "conflict": false,
+    "legislative_note": "Land value taxation is a policy aimed at reducing speculation and encouraging development.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The New York Times",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Republicans Push Through New Districts in Bid for More Seats in Congress - The New York Times",
+    "author": "",
+    "summary": "Ohio Republicans Push Through New Districts in Bid for More Seats in Congress &nbsp;&nbsp; The New York Times",
+    "published": "Thu, 30 Oct 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc2JVSFkxT2NkaksxendZOW9URUFlcXViZ0ttZjgxZjBFWUllY09CSnlZekxpWE4tek4wb3RkMkFzamVXWEdQZ2x4NVNPWW8yTWJlVXVESFN3blFhYWxPTHZFaHM2Z2tMNzZVTWFObnJNeHEyM1ItdWJKOF9KeDR0WQ?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "ae6e88772533",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Ohio Republicans have approved new congressional districts.",
+    "arc_analysis": "This redistricting effort could impact Ohio's electoral balance and influence federal legislation.",
+    "conflict": false,
+    "legislative_note": "Redistricting is a legislative process often politicized, impacting representation.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cincinnati CityBeat",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio House votes to stamp out ranked choice voting before it begins - Cincinnati CityBeat",
+    "author": "",
+    "summary": "Ohio House votes to stamp out ranked choice voting before it begins &nbsp;&nbsp; Cincinnati CityBeat",
+    "published": "Tue, 03 Mar 2026 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU01wQkhJWUJVdno5MXZUREoxY3RUeEdaSFMyc3JnTk1FcEZqMFY5OUhGMG9heHh3MjNnbVVFNDFoSjdYYUxhTlFhSDhKSzZ4ZmdJNTVrMkF0WHhSbmpTQXRXcnhyaHRIMTdITVNLVUxJYndTbXEyZmp6ZndhLWxobFhRcHVGU3JXQ05ROFBuOUVTVzRSRk92U01FaHNqX00?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "8a8f635c6870",
+    "arc": "UNMAPPED",
+    "arc_summary": "The Ohio House voted to ban ranked choice voting.",
+    "arc_analysis": "This action is unrelated to Sherrod Brown's campaign or policy positions, focusing instead on a state-level legislative decision.",
+    "conflict": false,
+    "legislative_note": "This aligns with the Ohio General Assembly's tendency to regulate election methods closely.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "vox.com",
+    "feed": "GNews: Legislative context 1",
+    "title": "4 themes to watch in the Ohio and Indiana primaries - vox.com",
+    "author": "",
+    "summary": "4 themes to watch in the Ohio and Indiana primaries &nbsp;&nbsp; vox.com",
+    "published": "Tue, 03 May 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5zcGxzSDhvZGRORmZKck9CLWVuOWhrdThEYmM5WVFjNVg4VFBlQ0luc3dWUVloYTBZdmhwMll4QXFzT05hRy1TTUdkbXFZbWVkakhlMjFMU0JUSFNvZERPcEdMcFd4VmRo?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "78c6946cc3ed",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Vox highlights four key themes for the upcoming Ohio primary.",
+    "arc_analysis": "These themes could influence voter behavior and shape Brown's campaign strategy in a crucial state.",
+    "conflict": false,
+    "legislative_note": "Ohio's primary elections often reflect national trends but also highlight local issues important to state legislators and congressional representatives like Sherrod Brown.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Al Jazeera",
+    "feed": "GNews: Legislative context 1",
+    "title": "What to know ahead of the Ohio primary election - Al Jazeera",
+    "author": "",
+    "summary": "What to know ahead of the Ohio primary election &nbsp;&nbsp; Al Jazeera",
+    "published": "Tue, 05 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPam9PV2ZZQ0FOOHVDSDlVZ2pIYjlUZTJ6X3ZwTlJLZmdsMXN0eDFDdk54NzZxclVJek9lUEd1MHpqNU1fdWVJaGZpMEZMaWhuRXdPa2dJOGh1RGgxelRNckhKMlRreG4zNlZveWhERXBLak5Cek5ocmZtd0g4Y2V6aWtCRGpmZllkVU1mR21UOHHSAZYBQVVfeXFMTXVaWVdCMC1DX3loOWg3TkFVc1JkOXRoTnhjZ3lCaF9oMTNELWI1Z0RCUFhVUlVwdnBpZmlGdWh0ek9WUUxTRGs2R1ZPZnB0d1ZlQlMtOUlVZGRLX2g5eVlEWTJyRWtOdFFIX2k1cHYxcGZvaVZlNERReEJvQ0hxQXpMMkM1MlBkNEx5YVhiaUlBeXdDQ0lR?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "8dea7d166d6c",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Upcoming Ohio primary election details are discussed.",
+    "arc_analysis": "The primary election could impact Sherrod Brown's re-election campaign and influence Democratic Party dynamics in Ohio.",
+    "conflict": false,
+    "legislative_note": "Ohio's primary election involves selecting candidates for federal and state offices, including U.S. Congress and the Ohio General Assembly.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WSAZ",
+    "feed": "GNews: Legislative context 1",
+    "title": "Polls now open for Ohio primary election - WSAZ",
+    "author": "",
+    "summary": "Polls now open for Ohio primary election &nbsp;&nbsp; WSAZ",
+    "published": "Tue, 05 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBfQW5hYzRfSFk1cmduLWtjc1NKeHpnNDhhUDdrZW5KMXdCSG5YR2hzSWlpUWF5NkFOTGtsRHltSGZxZmJLSlFSQlVWbHJWamVpOFRDc0FERGRWV3Jsa3A1RGkxVVlVcFg5T05HLWZjTjlIOUdENnFxYtIBjAFBVV95cUxQSW0tWE9QckNSamNGMVR4U2U3cm9WQ1otTlM0XzMyeDQ4Tlh0c3o1dkozY2dRdUQxTWVuLWJmTmZ1YkVlUXZJNk5NTEd0OEotYzVmUmNKd3BrSV9fVVdwZXVEMWJWbDM1dGx4OFdOb0pJMkljbHZmRmx6QUFYNFJ5Mzdnazk3YzhXTVFWcQ?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "cf62ddfc603c",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Polls are open for the Ohio primary election.",
+    "arc_analysis": "This marks a key day in Brown's campaign as voters cast their ballots.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, a prominent Democrat from Ohio, may face competition in primaries like this one.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "wtol.com",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio primary election 2026 voter guide | Key races, levies to know before heading to vote - wtol.com",
+    "author": "",
+    "summary": "Ohio primary election 2026 voter guide | Key races, levies to know before heading to vote &nbsp;&nbsp; wtol.com",
+    "published": "Tue, 05 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNFdsZU42OXlyYlpEVzY3WDltT1BuTEc0MktQbzNpb3J3LU5qeHJmLVRYbjUxWTdPa3IwVVBtQVJOdjFhdjRIdFpaTlcyeW0wNkxfcXV6X2k1eTU3REJ5TnhqaTdpZDdwaWhFai1Cc1p0VlZXd0hRWHB2TjNXcGtRaHRtSlc2eGZBQUwwSmFLek9rWUJ6UDFFRGFCODJzbnp4elhKV3dzOVc3b0VxMnlEZkRaeHlQUy1OdU1LVkpiQmZMaVB1dzJRcGpSMXgwWUItVnVxejROQkQ2RTBMNkN1UGY1SlRkVlN5MEE?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "df4eeb434450",
+    "arc": "UNMAPPED",
+    "arc_summary": "A voter guide for the Ohio primary election in 2026.",
+    "arc_analysis": "Provides general information on key races and levies but does not focus specifically on Sherrod Brown's campaign or policy.",
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WLWT",
+    "feed": "GNews: Legislative context 2",
+    "title": "EXPLAINER: What does 'yes' or 'no' vote mean for Ohio Issue 1 in November - WLWT",
+    "author": "",
+    "summary": "EXPLAINER: What does 'yes' or 'no' vote mean for Ohio Issue 1 in November &nbsp;&nbsp; WLWT",
+    "published": "Tue, 05 Nov 2024 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWkxfNXpvSWV4WWhkQm1OeFVrSkpscWpjWTZYR3RITVhSMHNTYVhZZjJwdlgxTXd2LUJqSXBfd1hEcWxULTNNTnNJZlRvQlpXRGhEQ2owUnlkMU03UnZaUWFVYzVxUnZCVTlIYzI1UUZNSEk3NWticFpoMjZhTDRlLVBEVDhPTThkWWhhaXFwN3pDNEdzRjNZWDk4TXc1bHM?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "9bcbd1c0eff5",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1 in November.",
+    "arc_analysis": "Provides voters with information about a ballot measure, aiding understanding and decision-making.",
+    "conflict": false,
+    "legislative_note": "Voting on ballot initiatives like Issue 1 reflects direct democracy, allowing citizens to enact policy changes without legislative approval.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "BBC",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio election results 2024 - BBC",
+    "author": "",
+    "summary": "Ohio election results 2024 &nbsp;&nbsp; BBC",
+    "published": "Tue, 05 Nov 2024 22:34:50 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWm1EbXlyZl9IMlE5WTBYV3pDdG4xUHhpT3h0YVJXcm1qbzhRQzBKS0w0OGNSVk9vM3lwOTEtbktGck9KamJtaXdmcW9nbWttTnZpSVVQUUlJeXR0eHM2Vw?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "9c1850c709d0",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Sherrod Brown is running for re-election in Ohio's Senate race.",
+    "arc_analysis": "Brown's campaign aims to secure his position as a long-standing Democratic senator from Ohio.",
+    "conflict": false,
+    "legislative_note": "As a sitting Senator, Brown must navigate the US Congress election process to secure his seat.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WLWT",
+    "feed": "GNews: Legislative context 1",
+    "title": "EXPLAINER: What does 'yes' and 'no' vote mean for Issue 2 in Ohio election? - WLWT",
+    "author": "",
+    "summary": "EXPLAINER: What does 'yes' and 'no' vote mean for Issue 2 in Ohio election? &nbsp;&nbsp; WLWT",
+    "published": "Tue, 06 May 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBvR1pDaDRTazNZZVd1WFBvM09aVmZjTGlMMzhYMmtBNmtrX05qSXRFbUJGXzRnSDh5ZVU5M08wa2FacjZWUUZvV0V6Q2JWQnNVd1p6dnJGYlVkN0hCa281UkZSSUJvUmxaeUlKWnFQMnNxa3hxMjZic19IMlZCZw?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "30f9d68640c4",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Explains the implications of voting yes or no on Issue 2 in Ohio's election.",
+    "arc_analysis": "Provides voters with crucial information needed to understand the ballot measure's impact.",
+    "conflict": false,
+    "legislative_note": "Issue 2 involves changes to Ohio's constitution, requiring voter approval as per state law.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Bing: Legislative context 2",
+    "feed": "Bing: Legislative context 2",
+    "title": "Poll of Ohio voters shows competitive Senate race, tied governor race",
+    "author": "",
+    "summary": "Ohio voters lean Republican overall, but a new poll shows competitive races for Senator and governor, and growing concern over the economy.",
+    "published": "Tue, 07 Jul 2026 23:46:00 GMT",
+    "link": "https://www.usatoday.com/story/news/politics/elections/2026/07/08/poll-ohio-voters-senate-governor-races-sherrod-brown-jon-husted-vivek-ramaswamy-amy-acton-election/90824767007/",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "26c44de52834",
+    "arc": "UNMAPPED",
+    "arc_summary": "A poll indicates competitive Senate and gubernatorial races in Ohio.",
+    "arc_analysis": "The poll highlights the tight race for Senate, underscoring Brown's competitiveness despite overall Republican leanings.",
+    "conflict": false,
+    "legislative_note": "Ohio's political landscape often sees close contests due to its status as a swing state.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "vox.com",
+    "feed": "GNews: Legislative context 1",
+    "title": "J.D. Vance’s pivot to Trumpism pays off with Ohio Senate win - vox.com",
+    "author": "",
+    "summary": "J.D. Vance’s pivot to Trumpism pays off with Ohio Senate win &nbsp;&nbsp; vox.com",
+    "published": "Tue, 08 Nov 2022 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNlgwMFJ3d05pdHVRRjM1LWYtSHFxMEl1MHBnN2hsRm9HOWd2MkNyZjJYVVZxMTFId2FOS1loMVhfZ2w1d0tPOGZpQkttOC1EbjdiYUgtNXJ3MjlLaThVZU5RWkZlREI4ZEpHOHJLckRPVk9XNGFtandVZHJ4N3BsSFVzWDVqN1JWN1pHb29tRzJISE1aQ091bzNzYUdDbzVldHBXRGlEQkVZT0ZWZlFj?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "4961fb102f52",
+    "arc": "CAMPAIGN",
+    "arc_summary": "JD Vance won the Ohio Senate race.",
+    "arc_analysis": "Vance's shift towards Trumpism helped secure his victory over incumbent Sherrod Brown, impacting Democratic chances in key states.",
+    "conflict": false,
+    "legislative_note": "Vance's victory reflects a shift in Republican strategy towards more populist rhetoric.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "10TV",
+    "feed": "GNews: Legislative context 1",
+    "title": "2022 Ohio Midterm Election Guide: What's on the ballot? - 10TV",
+    "author": "",
+    "summary": "2022 Ohio Midterm Election Guide: What's on the ballot? &nbsp;&nbsp; 10TV",
+    "published": "Tue, 08 Nov 2022 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcVd1dFJZbWp4bWw3X1F1TUxXUnRnd1lsS3NLdGZUYlZyR0k5WW11akNCY3BmUTZsVk5IdEtJV1JxbjhsTUgtUnFxOW9Ccm5PbTJFSEtFZjRxRzVmNnBHZlJ0MWR6Yk90RWJqM1R3X0ZrVHMzeWFYdnltRXRPaGR3dTdrRVpHb19MWVA4WlVrd2VORW5Sa1BkZ25KQVF1YlR1YVpkaGtyRUpyNlN6T2E3djNTSEstLTVabDhlTVhSM2VTaUVX?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "b9391570aca6",
+    "arc": "UNMAPPED",
+    "arc_summary": "The article provides a general guide to the 2022 Ohio midterm election.",
+    "arc_analysis": "This is an overview of the upcoming elections and does not focus on specific actions or statements by Sherrod Brown.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, an incumbent Democrat from Ohio, is up for re-election in this year's midterms.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio election: Everything you need to know as you vote in the Midterm elections 2022 - The Columbus Dispatch",
+    "author": "",
+    "summary": "Ohio election: Everything you need to know as you vote in the Midterm elections 2022 &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Tue, 08 Nov 2022 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQT21FXzdKemtYNjZHN2RFd2xLTDZsZElNWV9TSkp5d2hNel94d3dreXFZbkdJemxwZXN1YTJQY3lJZEpQS1FWQjdDRG10NkhUU2hVWjdLQ1MwSE5TMXZCNUpQMDVsdE9wZV9Lbko0b1hxS2d2amZBSTlqM2h5dEVLUTlxQTBHMnZLZlhjZk1iSjRkN0lyQWJXVnhwVXdMUjNjZy1VbmtrVVpfcHJhbmFZdHMtYVlaS0dPNWMyNERqVzlWSGsxOF9qU3hB?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "e418677a4b67",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Sherrod Brown is running for re-election in Ohio's midterm elections.",
+    "arc_analysis": "Brown's campaign seeks to maintain his Senate seat, highlighting the ongoing political contest.",
+    "conflict": false,
+    "legislative_note": "As a U.S. Senator, Brown would continue to serve on committees relevant to Ohio and national policy.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cincinnati Enquirer",
+    "feed": "GNews: Legislative context 1",
+    "title": "Early voting in Ohio has begun. What to know on Issue 1, ID requirements, key dates, more - Cincinnati Enquirer",
+    "author": "",
+    "summary": "Early voting in Ohio has begun. What to know on Issue 1, ID requirements, key dates, more &nbsp;&nbsp; Cincinnati Enquirer",
+    "published": "Tue, 08 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOeHRodVdCMTZoRmdkRi11OXBCcmE2QlF0QVJDV2FyaXhtNXRERDROYmlxbjlVQ0FpU0pjaHQ4LXVILWw2eEMxX0V6R2ZkbDQ3aUMwS2RPdU9vNktPOG9nR3g5MHZ4Y1otdVZDY2FuQk1naFltdUl4QnVmR3E4VW8wX21pMmJ5T0VwSkhVVHFBNXNIM2N1bFV5cU1ZSm9VOENrZG5UeGVkd1U0b3NDelZRZE1BT01HOU9kR1QxZDVuZUtRSElaYUdqdlhTZmdrZmJLVUtqY1pVR1V0X296?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "77c312a2b604",
+    "arc": "UNMAPPED",
+    "arc_summary": "Early voting in Ohio has started with information provided on Issue 1 and voter ID requirements.",
+    "arc_analysis": "This article provides general election administration details but does not specifically mention Sherrod Brown or his campaign.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, as a former Ohio Senator, would have been involved in federal legislation related to voting rights but not directly in setting state early voting rules.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 2",
+    "title": "Hundreds flock to Franklin County Board of Elections for first day of early voting in Ohio - The Columbus Dispatch",
+    "author": "",
+    "summary": "Hundreds flock to Franklin County Board of Elections for first day of early voting in Ohio &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Tue, 08 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQR1BvOW9QdlczQ3V0a2RoMlFzbEhBdEtKRFlrRzJtLUhQUGxLaGFRMW5pR1NBRGJDYmwya3pOaXlYSVozSjhTQlhRc2xudnUtLUVjZWFwNlNBeUpkY1ZmSHhEZXREUFVsaGhWRFNWd0Rqb1ZTdjlOVXM3Y1RGbkV2SzZHdGhESkR2NXFETjFOdjhUVWhPdTFsenQ0WHlWbzdrT0ZpSU8zZW9mQTBlRzVHWW10NndaRm81TlEwQ2VLLS1mWnJ1VWs4?oc=5",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "3d0dc4120417",
+    "arc": "UNMAPPED",
+    "arc_summary": "Hundreds of people turned out on the first day of early voting at the Franklin County Board of Elections.",
+    "arc_analysis": "This indicates high voter turnout and engagement in Ohio, but does not specifically relate to Sherrod Brown's campaign or policy.",
+    "conflict": false,
+    "legislative_note": "Early voting is regulated by state election laws and can vary by jurisdiction.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio GOP leader says no to Trump election plan - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio GOP leader says no to Trump election plan &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Tue, 10 Feb 2026 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdkdob2VRTzFIU3V1U3pFUHl1V0JQRTF2ck44ZW5qRHpZRDNsU3hLNGV5RlRvZm41SklTTTVoaWZoQk8zQTdNclZmZm9VMlNPalBxZXRXbjFnYnVVQTd1OUw2ME4tcmc1V3BqcHA2NTB2Z05rWVljOWZNLXRTc1FycDlPaEZqWU1IM2ZsSFp0Vkk5MFE?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "1bf604393be8",
+    "arc": "MEDIA",
+    "arc_summary": "Ohio Republican Party leader Jane Timken rejects former President Trump's election plans.",
+    "arc_analysis": "This highlights division within the GOP regarding Trump's influence on party strategy and candidate selection.",
+    "conflict": false,
+    "legislative_note": "This reflects internal party dynamics and leadership decisions in the Ohio General Assembly.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Sen. Matt Dolan announces 2024 U.S. Senate bid against Sherrod Brown - The Columbus Dispatch",
+    "author": "",
+    "summary": "Ohio Sen. Matt Dolan announces 2024 U.S. Senate bid against Sherrod Brown &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Tue, 17 Jan 2023 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOTS0zYWZ1NEdKdVhVSFlTb2h3QXYxd2pRVnZ5cWN3cldnTkVYVDdGdjdjaUZuU1hWMF9jd1Y2d2k4b1JRRXNNdnRnNWZGVHc2ZGVQTUlHQXRWUTRoUzZLc1B3aFZGZzVHc20tY1B5U085Znh4VGtMYU9WcTNZMzdKZDkzbmFtRHFXekVLdjZnN0U2NmI3d2lzYVVfMFRya3NzZG9PbTdpX2xpdTMxam92Z0RZbmloTHBCb2JXLW1OWXZFODdmWTZ1Z3pPRWs0eDV0cFdqa2g0SjA2UU9QN2xxNGg0ai1LUQ?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "17ed391caed3",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Matt Dolan announces his 2024 U.S. Senate campaign against incumbent Sherrod Brown.",
+    "arc_analysis": "This announcement sets up a primary challenge for Brown, potentially complicating his re-election bid.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national political trends and can influence state legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio House, Senate budgets eliminate agency tasked with campaign finance oversight - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio House, Senate budgets eliminate agency tasked with campaign finance oversight &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Tue, 17 Jun 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQWRlZ3kyYnFSTHRpUXBJN2d2TzhIdjU0cEQtUkJfLTJhbEYxR215aUNQSUdVQ091SjlXaEwwZ1gyU2RvY0x2bVhBdGVRdkNEdWlYaGhFNDh3Q1FuTHBocXBRS1hjelVjY3FBalZQd0ZHTlhTbGN0enZTZkZUYmRNejQwaTBhVVBfQlJBeGRzM29YZ3paU21zUTBBY0dMazh3VWVkMU1WN3JtVFZHLUV5bjI4aUhsVVBMT0RMeXZhbzIwdw?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "9b621cc3a549",
+    "arc": "UNMAPPED",
+    "arc_summary": "The Ohio House and Senate budgets eliminate an agency responsible for campaign finance oversight.",
+    "arc_analysis": "This move could undermine transparency in political funding, affecting campaigns like Brown's.",
+    "conflict": false,
+    "legislative_note": "This move affects the Ohio Elections Commission, impacting transparency in political funding.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cincinnati Enquirer",
+    "feed": "GNews: Legislative context 1",
+    "title": "Who's running against Sherrod Brown for Ohio Senate in 2024? - Cincinnati Enquirer",
+    "author": "",
+    "summary": "Who's running against Sherrod Brown for Ohio Senate in 2024? &nbsp;&nbsp; Cincinnati Enquirer",
+    "published": "Tue, 18 Apr 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYlpWa1B5MlkwOW1NSmtteDVhdTc4ZkFpTnREOEl2U1FfUGpvOUdmNXlRLU9NVUU0MHZFWDVLeEZqOVN3VlVLSHNIc2JHWm1aam1HaU1abTdabjBfUE9IeC01ZXFZX2YxejZxbm5zbzhycXpxZHBUYjhEcnNrNHNwRGJFUng3VEFmaUpLREdvTV9la0N0M0V4QVlsaVAtWDFRNXRiS1B0WmJnckVfMTNqR0xqNjB0LXAwYWxlNUZNRWlHQjNLdmJ3VWdvN3AtZ3BqNlhIa1pB?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "0bdeb735a491",
+    "arc": "CAMPAIGN",
+    "arc_summary": "The article discusses potential candidates running against Senator Sherrod Brown in the 2024 election.",
+    "arc_analysis": "This matters as it highlights the competitive landscape for Brown's re-election and could influence his campaign strategy.",
+    "conflict": false,
+    "legislative_note": "Ohio's primary and general elections follow federal legislative processes, with the Ohio General Assembly setting rules.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Former President Donald Trump endorses Bernie Moreno in Ohio U.S. Senate race - The Columbus Dispatch",
+    "author": "",
+    "summary": "Former President Donald Trump endorses Bernie Moreno in Ohio U.S. Senate race &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Tue, 19 Dec 2023 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVVgtTXFFTHBJRkcxc05XbXYxbWZsMVEzNk5VNXVSTFR1enF4NVE5N05feWRuVG84aElnY25vY1F6LXYxVDd4d0RUM2Q4YXRTNnlJV0pCQ3RiN1hCVDhIN25tTklDYVNrbV8yazRaaTFaZ3A1X0JxeEd6R2NfekFsYWRpU3R5VjlCOHl6RXBiQkpUb3VFQThWaTM4eWMtNEVWR0lIUnIxczJWOEs3ZzVydlJ0UHJkejNEM2xqa01sejZWMFZlUUhuYjJNWHlBQzZZbmRVUlI4Z0k0dw?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "fd4848d5e310",
+    "arc": "ENDORSEMENTS",
+    "arc_summary": "Donald Trump endorses Bernie Moreno for the Ohio U.S. Senate seat.",
+    "arc_analysis": "This endorsement could boost Moreno's visibility and challenge Sherrod Brown's long-standing support in Ohio.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often involve significant national party involvement and endorsements.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio Senate advances ranked choice voting ban - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio Senate advances ranked choice voting ban &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Tue, 20 May 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOGlYRlE5OGRvclRzaDNCajZITlRtWk5nMGtRY1FlMlBrS1F1R2hBcU5RZ1Z6b3NCMm5ObG1WNU5zSndBcmNtR1FJSENrTWgxSmMyV1RRZl9YRV9NVFFUd09CYVE2WUowQzJaVjdWdkJ3d2o0ZlJjbmlpdWYwMjc0RlVlRm9tQXI3eWJpOFA4NzVmZw?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "04a8f626741e",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "The Ohio Senate is advancing a bill to ban ranked choice voting.",
+    "arc_analysis": "This move could limit electoral options and reflect broader conservative efforts to restrict voting methods.",
+    "conflict": false,
+    "legislative_note": "This aligns with efforts in several states to restrict alternative voting methods.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Weak Ohio Gov. Mike DeWine pretends to be helpless, and participates in another attack on voters - Ohio Capital Journal",
+    "author": "",
+    "summary": "Weak Ohio Gov. Mike DeWine pretends to be helpless, and participates in another attack on voters &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Tue, 23 Dec 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPR1QwYm5IWDZxNjcyX1lFOWxFNWtVNU54SHpBWUN5NnhtVXRteHlrSGtOVnNGSVBLUkhlWk9IT1dSRHpMQkdCcWJtZlgzQ1pTNTctN0FiX1FKaGtUWS1GcnlPTWo3Ym15aDI4Zkw2VXpzY05kOTlEN28yRU9iVUhqMlo3SE41cGdlc3lNTnhMZVBmR1RTUndJRURoZnV1RlkwaTNGZ1d2V3NSVGZfWnFNcnktVEpqLXoxSW9nbmpwMWtvY0w0cjFlaWZ3UW9Wc18zTllj?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "202786d02edb",
+    "arc": "UNMAPPED",
+    "arc_summary": "Governor Mike DeWine is criticized for perceived inaction and voter suppression.",
+    "arc_analysis": "The criticism highlights tensions between political figures over governance and electoral policies.",
+    "conflict": false,
+    "legislative_note": "Ohio governors have significant executive powers but can face legislative constraints.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "U.S. Sen. Vance endorses Bernie Moreno, reportedly in hopes of avoiding \"bloody primary\" - Ohio Capital Journal",
+    "author": "",
+    "summary": "U.S. Sen. Vance endorses Bernie Moreno, reportedly in hopes of avoiding \"bloody primary\" &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Tue, 23 May 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYlZpa1dWNGJwSDdVdU8yb3FtMjEwaW5EemNxZkNGTWhwNmZZaENSUk1ZdFhnRkJGdzU0QmhTZmlkUTVWcFc0eW51TXEyX0psbF93WHpFX2tweDZMaWJURzFxUVMwd01DUWwxWnJ4aklMSkJhU2VISm9xLW9JcjVxekFGN3J6WWxFSi1NMW5UM3hNaFVDUmVINVdMTHJud2pURC10UlBiSDNrMXNWQkYwT2h0ZWE0Zw?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "45d8ff9ac4a8",
+    "arc": "ENDORSEMENTS",
+    "arc_summary": "Sen. J.D. Vance has endorsed Bernie Moreno.",
+    "arc_analysis": "This endorsement could influence the Democratic primary race and shape the party's direction in Ohio.",
+    "conflict": false,
+    "legislative_note": "No clear connection",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 1",
+    "title": "Trump axed a probe into grocery collusion. Ohio’s U.S. Senate candidates won’t talk about it - Ohio Capital Journal",
+    "author": "",
+    "summary": "Trump axed a probe into grocery collusion. Ohio’s U.S. Senate candidates won’t talk about it &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Tue, 24 Feb 2026 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ2x5dV9PbndQTVJoM1RJQzFnMS1DS29BMXM0aWJJRUsyNE5UNEd5SFJ0Q0Z4VnRUU2xYQmxmX1dIV3hoU1hfNGlvcjMzaUltNWRETUhnb2NBWjdCTjVkZVIyRlNpNnU0eVZFTXlwREVNdHM1eWFOZkVLS0tseC1KRXlIWlNZODdJWHRscVBWUURRQnJvaTBDNk43WWp2S24xUm1ydk91UDcwM0V4czQ2T1oxYldfSFcxSW9MWGhkc3dVZDltVTY5ZFpDbw?oc=5",
+    "fetched": "2026-07-14 23:10 UTC",
+    "id": "e667e034e8b3",
+    "arc": "MEDIA",
+    "arc_summary": "Ohio's U.S. Senate candidates, including Sherrod Brown, are not discussing a probe into grocery collusion that was terminated by Trump.",
+    "arc_analysis": "The silence on this issue may indicate political calculation or lack of awareness among candidates.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has been vocal about consumer protection issues in the past.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cleveland Scene",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio Republicans Trying to Get Voter Photo ID on Ballot, Enshrined in State Constitution - Cleveland Scene",
+    "author": "",
+    "summary": "Ohio Republicans Trying to Get Voter Photo ID on Ballot, Enshrined in State Constitution &nbsp;&nbsp; Cleveland Scene",
+    "published": "Tue, 26 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN0pmVmJfSW5mY0NsY09wLTJyYVVMSGhIaUZPdHVSWmpodF9GUURDbTd0cFBEOXhIb2lRQlV3VVkxOHN1WG95TU5aR21pWmNuUmdVNGZISlJQMEpXSFMyMnp1a3otNVZXeDZVb19aU211TnlHSTU2NGM3VF85ODV6aGVEbENrdWpZWVRvQ2RfNlZCUlhVMU9PR0ZGa24zeGMwaEtnTDVzbUkwQ0NCQXlTQzgxTWJvUm9TNmJianlKaG1JenB0S285TVdB?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "7b96fbbccd52",
+    "arc": "POLICY",
+    "arc_summary": "Republican lawmakers are attempting to place a voter photo ID constitutional amendment on the ballot.",
+    "arc_analysis": "This effort could suppress voting among traditionally Democratic-leaning groups, impacting Brown's base and electoral prospects.",
+    "conflict": false,
+    "legislative_note": "Ohio's General Assembly can propose amendments to the state constitution through legislative process.",
+    "legislative_note_confidence": "high",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Cincinnati Enquirer",
+    "feed": "GNews: Legislative context 1",
+    "title": "Ohio Senate race poll: J.D. Vance, Tim Ryan in close race as economy drives votes to GOP - Cincinnati Enquirer",
+    "author": "",
+    "summary": "Ohio Senate race poll: J.D. Vance, Tim Ryan in close race as economy drives votes to GOP &nbsp;&nbsp; Cincinnati Enquirer",
+    "published": "Wed, 01 Jun 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQURIb1ZjTG5COUdaVXRwQVBuTHBlOUFCNTZ3SHdHTTQ4LS04Q1pwYXJnTWxHVnhkWERHb09Na21yV1dXR2ttUjhFdXlrU3NiNFVVa2x6bVQzWVB4anVLU2JhaHlKSEdpaUV4Nmpicnl1TkQ2ekZmM3NJMkd6Tjl0UzN2R3I1dGJqVzUwVzNFVlV3QktUQVQyb0Z3c0l3ZWNmbVZaXzdnakhpNW9nX3JZSU01ZEJWRlI3QWo3V0oxZFA?oc=5",
+    "fetched": "2026-07-14 23:12 UTC",
+    "id": "c1732e022025",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Poll shows Ohio Senate race between J.D. Vance and Tim Ryan is tight, with economic concerns favoring Republicans.",
+    "arc_analysis": "The poll highlights the competitive nature of the race and the impact of economic issues on voter preferences, potentially giving an edge to Republican candidates.",
+    "conflict": false,
+    "legislative_note": "Economic issues often drive voter preferences in Ohio, reflecting the state's industrial base.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "What does a yes vote on Ohio Issue 1 mean? What does a no vote mean? - Ohio Capital Journal",
+    "author": "",
+    "summary": "What does a yes vote on Ohio Issue 1 mean? What does a no vote mean? &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Wed, 02 Oct 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOFpMa1M4dWZsRmo5WjkxZU44NHpoMmVBc1JwNEZzdDBGZFRQWmx6dkU4Z0RpRkZaeDJ4RjNhbVpuRUJpOTV0M0R6elNmVjVLOWozZXo1andGZUhTM3Rtdm5MMlAwWDh3UEI2ZTRCVDNjejlOX1RjeUNpWGVoemRieTF4ZXFlQmxFVGtYTnl0TmJ2M1BXd05QcmhtOE9nWE5fZXNvYzdBdUpXM3RLOEE?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "a43d3590216e",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "Explains the implications of voting yes or no on Ohio Issue 1.",
+    "arc_analysis": "Provides voters with critical information to understand the ballot measure's impact, aiding informed decision-making.",
+    "conflict": false,
+    "legislative_note": "Ohio Issue 1 involves redistricting reform, impacting legislative processes.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio House bill to close primaries gets first hearing - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio House bill to close primaries gets first hearing &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Wed, 04 Oct 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbDNUT2lyUnQ4TXNYQ1k4Zzc1aGd3RTg3SUZkZXBXejB4bnM2ZUN0TnZveWRKcUliY2NJTmNmNVh5bW9yVHA3RFpRQjlKc3R5bE8yMmc5WWVvZE5SSHNMYzloZ0JqamVoTjRLUG54LU5SUDhES1dIVFNVRGlncWRuS3FRcnJPTEdiMGhLQkQ3S0o4LTg2UnVpRFkyTjY?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "05e30d2896a0",
+    "arc": "LEGISLATIVE_CONTEXT",
+    "arc_summary": "An Ohio House bill aiming to close primary elections received its first hearing.",
+    "arc_analysis": "This legislative action could impact voter participation and party dynamics in Ohio's primaries, affecting candidates like Sherrod Brown who rely on open primaries for broader supp",
+    "conflict": false,
+    "legislative_note": "This aligns with efforts by some lawmakers to restrict voter access and could face opposition from those supporting open primaries.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 2",
+    "title": "As Frank LaRose eyes U.S. Senate, turnover plagues Ohio secretary of state's office - The Columbus Dispatch",
+    "author": "",
+    "summary": "As Frank LaRose eyes U.S. Senate, turnover plagues Ohio secretary of state's office &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Wed, 04 Oct 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQVJuV3gxWmNKbjY4Z21FNFlBNGZGY3RiU1p2cXpQLWFsRzFjRDl4cmxMTnVSX2tRaDV2X0JBUk1pc0FKbW5tZlVWS0dicFBhNlgtcC1FWGhOX0wwNFJOV2VwaWlfa2duVkZjSEJWNi0xS2VIazJqUHhmeWozVzk2RmFWREU3a1ktVEhQSWJXZExDM2d6XzJNWVhGVWZNcDVPVDVhVll6ellrWnd0Ym5DVGdlbS14Qzdxc2s4NFp6TFpUdkFmS2c?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "d31ed3671359",
+    "arc": "UNMAPPED",
+    "arc_summary": "Frank LaRose is considering a run for U.S. Senate.",
+    "arc_analysis": "LaRose's potential candidacy could impact Ohio's political landscape and challenge incumbent Sherrod Brown.",
+    "conflict": false,
+    "legislative_note": "Ohio has seen several turnovers in the Secretary of State position, influencing potential candidates like Frank LaRose to eye higher office.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio secretary of state endorses proof-of-citizenship elections bill, warns rollout will take time - Ohio Capital Journal",
+    "author": "",
+    "summary": "Ohio secretary of state endorses proof-of-citizenship elections bill, warns rollout will take time &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Wed, 05 Nov 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOVzNIbllJMlA5WE5GQzlNVTJVUXRTWHUwM2NENGk5aE16Z1lRaDFINm1rTlJZWU9CcG1falBydXdTalY3QTh0Nmd6YllfRVlKRW5KR05MOE5hdU1NdHZFbGxFU0tPemN0bnFickJkMVZRa1FmT2VHU01vR3ZNN0dlUXBDZE03c2Vkcm52TmxVRC1ZTlY1d3l1dlVUNldqTWdDcTNqei1HZzlqZDJzRWx3RUpvUGlOOG5hMmVHZURpaFl5N0hKT0Qtdi1scUdvNFZVZ0UwSC1LRQ?oc=5",
+    "fetched": "2026-07-14 23:13 UTC",
+    "id": "291dbcae6170",
+    "arc": "UNMAPPED",
+    "arc_summary": "Ohio Secretary of State endorses a proof-of-citizenship elections bill.",
+    "arc_analysis": "This news is about the Secretary of State's endorsement and does not relate to Sherrod Brown's campaign or policy positions.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown has been involved in federal legislation related to voting rights, which may contrast with state-level efforts.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "New York Post",
+    "feed": "GNews: Legislative context 1",
+    "title": "Six key takeaways from election night in Indiana, Ohio and Michigan - New York Post",
+    "author": "",
+    "summary": "Six key takeaways from election night in Indiana, Ohio and Michigan &nbsp;&nbsp; New York Post",
+    "published": "Wed, 06 May 2026 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUnNVVXVDMGNPVG1sTGl4RGptU2ViQ21pOHp4TF9ab3FoMFlmQ3Nua1B4Q3ViOXJFTHU1blpWRDdaN09rRWE1eG1rS3g4RWRpcWNRSDlCMGxib3V0Yk9qMmo0YTQydUxzeWdMUlRaQ2FQUkV3cDUxQUlLRS1MdzRoT3cxOTBubzFVcjhpZ0lSbFljWnhuUEE?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "c723d3e40e06",
+    "arc": "UNMAPPED",
+    "arc_summary": "Election night results in Indiana, Ohio, and Michigan.",
+    "arc_analysis": "Provides general election outcomes but lacks specific focus on Sherrod Brown's activities or policies.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown's re-election as a Democrat highlights the competitive nature of Senate races.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 1",
+    "title": "Former President Donald Trump to hold Ohio rally for J.D. Vance as Senate race heats up - The Columbus Dispatch",
+    "author": "",
+    "summary": "Former President Donald Trump to hold Ohio rally for J.D. Vance as Senate race heats up &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Wed, 07 Sep 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQa3BrRUI1TkN5RFlOY1ZORjJJbnV0WDVYeDNKUGhjS1JacXY4d25TOG5vUlY5Z2M4dzhmUWc2VFdzOHYtLU5uUVBwZmRFdjdYUXlQZWlXOFRsODR1RTl4a25VNDJvTDk1aHBqUS15eUd1V29mYVFNaFNHTVN2YllKYkI0ejZoS1NzdTFneEtTSEZlNlM5OTlNbU0yb2RkSkotMzZmeTE1cFJzamMtU1ZaZjVWLUF5eXlOTVR3dm9FQV9DXzdCeXhFYUZOb0Nhc3N4UlZpcXdTRkI?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "a19ac213beda",
+    "arc": "CAMPAIGN",
+    "arc_summary": "Trump is holding a rally in Ohio to support JD Vance's Senate campaign.",
+    "arc_analysis": "This event highlights the Republican Party's strategy of leveraging Trump's influence to boost their candidates against Brown.",
+    "conflict": false,
+    "legislative_note": "Ohio has seen significant influence from former President Trump in Republican primary elections.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Statehouse News Bureau",
+    "feed": "GNews: Legislative context 1",
+    "title": "Some Ohio voters who think they are independent might be shocked to learn they are not - The Statehouse News Bureau",
+    "author": "",
+    "summary": "Some Ohio voters who think they are independent might be shocked to learn they are not &nbsp;&nbsp; The Statehouse News Bureau",
+    "published": "Wed, 11 May 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTi00U25HRVFmUmE4Q1ZScnI4bzZfY2FXclJnQTdaZE1XeV9zdERQaHNOeEI5Uk5uZWVlbjVwUzdfVE13ZmNFcGhNU3RGVjVmMDBPZFB0d2kxeGhFeUFhT3h0cnU2Q3RIZlBHTGdVSHJxWDcwcjdESkNCTy1kUmZjMk5qVVA1a1ExV0sxdm5XX2ZJdkdZczRKX2M5UFVRc09iRjJVcVRWa0RkMUdWMFhNQ19SZEdYTF84cWFmZ2FTTjRaSmdVRjVzRHY5TWY3Zw?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "08a8e693c6c5",
+    "arc": "UNMAPPED",
+    "arc_summary": "Some Ohio voters believe they are independent but may actually be registered as something else.",
+    "arc_analysis": "This information is unrelated to Sherrod Brown's campaign or policy positions and does not provide specific political significance for him.",
+    "conflict": false,
+    "legislative_note": "Ohio's voter registration process and party affiliation rules can lead to confusion among voters.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "The Columbus Dispatch",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio Supreme Court rejects statehouse maps, ending hopes of full May primary - The Columbus Dispatch",
+    "author": "",
+    "summary": "Ohio Supreme Court rejects statehouse maps, ending hopes of full May primary &nbsp;&nbsp; The Columbus Dispatch",
+    "published": "Wed, 16 Mar 2022 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOY1g4OFRfSzUtY05aZDQ5QWtwYUdnVGhNZDJNYkcycHlfdUM4YUN3cUdzMllSY3JISHMxYWVNZGdJcy1LTHA5V2tkc1ZVS1BFUzVtM3NZaDRDeHNnZHJBMnZ5aFVUOFBVUnJKa2t1SjhiYlNaaksyUm56STRMcVYtd2ZHRVZKeE01XzFFNENvY19CaFJRVXZ3S2JEWWRGUFFBaE9mMDI2enY2NEJHMFBNSlpvdXJMWldDQzJ0eDFfcnhWT1ZKdF92Snlfb1ZTdGhBU1dFZndXc2VwNXNiSmhTRA?oc=5",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "0e2fe81224c0",
+    "arc": "UNMAPPED",
+    "arc_summary": "The Ohio Supreme Court rejected statehouse maps, preventing a full May primary.",
+    "arc_analysis": "This decision impacts the timeline for upcoming elections but does not directly involve Sherrod Brown's campaign or policy positions.",
+    "conflict": false,
+    "legislative_note": "This affects the legislative process in Ohio by delaying elections for state representatives.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "AP News",
+    "feed": "GNews: Legislative context 1",
+    "title": "Why AP called Ohio's Republican US Senate primary for Bernie Moreno: Race call explained - AP News",
+    "author": "",
+    "summary": "Why AP called Ohio's Republican US Senate primary for Bernie Moreno: Race call explained &nbsp;&nbsp; AP News",
+    "published": "Wed, 20 Mar 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaU9udkhKRVJyT1pURi05cndDamZoSnc4bmM5ZVk2TkZpQVlFLU1lamo0S0loYmVac083MktqUkxWZnBhR1VVV1ZfODNDTU93Nm9iWTc5ak9zM3llVktOYVBwR0JfNlk5Q2t3QkwwWUJReHhUc0MxUjV0MVZ2WmZRcnRIa2JJZEg5MWZ4ZlZlMW1XbFJ5QzZpVWtkRVJDQVJTc3ZLcGNYanZCcXBmZ1lZ?oc=5",
+    "fetched": "2026-07-14 23:09 UTC",
+    "id": "b6bef021e284",
+    "arc": "UNMAPPED",
+    "arc_summary": "AP explains its call of the Ohio Republican Senate primary.",
+    "arc_analysis": "The article is about the Republican primary and does not relate to Sherrod Brown's campaign or policy.",
+    "conflict": false,
+    "legislative_note": "Ohio's U.S. Senate races often reflect national trends and can be pivotal in shaping legislative dynamics.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Ohio Capital Journal",
+    "feed": "GNews: Legislative context 2",
+    "title": "Shaker Heights man found guilty of double voting in 2020 and 2022 - Ohio Capital Journal",
+    "author": "",
+    "summary": "Shaker Heights man found guilty of double voting in 2020 and 2022 &nbsp;&nbsp; Ohio Capital Journal",
+    "published": "Wed, 23 Aug 2023 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWnItN3N3ZUxqd2xBMlZpTDBSbTZsdFhDVTJlcC1IOUVQekF2RklncVROSTZJTDhsMnlPOV9SWTNUWFk5QWFTMDlkX2FLRGVILWZjT05melNqRkpJdUNuMjFLWlY4Ti1JNDl1YXRSN2RFV0lpcjVrNWRDanVQWjllSk9sMVRrcjJUODlwcENBMl9Ydjhjenc4RXYzT0J3S3Rnb2NHQ1pTdjd6Tzkw?oc=5",
+    "fetched": "2026-07-14 23:15 UTC",
+    "id": "8e6a79e0f3d9",
+    "arc": "UNMAPPED",
+    "arc_summary": "A Shaker Heights man was found guilty of double voting in the 2020 and 2022 elections.",
+    "arc_analysis": "This news item is unrelated to Sherrod Brown's campaign or policy activities.",
+    "conflict": false,
+    "legislative_note": "Double voting is a violation of election integrity laws.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "Signal Cleveland",
+    "feed": "GNews: Legislative context 2",
+    "title": "Ohio gerrymandering will be on ballot in November. Here’s why. - Signal Cleveland",
+    "author": "",
+    "summary": "Ohio gerrymandering will be on ballot in November. Here’s why. &nbsp;&nbsp; Signal Cleveland",
+    "published": "Wed, 24 Jul 2024 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb3JJNXQ2WDc2LUpnQ21zS0xuUnpzQ29hWkZ5WVFyV1AtUWtKMHdmN0tKOVRab2lMM0VTZjcySG5sRnJDVEt1VXhBQ21OeWZQUTg0OTRTZnlDV29WOVNkckJmUDZISjRwQ1lBWHotNXk1VnFFbmVJd2tFS05jaG9La2pDU2tmYWRQbGY1S3NtYTktVnVNdUhz?oc=5",
+    "fetched": "2026-07-14 23:14 UTC",
+    "id": "8521e6cb16d3",
+    "arc": "UNMAPPED",
+    "arc_summary": "Ohio gerrymandering will be on the ballot in November.",
+    "arc_analysis": "This is a general political issue unrelated to Sherrod Brown's specific actions or policies.",
+    "conflict": false,
+    "legislative_note": "Sherrod Brown, as a former Ohio Senator, would have been involved in discussions about redistricting and its impact.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
+  },
+  {
+    "source": "WOUB Public Media -",
+    "feed": "GNews: Legislative context 1",
+    "title": "Many of Ohio’s local school board candidates getting large contributions - WOUB Public Media -",
+    "author": "",
+    "summary": "Many of Ohio’s local school board candidates getting large contributions &nbsp;&nbsp; WOUB Public Media -",
+    "published": "Wed, 27 Oct 2021 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTmg5akkySUNQVTQ2YVAySVhIWUlRWDh4eC1iZjdRZU5PZlY4NWFuMS1leEtzNzZjQmRDaloyd0lsdUJ6SzAydVVTc19PNHdpd2NvNUVlV2pGRUo1dzk3M2pSRVc2U0RpQWxJU1FvaUFDd2ZwUDJTb0w1cVdDbERIVmZIWFJyYlk2QTJYYlh2alU2eXc3eV9kdGkzT1d1LXdMaWc?oc=5",
+    "fetched": "2026-07-14 23:11 UTC",
+    "id": "9495eeb69ed1",
+    "arc": "UNMAPPED",
+    "arc_summary": "Many Ohio local school board candidates are receiving significant financial support.",
+    "arc_analysis": "This article does not discuss Sherrod Brown's campaign or policy positions, making it unrelated to his activities.",
+    "conflict": false,
+    "legislative_note": "Local school boards in Ohio have substantial influence over education policy and budgets, attracting significant contributions.",
+    "legislative_note_confidence": "medium",
+    "legislative_note_experimental": true
   }
 ]

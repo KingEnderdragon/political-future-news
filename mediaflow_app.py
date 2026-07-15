@@ -20,7 +20,7 @@ DIGEST_WINDOWS = [(7, "Last 7 days"), (30, "Last 30 days")]
 AUTO_COLLECT_INTERVAL_SECONDS = 300     # 5 minutes
 AUTO_DIGEST_INTERVAL_SECONDS  = 3600    # 1 hour — digest generation is heavier than classification
 
-SLOT_COLORS = ["#2980b9", "#8e44ad", "#27ae60", "#c0392b", "#d35400"]
+SLOT_COLORS = ["#2980b9", "#8e44ad", "#27ae60", "#c0392b", "#d35400", "#4a6572"]
 OTHER_COLOR = "#999"
 
 
@@ -137,6 +137,17 @@ def render_item(item: dict, subject: dict, colors: dict[str, str], show_arc_tag:
     byline = f"{author}, {source}" if author else source
     citation = f'&ldquo;{title}&rdquo; &mdash; {byline}' if title else byline
 
+    leg_note = item.get("legislative_note", "")
+    leg_html = ""
+    if leg_note and leg_note != "No clear connection":
+        leg_html = (
+            f'<div style="margin-top:6px;padding:5px 8px;background:#fdf3e3;border-left:2px solid #d3912b;">'
+            f'<span style="font-size:0.65em;font-weight:800;color:#a06a1c;text-transform:uppercase;letter-spacing:0.04em">'
+            f'⚠ Experimental — legislative context, unverified, may hallucinate</span><br>'
+            f'<span style="font-size:0.82em;color:#7a5a2a">{leg_note}</span>'
+            f'</div>'
+        )
+
     ts_attr = f'data-utc="{ts_iso}"' if ts_iso else ""
 
     st.markdown(
@@ -144,6 +155,7 @@ def render_item(item: dict, subject: dict, colors: dict[str, str], show_arc_tag:
 {arc_tag}<span class="meta-text" style="color:#999;font-size:0.72em"><span {ts_attr}>{ts_display}</span> &nbsp;·&nbsp; {source}</span><br>
 {conflict_mark}<span class="main-text">{summary}</span>{analysis_html}<br>
 <span class="meta-text" style="font-size:0.72em;color:#999">{citation}</span>
+{leg_html}
 </div>""",
         unsafe_allow_html=True,
     )

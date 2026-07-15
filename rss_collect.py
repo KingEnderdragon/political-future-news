@@ -24,6 +24,13 @@ from urllib.parse import parse_qs, urljoin, urlparse
 
 import subjects
 
+# Windows' console defaults to cp1252, which can't encode characters some
+# article titles contain (e.g. U+2212 minus sign) — reconfigure stdout to
+# replace unencodable characters instead of crashing mid-run, since the data
+# writes (items/seen/log files) already happen before these summary prints.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
+
 HERE = Path(__file__).parent
 KEYS_FILE = HERE / "keys.env"
 
@@ -78,6 +85,24 @@ def is_relevant(entry: dict, keyword_re: re.Pattern) -> bool:
     if EXCLUDE_RE.search(text):
         return False
     return bool(keyword_re.search(text))
+
+
+# Legislative-context explainer feeds are scoped by their own search query
+# (e.g. "Ohio redistricting explainer") but Google/Bing interpret broad
+# "explainer"-style queries loosely and return plenty of other-state or
+# purely national content that never mentions Ohio at all. A full bypass of
+# the subject's keyword filter let ~70% off-topic noise through in practice
+# (Texas/Virginia/Georgia redistricting, unrelated committee explainers,
+# etc.) — require "Ohio" specifically instead, which is looser than the
+# subject's own name/keywords but still meaningfully scoped.
+OHIO_RE = re.compile(r"\bohio\b", re.IGNORECASE)
+
+
+def is_relevant_context(entry: dict) -> bool:
+    text = " ".join([entry.get("title", ""), entry.get("summary", "")])
+    if EXCLUDE_RE.search(text):
+        return False
+    return bool(OHIO_RE.search(text))
 
 
 def load_seen(state_file: Path) -> set:
@@ -350,6 +375,7 @@ def fetch_new(seen: set, subject: dict) -> list[dict]:
     new_items = []
     feed_results = fetch_all_feeds(feeds)
     for source, url in feeds.items():
+        is_context_feed = source.startswith(("GNews: Legislative context", "Bing: Legislative context"))
         for entry in feed_results.get(source, []):
             raw_link = entry.get("link", "")
             title = entry.get("title", "(no title)").strip()
@@ -361,7 +387,10 @@ def fetch_new(seen: set, subject: dict) -> list[dict]:
             # most entries on any given run are duplicates from prior runs.
             if not raw_link or is_seen(seen, item_source, title, raw_link):
                 continue
-            if not is_relevant(entry, keyword_re):
+            if is_context_feed:
+                if not is_relevant_context(entry):
+                    continue
+            elif not is_relevant(entry, keyword_re):
                 continue
             link = resolve_article_link(raw_link)
             if is_unreliable_link(link):

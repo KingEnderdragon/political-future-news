@@ -1,24 +1,31 @@
 {
   "7": {
-    "generated_at": "2026-07-14T14:14:47Z",
-    "window_start": "2026-07-07T14:14:47Z",
-    "window_end": "2026-07-14T14:14:47Z",
+    "generated_at": "2026-07-15T00:01:54Z",
+    "window_start": "2026-07-08T00:01:54Z",
+    "window_end": "2026-07-15T00:01:54Z",
     "window_days": 7,
     "arcs": {
       "LEGISLATIVE": {
-        "item_count": 2,
-        "critical_summary": "Rep. Mike Dovilla introduced legislation aimed at preventing fraud in Ohio's Medicaid program, while Governor DeWine signed a bill mandating the use of electronic check-ins for Medicaid home health workers.",
-        "analysis": "These actions reflect ongoing efforts to enhance accountability and efficiency within Ohio’s Medicaid system. The introduction of Rep. Dovilla’s bill signals a focus on combating fraud, aligning with broader Republican priorities in healthcare policy. Meanwhile, Governor DeWine's signing underscores his commitment to improving service delivery through technology.",
+        "item_count": 4,
+        "critical_summary": "Rep. Mike Dovilla introduced the Ohio Medicaid Program Integrity and Fraud Prevention Act, aimed at enhancing oversight of Medicaid funds. Additionally, Governor DeWine signed Senate Bill 162 and a bill mandating electronic check-ins for Medicaid home health workers.",
+        "analysis": "The introduction of HB 971 by Rep. Dovilla signals an ongoing focus on regulatory measures within the healthcare sector, particularly in preventing fraud and abuse. This aligns with Governor DeWine's efforts to strengthen oversight through recent legislative actions, indicating a bipartisan approach towards Medicaid integrity despite differing priorities.",
         "talking_points": [
           {
-            "text": "Rep. Mike Dovilla introduced the Ohio Medicaid Program Integrity and Fraud Prevention Act.",
+            "text": "Rep. Dovilla introduced legislation to prevent Medicaid fraud and enhance program integrity.",
             "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZ3hrUk0wbHE1dXFRcURBY2tqcTR5ZkJBam12SVJRcHBNTmp3aHhyQnJPLWJpQ2dfc0RTSV9mX21xTVE4VmM1UjhaT3N3QWxNY0g2NnIxZzFnUlhtUGtGSXhTWnpWaEhkWXJwcXdIbUJXc3ZrWVhDZWhFMm9OeHBlUmFJODItREVFY3Y2RTJZSnROU3BLSlhRd0xkdzlaZzUyb2JJQW91WExDWHZ0aGMtV0w0MkdiX3o3MkNuQVp6V3BBTE41R2pVcV9uM2lpcEZGWEtMeA?oc=5",
             "source": "Ohio House of Representatives (.gov)",
             "title": "Rep. Mike Dovilla Announces Ohio Medicaid Program Integrity and Fraud Prevention Act - Ohio House of Representatives (.gov)",
             "author": ""
           },
           {
-            "text": "Governor DeWine signed a bill requiring electronic check-ins for Medicaid home health workers.",
+            "text": "Governor DeWine signed Senate Bill 162 into law, furthering healthcare regulatory measures.",
+            "link": "https://www.jdsupra.com/legalnews/client-alert-legislation-reducing-1344940/",
+            "source": "Bing: Legislative context 2",
+            "title": "Client Alert: Legislation Reducing Lookback Period for Health Insurance Recoupments Signed Into Law",
+            "author": ""
+          },
+          {
+            "text": "New legislation mandates electronic check-ins for Medicaid home health workers to improve accountability.",
             "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRGl0eXNGM3gzUElESXFiTWxzbmxOUTNnYmRpWm1uUlBKekRIbHJnZ2NVVGpMOHdZczAtMGRIbEVtUmZGLVA5TkxONFJPMGRkUmVvdkJySGEyb1pudmE5N0hURjl3WkNYdF93Z25JUVJULXBZQk55UDlzaWpndUFZM0Fyc1hpZ2hELUoyendnYjZObEt0NERzdVNEYmFrSWRtUzFteEhoc0pEeWMzWFJickxHZjgwcHdBV2R6czlIUU54bEZjSnc3ckZIMkh5ZnhvOWdVUGhQZnBpUQ?oc=5",
             "source": "The Statehouse News Bureau",
             "title": "DeWine signs bill requiring Ohio Medicaid home health workers electronically check in - The Statehouse News Bureau",
@@ -28,18 +35,18 @@
       },
       "STAKEHOLDERS": {
         "item_count": 2,
-        "critical_summary": "Ohio's healthcare landscape saw enforcement actions against two hospitals for non-compliance with price transparency regulations, while top health officials focused on publicizing individual instances of Medicaid fraud without addressing broader issues like corporate involvement.",
-        "analysis": "These developments underscore a regulatory approach that prioritizes punitive measures over systemic reform. The selective focus on individual cases rather than structural issues may signal an attempt to appear tough on fraud without confronting powerful healthcare entities, potentially undermining public trust and the efficacy of policy interventions.",
+        "critical_summary": "Ohio's healthcare landscape saw enforcement actions against two hospitals for non-compliance with price transparency regulations, while top officials focused on prosecuting individual instances of Medicaid fraud without addressing broader corporate misconduct.",
+        "analysis": "These developments underscore a fragmented approach to healthcare regulation in Ohio. The warnings to hospitals reflect a commitment to patient rights and cost clarity, but the narrow focus on individual cases of Medicaid fraud may undermine public trust by failing to address systemic issues within larger organizations.",
         "talking_points": [
           {
-            "text": "Two Ohio hospitals face warnings for failing to comply with price transparency rules.",
+            "text": "Two Ohio hospitals face warnings for non-compliance with price transparency rules.",
             "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwc0t3VU1lRGlibk1pUHVKdjlTbTlLaHdnUkRDOExBTnNMTUlHTElGNmEzYVRCaGJtRDF2YlBMelBndi04Vkw0VGJvR3dtVkJHdmRRekpjc2l5VnR1RFZFOU52U3p3N1Q0U2hkaERBbXJndw?oc=5",
             "source": "Mahoning Matters",
             "title": "2 Ohio hospitals warned for price transparency violations. Here’s what patients should know - Mahoning Matters",
             "author": ""
           },
           {
-            "text": "Health officials highlight individual Medicaid fraud cases without addressing corporate involvement.",
+            "text": "Top officials highlight individual Medicaid fraud cases, neglecting corporate involvement.",
             "link": "https://ohiocapitaljournal.com/2026/07/10/feds-ohio-republicans-focus-on-individual-cases-of-medicaid-fraud-but-what-about-corporations/",
             "source": "Ohio Capital Journal",
             "title": "Feds, Ohio Republicans focus on individual cases of Medicaid fraud, but what about corporations?",
@@ -49,18 +56,18 @@
       },
       "IMPACT": {
         "item_count": 2,
-        "critical_summary": "Ohio has seen a significant drop in health plan enrollments due to federal subsidy reductions under the Affordable Care Act (ACA), exacerbating existing issues such as limited access to mental healthcare for children due to high costs and insurance restrictions.",
-        "analysis": "The decline in ACA enrollment highlights growing dissatisfaction with federal healthcare policies, potentially influencing voter sentiment towards candidates who advocate for expanded or stable health coverage. This trend underscores a broader struggle within Ohio's healthcare system, where rural areas face particular challenges in accessing mental health services, reflecting the need for targeted policy solutions.",
+        "critical_summary": "Ohio saw a significant drop in health plan enrollments due to federal subsidy reductions under the Affordable Care Act (ACA), exacerbating challenges for residents seeking mental health services, particularly for children who face barriers such as high costs and limited provider availability.",
+        "analysis": "The decline in ACA enrollment underscores Ohio's vulnerability to federal healthcare policy changes. This trend highlights a growing tension between state needs and national healthcare frameworks, potentially impacting Governor DeWine’s efforts to secure bipartisan support for health initiatives during his reelection campaign.",
         "talking_points": [
           {
-            "text": "Ohio saw one of the largest declines in ACA health plan enrollments after federal subsidy cuts.",
+            "text": "Ohio had the largest drop in ACA plan enrollments after federal subsidy cuts.",
             "link": "https://ohiocapitaljournal.com/2026/07/09/ohio-saw-the-largest-drop-in-enrollment-after-trump-republican-affordable-care-act-cuts/",
             "source": "Ohio Capital Journal",
             "title": "Ohio saw the largest drop in enrollment after Trump/Republican Affordable Care Act cuts",
             "author": ""
           },
           {
-            "text": "High costs and insurance limitations hinder access to mental healthcare for Ohio children.",
+            "text": "High costs and provider shortages hinder mental healthcare access for Ohio children.",
             "link": "https://ohiocapitaljournal.com/2026/07/09/ohio-children-unable-to-access-mental-healthcare-because-of-insurance-costs-and-lack-of-providers/",
             "source": "Ohio Capital Journal",
             "title": "Ohio children unable to access mental healthcare because of insurance, costs, and lack of providers",
@@ -79,64 +86,70 @@
         "critical_summary": "No items in the past week.",
         "analysis": "",
         "talking_points": []
+      },
+      "LEGISLATIVE_CONTEXT": {
+        "item_count": 0,
+        "critical_summary": "No items in the past week.",
+        "analysis": "",
+        "talking_points": []
       }
     }
   },
   "30": {
-    "generated_at": "2026-07-14T14:15:17Z",
-    "window_start": "2026-06-14T14:15:17Z",
-    "window_end": "2026-07-14T14:15:17Z",
+    "generated_at": "2026-07-15T00:02:25Z",
+    "window_start": "2026-06-15T00:02:25Z",
+    "window_end": "2026-07-15T00:02:25Z",
     "window_days": 30,
     "arcs": {
       "LEGISLATIVE": {
-        "item_count": 5,
-        "critical_summary": "Rep. Mike Dovilla introduced the Ohio Medicaid Program Integrity and Fraud Prevention Act in response to recent reports of Medicaid fraud involving six Ohio providers accused of stealing over $300,000. The bill passed through the Ohio House after Governor DeWine signed a separate measure requiring electronic check-in for Medicaid home health workers.",
-        "analysis": "The legislative push highlights ongoing concerns about Medicaid integrity and fraud in Ohio. Dovilla's proactive stance on introducing anti-fraud legislation underscores his commitment to addressing systemic issues, potentially enhancing his political standing among constituents concerned with fiscal responsibility and healthcare accountability. The timing of these measures suggests a coordinated effort by the legislature and governor to address public trust issues.",
+        "item_count": 8,
+        "critical_summary": "Rep. Mike Dovilla introduced the Ohio Medicaid Program Integrity and Fraud Prevention Act to combat Medicaid fraud after reports of significant theft by providers. The House passed this act, and Governor DeWine signed a related bill requiring electronic check-in for home health workers.",
+        "analysis": "The legislative focus on Medicaid fraud prevention signals a bipartisan effort to address public concerns about waste in the healthcare system. This trend highlights the political pressure to demonstrate accountability and efficiency, especially as Ohio faces budget constraints and seeks to maintain federal funding eligibility. The actions also underscore the ongoing tension between expanding access to care and ensuring fiscal responsibility.",
         "talking_points": [
           {
-            "text": "Rep. Mike Dovilla introduced the Ohio Medicaid Program Integrity and Fraud Prevention Act in response to recent fraud reports.",
+            "text": "Rep. Dovilla introduced a bill to prevent Medicaid fraud after reports of significant theft by providers.",
             "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZ3hrUk0wbHE1dXFRcURBY2tqcTR5ZkJBam12SVJRcHBNTmp3aHhyQnJPLWJpQ2dfc0RTSV9mX21xTVE4VmM1UjhaT3N3QWxNY0g2NnIxZzFnUlhtUGtGSXhTWnpWaEhkWXJwcXdIbUJXc3ZrWVhDZWhFMm9OeHBlUmFJODItREVFY3Y2RTJZSnROU3BLSlhRd0xkdzlaZzUyb2JJQW91WExDWHZ0aGMtV0w0MkdiX3o3MkNuQVp6V3BBTE41R2pVcV9uM2lpcEZGWEtMeA?oc=5",
             "source": "Ohio House of Representatives (.gov)",
             "title": "Rep. Mike Dovilla Announces Ohio Medicaid Program Integrity and Fraud Prevention Act - Ohio House of Representatives (.gov)",
             "author": ""
           },
           {
-            "text": "The bill passed through the Ohio House, indicating strong legislative support for addressing Medicaid fraud.",
+            "text": "The Ohio House passed the Medicaid Program Integrity and Fraud Prevention Act, addressing public concerns about waste in healthcare.",
             "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR0xwUElJNDljVU4zMURSa3RYSV93R0tjUVJsZ0FINno1R3M5MXJRb3hxdWtQeVBIeHFLNnZaTkVMZVkya1BNWG5hOEo1MVZjaUJFb29udDI5VG5WalBwZ1lsY09IR0VKVkRDMk95UFF6cmxFeHhUVVZPWUZSU1pqRHh2MmxJUF9ESDF0bXgtVEhLWlJjZXZRUFJ5aDUySTBwZE5ZVUlVdndRbXVzV0xHd2xxaGxZNUJhVzZmamYwOU1VUQ?oc=5",
             "source": "Ohio House of Representatives (.gov)",
             "title": "House Passes Ohio Medicaid Program Integrity and Fraud Prevention Act - Ohio House of Representatives (.gov)",
             "author": ""
           },
           {
-            "text": "Six Ohio Medicaid providers are facing fraud charges involving over $300,000 in alleged theft.",
-            "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZVhaN0pwSXliaDRxSU1LV0FOUDcwSHJQRlhLM094cWw3UGR5UkROdGJBZVpFcW51NGhKY1EtSjZhLTAwbV9WeUJ6NnRrbGViNUttc0NPcWUwUzNQMnZ1NGh0UVlnRlNld051bms2RW5hYXJlOFBLc09xS010WU5Ta1lFZURiYXpqbXczQ3owd25vT2RVZUdYWmtfMWo2YW5hMDExV29qTHIwbm56N09BMzB3amUyTm8xSWstMmx2bEtYT1U?oc=5",
-            "source": "WSYX",
-            "title": "Six Ohio Medicaid providers charged with fraud, accused of stealing over $300,000 - WSYX",
+            "text": "Governor DeWine signed a bill requiring electronic check-in for home health workers to enhance program integrity.",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRGl0eXNGM3gzUElESXFiTWxzbmxOUTNnYmRpWm1uUlBKekRIbHJnZ2NVVGpMOHdZczAtMGRIbEVtUmZGLVA5TkxONFJPMGRkUmVvdkJySGEyb1pudmE5N0hURjl3WkNYdF93Z25JUVJULXBZQk55UDlzaWpndUFZM0Fyc1hpZ2hELUoyendnYjZObEt0NERzdVNEYmFrSWRtUzFteEhoc0pEeWMzWFJickxHZjgwcHdBV2R6czlIUU54bEZjSnc3ckZIMkh5ZnhvOWdVUGhQZnBpUQ?oc=5",
+            "source": "The Statehouse News Bureau",
+            "title": "DeWine signs bill requiring Ohio Medicaid home health workers electronically check in - The Statehouse News Bureau",
             "author": ""
           }
         ]
       },
       "STAKEHOLDERS": {
         "item_count": 5,
-        "critical_summary": "In the past month, Ohio's healthcare policy debate has seen increased scrutiny on Medicaid and hospital practices. Two hospitals received warnings for non-compliance with price transparency rules, while six Medicaid providers faced accusations of fraud. Additionally, top officials have highlighted individual cases of Medicaid fraud without addressing corporate involvement, amid concerns over a potential $33 billion reduction in Medicaid funding.",
-        "analysis": "The recent focus on healthcare fraud and compliance issues signals a shift towards stricter oversight and accountability within Ohio's healthcare system. However, the selective approach to highlighting individual cases while ignoring larger systemic issues could undermine public trust and divert attention from broader policy challenges such as budget cuts. This trend highlights potential political tensions between addressing specific instances of fraud and tackling systemic funding issues.",
+        "critical_summary": "In the past month, Ohio healthcare policy has been marked by increased scrutiny over Medicaid and hospital practices. Two hospitals received warnings for non-compliance with price transparency rules, while six Medicaid providers faced accusations of fraud. Additionally, top officials focused on individual cases of Medicaid fraud without addressing corporate involvement, amid concerns about a potential $33 billion reduction in Medicaid funding.",
+        "analysis": "The recent focus on individual instances of Medicaid fraud and hospital compliance issues highlights the state's struggle to balance accountability with broader systemic challenges. This selective approach may signal an attempt to deflect criticism from larger structural issues within the healthcare system, potentially undermining efforts to address widespread fraud and access disparities. The looming reduction in funding further complicates these efforts, raising questions about the sustainability of current policies.",
         "talking_points": [
           {
-            "text": "Two Ohio hospitals warned for violating price transparency rules.",
+            "text": "Two Ohio hospitals warned for non-compliance with price transparency rules.",
             "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwc0t3VU1lRGlibk1pUHVKdjlTbTlLaHdnUkRDOExBTnNMTUlHTElGNmEzYVRCaGJtRDF2YlBMelBndi04Vkw0VGJvR3dtVkJHdmRRekpjc2l5VnR1RFZFOU52U3p3N1Q0U2hkaERBbXJndw?oc=5",
             "source": "Mahoning Matters",
             "title": "2 Ohio hospitals warned for price transparency violations. Here’s what patients should know - Mahoning Matters",
             "author": ""
           },
           {
-            "text": "Six Medicaid providers accused of fraud, raising concerns over $33 billion reduction in funding.",
+            "text": "Six Medicaid providers accused of fraud, highlighting systemic issues in healthcare oversight.",
             "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPamlVcm9ZczFKMExLRFRkYW9pdzVXY3ZvYmZkRVJ6bHFhLVFlRjdPdFNYZVZteTQ5NGMtOHZ5VTRQT2tGcmRaZGp5bW9SNUZUbVU3SHQ1T0Jzc3dSWm5STXBaYURadkpBVktreTdWbW9aRzdfUzhaVlNkXzB0a2xud2RLNkRtcy1rZ3NwbnJzNU95ZnlHaG9tU0w1NVk?oc=5",
             "source": "Spectrum News",
             "title": "6 Ohio Medicaid providers accused of fraud - Spectrum News",
             "author": ""
           },
           {
-            "text": "Top officials highlight individual cases but ignore corporate involvement in Medicaid fraud.",
+            "text": "Top officials focus on individual cases while ignoring corporate involvement in Medicaid fraud.",
             "link": "https://ohiocapitaljournal.com/2026/07/10/feds-ohio-republicans-focus-on-individual-cases-of-medicaid-fraud-but-what-about-corporations/",
             "source": "Ohio Capital Journal",
             "title": "Feds, Ohio Republicans focus on individual cases of Medicaid fraud, but what about corporations?",
@@ -146,25 +159,25 @@
       },
       "IMPACT": {
         "item_count": 3,
-        "critical_summary": "Ohio has seen a significant drop in health plan enrollments due to federal subsidy reductions under the ACA, while many children face barriers to mental healthcare due to high costs and limited provider availability. Additionally, ongoing uncertainty regarding Medicaid policies impacts vulnerable populations across the state.",
-        "analysis": "The decline in ACA enrollment coupled with challenges in accessing mental health services highlights systemic issues within Ohio's healthcare infrastructure. This situation underscores a broader trend of federal-state tensions over healthcare policy, potentially harming Governor DeWine’s reelection campaign by highlighting his administration's inability to stabilize and improve access to essential care.",
+        "critical_summary": "Ohio has seen a significant drop in health plan enrollments due to federal subsidy reductions under the ACA, while numerous barriers such as high costs and limited provider availability hinder access to mental healthcare for children. These issues are exacerbated by ongoing uncertainty regarding Medicaid policy.",
+        "analysis": "The decline in ACA enrollment coupled with challenges in accessing mental health services highlights systemic weaknesses in Ohio's healthcare infrastructure. This situation underscores a broader struggle between federal policies and local needs, potentially impacting voter trust and political support for current healthcare initiatives. The ongoing Medicaid policy uncertainty further complicates efforts to stabilize the state’s healthcare landscape.",
         "talking_points": [
           {
-            "text": "Ohio saw the biggest ACA enrollment drop post-federal subsidy cuts.",
+            "text": "Ohio saw the biggest ACA enrollment drop due to subsidy cuts.",
             "link": "https://ohiocapitaljournal.com/2026/07/09/ohio-saw-the-largest-drop-in-enrollment-after-trump-republican-affordable-care-act-cuts/",
             "source": "Ohio Capital Journal",
             "title": "Ohio saw the largest drop in enrollment after Trump/Republican Affordable Care Act cuts",
             "author": ""
           },
           {
-            "text": "High costs and provider scarcity hinder child mental health access.",
+            "text": "High costs and limited providers hinder mental health access for children.",
             "link": "https://ohiocapitaljournal.com/2026/07/09/ohio-children-unable-to-access-mental-healthcare-because-of-insurance-costs-and-lack-of-providers/",
             "source": "Ohio Capital Journal",
             "title": "Ohio children unable to access mental healthcare because of insurance, costs, and lack of providers",
             "author": ""
           },
           {
-            "text": "Medicaid policy uncertainty impacts those in need.",
+            "text": "Medicaid policy uncertainty affects those in need of healthcare support.",
             "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMndKb1UxakpyQlZ3Y1NPdXhpNTExYVFzVi1wX3NMQ08yY25QLXJyWHBIQWJ2SlQ2WTBlZ0YyWFBCWXRxNEdGMDh0U19ndXZUZDFlQWdVSjlObnE0OFJrbWZvMWpWemRxaFozdjJFdkw5YzM5d244NGg5Rnc5ODBlQ1lBY0hzcGdqbXpibzl4Z080dkJqNTVucjFzU0J1bi0xUDgzdTdaZzNyanRRTm5saHR4N01TZzZHaHVGNXRJQ2laaVU?oc=5",
             "source": "Cleveland.com",
             "title": "Ohio Medicaid policy uncertainty has real consequences for real people in need - Cleveland.com",
@@ -173,12 +186,26 @@
         ]
       },
       "POLITICS": {
+        "item_count": 1,
+        "critical_summary": "Democrats in Ohio are pressuring Governor Mike DeWine to veto legislation related to submetering, which is seen as a threat to healthcare affordability and access.",
+        "analysis": "This pressure from Democrats highlights the ongoing tension between political parties over healthcare policy in Ohio. It signals that Democrats view this bill as detrimental to their constituents' interests, potentially impacting Governor DeWine's approval among key voter groups ahead of upcoming elections.",
+        "talking_points": [
+          {
+            "text": "Democrats urge DeWine to veto submetering bill to protect healthcare affordability and access.",
+            "link": "https://ohiocapitaljournal.com/2026/06/18/ohio-democrats-urge-gov-dewine-to-veto-submetering-bill/",
+            "source": "Ohio Capital Journal",
+            "title": "Ohio Democrats urge Gov. DeWine to veto submetering bill - Ohio Capital Journal",
+            "author": ""
+          }
+        ]
+      },
+      "MEDIA": {
         "item_count": 0,
         "critical_summary": "No items in the past 30 days.",
         "analysis": "",
         "talking_points": []
       },
-      "MEDIA": {
+      "LEGISLATIVE_CONTEXT": {
         "item_count": 0,
         "critical_summary": "No items in the past 30 days.",
         "analysis": "",

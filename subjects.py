@@ -320,6 +320,47 @@ SUBJECTS = {
     },
 }
 
+# ── Legislative Context: a shared arc added to every subject ────────────────
+# Grounded background/explainer material (how the relevant legislative body
+# or process works, Ohio Revised Code context, LSC analyses) as opposed to
+# news events about the subject's own specific actions. Real retrieved
+# sources via search feeds — not LLM-generated, so it carries the same
+# grounding guarantee as everything else in the pipeline.
+LEGISLATIVE_CONTEXT_ARC = "LEGISLATIVE_CONTEXT"
+
+_LEGISLATIVE_CONTEXT_QUERIES = {
+    "kaptur":     ["Ohio congressional delegation explainer", "Ohio redistricting explainer",
+                    "Ohio congressional map explainer"],
+    "brown":      ["Ohio US Senate race explainer", "Ohio Senate election process explainer"],
+    "acton":      ["Ohio governor race explainer", "Ohio General Assembly explainer"],
+    "healthcare": ["Ohio General Assembly explainer", "Ohio Revised Code health",
+                    "Ohio Medicaid policy explainer"],
+    "sjr10":      ["Ohio General Assembly explainer", "Ohio joint resolution process explainer",
+                    "Ohio voter ID law explainer"],
+}
+
+for _slug, _subject in SUBJECTS.items():
+    _subject["arcs"].insert(-1, LEGISLATIVE_CONTEXT_ARC)  # before UNMAPPED
+    _subject["arc_label"][LEGISLATIVE_CONTEXT_ARC] = "Legislative Context"
+    _subject["arc_color"][LEGISLATIVE_CONTEXT_ARC] = "#4a6572"
+    _subject["arc_guide"] += (
+        "\n  LEGISLATIVE_CONTEXT   - general explainer/background material about the relevant "
+        "legislative body, process, or Ohio political institutions — not news about this "
+        "subject's own specific actions"
+    )
+    _subject["arc_fallback_rules"].append((
+        LEGISLATIVE_CONTEXT_ARC,
+        r"\b(explainer|how (congress|the (ohio )?(senate|house|general assembly)) works|"
+        r"committee process|legislative process|ohio revised code|general assembly)\b",
+    ))
+    for _i, _q in enumerate(_LEGISLATIVE_CONTEXT_QUERIES.get(_slug, []), start=1):
+        _qenc = _q.replace(" ", "+")
+        _subject["feeds"][f"GNews: Legislative context {_i}"] = _gnews(_qenc)
+        _subject["feeds"][f"Bing: Legislative context {_i}"] = _bing(_qenc)
+
+del _slug, _subject, _i, _q, _qenc
+
+
 SUBJECT_GROUPS = {
     "politicians": ["kaptur", "brown", "acton"],
     "issues": ["healthcare", "sjr10"],

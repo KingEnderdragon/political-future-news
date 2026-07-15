@@ -23,7 +23,7 @@ ITEMS_PER_ARC_CAP = 25
 # subject's arcs (subjects.py, "arc_label" dict order) map positionally onto
 # these five slots, so the same validated light/dark palette works for all
 # of them without a combinatorial explosion of per-subject CSS variables.
-SLOT_COUNT = 5
+SLOT_COUNT = 6
 
 
 def parse_dt(s: str) -> datetime:
@@ -140,6 +140,16 @@ def render_feed_item(item: dict, subject: dict, slots: dict[str, int]) -> str:
     analysis_html = f'<p class="feed-analysis">{analysis}</p>' if analysis else ""
     byline = f"{author}, {source}" if author else source
     citation = f'&ldquo;{title}&rdquo; &mdash; {byline}' if title else byline
+
+    leg_note = item.get("legislative_note", "")
+    leg_html = ""
+    if leg_note and leg_note != "No clear connection":
+        leg_html = f"""
+          <div class="leg-note">
+            <span class="leg-note-label">&#9888; Experimental &mdash; legislative context, unverified, may hallucinate</span>
+            <p>{escape(leg_note)}</p>
+          </div>"""
+
     return f"""
         <li class="feed-item feed-item-{border_class}" data-arc="{arc}">
           <div class="feed-item-head">
@@ -150,6 +160,7 @@ def render_feed_item(item: dict, subject: dict, slots: dict[str, int]) -> str:
           <p class="feed-summary">{conflict_mark}{summary}</p>
           {analysis_html}
           <p class="feed-citation">{citation}</p>
+          {leg_html}
         </li>"""
 
 
@@ -376,7 +387,9 @@ HTML_TEMPLATE = """<title>KapturFlow — Ohio Political News Intelligence</title
   --c-slot2: #2f7a52; --c-slot2-soft: #e1f0e6;
   --c-slot3: #a13d3d; --c-slot3-soft: #f3e2e2;
   --c-slot4: #b06a24; --c-slot4-soft: #f4e9db;
+  --c-slot5: #4a6572; --c-slot5-soft: #e2eaec;
   --c-other: #6b7570;  --c-other-soft: #e6e9e6;
+  --warn-ink: #8a5a1c; --warn-bg: #fdf3e3; --warn-border: #d3912b;
 
   --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
   --font-body: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
@@ -398,7 +411,9 @@ HTML_TEMPLATE = """<title>KapturFlow — Ohio Political News Intelligence</title
     --c-slot2: #6fbf8f; --c-slot2-soft: #1c2c22;
     --c-slot3: #d68080; --c-slot3-soft: #2f2020;
     --c-slot4: #dba05a; --c-slot4-soft: #2f2619;
+    --c-slot5: #8fa8b3; --c-slot5-soft: #212c30;
     --c-other: #9aa6a0;  --c-other-soft: #23282a;
+    --warn-ink: #e0b978; --warn-bg: #2e2415; --warn-border: #a87a2c;
   }}
 }}
 
@@ -416,7 +431,9 @@ HTML_TEMPLATE = """<title>KapturFlow — Ohio Political News Intelligence</title
   --c-slot2: #6fbf8f; --c-slot2-soft: #1c2c22;
   --c-slot3: #d68080; --c-slot3-soft: #2f2020;
   --c-slot4: #dba05a; --c-slot4-soft: #2f2619;
+  --c-slot5: #8fa8b3; --c-slot5-soft: #212c30;
   --c-other: #9aa6a0;  --c-other-soft: #23282a;
+  --warn-ink: #e0b978; --warn-bg: #2e2415; --warn-border: #a87a2c;
 }}
 
 :root[data-theme="light"] {{
@@ -433,7 +450,9 @@ HTML_TEMPLATE = """<title>KapturFlow — Ohio Political News Intelligence</title
   --c-slot2: #2f7a52; --c-slot2-soft: #e1f0e6;
   --c-slot3: #a13d3d; --c-slot3-soft: #f3e2e2;
   --c-slot4: #b06a24; --c-slot4-soft: #f4e9db;
+  --c-slot5: #4a6572; --c-slot5-soft: #e2eaec;
   --c-other: #6b7570;  --c-other-soft: #e6e9e6;
+  --warn-ink: #8a5a1c; --warn-bg: #fdf3e3; --warn-border: #d3912b;
 }}
 
 * {{ box-sizing: border-box; }}
@@ -739,6 +758,7 @@ section.block {{
 .chip-slot2 {{ color: var(--c-slot2); background: var(--c-slot2-soft); }}
 .chip-slot3 {{ color: var(--c-slot3); background: var(--c-slot3-soft); }}
 .chip-slot4 {{ color: var(--c-slot4); background: var(--c-slot4-soft); }}
+.chip-slot5 {{ color: var(--c-slot5); background: var(--c-slot5-soft); }}
 .chip-other {{ color: var(--c-other); background: var(--c-other-soft); }}
 
 /* ── feed tabs ────────────────────────────────────────────────────── */
@@ -788,6 +808,7 @@ section.block {{
 .feed-item-slot2 {{ border-left-color: var(--c-slot2); }}
 .feed-item-slot3 {{ border-left-color: var(--c-slot3); }}
 .feed-item-slot4 {{ border-left-color: var(--c-slot4); }}
+.feed-item-slot5 {{ border-left-color: var(--c-slot5); }}
 .feed-item-other {{ border-left-color: var(--c-other); }}
 
 .feed-item-head {{
@@ -832,6 +853,28 @@ section.block {{
   margin: 0;
   font-size: 0.74rem;
   color: var(--ink-muted);
+}}
+
+.leg-note {{
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: var(--warn-bg);
+  border-left: 2px solid var(--warn-border);
+}}
+
+.leg-note-label {{
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--warn-ink);
+}}
+
+.leg-note p {{
+  margin: 0.2rem 0 0;
+  font-size: 0.82rem;
+  color: var(--warn-ink);
 }}
 
 .tab-label:focus-visible, label:focus-visible {{
