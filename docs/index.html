@@ -248,12 +248,16 @@ body {
 #tab-other-acton:checked ~ .feed-list-acton .feed-item:not([data-arc="CAMPAIGN"]):not([data-arc="HEALTH_POLICY"]):not([data-arc="ENDORSEMENTS"]):not([data-arc="MEDIA"]):not([data-arc="RECORD"]):not([data-arc="LEGISLATIVE_CONTEXT"]) { display: block; }
 #person-healthcare:checked ~ .subject-panes-issues #pane-healthcare { display: block; }
 #person-sjr10:checked ~ .subject-panes-issues #pane-sjr10 { display: block; }
+#person-covid19:checked ~ .subject-panes-issues #pane-covid19 { display: block; }
 #person-healthcare:checked ~ .subject-toggle-issues label[for="person-healthcare"] { background: var(--paper-raised); color: var(--ink); }
 #person-sjr10:checked ~ .subject-toggle-issues label[for="person-sjr10"] { background: var(--paper-raised); color: var(--ink); }
+#person-covid19:checked ~ .subject-toggle-issues label[for="person-covid19"] { background: var(--paper-raised); color: var(--ink); }
 #win-7-healthcare:checked ~ #digest-7d-healthcare { display: block; }
 #win-30-healthcare:checked ~ #digest-30d-healthcare { display: block; }
 #win-7-sjr10:checked ~ #digest-7d-sjr10 { display: block; }
 #win-30-sjr10:checked ~ #digest-30d-sjr10 { display: block; }
+#win-7-covid19:checked ~ #digest-7d-covid19 { display: block; }
+#win-30-covid19:checked ~ #digest-30d-covid19 { display: block; }
 #tab-legislative-healthcare:checked ~ .feed-list-healthcare .feed-item { display: none; }
 #tab-legislative-healthcare:checked ~ .feed-list-healthcare .feed-item[data-arc="LEGISLATIVE"] { display: block; }
 #tab-stakeholders-healthcare:checked ~ .feed-list-healthcare .feed-item { display: none; }
@@ -284,6 +288,22 @@ body {
 #tab-legislative_context-sjr10:checked ~ .feed-list-sjr10 .feed-item[data-arc="LEGISLATIVE_CONTEXT"] { display: block; }
 #tab-other-sjr10:checked ~ .feed-list-sjr10 .feed-item { display: none; }
 #tab-other-sjr10:checked ~ .feed-list-sjr10 .feed-item:not([data-arc="LEGISLATIVE"]):not([data-arc="STAKEHOLDERS"]):not([data-arc="POLITICIAN_STATEMENTS"]):not([data-arc="IMPACT"]):not([data-arc="POLITICS"]):not([data-arc="MEDIA"]):not([data-arc="LEGISLATIVE_CONTEXT"]) { display: block; }
+#tab-timeline-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-timeline-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="TIMELINE"] { display: block; }
+#tab-response_policy-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-response_policy-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="RESPONSE_POLICY"] { display: block; }
+#tab-acton_sentiment-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-acton_sentiment-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="ACTON_SENTIMENT"] { display: block; }
+#tab-impact-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-impact-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="IMPACT"] { display: block; }
+#tab-politics-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-politics-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="POLITICS"] { display: block; }
+#tab-media-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-media-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="MEDIA"] { display: block; }
+#tab-legislative_context-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-legislative_context-covid19:checked ~ .feed-list-covid19 .feed-item[data-arc="LEGISLATIVE_CONTEXT"] { display: block; }
+#tab-other-covid19:checked ~ .feed-list-covid19 .feed-item { display: none; }
+#tab-other-covid19:checked ~ .feed-list-covid19 .feed-item:not([data-arc="TIMELINE"]):not([data-arc="RESPONSE_POLICY"]):not([data-arc="ACTON_SENTIMENT"]):not([data-arc="IMPACT"]):not([data-arc="POLITICS"]):not([data-arc="MEDIA"]):not([data-arc="LEGISLATIVE_CONTEXT"]) { display: block; }
 
 .subject-pane { display: none; }
 
@@ -633,7 +653,7 @@ footer.colophon strong { color: var(--c-slot3); }
   <header class="masthead">
     <div class="masthead-eyebrow">KapturFlow &middot; Ohio Political News Intelligence</div>
     <p class="masthead-tagline">Local-model-generated summaries, analysis, and talking points &mdash; switch groups and subjects with the toggles below.</p>
-    <p class="snapshot-note">This is a static snapshot, not a live feed &mdash; it reflects the data available at generation time (Jul 15, 2026 &middot; 22:38 UTC) and won't update on its own.</p>
+    <p class="snapshot-note">This is a static snapshot, not a live feed &mdash; it reflects the data available at generation time (Jul 17, 2026 &middot; 20:35 UTC) and won't update on its own.</p>
   </header>
 
   <input type="radio" name="group" id="group-politicians" checked>
@@ -656,8 +676,8 @@ footer.colophon strong { color: var(--c-slot3); }
         <h1>Rep. Marcy Kaptur</h1>
         <p class="masthead-sub">U.S. House, Ohio&#x27;s 9th District</p>
         <div class="masthead-meta">
-          <span>Snapshot generated <strong>Jul 15, 2026 &middot; 22:38 UTC</strong></span>
-          <span><strong>413</strong> items tracked</span>
+          <span>Snapshot generated <strong>Jul 17, 2026 &middot; 20:35 UTC</strong></span>
+          <span><strong>416</strong> items tracked</span>
           <span><strong>168</strong> shown below</span>
         </div>
       </div>
@@ -837,13 +857,13 @@ footer.colophon strong { color: var(--c-slot3); }
 <input type="radio" name="feedtab-kaptur" id="tab-legislative_context-kaptur">
 <input type="radio" name="feedtab-kaptur" id="tab-other-kaptur">
         <div class="feed-tabs">
-          <label for="tab-all-kaptur" class="tab-label">All <span class="tab-count">413</span></label>
+          <label for="tab-all-kaptur" class="tab-label">All <span class="tab-count">416</span></label>
 <label for="tab-legislation-kaptur" class="tab-label">Legislation <span class="tab-count">28</span></label>
 <label for="tab-committee-kaptur" class="tab-label">Committee <span class="tab-count">18</span></label>
-<label for="tab-district-kaptur" class="tab-label">District <span class="tab-count">66</span></label>
+<label for="tab-district-kaptur" class="tab-label">District <span class="tab-count">68</span></label>
 <label for="tab-campaign-kaptur" class="tab-label">Campaign <span class="tab-count">109</span></label>
 <label for="tab-media-kaptur" class="tab-label">Media <span class="tab-count">35</span></label>
-<label for="tab-legislative_context-kaptur" class="tab-label">Legislative Context <span class="tab-count">89</span></label>
+<label for="tab-legislative_context-kaptur" class="tab-label">Legislative Context <span class="tab-count">90</span></label>
 <label for="tab-other-kaptur" class="tab-label">Other <span class="tab-count">68</span></label>
         </div>
         <ul class="feed-list feed-list-kaptur">
@@ -1798,6 +1818,18 @@ footer.colophon strong { color: var(--c-slot3); }
           
         </li>
 
+        <li class="feed-item feed-item-slot5" data-arc="LEGISLATIVE_CONTEXT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot5">Legislative Context</span>
+            <time class="feed-time">Apr 22, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">Sandusky Register</span>
+          </div>
+          <p class="feed-summary">A crypto lobbying group is targeting Rep. Marcy Kaptur.</p>
+          <p class="feed-analysis">This indicates the growing influence of cryptocurrency interests in Washington and their efforts to engage with key legislators like Kaptur.</p>
+          <p class="feed-citation">&ldquo;Crypto lobbying group targets Kaptur - Sandusky Register&rdquo; &mdash; Sandusky Register</p>
+          
+        </li>
+
         <li class="feed-item feed-item-other" data-arc="UNMAPPED">
           <div class="feed-item-head">
             <span class="chip chip-sm chip-other">Other</span>
@@ -2645,18 +2677,6 @@ footer.colophon strong { color: var(--c-slot3); }
           </div>
         </li>
 
-        <li class="feed-item feed-item-slot5" data-arc="LEGISLATIVE_CONTEXT">
-          <div class="feed-item-head">
-            <span class="chip chip-sm chip-slot5">Legislative Context</span>
-            <time class="feed-time">May 27, 2025 &middot; 07:00 UTC</time>
-            <span class="feed-source">Georgetown University</span>
-          </div>
-          <p class="feed-summary">Georgetown University explains Medicaid and CHIP cuts in the House-passed reconciliation bill.</p>
-          <p class="feed-analysis">This analysis provides crucial context for understanding potential impacts of proposed federal healthcare changes on vulnerable populations.</p>
-          <p class="feed-citation">&ldquo;Medicaid and CHIP Cuts in the House-Passed Reconciliation Bill Explained – Center For Children and Families - Georgetown University&rdquo; &mdash; Georgetown University</p>
-          
-        </li>
-
         <li class="feed-item feed-item-slot1" data-arc="COMMITTEE">
           <div class="feed-item-head">
             <span class="chip chip-sm chip-slot1">Committee</span>
@@ -2991,7 +3011,7 @@ footer.colophon strong { color: var(--c-slot3); }
         <h1>Sherrod Brown</h1>
         <p class="masthead-sub">Ohio Democrat, former U.S. Senator</p>
         <div class="masthead-meta">
-          <span>Snapshot generated <strong>Jul 15, 2026 &middot; 22:38 UTC</strong></span>
+          <span>Snapshot generated <strong>Jul 17, 2026 &middot; 20:35 UTC</strong></span>
           <span><strong>235</strong> items tracked</span>
           <span><strong>126</strong> shown below</span>
         </div>
@@ -4719,7 +4739,7 @@ footer.colophon strong { color: var(--c-slot3); }
         <h1>Dr. Amy Acton</h1>
         <p class="masthead-sub">Former Ohio Dept. of Health Director</p>
         <div class="masthead-meta">
-          <span>Snapshot generated <strong>Jul 15, 2026 &middot; 22:38 UTC</strong></span>
+          <span>Snapshot generated <strong>Jul 17, 2026 &middot; 20:35 UTC</strong></span>
           <span><strong>231</strong> items tracked</span>
           <span><strong>103</strong> shown below</span>
         </div>
@@ -6189,9 +6209,9 @@ footer.colophon strong { color: var(--c-slot3); }
     </section>
     </div></section>
 <section class="group-pane" id="grouppane-issues">
-    <input type="radio" name="subject-issues" id="person-healthcare" checked><input type="radio" name="subject-issues" id="person-sjr10" >
+    <input type="radio" name="subject-issues" id="person-healthcare" checked><input type="radio" name="subject-issues" id="person-sjr10" ><input type="radio" name="subject-issues" id="person-covid19" >
     <div class="subject-toggle subject-toggle-issues">
-      <label for="person-healthcare" class="subject-label">Healthcare</label><label for="person-sjr10" class="subject-label">SJR10</label>
+      <label for="person-healthcare" class="subject-label">Healthcare</label><label for="person-sjr10" class="subject-label">SJR10</label><label for="person-covid19" class="subject-label">COVID-19</label>
     </div>
     <div class="subject-panes subject-panes-issues">
       
@@ -6200,7 +6220,7 @@ footer.colophon strong { color: var(--c-slot3); }
         <h1>Healthcare</h1>
         <p class="masthead-sub">Ohio healthcare policy</p>
         <div class="masthead-meta">
-          <span>Snapshot generated <strong>Jul 15, 2026 &middot; 22:38 UTC</strong></span>
+          <span>Snapshot generated <strong>Jul 17, 2026 &middot; 20:35 UTC</strong></span>
           <span><strong>169</strong> items tracked</span>
           <span><strong>110</strong> shown below</span>
         </div>
@@ -7842,7 +7862,7 @@ footer.colophon strong { color: var(--c-slot3); }
         <h1>SJR10</h1>
         <p class="masthead-sub">Ohio Senate Joint Resolution 10 &amp; Voter ID</p>
         <div class="masthead-meta">
-          <span>Snapshot generated <strong>Jul 15, 2026 &middot; 22:38 UTC</strong></span>
+          <span>Snapshot generated <strong>Jul 17, 2026 &middot; 20:35 UTC</strong></span>
           <span><strong>121</strong> items tracked</span>
           <span><strong>82</strong> shown below</span>
         </div>
@@ -9150,6 +9170,899 @@ footer.colophon strong { color: var(--c-slot3); }
           <p class="feed-summary">ACLU provides overview of Ohio&#x27;s voter purge case before Supreme Court.</p>
           <p class="feed-analysis">Highlights potential impact on voting rights and election integrity in Ohio.</p>
           <p class="feed-citation">&ldquo;Ohio’s Voter Purge Goes to the Supreme Court: What You Need to Know - American Civil Liberties Union&rdquo; &mdash; American Civil Liberties Union</p>
+          
+        </li>
+        </ul>
+      </section>
+    </section>
+    <section class="subject-pane" id="pane-covid19">
+      <div class="pane-head">
+        <h1>COVID-19</h1>
+        <p class="masthead-sub">Ohio&#x27;s COVID-19 experience &amp; the Acton legacy debate</p>
+        <div class="masthead-meta">
+          <span>Snapshot generated <strong>Jul 17, 2026 &middot; 20:35 UTC</strong></span>
+          <span><strong>61</strong> items tracked</span>
+          <span><strong>57</strong> shown below</span>
+        </div>
+      </div>
+
+      <section class="block">
+        <div class="block-head">
+          <h2>Digest &mdash; critical summary &amp; analysis by category</h2>
+          <span class="block-note">By arc</span>
+        </div>
+        <input type="radio" name="digestwin-covid19" id="win-7-covid19" checked>
+        <input type="radio" name="digestwin-covid19" id="win-30-covid19">
+        <div class="window-toggle">
+          <label for="win-7-covid19">Last 7 days</label>
+          <label for="win-30-covid19">Last 30 days</label>
+        </div>
+        
+      <section class="digest-pane" id="digest-7d-covid19">
+        <p class="digest-meta">Generated Jul 17, 2026 &middot; 20:35 UTC &nbsp;&middot;&nbsp; past week</p>
+        <div class="digest-grid">
+        <article class="digest-card" data-arc="TIMELINE">
+          <header class="digest-card-head">
+            <span class="chip chip-slot0">Timeline</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="RESPONSE_POLICY">
+          <header class="digest-card-head">
+            <span class="chip chip-slot1">Response &amp; Policy</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="ACTON_SENTIMENT">
+          <header class="digest-card-head">
+            <span class="chip chip-slot2">Acton Sentiment</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="IMPACT">
+          <header class="digest-card-head">
+            <span class="chip chip-slot3">Impact</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="POLITICS">
+          <header class="digest-card-head">
+            <span class="chip chip-slot4">Politics</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="MEDIA">
+          <header class="digest-card-head">
+            <span class="chip chip-slot5">Media</span>
+            <span class="digest-count">1 item</span>
+          </header>
+          <p class="digest-summary">Dr. Bruce Vanderhoff, Ohio’s current health director, addressed a recent cyclosporiasis outbreak during a press conference, emphasizing preventive measures to control the spread of the disease.</p>
+          <p class="digest-analysis">This development underscores the continuity in public health communication strategies under different administrations and highlights ongoing challenges in managing infectious diseases beyond just COVID-19. It signals an evolving focus on various health threats as Ohio transitions from pandemic response to broader public health concerns.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Dr. Vanderhoff discussed cyclosporiasis outbreak prevention measures. <span class="tp-cite">&ldquo;Cyclosporiasis Outbreak Explained | Ohio&#x27;s top doctor explains how to protect yourself - WTVG&rdquo; &mdash; WTVG</span></li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="LEGISLATIVE_CONTEXT">
+          <header class="digest-card-head">
+            <span class="chip chip-slot0">Legislative Context</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past week.</p>
+          
+          
+        </article></div>
+      </section>
+        
+      <section class="digest-pane" id="digest-30d-covid19">
+        <p class="digest-meta">Generated Jul 17, 2026 &middot; 20:35 UTC &nbsp;&middot;&nbsp; past 30 days</p>
+        <div class="digest-grid">
+        <article class="digest-card" data-arc="TIMELINE">
+          <header class="digest-card-head">
+            <span class="chip chip-slot0">Timeline</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="RESPONSE_POLICY">
+          <header class="digest-card-head">
+            <span class="chip chip-slot1">Response &amp; Policy</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="ACTON_SENTIMENT">
+          <header class="digest-card-head">
+            <span class="chip chip-slot2">Acton Sentiment</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="IMPACT">
+          <header class="digest-card-head">
+            <span class="chip chip-slot3">Impact</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="POLITICS">
+          <header class="digest-card-head">
+            <span class="chip chip-slot4">Politics</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article>
+
+        <article class="digest-card" data-arc="MEDIA">
+          <header class="digest-card-head">
+            <span class="chip chip-slot5">Media</span>
+            <span class="digest-count">1 item</span>
+          </header>
+          <p class="digest-summary">Dr. Amy Acton, Ohio&#x27;s former health director, recently addressed a cyclosporiasis outbreak, emphasizing preventive measures to control its spread.</p>
+          <p class="digest-analysis">This event highlights the ongoing public health challenges faced by Ohio despite the initial successes of Dr. Acton and Governor DeWine during the early stages of the pandemic. It underscores the need for sustained attention and resources in managing emerging health threats, which could influence voter perceptions regarding long-term healthcare policy priorities.</p>
+          
+          <div class="talking-points">
+            <span class="tp-label">Talking points</span>
+            <ul><li>Dr. Amy Acton discussed preventive measures against cyclosporiasis outbreak. <span class="tp-cite">&ldquo;Cyclosporiasis Outbreak Explained | Ohio&#x27;s top doctor explains how to protect yourself - WTVG&rdquo; &mdash; WTVG</span></li></ul>
+          </div>
+        </article>
+
+        <article class="digest-card" data-arc="LEGISLATIVE_CONTEXT">
+          <header class="digest-card-head">
+            <span class="chip chip-slot0">Legislative Context</span>
+            <span class="digest-count">0 items</span>
+          </header>
+          <p class="digest-summary">No items in the past 30 days.</p>
+          
+          
+        </article></div>
+      </section>
+      </section>
+
+      <section class="block">
+        <div class="block-head">
+          <h2>Live feed</h2>
+          <span class="block-note">Newest first</span>
+        </div>
+        <input type="radio" name="feedtab-covid19" id="tab-all-covid19" checked>
+<input type="radio" name="feedtab-covid19" id="tab-timeline-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-response_policy-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-acton_sentiment-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-impact-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-politics-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-media-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-legislative_context-covid19">
+<input type="radio" name="feedtab-covid19" id="tab-other-covid19">
+        <div class="feed-tabs">
+          <label for="tab-all-covid19" class="tab-label">All <span class="tab-count">61</span></label>
+<label for="tab-timeline-covid19" class="tab-label">Timeline <span class="tab-count">8</span></label>
+<label for="tab-response_policy-covid19" class="tab-label">Response &amp; Policy <span class="tab-count">4</span></label>
+<label for="tab-acton_sentiment-covid19" class="tab-label">Acton Sentiment <span class="tab-count">7</span></label>
+<label for="tab-impact-covid19" class="tab-label">Impact <span class="tab-count">7</span></label>
+<label for="tab-politics-covid19" class="tab-label">Politics <span class="tab-count">4</span></label>
+<label for="tab-media-covid19" class="tab-label">Media <span class="tab-count">1</span></label>
+<label for="tab-legislative_context-covid19" class="tab-label">Legislative Context <span class="tab-count">1</span></label>
+<label for="tab-other-covid19" class="tab-label">Other <span class="tab-count">29</span></label>
+        </div>
+        <ul class="feed-list feed-list-covid19">
+          
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Jul 16, 2026 &middot; 19:50 UTC</time>
+            <span class="feed-source">liveaction.org</span>
+          </div>
+          <p class="feed-summary">Planned Parenthood sues the Ohio Department of Health.</p>
+          <p class="feed-analysis">The lawsuit is unrelated to pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Planned Parenthood sues Ohio Department of Health - liveaction.org&rdquo; &mdash; liveaction.org</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot5" data-arc="MEDIA">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot5">Media</span>
+            <time class="feed-time">Jul 13, 2026 &middot; 20:33 UTC</time>
+            <span class="feed-source">WTVG</span>
+          </div>
+          <p class="feed-summary">Ohio&#x27;s top doctor discusses cyclosporiasis outbreak and prevention measures.</p>
+          <p class="feed-analysis">Provides public health guidance during an outbreak, highlighting the ongoing role of medical officials in addressing new health concerns.</p>
+          <p class="feed-citation">&ldquo;Cyclosporiasis Outbreak Explained | Ohio&#x27;s top doctor explains how to protect yourself - WTVG&rdquo; &mdash; WTVG</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">May 27, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">Spectrum News</span>
+          </div>
+          <p class="feed-summary">Ohio health officials have completed rabies bait drops.</p>
+          <p class="feed-analysis">This event is unrelated to Ohio&#x27;s COVID-19 pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Ohio health officials complete rabies bait drops - Spectrum News&rdquo; &mdash; Spectrum News</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">May 20, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">Ohio University</span>
+          </div>
+          <p class="feed-summary">Ohio University AI faculty discuss the concept of &#x27;AI slop&#x27;.</p>
+          <p class="feed-analysis">The article is unrelated to Ohio&#x27;s COVID-19 pandemic response and does not fit any specified arc.</p>
+          <p class="feed-citation">&ldquo;What is ‘AI slop’: OHIO AI faculty experts explain - Ohio University&rdquo; &mdash; Ohio University</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">May 14, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKEF</span>
+          </div>
+          <p class="feed-summary">FEMA awards Ohio $372 million for pandemic recovery.</p>
+          <p class="feed-analysis">This funding reflects the significant economic impact of COVID-19 on Ohio and supports state recovery efforts.</p>
+          <p class="feed-citation">&ldquo;FEMA awards $372 million to reimburse Ohio COVID-19 recovery efforts - WKEF&rdquo; &mdash; WKEF</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">May 05, 2026 &middot; 07:00 UTC</time>
+            <span class="feed-source">Al Jazeera</span>
+          </div>
+          <p class="feed-summary">Provides information about upcoming Ohio primary election.</p>
+          <p class="feed-analysis">Unrelated to pandemic response or public health measures.</p>
+          <p class="feed-citation">&ldquo;What to know ahead of the Ohio primary election - Al Jazeera&rdquo; &mdash; Al Jazeera</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Mar 30, 2026 &middot; 09:51 UTC</time>
+            <span class="feed-source">Bing: Legislative context 3</span>
+          </div>
+          <p class="feed-summary">Ohio is one of the states where the &quot;Cicada&quot; COVID-19 variant has been detected in 2026.</p>
+          <p class="feed-analysis">This article discusses a future scenario and does not provide relevant information about Ohio&#x27;s past or current pandemic response.</p>
+          <p class="feed-citation">&ldquo;&#x27;Cicada&#x27; COVID variant found in Ohio. What to do if you have it&rdquo; &mdash; Bing: Legislative context 3</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Feb 17, 2026 &middot; 08:00 UTC</time>
+            <span class="feed-source">Ohio University</span>
+          </div>
+          <p class="feed-summary">An OHIO faculty member studies the link between social media use and loneliness among college students.</p>
+          <p class="feed-analysis">The study is unrelated to Ohio&#x27;s pandemic response or public health measures.</p>
+          <p class="feed-citation">&ldquo;OHIO faculty member leads study finding that college students who spend hours on social media are more likely to be lonely - Ohio University&rdquo; &mdash; Ohio University</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Sep 02, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">Court News Ohio (.gov)</span>
+          </div>
+          <p class="feed-summary">State must recalculate Medicaid payments to nursing homes.</p>
+          <p class="feed-analysis">This decision is unrelated to the pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;State Must Recalculate Medicaid Payments to Nursing Homes - Court News Ohio (.gov)&rdquo; &mdash; Court News Ohio (.gov)</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Jul 16, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">WOUB Public Media -</span>
+          </div>
+          <p class="feed-summary">Southeast Ohio law enforcement officers are dealing with a recurring mental health crisis.</p>
+          <p class="feed-analysis">This issue is unrelated to the state&#x27;s pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Southeast Ohio law enforcement officers face a ‘revolving door’ mental health crisis - WOUB Public Media -&rdquo; &mdash; WOUB Public Media -</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Jun 05, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">State health director declares Ohio measles outbreak over but warns of rising whooping cough cases.</p>
+          <p class="feed-analysis">This article is unrelated to the COVID-19 pandemic and focuses on other public health issues, making it unmappable to any specific arc related to the pandemic response in Ohio.</p>
+          <p class="feed-citation">&ldquo;State health director says Ohio measles outbreak &#x27;closed,&#x27; warns of rise in whooping cough - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Apr 02, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">Cleveland 19 News</span>
+          </div>
+          <p class="feed-summary">Severe storms cause widespread power outages in northern Ohio.</p>
+          <p class="feed-analysis">This news is unrelated to the pandemic and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Thousands without power as severe storms sweep across Northern Ohio - Cleveland 19 News&rdquo; &mdash; Cleveland 19 News</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Mar 20, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Ohio reports its first measles case in 2025.</p>
+          <p class="feed-analysis">This is unrelated to Ohio&#x27;s COVID-19 pandemic response and experience.</p>
+          <p class="feed-citation">&ldquo;Ohio Department of Health confirms state&#x27;s first measles case of 2025 - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Mar 10, 2025 &middot; 07:00 UTC</time>
+            <span class="feed-source">WOUB Public Media -</span>
+          </div>
+          <p class="feed-summary">The American Lung Association gave Ohio an &#x27;F&#x27; grade for its tobacco cessation programming.</p>
+          <p class="feed-analysis">This grading is unrelated to the COVID-19 pandemic and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;The American Lung Association gave Ohio an ‘F’ grade for its tobacco cessation programming - WOUB Public Media -&rdquo; &mdash; WOUB Public Media -</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">Oct 25, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">Ohio&#x27;s health director warns of rising COVID deaths and calls for increased vigilance and vaccinations.</p>
+          <p class="feed-analysis">The warning highlights the ongoing threat of COVID-19 despite previous public health efforts, underscoring the need for continued measures to prevent further fatalities.</p>
+          <p class="feed-citation">&ldquo;As Ohio COVID deaths near 1,000 for 2024, health director urges vigilance, vaccination - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot4" data-arc="POLITICS">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot4">Politics</span>
+            <time class="feed-time">Aug 20, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Former ODH Director Dr. Amy Acton is reportedly considering a gubernatorial run in 2026.</p>
+          <p class="feed-analysis">This indicates potential political ramifications of her role during the pandemic, as she may seek to capitalize on or distance herself from past actions.</p>
+          <p class="feed-citation">&ldquo;Report: Former Ohio Department of Health Director Dr. Amy Acton considering run for governor in 2026 - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Jul 18, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">wtol.com</span>
+          </div>
+          <p class="feed-summary">The Ohio Department of Health lifted a bacterial advisory at Maumee Bay State Park.</p>
+          <p class="feed-analysis">This news is unrelated to the state&#x27;s COVID-19 pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Ohio Department of Health lifts bacterial advisory at Maumee Bay State Park - wtol.com&rdquo; &mdash; wtol.com</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Mar 19, 2024 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">None of the article discusses Ohio&#x27;s pandemic experience.</p>
+          <p class="feed-analysis">The article is unrelated to Ohio&#x27;s COVID-19 response and impact.</p>
+          <p class="feed-citation">&ldquo;Why is First Four always played in Dayton? March Madness play-in runs through Ohio - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot4" data-arc="POLITICS">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot4">Politics</span>
+            <time class="feed-time">Jan 22, 2024 &middot; 08:00 UTC</time>
+            <span class="feed-source">Philadelphia Gay News</span>
+          </div>
+          <p class="feed-summary">Ohio Governor Mike DeWine is labeled as &#x27;Creep of the Week&#x27; by a news outlet.</p>
+          <p class="feed-analysis">This label reflects negative sentiment towards DeWine&#x27;s handling of the pandemic, potentially influencing public perception and political standing.</p>
+          <p class="feed-citation">&ldquo;Creep of the Week: Ohio Gov. Mike DeWine - Philadelphia Gay News&rdquo; &mdash; Philadelphia Gay News</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Oct 06, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">None of the article&#x27;s content relates to Ohio&#x27;s COVID-19 pandemic response.</p>
+          <p class="feed-analysis">The article discusses unrelated political topics such as legislative leadership and education policy, not relevant to pandemic management or public health measures.</p>
+          <p class="feed-citation">&ldquo;Ohio Politics Explained: Jordan runs for speaker, DeWine fights for control of education - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Sep 19, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">Gov. Mike DeWine has tested positive for COVID-19.</p>
+          <p class="feed-analysis">This event highlights the ongoing risk of infection among Ohio&#x27;s leadership during the pandemic.</p>
+          <p class="feed-citation">&ldquo;Ohio Gov. Mike DeWine tests positive for COVID-19 - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot1" data-arc="RESPONSE_POLICY">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot1">Response &amp; Policy</span>
+            <time class="feed-time">Aug 01, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">Court News Ohio (.gov)</span>
+          </div>
+          <p class="feed-summary">A court ruled that a bar cannot recover its liquor permits after violating pandemic rules.</p>
+          <p class="feed-analysis">This highlights the legal consequences for businesses failing to comply with public health directives during the pandemic.</p>
+          <p class="feed-citation">&ldquo;Bar Cannot Recover Liquor Permits Lost for Violating Pandemic Rules - Court News Ohio (.gov)&rdquo; &mdash; Court News Ohio (.gov)</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Apr 06, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">News updates on unrelated political events in Ohio.</p>
+          <p class="feed-analysis">These events do not relate to the pandemic response or public health measures.</p>
+          <p class="feed-citation">&ldquo;Ohio Politics Explained: Trump arrested, state Supreme Court hears transgender case - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Apr 03, 2023 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">The Ohio Supreme Court is reviewing a case about changing gender on birth certificates.</p>
+          <p class="feed-analysis">This case is unrelated to the state&#x27;s COVID-19 response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Ohio Supreme Court to decide case on changing gender on birth certificates - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Feb 23, 2023 &middot; 08:00 UTC</time>
+            <span class="feed-source">Earth.Org</span>
+          </div>
+          <p class="feed-summary">An incident involving a train derailment in Ohio.</p>
+          <p class="feed-analysis">The article discusses an event unrelated to the state&#x27;s COVID-19 pandemic response or public health measures.</p>
+          <p class="feed-citation">&ldquo;Ohio Train Derailment: An Ecological and Human Health Disaster? - Earth.Org&rdquo; &mdash; Earth.Org</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Oct 03, 2022 &middot; 07:00 UTC</time>
+            <span class="feed-source">Ohio Department of Aging (.gov)</span>
+          </div>
+          <p class="feed-summary">The State Plan on Aging for 2023-2026 is published by the Ohio Department of Aging.</p>
+          <p class="feed-analysis">This plan outlines strategies and policies to support aging Ohioans but does not directly relate to the state&#x27;s COVID-19 response or public health measures.</p>
+          <p class="feed-citation">&ldquo;State Plan on Aging, 2023-2026 - Ohio Department of Aging (.gov)&rdquo; &mdash; Ohio Department of Aging (.gov)</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">May 18, 2022 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">Ohio requests federal assistance due to an infant formula shortage affecting 61,000 low-income babies.</p>
+          <p class="feed-analysis">This issue is unrelated to Ohio&#x27;s COVID-19 pandemic response and does not fit into any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Ohio asks for federal help on infant formula shortage for 61K low-income babies - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">May 18, 2022 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Parents in Ohio are facing a shortage of baby formula.</p>
+          <p class="feed-analysis">The article discusses the impact of a national issue on Ohio families, but does not relate to the state&#x27;s pandemic response or public health measures.</p>
+          <p class="feed-citation">&ldquo;‘Very concerned’: Help for parents in Ohio amid baby formula shortage - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Feb 03, 2022 &middot; 08:00 UTC</time>
+            <span class="feed-source">Cincinnati Enquirer</span>
+          </div>
+          <p class="feed-summary">An Ohio law requiring the burial or cremation of aborted fetal remains has been blocked again.</p>
+          <p class="feed-analysis">This news is unrelated to Ohio&#x27;s COVID-19 pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Ohio law to require burial or cremation of aborted fetal remains blocked again - Cincinnati Enquirer&rdquo; &mdash; Cincinnati Enquirer</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Oct 04, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">Spectrum News</span>
+          </div>
+          <p class="feed-summary">Dr. Bruce Vanderhoff holds a press conference on Ohio&#x27;s COVID-19 situation.</p>
+          <p class="feed-analysis">Provides updates and guidance on the pandemic, reflecting current public health concerns.</p>
+          <p class="feed-citation">&ldquo;ohio department of health covid19 press conference dr bruce vanderhoff - Spectrum News&rdquo; &mdash; Spectrum News</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="LEGISLATIVE_CONTEXT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Legislative Context</span>
+            <time class="feed-time">Sep 28, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">Ohio House of Representatives (.gov)</span>
+          </div>
+          <p class="feed-summary">The Ohio House panel approved the Ohio COVID-19 Vaccine Fairness Act.</p>
+          <p class="feed-analysis">This bill aims to address vaccine equity and access in Ohio, reflecting ongoing legislative efforts to manage pandemic recovery.</p>
+          <p class="feed-citation">&ldquo;House Panel Approves Ohio COVID-19 Vaccine Fairness Act - Ohio House of Representatives (.gov)&rdquo; &mdash; Ohio House of Representatives (.gov)</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot1" data-arc="RESPONSE_POLICY">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot1">Response &amp; Policy</span>
+            <time class="feed-time">Sep 02, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Ohio Department of Health urges vaccination amid rising infections.</p>
+          <p class="feed-analysis">Encourages public action to combat the pandemic&#x27;s resurgence.</p>
+          <p class="feed-citation">&ldquo;&#x27;We all need to choose to be vaccinated.&#x27; Ohio Department of Health addresses spike in COVID-19 infections - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Apr 28, 2021 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Buckeye Flame</span>
+          </div>
+          <p class="feed-summary">Ohio will allow individuals to change gender on birth certificates.</p>
+          <p class="feed-analysis">This policy change is unrelated to Ohio&#x27;s COVID-19 pandemic response and does not fit any of the specified arcs.</p>
+          <p class="feed-citation">&ldquo;Ohio Will Allow Individuals to Change Gender on Birth Certificates - The Buckeye Flame&rdquo; &mdash; The Buckeye Flame</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">Feb 15, 2021 &middot; 08:00 UTC</time>
+            <span class="feed-source">Cincinnati Enquirer</span>
+          </div>
+          <p class="feed-summary">Ohio&#x27;s backlog of unreported deaths nearly doubled the state&#x27;s official COVID-19 death toll for November and December.</p>
+          <p class="feed-analysis">This highlights significant underreporting issues in Ohio&#x27;s pandemic data, affecting public perception and trust in health statistics.</p>
+          <p class="feed-citation">&ldquo;Backlog nearly doubles Ohio’s COVID-19 death toll in November and December - Cincinnati Enquirer&rdquo; &mdash; Cincinnati Enquirer</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">Feb 11, 2021 &middot; 08:00 UTC</time>
+            <span class="feed-source">Akron Beacon Journal</span>
+          </div>
+          <p class="feed-summary">Ohio has 84 red counties and 4 orange counties on its COVID-19 map despite a decrease in case numbers.</p>
+          <p class="feed-analysis">This reflects the ongoing challenges Ohio faces in controlling the spread of the virus, highlighting the need for continued public health measures.</p>
+          <p class="feed-citation">&ldquo;Ohio COVID-19 maps: Still 84 red counties, 4 orange despite drop in cases - Akron Beacon Journal&rdquo; &mdash; Akron Beacon Journal</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Jan 21, 2021 &middot; 08:00 UTC</time>
+            <span class="feed-source">Akron Beacon Journal</span>
+          </div>
+          <p class="feed-summary">One Ohio county is classified as purple while the rest are mostly red on the state&#x27;s COVID-19 map.</p>
+          <p class="feed-analysis">This indicates varying levels of virus spread across counties, influencing local public health measures and restrictions.</p>
+          <p class="feed-citation">&ldquo;Ohio COVID-19 maps: One county remains purple, most of Ohio still red - Akron Beacon Journal&rdquo; &mdash; Akron Beacon Journal</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Nov 20, 2020 &middot; 08:00 UTC</time>
+            <span class="feed-source">The Columbus Dispatch</span>
+          </div>
+          <p class="feed-summary">Ohio has imposed travel restrictions on certain states due to rising COVID cases.</p>
+          <p class="feed-analysis">These restrictions aim to curb the spread of the virus during holiday travel, reflecting Ohio&#x27;s ongoing pandemic management strategies.</p>
+          <p class="feed-citation">&ldquo;Traveling for the holidays? Here are states with Ohio COVID-19 travel restrictions - The Columbus Dispatch&rdquo; &mdash; The Columbus Dispatch</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot4" data-arc="POLITICS">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot4">Politics</span>
+            <time class="feed-time">Nov 19, 2020 &middot; 08:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary"><span class="conflict-mark" title="Conflicting claims reported">&#9889;</span> The Ohio General Assembly passed a bill limiting the health director&#x27;s authority and ending shutdowns, which Governor DeWine has vowed to ve</p>
+          <p class="feed-analysis">This highlights the political tension between state lawmakers and executive branch over pandemic response measures.</p>
+          <p class="feed-citation">&ldquo;Ohio General Assembly passes bill that would end shutdowns, limit health director&#x27;s authority; Gov. DeWine vows to veto - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Nov 13, 2020 &middot; 08:00 UTC</time>
+            <span class="feed-source">Court News Ohio (.gov)</span>
+          </div>
+          <p class="feed-summary">Court orders state health department to release hospital records.</p>
+          <p class="feed-analysis">The court order does not provide specific details on the content or context of the requested records, making it difficult to assess its broader implications for pandemic response.</p>
+          <p class="feed-citation">&ldquo;Court of Claims: State Health Department Must Release Hospital Records - Court News Ohio (.gov)&rdquo; &mdash; Court News Ohio (.gov)</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">Nov 11, 2020 &middot; 08:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Dr. Amy Acton&#x27;s earlier prediction of a COVID-19 surge in Ohio is now coming true.</p>
+          <p class="feed-analysis">This underscores the accuracy and foresight of Dr. Acton&#x27;s public health guidance, potentially bolstering her credibility among supporters.</p>
+          <p class="feed-citation">&ldquo;Dr. Amy Acton&#x27;s prediction of Ohio COVID-19 surge becomes reality months later - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Oct 29, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Akron Beacon Journal</span>
+          </div>
+          <p class="feed-summary">No Ohio counties turned purple on the state&#x27;s COVID-19 map, but Governor Mike DeWine warns that the virus is still &#x27;raging&#x27; in Ohio.</p>
+          <p class="feed-analysis">This update reflects ongoing public health concerns despite no new severe outbreak areas, highlighting the persistent nature of the pandemic.</p>
+          <p class="feed-citation">&ldquo;Ohio COVID-19 map: No counties turn purple, but coronavirus still ‘raging’ in Ohio, DeWine says - Akron Beacon Journal&rdquo; &mdash; Akron Beacon Journal</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Oct 29, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Cleveland.com</span>
+          </div>
+          <p class="feed-summary">Cuyahoga County avoided the highest level of coronavirus alert while 43 other Ohio counties were designated as red alert.</p>
+          <p class="feed-analysis">This highlights the varying severity of the pandemic across different regions in Ohio, reflecting local public health responses and outcomes.</p>
+          <p class="feed-citation">&ldquo;Cuyahoga County avoids going on high-level purple coronavirus alert; among a record 43 red alert counties in Ohio - Cleveland.com&rdquo; &mdash; Cleveland.com</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Sep 18, 2020 &middot; 07:39 UTC</time>
+            <span class="feed-source">Bing: Legislative context 3</span>
+          </div>
+          <p class="feed-summary">Timeline outlines major events in Butler County related to coronavirus over six months.</p>
+          <p class="feed-analysis">Provides context on how local communities experienced and responded to the pandemic&#x27;s onset and early stages.</p>
+          <p class="feed-citation">&ldquo;Timeline: How Butler County life has changed during 6 months of coronavirus&rdquo; &mdash; Bing: Legislative context 3</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">Sep 14, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Cleveland.com</span>
+          </div>
+          <p class="feed-summary">A prospective Ohio health director withdrew due to the hostile treatment towards Dr. Amy Acton.</p>
+          <p class="feed-analysis">This highlights the challenging environment and political pressure faced by public health officials during the pandemic.</p>
+          <p class="feed-citation">&ldquo;Prospective Ohio health director backed out because of treatment toward Dr. Amy Acton: Capitol Letter - Cleveland.com&rdquo; &mdash; Cleveland.com</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">Sep 11, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Cleveland.com</span>
+          </div>
+          <p class="feed-summary">A nominee for the Ohio Department of Health cited Dr. Amy Acton&#x27;s harassment as a reason to withdraw.</p>
+          <p class="feed-analysis">This highlights the severe backlash and personal risks faced by public health officials during the pandemic.</p>
+          <p class="feed-citation">&ldquo;DeWine choice to lead Ohio Department of Health cites harassment of Dr. Amy Acton in decision to back out - Cleveland.com&rdquo; &mdash; Cleveland.com</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">Jun 25, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">FOX19 | Cincinnati</span>
+          </div>
+          <p class="feed-summary">Ohio&#x27;s recent surge in COVID-19 cases cannot be attributed to increased testing.</p>
+          <p class="feed-analysis">This highlights the severity of Ohio&#x27;s current pandemic situation, indicating a genuine rise in infections rather than just more testing.</p>
+          <p class="feed-citation">&ldquo;Ohio’s case spike can’t be explained away by increased testing, data shows - FOX19 | Cincinnati&rdquo; &mdash; FOX19 | Cincinnati</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">Jun 14, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">The Newark Advocate</span>
+          </div>
+          <p class="feed-summary">Dr. Amy Acton became a public figure and icon during her tenure as Ohio&#x27;s health director.</p>
+          <p class="feed-analysis">Acton&#x27;s rise to prominence reflects the significant role she played in shaping Ohio&#x27;s pandemic response, garnering both praise and criticism.</p>
+          <p class="feed-citation">&ldquo;As Ohio health director, Dr. Amy Acton went from unknown to icon during coronavirus pandemic - The Newark Advocate&rdquo; &mdash; The Newark Advocate</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">Jun 12, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Times Reporter</span>
+          </div>
+          <p class="feed-summary">Dr. Amy Acton became a polarizing figure as Ohio&#x27;s health director during the pandemic.</p>
+          <p class="feed-analysis">Her actions and public presence made her both widely admired for her efforts to combat the virus and heavily criticized by those opposed to restrictions.</p>
+          <p class="feed-citation">&ldquo;As Ohio health director, Dr. Amy Acton went from unknown to icon -- beloved by many, targeted by some - Times Reporter&rdquo; &mdash; Times Reporter</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">Jun 11, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">News 5 Cleveland WEWS</span>
+          </div>
+          <p class="feed-summary">Dr. Amy Acton has resigned as Ohio Department of Health Director.</p>
+          <p class="feed-analysis">Her resignation reflects the intense political and public pressure she faced during her tenure managing Ohio&#x27;s pandemic response.</p>
+          <p class="feed-citation">&ldquo;Ohio Department of Health Director Dr. Amy Acton resigns - News 5 Cleveland WEWS&rdquo; &mdash; News 5 Cleveland WEWS</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">Jun 09, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Ohio sees a decline in daily coronavirus cases.</p>
+          <p class="feed-analysis">This trend indicates potential success of public health measures and suggests easing restrictions may be considered.</p>
+          <p class="feed-citation">&ldquo;Ohio coronavirus update: Number of day-to-day cases decrease, Gov. DeWine addresses defunding police - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot3" data-arc="IMPACT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot3">Impact</span>
+            <time class="feed-time">May 08, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Fremont News-Messenger</span>
+          </div>
+          <p class="feed-summary">Terra State Community College implements significant budget cuts due to the pandemic.</p>
+          <p class="feed-analysis">The college&#x27;s financial struggles highlight the broader economic impact of COVID-19 on educational institutions in Ohio.</p>
+          <p class="feed-citation">&ldquo;Ohio COVID-19: Terra State makes deep cuts in response to coronavirus - Fremont News-Messenger&rdquo; &mdash; Fremont News-Messenger</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot2" data-arc="ACTON_SENTIMENT">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot2">Acton Sentiment</span>
+            <time class="feed-time">May 02, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Cleveland.com</span>
+          </div>
+          <p class="feed-summary">A small group protested against Ohio&#x27;s coronavirus restrictions near Dr. Amy Acton&#x27;s home.</p>
+          <p class="feed-analysis">The protest reflects ongoing public sentiment and backlash towards strict pandemic measures in Ohio.</p>
+          <p class="feed-citation">&ldquo;Small group protests Ohio coronavirus restrictions outside Health Department Director Dr. Amy Acton’s house - Cleveland.com&rdquo; &mdash; Cleveland.com</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot1" data-arc="RESPONSE_POLICY">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot1">Response &amp; Policy</span>
+            <time class="feed-time">Apr 30, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Spectrum News</span>
+          </div>
+          <p class="feed-summary">Gov. DeWine extends Ohio&#x27;s stay-at-home order.</p>
+          <p class="feed-analysis">This extension reflects the ongoing need to control the spread of COVID-19 in Ohio, balancing public health and economic considerations.</p>
+          <p class="feed-citation">&ldquo;DeWine Extends Ohio Stay-At-Home Order - Spectrum News&rdquo; &mdash; Spectrum News</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot1" data-arc="RESPONSE_POLICY">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot1">Response &amp; Policy</span>
+            <time class="feed-time">Apr 09, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">WKYC</span>
+          </div>
+          <p class="feed-summary">Governor DeWine discusses improving coronavirus situation in Ohio.</p>
+          <p class="feed-analysis">Provides insight into the state&#x27;s public health response and its effectiveness.</p>
+          <p class="feed-citation">&ldquo;Gov. Mike DeWine explains why Ohio&#x27;s coronavirus outlook has improved - WKYC&rdquo; &mdash; WKYC</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot0" data-arc="TIMELINE">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot0">Timeline</span>
+            <time class="feed-time">Mar 24, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">Ideastream</span>
+          </div>
+          <p class="feed-summary">Ohio&#x27;s stay-at-home order remains in effect as COVID-19 deaths increase.</p>
+          <p class="feed-analysis">Highlights the ongoing severity of the pandemic and continuation of restrictive measures.</p>
+          <p class="feed-citation">&ldquo;Morning Headlines: Ohio COVID-19 Deaths Rise; Stay-At-Home Order in Effect; KSU Cancels May 4 Events - Ideastream&rdquo; &mdash; Ideastream</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-other" data-arc="UNMAPPED">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-other">Other</span>
+            <time class="feed-time">Mar 23, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">MLSsoccer.com</span>
+          </div>
+          <p class="feed-summary">Dee and Jimmy Haslam, owners of the Columbus Crew, donated $1.5 million to Ohio COVID-19 relief funds.</p>
+          <p class="feed-analysis">The donation is a private act of philanthropy unrelated to public health policy or political response.</p>
+          <p class="feed-citation">&ldquo;Columbus Crew owners Dee, Jimmy Haslam donate $1.5 million to Ohio COVID-19 relief funds - MLSsoccer.com&rdquo; &mdash; MLSsoccer.com</p>
+          
+        </li>
+
+        <li class="feed-item feed-item-slot4" data-arc="POLITICS">
+          <div class="feed-item-head">
+            <span class="chip chip-sm chip-slot4">Politics</span>
+            <time class="feed-time">Mar 17, 2020 &middot; 07:00 UTC</time>
+            <span class="feed-source">vox.com</span>
+          </div>
+          <p class="feed-summary">Ohio delayed its primary election due to pandemic-related concerns.</p>
+          <p class="feed-analysis">This highlights how the pandemic disrupted traditional political processes and timelines.</p>
+          <p class="feed-citation">&ldquo;The chaotic delay of the Ohio primary, explained - vox.com&rdquo; &mdash; vox.com</p>
           
         </li>
         </ul>

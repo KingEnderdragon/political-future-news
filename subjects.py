@@ -318,6 +318,81 @@ SUBJECTS = {
             ("MEDIA",                 r"\b(interview|op-ed|editorial|statement|says|said)\b"),
         ],
     },
+
+    "covid19": {
+        "slug": "covid19",
+        "kind": "issue",
+        "name": "COVID-19",
+        "subtitle": "Ohio's COVID-19 experience & the Acton legacy debate",
+        "context": (
+            "Ohio's COVID-19 pandemic experience (2020-present), including the state's "
+            "public health response under then-Department of Health Director Dr. Amy Acton "
+            "and Gov. Mike DeWine, and how Ohioans have retrospectively judged that response"
+        ),
+        "file_suffix": "_covid19",
+        "keywords": [
+            "ohio covid",
+            "ohio covid-19",
+            "ohio coronavirus",
+            "ohio pandemic",
+            "amy acton covid",
+            "dewine covid",
+            "ohio lockdown",
+            "ohio stay-at-home order",
+            "ohio stay at home order",
+        ],
+        "feeds": {
+            _OHIO_CAPITAL_JOURNAL[0]: _OHIO_CAPITAL_JOURNAL[1],
+            _CLEVELAND_POLITICS[0]:   _CLEVELAND_POLITICS[1],
+            "GNews: Ohio COVID-19":                 _gnews("Ohio+COVID-19"),
+            "GNews: Ohio coronavirus pandemic":     _gnews("Ohio+coronavirus+pandemic"),
+            "GNews: Ohio COVID response":           _gnews("Ohio+COVID+response"),
+            "GNews: Ohio lockdown":                 _gnews("Ohio+COVID+lockdown"),
+            "GNews: Ohio stay-at-home order":       _gnews("Ohio+%22stay-at-home+order%22"),
+            "GNews: Amy Acton COVID":               _gnews("%22Amy+Acton%22+COVID"),
+            "GNews: Amy Acton criticism":           _gnews("%22Amy+Acton%22+criticism"),
+            "GNews: Amy Acton legacy":              _gnews("%22Amy+Acton%22+legacy"),
+            "GNews: DeWine COVID response":         _gnews("DeWine+COVID+response"),
+            "GNews: Ohio Department of Health COVID": _gnews("%22Ohio+Department+of+Health%22+COVID"),
+            "Bing: Ohio COVID-19":            _bing("Ohio+COVID-19"),
+            "Bing: Amy Acton COVID":          _bing("%22Amy+Acton%22+COVID"),
+            "Bing: Ohio COVID lockdown":      _bing("Ohio+COVID+lockdown"),
+        },
+        "newsapi_queries": [
+            "Ohio COVID-19", "Amy Acton COVID", "Ohio coronavirus lockdown", "DeWine COVID response",
+        ],
+        "arcs": ["TIMELINE", "RESPONSE_POLICY", "ACTON_SENTIMENT", "IMPACT", "POLITICS", "MEDIA", "UNMAPPED"],
+        "arc_label": {
+            "TIMELINE":         "Timeline",
+            "RESPONSE_POLICY":  "Response & Policy",
+            "ACTON_SENTIMENT":  "Acton Sentiment",
+            "IMPACT":           "Impact",
+            "POLITICS":         "Politics",
+            "MEDIA":            "Media",
+        },
+        "arc_color": {
+            "TIMELINE":        "#4a6572",
+            "RESPONSE_POLICY": "#2f5f8a",
+            "ACTON_SENTIMENT": "#a13d3d",
+            "IMPACT":          "#2f7a52",
+            "POLITICS":        "#c46a1f",
+            "MEDIA":           "#b06a24",
+        },
+        "arc_guide": """  TIMELINE         - chronological events of Ohio's pandemic: onset, orders issued/lifted, waves, reopening phases
+  RESPONSE_POLICY  - specific orders, mandates, health directives issued by Ohio ODH/Acton or Gov. DeWine and their rationale
+  ACTON_SENTIMENT  - how people feel about Dr. Amy Acton's handling of the pandemic: praise, criticism, backlash, protests, retrospective judgment, threats she received, her resignation
+  IMPACT           - concrete effects on Ohioans: case/death data, business/school closures, economic and health outcomes
+  POLITICS         - electoral or partisan dimensions: how the pandemic response is used in campaigns, legislative pushback, recall efforts
+  MEDIA            - interviews, op-eds, retrospectives, documentaries, general commentary not fitting the above""",
+        "arc_fallback_rules": [
+            ("ACTON_SENTIMENT",  r"\b(acton|criticiz|backlash|praise|hero|villain|resign|protest|threat(en)?ed|approval)\b"),
+            ("RESPONSE_POLICY",  r"\b(order|mandate|directive|lockdown|stay-at-home|shutdown|reopen)\b"),
+            ("TIMELINE",         r"\b(timeline|wave|first case|anniversary|years? (since|later))\b"),
+            ("IMPACT",           r"\b(cases|deaths|hospital|economy|jobs|schools|closed|closure)\b"),
+            ("POLITICS",         r"\b(campaign|election|legislature|lawmaker|recall|governor race)\b"),
+            ("MEDIA",            r"\b(interview|op-ed|documentary|retrospective|says|said)\b"),
+        ],
+    },
 }
 
 # ── Legislative Context: a shared arc added to every subject ────────────────
@@ -337,6 +412,8 @@ _LEGISLATIVE_CONTEXT_QUERIES = {
                     "Ohio Medicaid policy explainer"],
     "sjr10":      ["Ohio General Assembly explainer", "Ohio joint resolution process explainer",
                     "Ohio voter ID law explainer"],
+    "covid19":    ["Ohio Department of Health explainer", "Ohio public health emergency powers explainer",
+                    "Ohio COVID-19 timeline explainer"],
 }
 
 for _slug, _subject in SUBJECTS.items():
@@ -363,7 +440,7 @@ del _slug, _subject, _i, _q, _qenc
 
 SUBJECT_GROUPS = {
     "politicians": ["kaptur", "brown", "acton"],
-    "issues": ["healthcare", "sjr10"],
+    "issues": ["healthcare", "sjr10", "covid19"],
 }
 SUBJECT_ORDER = SUBJECT_GROUPS["politicians"] + SUBJECT_GROUPS["issues"]
 

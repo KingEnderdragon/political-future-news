@@ -13,7 +13,7 @@ Live snapshot: **https://kingenderdragon.github.io/political-future-news/**
 | Group | Subjects |
 |---|---|
 | **Politicians** | Rep. Marcy Kaptur (OH-9), Sherrod Brown, Dr. Amy Acton |
-| **Ohio Issues** | Healthcare policy, SJR10 (Ohio voter ID) |
+| **Ohio Issues** | Healthcare policy, SJR10 (Ohio voter ID), COVID-19 (Ohio's pandemic experience & Acton legacy) |
 
 Everything tracked is defined in [`subjects.py`](subjects.py) — see
 [Adding a new subject](#adding-a-new-subject) below.
